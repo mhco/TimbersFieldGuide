@@ -1,0 +1,66 @@
+## Interface: 20505
+## Title: Timber's Field Guide
+## Author: Timbervale
+## Version: v2025.12.26
+
+# Load databases first
+Database/Vanilla/Classes/Druid.lua
+Database/Vanilla/Classes/Hunter.lua
+Database/Vanilla/Classes/HunterPets.lua
+Database/Vanilla/Classes/Mage.lua
+Database/Vanilla/Classes/Paladin.lua
+Database/Vanilla/Classes/Priest.lua
+Database/Vanilla/Classes/Rogue.lua
+Database/Vanilla/Classes/Shaman.lua
+Database/Vanilla/Classes/Warlock.lua
+Database/Vanilla/Classes/WarlockPets.lua
+Database/Vanilla/Classes/Warrior.lua
+# Database/Vanilla/Professions/Alchemy.lua
+# Database/Vanilla/Professions/Blacksmithing.lua
+# Database/Vanilla/Professions/Cooking.lua
+# Database/Vanilla/Professions/Enchanting.lua
+# Database/Vanilla/Professions/Engineering.lua
+# Database/Vanilla/Professions/FirstAid.lua
+# Database/Vanilla/Professions/Fishing.lua
+# Database/Vanilla/Professions/Herbalism.lua
+# Database/Vanilla/Professions/Jewelcrafting.lua
+# Database/Vanilla/Professions/Leatherworking.lua
+# Database/Vanilla/Professions/Mining.lua
+# Database/Vanilla/Professions/Skinning.lua
+# Database/Vanilla/Professions/Tailoring.lua
+
+Database/TBC/Classes/Druid.lua
+Database/TBC/Classes/Hunter.lua
+Database/TBC/Classes/HunterPets.lua
+Database/TBC/Classes/Mage.lua
+Database/TBC/Classes/Paladin.lua
+Database/TBC/Classes/Priest.lua
+Database/TBC/Classes/Rogue.lua
+Database/TBC/Classes/Shaman.lua
+Database/TBC/Classes/Warlock.lua
+Database/TBC/Classes/WarlockPets.lua
+Database/TBC/Classes/Warrior.lua
+Database/TBC/Professions/Alchemy.lua
+# Database/TBC/Professions/Blacksmithing.lua
+# Database/TBC/Professions/Cooking.lua
+# Database/TBC/Professions/Enchanting.lua
+# Database/TBC/Professions/Engineering.lua
+# Database/TBC/Professions/FirstAid.lua
+# Database/TBC/Professions/Fishing.lua
+# Database/TBC/Professions/Herbalism.lua
+# Database/TBC/Professions/Jewelcrafting.lua
+# Database/TBC/Professions/Leatherworking.lua
+# Database/TBC/Professions/Mining.lua
+# Database/TBC/Professions/Skinning.lua
+# Database/TBC/Professions/Tailoring.lua
+Database/TBC/Riding.lua
+
+# Core
+TimbersFieldGuide.lua
+Core/Constants.lua
+Core/Util.lua
+Core/Database.lua
+Core/Frame.lua
+Core/Controls.lua
+Core/Layout.lua
+Core/Slash.lua
