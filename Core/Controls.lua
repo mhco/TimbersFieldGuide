@@ -18,6 +18,9 @@ expansionDropdown:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -30, -8)
 local function OnClickExpansion(self)
     TFG.selectedExpansion = self.value
     UIDropDownMenu_SetSelectedID(expansionDropdown, self:GetID())
+    if TFG.professionPopup and TFG.professionPopup:IsShown() then
+        TFG.professionPopup:Hide()
+    end
     TFG.LoadDatabase(TFG.selectedFile, TFG.selectedExpansion)
 end
 

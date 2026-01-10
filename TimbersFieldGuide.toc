@@ -1,7 +1,10 @@
-## Interface: 20505
+## Interface: 11508, 20505
 ## Title: Timber's Field Guide
 ## Author: Timbervale
-## Version: v2025.12.26
+## Version: v2026.01.10
+## Category: Timber's AddOns
+## IconTexture: Interface\Icons\Inv_scroll_07
+## SavedVariables: TimbersFieldGuideDB
 
 # Load databases first
 Database/Vanilla/Classes/Druid.lua
@@ -36,31 +39,40 @@ Database/TBC/Classes/Mage.lua
 Database/TBC/Classes/Paladin.lua
 Database/TBC/Classes/Priest.lua
 Database/TBC/Classes/Rogue.lua
+Database/TBC/Classes/RoguePoisons.lua
 Database/TBC/Classes/Shaman.lua
 Database/TBC/Classes/Warlock.lua
 Database/TBC/Classes/WarlockPets.lua
 Database/TBC/Classes/Warrior.lua
 Database/TBC/Professions/Alchemy.lua
-# Database/TBC/Professions/Blacksmithing.lua
-# Database/TBC/Professions/Cooking.lua
-# Database/TBC/Professions/Enchanting.lua
-# Database/TBC/Professions/Engineering.lua
-# Database/TBC/Professions/FirstAid.lua
-# Database/TBC/Professions/Fishing.lua
-# Database/TBC/Professions/Herbalism.lua
-# Database/TBC/Professions/Jewelcrafting.lua
-# Database/TBC/Professions/Leatherworking.lua
-# Database/TBC/Professions/Mining.lua
-# Database/TBC/Professions/Skinning.lua
-# Database/TBC/Professions/Tailoring.lua
-Database/TBC/Riding.lua
+Database/TBC/Professions/Blacksmithing.lua
+Database/TBC/Professions/Cooking.lua
+Database/TBC/Professions/Enchanting.lua
+Database/TBC/Professions/Engineering.lua
+Database/TBC/Professions/FirstAid.lua
+Database/TBC/Professions/Fishing.lua
+Database/TBC/Professions/Herbalism.lua
+Database/TBC/Professions/Jewelcrafting.lua
+Database/TBC/Professions/Leatherworking.lua
+Database/TBC/Professions/Mining.lua
+Database/TBC/Professions/Skinning.lua
+Database/TBC/Professions/Tailoring.lua
+Database/TBC/Skills/Riding.lua
 
 # Core
 TimbersFieldGuide.lua
+
+# Embedded libraries
+Libs/LibStub/LibStub.lua
+Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua
+Libs/LibDataBroker-1.1/LibDataBroker-1.1.lua
+Libs/LibDBIcon-1.0/LibDBIcon-1.0.lua
+
 Core/Constants.lua
 Core/Util.lua
 Core/Database.lua
 Core/Frame.lua
+Core/Minimap.lua
 Core/Controls.lua
 Core/Layout.lua
 Core/Slash.lua

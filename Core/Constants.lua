@@ -1,8 +1,8 @@
 local _, TFG = ...
 
 TFG.UI = {
-    FRAME_WIDTH        = 700,
-    FRAME_HEIGHT       = 500,
+    FRAME_WIDTH        = 1000,
+    FRAME_HEIGHT       = 600,
     TITLEBAR_HEIGHT    = 44,
 
     ICON_SIZE          = 40,   -- updated from 48
