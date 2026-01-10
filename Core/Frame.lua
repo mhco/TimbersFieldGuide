@@ -20,6 +20,7 @@ frame:SetBackdrop({
     },
 })
 frame:SetBackdropColor(1,1,1,1)
+setBackground(TFG.selectedFile:lower())
 
 frame:EnableMouse(true)
 frame:SetMovable(true)
@@ -48,17 +49,17 @@ titleBar:SetBackdrop({
 })
 
 -- Logo
-local logo = titleBar:CreateTexture(nil, "OVERLAY")
-logo:SetSize(128,64)
-pcall(function()
-    logo:SetTexture("Interface/AddOns/TimbersFieldGuide/Media/logo-wide")
-end)
-logo:SetPoint("CENTER", frame, "TOP", 0, -4)
+--local logo = titleBar:CreateTexture(nil, "OVERLAY")
+--logo:SetSize(256, 128)
+--pcall(function()
+--    logo:SetTexture("Interface/AddOns/TimbersFieldGuide/Media/logo-wide-new")
+--end)
+--logo:SetPoint("CENTER", frame, "TOP", 0, -5)
 
 -- Title
 local title = titleBar:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-title:SetPoint("LEFT", 16, 2)
-title:SetText(TFG.NAME .. " v" .. TFG.VERSION)
+title:SetPoint("LEFT", 16, 0)
+title:SetText(TFG.NAME .. " " .. TFG.VERSION)
 
 -- Close
 local close = CreateFrame("Button", nil, titleBar, "UIPanelCloseButton")

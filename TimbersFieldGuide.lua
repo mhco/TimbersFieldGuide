@@ -6,9 +6,9 @@ TFG = TFG or {}
 -- ==========================================================================
 
 -- TFG.NAME    = ADDON_NAME
-TFG.NAME    = "Timber's Field Guide"
-TFG.VERSION = "2025.12.26"
+TFG.NAME    = C_AddOns.GetAddOnMetadata("TimbersFieldGuide", "Title")
+TFG.VERSION = C_AddOns.GetAddOnMetadata("TimbersFieldGuide", "Version")
 
 -- bindings
 BINDING_HEADER_TIMBERSFIELDGUIDE = "Timber's Field Guide"
-BINDING_NAME_TIMBERSFIELDGUIDE_TOGGLE = "Open/Close Timber's Field Guide"
+BINDING_NAME_TIMBERSFIELDGUIDE_TOGGLE = "Toggle Timber's Field Guide"

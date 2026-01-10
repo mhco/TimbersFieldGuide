@@ -86,25 +86,31 @@ TFG.DATABASE_FILES = {
                     file = TFG.WARRIOR_VANILLA,
                 },
             },
-            skills = {
-                professions = {
-                    name = "Professions",
-                    children = {
-                        {name = "Alchemy", file = {}},
-                        {name = "Blacksmithing", file = {}},
-                        {name = "Cooking", file = {}},
-                        {name = "Enchanting", file = {}},
-                        {name = "Engineering", file = {}},
-                        {name = "First Aid", file = {}},
-                        {name = "Fishing", file = {}},
-                        {name = "Herbalism", file = {}},
-                        {name = "Leatherworking", file = {}},
-                        {name = "Mining", file = {}},
-                        {name = "Skinning", file = {}},
-                        {name = "Tailoring", file = {}},
-                    },
+            professions = {
+                name = "Professions",
+                children = {
+                    {name = "Alchemy", file = {}},
+                    {name = "Blacksmithing", file = {}},
+                    {name = "Cooking", file = {}},
+                    {name = "Enchanting", file = {}},
+                    {name = "Engineering", file = {}},
+                    {name = "First Aid", file = {}},
+                    {name = "Fishing", file = {}},
+                    {name = "Herbalism", file = {}},
+                    {name = "Leatherworking", file = {}},
+                    {name = "Mining", file = {}},
+                    {name = "Skinning", file = {}},
+                    {name = "Tailoring", file = {}},
                 },
-            }
+            },
+            --[[
+            skills = {
+                name = "Professions",
+                children = {
+                    {name = "Weapons", file = {}},
+                },
+            },
+            --]]
         },
     },
     TBC = {
@@ -148,6 +154,13 @@ TFG.DATABASE_FILES = {
                     name = "Rogue",
                     color = TFG.CLASS_COLORS["ROGUE"],
                     file = TFG.ROGUE_TBC,
+                    children = {
+                        {
+                            name = "Poisons",
+                            sortOrder = 1,
+                            file = TFG.ROGUE_POISONS_TBC,
+                        },
+                    },
                 },
                 shaman = {
                     name = "Shaman",
@@ -176,26 +189,33 @@ TFG.DATABASE_FILES = {
                 professions = {
                     name = "Professions",
                     children = {
+                        -- Primary professions (will be sorted alphabetically in the submenu)
                         {name = "Alchemy", file = TFG.ALCHEMY_TBC},
                         {name = "Blacksmithing", file = TFG.BLACKSMITHING_TBC},
-                        {name = "Cooking", file = TFG.COOKING_TBC},
                         {name = "Enchanting", file = TFG.ENCHANTING_TBC},
                         {name = "Engineering", file = TFG.ENGINEERING_TBC},
-                        {name = "First Aid", file = TFG.FIRST_AID_TBC},
-                        {name = "Fishing", file = TFG.FISHING_TBC},
-                        {name = "Herbalism", file = TFG.HERBALISM_TBC},
                         {name = "Jewelcrafting", file = TFG.JEWELCRAFTING_TBC},
                         {name = "Leatherworking", file = TFG.LEATHERWORKING_TBC},
-                        {name = "Mining", file = TFG.MINING_TBC},
-                        {name = "Skinning", file = TFG.SKINNING_TBC},
                         {name = "Tailoring", file = TFG.TAILORING_TBC},
+                        {name = "Mining", file = TFG.MINING_TBC},
+                        {name = "Herbalism", file = TFG.HERBALISM_TBC},
+                        {name = "Skinning", file = TFG.SKINNING_TBC},
+                        -- Divider: secondary professions follow
+                        {name = "SecondaryProfessionsDivider", isHeader = true},
+                        -- Secondary professions (will be sorted alphabetically in the submenu)
+                        {name = "Cooking", file = TFG.COOKING_TBC},
+                        {name = "First Aid", file = TFG.FIRST_AID_TBC},
+                        {name = "Fishing", file = TFG.FISHING_TBC},
                     },
                 },
-                riding = {
-                    name = "Riding",
-                    file = TFG.RIDING_TBC,
+                skills = {
+                    name = "Skills",
+                    children = {
+                        {name = "Riding", file = TFG.RIDING_TBC},
+                        -- additional non-profession skills can be added here
+                    },
                 },
-            }
+            },
         }
     },
     WOTLK = {
@@ -228,15 +248,39 @@ end
 
 -- Load database dynamically based on selected class and expansion
 function TFG.LoadDatabase(fileName, expansion)
+    -- (debug prints removed)
     TFG.selectedFile = fileName or TFG.selectedFile
     TFG.selectedExpansion = expansion or TFG.selectedExpansion
 
     local expansionObject = TFG.DATABASE_FILES[TFG.selectedExpansion:upper()]
     if expansionObject then
-        if expansionObject["files"]["classes"][TFG.selectedFile:lower()] then
-            TFG.activeDatabase = expansionObject["files"]["classes"][TFG.selectedFile:lower()]["file"]
-        elseif expansionObject["files"]["skills"][TFG.selectedFile:lower()] then
-            TFG.activeDatabase = expansionObject["files"]["skills"][TFG.selectedFile:lower()]["file"]
+        local selectedKey = TFG.selectedFile:lower()
+        local parent, parentType
+
+        if expansionObject["files"]["classes"][selectedKey] then
+            parent = expansionObject["files"]["classes"][selectedKey]
+            parentType = "classes"
+        elseif expansionObject["files"]["skills"][selectedKey] then
+            parent = expansionObject["files"]["skills"][selectedKey]
+            parentType = "skills"
+        end
+
+        -- If a submenu item is selected, its value is encoded as:
+        --   "parentKey::childIndex" (1-based index into parent.children)
+        local parentKey, childIndex = string.match(selectedKey, "^(.+)::(%d+)$")
+        if parentKey and childIndex then
+            local p = (expansionObject["files"]["classes"][parentKey] or expansionObject["files"]["skills"][parentKey])
+            local i = tonumber(childIndex)
+            if p and p.children and p.children[i] and p.children[i].file then
+                TFG.activeDatabase = p.children[i].file
+                -- (debug prints removed)
+                -- Treat child items as the same type as the parent for filtering rules.
+                parentType = (expansionObject["files"]["classes"][parentKey] and "classes") or "skills"
+            else
+                TFG.activeDatabase = {}
+            end
+        elseif parent then
+            TFG.activeDatabase = parent["file"] or {}
         else
             TFG.activeDatabase = {}
         end
@@ -250,7 +294,7 @@ function TFG.LoadDatabase(fileName, expansion)
         --]]
 
         -- If this file is a skill, then we need to treat it differently
-        if (TFG.DATABASE_FILES[TFG.selectedExpansion:upper()]["files"]["skills"][TFG.selectedFile:lower()]) then
+        if (parentType == "skills") then
             TFG.isSkill = true
         else
             TFG.isSkill = false
@@ -261,6 +305,25 @@ function TFG.LoadDatabase(fileName, expansion)
     end
 
     TFG.rows = TFG.GenerateRows(TFG.activeDatabase)
+
+    -- Update window background based on selected class when possible.
+    do
+        local bgClass = "warrior"
+        local sel = (TFG.selectedFile or ""):lower()
+        local parentKey, childIndex = string.match(sel, "^(.+)::(%d+)$")
+        if parentKey then
+            -- If the parent is a class, use it; otherwise leave default.
+            if expansionObject and expansionObject.files and expansionObject.files.classes and expansionObject.files.classes[parentKey] then
+                bgClass = parentKey
+            end
+        else
+            if expansionObject and expansionObject.files and expansionObject.files.classes and expansionObject.files.classes[sel] then
+                bgClass = sel
+            end
+        end
+        -- Call global helper (defined in Core/Util.lua) to set background; it is safe if frame is nil.
+        pcall(function() setBackground(bgClass) end)
+    end
 
     if TFG.frame then
         TFG.frame:Relayout()

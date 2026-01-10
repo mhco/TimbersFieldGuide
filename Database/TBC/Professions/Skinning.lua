@@ -1,54 +1,44 @@
-local _, FieldGuide = ...
+local _, TFG = ...
 
-FieldGuide.SKINNING = {
+TFG.SKINNING_TBC = {
     [1] = {
-        [1] = {
+        {
             ["id"] = 8613,
-            ["name"] = "Skinning (Apprentice)",
-            ["rank"] = 0,
-            ["cost"] = 0,
+            ["name"] = "Skinning", -- Apprentice
+            ["category"] = "Profession Training",
             ["texture"] = "Interface/ICONS/inv_misc_pelt_wolf_01",
-            ["phase"] = 1
         },
     },
     [50] = {
-        [1] = {
+        {
             ["id"] = 8617,
-            ["name"] = "Skinning (Journeyman)",
-            ["rank"] = 0,
-            ["cost"] = 0,
+            ["name"] = "Skinning", -- Journeyman
+            ["category"] = "Profession Training",
             ["texture"] = "Interface/ICONS/inv_misc_pelt_wolf_01",
-            ["phase"] = 1
         },
     },
     [125] = {
-        [1] = {
+        {
             ["id"] = 8618,
-            ["name"] = "Skinning (Expert)",
-            ["rank"] = 0,
-            ["cost"] = 0,
+            ["name"] = "Skinning", -- Expert
+            ["category"] = "Profession Training",
             ["texture"] = "Interface/ICONS/inv_misc_pelt_wolf_01",
-            ["phase"] = 1
         },
     },
     [200] = {
-        [1] = {
+        {
             ["id"] = 10768,
-            ["name"] = "Skinning (Artisan)",
-            ["rank"] = 0,
-            ["cost"] = 0,
+            ["name"] = "Skinning", -- Artisan
+            ["category"] = "Profession Training",
             ["texture"] = "Interface/ICONS/inv_misc_pelt_wolf_01",
-            ["phase"] = 1
         },
     },
     [275] = {
-        [1] = {
+        {
             ["id"] = 32678,
-            ["name"] = "Skinning (Master)",
-            ["rank"] = 0,
-            ["cost"] = 0,
+            ["name"] = "Skinning", -- Master
+            ["category"] = "Profession Training",
             ["texture"] = "Interface/ICONS/inv_misc_pelt_wolf_01",
-            ["phase"] = 1
         },
     },    
 }
