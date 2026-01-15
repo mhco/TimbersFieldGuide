@@ -1063,6 +1063,149 @@ function frame:Relayout()
     local selectedParentKey = string.match((TFG.selectedFile or ""):lower(), "^(.+)::%d+$")
     local selectedParentUpper = selectedParentKey and (selectedParentKey:upper()) or nil
     local isClassView = (not isProfession) and (not TFG.isSkill)
+
+    -- forward-declare DB helper so it can be referenced by other locals
+    local getHighestKnownRankForSpellName
+
+    local function isSpellKnownDBAware(sid, spellObj)
+        if not sid or tonumber(sid) == nil then return false end
+        sid = tonumber(sid)
+        if sid <= 0 then return false end
+        -- Quick check: exact spell id present in player's book
+        if IsPlayerSpell(sid) then return true end
+
+        -- If the DB entry itself has faction/race restrictions and the player
+        -- does not match them, the spell can never be considered known.
+        if spellObj then
+            if spellObj.faction and tostring(spellObj.faction) ~= "" and spellObj.faction ~= playerFaction then
+                return false
+            end
+            if spellObj.race and tostring(spellObj.race) ~= "" and not string.find(spellObj.race, playerRace) then
+                return false
+            end
+        end
+
+        -- For class views, consult DB ranks: if player knows a DB-listed id for the same
+        -- base name with rank >= this entry's rank, consider it known. While scanning the
+        -- DB, ignore candidate entries that are not applicable to the player's faction/race.
+        if isClassView and spellObj and tonumber(spellObj.rank) then
+            local dbRank = tonumber(spellObj.rank) or 0
+            -- Prefer group-based matching when available
+            if spellObj.group and tostring(spellObj.group) ~= "" then
+                local known = getHighestKnownRankForGroup(spellObj.group, spellObj)
+                if known and known >= dbRank then return true end
+            end
+            -- Fallback to name-based matching
+            if spellObj.name and tostring(spellObj.name) ~= "" then
+                local known = getHighestKnownRankForSpellName(spellObj.name, spellObj)
+                if known and known >= dbRank then return true end
+            end
+        end
+        return false
+    end
+
+    -- Helper: return highest known rank (numeric) for a given spell name by scanning the
+    -- active database and checking `IsPlayerSpell` on DB ids. Returns nil if none known.
+    getHighestKnownRankForSpellName = function(spellName, targetSpell)
+        if not spellName or tostring(spellName) == "" then return nil end
+        -- If the DB entry being evaluated has faction/race restrictions and the player
+        -- does not match them, do not treat similarly-named spells as known.
+        if targetSpell then
+            if targetSpell.faction and tostring(targetSpell.faction) ~= "" and targetSpell.faction ~= playerFaction then
+                return nil
+            end
+            if targetSpell.race and tostring(targetSpell.race) ~= "" and not string.find(targetSpell.race, playerRace) then
+                return nil
+            end
+        end
+        local db = TFG and TFG.activeDatabase
+        if type(db) ~= "table" then return nil end
+        local highest = nil
+        for _, spells in pairs(db) do
+            if type(spells) == "table" then
+                for _, s in ipairs(spells or {}) do
+                    if s and s.name and tostring(s.name) == tostring(spellName) and s.id then
+                        local skip = false
+                        -- If targetSpell has faction/race restrictions, require candidates to match
+                        -- those restrictions as well (avoid mixing cross-faction entries).
+                        if targetSpell then
+                            if targetSpell.faction and tostring(targetSpell.faction) ~= "" then
+                                if s.faction and tostring(s.faction) ~= "" and s.faction ~= targetSpell.faction then skip = true end
+                                if (not s.faction or tostring(s.faction) == "") and targetSpell.faction ~= playerFaction then skip = true end
+                            end
+                            if targetSpell.race and tostring(targetSpell.race) ~= "" then
+                                if s.race and tostring(s.race) ~= "" and not string.find(s.race, targetSpell.race) then skip = true end
+                                if (not s.race or tostring(s.race) == "") and not string.find(targetSpell.race, playerRace) then skip = true end
+                            end
+                        end
+
+                        -- Also skip candidates that are not applicable to this player.
+                        if s.faction and tostring(s.faction) ~= "" and s.faction ~= playerFaction then
+                            skip = true
+                        end
+                        if s.race and tostring(s.race) ~= "" and not string.find(s.race, playerRace) then
+                            skip = true
+                        end
+
+                        if not skip then
+                            local sid = tonumber(s.id) or nil
+                            if sid and sid > 0 and IsPlayerSpell(sid) then
+                                local sr = tonumber(s.rank) or 0
+                                if not highest or sr > highest then highest = sr end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+        return highest
+    end
+
+    -- Helper: return highest known rank (numeric) for a given group key by scanning the
+    -- active database and checking `IsPlayerSpell` on DB ids. Returns nil if none known.
+    getHighestKnownRankForGroup = function(groupKey, targetSpell)
+        if not groupKey or tostring(groupKey) == "" then return nil end
+        local db = TFG and TFG.activeDatabase
+        if type(db) ~= "table" then return nil end
+        local highest = nil
+        for _, spells in pairs(db) do
+            if type(spells) == "table" then
+                for _, s in ipairs(spells or {}) do
+                    if s and s.group and tostring(s.group) == tostring(groupKey) and s.id then
+                        local skip = false
+                        -- Respect targetSpell restrictions when provided
+                        if targetSpell then
+                            if targetSpell.faction and tostring(targetSpell.faction) ~= "" then
+                                if s.faction and tostring(s.faction) ~= "" and s.faction ~= targetSpell.faction then skip = true end
+                                if (not s.faction or tostring(s.faction) == "") and targetSpell.faction ~= playerFaction then skip = true end
+                            end
+                            if targetSpell.race and tostring(targetSpell.race) ~= "" then
+                                if s.race and tostring(s.race) ~= "" and not string.find(s.race, targetSpell.race) then skip = true end
+                                if (not s.race or tostring(s.race) == "") and not string.find(targetSpell.race, playerRace) then skip = true end
+                            end
+                        end
+
+                        -- Also skip candidates that are not applicable to this player.
+                        if s.faction and tostring(s.faction) ~= "" and s.faction ~= playerFaction then
+                            skip = true
+                        end
+                        if s.race and tostring(s.race) ~= "" and not string.find(s.race, playerRace) then
+                            skip = true
+                        end
+
+                        if not skip then
+                            local sid = tonumber(s.id) or nil
+                            if sid and sid > 0 and IsPlayerSpell(sid) then
+                                local sr = tonumber(s.rank) or 0
+                                if not highest or sr > highest then highest = sr end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+        return highest
+    end
     -- Show the Known checkbox for non-profession views, or for profession views
     -- only when the player actually has that profession. For class views,
     -- hide the Known checkbox unless the selected class matches the player's
@@ -1473,7 +1616,7 @@ function frame:Relayout()
                     -- DeprecatedSpellBook's IsPlayerSpell errors on nil.
                     local sid = spell and tonumber(spell.id)
                     if sid and sid > 0 then
-                        if IsPlayerSpell(sid) then hide = true end
+                        if isSpellKnownDBAware(sid, spell) then hide = true end
                     end
                     -- Special-case: Riding is modelled as a profession-like skill.
                     if TFG and TFG.RIDING_TBC and TFG.activeDatabase == TFG.RIDING_TBC then
@@ -1492,14 +1635,29 @@ function frame:Relayout()
                 for _, s in ipairs(row.spells or {}) do
                     if s and tonumber(s.id) then sid = tonumber(s.id); break end
                 end
-                if playerSkill >= levelRequired or (sid and sid > 0 and IsPlayerSpell(sid)) then
+                if playerSkill >= levelRequired or (sid and sid > 0 and isSpellKnownDBAware(sid, row)) then
                     hide = true
                 end
             end
             if (not TFG.showKnown and not TFG.isSkill) then
                 local sid = spell and tonumber(spell.id)
-                if sid and sid > 0 and IsPlayerSpell(sid) then
-                    hide = true
+                if sid and sid > 0 then
+                    -- For class views, prefer DB-driven rank checks: if the DB lists multiple
+                    -- ranks for this ability, determine the highest rank the player actually
+                    -- knows by checking the DB ids and only hide when player's known rank
+                    -- >= this DB entry's rank. Fallback to IsPlayerSpell when no DB rank exists.
+                    if isClassView and spell and spell.name and tonumber(spell.rank) then
+                        local dbRank = tonumber(spell.rank) or 0
+                        local known = getHighestKnownRankForSpellName(spell.name, spell)
+                        if known and known >= dbRank then
+                            hide = true
+                        else
+                            -- fallback: if the exact id is present in spellbook
+                            if isSpellKnownDBAware(sid, spell) then hide = true end
+                        end
+                    else
+                        if isSpellKnownDBAware(sid, spell) then hide = true end
+                    end
                 end
             end
 
@@ -1605,9 +1763,9 @@ function frame:Relayout()
                     local skillKey = resolveSelectedSkillKey()
                     local playerSkill = tonumber(skillLevels[skillKey] or 0) or 0
                     local sid = spell and tonumber(spell.id) or 0
-                    if playerSkill >= levelRequired or (sid > 0 and IsPlayerSpell(sid)) then hide = true end
+                    if playerSkill >= levelRequired or (sid > 0 and isSpellKnownDBAware(sid, row)) then hide = true end
                 end
-                if (not TFG.showKnown and not TFG.isSkill and not isProfession and IsPlayerSpell(spell.id)) then hide = true end
+                if (not TFG.showKnown and not TFG.isSkill and not isProfession and isSpellKnownDBAware(spell.id, spell)) then hide = true end
 
                 if (not hide and isProfession and TFG.selectedCategory and TFG.selectedCategory ~= "ALL") then
                     if TFG.selectedCategory == "DISCOVERIES" then
@@ -1678,8 +1836,19 @@ function frame:Relayout()
                         -- Otherwise, treat as a known spell if IsPlayerSpell returns true for its id.
                         local sid = sp and tonumber(sp.id) or nil
                         if sid and sid > 0 then
+                            -- Class views: consult DB ranks first (only hide lower ranks when
+                            -- player actually knows an equal-or-higher rank). For other views,
+                            -- fall back to IsPlayerSpell.
+                            if isClassView and sp and sp.name and tonumber(sp.rank) then
+                                local dbRank = tonumber(sp.rank) or 0
+                                local known = getHighestKnownRankForSpellName(sp.name, sp)
+                                if known and known >= dbRank then
+                                    return true
+                                end
+                                return isSpellKnownDBAware(sid, sp)
+                            end
                             -- Guard IsPlayerSpell against nil/invalid ids (we checked above).
-                            return IsPlayerSpell(sid)
+                                return isSpellKnownDBAware(sid, sp)
                         end
                         return false
                     end
