@@ -52,14 +52,29 @@ local function PrintTimberAddons()
     
     -- Timber's Field Guide (this addon)
     print("    [Timber's Field Guide] - /tfg")
+    -- Safe addon-loaded check (guard APIs that may not exist yet)
+    local function isAddonLoaded(name)
+        if type(name) ~= "string" then return false end
+        if C_AddOns and C_AddOns.IsAddOnLoaded then
+            return C_AddOns.IsAddOnLoaded(name)
+        end
+        if type(IsAddOnLoaded) == "function" then
+            return IsAddOnLoaded(name)
+        end
+        if type(GetAddOnInfo) == "function" then
+            local enabled = select(4, GetAddOnInfo(name))
+            return enabled and true or false
+        end
+        return false
+    end
 
     -- Timber's Raid Summoner (optional addon)
-    if C_AddOns.IsAddOnLoaded("TimbersRaidSummoner") then
+    if isAddonLoaded("TimbersRaidSummoner") then
         print("    [Timber's Raid Summoner] - /trs")
     end
 
-    -- Timber's Field Guide (optional addon)
-    if C_AddOns.IsAddOnLoaded("TimbersPartyDing") then
+    -- Timber's Party Ding (optional addon)
+    if isAddonLoaded("TimbersPartyDing") then
         print("    [Timber's Party Ding] - /tpd")
     end
 end

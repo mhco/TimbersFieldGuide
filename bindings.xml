@@ -1,5 +1,5 @@
 <Bindings>
   <Binding name="TIMBERSFIELDGUIDE_TOGGLE" header="TIMBERSFIELDGUIDE" category="ADDONS">
-    DEFAULT_CHAT_FRAME.editBox:SetText("/tfg") ChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox, 0)
+    TimbersFieldGuide_Toggle()
   </Binding>
 </Bindings>

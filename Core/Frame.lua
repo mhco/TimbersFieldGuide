@@ -65,3 +65,17 @@ title:SetText(TFG.NAME .. " " .. TFG.VERSION)
 local close = CreateFrame("Button", nil, titleBar, "UIPanelCloseButton")
 close:SetPoint("RIGHT", -4, 0)
 close:SetScript("OnClick", function() frame:Hide() end)
+
+
+-- Public toggle used by keybindings: mirrors the minimap left-click behavior.
+_G.TimbersFieldGuide_Toggle = function()
+    if not TFG or not TFG.frame then return end
+    if TFG.frame:IsShown() then
+        TFG.frame:Hide()
+    else
+        if TFG.frame.Relayout then
+            TFG.frame:Relayout()
+        end
+        TFG.frame:Show()
+    end
+end
