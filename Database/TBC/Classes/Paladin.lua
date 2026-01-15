@@ -76,13 +76,6 @@ TFG.PALADIN_TBC = {
             ["cost"] = 100,
             ["texture"] = "Interface/ICONS/spell_holy_holybolt"
         },
-        [3] = {
-            ["id"] = 21183,
-            ["name"] = "Judgement of the Crusader",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/spell_holy_holysmite"
-        },
         [4] = {
             ["id"] = 21082,
             ["name"] = "Seal of the Crusader",
@@ -439,16 +432,18 @@ TFG.PALADIN_TBC = {
         },
         [8] = {
             ["id"] = 13819,
-            ["name"] = "Draenei",
+            ["name"] = "Summon Warhorse",
             ["rank"] = 0,
             ["cost"] = 10000,
+            ["race"] = "Human, Dwarf, Draenei",
             ["texture"] = "Interface/ICONS/spell_nature_swiftness"
         },
         [9] = {
             ["id"] = 34769,
-            ["name"] = "Blood Elf",
+            ["name"] = "Summon Warhorse",
             ["rank"] = 0,
             ["cost"] = 10000,
+            ["race"] = "Blood Elf",
             ["texture"] = "Interface/ICONS/spell_nature_swiftness"
         },
     },
@@ -1138,16 +1133,18 @@ TFG.PALADIN_TBC = {
         },
         [23] = {
             ["id"] = 23214,
-            ["name"] = "Draenei",
+            ["name"] = "Summon Charger",
             ["rank"] = 0,
             ["cost"] = 0,
+            ["race"] = "Human, Dwarf, Draenei",
             ["texture"] = "Interface/ICONS/ability_mount_charger"
         },
         [24] = {
             ["id"] = 34767,
-            ["name"] = "Blood Elf",
+            ["name"] = "Summon Charger",
             ["rank"] = 0,
             ["cost"] = 0,
+            ["race"] = "Blood Elf",
             ["texture"] = "Interface/ICONS/ability_mount_charger"
         },
     },

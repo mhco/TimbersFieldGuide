@@ -19,7 +19,7 @@ TFG.DRUID_TBC = {
         {id=5186, name="Healing Touch", cost=200, rank=2, texture="Interface/ICONS/spell_nature_healingtouch"},
     },
     [10] = {
-        {id=5487, name="Bear Form", cost=0, rank=0, texture="Interface/ICONS/ability_racial_bearform"},
+        {id=5487, name="Bear Form", cost=0, rank=0, texture="Interface/ICONS/ability_racial_bearform", group="bear_form"},
         {id=99, name="Demoralizing Roar", cost=300, rank=1, texture="Interface/ICONS/ability_druid_demoralizingroar"},
         {id=6795, name="Growl", cost=0, rank=0, texture="Interface/ICONS/ability_physical_taunt"},
         {id=5232, name="Mark of the Wild", cost=300, rank=2, texture="Interface/ICONS/spell_nature_regeneration"},
@@ -149,9 +149,9 @@ TFG.DRUID_TBC = {
         {id=6780, name="Wrath", cost=12000, rank=6, texture="Interface/ICONS/spell_nature_abolishmagic"},
     },
     [40] = {
-        {id=24975, name="Insect Swarm", cost=700, rank=3, texture="Interface/ICONS/spell_nature_insectswarm", talent = 5570},
+        {id=24975, name="Insect Swarm", cost=700, rank=3, texture="Interface/ICONS/spell_nature_insectswarm", talent=5570},
         {id=9000, name="Cower", cost=14000, rank=2, texture="Interface/ICONS/ability_druid_cower"},
-        {id=9634, name="Dire Bear Form", cost=14000, rank=0, texture="Interface/ICONS/ability_racial_bearform"},
+        {id=9634, name="Dire Bear Form", cost=14000, rank=0, texture="Interface/ICONS/ability_racial_bearform", group="bear_form"},
         {id=20719, name="Feline Grace", cost=14000, rank=0, texture="Interface/ICONS/inv_feather_01"},
         {id=22827, name="Ferocious Bite", cost=14000, rank=2, texture="Interface/ICONS/ability_druid_ferociousbite"},
         {id=16914, name="Hurricane", cost=14000, rank=1, texture="Interface/ICONS/spell_nature_cyclone"},

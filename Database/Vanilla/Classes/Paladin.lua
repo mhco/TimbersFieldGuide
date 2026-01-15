@@ -531,6 +531,7 @@ TFG.PALADIN_VANILLA = {
             ["rank"] = 1,
             ["cost"] = 0,
             ["texture"] = "Interface/ICONS/spell_nature_swiftness",
+            ["race"] = "Human, Dwarf",
             ["id"] = 13819
         },
         [6] = {
@@ -980,6 +981,7 @@ TFG.PALADIN_VANILLA = {
             ["rank"] = 1,
             ["cost"] = 0,
             ["texture"] = "Interface/ICONS/ability_mount_charger",
+            ["race"] = "Human, Dwarf",
             ["id"] = 23214
         },
         [10] = {
