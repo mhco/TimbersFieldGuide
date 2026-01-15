@@ -1825,6 +1825,16 @@ function frame:Relayout()
                         icon.tfgKnownOverlay = ov
                     end
 
+                    -- Red-state overlay (semi-transparent red) for user-marked unlearned abilities.
+                    if not icon.tfgRedOverlay then
+                        local rov = content:CreateTexture(nil, "OVERLAY")
+                        rov:SetPoint("TOPLEFT", icon, "TOPLEFT", 0, 0)
+                        rov:SetPoint("BOTTOMRIGHT", icon, "BOTTOMRIGHT", 0, 0)
+                        rov:SetColorTexture(1, 0, 0, 0.6)
+                        rov:Hide()
+                        icon.tfgRedOverlay = rov
+                    end
+
                     -- Determine if this entry is "known" for the player.
                     local function entryIsKnown(sp)
                         if not sp then return false end
@@ -1853,24 +1863,74 @@ function frame:Relayout()
                         return false
                     end
 
+                    -- Persisted red marks table
+                    TimbersFieldGuideDB = TimbersFieldGuideDB or {}
+                    TimbersFieldGuideDB.redMarked = TimbersFieldGuideDB.redMarked or {}
+
                     if entryIsKnown(spell) then
                         icon.tfgKnownOverlay:Show()
+                        -- If the spell became known, clear any previously set red mark
+                        if spell and spell.id then
+                            TimbersFieldGuideDB.redMarked[tostring(spell.id)] = nil
+                            if icon.tfgRedOverlay then icon.tfgRedOverlay:Hide() end
+                        end
                     else
                         icon.tfgKnownOverlay:Hide()
+                        -- Show red overlay if user previously marked this unlearned ability
+                        if spell and spell.id and TimbersFieldGuideDB.redMarked[tostring(spell.id)] then
+                            icon.tfgRedOverlay:Show()
+                        else
+                            icon.tfgRedOverlay:Hide()
+                        end
                     end
 
                     icon:SetScript("OnMouseDown", function(self, button)
-                        if button ~= "LeftButton" then return end
-                        if not isProfessionView() then return end
+                        if button == "LeftButton" then
+                            if not isProfessionView() then return end
 
-                        -- Rank unlock rows are informational; no popup.
-                        if self.spellData and self.spellData._tfgType == "PROFESSION_RANK_UNLOCK" then
+                            -- Rank unlock rows are informational; no popup.
+                            if self.spellData and self.spellData._tfgType == "PROFESSION_RANK_UNLOCK" then
+                                return
+                            end
+
+                            local data = self.spellData
+                            local popup = ensureProfessionPopup()
+                            popup:ShowForSpell(self, data)
                             return
                         end
 
-                        local data = self.spellData
-                        local popup = ensureProfessionPopup()
-                        popup:ShowForSpell(self, data)
+                        -- Right-click: allow marking unlearned class abilities with a red overlay.
+                        if button == "RightButton" then
+                            -- Only apply to class views (not professions/skills) and only for spell entries
+                            if not isClassView then return end
+                            local sp = self.spellData
+                            if not sp or not sp.id then return end
+                            local sid = tonumber(sp.id) or nil
+                            if not sid or sid <= 0 then return end
+
+                            -- Only allow marking if the entry is currently not known
+                            if entryIsKnown(sp) then
+                                -- If it is known, ensure red mark removed
+                                TimbersFieldGuideDB = TimbersFieldGuideDB or {}
+                                TimbersFieldGuideDB.redMarked = TimbersFieldGuideDB.redMarked or {}
+                                TimbersFieldGuideDB.redMarked[tostring(sid)] = nil
+                                if self.tfgRedOverlay then self.tfgRedOverlay:Hide() end
+                                return
+                            end
+
+                            TimbersFieldGuideDB = TimbersFieldGuideDB or {}
+                            TimbersFieldGuideDB.redMarked = TimbersFieldGuideDB.redMarked or {}
+                            local key = tostring(sid)
+                            if TimbersFieldGuideDB.redMarked[key] then
+                                -- Toggle off
+                                TimbersFieldGuideDB.redMarked[key] = nil
+                                if self.tfgRedOverlay then self.tfgRedOverlay:Hide() end
+                            else
+                                -- Toggle on
+                                TimbersFieldGuideDB.redMarked[key] = true
+                                if self.tfgRedOverlay then self.tfgRedOverlay:Show() end
+                            end
+                        end
                     end)
 
                     icon:SetScript("OnEnter", function(self)
