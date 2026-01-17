@@ -1,11 +1,11 @@
 local _, TFG = ...
 
 TFG.RIDING_TBC = {
-    [75] = {
+    [30] = {
         {
             ["id"] = 33388,
             ["name"] = "Riding",
-            ["category"] = "Profession Training",
+            ["rank"] = 1,
             ["texture"] = "Interface/ICONS/spell_nature_swiftness",
             ["source"] = {
                 ["type"] = "trainer",
@@ -13,11 +13,11 @@ TFG.RIDING_TBC = {
             },
         }
     },
-    [150] = {
+    [60] = {
         {
             ["id"] = 33391,
             ["name"] = "Riding",
-            ["category"] = "Profession Training",
+            ["rank"] = 2,
             ["texture"] = "Interface/ICONS/spell_nature_swiftness",
             ["source"] = {
                 ["type"] = "trainer",
@@ -25,23 +25,21 @@ TFG.RIDING_TBC = {
             },
         }
     },
-    [225] = {
+    [70] = {
         {
             ["id"] = 34090,
             ["name"] = "Riding",
-            ["category"] = "Profession Training",
+            ["rank"] = 3,
             ["texture"] = "Interface/ICONS/spell_nature_swiftness",
             ["source"] = {
                 ["type"] = "trainer",
                 ["cost"] = 8000000,
             },
         },
-    },
-    [300] = {
         {
             ["id"] = 34091,
             ["name"] = "Riding",
-            ["category"] = "Profession Training",
+            ["rank"] = 4,
             ["texture"] = "Interface/ICONS/spell_nature_swiftness",
             ["source"] = {
                 ["type"] = "trainer",
@@ -49,4 +47,9 @@ TFG.RIDING_TBC = {
             },
         }
     }
+}
+
+-- Metadata for skill-view rendering: group entries by the numeric table keys (training level thresholds).
+TFG.RIDING_TBC.__CONFIG = {
+    mode = "level",       -- treat this file as level-grouped skill view
 }

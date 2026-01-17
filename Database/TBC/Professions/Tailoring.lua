@@ -12,30 +12,6 @@ TFG.TAILORING_TBC = {
             ["phase"] = 1
         },
         {
-            ["id"] = 26797,
-            ["name"] = "Spellfire Tailoring",
-            ["rank"] = 0,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/spell_holy_blessingofprotection",
-            ["phase"] = 1
-        },
-        {
-            ["id"] = 26798,
-            ["name"] = "Mooncloth Tailoring",
-            ["rank"] = 0,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/inv_fabric_moonrag_01",
-            ["phase"] = 1
-        },
-        {
-            ["id"] = 26801,
-            ["name"] = "Shadoweave Tailoring",
-            ["rank"] = 0,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/inv_fabric_felrag",
-            ["phase"] = 1
-        },
-        {
             ["id"] = 2387,
             ["name"] = "Linen Cloak",
             ["rank"] = 0,
@@ -1465,6 +1441,15 @@ TFG.TAILORING_TBC = {
     },
     [275] = {
         {
+            ["id"] = 26790,
+            ["name"] = "Tailoring", -- Master
+            ["category"] = "Profession Training",
+            ["rank"] = 0,
+            ["cost"] = 100000,
+            ["texture"] = "Interface/ICONS/trade_tailoring",
+            ["phase"] = 1
+        },
+        {
             ["id"] = 18416,
             ["name"] = "Ghostweave Vest",
             ["rank"] = 0,
@@ -1518,15 +1503,6 @@ TFG.TAILORING_TBC = {
             ["rank"] = 0,
             ["cost"] = 0,
             ["texture"] = "Interface/ICONS/inv_misc_cape_18",
-            ["phase"] = 1
-        },
-        {
-            ["id"] = 26790,
-            ["name"] = "Tailoring", -- Master
-            ["category"] = "Profession Training",
-            ["rank"] = 0,
-            ["cost"] = 100000,
-            ["texture"] = "Interface/ICONS/trade_tailoring",
             ["phase"] = 1
         },
         {
