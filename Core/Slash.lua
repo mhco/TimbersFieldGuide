@@ -42,45 +42,34 @@ SlashCmdList["TFG"] = function(msg)
     end
 end
 
--- ========================================================================
--- Slash commands: /timber and /timbers
--- Prints a list of Timber's addons that are loaded for this character.
--- ========================================================================
-
-local function PrintTimberAddons()
-    print("|cFF00FF00Timber's Addon Slash Commands:|r")
-    
-    -- Timber's Field Guide (this addon)
-    print("    [Timber's Field Guide] - /tfg")
-    -- Safe addon-loaded check (guard APIs that may not exist yet)
-    local function isAddonLoaded(name)
-        if type(name) ~= "string" then return false end
-        if C_AddOns and C_AddOns.IsAddOnLoaded then
-            return C_AddOns.IsAddOnLoaded(name)
+-- Register a handler
+if TIMBER_BROADCAST and TIMBER_BROADCAST.Register then
+    TIMBER_BROADCAST.Register("TimbersFieldGuide", function(msg)
+        msg = (msg or ""):match("^%s*(.-)%s*$") -- trim
+        if msg == "" or msg == "help" then
+            print("TimbersFieldGuide: Usage: /tfg  — show/hide guild roster")
+            return
         end
-        if type(IsAddOnLoaded) == "function" then
-            return IsAddOnLoaded(name)
-        end
-        if type(GetAddOnInfo) == "function" then
-            local enabled = select(4, GetAddOnInfo(name))
-            return enabled and true or false
-        end
-        return false
-    end
-
-    -- Timber's Raid Summoner (optional addon)
-    if isAddonLoaded("TimbersRaidSummoner") then
-        print("    [Timber's Raid Summoner] - /trs")
-    end
-
-    -- Timber's Party Ding (optional addon)
-    if isAddonLoaded("TimbersPartyDing") then
-        print("    [Timber's Party Ding] - /tpd")
-    end
+    end)
 end
 
-SlashCmdList["TIMBER_LIST"] = function(msg)
-    PrintTimberAddons()
+-- Unregister when unloading or disabling (deferred to unload event)
+do
+    local ev = CreateFrame("Frame")
+    -- Some clients (older/classic builds) do not expose ADDON_UNLOADED.
+    -- Guard RegisterEvent with pcall to avoid runtime errors.
+    local registered = pcall(function() ev:RegisterEvent("ADDON_UNLOADED") end)
+    if registered then
+        ev:SetScript("OnEvent", function(_, event, addonName)
+            if event == "ADDON_UNLOADED" and addonName == "TimbersFieldGuide" then
+                if TIMBER_BROADCAST and TIMBER_BROADCAST.Unregister then
+                    TIMBER_BROADCAST.Unregister("TimbersFieldGuide")
+                end
+                ev:UnregisterAllEvents()
+            end
+        end)
+    else
+        -- Fallback: skip unregister on unload for clients without the event.
+        -- The broadcast registration will remain for the session; this is safe.
+    end
 end
-SLASH_TIMBER_LIST1 = "/timber"
-SLASH_TIMBER_LIST2 = "/timbers"
