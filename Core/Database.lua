@@ -62,6 +62,13 @@ TFG.DATABASE_FILES = {
                     name = "Rogue",
                     color = TFG.CLASS_COLORS["ROGUE"],
                     file = TFG.ROGUE_VANILLA,
+                    children = {
+                        {
+                            name = "Poisons",
+                            sortOrder = 1,
+                            file = TFG.ROGUE_POISONS_VANILLA,
+                        },
+                    },
                 },
                 shaman = {
                     name = "Shaman",
@@ -86,32 +93,41 @@ TFG.DATABASE_FILES = {
                     file = TFG.WARRIOR_VANILLA,
                 },
             },
-            professions = {
-                name = "Professions",
-                children = {
-                    {name = "Alchemy", file = {}},
-                    {name = "Blacksmithing", file = {}},
-                    {name = "Cooking", file = {}},
-                    {name = "Enchanting", file = {}},
-                    {name = "Engineering", file = {}},
-                    {name = "First Aid", file = {}},
-                    {name = "Fishing", file = {}},
-                    {name = "Herbalism", file = {}},
-                    {name = "Leatherworking", file = {}},
-                    {name = "Mining", file = {}},
-                    {name = "Skinning", file = {}},
-                    {name = "Tailoring", file = {}},
-                },
-            },
-            --[[
             skills = {
-                name = "Professions",
-                children = {
-                    {name = "Weapons", file = {}},
+                --[[
+                professions = {
+                    name = "Professions",
+                    children = {
+                        -- Primary professions (will be sorted alphabetically in the submenu)
+                        {name = "Alchemy", file = TFG.ALCHEMY_VANILLA},
+                        {name = "Blacksmithing", file = TFG.BLACKSMITHING_VANILLA},
+                        {name = "Enchanting", file = TFG.ENCHANTING_VANILLA},
+                        {name = "Engineering", file = TFG.ENGINEERING_VANILLA},
+                        {name = "Jewelcrafting", file = TFG.JEWELCRAFTING_VANILLA},
+                        {name = "Leatherworking", file = TFG.LEATHERWORKING_VANILLA},
+                        {name = "Tailoring", file = TFG.TAILORING_VANILLA},
+                        {name = "Mining", file = TFG.MINING_VANILLA},
+                        {name = "Herbalism", file = TFG.HERBALISM_VANILLA},
+                        {name = "Skinning", file = TFG.SKINNING_VANILLA},
+                        -- Divider: secondary professions follow
+                        {name = "SecondaryProfessionsDivider", isHeader = true},
+                        -- Secondary professions (will be sorted alphabetically in the submenu)
+                        {name = "Cooking", file = TFG.COOKING_VANILLA},
+                        {name = "First Aid", file = TFG.FIRST_AID_VANILLA},
+                        {name = "Fishing", file = TFG.FISHING_VANILLA},
+                    },
+                },
+                --]]
+                skills = {
+                    name = "Skills",
+                    children = {
+                        -- {name = "Riding", file = TFG.RIDING_VANILLA},
+                        {name = "Weapon Skills", file = TFG.WEAPON_SKILLS_VANILLA},
+                        -- additional non-profession skills can be added here
+                    },
                 },
             },
-            --]]
-        },
+        }
     },
     TBC = {
         name = "TBC",
@@ -212,6 +228,7 @@ TFG.DATABASE_FILES = {
                     name = "Skills",
                     children = {
                         {name = "Riding", file = TFG.RIDING_TBC},
+                        {name = "Weapon Skills", file = TFG.WEAPON_SKILLS_TBC},
                         -- additional non-profession skills can be added here
                     },
                 },
@@ -233,14 +250,24 @@ function TFG.GenerateRows(database)
     local rows = {}
 
     for level, spells in pairs(database or {}) do
-        rows[#rows + 1] = {
-            label  = "Level " .. level,
-            spells = spells,
-        }
+        -- Only include numeric buckets; ignore metadata keys like __CONFIG.
+        local n = tonumber(tostring(level))
+        if n and n > 0 then
+            rows[#rows + 1] = { label = "Level " .. tostring(n), spells = spells }
+        elseif tostring(level) == "999" or tonumber(tostring(level)) == 999 then
+            -- Special Discoveries bucket
+            rows[#rows + 1] = { label = "Discoveries", spells = spells }
+        end
     end
 
     table.sort(rows, function(a, b)
-        return tonumber(a.label:match("%d+")) < tonumber(b.label:match("%d+"))
+        local function keyVal(r)
+            if not r or not r.label then return 0 end
+            if r.label == "Discoveries" then return 999 end
+            local m = tostring(r.label):match("%d+")
+            return tonumber(m) or 0
+        end
+        return keyVal(a) < keyVal(b)
     end)
 
     return rows

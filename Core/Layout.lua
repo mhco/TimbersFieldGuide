@@ -224,23 +224,46 @@ local function extractCategoriesFromDatabase(database)
     return list
 end
 
+-- Forward-declare category click handler so the dropdown can reference it when initialized.
+local OnClickCategory
+
 local function populateCategoryDropdown()
     if not isProfessionView() then
         categoryDropdown:SetShown(false)
         return
     end
 
-    categoryDropdown:SetShown(true)
     local categories = extractCategoriesFromDatabase(TFG.activeDatabase)
-
-    local function OnClickCategory(self)
-        TFG.selectedCategory = self.value
-        UIDropDownMenu_SetSelectedValue(categoryDropdown, self.value)
-        UIDropDownMenu_SetText(categoryDropdown, self.value == "ALL" and "All Categories" or self.value)
-        safeCloseProfessionPopup()
-        frame:Relayout()
+    -- Debug: report categories and DB type to assist diagnosing dropdown issues
+    -- Debug output disabled. To re-enable, restore the block below.
+    --[[
+    do
+        local dbg = "POPULATE CATEGORY: dbType=" .. tostring(type(TFG.activeDatabase)) .. " selectedFile=" .. tostring(TFG.selectedFile)
+        if categories and type(categories) == "table" then
+            dbg = dbg .. " categoriesCount=" .. tostring(#categories) .. " list=" .. table.concat(categories, ", ")
+        else
+            dbg = dbg .. " categories=nil"
+        end
+        if _G and _G.DebugWindow and type(_G.DebugWindow.Append) == "function" then pcall(_G.DebugWindow.Append, _G.DebugWindow, dbg) else if _G and type(_G.DEFAULT_CHAT_FRAME) == "table" and type(_G.DEFAULT_CHAT_FRAME.AddMessage) == "function" then _G.DEFAULT_CHAT_FRAME:AddMessage(dbg) else print(dbg) end end
+    end
+    ]]
+    if not categories then
+        categoryDropdown:SetShown(false)
+        return
     end
 
+    -- Count real categories (exclude the default ALL entry). Only show the
+    -- dropdown when there is more than one real category (user-visible).
+    local realCount = 0
+    for _, c in ipairs(categories) do
+        if tostring(c) ~= "ALL" then realCount = realCount + 1 end
+    end
+    if realCount <= 1 then
+        categoryDropdown:SetShown(false)
+        return
+    end
+
+    categoryDropdown:SetShown(true)
     UIDropDownMenu_Initialize(categoryDropdown, function()
         for _, c in ipairs(categories) do
             local info = UIDropDownMenu_CreateInfo()
@@ -741,7 +764,36 @@ local function populateFileDropdown(initialRun)
         if enemySpellsCheck then enemySpellsCheck:SetChecked(false) end
     end
 
+    -- Central debug output helper: disabled by default. To re-enable, restore original function.
+    local function sendMsg(m)
+        -- no-op
+        return
+    end
+
+    -- Debug connect test disabled. To re-enable, restore the pcall block that appends to DebugWindow.
+    -- pcall(function()
+    --     if _G and _G.DebugWindow and type(_G.DebugWindow.Append) == "function" then
+    --         _G.DebugWindow:Append("TFG: Debug window connected via sendMsg")
+    --     end
+    -- end)
+
     local function OnClickLeaf(self)
+        -- Debug: report clicks on Riding / Weapon Skills so user can confirm the click fired
+
+        local selVal = tostring(self.value or "")
+        local parentKey, childIndex = string.match(selVal, "^(.+)::(%d+)$")
+        local childName = nil
+        if parentKey and childIndex then
+            local parent = classesMap[parentKey] or skillsMap[parentKey]
+            local idx = tonumber(childIndex)
+            if parent and parent.children and parent.children[idx] and parent.children[idx].name then
+                childName = parent.children[idx].name
+            end
+        end
+        if childName and (childName == "Riding" or childName == "Weapon Skills") then
+            sendMsg("TFG: Dropdown click detected: " .. childName .. " (value=" .. selVal .. ")")
+        end
+
         TFG.selectedFile = self.value
         -- Don't rely on self.text/self.displayText as Blizzard sometimes clears these across levels.
         updateClassDropdownTextFromSelection()
@@ -749,6 +801,26 @@ local function populateFileDropdown(initialRun)
         safeCloseProfessionPopup()
         resetFilters()
         TFG.LoadDatabase(TFG.selectedFile, TFG.selectedExpansion)
+    end
+
+    OnClickCategory = function(self)
+        if not self then return end
+        local val = tostring(self.value or "ALL")
+        -- Debug: log category clicks
+        local dbg = "CLICK CATEGORY: value=" .. tostring(val) .. " selectedFile=" .. tostring(TFG.selectedFile)
+        if _G and _G.DebugWindow and type(_G.DebugWindow.Append) == "function" then pcall(_G.DebugWindow.Append, _G.DebugWindow, dbg) else if _G and type(_G.DEFAULT_CHAT_FRAME) == "table" and type(_G.DEFAULT_CHAT_FRAME.AddMessage) == "function" then _G.DEFAULT_CHAT_FRAME:AddMessage(dbg) else print(dbg) end end
+        TFG.selectedCategory = val
+        if val == "ALL" then
+            UIDropDownMenu_SetText(categoryDropdown, "All Categories")
+        elseif val == "DISCOVERIES" then
+            UIDropDownMenu_SetText(categoryDropdown, "Discoveries")
+        else
+            UIDropDownMenu_SetText(categoryDropdown, val)
+        end
+        UIDropDownMenu_SetSelectedValue(categoryDropdown, TFG.selectedCategory)
+        CloseDropDownMenus()
+        safeCloseProfessionPopup()
+        frame:Relayout()
     end
 
     UIDropDownMenu_Initialize(classDropdown, function(self, level, menuList)
@@ -1064,6 +1136,8 @@ function frame:Relayout()
     local selectedParentUpper = selectedParentKey and (selectedParentKey:upper()) or nil
     local isClassView = (not isProfession) and (not TFG.isSkill)
 
+    
+
     -- forward-declare DB helper so it can be referenced by other locals
     local getHighestKnownRankForSpellName
 
@@ -1072,7 +1146,9 @@ function frame:Relayout()
         sid = tonumber(sid)
         if sid <= 0 then return false end
         -- Quick check: exact spell id present in player's book
-        if IsPlayerSpell(sid) then return true end
+        if IsPlayerSpell(sid) then
+            return true
+        end
 
         -- If the DB entry itself has faction/race restrictions and the player
         -- does not match them, the spell can never be considered known.
@@ -1101,6 +1177,14 @@ function frame:Relayout()
                 if known and known >= dbRank then return true end
             end
         end
+        -- If we reached here, nothing matched
+        local result = false
+        -- Re-run final tests to determine return value (preserve original behavior)
+        -- For class views, rank/name/group matching may have already returned true above.
+        -- Default to false.
+        -- Debugging: if this is a skill view and we would consider it known without
+        -- IsPlayerSpell being true, log details to help diagnose false-positives.
+        -- Note: this will only print when a positive result would be returned earlier.
         return false
     end
 
@@ -1242,9 +1326,11 @@ function frame:Relayout()
         knownLabel:SetText("Known Abilities")
     end
 
-    -- Position knownCheck differently when showing a profession category dropdown
-    -- only when the player has that profession (so category dropdown matters).
-    if isProfession and hasProfession then
+    -- Position knownCheck differently when showing a profession category dropdown.
+    -- Use the categoryDropdown's visible width rather than relying on whether
+    -- the player has the profession so Riding (and other skill-mode views)
+    -- position the Known checkbox consistently next to the class dropdown.
+    if isProfession and categoryDropdown and categoryDropdown:IsShown() then
         knownCheck:SetPoint("RIGHT", classDropdown, "LEFT", -categoryDropdown:GetWidth() - 100, 2)
     else
         knownCheck:SetPoint("RIGHT", classDropdown, "LEFT", -100, 2)
@@ -1353,7 +1439,11 @@ function frame:Relayout()
     -- Add rank unlock entries into the *existing* brackets so we don't create duplicate "Skill N" groups.
     -- Each unlock is represented as a synthetic pseudo-spell entry within that skill bracket.
     local function addProfessionRankUnlocksIntoRows(baseRows)
+        -- Skip for non-profession views. Also skip injecting synthetic unlocks for
+        -- the Riding dataset (it's a skills DB modelled as a profession but
+        -- should not get synthetic unlock entries which would hide the raw spells).
         if not isProfession then return baseRows end
+        if TFG and TFG.RIDING_TBC and TFG.activeDatabase == TFG.RIDING_TBC then return baseRows end
 
         local profName = getProfessionNameForCurrentView()
 
@@ -1576,7 +1666,82 @@ function frame:Relayout()
         return baseRows
     end
 
-    local rowsToRender = addProfessionRankUnlocksIntoRows(shallowCopyRows(TFG.rows))
+    -- Build rows differently for skill datasets when a per-file __CONFIG.mode is present.
+    local db = TFG.activeDatabase
+    local function buildSkillRowsFromConfig()
+        if type(db) ~= "table" then return nil end
+        local meta = db.__CONFIG or {}
+        local mode = meta.mode
+        if not mode then return nil end
+
+        -- Mode: class -> treat top-level DB keys as class buckets (player class first)
+        if mode == "class" then
+            local out = {}
+            local keys = {}
+            local playerKey = (playerClass or ""):lower()
+            if db[playerKey] then table.insert(keys, playerKey) end
+            for k, v in pairs(db) do
+                if k ~= "__CONFIG" and k ~= playerKey and type(v) == "table" then
+                    table.insert(keys, k)
+                end
+            end
+            table.sort(keys, function(a,b) return a < b end)
+            local expansionObject = TFG.DATABASE_FILES[TFG.selectedExpansion]
+            for _, k in ipairs(keys) do
+                local spells = db[k] or {}
+                local display = k
+                if expansionObject and expansionObject.files and expansionObject.files.classes and expansionObject.files.classes[k] and expansionObject.files.classes[k].name then
+                    display = expansionObject.files.classes[k].name
+                else
+                    display = (tostring(k):sub(1,1):upper() .. tostring(k):sub(2))
+                end
+                -- Use a high numeric label so existing numeric-based logic does not
+                -- treat this bucket as a level threshold. Store the human-facing
+                -- label separately for rendering.
+                table.insert(out, { label = "Level 9999", spells = spells, _tfgDisplayLabel = display, _tfgIsClassGroup = true, _tfgClassKey = k })
+            end
+            return out
+        end
+
+        -- Mode: skill -> group by a numeric required/level field on each entry
+        if mode == "skill" then
+            local byReq = {}
+            for _, bucket in pairs(db) do
+                if type(bucket) == "table" then
+                    for _, s in ipairs(bucket) do
+                        if type(s) == "table" then
+                            local req = tonumber(s.required) or tonumber(s.level) or 0
+                            byReq[req] = byReq[req] or {}
+                            table.insert(byReq[req], s)
+                        end
+                    end
+                end
+            end
+            local out = {}
+            for req, list in pairs(byReq) do
+                table.insert(out, { label = "Level " .. tostring(req), spells = list })
+            end
+            table.sort(out, function(a,b)
+                return (tonumber(a.label:match("%d+")) or 0) < (tonumber(b.label:match("%d+")) or 0)
+            end)
+            return out
+        end
+
+        return nil
+    end
+
+    local rowsToRender = nil
+    if TFG.isSkill then
+        local custom = buildSkillRowsFromConfig()
+        if custom then
+            rowsToRender = addProfessionRankUnlocksIntoRows(custom)
+        else
+            rowsToRender = addProfessionRankUnlocksIntoRows(shallowCopyRows(TFG.rows))
+        end
+    else
+        rowsToRender = addProfessionRankUnlocksIntoRows(shallowCopyRows(TFG.rows))
+    end
+
     local syntheticUnlockByBracket = rowsToRender and rowsToRender._tfgSyntheticUnlockByBracket
 
     for _, row in ipairs(rowsToRender) do
@@ -1585,6 +1750,7 @@ function frame:Relayout()
 
         for _, spell in ipairs(row.spells) do
             local hide = false
+            local hideReason = nil
 
             local isRankUnlock = (spell and spell._tfgType == "PROFESSION_RANK_UNLOCK")
             local isProfessionTraining = (isProfession and spell and spell.category == "Profession Training")
@@ -1603,25 +1769,40 @@ function frame:Relayout()
                 -- This prevents non-recipe professions like Fishing from appearing empty.
                 if syntheticUnlockByBracket and syntheticUnlockByBracket[levelRequired] then
                     hide = true
+                    hideReason = "syntheticUnlock"
                 end
             end
             if (not TFG.showKnown and isProfession) then
                 if isRankUnlock then
                     local reqAt = tonumber(spell.effectiveTrainAt) or tonumber(spell.trainAt) or 0
-                    if professionLevel >= reqAt then
+                    local unlockCap = tonumber(spell.required) or 0
+                    local trainingSpellId = tonumber(spell.trainingSpellId) or nil
+                    -- Consider the synthetic unlock learned only if the player's known
+                    -- profession cap already meets or exceeds the unlock cap, or if the
+                    -- player actually knows the training spell that grants the new cap.
+                    if (professionMaxCap and professionMaxCap > 0 and unlockCap > 0 and professionMaxCap >= unlockCap)
+                        or (trainingSpellId and trainingSpellId > 0 and IsPlayerSpell(trainingSpellId)) then
                         hide = true
+                        hideReason = "professionLevel"
                     end
                 else
                     -- Some profession entries (notably Fishing) can have non-spell / nil ids in the dataset.
                     -- DeprecatedSpellBook's IsPlayerSpell errors on nil.
                     local sid = spell and tonumber(spell.id)
                     if sid and sid > 0 then
-                        if isSpellKnownDBAware(sid, spell) then hide = true end
-                    end
-                    -- Special-case: Riding is modelled as a profession-like skill.
-                    if TFG and TFG.RIDING_TBC and TFG.activeDatabase == TFG.RIDING_TBC then
-                        if professionLevel >= levelRequired then
-                            hide = true
+                        -- Riding: use rank-aware DB matching here as well so header/row
+                        -- visibility matches icon-level decisions.
+                        if TFG and TFG.RIDING_TBC and TFG.activeDatabase == TFG.RIDING_TBC and spell and spell.name and tonumber(spell.rank) then
+                            local dbRank = tonumber(spell.rank) or 0
+                            local known = getHighestKnownRankForSpellName(spell.name, spell)
+                            if known and known >= dbRank then
+                                hide = true
+                                hideReason = "ridingDbRank"
+                            else
+                                if isSpellKnownDBAware(sid, spell) then hide = true; hideReason = "isSpellKnownDBAware" end
+                            end
+                        else
+                            if isSpellKnownDBAware(sid, spell) then hide = true; hideReason = "isSpellKnownDBAware" end
                         end
                     end
                 end
@@ -1629,14 +1810,20 @@ function frame:Relayout()
             if (not TFG.showKnown and TFG.isSkill and not isProfession) then
                 local skillKey = resolveSelectedSkillKey()
                 local playerSkill = tonumber(skillLevels[skillKey] or 0) or 0
-                -- Some skill datasets represent entries as spells (e.g. Riding). Hide if
-                -- player's skill meets the bracket OR the player already knows the spell.
+                -- Some skill datasets may also be represented as spells; hide if player skill meets bracket
+                -- OR if the player actually knows the represented spell (IsPlayerSpell).
                 local sid = nil
                 for _, s in ipairs(row.spells or {}) do
                     if s and tonumber(s.id) then sid = tonumber(s.id); break end
                 end
-                if playerSkill >= levelRequired or (sid and sid > 0 and isSpellKnownDBAware(sid, row)) then
+                if playerSkill >= levelRequired then
                     hide = true
+                    hideReason = "playerSkill"
+                else
+                    if sid and sid > 0 and IsPlayerSpell(sid) and not row._tfgIsClassGroup then
+                        hide = true
+                        hideReason = "isPlayerSpell"
+                    end
                 end
             end
             if (not TFG.showKnown and not TFG.isSkill) then
@@ -1663,16 +1850,25 @@ function frame:Relayout()
 
             -- Category filter (profession views only)
             if (not hide and isProfession and TFG.selectedCategory and TFG.selectedCategory ~= "ALL") then
-                if TFG.selectedCategory == "DISCOVERIES" then
+                    if TFG.selectedCategory == "DISCOVERIES" then
                     -- Only show the special [999] group
                     if levelRequired ~= 999 then
-                        hide = true
+                            hide = true
+                            hideReason = "category"
                     end
                 else
                     if levelRequired == 999 then
-                        hide = true
+                        -- Discovery-group rows should allow individual discovery items to
+                        -- appear when the user selects the discovery's explicit category
+                        -- (e.g., Cauldrons). Only hide this spell if its own category
+                        -- does not match the selected category.
+                        if not spell.category or spell.category ~= TFG.selectedCategory then
+                            hide = true
+                            hideReason = "category"
+                        end
                     elseif not spell.category or spell.category ~= TFG.selectedCategory then
                         hide = true
+                        hideReason = "category"
                     end
                 end
             end
@@ -1685,44 +1881,88 @@ function frame:Relayout()
             end
 
             if not hide then visibleSpells = visibleSpells + 1 end
+            -- Debug: if this is a skills parent selection, report why items were hidden
+            if tostring(TFG.selectedFile or ""):lower():find("skills") then
+                local sid = spell and tonumber(spell.id) or 0
+                    if hide then
+                    -- Debug hidden: TFG HIDE DBG suppressed. To re-enable, restore the original debug append/send.
+                    -- local isPlayer = (sid and sid>0 and IsPlayerSpell(sid))
+                    -- local dbAware = (sid and sid>0 and isSpellKnownDBAware(sid, spell))
+                    -- local nm = (spell and spell.name) and spell.name or "?"
+                    -- local hideReasonVis = hideReason or "(none)"
+                    -- local hideLine = "TFG HIDE DBG: sel=" .. tostring(TFG.selectedFile) .. " name=" .. tostring(nm) .. " sid=" .. tostring(sid) .. " hide=true isPlayer=" .. tostring(isPlayer) .. " dbAware=" .. tostring(dbAware) .. " profession=" .. tostring(isProfession) .. " playerSkill=" .. tostring(tonumber(skillLevels[resolveSelectedSkillKey()] or 0)) .. " levelReq=" .. tostring(levelRequired) .. " reason=" .. tostring(hideReasonVis)
+                    -- if _G and _G.DebugWindow and type(_G.DebugWindow.Append) == "function" then pcall(_G.DebugWindow.Append, _G.DebugWindow, hideLine) else sendMsg(hideLine) end
+                end
+            end
         end
 
         if visibleSpells > 0 then
             local label = content:CreateFontString(nil, "OVERLAY", "GameFontNormal")
             label:SetFont(label:GetFont(), 18, "OUTLINE")
 
+            -- Determine active DB mode (e.g. class/skill/level) to influence header coloring.
+            local activeMode = nil
+            if TFG and TFG.activeDatabase and type(TFG.activeDatabase) == "table" then
+                activeMode = TFG.activeDatabase.__CONFIG and TFG.activeDatabase.__CONFIG.mode
+            end
+
             if isProfession then
                 -- Match class-style coloring:
                 --  * Green if your profession skill meets/exceeds the bracket
                 --  * White otherwise
                 --  * Do not color Discoveries
-                if levelRequired ~= 999 and professionLevel >= levelRequired then
+                if levelRequired ~= 999 and ((tostring(activeMode) == "level" and playerLevel >= levelRequired) or (tostring(activeMode) ~= "level" and professionLevel >= levelRequired)) then
                     label:SetTextColor(0.5, 1, 0)
                 else
                     label:SetTextColor(1, 1, 1)
                 end
             else
+                -- If this row was created from a class-mode skill grouping, prefer
+                -- the neutral (white) header color and skip numeric-level checks.
+                if row and row._tfgIsClassGroup then
+                    -- Color the player's class bucket green to match class-ability coloring.
+                    if row._tfgClassKey and tostring(row._tfgClassKey):lower() == ((playerClass or ""):lower()) then
+                        label:SetTextColor(0.5, 1, 0)
+                    else
+                        label:SetTextColor(1,1,1)
+                    end
+                else
                 local function _getSelectedSkillLevel()
                     local key = resolveSelectedSkillKey()
                     return tonumber(skillLevels[key] or 0) or 0
                 end
-                if (isProfession and professionLevel >= levelRequired) or ((TFG.isSkill and not isProfession and _getSelectedSkillLevel() >= levelRequired) or ((playerClass:upper() == TFG.selectedFile:upper())) and playerLevel >= levelRequired) then
+                if (isProfession and professionLevel >= levelRequired) or ((TFG.isSkill and not isProfession and _getSelectedSkillLevel() >= levelRequired) or (not TFG.isSkill and ((playerClass:upper() == TFG.selectedFile:upper()) and playerLevel >= levelRequired)) or (tostring(activeMode) == "level" and playerLevel >= levelRequired)) then
                     label:SetTextColor(0.5, 1, 0)
                 else
                     label:SetTextColor(1, 1, 1)
                 end
+                end
             end
 
             label:SetPoint("TOPLEFT", 0, yOffset)
-            if isProfession then
-                if levelRequired == 999 then
-                    label:SetText("Discoveries")
+                if row and row._tfgDisplayLabel then
+                    label:SetText(row._tfgDisplayLabel)
                 else
-                    label:SetText("Skill " .. levelRequired)
+                    if isProfession then
+                        if levelRequired == 999 then
+                            label:SetText("Discoveries")
+                        else
+                            -- If this profession-like view originates from a skill DB configured
+                            -- with mode = "level", prefer the "Level" label instead of "Skill".
+                            local mode = nil
+                            if TFG and TFG.activeDatabase and type(TFG.activeDatabase) == "table" then
+                                mode = TFG.activeDatabase.__CONFIG and TFG.activeDatabase.__CONFIG.mode
+                            end
+                            if mode and tostring(mode) == "level" then
+                                label:SetText("Level " .. levelRequired)
+                            else
+                                label:SetText("Skill " .. levelRequired)
+                            end
+                        end
+                    else
+                        label:SetText("Level " .. levelRequired)
+                    end
                 end
-            else
-                label:SetText("Level " .. levelRequired)
-            end
             yOffset = yOffset - label:GetHeight() - 8
 
             local xOffset = 0
@@ -1730,31 +1970,41 @@ function frame:Relayout()
 
             for _, spell in ipairs(row.spells) do
                 local hide = false
+                local hideReasonIcon = nil
 
-                if spell.talent and not TFG.showTalents then hide = true end
+                if spell.talent and not TFG.showTalents then hide = true; hideReasonIcon = "talent" end
 
                 local isRankUnlock = (spell and spell._tfgType == "PROFESSION_RANK_UNLOCK")
                 local isProfessionTraining = (isProfession and spell and spell.category == "Profession Training")
 
                 if isProfessionTraining and (TFG.selectedCategory ~= "Profession Training") then
                     if syntheticUnlockByBracket and syntheticUnlockByBracket[levelRequired] then
-                        hide = true
+                        hide = true; hideReasonIcon = "syntheticUnlock"
                     end
                 end
                 if (not TFG.showKnown and isProfession) then
                     if isRankUnlock then
                         local reqAt = tonumber(spell.effectiveTrainAt) or tonumber(spell.trainAt) or 0
-                        if professionLevel >= reqAt then
-                            hide = true
+                        local unlockCap = tonumber(spell.required) or 0
+                        local trainingSpellId = tonumber(spell.trainingSpellId) or nil
+                        if (professionMaxCap and professionMaxCap > 0 and unlockCap > 0 and professionMaxCap >= unlockCap)
+                            or (trainingSpellId and trainingSpellId > 0 and IsPlayerSpell(trainingSpellId)) then
+                            hide = true; hideReasonIcon = "professionLevel"
                         end
                     else
                         local sid = spell and tonumber(spell.id)
                         if sid and sid > 0 then
-                            if IsPlayerSpell(sid) then hide = true end
+                            if IsPlayerSpell(sid) then hide = true; hideReasonIcon = "isPlayerSpell" end
                         end
                         if TFG and TFG.RIDING_TBC and TFG.activeDatabase == TFG.RIDING_TBC then
-                            if professionLevel >= levelRequired then
-                                hide = true
+                            -- For Riding, prefer DB rank-aware matching: if the DB lists a rank
+                            -- for this spell and the player knows an equal-or-higher rank, hide it.
+                            local dbRank = spell and tonumber(spell.rank) or nil
+                            if dbRank and dbRank > 0 then
+                                local known = getHighestKnownRankForSpellName(spell.name, spell)
+                                if known and known >= dbRank then
+                                    hide = true; hideReasonIcon = "ridingDbRank"
+                                end
                             end
                         end
                     end
@@ -1762,28 +2012,54 @@ function frame:Relayout()
                 if (not TFG.showKnown and TFG.isSkill and not isProfession) then
                     local skillKey = resolveSelectedSkillKey()
                     local playerSkill = tonumber(skillLevels[skillKey] or 0) or 0
-                    local sid = spell and tonumber(spell.id) or 0
-                    if playerSkill >= levelRequired or (sid > 0 and isSpellKnownDBAware(sid, row)) then hide = true end
+                    if playerSkill >= levelRequired then
+                        hide = true; hideReasonIcon = "playerSkill"
+                    end
                 end
-                if (not TFG.showKnown and not TFG.isSkill and not isProfession and isSpellKnownDBAware(spell.id, spell)) then hide = true end
+                -- Also hide individual icons in skill-mode when Known is unchecked and the player
+                -- actually knows the represented spell id (IsPlayerSpell). This keeps the
+                -- header/rows matching icon-level visibility.
+                if (not hide and not TFG.showKnown and TFG.isSkill and not isProfession) then
+                    local sid = spell and tonumber(spell.id) or 0
+                    if sid > 0 and IsPlayerSpell(sid) then
+                        hide = true; hideReasonIcon = "isPlayerSpell"
+                    end
+                end
+                if (not TFG.showKnown and not TFG.isSkill and not isProfession and isSpellKnownDBAware(spell.id, spell)) then hide = true; hideReasonIcon = "dbAware" end
 
                 if (not hide and isProfession and TFG.selectedCategory and TFG.selectedCategory ~= "ALL") then
                     if TFG.selectedCategory == "DISCOVERIES" then
                         if levelRequired ~= 999 then
-                            hide = true
+                            hide = true; hideReasonIcon = "category"
                         end
                     else
                         if levelRequired == 999 then
-                            hide = true
-                        elseif not spell.category or spell.category ~= TFG.selectedCategory then
-                            hide = true
+                            -- Discovery-group items (level 999) should also be shown when
+                            -- the user selects their explicit category (e.g. "Cauldrons").
+                            if not spell.category or spell.category ~= TFG.selectedCategory then
+                                hide = true; hideReasonIcon = "category"
+                            end
+                        else
+                            if not spell.category or spell.category ~= TFG.selectedCategory then
+                                hide = true; hideReasonIcon = "category"
+                            end
                         end
                     end
                 end
 
                 if not TFG.showEnemySpells then
-                    if spell.faction and spell.faction ~= playerFaction then hide = true end
-                    if spell.race and not string.find(spell.race, playerRace) then hide = true end
+                    if spell.faction and spell.faction ~= playerFaction then hide = true; hideReasonIcon = "faction" end
+                    if spell.race and not string.find(spell.race, playerRace) then hide = true; hideReasonIcon = "race" end
+                end
+
+                if hide and tostring(TFG.selectedFile or ""):lower():find("skills") then
+                    -- Debug hidden: TFG HIDE ICON DBG suppressed. Restore original code to re-enable.
+                    -- local sid = spell and tonumber(spell.id) or 0
+                    -- local nm = (spell and spell.name) and spell.name or "?"
+                    -- local isPlayer = (sid and sid>0 and IsPlayerSpell(sid))
+                    -- local dbAware = (sid and sid>0 and isSpellKnownDBAware(sid, spell))
+                    -- local hideLine = "TFG HIDE ICON DBG: sel=" .. tostring(TFG.selectedFile) .. " name=" .. tostring(nm) .. " sid=" .. tostring(sid) .. " hide=true isPlayer=" .. tostring(isPlayer) .. " dbAware=" .. tostring(dbAware) .. " profession=" .. tostring(isProfession) .. " playerSkill=" .. tostring(tonumber(skillLevels[resolveSelectedSkillKey()] or 0)) .. " levelReq=" .. tostring(levelRequired) .. " reason=" .. tostring(hideReasonIcon)
+                    -- if _G and _G.DebugWindow and type(_G.DebugWindow.Append) == "function" then pcall(_G.DebugWindow.Append, _G.DebugWindow, hideLine) else sendMsg(hideLine) end
                 end
 
                 if not hide then
@@ -1838,14 +2114,32 @@ function frame:Relayout()
                     -- Determine if this entry is "known" for the player.
                     local function entryIsKnown(sp)
                         if not sp then return false end
-                        -- Rank unlocks are considered known when professionLevel >= required threshold.
+                        -- Rank unlocks are considered known only when the player's profession
+                        -- max cap already meets/exceeds the unlock cap, or when the player
+                        -- actually knows the training spell that grants the new cap.
                         if sp._tfgType == "PROFESSION_RANK_UNLOCK" then
-                            local reqAt = tonumber(sp.effectiveTrainAt) or tonumber(sp.trainAt) or 0
-                            return (professionLevel >= reqAt)
+                            local unlockCap = tonumber(sp.required) or 0
+                            local trainingSpellId = tonumber(sp.trainingSpellId) or nil
+                            if (professionMaxCap and professionMaxCap > 0 and unlockCap > 0 and professionMaxCap >= unlockCap)
+                                or (trainingSpellId and trainingSpellId > 0 and IsPlayerSpell(trainingSpellId)) then
+                                return true
+                            end
+                            return false
                         end
                         -- Otherwise, treat as a known spell if IsPlayerSpell returns true for its id.
                         local sid = sp and tonumber(sp.id) or nil
                         if sid and sid > 0 then
+                            -- Special-case: Riding skill database should behave like class rank groups
+                            -- — if the DB lists multiple ranks for the same named spell, determine the
+                            -- highest known rank via `getHighestKnownRankForSpellName` and treat lower
+                            -- ranks as known only when the known rank >= this entry's rank.
+                            if TFG and TFG.RIDING_TBC and TFG.activeDatabase == TFG.RIDING_TBC and sp and sp.name and tonumber(sp.rank) then
+                                local dbRank = tonumber(sp.rank) or 0
+                                local known = getHighestKnownRankForSpellName(sp.name, sp)
+                                if known and known >= dbRank then
+                                    return true
+                                end
+                            end
                             -- Class views: consult DB ranks first (only hide lower ranks when
                             -- player actually knows an equal-or-higher rank). For other views,
                             -- fall back to IsPlayerSpell.
@@ -1901,8 +2195,7 @@ function frame:Relayout()
 
                         -- Right-click: allow marking unlearned class abilities with a red overlay.
                         if button == "RightButton" then
-                            -- Only apply to class views (not professions/skills) and only for spell entries
-                            if not isClassView then return end
+                            -- Allow marking in any view (class/skill/profession). Only require a valid spell id.
                             local sp = self.spellData
                             if not sp or not sp.id then return end
                             local sid = tonumber(sp.id) or nil
