@@ -53,8 +53,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 3908,
             ["name"] = "Tailoring", -- Apprentice
             ["category"] = "Profession Training",
-            ["cost"] = 10,
             ["texture"] = "Interface/ICONS/trade_tailoring",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 10,
+            },
             ["phase"] = 1
         },
         {
@@ -78,8 +81,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 2393,
             ["name"] = "White Linen Shirt",
             ["category"] = "Shirt",
-            ["cost"] = 25,
             ["texture"] = "Interface/ICONS/inv_shirt_white_01",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 25,
+            },
             ["phase"] = 1
         },
         {
@@ -109,8 +115,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 2385,
             ["name"] = "Brown Linen Vest",
             ["category"] = "Chest",
-            ["cost"] = 50,
             ["texture"] = "Interface/ICONS/inv_shirt_05",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 50,
+            },
             ["phase"] = 1
         },
     },
@@ -119,8 +128,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 8776,
             ["name"] = "Linen Belt",
             ["category"] = "Waist",
-            ["cost"] = 50,
             ["texture"] = "Interface/ICONS/inv_belt_05",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 50,
+            },
             ["phase"] = 1
         },
     },
@@ -129,8 +141,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 12045,
             ["name"] = "Simple Linen Boots",
             ["category"] = "Feet",
-            ["cost"] = 50,
             ["texture"] = "Interface/ICONS/inv_boots_05",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 50,
+            },
             ["phase"] = 1
         },
     },
@@ -139,24 +154,33 @@ TFG.TAILORING_TBC = {
             ["id"] = 3914,
             ["name"] = "Brown Linen Pants",
             ["category"] = "Legs",
-            ["cost"] = 50,
             ["texture"] = "Interface/ICONS/inv_pants_06",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 50,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 7623,
             ["name"] = "Brown Linen Robe",
             ["category"] = "Chest",
-            ["cost"] = 50,
             ["texture"] = "Interface/ICONS/inv_chest_cloth_21",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 50,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 7624,
             ["name"] = "White Linen Robe",
             ["category"] = "Chest",
-            ["cost"] = 50,
             ["texture"] = "Interface/ICONS/inv_chest_cloth_04",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 50,
+            },
             ["phase"] = 1
         },
     },
@@ -165,8 +189,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 3840,
             ["name"] = "Heavy Linen Gloves",
             ["category"] = "Hands",
-            ["cost"] = 100,
             ["texture"] = "Interface/ICONS/inv_gauntlets_05",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 100,
+            },
             ["phase"] = 1
         },
     },
@@ -194,24 +221,33 @@ TFG.TAILORING_TBC = {
             ["id"] = 2392,
             ["name"] = "Red Linen Shirt",
             ["category"] = "Shirt",
-            ["cost"] = 50,
             ["texture"] = "Interface/ICONS/inv_shirt_red_01",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 50,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 2394,
             ["name"] = "Blue Linen Shirt",
             ["category"] = "Shirt",
-            ["cost"] = 50,
             ["texture"] = "Interface/ICONS/inv_shirt_blue_01",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 50,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 8465,
             ["name"] = "Simple Dress",
             ["category"] = "Chest",
-            ["cost"] = 50,
             ["texture"] = "Interface/ICONS/inv_shirt_12",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 50,
+            },
             ["phase"] = 1
         },
     },
@@ -220,8 +256,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 3755,
             ["name"] = "Linen Bag",
             ["category"] = "Bag",
-            ["cost"] = 100,
             ["texture"] = "Interface/ICONS/inv_misc_bag_01",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 100,
+            },
             ["phase"] = 1
         },
     },
@@ -230,8 +269,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 3909,
             ["name"] = "Tailoring", -- Journeyman
             ["category"] = "Profession Training",
-            ["cost"] = 500,
             ["texture"] = "Interface/ICONS/trade_tailoring",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 500,
+            },
             ["phase"] = 1
         },
     },
@@ -256,16 +298,22 @@ TFG.TAILORING_TBC = {
             ["id"] = 2397,
             ["name"] = "Reinforced Linen Cape",
             ["category"] = "Back",
-            ["cost"] = 200,
             ["texture"] = "Interface/ICONS/inv_misc_cape_07",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 200,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 3841,
             ["name"] = "Green Linen Bracers",
             ["category"] = "Wrist",
-            ["cost"] = 200,
             ["texture"] = "Interface/ICONS/inv_bracer_12",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 200,
+            },
             ["phase"] = 1
         },
     },
@@ -274,8 +322,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 2386,
             ["name"] = "Linen Boots",
             ["category"] = "Feet",
-            ["cost"] = 200,
             ["texture"] = "Interface/ICONS/inv_boots_09",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 200,
+            },
             ["phase"] = 1
         },
     },
@@ -284,24 +335,33 @@ TFG.TAILORING_TBC = {
             ["id"] = 2395,
             ["name"] = "Barbaric Linen Vest",
             ["category"] = "Chest",
-            ["cost"] = 300,
             ["texture"] = "Interface/ICONS/inv_chest_fur",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 300,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 2396,
             ["name"] = "Green Linen Shirt",
             ["category"] = "Shirt",
-            ["cost"] = 200,
             ["texture"] = "Interface/ICONS/inv_shirt_green_01",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 200,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 3842,
             ["name"] = "Handstitched Linen Britches",
             ["category"] = "Legs",
-            ["cost"] = 300,
             ["texture"] = "Interface/ICONS/inv_pants_07",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 300,
+            },
             ["phase"] = 1
         },
         {
@@ -324,24 +384,33 @@ TFG.TAILORING_TBC = {
             ["id"] = 2402,
             ["name"] = "Woolen Cape",
             ["category"] = "Back",
-            ["cost"] = 250,
             ["texture"] = "Interface/ICONS/inv_misc_cape_10",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 250,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 12046,
             ["name"] = "Simple Kilt",
             ["category"] = "Legs",
-            ["cost"] = 300,
             ["texture"] = "Interface/ICONS/inv_pants_11",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 300,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 2964,
             ["name"] = "Bolt of Woolen Cloth",
             ["category"] = "Bolts & Cloth",
-            ["cost"] = 100,
             ["texture"] = "Interface/ICONS/inv_fabric_wool_03",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 100,
+            },
             ["phase"] = 1
         },
     },
@@ -350,16 +419,22 @@ TFG.TAILORING_TBC = {
             ["id"] = 3757,
             ["name"] = "Woolen Bag",
             ["category"] = "Bag",
-            ["cost"] = 200,
             ["texture"] = "Interface/ICONS/inv_misc_bag_10",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 200,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 3845,
             ["name"] = "Soft-soled Linen Boots",
             ["category"] = "Feet",
-            ["cost"] = 300,
             ["texture"] = "Interface/ICONS/inv_boots_09",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 300,
+            },
             ["phase"] = 1
         },
     },
@@ -368,16 +443,22 @@ TFG.TAILORING_TBC = {
             ["id"] = 2399,
             ["name"] = "Green Woolen Vest",
             ["category"] = "Chest",
-            ["cost"] = 300,
             ["texture"] = "Interface/ICONS/inv_chest_cloth_39",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 300,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 3843,
             ["name"] = "Heavy Woolen Gloves",
             ["category"] = "Hands",
-            ["cost"] = 400,
             ["texture"] = "Interface/ICONS/inv_gauntlets_05",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 400,
+            },
             ["phase"] = 1
         },
     },
@@ -386,8 +467,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 6521,
             ["name"] = "Pearl-clasped Cloak",
             ["category"] = "Back",
-            ["cost"] = 400,
             ["texture"] = "Interface/ICONS/inv_misc_cape_11",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 400,
+            },
             ["phase"] = 1
         },
     },
@@ -396,8 +480,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 2401,
             ["name"] = "Woolen Boots",
             ["category"] = "Feet",
-            ["cost"] = 300,
             ["texture"] = "Interface/ICONS/inv_boots_09",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 300,
+            },
             ["phase"] = 1
         },
         {
@@ -434,8 +521,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 2406,
             ["name"] = "Gray Woolen Shirt",
             ["category"] = "Shirt",
-            ["cost"] = 200,
             ["texture"] = "Interface/ICONS/inv_shirt_grey_01",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 200,
+            },
             ["phase"] = 1
         },
     },
@@ -453,32 +543,44 @@ TFG.TAILORING_TBC = {
             ["id"] = 3848,
             ["name"] = "Double-stitched Woolen Shoulders",
             ["category"] = "Shoulder",
-            ["cost"] = 500,
             ["texture"] = "Interface/ICONS/inv_shoulder_06",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 500,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 3850,
             ["name"] = "Heavy Woolen Pants",
             ["category"] = "Legs",
-            ["cost"] = 500,
             ["texture"] = "Interface/ICONS/inv_pants_01",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 500,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 3866,
             ["name"] = "Stylish Red Shirt",
             ["category"] = "Shirt",
-            ["cost"] = 250,
             ["texture"] = "Interface/ICONS/inv_shirt_red_01",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 250,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 8467,
             ["name"] = "White Woolen Dress",
             ["category"] = "Chest",
-            ["cost"] = 250,
             ["texture"] = "Interface/ICONS/inv_shirt_12",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 250,
+            },
             ["phase"] = 1
         },
     },
@@ -540,8 +642,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 3855,
             ["name"] = "Spidersilk Boots",
             ["category"] = "Feet",
-            ["cost"] = 750,
             ["texture"] = "Interface/ICONS/inv_boots_05",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 750,
+            },
             ["phase"] = 1
         },
         {
@@ -555,16 +660,22 @@ TFG.TAILORING_TBC = {
             ["id"] = 3839,
             ["name"] = "Bolt of Silk Cloth",
             ["category"] = "Bolts & Cloth",
-            ["cost"] = 500,
             ["texture"] = "Interface/ICONS/inv_fabric_silk_03",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 500,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 3910,
             ["name"] = "Tailoring", -- Expert
             ["category"] = "Profession Training",
-            ["cost"] = 5000,
             ["texture"] = "Interface/ICONS/trade_tailoring",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 5000,
+            },
             ["phase"] = 1
         },
     },
@@ -573,8 +684,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 3852,
             ["name"] = "Gloves of Meditation",
             ["category"] = "Hands",
-            ["cost"] = 750,
             ["texture"] = "Interface/ICONS/inv_gauntlets_05",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 750,
+            },
             ["phase"] = 1
         },
     },
@@ -583,8 +697,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 6690,
             ["name"] = "Lesser Wizard's Robe",
             ["category"] = "Chest",
-            ["cost"] = 1000,
             ["texture"] = "Interface/ICONS/inv_chest_cloth_17",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 1000,
+            },
             ["phase"] = 1
         },
         {
@@ -607,8 +724,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 8758,
             ["name"] = "Azure Silk Pants",
             ["category"] = "Legs",
-            ["cost"] = 600,
             ["texture"] = "Interface/ICONS/inv_pants_08",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 600,
+            },
             ["phase"] = 1
         },
     },
@@ -631,8 +751,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 8760,
             ["name"] = "Azure Silk Hood",
             ["category"] = "Head",
-            ["cost"] = 600,
             ["texture"] = "Interface/ICONS/inv_helmet_29",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 600,
+            },
             ["phase"] = 1
         },
     },
@@ -641,16 +764,22 @@ TFG.TAILORING_TBC = {
             ["id"] = 3813,
             ["name"] = "Small Silk Pack",
             ["category"] = "Bag",
-            ["cost"] = 800,
             ["texture"] = "Interface/ICONS/inv_misc_bag_07",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 800,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 3859,
             ["name"] = "Azure Silk Vest",
             ["category"] = "Chest",
-            ["cost"] = 750,
             ["texture"] = "Interface/ICONS/inv_chest_cloth_37",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 750,
+            },
             ["phase"] = 1
         },
         {
@@ -682,16 +811,22 @@ TFG.TAILORING_TBC = {
             ["id"] = 8483,
             ["name"] = "White Swashbuckler's Shirt",
             ["category"] = "Shirt",
-            ["cost"] = 500,
             ["texture"] = "Interface/ICONS/inv_shirt_white_01",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 500,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 8762,
             ["name"] = "Silk Headband",
             ["category"] = "Head",
-            ["cost"] = 750,
             ["texture"] = "Interface/ICONS/inv_misc_bandana_01",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 750,
+            },
             ["phase"] = 1
         },
     },
@@ -723,16 +858,22 @@ TFG.TAILORING_TBC = {
             ["id"] = 8764,
             ["name"] = "Earthen Vest",
             ["category"] = "Chest",
-            ["cost"] = 900,
             ["texture"] = "Interface/ICONS/inv_shirt_04",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 900,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 3871,
             ["name"] = "Formal White Shirt",
             ["category"] = "Shirt",
-            ["cost"] = 500,
             ["texture"] = "Interface/ICONS/inv_shirt_08",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 500,
+            },
             ["phase"] = 1
         },
     },
@@ -755,16 +896,22 @@ TFG.TAILORING_TBC = {
             ["id"] = 8766,
             ["name"] = "Azure Silk Belt",
             ["category"] = "Waist",
-            ["cost"] = 1000,
             ["texture"] = "Interface/ICONS/inv_belt_22",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 1000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 8772,
             ["name"] = "Crimson Silk Belt",
             ["category"] = "Waist",
-            ["cost"] = 1000,
             ["texture"] = "Interface/ICONS/inv_belt_04",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 1000,
+            },
             ["phase"] = 1
         },
         {
@@ -778,16 +925,22 @@ TFG.TAILORING_TBC = {
             ["id"] = 8489,
             ["name"] = "Red Swashbuckler's Shirt",
             ["category"] = "Shirt",
-            ["cost"] = 750,
             ["texture"] = "Interface/ICONS/inv_shirt_red_01",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 750,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 3865,
             ["name"] = "Bolt of Mageweave",
             ["category"] = "Bolts & Cloth",
-            ["cost"] = 1000,
             ["texture"] = "Interface/ICONS/inv_fabric_mageweave_03",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 1000,
+            },
             ["phase"] = 1
         },
     },
@@ -803,8 +956,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 8774,
             ["name"] = "Green Silken Shoulders",
             ["category"] = "Shoulder",
-            ["cost"] = 1000,
             ["texture"] = "Interface/ICONS/inv_shoulder_18",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 1000,
+            },
             ["phase"] = 1
         },
         {
@@ -820,8 +976,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 3861,
             ["name"] = "Long Silken Cloak",
             ["category"] = "Back",
-            ["cost"] = 1000,
             ["texture"] = "Interface/ICONS/inv_misc_cape_02",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 1000,
+            },
             ["phase"] = 1
         },
         {
@@ -835,8 +994,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 8791,
             ["name"] = "Crimson Silk Vest",
             ["category"] = "Chest",
-            ["cost"] = 2500,
             ["texture"] = "Interface/ICONS/inv_shirt_04",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 2500,
+            },
             ["phase"] = 1
         },
         {
@@ -852,8 +1014,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 8770,
             ["name"] = "Robe of Power",
             ["category"] = "Chest",
-            ["cost"] = 1000,
             ["texture"] = "Interface/ICONS/inv_chest_cloth_02",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 1000,
+            },
             ["phase"] = 1
         },
         {
@@ -890,8 +1055,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 8799,
             ["name"] = "Crimson Silk Pantaloons",
             ["category"] = "Legs",
-            ["cost"] = 3000,
             ["texture"] = "Interface/ICONS/inv_pants_06",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 3000,
+            },
             ["phase"] = 1
         },
     },
@@ -921,8 +1089,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 12180,
             ["name"] = "Tailoring", -- Artisan
             ["category"] = "Profession Training",
-            ["cost"] = 50000,
             ["texture"] = "Interface/ICONS/trade_tailoring",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 50000,
+            },
             ["phase"] = 1
         },
     },
@@ -938,16 +1109,22 @@ TFG.TAILORING_TBC = {
             ["id"] = 12048,
             ["name"] = "Black Mageweave Vest",
             ["category"] = "Chest",
-            ["cost"] = 4000,
             ["texture"] = "Interface/ICONS/inv_chest_leather_03",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 4000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 12049,
             ["name"] = "Black Mageweave Leggings",
             ["category"] = "Legs",
-            ["cost"] = 4000,
             ["texture"] = "Interface/ICONS/inv_pants_09",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 4000,
+            },
             ["phase"] = 1
         },
     },
@@ -956,24 +1133,33 @@ TFG.TAILORING_TBC = {
             ["id"] = 8804,
             ["name"] = "Crimson Silk Gloves",
             ["category"] = "Hands",
-            ["cost"] = 5000,
             ["texture"] = "Interface/ICONS/inv_gauntlets_05",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 5000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 12050,
             ["name"] = "Black Mageweave Robe",
             ["category"] = "Chest",
-            ["cost"] = 4000,
             ["texture"] = "Interface/ICONS/inv_chest_cloth_13",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 4000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 12052,
             ["name"] = "Shadoweave Pants",
             ["category"] = "Legs",
-            ["cost"] = 4500,
             ["texture"] = "Interface/ICONS/inv_pants_11",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 4500,
+            },
             ["phase"] = 1
         },
     },
@@ -982,16 +1168,22 @@ TFG.TAILORING_TBC = {
             ["id"] = 12053,
             ["name"] = "Black Mageweave Gloves",
             ["category"] = "Hands",
-            ["cost"] = 5000,
             ["texture"] = "Interface/ICONS/inv_gauntlets_05",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 5000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 12055,
             ["name"] = "Shadoweave Robe",
             ["category"] = "Chest",
-            ["cost"] = 4950,
             ["texture"] = "Interface/ICONS/inv_chest_cloth_38",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 4950,
+            },
             ["phase"] = 1
         },
         {
@@ -1019,8 +1211,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 12061,
             ["name"] = "Orange Mageweave Shirt",
             ["category"] = "Shirt",
-            ["cost"] = 2500,
             ["texture"] = "Interface/ICONS/inv_shirt_orange_01",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 2500,
+            },
             ["phase"] = 1
         },
     },
@@ -1038,8 +1233,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 12065,
             ["name"] = "Mageweave Bag",
             ["category"] = "Bag",
-            ["cost"] = 5000,
             ["texture"] = "Interface/ICONS/inv_misc_bag_10_black",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 5000,
+            },
             ["phase"] = 1
         },
         {
@@ -1053,32 +1251,44 @@ TFG.TAILORING_TBC = {
             ["id"] = 12067,
             ["name"] = "Dreamweave Gloves",
             ["category"] = "Hands",
-            ["cost"] = 5000,
             ["texture"] = "Interface/ICONS/inv_gauntlets_18",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 5000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 12069,
             ["name"] = "Cindercloth Robe",
             ["category"] = "Chest",
-            ["cost"] = 5000,
             ["texture"] = "Interface/ICONS/inv_chest_cloth_25",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 5000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 12070,
             ["name"] = "Dreamweave Vest",
             ["category"] = "Chest",
-            ["cost"] = 5000,
             ["texture"] = "Interface/ICONS/inv_chest_cloth_42",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 5000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 12071,
             ["name"] = "Shadoweave Gloves",
             ["category"] = "Hands",
-            ["cost"] = 5400,
             ["texture"] = "Interface/ICONS/inv_gauntlets_09",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 5400,
+            },
             ["phase"] = 1
         },
         {
@@ -1094,24 +1304,33 @@ TFG.TAILORING_TBC = {
             ["id"] = 12072,
             ["name"] = "Black Mageweave Headband",
             ["category"] = "Head",
-            ["cost"] = 6000,
             ["texture"] = "Interface/ICONS/inv_misc_bandana_01",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 6000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 12073,
             ["name"] = "Black Mageweave Boots",
             ["category"] = "Feet",
-            ["cost"] = 6000,
             ["texture"] = "Interface/ICONS/inv_boots_05",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 6000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 12074,
             ["name"] = "Black Mageweave Shoulders",
             ["category"] = "Shoulder",
-            ["cost"] = 6000,
             ["texture"] = "Interface/ICONS/inv_shoulder_25",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 6000,
+            },
             ["phase"] = 1
         },
         {
@@ -1127,8 +1346,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 12076,
             ["name"] = "Shadoweave Shoulders",
             ["category"] = "Shoulder",
-            ["cost"] = 5850,
             ["texture"] = "Interface/ICONS/inv_shoulder_25",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 5850,
+            },
             ["phase"] = 1
         },
         {
@@ -1142,16 +1364,22 @@ TFG.TAILORING_TBC = {
             ["id"] = 12079,
             ["name"] = "Red Mageweave Bag",
             ["category"] = "Bag",
-            ["cost"] = 6500,
             ["texture"] = "Interface/ICONS/inv_misc_bag_10_red",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 6500,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 12077,
             ["name"] = "Simple Black Dress",
             ["category"] = "Chest",
-            ["cost"] = 5000,
             ["texture"] = "Interface/ICONS/inv_chest_cloth_21",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 5000,
+            },
             ["phase"] = 1
         },
         {
@@ -1174,8 +1402,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 12082,
             ["name"] = "Shadoweave Boots",
             ["category"] = "Feet",
-            ["cost"] = 6300,
             ["texture"] = "Interface/ICONS/inv_boots_05",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 6300,
+            },
             ["phase"] = 1
         },
         {
@@ -1205,8 +1436,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 12088,
             ["name"] = "Cindercloth Boots",
             ["category"] = "Feet",
-            ["cost"] = 7500,
             ["texture"] = "Interface/ICONS/inv_boots_05",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 7500,
+            },
             ["phase"] = 1
         },
         {
@@ -1236,8 +1470,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 12092,
             ["name"] = "Dreamweave Circlet",
             ["category"] = "Head",
-            ["cost"] = 7500,
             ["texture"] = "Interface/ICONS/inv_crown_01",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 7500,
+            },
             ["phase"] = 1
         },
         {
@@ -1286,8 +1523,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 18401,
             ["name"] = "Bolt of Runecloth",
             ["category"] = "Bolts & Cloth",
-            ["cost"] = 10000,
             ["texture"] = "Interface/ICONS/inv_fabric_purplefire_02",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 10000,
+            },
             ["phase"] = 1
         },
         {
@@ -1310,16 +1550,22 @@ TFG.TAILORING_TBC = {
             ["id"] = 18402,
             ["name"] = "Runecloth Belt",
             ["category"] = "Waist",
-            ["cost"] = 10000,
             ["texture"] = "Interface/ICONS/inv_belt_15",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 10000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 18403,
             ["name"] = "Frostweave Tunic",
             ["category"] = "Chest",
-            ["cost"] = 10000,
             ["texture"] = "Interface/ICONS/inv_chest_cloth_08",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 10000,
+            },
             ["phase"] = 1
         },
         {
@@ -1342,16 +1588,22 @@ TFG.TAILORING_TBC = {
             ["id"] = 18406,
             ["name"] = "Runecloth Robe",
             ["category"] = "Chest",
-            ["cost"] = 10000,
             ["texture"] = "Interface/ICONS/inv_chest_cloth_04",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 10000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 18407,
             ["name"] = "Runecloth Tunic",
             ["category"] = "Chest",
-            ["cost"] = 10000,
             ["texture"] = "Interface/ICONS/inv_chest_cloth_04",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 10000,
+            },
             ["phase"] = 1
         },
         {
@@ -1374,24 +1626,33 @@ TFG.TAILORING_TBC = {
             ["id"] = 18409,
             ["name"] = "Runecloth Cloak",
             ["category"] = "Back",
-            ["cost"] = 10000,
             ["texture"] = "Interface/ICONS/inv_misc_cape_10",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 10000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 18410,
             ["name"] = "Ghostweave Belt",
             ["category"] = "Waist",
-            ["cost"] = 10000,
             ["texture"] = "Interface/ICONS/inv_belt_16",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 10000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 18411,
             ["name"] = "Frostweave Gloves",
             ["category"] = "Hands",
-            ["cost"] = 10000,
             ["texture"] = "Interface/ICONS/inv_gauntlets_05",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 10000,
+            },
             ["phase"] = 1
         },
     },
@@ -1407,24 +1668,33 @@ TFG.TAILORING_TBC = {
             ["id"] = 18413,
             ["name"] = "Ghostweave Gloves",
             ["category"] = "Hands",
-            ["cost"] = 10000,
             ["texture"] = "Interface/ICONS/inv_gauntlets_05",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 10000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 18414,
             ["name"] = "Brightcloth Robe",
             ["category"] = "Chest",
-            ["cost"] = 10000,
             ["texture"] = "Interface/ICONS/inv_chest_cloth_26",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 10000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 18415,
             ["name"] = "Brightcloth Gloves",
             ["category"] = "Hands",
-            ["cost"] = 10000,
             ["texture"] = "Interface/ICONS/inv_gauntlets_21",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 10000,
+            },
             ["phase"] = 1
         },
     },
@@ -1433,24 +1703,33 @@ TFG.TAILORING_TBC = {
             ["id"] = 26790,
             ["name"] = "Tailoring", -- Master
             ["category"] = "Profession Training",
-            ["cost"] = 100000,
             ["texture"] = "Interface/ICONS/trade_tailoring",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 100000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 18416,
             ["name"] = "Ghostweave Vest",
             ["category"] = "Chest",
-            ["cost"] = 12500,
             ["texture"] = "Interface/ICONS/inv_shirt_08",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 12500,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 18417,
             ["name"] = "Runecloth Gloves",
             ["category"] = "Hands",
-            ["cost"] = 12500,
             ["texture"] = "Interface/ICONS/inv_gauntlets_25",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 12500,
+            },
             ["phase"] = 1
         },
         {
@@ -1471,16 +1750,22 @@ TFG.TAILORING_TBC = {
             ["id"] = 18420,
             ["name"] = "Brightcloth Cloak",
             ["category"] = "Back",
-            ["cost"] = 12500,
             ["texture"] = "Interface/ICONS/inv_misc_cape_11",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 12500,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 18421,
             ["name"] = "Wizardweave Leggings",
             ["category"] = "Legs",
-            ["cost"] = 12500,
             ["texture"] = "Interface/ICONS/inv_pants_09",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 12500,
+            },
             ["phase"] = 1
         },
         {
@@ -1510,16 +1795,22 @@ TFG.TAILORING_TBC = {
             ["id"] = 18423,
             ["name"] = "Runecloth Boots",
             ["category"] = "Feet",
-            ["cost"] = 15000,
             ["texture"] = "Interface/ICONS/inv_boots_05",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 15000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 18424,
             ["name"] = "Frostweave Pants",
             ["category"] = "Legs",
-            ["cost"] = 15000,
             ["texture"] = "Interface/ICONS/inv_pants_08",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 15000,
+            },
             ["phase"] = 1
         },
         {
@@ -1542,16 +1833,22 @@ TFG.TAILORING_TBC = {
             ["id"] = 18437,
             ["name"] = "Felcloth Boots",
             ["category"] = "Feet",
-            ["cost"] = 15000,
             ["texture"] = "Interface/ICONS/inv_boots_05",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 15000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 18438,
             ["name"] = "Runecloth Pants",
             ["category"] = "Legs",
-            ["cost"] = 15000,
             ["texture"] = "Interface/ICONS/inv_pants_09",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 15000,
+            },
             ["phase"] = 1
         },
         {
@@ -1588,16 +1885,22 @@ TFG.TAILORING_TBC = {
             ["id"] = 18441,
             ["name"] = "Ghostweave Pants",
             ["category"] = "Legs",
-            ["cost"] = 15000,
             ["texture"] = "Interface/ICONS/inv_pants_01",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 15000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 18442,
             ["name"] = "Felcloth Hood",
             ["category"] = "Head",
-            ["cost"] = 15000,
             ["texture"] = "Interface/ICONS/inv_helmet_34",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 15000,
+            },
             ["phase"] = 1
         },
         {
@@ -1627,8 +1930,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 18444,
             ["name"] = "Runecloth Headband",
             ["category"] = "Head",
-            ["cost"] = 15000,
             ["texture"] = "Interface/ICONS/inv_misc_bandana_03",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 15000,
+            },
             ["phase"] = 1
         },
     },
@@ -1651,8 +1957,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 18446,
             ["name"] = "Wizardweave Robe",
             ["category"] = "Chest",
-            ["cost"] = 15000,
             ["texture"] = "Interface/ICONS/inv_chest_cloth_46",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 15000,
+            },
             ["phase"] = 1
         },
         {
@@ -1673,24 +1982,33 @@ TFG.TAILORING_TBC = {
             ["id"] = 18449,
             ["name"] = "Runecloth Shoulders",
             ["category"] = "Shoulder",
-            ["cost"] = 15000,
             ["texture"] = "Interface/ICONS/inv_shoulder_21",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 15000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 18450,
             ["name"] = "Wizardweave Turban",
             ["category"] = "Head",
-            ["cost"] = 15000,
             ["texture"] = "Interface/ICONS/inv_helmet_63",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 15000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 18451,
             ["name"] = "Felcloth Robe",
             ["category"] = "Chest",
-            ["cost"] = 15000,
             ["texture"] = "Interface/ICONS/inv_chest_cloth_09",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 15000,
+            },
             ["phase"] = 1
         },
         {
@@ -1704,8 +2022,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 18453,
             ["name"] = "Felcloth Shoulders",
             ["category"] = "Shoulder",
-            ["cost"] = 15000,
             ["texture"] = "Interface/ICONS/inv_shoulder_23",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 15000,
+            },
             ["phase"] = 1
         },
         {
@@ -1950,16 +2271,22 @@ TFG.TAILORING_TBC = {
             ["id"] = 26745,
             ["name"] = "Bolt of Netherweave",
             ["category"] = "Bolts & Cloth",
-            ["cost"] = 20000,
             ["texture"] = "Interface/ICONS/inv_fabric_netherweave_bolt",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 20000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 31460,
             ["name"] = "Netherweave Net",
             ["category"] = "Other",
-            ["cost"] = 20000,
             ["texture"] = "Interface/ICONS/inv_misc_net_01",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 20000,
+            },
             ["phase"] = 1
         },
     },
@@ -1968,16 +2295,22 @@ TFG.TAILORING_TBC = {
             ["id"] = 26764,
             ["name"] = "Netherweave Bracers",
             ["category"] = "Wrist",
-            ["cost"] = 15000,
             ["texture"] = "Interface/ICONS/inv_bracer_07",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 15000,
+            },
             ["phase"] = 1
         },
         {
             ["id"] = 26765,
             ["name"] = "Netherweave Belt",
             ["category"] = "Waist",
-            ["cost"] = 15000,
             ["texture"] = "Interface/ICONS/inv_belt_04",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 15000,
+            },
             ["phase"] = 1
         },
     },
@@ -1986,8 +2319,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 26746,
             ["name"] = "Netherweave Bag",
             ["category"] = "Bag",
-            ["cost"] = 15000,
             ["texture"] = "Interface/ICONS/inv_misc_bag_23_netherweave",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 15000,
+            },
             ["phase"] = 1
         },
     },
@@ -1996,8 +2332,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 26770,
             ["name"] = "Netherweave Gloves",
             ["category"] = "Hands",
-            ["cost"] = 20000,
             ["texture"] = "Interface/ICONS/inv_gauntlets_27",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 20000,
+            },
             ["phase"] = 1
         },
     },
@@ -2006,8 +2345,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 26771,
             ["name"] = "Netherweave Pants",
             ["category"] = "Legs",
-            ["cost"] = 20000,
             ["texture"] = "Interface/ICONS/inv_pants_09",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 20000,
+            },
             ["phase"] = 1
         },
         {
@@ -2035,8 +2377,11 @@ TFG.TAILORING_TBC = {
             ["id"] = 26772,
             ["name"] = "Netherweave Boots",
             ["category"] = "Feet",
-            ["cost"] = 20000,
             ["texture"] = "Interface/ICONS/inv_boots_05",
+            ["source"] = {
+                ["type"] = "Trainer",
+                ["cost"] = 20000,
+            },
             ["phase"] = 1
         },
         {
