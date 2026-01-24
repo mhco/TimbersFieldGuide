@@ -783,6 +783,7 @@ local function populateFileDropdown(initialRun)
         local selVal = tostring(self.value or "")
         local parentKey, childIndex = string.match(selVal, "^(.+)::(%d+)$")
         local childName = nil
+        TFG.selectedCategory = nil
         if parentKey and childIndex then
             local parent = classesMap[parentKey] or skillsMap[parentKey]
             local idx = tonumber(childIndex)
@@ -806,9 +807,6 @@ local function populateFileDropdown(initialRun)
     OnClickCategory = function(self)
         if not self then return end
         local val = tostring(self.value or "ALL")
-        -- Debug: log category clicks
-        local dbg = "CLICK CATEGORY: value=" .. tostring(val) .. " selectedFile=" .. tostring(TFG.selectedFile)
-        if _G and _G.DebugWindow and type(_G.DebugWindow.Append) == "function" then pcall(_G.DebugWindow.Append, _G.DebugWindow, dbg) else if _G and type(_G.DEFAULT_CHAT_FRAME) == "table" and type(_G.DEFAULT_CHAT_FRAME.AddMessage) == "function" then _G.DEFAULT_CHAT_FRAME:AddMessage(dbg) else print(dbg) end end
         TFG.selectedCategory = val
         if val == "ALL" then
             UIDropDownMenu_SetText(categoryDropdown, "All Categories")
