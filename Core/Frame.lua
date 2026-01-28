@@ -32,6 +32,13 @@ frame:SetScript("OnDragStop", frame.StopMovingOrSizing)
 -- Allow ESC to close the addon window
 tinsert(UISpecialFrames, "TFG_MainFrame")
 
+-- Close the profession popup when the main frame is hidden
+frame:SetScript("OnHide", function()
+    if TFG.closeProfessionPopup then
+        TFG.closeProfessionPopup()
+    end
+end)
+
 -- Title bar
 local titleBar = CreateFrame("Frame", nil, frame, "BackdropTemplate")
 frame.titleBar = titleBar
