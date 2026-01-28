@@ -506,12 +506,56 @@ local function ensureProfessionPopup()
         edgeSize = 16,
         insets = { left = 4, right = 4, top = 4, bottom = 4 },
     })
-    popup:SetBackdropColor(0, 0, 0, 0.9)
+    popup:SetBackdropColor(0, 0, 0, 1)
     popup:SetClampedToScreen(true)
     popup:EnableMouse(true)
     popup:Hide()
 
     popup.icons = {}
+
+    -- Create text labels for item name, skill level, and level progression
+    popup.nameText = popup:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+    popup.nameText:SetPoint("TOPLEFT", popup, "TOPLEFT", 12, -10)
+    popup.nameText:SetPoint("TOPRIGHT", popup, "TOPRIGHT", -12, -10)
+    popup.nameText:SetJustifyH("LEFT")
+    popup.nameText:SetTextColor(1, 1, 1)
+    popup.nameText:SetWordWrap(false)
+
+    popup.skillText = popup:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+    popup.skillText:SetPoint("TOPLEFT", popup.nameText, "BOTTOMLEFT", 0, -2)
+    popup.skillText:SetPoint("TOPRIGHT", popup.nameText, "BOTTOMRIGHT", 0, -2)
+    popup.skillText:SetJustifyH("LEFT")
+    popup.skillText:SetTextColor(0.8, 0.8, 0.8)
+    popup.skillText:SetWordWrap(false)
+
+    popup.levelsText = popup:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+    popup.levelsText:SetPoint("TOPLEFT", popup.skillText, "BOTTOMLEFT", 0, -2)
+    popup.levelsText:SetPoint("TOPRIGHT", popup.skillText, "BOTTOMRIGHT", 0, -2)
+    popup.levelsText:SetJustifyH("LEFT")
+    popup.levelsText:SetWordWrap(false)
+
+    popup.sourceText = popup:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    popup.sourceText:SetPoint("TOPLEFT", popup.levelsText, "BOTTOMLEFT", 0, -15)
+    popup.sourceText:SetPoint("TOPRIGHT", popup.levelsText, "BOTTOMRIGHT", 0, -15)
+    popup.sourceText:SetJustifyH("LEFT")
+    popup.sourceText:SetTextColor(0.8, 0.8, 0.8)
+    popup.sourceText:SetWordWrap(false)
+    popup.sourceText:Hide()
+
+    popup.locationText = popup:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    popup.locationText:SetPoint("TOPLEFT", popup.sourceText, "BOTTOMLEFT", 0, -2)
+    popup.locationText:SetPoint("TOPRIGHT", popup.sourceText, "BOTTOMRIGHT", 0, -2)
+    popup.locationText:SetJustifyH("LEFT")
+    popup.locationText:SetTextColor(0.8, 0.8, 0.8)
+    popup.locationText:SetWordWrap(false)
+    popup.locationText:Hide()
+
+    popup.materialsLabel = popup:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+    popup.materialsLabel:SetJustifyH("LEFT")
+    popup.materialsLabel:SetTextColor(1, 1, 1)
+    popup.materialsLabel:SetText("Materials required:")
+    popup.materialsLabel:SetWordWrap(false)
+    popup.materialsLabel:Hide()
 
     function popup:ClearIcons()
         for _, btn in ipairs(self.icons) do
@@ -531,7 +575,7 @@ local function ensureProfessionPopup()
         btn.tex = tex
 
         btn.qtyText = createQuantityOverlay(btn)
-        if quantity and tonumber(quantity) and tonumber(quantity) > 1 then
+        if quantity and tonumber(quantity) and tonumber(quantity) >= 1 then
             btn.qtyText:SetText(tostring(quantity))
             btn.qtyText:Show()
         else
@@ -584,8 +628,8 @@ local function ensureProfessionPopup()
 
     function popup:SetAnchor(anchorFrame)
         self:ClearAllPoints()
-            -- 10px closer than before.
-            self:SetPoint("TOP", anchorFrame, "BOTTOM", 0, 4)
+        -- Position popup to the right of the clicked icon
+        self:SetPoint("TOPLEFT", anchorFrame, "TOPRIGHT", 0, 0)
     end
 
     function popup:ShowForSpell(anchorFrame, spellData)
@@ -602,9 +646,9 @@ local function ensureProfessionPopup()
         local hasRecipeItem = (spellData
             and spellData.source
             and spellData.source.type == "Item"
-            and spellData.source.itemId
-            and tonumber(spellData.source.itemId)
-            and tonumber(spellData.source.itemId) > 0)
+            and spellData.source.id
+            and tonumber(spellData.source.id)
+            and tonumber(spellData.source.id) > 0)
 
         local hasProduct = (spellData
             and spellData.product
@@ -624,12 +668,98 @@ local function ensureProfessionPopup()
             return
         end
 
+        -- Hide blue overlay from previous anchor if switching icons
+        if self._anchor and self._anchor.tfgBlueBorder then
+            self._anchor.tfgBlueBorder:Hide()
+        end
+
         self._anchor = anchorFrame
         self._spellData = spellData
         self:SetAnchor(anchorFrame)
 
-        local xPad = 8
-        local yPad = -8
+        -- Show blue overlay on the clicked icon
+        if anchorFrame and anchorFrame.tfgBlueBorder then
+            anchorFrame.tfgBlueBorder:Show()
+        end
+
+        -- Set text labels
+        local itemName = spellData.name or "Recipe"
+        self.nameText:SetText(itemName)
+
+        -- Determine profession name from context
+        local profName = "Tailoring"  -- Default, could be enhanced to detect from context
+
+        -- Hide the skill text line
+        self.skillText:SetText("")
+
+        -- Build colored skill level progression with profession name prefix
+        if spellData.levels and type(spellData.levels) == "table" then
+            local colors = { "|cFFFF7F00", "|cFFFFFF00", "|cFF00FF00", "|cFF9D9D9D" }
+            local parts = {}
+            for i = 1, 4 do
+                local v = tonumber(spellData.levels[i] or 0) or 0
+                if v > 0 then
+                    table.insert(parts, colors[i] .. tostring(v) .. "|r")
+                end
+            end
+            if #parts > 0 then
+                self.levelsText:SetText("|cFFFFFFFF" .. profName .. "|r  " .. table.concat(parts, "  "))
+            else
+                self.levelsText:SetText("")
+            end
+        else
+            self.levelsText:SetText("")
+        end
+
+        -- Show source information if available
+        if spellData.source then
+            -- Determine source type
+            local sourceType = "Recipe"
+            if spellData.source.type == "Trainer" then
+                sourceType = "Trainer"
+            elseif spellData.source.type == "Item" then
+                if spellData.source.cost ~= nil and tonumber(spellData.source.cost) and tonumber(spellData.source.cost) > 0 then
+                    sourceType = "Vendor Recipe"
+                else
+                    sourceType = "Recipe"
+                end
+            elseif spellData.source.type == "Quest" then
+                sourceType = "Quest Reward"
+            elseif spellData.source.type == "Discovery" then
+                sourceType = "Profession Discovery"
+            end
+
+            -- Format source line with type and cost
+            local sourceLine = "Source: " .. sourceType
+            if spellData.source.cost and tonumber(spellData.source.cost) and tonumber(spellData.source.cost) > 0 then
+                local costText = TFG.FormatCost(spellData.source.cost)
+                if costText then
+                    sourceLine = sourceLine .. " " .. costText
+                end
+            end
+            self.sourceText:SetText(sourceLine)
+            self.sourceText:Show()
+
+            -- Show location line if available
+            if spellData.source.location and tostring(spellData.source.location) ~= "" then
+                self.locationText:SetText("Location: " .. tostring(spellData.source.location))
+                self.locationText:Show()
+            else
+                self.locationText:Hide()
+            end
+        else
+            self.sourceText:Hide()
+            self.locationText:Hide()
+        end
+
+        local xPad = 12  -- Match text padding for consistency
+        -- Adjust textHeight based on whether source/location text is shown
+        local sourceHeight = 0
+        if self.sourceText:IsShown() then sourceHeight = sourceHeight + 16 end
+        if self.locationText:IsShown() then sourceHeight = sourceHeight + 16 end
+        local textHeight = 60 + sourceHeight  -- Base height plus source lines
+        local rowSpacing = 6  -- Spacing above rows
+        local yPad = -10 - textHeight  -- Start icons below the text
         local iconSize = 32
         local spacing = 6
 
@@ -652,7 +782,7 @@ local function ensureProfessionPopup()
         end
 
         if hasRecipeItem then
-            local itemId = tonumber(spellData.source.itemId)
+            local itemId = tonumber(spellData.source.id)
             local tex = select(10, GetItemInfo(itemId))
             if not tex then
                 tex = "Interface/ICONS/INV_Scroll_03"
@@ -669,9 +799,17 @@ local function ensureProfessionPopup()
         -- Row 2: materials
         local row2Width = 0
         if hasMaterials then
+            self.materialsLabel:Show()
+            self.materialsLabel:ClearAllPoints()
+            -- Position label above materials icons with spacing
+            local labelY = yPad - iconSize - rowSpacing - 6  -- Below row 1, with additional 6px spacing
+            self.materialsLabel:SetPoint("TOPLEFT", self, "TOPLEFT", xPad, labelY)
+            self.materialsLabel:SetPoint("TOPRIGHT", self, "TOPRIGHT", -xPad, labelY)
+
             rowCount = rowCount + 1
             local x2 = xPad
-            local y2 = yPad - iconSize - 8
+            -- Position materials icons below the "Materials required:" label
+            local y2 = yPad - iconSize - rowSpacing - 6 - 16 - 4  -- 6px spacing + 16px for label height + 4px spacing below
 
             for _, mat in ipairs(spellData.materials) do
                 local itemId = mat and tonumber(mat.itemId)
@@ -687,11 +825,23 @@ local function ensureProfessionPopup()
                 end
             end
             row2Width = (x2 > xPad) and (x2 - spacing + xPad) or (xPad * 2)
+        else
+            self.materialsLabel:Hide()
         end
 
-        local width = math.max(row1Width, row2Width)
-        local height = (rowCount == 2) and (iconSize * 2 + 24) or (iconSize + 16)
-        if width < 80 then width = 80 end
+        -- Calculate text widths to ensure proper padding
+        local nameWidth = self.nameText:GetStringWidth() + 24  -- 12px padding on each side
+        local skillWidth = self.skillText:GetStringWidth() + 24
+        local levelsWidth = self.levelsText:GetStringWidth() + 24
+        local sourceWidth = self.sourceText:IsShown() and (self.sourceText:GetStringWidth() + 24) or 0
+        local locationWidth = self.locationText:IsShown() and (self.locationText:GetStringWidth() + 24) or 0
+        local textMaxWidth = math.max(nameWidth, skillWidth, levelsWidth, sourceWidth, locationWidth)
+
+        local width = math.max(row1Width, row2Width, textMaxWidth)
+        local iconHeight = (rowCount == 2) and (iconSize * 2 + 24 + 18) or (iconSize + 16)  -- +18 for materials label
+        local bottomPadding = 10  -- Match top padding
+        local height = textHeight + iconHeight + bottomPadding
+        if width < 150 then width = 150 end  -- Ensure minimum width
 
         self:SetSize(width, height)
         self:Show()
@@ -706,6 +856,13 @@ local function ensureProfessionPopup()
         end
     end)
 
+    popup:SetScript("OnHide", function(self)
+        -- Clear blue overlay from anchor icon when popup is hidden
+        if self._anchor and self._anchor.tfgBlueBorder then
+            self._anchor.tfgBlueBorder:Hide()
+        end
+    end)
+
     TFG.professionPopup = popup
     return popup
 end
@@ -717,6 +874,9 @@ local function closeProfessionPopup()
         TFG.professionPopup._spellData = nil
     end
 end
+
+-- Store the close function globally so it can be called from Frame.lua OnHide
+TFG.closeProfessionPopup = closeProfessionPopup
 
 local function populateFileDropdown(initialRun)
     local expansionObject = TFG.DATABASE_FILES[TFG.selectedExpansion]
@@ -2077,7 +2237,7 @@ function frame:Relayout()
                         tex = select(3, GetSpellInfo(spell.id))
                     else
                         -- Some entries represent items (product/source) rather than spells.
-                        local itemId = (spell and spell.product and spell.product.itemId) or (spell and spell.source and spell.source.itemId) or spell and spell.itemId
+                        local itemId = (spell and spell.product and spell.product.itemId) or (spell and spell.source and spell.source.id) or spell and spell.itemId
                         if itemId then
                             tex = select(10, GetItemInfo(itemId))
                         end
@@ -2107,6 +2267,47 @@ function frame:Relayout()
                         rov:SetColorTexture(1, 0, 0, 0.6)
                         rov:Hide()
                         icon.tfgRedOverlay = rov
+                    end
+
+                    -- Blue border highlight for icons with active popup.
+                    if not icon.tfgBlueBorder then
+                        local bov = content:CreateTexture(nil, "OVERLAY")
+                        bov:SetTexture("Interface\\Buttons\\UI-ActionButton-Border")
+                        bov:SetBlendMode("ADD")
+                        bov:SetVertexColor(0.3, 0.5, 1, 1)
+                        bov:SetPoint("CENTER", icon, "CENTER", 0, 0)
+                        bov:SetSize(UI.ICON_SIZE * 1.4, UI.ICON_SIZE * 1.4)
+                        bov:Hide()
+                        icon.tfgBlueBorder = bov
+                    end
+
+                    -- Clickable indicator "+" in bottom-right corner for icons with popup content
+                    if not icon.tfgClickableIndicator then
+                        local indicator = content:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+                        indicator:SetPoint("BOTTOMRIGHT", icon, "BOTTOMRIGHT", -2, 2)
+                        indicator:SetText("+")
+                        indicator:SetTextColor(1, 1, 1)
+                        indicator:SetShadowOffset(1, -1)
+                        indicator:SetShadowColor(0, 0, 0, 1)
+                        indicator:Hide()
+                        icon.tfgClickableIndicator = indicator
+                    end
+
+                    -- Determine if this icon would show a popup
+                    local hasRecipeItem = (spell and spell.source and spell.source.type == "Item"
+                        and spell.source.id and tonumber(spell.source.id)
+                        and tonumber(spell.source.id) > 0)
+                    local hasProduct = (spell and spell.product and spell.product.itemId
+                        and tonumber(spell.product.itemId) and tonumber(spell.product.itemId) > 0)
+                    local hasMaterials = (spell and spell.materials
+                        and type(spell.materials) == "table" and #spell.materials > 0)
+                    local wouldShowPopup = hasRecipeItem or hasProduct or hasMaterials
+
+                    -- Show the clickable indicator only if popup would appear
+                    if wouldShowPopup and icon.tfgClickableIndicator then
+                        icon.tfgClickableIndicator:Show()
+                    elseif icon.tfgClickableIndicator then
+                        icon.tfgClickableIndicator:Hide()
                     end
 
                     -- Determine if this entry is "known" for the player.
@@ -2344,7 +2545,7 @@ function frame:Relayout()
                             GameTooltip:SetSpellByID(sid)
                         else
                             -- Fallback: try to show item tooltip for product/source items.
-                            local itemId = (data and data.product and data.product.itemId) or (data and data.source and data.source.itemId) or data and data.itemId
+                            local itemId = (data and data.product and data.product.itemId) or (data and data.source and data.source.id) or data and data.itemId
                             local shown = false
                             if itemId and tonumber(itemId) then
                                 local _, itemLink = GetItemInfo(tonumber(itemId))
@@ -2377,8 +2578,57 @@ function frame:Relayout()
                                 end
                             end
                             if #parts > 0 then
+                                -- Check if popup would be shown
+                                local hasRecipeItem = (data and data.source and data.source.type == "Item"
+                                    and data.source.id and tonumber(data.source.id)
+                                    and tonumber(data.source.id) > 0)
+                                local hasProduct = (data and data.product and data.product.itemId
+                                    and tonumber(data.product.itemId) and tonumber(data.product.itemId) > 0)
+                                local hasMaterials = (data and data.materials
+                                    and type(data.materials) == "table" and #data.materials > 0)
+                                local wouldShowPopup = hasRecipeItem or hasProduct or hasMaterials
+
                                 GameTooltip:AddLine(" ")
-                                GameTooltip:AddLine("Skill-ups: " .. table.concat(parts, "  "))
+                                GameTooltip:AddLine(table.concat(parts, "  "))
+
+                                -- Show source information if available
+                                if data.source then
+                                    -- Determine source type
+                                    local sourceType = "Recipe"
+                                    if data.source.type == "Trainer" then
+                                        sourceType = "Trainer"
+                                    elseif data.source.type == "Item" then
+                                        if data.source.cost ~= nil and tonumber(data.source.cost) and tonumber(data.source.cost) > 0 then
+                                            sourceType = "Vendor Recipe"
+                                        else
+                                            sourceType = "Recipe"
+                                        end
+                                    elseif data.source.type == "Quest" then
+                                        sourceType = "Quest Reward"
+                                    elseif data.source.type == "Discovery" then
+                                        sourceType = "Profession Discovery"
+                                    end
+
+                                    -- Format source line with type and cost
+                                    local sourceLine = "Source: " .. sourceType
+                                    if data.source.cost and tonumber(data.source.cost) and tonumber(data.source.cost) > 0 then
+                                        local costText = TFG.FormatCost(data.source.cost)
+                                        if costText then
+                                            sourceLine = sourceLine .. " " .. costText
+                                        end
+                                    end
+                                    GameTooltip:AddLine(sourceLine, 0.8, 0.8, 0.8)
+
+                                    -- Show location line if available
+                                    if data.source.location and tostring(data.source.location) ~= "" then
+                                        GameTooltip:AddLine("Location: " .. tostring(data.source.location), 0.8, 0.8, 0.8)
+                                    end
+                                end
+
+                                if wouldShowPopup then
+                                    GameTooltip:AddLine(" ")
+                                    GameTooltip:AddLine("Left click for details", 1, 1, 0)
+                                end
                             end
                         end
 
