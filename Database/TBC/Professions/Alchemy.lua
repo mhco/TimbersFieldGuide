@@ -1,4 +1,4 @@
-local _, TFG = ...
+﻿local _, TFG = ...
 
 -- ==========================================================================
 -- SKILL TEMPLATE
@@ -11,7 +11,7 @@ local _, TFG = ...
     ["texture"] = "Interface/ICONS/inv_potion_48",
     ["source"] = {
         ["type"] = "Item", -- Trainer, Item, or Discovery
-        ["itemId"] = 33209, -- Only needed for items that teach the recipe
+        ["id"] = 33209, -- Only needed for items that teach the recipe
         ["cost"] = 10, -- Only needed for recipes from trainers or items
         ["location"] = "The Violet Eye - Honored", -- Optional
     },
@@ -130,7 +130,7 @@ TFG.ALCHEMY_TBC = {
             ["texture"] = "Interface/ICONS/inv_potion_91",
             ["source"] = {
                 ["type"] = "Item",
-                ["itemId"] = 2553,
+                ["id"] = 2553,
                 ["location"] = "Drop",
             },
             ["product"] = { ["itemId"] = 2457 },
@@ -1198,7 +1198,7 @@ TFG.ALCHEMY_TBC = {
             ["texture"] = "Interface/ICONS/inv_potion_48",
             ["source"] = {
                 ["type"] = "Item",
-                ["itemId"] = 33209,
+                ["id"] = 33209,
                 ["cost"] = 34000,
                 ["location"] = "The Violet Eye - Honored",
             },

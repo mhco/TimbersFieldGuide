@@ -320,7 +320,7 @@ TFG.COOKING_TBC = {
             ["texture"] = "Interface/ICONS/inv_misc_food_15",
             ["source"] = {
                 ["type"] = "Item",
-                ["itemId"] = 16072,
+                ["id"] = 16072,
                 ["cost"] = 10000,
                 ["location"] = "Ashenvale (A) or Desolace (H)",
             },

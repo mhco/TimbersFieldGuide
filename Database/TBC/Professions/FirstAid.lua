@@ -1,4 +1,4 @@
-local _, TFG = ...
+﻿local _, TFG = ...
 
 -- ==========================================================================
 -- SKILL TEMPLATE
@@ -11,7 +11,7 @@ local _, TFG = ...
     ["texture"] = "Interface/ICONS/inv_potion_48",
     ["source"] = {
         ["type"] = "Item", -- Trainer, Item, or Discovery
-        ["itemId"] = 33209, -- Only needed for items that teach the recipe
+        ["id"] = 33209, -- Only needed for items that teach the recipe
         ["cost"] = 10, -- Only needed for recipes from trainers or items
         ["location"] = "The Violet Eye - Honored", -- Optional
     },
@@ -143,7 +143,7 @@ TFG.FIRST_AID_TBC = {
             ["texture"] = "Interface/ICONS/spell_holy_sealofsacrifice",
             ["source"] = {
                 ["type"] = "Item",
-                ["itemId"] = 16084,
+                ["id"] = 16084,
                 ["cost"] = 10000,
             },
         },
@@ -156,7 +156,7 @@ TFG.FIRST_AID_TBC = {
             ["texture"] = "Interface/ICONS/inv_misc_slime_01",
             ["source"] = {
                 ["type"] = "Item",
-                ["itemId"] = 6454,
+                ["id"] = 6454,
                 ["location"] = "World Drop",
             },
             ["product"] = { ["itemId"] = 6453, ["quantity"] = 3 },
@@ -191,7 +191,7 @@ TFG.FIRST_AID_TBC = {
             ["texture"] = "Interface/ICONS/inv_misc_bandage_02",
             ["source"] = {
                 ["type"] = "Item",
-                ["itemId"] = 16112,
+                ["id"] = 16112,
                 ["cost"] = 2200,
             },
             ["product"] = { ["itemId"] = 6451 },
@@ -209,7 +209,7 @@ TFG.FIRST_AID_TBC = {
             ["texture"] = "Interface/ICONS/inv_misc_bandage_19",
             ["source"] = {
                 ["type"] = "Item",
-                ["itemId"] = 16113,
+                ["id"] = 16113,
                 ["cost"] = 5000,
             },
             ["product"] = { ["itemId"] = 8544 },
@@ -287,7 +287,7 @@ TFG.FIRST_AID_TBC = {
             ["texture"] = "Interface/ICONS/spell_holy_sealofsacrifice",
             ["source"] = {
                 ["type"] = "Item",
-                ["itemId"] = 21990,
+                ["id"] = 21990,
                 ["cost"] = 50000,
             },
         },
@@ -298,7 +298,7 @@ TFG.FIRST_AID_TBC = {
             ["texture"] = "Interface/ICONS/inv_drink_14",
             ["source"] = {
                 ["type"] = "Item",
-                ["itemId"] = 19442,
+                ["id"] = 19442,
                 ["cost"] = 90000,
                 ["location"] = "Argent Dawn - Honored",
             },
@@ -317,7 +317,7 @@ TFG.FIRST_AID_TBC = {
             ["texture"] = "Interface/ICONS/inv_misc_bandage_netherweave",
             ["source"] = {
                 ["type"] = "Item",
-                ["itemId"] = 21992,
+                ["id"] = 21992,
                 ["cost"] = 20000,
                 ["location"] = "Aresella, Falcon Watch, Hellfire Peninsula",
             },
@@ -336,7 +336,7 @@ TFG.FIRST_AID_TBC = {
             ["texture"] = "Interface/ICONS/inv_misc_bandage_netherweave_heavy",
             ["source"] = {
                 ["type"] = "Item",
-                ["itemId"] = 21993,
+                ["id"] = 21993,
                 ["cost"] = 40000,
                 ["location"] = "Aresella, Falcon Watch, Hellfire Peninsula",
             },
