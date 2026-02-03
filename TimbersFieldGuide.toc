@@ -1,7 +1,7 @@
 ## Interface: 11508, 20505
 ## Title: Timber's Field Guide
 ## Author: Timbervale
-## Version: v2026.01.17
+## Version: v2026.02.03
 ## Category: Timber's AddOns
 ## IconTexture: Interface\Icons\Inv_scroll_07
 ## SavedVariables: TimbersFieldGuideDB
@@ -21,19 +21,18 @@ Database/Vanilla/Classes/Shaman.lua
 Database/Vanilla/Classes/Warlock.lua
 Database/Vanilla/Classes/WarlockPets.lua
 Database/Vanilla/Classes/Warrior.lua
-# Database/Vanilla/Professions/Alchemy.lua
-# Database/Vanilla/Professions/Blacksmithing.lua
-# Database/Vanilla/Professions/Cooking.lua
-# Database/Vanilla/Professions/Enchanting.lua
-# Database/Vanilla/Professions/Engineering.lua
-# Database/Vanilla/Professions/FirstAid.lua
-# Database/Vanilla/Professions/Fishing.lua
-# Database/Vanilla/Professions/Herbalism.lua
-# Database/Vanilla/Professions/Jewelcrafting.lua
-# Database/Vanilla/Professions/Leatherworking.lua
-# Database/Vanilla/Professions/Mining.lua
-# Database/Vanilla/Professions/Skinning.lua
-# Database/Vanilla/Professions/Tailoring.lua
+Database/Vanilla/Professions/Alchemy.lua
+Database/Vanilla/Professions/Blacksmithing.lua
+Database/Vanilla/Professions/Cooking.lua
+Database/Vanilla/Professions/Enchanting.lua
+Database/Vanilla/Professions/Engineering.lua
+Database/Vanilla/Professions/FirstAid.lua
+Database/Vanilla/Professions/Fishing.lua
+Database/Vanilla/Professions/Herbalism.lua
+Database/Vanilla/Professions/Leatherworking.lua
+Database/Vanilla/Professions/Mining.lua
+Database/Vanilla/Professions/Skinning.lua
+Database/Vanilla/Professions/Tailoring.lua
 Database/Vanilla/Skills/WeaponSkills.lua
 
 Database/TBC/Classes/Druid.lua
