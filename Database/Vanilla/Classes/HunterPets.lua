@@ -3,407 +3,492 @@ local _, TFG = ...
 TFG.HUNTER_PETS_VANILLA = {
     [2] = {
         {
-            ["name"] = "Growl",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/ability_physical_taunt",
-            ["id"] = 2649
+            spell_id = 2649,
+            name = "Growl",
+            rank = "1",
+            icon = "ability_physical_taunt",
         },
-    },
-    [4] = {
-        { empty = true }
-    },
-    [6] = {
-        { empty = true }
-    },
-    [8] = {
-        { empty = true }
     },
     [10] = {
         {
-            ["name"] = "Great Stamina",
-            ["rank"] = 1,
-            ["cost"] = 10,
-            ["texture"] = "Interface/ICONS/spell_nature_unyeildingstamina",
-            ["id"] = 4187
+            spell_id = 4187,
+            name = "Great Stamina",
+            rank = "1",
+            icon = "spell_nature_unyeildingstamina",
+            source = {
+                type = "Trainer",
+                cost = 10,
+            },
         },
         {
-            ["name"] = "Growl",
-            ["rank"] = 2,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/ability_physical_taunt",
-            ["id"] = 14916
+            spell_id = 14916,
+            name = "Growl",
+            rank = "2",
+            icon = "ability_physical_taunt",
         },
         {
-            ["name"] = "Natural Armor",
-            ["rank"] = 1,
-            ["cost"] = 10,
-            ["texture"] = "Interface/ICONS/spell_nature_spiritarmor",
-            ["id"] = 24545
+            spell_id = 24545,
+            name = "Natural Armor",
+            rank = "1",
+            icon = "spell_nature_spiritarmor",
+            source = {
+                type = "Trainer",
+                cost = 10,
+            },
         },
     },
     [12] = {
         {
-            ["name"] = "Great Stamina",
-            ["rank"] = 2,
-            ["cost"] = 120,
-            ["texture"] = "Interface/ICONS/spell_nature_unyeildingstamina",
-            ["id"] = 4188
+            spell_id = 4188,
+            name = "Great Stamina",
+            rank = "2",
+            icon = "spell_nature_unyeildingstamina",
+            source = {
+                type = "Trainer",
+                cost = 120,
+            },
         },
         {
-            ["name"] = "Natural Armor",
-            ["rank"] = 2,
-            ["cost"] = 120,
-            ["texture"] = "Interface/ICONS/spell_nature_spiritarmor",
-            ["id"] = 24549
+            spell_id = 24549,
+            name = "Natural Armor",
+            rank = "2",
+            icon = "spell_nature_spiritarmor",
+            source = {
+                type = "Trainer",
+                cost = 120,
+            },
         },
-    },
-    [14] = {
-        { empty = true }
-    },
-    [16] = {
-        { empty = true }
     },
     [18] = {
         {
-            ["name"] = "Great Stamina",
-            ["rank"] = 3,
-            ["cost"] = 400,
-            ["texture"] = "Interface/ICONS/spell_nature_unyeildingstamina",
-            ["id"] = 4189
+            spell_id = 4189,
+            name = "Great Stamina",
+            rank = "3",
+            icon = "spell_nature_unyeildingstamina",
+            source = {
+                type = "Trainer",
+                cost = 400,
+            },
         },
         {
-            ["name"] = "Natural Armor",
-            ["rank"] = 3,
-            ["cost"] = 400,
-            ["texture"] = "Interface/ICONS/spell_nature_spiritarmor",
-            ["id"] = 24550
+            spell_id = 24550,
+            name = "Natural Armor",
+            rank = "3",
+            icon = "spell_nature_spiritarmor",
+            source = {
+                type = "Trainer",
+                cost = 400,
+            },
         },
     },
     [20] = {
         {
-            ["name"] = "Arcane Resistance",
-            ["rank"] = 1,
-            ["cost"] = 440,
-            ["texture"] = "Interface/ICONS/spell_nature_starfall",
-            ["id"] = 24493
+            spell_id = 24493,
+            name = "Arcane Resistance",
+            rank = "1",
+            icon = "spell_nature_starfall",
+            source = {
+                type = "Trainer",
+                cost = 440,
+            },
         },
         {
-            ["name"] = "Fire Resistance",
-            ["rank"] = 1,
-            ["cost"] = 440,
-            ["texture"] = "Interface/ICONS/spell_fire_firearmor",
-            ["id"] = 23992
+            spell_id = 23992,
+            name = "Fire Resistance",
+            rank = "1",
+            icon = "spell_fire_firearmor",
+            source = {
+                type = "Trainer",
+                cost = 440,
+            },
         },
         {
-            ["name"] = "Frost Resistance",
-            ["rank"] = 1,
-            ["cost"] = 440,
-            ["texture"] = "Interface/ICONS/spell_frost_frostward",
-            ["id"] = 24446
+            spell_id = 24446,
+            name = "Frost Resistance",
+            rank = "1",
+            icon = "spell_frost_frostward",
+            source = {
+                type = "Trainer",
+                cost = 440,
+            },
         },
         {
-            ["name"] = "Growl",
-            ["rank"] = 3,
-            ["cost"] = 440,
-            ["texture"] = "Interface/ICONS/ability_physical_taunt",
-            ["id"] = 14917
+            spell_id = 14917,
+            name = "Growl",
+            rank = "3",
+            icon = "ability_physical_taunt",
+            source = {
+                type = "Trainer",
+                cost = 440,
+            },
         },
         {
-            ["name"] = "Nature Resistance",
-            ["rank"] = 1,
-            ["cost"] = 440,
-            ["texture"] = "Interface/ICONS/spell_nature_resistnature",
-            ["id"] = 24492
+            spell_id = 24492,
+            name = "Nature Resistance",
+            rank = "1",
+            icon = "spell_nature_resistnature",
+            source = {
+                type = "Trainer",
+                cost = 440,
+            },
         },
         {
-            ["name"] = "Shadow Resistance",
-            ["rank"] = 1,
-            ["cost"] = 440,
-            ["texture"] = "Interface/ICONS/spell_shadow_antishadow",
-            ["id"] = 24488
+            spell_id = 24488,
+            name = "Shadow Resistance",
+            rank = "1",
+            icon = "spell_shadow_antishadow",
+            source = {
+                type = "Trainer",
+                cost = 440,
+            },
         },
-    },
-    [22] = {
-        { empty = true }
     },
     [24] = {
         {
-            ["name"] = "Great Stamina",
-            ["rank"] = 4,
-            ["cost"] = 1260,
-            ["texture"] = "Interface/ICONS/spell_nature_unyeildingstamina",
-            ["id"] = 4190
+            spell_id = 4190,
+            name = "Great Stamina",
+            rank = "4",
+            icon = "spell_nature_unyeildingstamina",
+            source = {
+                type = "Trainer",
+                cost = 1260,
+            },
         },
         {
-            ["name"] = "Natural Armor",
-            ["rank"] = 4,
-            ["cost"] = 1260,
-            ["texture"] = "Interface/ICONS/spell_nature_spiritarmor",
-            ["id"] = 24551
+            spell_id = 24551,
+            name = "Natural Armor",
+            rank = "4",
+            icon = "spell_nature_spiritarmor",
+            source = {
+                type = "Trainer",
+                cost = 1260,
+            },
         },
-    },
-    [26] = {
-        { empty = true }
-    },
-    [28] = {
-        { empty = true }
     },
     [30] = {
         {
-            ["name"] = "Arcane Resistance",
-            ["rank"] = 2,
-            ["cost"] = 1440,
-            ["texture"] = "Interface/ICONS/spell_nature_starfall",
-            ["id"] = 24497
+            spell_id = 24497,
+            name = "Arcane Resistance",
+            rank = "2",
+            icon = "spell_nature_starfall",
+            source = {
+                type = "Trainer",
+                cost = 1440,
+            },
         },
         {
-            ["name"] = "Fire Resistance",
-            ["rank"] = 2,
-            ["cost"] = 1440,
-            ["texture"] = "Interface/ICONS/spell_fire_firearmor",
-            ["id"] = 24439
+            spell_id = 24439,
+            name = "Fire Resistance",
+            rank = "2",
+            icon = "spell_fire_firearmor",
+            source = {
+                type = "Trainer",
+                cost = 1440,
+            },
         },
         {
-            ["name"] = "Frost Resistance",
-            ["rank"] = 2,
-            ["cost"] = 1440,
-            ["texture"] = "Interface/ICONS/spell_frost_frostward",
-            ["id"] = 24447
+            spell_id = 24447,
+            name = "Frost Resistance",
+            rank = "2",
+            icon = "spell_frost_frostward",
+            source = {
+                type = "Trainer",
+                cost = 1440,
+            },
         },
         {
-            ["name"] = "Great Stamina",
-            ["rank"] = 5,
-            ["cost"] = 1440,
-            ["texture"] = "Interface/ICONS/spell_nature_unyeildingstamina",
-            ["id"] = 4191
+            spell_id = 4191,
+            name = "Great Stamina",
+            rank = "5",
+            icon = "spell_nature_unyeildingstamina",
+            source = {
+                type = "Trainer",
+                cost = 1440,
+            },
         },
         {
-            ["name"] = "Growl",
-            ["rank"] = 4,
-            ["cost"] = 1440,
-            ["texture"] = "Interface/ICONS/ability_physical_taunt",
-            ["id"] = 14918
+            spell_id = 14918,
+            name = "Growl",
+            rank = "4",
+            icon = "ability_physical_taunt",
+            source = {
+                type = "Trainer",
+                cost = 1440,
+            },
         },
         {
-            ["name"] = "Natural Armor",
-            ["rank"] = 5,
-            ["cost"] = 1440,
-            ["texture"] = "Interface/ICONS/spell_nature_spiritarmor",
-            ["id"] = 24552
+            spell_id = 24552,
+            name = "Natural Armor",
+            rank = "5",
+            icon = "spell_nature_spiritarmor",
+            source = {
+                type = "Trainer",
+                cost = 1440,
+            },
         },
         {
-            ["name"] = "Nature Resistance",
-            ["rank"] = 2,
-            ["cost"] = 1440,
-            ["texture"] = "Interface/ICONS/spell_nature_resistnature",
-            ["id"] = 24502
+            spell_id = 24502,
+            name = "Nature Resistance",
+            rank = "2",
+            icon = "spell_nature_resistnature",
+            source = {
+                type = "Trainer",
+                cost = 1440,
+            },
         },
         {
-            ["name"] = "Shadow Resistance",
-            ["rank"] = 2,
-            ["cost"] = 1440,
-            ["texture"] = "Interface/ICONS/spell_shadow_antishadow",
-            ["id"] = 24505
+            spell_id = 24505,
+            name = "Shadow Resistance",
+            rank = "2",
+            icon = "spell_shadow_antishadow",
+            source = {
+                type = "Trainer",
+                cost = 1440,
+            },
         },
-    },
-    [32] = {
-        { empty = true }
-    },
-    [34] = {
-        { empty = true }
     },
     [36] = {
         {
-            ["name"] = "Great Stamina",
-            ["rank"] = 6,
-            ["cost"] = 2520,
-            ["texture"] = "Interface/ICONS/spell_nature_unyeildingstamina",
-            ["id"] = 4192
+            spell_id = 4192,
+            name = "Great Stamina",
+            rank = "6",
+            icon = "spell_nature_unyeildingstamina",
+            source = {
+                type = "Trainer",
+                cost = 2520,
+            },
         },
         {
-            ["name"] = "Natural Armor",
-            ["rank"] = 6,
-            ["cost"] = 2520,
-            ["texture"] = "Interface/ICONS/spell_nature_spiritarmor",
-            ["id"] = 24553
+            spell_id = 24553,
+            name = "Natural Armor",
+            rank = "6",
+            icon = "spell_nature_spiritarmor",
+            source = {
+                type = "Trainer",
+                cost = 2520,
+            },
         },
-    },
-    [38] = {
-        { empty = true }
     },
     [40] = {
         {
-            ["name"] = "Arcane Resistance",
-            ["rank"] = 3,
-            ["cost"] = 3240,
-            ["texture"] = "Interface/ICONS/spell_nature_starfall",
-            ["id"] = 24500
+            spell_id = 24500,
+            name = "Arcane Resistance",
+            rank = "3",
+            icon = "spell_nature_starfall",
+            source = {
+                type = "Trainer",
+                cost = 3240,
+            },
         },
         {
-            ["name"] = "Fire Resistance",
-            ["rank"] = 3,
-            ["cost"] = 3240,
-            ["texture"] = "Interface/ICONS/spell_fire_firearmor",
-            ["id"] = 24444
+            spell_id = 24444,
+            name = "Fire Resistance",
+            rank = "3",
+            icon = "spell_fire_firearmor",
+            source = {
+                type = "Trainer",
+                cost = 3240,
+            },
         },
         {
-            ["name"] = "Frost Resistance",
-            ["rank"] = 3,
-            ["cost"] = 3240,
-            ["texture"] = "Interface/ICONS/spell_frost_frostward",
-            ["id"] = 24448
+            spell_id = 24448,
+            name = "Frost Resistance",
+            rank = "3",
+            icon = "spell_frost_frostward",
+            source = {
+                type = "Trainer",
+                cost = 3240,
+            },
         },
         {
-            ["name"] = "Growl",
-            ["rank"] = 5,
-            ["cost"] = 3240,
-            ["texture"] = "Interface/ICONS/ability_physical_taunt",
-            ["id"] = 14919
+            spell_id = 14919,
+            name = "Growl",
+            rank = "5",
+            icon = "ability_physical_taunt",
+            source = {
+                type = "Trainer",
+                cost = 3240,
+            },
         },
         {
-            ["name"] = "Nature Resistance",
-            ["rank"] = 3,
-            ["cost"] = 3240,
-            ["texture"] = "Interface/ICONS/spell_nature_resistnature",
-            ["id"] = 24503
+            spell_id = 24503,
+            name = "Nature Resistance",
+            rank = "3",
+            icon = "spell_nature_resistnature",
+            source = {
+                type = "Trainer",
+                cost = 3240,
+            },
         },
         {
-            ["name"] = "Shadow Resistance",
-            ["rank"] = 3,
-            ["cost"] = 3240,
-            ["texture"] = "Interface/ICONS/spell_shadow_antishadow",
-            ["id"] = 24506
+            spell_id = 24506,
+            name = "Shadow Resistance",
+            rank = "3",
+            icon = "spell_shadow_antishadow",
+            source = {
+                type = "Trainer",
+                cost = 3240,
+            },
         },
     },
     [42] = {
         {
-            ["name"] = "Great Stamina",
-            ["rank"] = 7,
-            ["cost"] = 4320,
-            ["texture"] = "Interface/ICONS/spell_nature_unyeildingstamina",
-            ["id"] = 4193
+            spell_id = 4193,
+            name = "Great Stamina",
+            rank = "7",
+            icon = "spell_nature_unyeildingstamina",
+            source = {
+                type = "Trainer",
+                cost = 4320,
+            },
         },
         {
-            ["name"] = "Natural Armor",
-            ["rank"] = 7,
-            ["cost"] = 4320,
-            ["texture"] = "Interface/ICONS/spell_nature_spiritarmor",
-            ["id"] = 24554
+            spell_id = 24554,
+            name = "Natural Armor",
+            rank = "7",
+            icon = "spell_nature_spiritarmor",
+            source = {
+                type = "Trainer",
+                cost = 4320,
+            },
         },
-    },
-    [44] = {
-        { empty = true }
-    },
-    [46] = {
-        { empty = true }
     },
     [48] = {
         {
-            ["name"] = "Great Stamina",
-            ["rank"] = 8,
-            ["cost"] = 5760,
-            ["texture"] = "Interface/ICONS/spell_nature_unyeildingstamina",
-            ["id"] = 4194
+            spell_id = 4194,
+            name = "Great Stamina",
+            rank = "8",
+            icon = "spell_nature_unyeildingstamina",
+            source = {
+                type = "Trainer",
+                cost = 5760,
+            },
         },
         {
-            ["name"] = "Natural Armor",
-            ["rank"] = 8,
-            ["cost"] = 5760,
-            ["texture"] = "Interface/ICONS/spell_nature_spiritarmor",
-            ["id"] = 24555
+            spell_id = 24555,
+            name = "Natural Armor",
+            rank = "8",
+            icon = "spell_nature_spiritarmor",
+            source = {
+                type = "Trainer",
+                cost = 5760,
+            },
         },
     },
     [50] = {
         {
-            ["name"] = "Arcane Resistance",
-            ["rank"] = 4,
-            ["cost"] = 6480,
-            ["texture"] = "Interface/ICONS/spell_nature_starfall",
-            ["id"] = 24501
+            spell_id = 24501,
+            name = "Arcane Resistance",
+            rank = "4",
+            icon = "spell_nature_starfall",
+            source = {
+                type = "Trainer",
+                cost = 6480,
+            },
         },
         {
-            ["name"] = "Fire Resistance",
-            ["rank"] = 4,
-            ["cost"] = 6480,
-            ["texture"] = "Interface/ICONS/spell_fire_firearmor",
-            ["id"] = 24445
+            spell_id = 24445,
+            name = "Fire Resistance",
+            rank = "4",
+            icon = "spell_fire_firearmor",
+            source = {
+                type = "Trainer",
+                cost = 6480,
+            },
         },
         {
-            ["name"] = "Frost Resistance",
-            ["rank"] = 4,
-            ["cost"] = 6480,
-            ["texture"] = "Interface/ICONS/spell_frost_frostward",
-            ["id"] = 24449
+            spell_id = 24449,
+            name = "Frost Resistance",
+            rank = "4",
+            icon = "spell_frost_frostward",
+            source = {
+                type = "Trainer",
+                cost = 6480,
+            },
         },
         {
-            ["name"] = "Growl",
-            ["rank"] = 6,
-            ["cost"] = 6480,
-            ["texture"] = "Interface/ICONS/ability_physical_taunt",
-            ["id"] = 14920
+            spell_id = 14920,
+            name = "Growl",
+            rank = "6",
+            icon = "ability_physical_taunt",
+            source = {
+                type = "Trainer",
+                cost = 6480,
+            },
         },
         {
-            ["name"] = "Nature Resistance",
-            ["rank"] = 4,
-            ["cost"] = 6480,
-            ["texture"] = "Interface/ICONS/spell_nature_resistnature",
-            ["id"] = 24504
+            spell_id = 24504,
+            name = "Nature Resistance",
+            rank = "4",
+            icon = "spell_nature_resistnature",
+            source = {
+                type = "Trainer",
+                cost = 6480,
+            },
         },
         {
-            ["name"] = "Shadow Resistance",
-            ["rank"] = 4,
-            ["cost"] = 6480,
-            ["texture"] = "Interface/ICONS/spell_shadow_antishadow",
-            ["id"] = 24507
+            spell_id = 24507,
+            name = "Shadow Resistance",
+            rank = "4",
+            icon = "spell_shadow_antishadow",
+            source = {
+                type = "Trainer",
+                cost = 6480,
+            },
         },
-    },
-    [52] = {
-        { empty = true }
     },
     [54] = {
         {
-            ["name"] = "Great Stamina",
-            ["rank"] = 9,
-            ["cost"] = 7560,
-            ["texture"] = "Interface/ICONS/spell_nature_unyeildingstamina",
-            ["id"] = 5041
+            spell_id = 5041,
+            name = "Great Stamina",
+            rank = "9",
+            icon = "spell_nature_unyeildingstamina",
+            source = {
+                type = "Trainer",
+                cost = 7560,
+            },
         },
         {
-            ["name"] = "Natural Armor",
-            ["rank"] = 9,
-            ["cost"] = 7560,
-            ["texture"] = "Interface/ICONS/spell_nature_spiritarmor",
-            ["id"] = 24629
+            spell_id = 24629,
+            name = "Natural Armor",
+            rank = "9",
+            icon = "spell_nature_spiritarmor",
+            source = {
+                type = "Trainer",
+                cost = 7560,
+            },
         },
-    },
-    [56] = {
-        { empty = true }
-    },
-    [58] = {
-        { empty = true }
     },
     [60] = {
         {
-            ["name"] = "Great Stamina",
-            ["rank"] = 10,
-            ["cost"] = 9000,
-            ["texture"] = "Interface/ICONS/spell_nature_unyeildingstamina",
-            ["id"] = 5042
+            spell_id = 5042,
+            name = "Great Stamina",
+            rank = "10",
+            icon = "spell_nature_unyeildingstamina",
+            source = {
+                type = "Trainer",
+                cost = 9000,
+            },
         },
         {
-            ["name"] = "Growl",
-            ["rank"] = 7,
-            ["cost"] = 9000,
-            ["texture"] = "Interface/ICONS/ability_physical_taunt",
-            ["id"] = 14921
+            spell_id = 14921,
+            name = "Growl",
+            rank = "7",
+            icon = "ability_physical_taunt",
+            source = {
+                type = "Trainer",
+                cost = 9000,
+            },
         },
         {
-            ["name"] = "Natural Armor",
-            ["rank"] = 10,
-            ["cost"] = 9000,
-            ["texture"] = "Interface/ICONS/spell_nature_spiritarmor",
-            ["id"] = 24630
+            spell_id = 24630,
+            name = "Natural Armor",
+            rank = "10",
+            icon = "spell_nature_spiritarmor",
+            source = {
+                type = "Trainer",
+                cost = 9000,
+            },
         },
     },
 }

@@ -13,6 +13,164 @@ local function normalizeSkillKey(name)
     return string.gsub(tostring(name):upper(), " ", "_")
 end
 
+-- ==========================================================================
+-- Data structure compatibility helpers (supports both old and new formats)
+-- ==========================================================================
+-- Get spell ID from ability object (supports both 'id' and 'spell_id')
+local function getSpellId(spell)
+    if not spell then return nil end
+    return spell.spell_id or spell.id
+end
+
+-- Get icon/texture from ability object (supports both 'texture' and 'icon')
+-- New format uses short icon names, old format uses full paths
+-- Also handles numeric texture IDs returned by GetSpellInfo
+local function getSpellTexture(spell)
+    if not spell then return nil end
+    local tex = spell.icon or spell.texture
+    if tex == nil then return nil end
+    -- If it's a number (numeric texture ID from GetSpellInfo), return it directly
+    if type(tex) == "number" then
+        return tex
+    end
+    -- Convert to string for string operations
+    tex = tostring(tex)
+    if tex == "" then return nil end
+    -- If it's a numeric string (texture ID), return as number
+    if tonumber(tex) then
+        return tonumber(tex)
+    end
+    -- If it already has Interface/ICONS/, return as-is
+    if string.find(tex, "Interface/ICONS/") or string.find(tex, "Interface\\ICONS\\") then
+        return tex
+    end
+    -- Otherwise, prepend the path
+    return "Interface/ICONS/" .. tex
+end
+
+-- Get spell rank from ability object (handles both number and string)
+local function getSpellRank(spell)
+    if not spell then return nil end
+    return tonumber(spell.rank)
+end
+
+-- Check if spell is a talent (supports both 'talent' field and 'type == "Talent"')
+local function isTalentSpell(spell)
+    if not spell then return false end
+    return spell.talent or (spell.type == "Talent")
+end
+
+-- Check if player knows ANY rank of a given talent (by matching name + icon).
+-- This allows showing all ranks of a talent the player has invested in,
+-- even when "All Talents" checkbox is unchecked.
+local function isAnyTalentRankKnown(spell)
+    if not spell then return false end
+    if not isTalentSpell(spell) then return false end
+
+    local db = TFG and TFG.activeDatabase
+    if type(db) ~= "table" then return false end
+
+    local targetName = spell.name and tostring(spell.name) or ""
+    local targetIcon = spell.icon and tostring(spell.icon) or ""
+
+    if targetName == "" then return false end
+
+    -- Scan database for talents with same name and icon, check if any is known
+    for _, spells in pairs(db) do
+        if type(spells) == "table" then
+            for _, s in ipairs(spells) do
+                if s and isTalentSpell(s) then
+                    local sName = s.name and tostring(s.name) or ""
+                    local sIcon = s.icon and tostring(s.icon) or ""
+                    -- Match by name and icon to identify same talent at different ranks
+                    if sName == targetName and sIcon == targetIcon then
+                        local sid = s.spell_id or s.id
+                        if sid and tonumber(sid) and tonumber(sid) > 0 then
+                            if IsPlayerSpell(tonumber(sid)) then
+                                return true
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+
+    return false
+end
+
+-- Get category from ability object (supports both 'category' string and 'categories' array)
+local function getSpellCategory(spell)
+    if not spell then return nil end
+    if spell.category then return spell.category end
+    if spell.categories and type(spell.categories) == "table" and #spell.categories > 0 then
+        return spell.categories[1]
+    end
+    return nil
+end
+
+-- Check if spell has a specific category
+local function hasSpellCategory(spell, category)
+    if not spell or not category then return false end
+    if spell.category then return spell.category == category end
+    if spell.categories and type(spell.categories) == "table" then
+        for _, cat in ipairs(spell.categories) do
+            if cat == category then return true end
+        end
+    end
+    return false
+end
+
+-- Get training cost from ability object (supports both 'cost' and 'source.cost')
+local function getTrainingCost(spell)
+    if not spell then return nil end
+    -- Check old format first
+    if spell.cost and tonumber(spell.cost) then return tonumber(spell.cost) end
+    -- Check new format
+    if spell.source and spell.source.cost and tonumber(spell.source.cost) then
+        return tonumber(spell.source.cost)
+    end
+    return nil
+end
+
+-- Get product item ID from ability object (supports both 'itemId' and 'item_id')
+local function getProductItemId(spell)
+    if not spell or not spell.product then return nil end
+    return tonumber(spell.product.item_id) or tonumber(spell.product.itemId)
+end
+
+-- Get product quantity from ability object (supports both 'quantity' and 'qty')
+local function getProductQty(spell)
+    if not spell or not spell.product then return 1 end
+    return tonumber(spell.product.qty) or tonumber(spell.product.quantity) or 1
+end
+
+-- Get material item ID (supports both 'itemId' and 'item_id')
+local function getMaterialItemId(mat)
+    if not mat then return nil end
+    return tonumber(mat.item_id) or tonumber(mat.itemId)
+end
+
+-- Get material quantity (supports both 'quantity' and 'qty')
+local function getMaterialQty(mat)
+    if not mat then return 1 end
+    return tonumber(mat.qty) or tonumber(mat.quantity) or 1
+end
+
+-- Get recipe source item ID (supports both 'id' and 'recipe_item_ids')
+local function getRecipeSourceId(spell)
+    if not spell or not spell.source then return nil end
+    -- Check old format
+    if spell.source.id and tonumber(spell.source.id) then
+        return tonumber(spell.source.id)
+    end
+    -- Check new format (array)
+    if spell.source.recipe_item_ids and type(spell.source.recipe_item_ids) == "table" and #spell.source.recipe_item_ids > 0 then
+        return tonumber(spell.source.recipe_item_ids[1])
+    end
+    return nil
+end
+
 -- Store both current and inferred max cap for skills/professions.
 -- Classic Era PTR appears to return 0 for the "max" fields from GetSkillLineInfo,
 -- so we infer a reasonable cap from the current rank and expected tier table.
@@ -197,8 +355,9 @@ local function extractCategoriesFromDatabase(database)
     local set = {}
     for _, spells in pairs(database or {}) do
         for _, spell in ipairs(spells) do
-            if spell.category and spell.category ~= "" then
-                set[spell.category] = true
+            local cat = getSpellCategory(spell)
+            if cat and cat ~= "" then
+                set[cat] = true
             end
         end
     end
@@ -550,6 +709,18 @@ local function ensureProfessionPopup()
     popup.locationText:SetWordWrap(false)
     popup.locationText:Hide()
 
+    -- Quest line with yellow "!" icon
+    popup.questIcon = popup:CreateTexture(nil, "OVERLAY")
+    popup.questIcon:SetSize(14, 14)
+    popup.questIcon:SetTexture("Interface/GossipFrame/AvailableQuestIcon")
+    popup.questIcon:Hide()
+
+    popup.questText = popup:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    popup.questText:SetJustifyH("LEFT")
+    popup.questText:SetTextColor(1, 0.82, 0)  -- Quest yellow color
+    popup.questText:SetWordWrap(false)
+    popup.questText:Hide()
+
     popup.materialsLabel = popup:CreateFontString(nil, "OVERLAY", "GameFontNormal")
     popup.materialsLabel:SetJustifyH("LEFT")
     popup.materialsLabel:SetTextColor(1, 1, 1)
@@ -628,8 +799,8 @@ local function ensureProfessionPopup()
 
     function popup:SetAnchor(anchorFrame)
         self:ClearAllPoints()
-        -- Position popup to the right of the clicked icon
-        self:SetPoint("TOPLEFT", anchorFrame, "TOPRIGHT", 0, 0)
+        -- Position popup centered below the clicked icon
+        self:SetPoint("TOP", anchorFrame, "BOTTOM", 0, -4)
     end
 
     function popup:ShowForSpell(anchorFrame, spellData)
@@ -643,25 +814,24 @@ local function ensureProfessionPopup()
             return
         end
 
-        local hasRecipeItem = (spellData
-            and spellData.source
-            and spellData.source.type == "Item"
-            and spellData.source.id
-            and tonumber(spellData.source.id)
-            and tonumber(spellData.source.id) > 0)
+        local popupRecipeId = getRecipeSourceId(spellData)
+        -- Show recipe item if recipe_item_ids exists, regardless of source type
+        local hasRecipeItem = (popupRecipeId and popupRecipeId > 0)
 
-        local hasProduct = (spellData
-            and spellData.product
-            and spellData.product.itemId
-            and tonumber(spellData.product.itemId)
-            and tonumber(spellData.product.itemId) > 0)
+        local popupProductId = getProductItemId(spellData)
+        local hasProduct = (popupProductId and popupProductId > 0)
 
         local hasMaterials = (spellData
             and spellData.materials
             and type(spellData.materials) == "table"
             and #spellData.materials > 0)
 
-        if not (hasRecipeItem or hasProduct or hasMaterials) then
+        -- Also show popup for class abilities with source info (training cost)
+        local hasSourceInfo = (spellData
+            and spellData.source
+            and (spellData.source.cost or spellData.source.type))
+
+        if not (hasRecipeItem or hasProduct or hasMaterials or hasSourceInfo) then
             self:Hide()
             self._anchor = nil
             self._spellData = nil
@@ -684,6 +854,11 @@ local function ensureProfessionPopup()
 
         -- Set text labels
         local itemName = spellData.name or "Recipe"
+        -- Include rank for class abilities if present
+        local spellRank = getSpellRank(spellData)
+        if spellRank and spellRank > 0 then
+            itemName = itemName .. " (Rank " .. tostring(spellRank) .. ")"
+        end
         self.nameText:SetText(itemName)
 
         -- Determine profession name from context
@@ -712,6 +887,9 @@ local function ensureProfessionPopup()
         end
 
         -- Show source information if available
+        self.questIcon:Hide()
+        self.questText:Hide()
+
         if spellData.source then
             -- Determine source type
             local sourceType = "Recipe"
@@ -747,16 +925,55 @@ local function ensureProfessionPopup()
             else
                 self.locationText:Hide()
             end
+
+            -- Show quest title with yellow "!" icon for Quest sources
+            local questId = nil
+            local questEntry = nil
+            if spellData.source.type == "Quest" and spellData.source.quest_ids and spellData.source.quest_ids[1] then
+                questEntry = spellData.source.quest_ids[1]
+                questId = tonumber(questEntry.id)
+            end
+            if questId and questId > 0 then
+                local questTitle = nil
+
+                -- Try to get quest title from API (available in some Classic clients)
+                -- Try C_QuestLog.GetTitleForQuestID (available in some versions)
+                if C_QuestLog and C_QuestLog.GetTitleForQuestID then
+                    questTitle = C_QuestLog.GetTitleForQuestID(questId)
+                end
+                -- Fallback: try QuestUtils_GetQuestName if available
+                if not questTitle and QuestUtils_GetQuestName then
+                    questTitle = QuestUtils_GetQuestName(questId)
+                end
+                -- Fallback: use quest name from database if provided
+                if not questTitle and questEntry.name and questEntry.name ~= "" then
+                    questTitle = questEntry.name
+                end
+
+                if questTitle and questTitle ~= "" then
+                    -- Position quest icon and text below location (or source if no location)
+                    local anchorTo = self.locationText:IsShown() and self.locationText or self.sourceText
+                    self.questIcon:ClearAllPoints()
+                    self.questIcon:SetPoint("TOPLEFT", anchorTo, "BOTTOMLEFT", 0, -4)
+                    self.questText:ClearAllPoints()
+                    self.questText:SetPoint("LEFT", self.questIcon, "RIGHT", 4, 0)
+                    self.questText:SetPoint("RIGHT", self, "RIGHT", -12, 0)
+                    self.questText:SetText(questTitle)
+                    self.questIcon:Show()
+                    self.questText:Show()
+                end
+            end
         else
             self.sourceText:Hide()
             self.locationText:Hide()
         end
 
         local xPad = 12  -- Match text padding for consistency
-        -- Adjust textHeight based on whether source/location text is shown
+        -- Adjust textHeight based on whether source/location/quest text is shown
         local sourceHeight = 0
         if self.sourceText:IsShown() then sourceHeight = sourceHeight + 16 end
         if self.locationText:IsShown() then sourceHeight = sourceHeight + 16 end
+        if self.questText:IsShown() then sourceHeight = sourceHeight + 18 end  -- Quest line with icon
         local textHeight = 60 + sourceHeight  -- Base height plus source lines
         local rowSpacing = 6  -- Spacing above rows
         local yPad = -10 - textHeight  -- Start icons below the text
@@ -769,8 +986,8 @@ local function ensureProfessionPopup()
 
         -- Row 1: product (if any), recipe scroll (if source is Item)
         if hasProduct then
-            local itemId = tonumber(spellData.product.itemId)
-            local qty = tonumber(spellData.product.quantity or 1) or 1
+            local itemId = getProductItemId(spellData)
+            local qty = getProductQty(spellData)
             local tex = select(10, GetItemInfo(itemId))
             if not tex then
                 tex = "Interface/ICONS/INV_Misc_QuestionMark"
@@ -782,7 +999,7 @@ local function ensureProfessionPopup()
         end
 
         if hasRecipeItem then
-            local itemId = tonumber(spellData.source.id)
+            local itemId = getRecipeSourceId(spellData)
             local tex = select(10, GetItemInfo(itemId))
             if not tex then
                 tex = "Interface/ICONS/INV_Scroll_03"
@@ -812,8 +1029,8 @@ local function ensureProfessionPopup()
             local y2 = yPad - iconSize - rowSpacing - 6 - 16 - 4  -- 6px spacing + 16px for label height + 4px spacing below
 
             for _, mat in ipairs(spellData.materials) do
-                local itemId = mat and tonumber(mat.itemId)
-                local qty = mat and tonumber(mat.quantity or 1) or 1
+                local itemId = getMaterialItemId(mat)
+                local qty = getMaterialQty(mat)
                 if itemId and itemId > 0 then
                     local tex = select(10, GetItemInfo(itemId))
                     if not tex then
@@ -835,10 +1052,18 @@ local function ensureProfessionPopup()
         local levelsWidth = self.levelsText:GetStringWidth() + 24
         local sourceWidth = self.sourceText:IsShown() and (self.sourceText:GetStringWidth() + 24) or 0
         local locationWidth = self.locationText:IsShown() and (self.locationText:GetStringWidth() + 24) or 0
-        local textMaxWidth = math.max(nameWidth, skillWidth, levelsWidth, sourceWidth, locationWidth)
+        local questWidth = self.questText:IsShown() and (self.questText:GetStringWidth() + 42) or 0  -- +42 for icon + padding
+        local textMaxWidth = math.max(nameWidth, skillWidth, levelsWidth, sourceWidth, locationWidth, questWidth)
 
         local width = math.max(row1Width, row2Width, textMaxWidth)
-        local iconHeight = (rowCount == 2) and (iconSize * 2 + 24 + 18) or (iconSize + 16)  -- +18 for materials label
+        local iconHeight
+        if rowCount == 0 then
+            iconHeight = 0  -- No icons, no extra height needed
+        elseif rowCount == 2 then
+            iconHeight = (iconSize * 2 + 24 + 18)  -- +18 for materials label
+        else
+            iconHeight = (iconSize + 16)
+        end
         local bottomPadding = 10  -- Match top padding
         local height = textHeight + iconHeight + bottomPadding
         if width < 150 then width = 150 end  -- Ensure minimum width
@@ -1348,6 +1573,8 @@ function frame:Relayout()
 
     -- Helper: return highest known rank (numeric) for a given spell name by scanning the
     -- active database and checking `IsPlayerSpell` on DB ids. Returns nil if none known.
+    -- Also matches on icon to distinguish spells that share the same name but are different
+    -- (e.g., Polymorph: Sheep vs Polymorph: Turtle both have name "Polymorph" but different icons).
     getHighestKnownRankForSpellName = function(spellName, targetSpell)
         if not spellName or tostring(spellName) == "" then return nil end
         -- If the DB entry being evaluated has faction/race restrictions and the player
@@ -1363,14 +1590,27 @@ function frame:Relayout()
         local db = TFG and TFG.activeDatabase
         if type(db) ~= "table" then return nil end
         local highest = nil
+        -- Get the target spell's icon for matching (to distinguish Polymorph variants, etc.)
+        local targetIcon = targetSpell and targetSpell.icon and tostring(targetSpell.icon) or nil
         for _, spells in pairs(db) do
             if type(spells) == "table" then
                 for _, s in ipairs(spells or {}) do
-                    if s and s.name and tostring(s.name) == tostring(spellName) and s.id then
+                    local sSpellId = getSpellId(s)
+                    if s and s.name and tostring(s.name) == tostring(spellName) and sSpellId then
                         local skip = false
+
+                        -- If targetSpell has an icon, require candidates to match it.
+                        -- This distinguishes spells like Polymorph: Sheep from Polymorph: Turtle.
+                        if targetIcon and targetIcon ~= "" then
+                            local candidateIcon = s.icon and tostring(s.icon) or ""
+                            if candidateIcon ~= targetIcon then
+                                skip = true
+                            end
+                        end
+
                         -- If targetSpell has faction/race restrictions, require candidates to match
                         -- those restrictions as well (avoid mixing cross-faction entries).
-                        if targetSpell then
+                        if not skip and targetSpell then
                             if targetSpell.faction and tostring(targetSpell.faction) ~= "" then
                                 if s.faction and tostring(s.faction) ~= "" and s.faction ~= targetSpell.faction then skip = true end
                                 if (not s.faction or tostring(s.faction) == "") and targetSpell.faction ~= playerFaction then skip = true end
@@ -1382,17 +1622,18 @@ function frame:Relayout()
                         end
 
                         -- Also skip candidates that are not applicable to this player.
-                        if s.faction and tostring(s.faction) ~= "" and s.faction ~= playerFaction then
-                            skip = true
-                        end
-                        if s.race and tostring(s.race) ~= "" and not string.find(s.race, playerRace) then
-                            skip = true
+                        if not skip then
+                            if s.faction and tostring(s.faction) ~= "" and s.faction ~= playerFaction then
+                                skip = true
+                            end
+                            if s.race and tostring(s.race) ~= "" and not string.find(s.race, playerRace) then
+                                skip = true
+                            end
                         end
 
                         if not skip then
-                            local sid = tonumber(s.id) or nil
-                            if sid and sid > 0 and IsPlayerSpell(sid) then
-                                local sr = tonumber(s.rank) or 0
+                            if sSpellId > 0 and IsPlayerSpell(sSpellId) then
+                                local sr = getSpellRank(s) or 0
                                 if not highest or sr > highest then highest = sr end
                             end
                         end
@@ -1413,7 +1654,8 @@ function frame:Relayout()
         for _, spells in pairs(db) do
             if type(spells) == "table" then
                 for _, s in ipairs(spells or {}) do
-                    if s and s.group and tostring(s.group) == tostring(groupKey) and s.id then
+                    local sSpellId = getSpellId(s)
+                    if s and s.group and tostring(s.group) == tostring(groupKey) and sSpellId then
                         local skip = false
                         -- Respect targetSpell restrictions when provided
                         if targetSpell then
@@ -1436,9 +1678,8 @@ function frame:Relayout()
                         end
 
                         if not skip then
-                            local sid = tonumber(s.id) or nil
-                            if sid and sid > 0 and IsPlayerSpell(sid) then
-                                local sr = tonumber(s.rank) or 0
+                            if sSpellId > 0 and IsPlayerSpell(sSpellId) then
+                                local sr = getSpellRank(s) or 0
                                 if not highest or sr > highest then highest = sr end
                             end
                         end
@@ -1517,17 +1758,19 @@ function frame:Relayout()
 
             for _, spells in pairs(db) do
                 for _, s in ipairs(spells or {}) do
-                    if s and s.category == "Profession Training" then
-                        if not anyTrainingSpellId and s.id then
-                            anyTrainingSpellId = tonumber(s.id)
+                    if s and hasSpellCategory(s, "Profession Training") then
+                        local sSpellId = getSpellId(s)
+                        if not anyTrainingSpellId and sSpellId then
+                            anyTrainingSpellId = sSpellId
                         end
-                        if not anyTrainingTexture and s.texture and tostring(s.texture) ~= "" then
-                            anyTrainingTexture = s.texture
+                        local sTexture = getSpellTexture(s)
+                        if not anyTrainingTexture and sTexture and tostring(sTexture) ~= "" then
+                            anyTrainingTexture = sTexture
                         end
 
                         -- Prefer the first resolvable spell icon immediately.
-                        if s.id then
-                            local tex = select(3, GetSpellInfo(s.id))
+                        if sSpellId then
+                            local tex = select(3, GetSpellInfo(sSpellId))
                             if tex and tostring(tex) ~= "" then
                                 return tex
                             end
@@ -1634,10 +1877,10 @@ function frame:Relayout()
                     local bucketLvl = tonumber(tostring(k))
                     if bucketLvl and type(spells) == "table" then
                         for _, s in ipairs(spells or {}) do
-                            if s and s.category == "Profession Training" and s.id then
+                            local sSpellId = getSpellId(s)
+                            if s and hasSpellCategory(s, "Profession Training") and sSpellId then
                                 dbgTrainingCount = dbgTrainingCount + 1
-                                local sid = tonumber(tostring(s.id))
-                                if sid and sid > 0 then
+                                if sSpellId > 0 then
                                     -- Prefer DB-provided cap if present.
                                     local newCap = tonumber(tostring(s.cap))
                                     if not newCap or newCap <= 0 then
@@ -1657,8 +1900,8 @@ function frame:Relayout()
                                             effectiveTrainAt = bucketLvl,
                                             displayBracket = bucketLvl,
                                             newCap = newCap,
-                                            trainingSpellId = sid,
-                                            texture = s.texture,
+                                            trainingSpellId = sSpellId,
+                                            texture = getSpellTexture(s),
                                         })
                                     end
                                 end
@@ -1911,10 +2154,10 @@ function frame:Relayout()
             local hideReason = nil
 
             local isRankUnlock = (spell and spell._tfgType == "PROFESSION_RANK_UNLOCK")
-            local isProfessionTraining = (isProfession and spell and spell.category == "Profession Training")
+            local isProfessionTraining = (isProfession and spell and hasSpellCategory(spell, "Profession Training"))
 
-            if (spell.faction or spell.race) then enemySpellsCount = enemySpellsCount + 1 end
-            if spell.talent then talentCount = talentCount + 1 end
+            if (spell.faction or spell.race or spell.races) then enemySpellsCount = enemySpellsCount + 1 end
+            if isTalentSpell(spell) then talentCount = talentCount + 1 end
 
             -- Known filtering:
             --  * For classes: hide spells player already knows.
@@ -1946,12 +2189,12 @@ function frame:Relayout()
                 else
                     -- Some profession entries (notably Fishing) can have non-spell / nil ids in the dataset.
                     -- DeprecatedSpellBook's IsPlayerSpell errors on nil.
-                    local sid = spell and tonumber(spell.id)
+                    local sid = getSpellId(spell)
                     if sid and sid > 0 then
                         -- Riding: use rank-aware DB matching here as well so header/row
                         -- visibility matches icon-level decisions.
-                        if TFG and TFG.RIDING_TBC and TFG.activeDatabase == TFG.RIDING_TBC and spell and spell.name and tonumber(spell.rank) then
-                            local dbRank = tonumber(spell.rank) or 0
+                        if TFG and TFG.RIDING_TBC and TFG.activeDatabase == TFG.RIDING_TBC and spell and spell.name and getSpellRank(spell) then
+                            local dbRank = getSpellRank(spell) or 0
                             local known = getHighestKnownRankForSpellName(spell.name, spell)
                             if known and known >= dbRank then
                                 hide = true
@@ -1972,7 +2215,7 @@ function frame:Relayout()
                 -- OR if the player actually knows the represented spell (IsPlayerSpell).
                 local sid = nil
                 for _, s in ipairs(row.spells or {}) do
-                    if s and tonumber(s.id) then sid = tonumber(s.id); break end
+                    if s and getSpellId(s) then sid = getSpellId(s); break end
                 end
                 if playerSkill >= levelRequired then
                     hide = true
@@ -1985,14 +2228,14 @@ function frame:Relayout()
                 end
             end
             if (not TFG.showKnown and not TFG.isSkill) then
-                local sid = spell and tonumber(spell.id)
+                local sid = getSpellId(spell)
                 if sid and sid > 0 then
                     -- For class views, prefer DB-driven rank checks: if the DB lists multiple
                     -- ranks for this ability, determine the highest rank the player actually
                     -- knows by checking the DB ids and only hide when player's known rank
                     -- >= this DB entry's rank. Fallback to IsPlayerSpell when no DB rank exists.
-                    if isClassView and spell and spell.name and tonumber(spell.rank) then
-                        local dbRank = tonumber(spell.rank) or 0
+                    if isClassView and spell and spell.name and getSpellRank(spell) then
+                        local dbRank = getSpellRank(spell) or 0
                         local known = getHighestKnownRankForSpellName(spell.name, spell)
                         if known and known >= dbRank then
                             hide = true
@@ -2020,28 +2263,61 @@ function frame:Relayout()
                         -- appear when the user selects the discovery's explicit category
                         -- (e.g., Cauldrons). Only hide this spell if its own category
                         -- does not match the selected category.
-                        if not spell.category or spell.category ~= TFG.selectedCategory then
+                        if not hasSpellCategory(spell, TFG.selectedCategory) then
                             hide = true
                             hideReason = "category"
                         end
-                    elseif not spell.category or spell.category ~= TFG.selectedCategory then
+                    elseif not hasSpellCategory(spell, TFG.selectedCategory) then
                         hide = true
                         hideReason = "category"
                     end
                 end
             end
 
-            if spell.talent and not TFG.showTalents then hide = true end
+            -- Hide talents unless "All Talents" is checked OR player knows any rank of this talent
+            if isTalentSpell(spell) and not TFG.showTalents and not isAnyTalentRankKnown(spell) then hide = true end
 
             if not TFG.showEnemySpells then
-                if spell.faction and spell.faction ~= playerFaction then hide = true end
-                if spell.race and not string.find(spell.race, playerRace) then hide = true end
+                -- Check faction and race restrictions
+                local hasFaction = spell.faction ~= nil
+                local hasRace = spell.race ~= nil or (spell.races ~= nil and type(spell.races) == "table")
+
+                local factionMatch = true
+                local raceMatch = true
+
+                if hasFaction then
+                    factionMatch = (spell.faction == playerFaction)
+                end
+
+                if hasRace then
+                    -- Support both old string format (spell.race) and new array format (spell.races)
+                    if spell.races and type(spell.races) == "table" then
+                        raceMatch = false
+                        for _, r in ipairs(spell.races) do
+                            if r == playerRace then
+                                raceMatch = true
+                                break
+                            end
+                        end
+                    elseif spell.race then
+                        raceMatch = string.find(spell.race, playerRace) ~= nil
+                    end
+                end
+
+                -- If both faction and race are specified, player must match BOTH
+                if hasFaction and hasRace then
+                    if not factionMatch or not raceMatch then hide = true end
+                elseif hasFaction and not factionMatch then
+                    hide = true
+                elseif hasRace and not raceMatch then
+                    hide = true
+                end
             end
 
             if not hide then visibleSpells = visibleSpells + 1 end
             -- Debug: if this is a skills parent selection, report why items were hidden
             if tostring(TFG.selectedFile or ""):lower():find("skills") then
-                local sid = spell and tonumber(spell.id) or 0
+                local sid = getSpellId(spell) or 0
                     if hide then
                     -- Debug hidden: TFG HIDE DBG suppressed. To re-enable, restore the original debug append/send.
                     -- local isPlayer = (sid and sid>0 and IsPlayerSpell(sid))
@@ -2130,10 +2406,11 @@ function frame:Relayout()
                 local hide = false
                 local hideReasonIcon = nil
 
-                if spell.talent and not TFG.showTalents then hide = true; hideReasonIcon = "talent" end
+                -- Hide talents unless "All Talents" is checked OR player knows any rank of this talent
+                if isTalentSpell(spell) and not TFG.showTalents and not isAnyTalentRankKnown(spell) then hide = true; hideReasonIcon = "talent" end
 
                 local isRankUnlock = (spell and spell._tfgType == "PROFESSION_RANK_UNLOCK")
-                local isProfessionTraining = (isProfession and spell and spell.category == "Profession Training")
+                local isProfessionTraining = (isProfession and spell and hasSpellCategory(spell, "Profession Training"))
 
                 if isProfessionTraining and (TFG.selectedCategory ~= "Profession Training") then
                     if syntheticUnlockByBracket and syntheticUnlockByBracket[levelRequired] then
@@ -2150,14 +2427,14 @@ function frame:Relayout()
                             hide = true; hideReasonIcon = "professionLevel"
                         end
                     else
-                        local sid = spell and tonumber(spell.id)
+                        local sid = getSpellId(spell)
                         if sid and sid > 0 then
                             if IsPlayerSpell(sid) then hide = true; hideReasonIcon = "isPlayerSpell" end
                         end
                         if TFG and TFG.RIDING_TBC and TFG.activeDatabase == TFG.RIDING_TBC then
                             -- For Riding, prefer DB rank-aware matching: if the DB lists a rank
                             -- for this spell and the player knows an equal-or-higher rank, hide it.
-                            local dbRank = spell and tonumber(spell.rank) or nil
+                            local dbRank = getSpellRank(spell)
                             if dbRank and dbRank > 0 then
                                 local known = getHighestKnownRankForSpellName(spell.name, spell)
                                 if known and known >= dbRank then
@@ -2178,12 +2455,12 @@ function frame:Relayout()
                 -- actually knows the represented spell id (IsPlayerSpell). This keeps the
                 -- header/rows matching icon-level visibility.
                 if (not hide and not TFG.showKnown and TFG.isSkill and not isProfession) then
-                    local sid = spell and tonumber(spell.id) or 0
+                    local sid = getSpellId(spell) or 0
                     if sid > 0 and IsPlayerSpell(sid) then
                         hide = true; hideReasonIcon = "isPlayerSpell"
                     end
                 end
-                if (not TFG.showKnown and not TFG.isSkill and not isProfession and isSpellKnownDBAware(spell.id, spell)) then hide = true; hideReasonIcon = "dbAware" end
+                if (not TFG.showKnown and not TFG.isSkill and not isProfession and isSpellKnownDBAware(getSpellId(spell), spell)) then hide = true; hideReasonIcon = "dbAware" end
 
                 if (not hide and isProfession and TFG.selectedCategory and TFG.selectedCategory ~= "ALL") then
                     if TFG.selectedCategory == "DISCOVERIES" then
@@ -2194,11 +2471,11 @@ function frame:Relayout()
                         if levelRequired == 999 then
                             -- Discovery-group items (level 999) should also be shown when
                             -- the user selects their explicit category (e.g. "Cauldrons").
-                            if not spell.category or spell.category ~= TFG.selectedCategory then
+                            if not hasSpellCategory(spell, TFG.selectedCategory) then
                                 hide = true; hideReasonIcon = "category"
                             end
                         else
-                            if not spell.category or spell.category ~= TFG.selectedCategory then
+                            if not hasSpellCategory(spell, TFG.selectedCategory) then
                                 hide = true; hideReasonIcon = "category"
                             end
                         end
@@ -2206,8 +2483,46 @@ function frame:Relayout()
                 end
 
                 if not TFG.showEnemySpells then
-                    if spell.faction and spell.faction ~= playerFaction then hide = true; hideReasonIcon = "faction" end
-                    if spell.race and not string.find(spell.race, playerRace) then hide = true; hideReasonIcon = "race" end
+                    -- Check faction and race restrictions
+                    local hasFaction = spell.faction ~= nil
+                    local hasRace = spell.race ~= nil or (spell.races ~= nil and type(spell.races) == "table")
+
+                    local factionMatch = true
+                    local raceMatch = true
+
+                    if hasFaction then
+                        factionMatch = (spell.faction == playerFaction)
+                    end
+
+                    if hasRace then
+                        -- Support both old string format (spell.race) and new array format (spell.races)
+                        if spell.races and type(spell.races) == "table" then
+                            raceMatch = false
+                            for _, r in ipairs(spell.races) do
+                                if r == playerRace then
+                                    raceMatch = true
+                                    break
+                                end
+                            end
+                        elseif spell.race then
+                            raceMatch = string.find(spell.race, playerRace) ~= nil
+                        end
+                    end
+
+                    -- If both faction and race are specified, player must match BOTH
+                    -- If only one is specified, player must match that one
+                    if hasFaction and hasRace then
+                        if not factionMatch or not raceMatch then
+                            hide = true
+                            hideReasonIcon = (not factionMatch) and "faction" or "race"
+                        end
+                    elseif hasFaction and not factionMatch then
+                        hide = true
+                        hideReasonIcon = "faction"
+                    elseif hasRace and not raceMatch then
+                        hide = true
+                        hideReasonIcon = "race"
+                    end
                 end
 
                 if hide and tostring(TFG.selectedFile or ""):lower():find("skills") then
@@ -2230,16 +2545,17 @@ function frame:Relayout()
                     icon:SetSize(UI.ICON_SIZE, UI.ICON_SIZE)
                     icon:SetPoint("TOPLEFT", xOffset, yOffset)
                     -- Resolve texture: prefer explicit texture, then spell icon, then item icon if present.
-                    local tex = nil
-                    if spell and spell.texture and tostring(spell.texture) ~= "" then
-                        tex = spell.texture
-                    elseif spell and spell.id and tonumber(spell.id) and tonumber(spell.id) > 0 then
-                        tex = select(3, GetSpellInfo(spell.id))
-                    else
-                        -- Some entries represent items (product/source) rather than spells.
-                        local itemId = (spell and spell.product and spell.product.itemId) or (spell and spell.source and spell.source.id) or spell and spell.itemId
-                        if itemId then
-                            tex = select(10, GetItemInfo(itemId))
+                    local tex = getSpellTexture(spell)
+                    if not tex then
+                        local sid = getSpellId(spell)
+                        if sid and sid > 0 then
+                            tex = select(3, GetSpellInfo(sid))
+                        else
+                            -- Some entries represent items (product/source) rather than spells.
+                            local itemId = getProductItemId(spell) or getRecipeSourceId(spell) or (spell and spell.itemId)
+                            if itemId then
+                                tex = select(10, GetItemInfo(itemId))
+                            end
                         end
                     end
                     icon:SetTexture(tex or "Interface/ICONS/INV_Misc_QuestionMark")
@@ -2294,20 +2610,41 @@ function frame:Relayout()
                     end
 
                     -- Determine if this icon would show a popup
-                    local hasRecipeItem = (spell and spell.source and spell.source.type == "Item"
-                        and spell.source.id and tonumber(spell.source.id)
-                        and tonumber(spell.source.id) > 0)
-                    local hasProduct = (spell and spell.product and spell.product.itemId
-                        and tonumber(spell.product.itemId) and tonumber(spell.product.itemId) > 0)
+                    local recipeSourceId = getRecipeSourceId(spell)
+                    -- Show recipe item if recipe_item_ids exists, regardless of source type
+                    local hasRecipeItem = (recipeSourceId and recipeSourceId > 0)
+                    local productItemId = getProductItemId(spell)
+                    local hasProduct = (productItemId and productItemId > 0)
                     local hasMaterials = (spell and spell.materials
                         and type(spell.materials) == "table" and #spell.materials > 0)
-                    local wouldShowPopup = hasRecipeItem or hasProduct or hasMaterials
+                    local hasSourceInfo = (spell and spell.source
+                        and (spell.source.cost or spell.source.type))
+                    local wouldShowPopup = hasRecipeItem or hasProduct or hasMaterials or hasSourceInfo
 
                     -- Show the clickable indicator only if popup would appear
                     if wouldShowPopup and icon.tfgClickableIndicator then
                         icon.tfgClickableIndicator:Show()
                     elseif icon.tfgClickableIndicator then
                         icon.tfgClickableIndicator:Hide()
+                    end
+
+                    -- Talent indicator "T" in top-right corner for talent spells in class views
+                    if not icon.tfgTalentIndicator then
+                        local talentInd = content:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+                        talentInd:SetPoint("TOPRIGHT", icon, "TOPRIGHT", -2, -2)
+                        talentInd:SetText("T")
+                        talentInd:SetTextColor(1, 1, 1)
+                        talentInd:SetShadowOffset(1, -1)
+                        talentInd:SetShadowColor(0, 0, 0, 1)
+                        talentInd:Hide()
+                        icon.tfgTalentIndicator = talentInd
+                    end
+
+                    -- Show talent indicator for talents in class views
+                    if isClassView and isTalentSpell(spell) and icon.tfgTalentIndicator then
+                        icon.tfgTalentIndicator:Show()
+                    elseif icon.tfgTalentIndicator then
+                        icon.tfgTalentIndicator:Hide()
                     end
 
                     -- Determine if this entry is "known" for the player.
@@ -2326,14 +2663,14 @@ function frame:Relayout()
                             return false
                         end
                         -- Otherwise, treat as a known spell if IsPlayerSpell returns true for its id.
-                        local sid = sp and tonumber(sp.id) or nil
+                        local sid = getSpellId(sp)
                         if sid and sid > 0 then
                             -- Special-case: Riding skill database should behave like class rank groups
                             -- — if the DB lists multiple ranks for the same named spell, determine the
                             -- highest known rank via `getHighestKnownRankForSpellName` and treat lower
                             -- ranks as known only when the known rank >= this entry's rank.
-                            if TFG and TFG.RIDING_TBC and TFG.activeDatabase == TFG.RIDING_TBC and sp and sp.name and tonumber(sp.rank) then
-                                local dbRank = tonumber(sp.rank) or 0
+                            if TFG and TFG.RIDING_TBC and TFG.activeDatabase == TFG.RIDING_TBC and sp and sp.name and getSpellRank(sp) then
+                                local dbRank = getSpellRank(sp) or 0
                                 local known = getHighestKnownRankForSpellName(sp.name, sp)
                                 if known and known >= dbRank then
                                     return true
@@ -2342,8 +2679,8 @@ function frame:Relayout()
                             -- Class views: consult DB ranks first (only hide lower ranks when
                             -- player actually knows an equal-or-higher rank). For other views,
                             -- fall back to IsPlayerSpell.
-                            if isClassView and sp and sp.name and tonumber(sp.rank) then
-                                local dbRank = tonumber(sp.rank) or 0
+                            if isClassView and sp and sp.name and getSpellRank(sp) then
+                                local dbRank = getSpellRank(sp) or 0
                                 local known = getHighestKnownRankForSpellName(sp.name, sp)
                                 if known and known >= dbRank then
                                     return true
@@ -2363,14 +2700,16 @@ function frame:Relayout()
                     if entryIsKnown(spell) then
                         icon.tfgKnownOverlay:Show()
                         -- If the spell became known, clear any previously set red mark
-                        if spell and spell.id then
-                            TimbersFieldGuideDB.redMarked[tostring(spell.id)] = nil
+                        local spellIdForMark = getSpellId(spell)
+                        if spellIdForMark then
+                            TimbersFieldGuideDB.redMarked[tostring(spellIdForMark)] = nil
                             if icon.tfgRedOverlay then icon.tfgRedOverlay:Hide() end
                         end
                     else
                         icon.tfgKnownOverlay:Hide()
                         -- Show red overlay if user previously marked this unlearned ability
-                        if spell and spell.id and TimbersFieldGuideDB.redMarked[tostring(spell.id)] then
+                        local spellIdForMark = getSpellId(spell)
+                        if spellIdForMark and TimbersFieldGuideDB.redMarked[tostring(spellIdForMark)] then
                             icon.tfgRedOverlay:Show()
                         else
                             icon.tfgRedOverlay:Hide()
@@ -2379,8 +2718,6 @@ function frame:Relayout()
 
                     icon:SetScript("OnMouseDown", function(self, button)
                         if button == "LeftButton" then
-                            if not isProfessionView() then return end
-
                             -- Rank unlock rows are informational; no popup.
                             if self.spellData and self.spellData._tfgType == "PROFESSION_RANK_UNLOCK" then
                                 return
@@ -2396,8 +2733,7 @@ function frame:Relayout()
                         if button == "RightButton" then
                             -- Allow marking in any view (class/skill/profession). Only require a valid spell id.
                             local sp = self.spellData
-                            if not sp or not sp.id then return end
-                            local sid = tonumber(sp.id) or nil
+                            local sid = getSpellId(sp)
                             if not sid or sid <= 0 then return end
 
                             -- Only allow marking if the entry is currently not known
@@ -2472,8 +2808,8 @@ function frame:Relayout()
                                 local bucket = db[trainAt]
                                 if type(bucket) == "table" then
                                     for _, s in ipairs(bucket) do
-                                        if s and s.category == "Profession Training" and s.id then
-                                            trainingSpellId = tonumber(s.id)
+                                        if s and hasSpellCategory(s, "Profession Training") and getSpellId(s) then
+                                            trainingSpellId = getSpellId(s)
                                             break
                                         end
                                     end
@@ -2490,11 +2826,11 @@ function frame:Relayout()
                                         local lvl = tonumber(k)
                                         if lvl and type(spells) == "table" then
                                             for _, s in ipairs(spells or {}) do
-                                                if s and s.category == "Profession Training" and s.id then
+                                                if s and hasSpellCategory(s, "Profession Training") and getSpellId(s) then
                                                     local diff = math.abs(lvl - (tonumber(trainAt) or 0))
                                                     if not bestDiff or diff < bestDiff then
                                                         bestDiff = diff
-                                                        bestId = tonumber(s.id)
+                                                        bestId = getSpellId(s)
                                                     end
                                                 end
                                             end
@@ -2506,8 +2842,8 @@ function frame:Relayout()
                                 if not trainingSpellId then
                                     for _, spells in pairs(db) do
                                         for _, s in ipairs(spells or {}) do
-                                            if s and s.category == "Profession Training" and s.id and (tonumber(s.id) == tonumber(data.trainingSpellId)) then
-                                                trainingSpellId = tonumber(s.id)
+                                            if s and hasSpellCategory(s, "Profession Training") and getSpellId(s) and (getSpellId(s) == tonumber(data.trainingSpellId)) then
+                                                trainingSpellId = getSpellId(s)
                                                 break
                                             end
                                         end
@@ -2540,12 +2876,12 @@ function frame:Relayout()
                         end
                         GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
                         -- Prefer showing a spell tooltip when we have a valid spell id.
-                        local sid = data and tonumber(data.id)
+                        local sid = getSpellId(data)
                         if sid and sid > 0 then
                             GameTooltip:SetSpellByID(sid)
                         else
                             -- Fallback: try to show item tooltip for product/source items.
-                            local itemId = (data and data.product and data.product.itemId) or (data and data.source and data.source.id) or data and data.itemId
+                            local itemId = getProductItemId(data) or getRecipeSourceId(data) or (data and data.itemId)
                             local shown = false
                             if itemId and tonumber(itemId) then
                                 local _, itemLink = GetItemInfo(tonumber(itemId))
@@ -2579,11 +2915,11 @@ function frame:Relayout()
                             end
                             if #parts > 0 then
                                 -- Check if popup would be shown
-                                local hasRecipeItem = (data and data.source and data.source.type == "Item"
-                                    and data.source.id and tonumber(data.source.id)
-                                    and tonumber(data.source.id) > 0)
-                                local hasProduct = (data and data.product and data.product.itemId
-                                    and tonumber(data.product.itemId) and tonumber(data.product.itemId) > 0)
+                                local tooltipRecipeId = getRecipeSourceId(data)
+                                -- Show recipe item if recipe_item_ids exists, regardless of source type
+                                local hasRecipeItem = (tooltipRecipeId and tooltipRecipeId > 0)
+                                local tooltipProductId = getProductItemId(data)
+                                local hasProduct = (tooltipProductId and tooltipProductId > 0)
                                 local hasMaterials = (data and data.materials
                                     and type(data.materials) == "table" and #data.materials > 0)
                                 local wouldShowPopup = hasRecipeItem or hasProduct or hasMaterials
@@ -2635,21 +2971,23 @@ function frame:Relayout()
                         -- NOTE: Source/location/cost info is intentionally not shown on the main list tooltip.
                         -- It is shown only on the popup's recipe-source icon tooltip.
 
-                        if data.rank and data.rank > 0 then
+                        local tooltipRank = getSpellRank(data)
+                        if tooltipRank and tooltipRank > 0 then
                             GameTooltip:AddLine(" ")
-                            GameTooltip:AddLine("Rank: |cFFFFFFFF" .. data.rank)
+                            GameTooltip:AddLine("Rank: |cFFFFFFFF" .. tooltipRank)
                         end
 
-                        if data.cost and data.cost > 0 then
-                            local costText = TFG.FormatCost(data.cost)
+                        local tooltipCost = getTrainingCost(data)
+                        if tooltipCost and tooltipCost > 0 then
+                            local costText = TFG.FormatCost(tooltipCost)
                             if costText then
-                                local color = (GetMoney() < data.cost) and "|cFFFF0000" or "|cFFFFFFFF"
+                                local color = (GetMoney() < tooltipCost) and "|cFFFF0000" or "|cFFFFFFFF"
                                 GameTooltip:AddLine(" ")
                                 GameTooltip:AddLine("Cost: " .. color .. costText)
                             end
                         end
 
-                        if data.talent then GameTooltip:AddLine(" ") GameTooltip:AddLine("Talent") end
+                        if isTalentSpell(data) then GameTooltip:AddLine(" ") GameTooltip:AddLine("Talent") end
                         if data.race then GameTooltip:AddLine(" ") GameTooltip:AddLine("Races: |cFFFFFFFF" .. data.race) end
                         if data.faction then GameTooltip:AddLine(" ") GameTooltip:AddLine("Faction: |cFFFFFFFF" .. data.faction) end
 

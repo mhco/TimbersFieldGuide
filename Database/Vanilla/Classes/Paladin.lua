@@ -2,1048 +2,1488 @@ local _, TFG = ...
 
 TFG.PALADIN_VANILLA = {
     [2] = {
-        [1] = {
-            ["name"] = "Devotion Aura",
-            ["rank"] = 1,
-            ["cost"] = 10,
-            ["texture"] = "Interface/ICONS/spell_holy_devotionaura",
-            ["id"] = 465
+        {
+            spell_id = 465,
+            name = "Devotion Aura",
+            rank = "1",
+            icon = "spell_holy_devotionaura",
+            source = {
+                type = "Trainer",
+                cost = 10,
+            },
         },
     },
     [4] = {
-        [1] = {
-            ["name"] = "Blessing of Might",
-            ["rank"] = 1,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/spell_holy_fistofjustice",
-            ["id"] = 19740
+        {
+            spell_id = 19740,
+            name = "Blessing of Might",
+            rank = "1",
+            icon = "spell_holy_fistofjustice",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
-        [2] = {
-            ["name"] = "Judgement",
-            ["rank"] = 1,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/spell_holy_righteousfury",
-            ["id"] = 20271
+        {
+            spell_id = 20271,
+            name = "Judgement",
+            rank = "1",
+            icon = "spell_holy_righteousfury",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
     },
     [6] = {
-        [1] = {
-            ["name"] = "Holy Light",
-            ["rank"] = 2,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/spell_holy_holybolt",
-            ["id"] = 639
+        {
+            spell_id = 639,
+            name = "Holy Light",
+            rank = "2",
+            icon = "spell_holy_holybolt",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
-        [2] = {
-            ["name"] = "Divine Protection",
-            ["rank"] = 1,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/spell_holy_restoration",
-            ["id"] = 498
+        {
+            spell_id = 498,
+            name = "Divine Protection",
+            rank = "1",
+            icon = "spell_holy_restoration",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
-        [3] = {
-            ["name"] = "Seal of the Crusader",
-            ["rank"] = 1,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/spell_holy_holysmite",
-            ["id"] = 21082
+        {
+            spell_id = 21082,
+            name = "Seal of the Crusader",
+            rank = "1",
+            icon = "spell_holy_holysmite",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
     },
     [8] = {
-        [1] = {
-            ["name"] = "Parry",
-            ["rank"] = 1,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/ability_parry",
-            ["id"] = 3127
+        {
+            spell_id = 3127,
+            name = "Parry",
+            rank = "1",
+            icon = "ability_parry",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
-        [2] = {
-            ["name"] = "Purify",
-            ["rank"] = 1,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/spell_holy_purify",
-            ["id"] = 1152
+        {
+            spell_id = 1152,
+            name = "Purify",
+            rank = "1",
+            icon = "spell_holy_purify",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
-        [3] = {
-            ["name"] = "Hammer of Justice",
-            ["rank"] = 1,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/spell_holy_sealofmight",
-            ["id"] = 853
+        {
+            spell_id = 853,
+            name = "Hammer of Justice",
+            rank = "1",
+            icon = "spell_holy_sealofmight",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
     },
     [10] = {
-        [1] = {
-            ["name"] = "Lay on Hands",
-            ["rank"] = 1,
-            ["cost"] = 300,
-            ["texture"] = "Interface/ICONS/spell_holy_layonhands",
-            ["id"] = 633
+        {
+            spell_id = 633,
+            name = "Lay on Hands",
+            rank = "1",
+            icon = "spell_holy_layonhands",
+            source = {
+                type = "Trainer",
+                cost = 300,
+            },
         },
-        [2] = {
-            ["name"] = "Seal of Righteousness",
-            ["rank"] = 2,
-            ["cost"] = 300,
-            ["texture"] = "Interface/ICONS/ability_thunderbolt",
-            ["id"] = 20287
+        {
+            spell_id = 20287,
+            name = "Seal of Righteousness",
+            rank = "2",
+            icon = "ability_thunderbolt",
+            source = {
+                type = "Trainer",
+                cost = 300,
+            },
         },
-        [3] = {
-            ["name"] = "Blessing of Protection",
-            ["rank"] = 1,
-            ["cost"] = 300,
-            ["texture"] = "Interface/ICONS/spell_holy_sealofprotection",
-            ["id"] = 1022
+        {
+            spell_id = 1022,
+            name = "Blessing of Protection",
+            rank = "1",
+            icon = "spell_holy_sealofprotection",
+            source = {
+                type = "Trainer",
+                cost = 300,
+            },
         },
-        [4] = {
-            ["name"] = "Devotion Aura",
-            ["rank"] = 2,
-            ["cost"] = 300,
-            ["texture"] = "Interface/ICONS/spell_holy_devotionaura",
-            ["id"] = 10290
+        {
+            spell_id = 10290,
+            name = "Devotion Aura",
+            rank = "2",
+            icon = "spell_holy_devotionaura",
+            source = {
+                type = "Trainer",
+                cost = 300,
+            },
         },
     },
     [12] = {
-        [1] = {
-            ["name"] = "Redemption",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/spell_holy_resurrection",
-            ["id"] = 7328
+        {
+            spell_id = 7328,
+            name = "Redemption",
+            rank = "1",
+            icon = "spell_holy_resurrection",
         },
-        [2] = {
-            ["name"] = "Blessing of Might",
-            ["rank"] = 2,
-            ["cost"] = 1000,
-            ["texture"] = "Interface/ICONS/spell_holy_fistofjustice",
-            ["id"] = 19834
+        {
+            spell_id = 19834,
+            name = "Blessing of Might",
+            rank = "2",
+            icon = "spell_holy_fistofjustice",
+            source = {
+                type = "Trainer",
+                cost = 1000,
+            },
         },
-        [3] = {
-            ["name"] = "Seal of the Crusader",
-            ["rank"] = 2,
-            ["cost"] = 1000,
-            ["texture"] = "Interface/ICONS/spell_holy_holysmite",
-            ["id"] = 20162
+        {
+            spell_id = 20162,
+            name = "Seal of the Crusader",
+            rank = "2",
+            icon = "spell_holy_holysmite",
+            source = {
+                type = "Trainer",
+                cost = 1000,
+            },
         },
     },
     [14] = {
-        [1] = {
-            ["name"] = "Blessing of Wisdom",
-            ["rank"] = 1,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/spell_holy_sealofwisdom",
-            ["id"] = 19742
+        {
+            spell_id = 19742,
+            name = "Blessing of Wisdom",
+            rank = "1",
+            icon = "spell_holy_sealofwisdom",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
-        [2] = {
-            ["name"] = "Holy Light",
-            ["rank"] = 3,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/spell_holy_holybolt",
-            ["id"] = 647
+        {
+            spell_id = 647,
+            name = "Holy Light",
+            rank = "3",
+            icon = "spell_holy_holybolt",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
     },
     [16] = {
-        [1] = {
-            ["name"] = "Righteous Fury",
-            ["rank"] = 1,
-            ["cost"] = 3000,
-            ["texture"] = "Interface/ICONS/spell_holy_sealoffury",
-            ["id"] = 25780
+        {
+            spell_id = 25780,
+            name = "Righteous Fury",
+            rank = "1",
+            icon = "spell_holy_sealoffury",
+            source = {
+                type = "Trainer",
+                cost = 3000,
+            },
         },
-        [2] = {
-            ["name"] = "Retribution Aura",
-            ["rank"] = 1,
-            ["cost"] = 3000,
-            ["texture"] = "Interface/ICONS/spell_holy_auraoflight",
-            ["id"] = 7294
+        {
+            spell_id = 7294,
+            name = "Retribution Aura",
+            rank = "1",
+            icon = "spell_holy_auraoflight",
+            source = {
+                type = "Trainer",
+                cost = 3000,
+            },
         },
     },
     [18] = {
-        [1] = {
-            ["name"] = "Seal of Righteousness",
-            ["rank"] = 3,
-            ["cost"] = 3500,
-            ["texture"] = "Interface/ICONS/ability_thunderbolt",
-            ["id"] = 20288
+        {
+            spell_id = 20288,
+            name = "Seal of Righteousness",
+            rank = "3",
+            icon = "ability_thunderbolt",
+            source = {
+                type = "Trainer",
+                cost = 3500,
+            },
         },
-        [2] = {
-            ["name"] = "Blessing of Freedom",
-            ["rank"] = 1,
-            ["cost"] = 3500,
-            ["texture"] = "Interface/ICONS/spell_holy_sealofvalor",
-            ["id"] = 1044
+        {
+            spell_id = 1044,
+            name = "Blessing of Freedom",
+            rank = "1",
+            icon = "spell_holy_sealofvalor",
+            source = {
+                type = "Trainer",
+                cost = 3500,
+            },
         },
-        [3] = {
-            ["name"] = "Divine Protection",
-            ["rank"] = 2,
-            ["cost"] = 3500,
-            ["texture"] = "Interface/ICONS/spell_holy_restoration",
-            ["id"] = 5573
+        {
+            spell_id = 5573,
+            name = "Divine Protection",
+            rank = "2",
+            icon = "spell_holy_restoration",
+            source = {
+                type = "Trainer",
+                cost = 3500,
+            },
         },
     },
     [20] = {
-        [1] = {
-            ["name"] = "Exorcism",
-            ["rank"] = 1,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/spell_holy_excorcism_02",
-            ["id"] = 879
+        {
+            spell_id = 879,
+            name = "Exorcism",
+            rank = "1",
+            icon = "spell_holy_excorcism_02",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
-        [2] = {
-            ["name"] = "Flash of Light",
-            ["rank"] = 1,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/spell_holy_flashheal",
-            ["id"] = 19750
+        {
+            spell_id = 19750,
+            name = "Flash of Light",
+            rank = "1",
+            icon = "spell_holy_flashheal",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
-        [3] = {
-            ["name"] = "Sense Undead",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/spell_holy_senseundead",
-            ["id"] = 5502
+        {
+            spell_id = 5502,
+            name = "Sense Undead",
+            rank = "1",
+            icon = "spell_holy_senseundead",
+            source = {
+                type = "Quest",
+                quest_ids = { 1652 },
+                location = "The Tome of Valor quest chain, Stormwind",
+            },
         },
-        [4] = {
-            ["name"] = "Devotion Aura",
-            ["rank"] = 3,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/spell_holy_devotionaura",
-            ["id"] = 643
+        {
+            spell_id = 643,
+            name = "Devotion Aura",
+            rank = "3",
+            icon = "spell_holy_devotionaura",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
     },
     [22] = {
-        [1] = {
-            ["name"] = "Holy Light",
-            ["rank"] = 4,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/spell_holy_holybolt",
-            ["id"] = 1026
+        {
+            spell_id = 1026,
+            name = "Holy Light",
+            rank = "4",
+            icon = "spell_holy_holybolt",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
-        [2] = {
-            ["name"] = "Concentration Aura",
-            ["rank"] = 1,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/spell_holy_mindsooth",
-            ["id"] = 19746
+        {
+            spell_id = 19746,
+            name = "Concentration Aura",
+            rank = "1",
+            icon = "spell_holy_mindsooth",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
-        [3] = {
-            ["name"] = "Seal of Justice",
-            ["rank"] = 1,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/spell_holy_sealofwrath",
-            ["id"] = 20164
+        {
+            spell_id = 20164,
+            name = "Seal of Justice",
+            rank = "1",
+            icon = "spell_holy_sealofwrath",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
-        [4] = {
-            ["name"] = "Blessing of Might",
-            ["rank"] = 3,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/spell_holy_fistofjustice",
-            ["id"] = 19835
+        {
+            spell_id = 19835,
+            name = "Blessing of Might",
+            rank = "3",
+            icon = "spell_holy_fistofjustice",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
-        [5] = {
-            ["name"] = "Seal of the Crusader",
-            ["rank"] = 3,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/spell_holy_holysmite",
-            ["id"] = 20305
+        {
+            spell_id = 20305,
+            name = "Seal of the Crusader",
+            rank = "3",
+            icon = "spell_holy_holysmite",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
     },
     [24] = {
-        [1] = {
-            ["name"] = "Blessing of Wisdom",
-            ["rank"] = 2,
-            ["cost"] = 5000,
-            ["texture"] = "Interface/ICONS/spell_holy_sealofwisdom",
-            ["id"] = 19850
+        {
+            spell_id = 19850,
+            name = "Blessing of Wisdom",
+            rank = "2",
+            icon = "spell_holy_sealofwisdom",
+            source = {
+                type = "Trainer",
+                cost = 5000,
+            },
         },
-        [2] = {
-            ["name"] = "Redemption",
-            ["rank"] = 2,
-            ["cost"] = 5000,
-            ["texture"] = "Interface/ICONS/spell_holy_resurrection",
-            ["id"] = 10322
+        {
+            spell_id = 10322,
+            name = "Redemption",
+            rank = "2",
+            icon = "spell_holy_resurrection",
+            source = {
+                type = "Trainer",
+                cost = 5000,
+            },
         },
-        [3] = {
-            ["name"] = "Turn Undead",
-            ["rank"] = 1,
-            ["cost"] = 5000,
-            ["texture"] = "Interface/ICONS/spell_holy_turnundead",
-            ["id"] = 2878
+        {
+            spell_id = 2878,
+            name = "Turn Undead",
+            rank = "1",
+            icon = "spell_holy_turnundead",
+            source = {
+                type = "Trainer",
+                cost = 5000,
+            },
         },
-        [4] = {
-            ["name"] = "Blessing of Protection",
-            ["rank"] = 2,
-            ["cost"] = 5000,
-            ["texture"] = "Interface/ICONS/spell_holy_sealofprotection",
-            ["id"] = 5599
+        {
+            spell_id = 5599,
+            name = "Blessing of Protection",
+            rank = "2",
+            icon = "spell_holy_sealofprotection",
+            source = {
+                type = "Trainer",
+                cost = 5000,
+            },
         },
-        [5] = {
-            ["name"] = "Hammer of Justice",
-            ["rank"] = 2,
-            ["cost"] = 5000,
-            ["texture"] = "Interface/ICONS/spell_holy_sealofmight",
-            ["id"] = 5588
+        {
+            spell_id = 5588,
+            name = "Hammer of Justice",
+            rank = "2",
+            icon = "spell_holy_sealofmight",
+            source = {
+                type = "Trainer",
+                cost = 5000,
+            },
         },
     },
     [26] = {
-        [1] = {
-            ["name"] = "Flash of Light",
-            ["rank"] = 2,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/spell_holy_flashheal",
-            ["id"] = 19939
+        {
+            spell_id = 19939,
+            name = "Flash of Light",
+            rank = "2",
+            icon = "spell_holy_flashheal",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
-        [2] = {
-            ["name"] = "Seal of Righteousness",
-            ["rank"] = 4,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/ability_thunderbolt",
-            ["id"] = 20289
+        {
+            spell_id = 20289,
+            name = "Seal of Righteousness",
+            rank = "4",
+            icon = "ability_thunderbolt",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
-        [3] = {
-            ["name"] = "Blessing of Salvation",
-            ["rank"] = 1,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/spell_holy_sealofsalvation",
-            ["id"] = 1038
+        {
+            spell_id = 1038,
+            name = "Blessing of Salvation",
+            rank = "1",
+            icon = "spell_holy_sealofsalvation",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
-        [4] = {
-            ["name"] = "Retribution Aura",
-            ["rank"] = 2,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/spell_holy_auraoflight",
-            ["id"] = 10298
+        {
+            spell_id = 10298,
+            name = "Retribution Aura",
+            rank = "2",
+            icon = "spell_holy_auraoflight",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
     },
     [28] = {
-        [1] = {
-            ["name"] = "Exorcism",
-            ["rank"] = 2,
-            ["cost"] = 9000,
-            ["texture"] = "Interface/ICONS/spell_holy_excorcism_02",
-            ["id"] = 5614
+        {
+            spell_id = 5614,
+            name = "Exorcism",
+            rank = "2",
+            icon = "spell_holy_excorcism_02",
+            source = {
+                type = "Trainer",
+                cost = 9000,
+            },
         },
-        [2] = {
-            ["name"] = "Shadow Resistance Aura",
-            ["rank"] = 1,
-            ["cost"] = 9000,
-            ["texture"] = "Interface/ICONS/spell_shadow_sealofkings",
-            ["id"] = 19876
+        {
+            spell_id = 19876,
+            name = "Shadow Resistance Aura",
+            rank = "1",
+            icon = "spell_shadow_sealofkings",
+            source = {
+                type = "Trainer",
+                cost = 9000,
+            },
         },
     },
     [30] = {
-        [1] = {
-            ["name"] = "Consecration",
-            ["rank"] = 2,
-            ["cost"] = 200,
-            ["texture"] = "Interface/ICONS/spell_holy_innerfire",
-            ["id"] = 20116,
-            ["talent"] = true
+        {
+            spell_id = 20116,
+            name = "Consecration",
+            rank = "2",
+            icon = "spell_holy_innerfire",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 200,
+            },
         },
-        [2] = {
-            ["name"] = "Holy Light",
-            ["rank"] = 5,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/spell_holy_holybolt",
-            ["id"] = 1042
+        {
+            spell_id = 1042,
+            name = "Holy Light",
+            rank = "5",
+            icon = "spell_holy_holybolt",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
-        [3] = {
-            ["name"] = "Lay on Hands",
-            ["rank"] = 2,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/spell_holy_layonhands",
-            ["id"] = 2800
+        {
+            spell_id = 2800,
+            name = "Lay on Hands",
+            rank = "2",
+            icon = "spell_holy_layonhands",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
-        [4] = {
-            ["name"] = "Seal of Light",
-            ["rank"] = 1,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/spell_holy_healingaura",
-            ["id"] = 20165
+        {
+            spell_id = 20165,
+            name = "Seal of Light",
+            rank = "1",
+            icon = "spell_holy_healingaura",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
-        [5] = {
-            ["name"] = "Devotion Aura",
-            ["rank"] = 4,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/spell_holy_devotionaura",
-            ["id"] = 10291
+        {
+            spell_id = 10291,
+            name = "Devotion Aura",
+            rank = "4",
+            icon = "spell_holy_devotionaura",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
-        [6] = {
-            ["name"] = "Divine Intervention",
-            ["rank"] = 1,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/spell_nature_timestop",
-            ["id"] = 19752
+        {
+            spell_id = 19752,
+            name = "Divine Intervention",
+            rank = "1",
+            icon = "spell_nature_timestop",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
-        [7] = {
-            ["name"] = "Seal of Command",
-            ["rank"] = 2,
-            ["cost"] = 200,
-            ["texture"] = "Interface/ICONS/ability_warrior_innerrage",
-            ["id"] = 20915,
-            ["talent"] = true
+        {
+            spell_id = 20915,
+            name = "Seal of Command",
+            rank = "2",
+            icon = "ability_warrior_innerrage",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 200,
+            },
         },
     },
     [32] = {
-        [1] = {
-            ["name"] = "Frost Resistance Aura",
-            ["rank"] = 1,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/spell_frost_wizardmark",
-            ["id"] = 19888
+        {
+            spell_id = 19888,
+            name = "Frost Resistance Aura",
+            rank = "1",
+            icon = "spell_frost_wizardmark",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
-        [2] = {
-            ["name"] = "Blessing of Might",
-            ["rank"] = 4,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/spell_holy_fistofjustice",
-            ["id"] = 19836
+        {
+            spell_id = 19836,
+            name = "Blessing of Might",
+            rank = "4",
+            icon = "spell_holy_fistofjustice",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
-        [3] = {
-            ["name"] = "Seal of the Crusader",
-            ["rank"] = 4,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/spell_holy_holysmite",
-            ["id"] = 20306
+        {
+            spell_id = 20306,
+            name = "Seal of the Crusader",
+            rank = "4",
+            icon = "spell_holy_holysmite",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
     },
     [34] = {
-        [1] = {
-            ["name"] = "Blessing of Wisdom",
-            ["rank"] = 3,
-            ["cost"] = 13000,
-            ["texture"] = "Interface/ICONS/spell_holy_sealofwisdom",
-            ["id"] = 19852
+        {
+            spell_id = 19852,
+            name = "Blessing of Wisdom",
+            rank = "3",
+            icon = "spell_holy_sealofwisdom",
+            source = {
+                type = "Trainer",
+                cost = 13000,
+            },
         },
-        [2] = {
-            ["name"] = "Flash of Light",
-            ["rank"] = 3,
-            ["cost"] = 13000,
-            ["texture"] = "Interface/ICONS/spell_holy_flashheal",
-            ["id"] = 19940
+        {
+            spell_id = 19940,
+            name = "Flash of Light",
+            rank = "3",
+            icon = "spell_holy_flashheal",
+            source = {
+                type = "Trainer",
+                cost = 13000,
+            },
         },
-        [3] = {
-            ["name"] = "Seal of Righteousness",
-            ["rank"] = 5,
-            ["cost"] = 13000,
-            ["texture"] = "Interface/ICONS/ability_thunderbolt",
-            ["id"] = 20290
+        {
+            spell_id = 20290,
+            name = "Seal of Righteousness",
+            rank = "5",
+            icon = "ability_thunderbolt",
+            source = {
+                type = "Trainer",
+                cost = 13000,
+            },
         },
-        [4] = {
-            ["name"] = "Divine Shield",
-            ["rank"] = 1,
-            ["cost"] = 13000,
-            ["texture"] = "Interface/ICONS/spell_holy_divineintervention",
-            ["id"] = 642
+        {
+            spell_id = 642,
+            name = "Divine Shield",
+            rank = "1",
+            icon = "spell_holy_divineintervention",
+            source = {
+                type = "Trainer",
+                cost = 13000,
+            },
         },
     },
     [36] = {
-        [1] = {
-            ["name"] = "Exorcism",
-            ["rank"] = 3,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/spell_holy_excorcism_02",
-            ["id"] = 5615
+        {
+            spell_id = 5615,
+            name = "Exorcism",
+            rank = "3",
+            icon = "spell_holy_excorcism_02",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
-        [2] = {
-            ["name"] = "Redemption",
-            ["rank"] = 3,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/spell_holy_resurrection",
-            ["id"] = 10324
+        {
+            spell_id = 10324,
+            name = "Redemption",
+            rank = "3",
+            icon = "spell_holy_resurrection",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
-        [3] = {
-            ["name"] = "Fire Resistance Aura",
-            ["rank"] = 1,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/spell_fire_sealoffire",
-            ["id"] = 19891
+        {
+            spell_id = 19891,
+            name = "Fire Resistance Aura",
+            rank = "1",
+            icon = "spell_fire_sealoffire",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
-        [4] = {
-            ["name"] = "Retribution Aura",
-            ["rank"] = 3,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/spell_holy_auraoflight",
-            ["id"] = 10299
+        {
+            spell_id = 10299,
+            name = "Retribution Aura",
+            rank = "3",
+            icon = "spell_holy_auraoflight",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
     },
     [38] = {
-        [1] = {
-            ["name"] = "Holy Light",
-            ["rank"] = 6,
-            ["cost"] = 16000,
-            ["texture"] = "Interface/ICONS/spell_holy_holybolt",
-            ["id"] = 3472
+        {
+            spell_id = 3472,
+            name = "Holy Light",
+            rank = "6",
+            icon = "spell_holy_holybolt",
+            source = {
+                type = "Trainer",
+                cost = 16000,
+            },
         },
-        [2] = {
-            ["name"] = "Seal of Wisdom",
-            ["rank"] = 1,
-            ["cost"] = 16000,
-            ["texture"] = "Interface/ICONS/spell_holy_righteousnessaura",
-            ["id"] = 20166
+        {
+            spell_id = 20166,
+            name = "Seal of Wisdom",
+            rank = "1",
+            icon = "spell_holy_righteousnessaura",
+            source = {
+                type = "Trainer",
+                cost = 16000,
+            },
         },
-        [3] = {
-            ["name"] = "Turn Undead",
-            ["rank"] = 2,
-            ["cost"] = 16000,
-            ["texture"] = "Interface/ICONS/spell_holy_turnundead",
-            ["id"] = 5627
+        {
+            spell_id = 5627,
+            name = "Turn Undead",
+            rank = "2",
+            icon = "spell_holy_turnundead",
+            source = {
+                type = "Trainer",
+                cost = 16000,
+            },
         },
-        [4] = {
-            ["name"] = "Blessing of Protection",
-            ["rank"] = 3,
-            ["cost"] = 16000,
-            ["texture"] = "Interface/ICONS/spell_holy_sealofprotection",
-            ["id"] = 10278
+        {
+            spell_id = 10278,
+            name = "Blessing of Protection",
+            rank = "3",
+            icon = "spell_holy_sealofprotection",
+            source = {
+                type = "Trainer",
+                cost = 16000,
+            },
         },
     },
     [40] = {
-        [1] = {
-            ["name"] = "Plate Mail",
-            ["rank"] = 1,
-            ["cost"] = 20000,
-            ["texture"] = "Interface/ICONS/inv_chest_plate01",
-            ["id"] = 750
+        {
+            spell_id = 750,
+            name = "Plate Mail",
+            rank = "1",
+            icon = "inv_chest_plate01",
+            source = {
+                type = "Trainer",
+                cost = 20000,
+            },
         },
-        [2] = {
-            ["name"] = "Blessing of Light",
-            ["rank"] = 1,
-            ["cost"] = 20000,
-            ["texture"] = "Interface/ICONS/spell_holy_prayerofhealing02",
-            ["id"] = 19977
+        {
+            spell_id = 19977,
+            name = "Blessing of Light",
+            rank = "1",
+            icon = "spell_holy_prayerofhealing02",
+            source = {
+                type = "Trainer",
+                cost = 20000,
+            },
         },
-        [3] = {
-            ["name"] = "Consecration",
-            ["rank"] = 3,
-            ["cost"] = 1000,
-            ["texture"] = "Interface/ICONS/spell_holy_innerfire",
-            ["id"] = 20922,
-            ["talent"] = true
+        {
+            spell_id = 20922,
+            name = "Consecration",
+            rank = "3",
+            icon = "spell_holy_innerfire",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 1000,
+            },
         },
-        [4] = {
-            ["name"] = "Seal of Light",
-            ["rank"] = 2,
-            ["cost"] = 20000,
-            ["texture"] = "Interface/ICONS/spell_holy_healingaura",
-            ["id"] = 20347
+        {
+            spell_id = 20347,
+            name = "Seal of Light",
+            rank = "2",
+            icon = "spell_holy_healingaura",
+            source = {
+                type = "Trainer",
+                cost = 20000,
+            },
         },
-        [5] = {
-            ["name"] = "Summon Warhorse",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/spell_nature_swiftness",
-            ["race"] = "Human, Dwarf",
-            ["id"] = 13819
+        {
+            spell_id = 13819,
+            name = "Summon Warhorse",
+            rank = "1",
+            icon = "spell_nature_swiftness",
         },
-        [6] = {
-            ["name"] = "Blessing of Sanctuary",
-            ["rank"] = 2,
-            ["cost"] = 900,
-            ["texture"] = "Interface/ICONS/spell_nature_lightningshield",
-            ["id"] = 20912,
-            ["talent"] = true
+        {
+            spell_id = 20912,
+            name = "Blessing of Sanctuary",
+            rank = "2",
+            icon = "spell_nature_lightningshield",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 900,
+            },
         },
-        [7] = {
-            ["name"] = "Devotion Aura",
-            ["rank"] = 5,
-            ["cost"] = 20000,
-            ["texture"] = "Interface/ICONS/spell_holy_devotionaura",
-            ["id"] = 1032
+        {
+            spell_id = 1032,
+            name = "Devotion Aura",
+            rank = "5",
+            icon = "spell_holy_devotionaura",
+            source = {
+                type = "Trainer",
+                cost = 20000,
+            },
         },
-        [8] = {
-            ["name"] = "Hammer of Justice",
-            ["rank"] = 3,
-            ["cost"] = 20000,
-            ["texture"] = "Interface/ICONS/spell_holy_sealofmight",
-            ["id"] = 5589
+        {
+            spell_id = 5589,
+            name = "Hammer of Justice",
+            rank = "3",
+            icon = "spell_holy_sealofmight",
+            source = {
+                type = "Trainer",
+                cost = 20000,
+            },
         },
-        [9] = {
-            ["name"] = "Shadow Resistance Aura",
-            ["rank"] = 2,
-            ["cost"] = 20000,
-            ["texture"] = "Interface/ICONS/spell_shadow_sealofkings",
-            ["id"] = 19895
+        {
+            spell_id = 19895,
+            name = "Shadow Resistance Aura",
+            rank = "2",
+            icon = "spell_shadow_sealofkings",
+            source = {
+                type = "Trainer",
+                cost = 20000,
+            },
         },
-        [10] = {
-            ["name"] = "Seal of Command",
-            ["rank"] = 3,
-            ["cost"] = 1000,
-            ["texture"] = "Interface/ICONS/ability_warrior_innerrage",
-            ["id"] = 20918,
-            ["talent"] = true
+        {
+            spell_id = 20918,
+            name = "Seal of Command",
+            rank = "3",
+            icon = "ability_warrior_innerrage",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 1000,
+            },
         },
     },
     [42] = {
-        [1] = {
-            ["name"] = "Cleanse",
-            ["rank"] = 1,
-            ["cost"] = 21000,
-            ["texture"] = "Interface/ICONS/spell_holy_renew",
-            ["id"] = 4987
+        {
+            spell_id = 4987,
+            name = "Cleanse",
+            rank = "1",
+            icon = "spell_holy_renew",
+            source = {
+                type = "Trainer",
+                cost = 21000,
+            },
         },
-        [2] = {
-            ["name"] = "Flash of Light",
-            ["rank"] = 4,
-            ["cost"] = 21000,
-            ["texture"] = "Interface/ICONS/spell_holy_flashheal",
-            ["id"] = 19941
+        {
+            spell_id = 19941,
+            name = "Flash of Light",
+            rank = "4",
+            icon = "spell_holy_flashheal",
+            source = {
+                type = "Trainer",
+                cost = 21000,
+            },
         },
-        [3] = {
-            ["name"] = "Seal of Righteousness",
-            ["rank"] = 6,
-            ["cost"] = 21000,
-            ["texture"] = "Interface/ICONS/ability_thunderbolt",
-            ["id"] = 20291
+        {
+            spell_id = 20291,
+            name = "Seal of Righteousness",
+            rank = "6",
+            icon = "ability_thunderbolt",
+            source = {
+                type = "Trainer",
+                cost = 21000,
+            },
         },
-        [4] = {
-            ["name"] = "Blessing of Might",
-            ["rank"] = 5,
-            ["cost"] = 21000,
-            ["texture"] = "Interface/ICONS/spell_holy_fistofjustice",
-            ["id"] = 19837
+        {
+            spell_id = 19837,
+            name = "Blessing of Might",
+            rank = "5",
+            icon = "spell_holy_fistofjustice",
+            source = {
+                type = "Trainer",
+                cost = 21000,
+            },
         },
-        [5] = {
-            ["name"] = "Seal of the Crusader",
-            ["rank"] = 5,
-            ["cost"] = 21000,
-            ["texture"] = "Interface/ICONS/spell_holy_holysmite",
-            ["id"] = 20307
+        {
+            spell_id = 20307,
+            name = "Seal of the Crusader",
+            rank = "5",
+            icon = "spell_holy_holysmite",
+            source = {
+                type = "Trainer",
+                cost = 21000,
+            },
         },
     },
     [44] = {
-        [1] = {
-            ["name"] = "Blessing of Wisdom",
-            ["rank"] = 4,
-            ["cost"] = 22000,
-            ["texture"] = "Interface/ICONS/spell_holy_sealofwisdom",
-            ["id"] = 19853
+        {
+            spell_id = 19853,
+            name = "Blessing of Wisdom",
+            rank = "4",
+            icon = "spell_holy_sealofwisdom",
+            source = {
+                type = "Trainer",
+                cost = 22000,
+            },
         },
-        [2] = {
-            ["name"] = "Exorcism",
-            ["rank"] = 4,
-            ["cost"] = 22000,
-            ["texture"] = "Interface/ICONS/spell_holy_excorcism_02",
-            ["id"] = 10312
+        {
+            spell_id = 10312,
+            name = "Exorcism",
+            rank = "4",
+            icon = "spell_holy_excorcism_02",
+            source = {
+                type = "Trainer",
+                cost = 22000,
+            },
         },
-        [3] = {
-            ["name"] = "Hammer of Wrath",
-            ["rank"] = 1,
-            ["cost"] = 22000,
-            ["texture"] = "Interface/ICONS/ability_thunderclap",
-            ["id"] = 24275
+        {
+            spell_id = 24275,
+            name = "Hammer of Wrath",
+            rank = "1",
+            icon = "ability_thunderclap",
+            source = {
+                type = "Trainer",
+                cost = 22000,
+            },
         },
-        [4] = {
-            ["name"] = "Frost Resistance Aura",
-            ["rank"] = 2,
-            ["cost"] = 22000,
-            ["texture"] = "Interface/ICONS/spell_frost_wizardmark",
-            ["id"] = 19897
+        {
+            spell_id = 19897,
+            name = "Frost Resistance Aura",
+            rank = "2",
+            icon = "spell_frost_wizardmark",
+            source = {
+                type = "Trainer",
+                cost = 22000,
+            },
         },
     },
     [46] = {
-        [1] = {
-            ["name"] = "Holy Light",
-            ["rank"] = 7,
-            ["cost"] = 24000,
-            ["texture"] = "Interface/ICONS/spell_holy_holybolt",
-            ["id"] = 10328
+        {
+            spell_id = 10328,
+            name = "Holy Light",
+            rank = "7",
+            icon = "spell_holy_holybolt",
+            source = {
+                type = "Trainer",
+                cost = 24000,
+            },
         },
-        [2] = {
-            ["name"] = "Blessing of Sacrifice",
-            ["rank"] = 1,
-            ["cost"] = 24000,
-            ["texture"] = "Interface/ICONS/spell_holy_sealofsacrifice",
-            ["id"] = 6940
+        {
+            spell_id = 6940,
+            name = "Blessing of Sacrifice",
+            rank = "1",
+            icon = "spell_holy_sealofsacrifice",
+            source = {
+                type = "Trainer",
+                cost = 24000,
+            },
         },
-        [3] = {
-            ["name"] = "Retribution Aura",
-            ["rank"] = 4,
-            ["cost"] = 24000,
-            ["texture"] = "Interface/ICONS/spell_holy_auraoflight",
-            ["id"] = 10300
+        {
+            spell_id = 10300,
+            name = "Retribution Aura",
+            rank = "4",
+            icon = "spell_holy_auraoflight",
+            source = {
+                type = "Trainer",
+                cost = 24000,
+            },
         },
     },
     [48] = {
-        [1] = {
-            ["name"] = "Holy Shock",
-            ["rank"] = 2,
-            ["cost"] = 1170,
-            ["texture"] = "Interface/ICONS/spell_holy_searinglight",
-            ["id"] = 20929,
-            ["talent"] = true
+        {
+            spell_id = 20929,
+            name = "Holy Shock",
+            rank = "2",
+            icon = "spell_holy_searinglight",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 1170,
+            },
         },
-        [2] = {
-            ["name"] = "Redemption",
-            ["rank"] = 4,
-            ["cost"] = 26000,
-            ["texture"] = "Interface/ICONS/spell_holy_resurrection",
-            ["id"] = 20772
+        {
+            spell_id = 20772,
+            name = "Redemption",
+            rank = "4",
+            icon = "spell_holy_resurrection",
+            source = {
+                type = "Trainer",
+                cost = 26000,
+            },
         },
-        [3] = {
-            ["name"] = "Seal of Wisdom",
-            ["rank"] = 2,
-            ["cost"] = 26000,
-            ["texture"] = "Interface/ICONS/spell_holy_righteousnessaura",
-            ["id"] = 20356
+        {
+            spell_id = 20356,
+            name = "Seal of Wisdom",
+            rank = "2",
+            icon = "spell_holy_righteousnessaura",
+            source = {
+                type = "Trainer",
+                cost = 26000,
+            },
         },
-        [4] = {
-            ["name"] = "Fire Resistance Aura",
-            ["rank"] = 2,
-            ["cost"] = 26000,
-            ["texture"] = "Interface/ICONS/spell_fire_sealoffire",
-            ["id"] = 19899
+        {
+            spell_id = 19899,
+            name = "Fire Resistance Aura",
+            rank = "2",
+            icon = "spell_fire_sealoffire",
+            source = {
+                type = "Trainer",
+                cost = 26000,
+            },
         },
     },
     [50] = {
-        [1] = {
-            ["name"] = "Blessing of Light",
-            ["rank"] = 2,
-            ["cost"] = 28000,
-            ["texture"] = "Interface/ICONS/spell_holy_prayerofhealing02",
-            ["id"] = 19978
+        {
+            spell_id = 19978,
+            name = "Blessing of Light",
+            rank = "2",
+            icon = "spell_holy_prayerofhealing02",
+            source = {
+                type = "Trainer",
+                cost = 28000,
+            },
         },
-        [2] = {
-            ["name"] = "Consecration",
-            ["rank"] = 4,
-            ["cost"] = 1400,
-            ["texture"] = "Interface/ICONS/spell_holy_innerfire",
-            ["id"] = 20923,
-            ["talent"] = true
+        {
+            spell_id = 20923,
+            name = "Consecration",
+            rank = "4",
+            icon = "spell_holy_innerfire",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 1400,
+            },
         },
-        [3] = {
-            ["name"] = "Flash of Light",
-            ["rank"] = 5,
-            ["cost"] = 28000,
-            ["texture"] = "Interface/ICONS/spell_holy_flashheal",
-            ["id"] = 19942
+        {
+            spell_id = 19942,
+            name = "Flash of Light",
+            rank = "5",
+            icon = "spell_holy_flashheal",
+            source = {
+                type = "Trainer",
+                cost = 28000,
+            },
         },
-        [4] = {
-            ["name"] = "Holy Wrath",
-            ["rank"] = 1,
-            ["cost"] = 28000,
-            ["texture"] = "Interface/ICONS/spell_holy_excorcism",
-            ["id"] = 2812
+        {
+            spell_id = 2812,
+            name = "Holy Wrath",
+            rank = "1",
+            icon = "spell_holy_excorcism",
+            source = {
+                type = "Trainer",
+                cost = 28000,
+            },
         },
-        [5] = {
-            ["name"] = "Lay on Hands",
-            ["rank"] = 3,
-            ["cost"] = 28000,
-            ["texture"] = "Interface/ICONS/spell_holy_layonhands",
-            ["id"] = 10310
+        {
+            spell_id = 10310,
+            name = "Lay on Hands",
+            rank = "3",
+            icon = "spell_holy_layonhands",
+            source = {
+                type = "Trainer",
+                cost = 28000,
+            },
         },
-        [6] = {
-            ["name"] = "Seal of Light",
-            ["rank"] = 3,
-            ["cost"] = 28000,
-            ["texture"] = "Interface/ICONS/spell_holy_healingaura",
-            ["id"] = 20348
+        {
+            spell_id = 20348,
+            name = "Seal of Light",
+            rank = "3",
+            icon = "spell_holy_healingaura",
+            source = {
+                type = "Trainer",
+                cost = 28000,
+            },
         },
-        [7] = {
-            ["name"] = "Seal of Righteousness",
-            ["rank"] = 7,
-            ["cost"] = 28000,
-            ["texture"] = "Interface/ICONS/ability_thunderbolt",
-            ["id"] = 20292
+        {
+            spell_id = 20292,
+            name = "Seal of Righteousness",
+            rank = "7",
+            icon = "ability_thunderbolt",
+            source = {
+                type = "Trainer",
+                cost = 28000,
+            },
         },
-        [8] = {
-            ["name"] = "Blessing of Sanctuary",
-            ["rank"] = 3,
-            ["cost"] = 1260,
-            ["texture"] = "Interface/ICONS/spell_nature_lightningshield",
-            ["id"] = 20913,
-            ["talent"] = true
+        {
+            spell_id = 20913,
+            name = "Blessing of Sanctuary",
+            rank = "3",
+            icon = "spell_nature_lightningshield",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 1260,
+            },
         },
-        [9] = {
-            ["name"] = "Devotion Aura",
-            ["rank"] = 6,
-            ["cost"] = 28000,
-            ["texture"] = "Interface/ICONS/spell_holy_devotionaura",
-            ["id"] = 10292
+        {
+            spell_id = 10292,
+            name = "Devotion Aura",
+            rank = "6",
+            icon = "spell_holy_devotionaura",
+            source = {
+                type = "Trainer",
+                cost = 28000,
+            },
         },
-        [10] = {
-            ["name"] = "Divine Shield",
-            ["rank"] = 2,
-            ["cost"] = 28000,
-            ["texture"] = "Interface/ICONS/spell_holy_divineintervention",
-            ["id"] = 1020
+        {
+            spell_id = 1020,
+            name = "Divine Shield",
+            rank = "2",
+            icon = "spell_holy_divineintervention",
+            source = {
+                type = "Trainer",
+                cost = 28000,
+            },
         },
-        [11] = {
-            ["name"] = "Holy Shield",
-            ["rank"] = 2,
-            ["cost"] = 1260,
-            ["texture"] = "Interface/ICONS/spell_holy_blessingofprotection",
-            ["id"] = 20927,
-            ["talent"] = true
+        {
+            spell_id = 20927,
+            name = "Holy Shield",
+            rank = "2",
+            icon = "spell_holy_blessingofprotection",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 1260,
+            },
         },
-        [12] = {
-            ["name"] = "Seal of Command",
-            ["rank"] = 4,
-            ["cost"] = 1260,
-            ["texture"] = "Interface/ICONS/ability_warrior_innerrage",
-            ["id"] = 20919,
-            ["talent"] = true
+        {
+            spell_id = 20919,
+            name = "Seal of Command",
+            rank = "4",
+            icon = "ability_warrior_innerrage",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 1260,
+            },
         },
     },
     [52] = {
-        [1] = {
-            ["name"] = "Exorcism",
-            ["rank"] = 5,
-            ["cost"] = 34000,
-            ["texture"] = "Interface/ICONS/spell_holy_excorcism_02",
-            ["id"] = 10313
+        {
+            spell_id = 10313,
+            name = "Exorcism",
+            rank = "5",
+            icon = "spell_holy_excorcism_02",
+            source = {
+                type = "Trainer",
+                cost = 34000,
+            },
         },
-        [2] = {
-            ["name"] = "Hammer of Wrath",
-            ["rank"] = 2,
-            ["cost"] = 34000,
-            ["texture"] = "Interface/ICONS/ability_thunderclap",
-            ["id"] = 24274
+        {
+            spell_id = 24274,
+            name = "Hammer of Wrath",
+            rank = "2",
+            icon = "ability_thunderclap",
+            source = {
+                type = "Trainer",
+                cost = 34000,
+            },
         },
-        [3] = {
-            ["name"] = "Turn Undead",
-            ["rank"] = 3,
-            ["cost"] = 34000,
-            ["texture"] = "Interface/ICONS/spell_holy_turnundead",
-            ["id"] = 10326
+        {
+            spell_id = 10326,
+            name = "Turn Undead",
+            rank = "3",
+            icon = "spell_holy_turnundead",
+            source = {
+                type = "Trainer",
+                cost = 34000,
+            },
         },
-        [4] = {
-            ["name"] = "Shadow Resistance Aura",
-            ["rank"] = 3,
-            ["cost"] = 34000,
-            ["texture"] = "Interface/ICONS/spell_shadow_sealofkings",
-            ["id"] = 19896
+        {
+            spell_id = 19896,
+            name = "Shadow Resistance Aura",
+            rank = "3",
+            icon = "spell_shadow_sealofkings",
+            source = {
+                type = "Trainer",
+                cost = 34000,
+            },
         },
-        [5] = {
-            ["name"] = "Blessing of Might",
-            ["rank"] = 6,
-            ["cost"] = 34000,
-            ["texture"] = "Interface/ICONS/spell_holy_fistofjustice",
-            ["id"] = 19838
+        {
+            spell_id = 19838,
+            name = "Blessing of Might",
+            rank = "6",
+            icon = "spell_holy_fistofjustice",
+            source = {
+                type = "Trainer",
+                cost = 34000,
+            },
         },
-        [6] = {
-            ["name"] = "Greater Blessing of Might",
-            ["rank"] = 1,
-            ["cost"] = 46000,
-            ["texture"] = "Interface/ICONS/spell_holy_greaterblessingofkings",
-            ["id"] = 25782
+        {
+            spell_id = 25782,
+            name = "Greater Blessing of Might",
+            rank = "1",
+            icon = "spell_holy_greaterblessingofkings",
+            source = {
+                type = "Trainer",
+                cost = 46000,
+            },
         },
-        [7] = {
-            ["name"] = "Seal of the Crusader",
-            ["rank"] = 6,
-            ["cost"] = 34000,
-            ["texture"] = "Interface/ICONS/spell_holy_holysmite",
-            ["id"] = 20308
+        {
+            spell_id = 20308,
+            name = "Seal of the Crusader",
+            rank = "6",
+            icon = "spell_holy_holysmite",
+            source = {
+                type = "Trainer",
+                cost = 34000,
+            },
         },
     },
     [54] = {
-        [1] = {
-            ["name"] = "Blessing of Wisdom",
-            ["rank"] = 5,
-            ["cost"] = 40000,
-            ["texture"] = "Interface/ICONS/spell_holy_sealofwisdom",
-            ["id"] = 19854
+        {
+            spell_id = 19854,
+            name = "Blessing of Wisdom",
+            rank = "5",
+            icon = "spell_holy_sealofwisdom",
+            source = {
+                type = "Trainer",
+                cost = 40000,
+            },
         },
-        [2] = {
-            ["name"] = "Greater Blessing of Wisdom",
-            ["rank"] = 1,
-            ["cost"] = 40000,
-            ["texture"] = "Interface/ICONS/spell_holy_greaterblessingofwisdom",
-            ["id"] = 25894
+        {
+            spell_id = 25894,
+            name = "Greater Blessing of Wisdom",
+            rank = "1",
+            icon = "spell_holy_greaterblessingofwisdom",
+            source = {
+                type = "Trainer",
+                cost = 40000,
+            },
         },
-        [3] = {
-            ["name"] = "Holy Light",
-            ["rank"] = 8,
-            ["cost"] = 40000,
-            ["texture"] = "Interface/ICONS/spell_holy_holybolt",
-            ["id"] = 10329
+        {
+            spell_id = 10329,
+            name = "Holy Light",
+            rank = "8",
+            icon = "spell_holy_holybolt",
+            source = {
+                type = "Trainer",
+                cost = 40000,
+            },
         },
-        [4] = {
-            ["name"] = "Blessing of Sacrifice",
-            ["rank"] = 2,
-            ["cost"] = 40000,
-            ["texture"] = "Interface/ICONS/spell_holy_sealofsacrifice",
-            ["id"] = 20729
+        {
+            spell_id = 20729,
+            name = "Blessing of Sacrifice",
+            rank = "2",
+            icon = "spell_holy_sealofsacrifice",
+            source = {
+                type = "Trainer",
+                cost = 40000,
+            },
         },
-        [5] = {
-            ["name"] = "Hammer of Justice",
-            ["rank"] = 4,
-            ["cost"] = 40000,
-            ["texture"] = "Interface/ICONS/spell_holy_sealofmight",
-            ["id"] = 10308
+        {
+            spell_id = 10308,
+            name = "Hammer of Justice",
+            rank = "4",
+            icon = "spell_holy_sealofmight",
+            source = {
+                type = "Trainer",
+                cost = 40000,
+            },
         },
     },
     [56] = {
-        [1] = {
-            ["name"] = "Holy Shock",
-            ["rank"] = 3,
-            ["cost"] = 2100,
-            ["texture"] = "Interface/ICONS/spell_holy_searinglight",
-            ["id"] = 20930,
-            ["talent"] = true
+        {
+            spell_id = 20930,
+            name = "Holy Shock",
+            rank = "3",
+            icon = "spell_holy_searinglight",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 2100,
+            },
         },
-        [2] = {
-            ["name"] = "Frost Resistance Aura",
-            ["rank"] = 3,
-            ["cost"] = 42000,
-            ["texture"] = "Interface/ICONS/spell_frost_wizardmark",
-            ["id"] = 19898
+        {
+            spell_id = 19898,
+            name = "Frost Resistance Aura",
+            rank = "3",
+            icon = "spell_frost_wizardmark",
+            source = {
+                type = "Trainer",
+                cost = 42000,
+            },
         },
-        [3] = {
-            ["name"] = "Retribution Aura",
-            ["rank"] = 5,
-            ["cost"] = 42000,
-            ["texture"] = "Interface/ICONS/spell_holy_auraoflight",
-            ["id"] = 10301
+        {
+            spell_id = 10301,
+            name = "Retribution Aura",
+            rank = "5",
+            icon = "spell_holy_auraoflight",
+            source = {
+                type = "Trainer",
+                cost = 42000,
+            },
         },
     },
     [58] = {
-        [1] = {
-            ["name"] = "Flash of Light",
-            ["rank"] = 6,
-            ["cost"] = 44000,
-            ["texture"] = "Interface/ICONS/spell_holy_flashheal",
-            ["id"] = 19943
+        {
+            spell_id = 19943,
+            name = "Flash of Light",
+            rank = "6",
+            icon = "spell_holy_flashheal",
+            source = {
+                type = "Trainer",
+                cost = 44000,
+            },
         },
-        [2] = {
-            ["name"] = "Seal of Righteousness",
-            ["rank"] = 8,
-            ["cost"] = 44000,
-            ["texture"] = "Interface/ICONS/ability_thunderbolt",
-            ["id"] = 20293
+        {
+            spell_id = 20293,
+            name = "Seal of Righteousness",
+            rank = "8",
+            icon = "ability_thunderbolt",
+            source = {
+                type = "Trainer",
+                cost = 44000,
+            },
         },
-        [3] = {
-            ["name"] = "Seal of Wisdom",
-            ["rank"] = 3,
-            ["cost"] = 44000,
-            ["texture"] = "Interface/ICONS/spell_holy_righteousnessaura",
-            ["id"] = 20357
+        {
+            spell_id = 20357,
+            name = "Seal of Wisdom",
+            rank = "3",
+            icon = "spell_holy_righteousnessaura",
+            source = {
+                type = "Trainer",
+                cost = 44000,
+            },
         },
     },
     [60] = {
-        [1] = {
-            ["name"] = "Blessing of Light",
-            ["rank"] = 3,
-            ["cost"] = 46000,
-            ["texture"] = "Interface/ICONS/spell_holy_prayerofhealing02",
-            ["id"] = 19979
+        {
+            spell_id = 19979,
+            name = "Blessing of Light",
+            rank = "3",
+            icon = "spell_holy_prayerofhealing02",
+            source = {
+                type = "Trainer",
+                cost = 46000,
+            },
         },
-        [2] = {
-            ["name"] = "Consecration",
-            ["rank"] = 5,
-            ["cost"] = 2300,
-            ["texture"] = "Interface/ICONS/spell_holy_innerfire",
-            ["id"] = 20924,
-            ["talent"] = true
+        {
+            spell_id = 20924,
+            name = "Consecration",
+            rank = "5",
+            icon = "spell_holy_innerfire",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 2300,
+            },
         },
-        [3] = {
-            ["name"] = "Exorcism",
-            ["rank"] = 6,
-            ["cost"] = 46000,
-            ["texture"] = "Interface/ICONS/spell_holy_excorcism_02",
-            ["id"] = 10314
+        {
+            spell_id = 10314,
+            name = "Exorcism",
+            rank = "6",
+            icon = "spell_holy_excorcism_02",
+            source = {
+                type = "Trainer",
+                cost = 46000,
+            },
         },
-        [4] = {
-            ["name"] = "Greater Blessing of Light",
-            ["rank"] = 1,
-            ["cost"] = 46000,
-            ["texture"] = "Interface/ICONS/spell_holy_greaterblessingoflight",
-            ["id"] = 25890
+        {
+            spell_id = 25890,
+            name = "Greater Blessing of Light",
+            rank = "1",
+            icon = "spell_holy_greaterblessingoflight",
+            source = {
+                type = "Trainer",
+                cost = 46000,
+            },
         },
-        [5] = {
-            ["name"] = "Hammer of Wrath",
-            ["rank"] = 3,
-            ["cost"] = 46000,
-            ["texture"] = "Interface/ICONS/ability_thunderclap",
-            ["id"] = 24239
+        {
+            spell_id = 24239,
+            name = "Hammer of Wrath",
+            rank = "3",
+            icon = "ability_thunderclap",
+            source = {
+                type = "Trainer",
+                cost = 46000,
+            },
         },
-        [6] = {
-            ["name"] = "Holy Wrath",
-            ["rank"] = 2,
-            ["cost"] = 46000,
-            ["texture"] = "Interface/ICONS/spell_holy_excorcism",
-            ["id"] = 10318
+        {
+            spell_id = 10318,
+            name = "Holy Wrath",
+            rank = "2",
+            icon = "spell_holy_excorcism",
+            source = {
+                type = "Trainer",
+                cost = 46000,
+            },
         },
-        [7] = {
-            ["name"] = "Redemption",
-            ["rank"] = 5,
-            ["cost"] = 46000,
-            ["texture"] = "Interface/ICONS/spell_holy_resurrection",
-            ["id"] = 20773
+        {
+            spell_id = 20773,
+            name = "Redemption",
+            rank = "5",
+            icon = "spell_holy_resurrection",
+            source = {
+                type = "Trainer",
+                cost = 46000,
+            },
         },
-        [8] = {
-            ["name"] = "Seal of Light",
-            ["rank"] = 4,
-            ["cost"] = 46000,
-            ["texture"] = "Interface/ICONS/spell_holy_healingaura",
-            ["id"] = 20349
+        {
+            spell_id = 20349,
+            name = "Seal of Light",
+            rank = "4",
+            icon = "spell_holy_healingaura",
+            source = {
+                type = "Trainer",
+                cost = 46000,
+            },
         },
-        [9] = {
-            ["name"] = "Summon Charger",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/ability_mount_charger",
-            ["race"] = "Human, Dwarf",
-            ["id"] = 23214
+        {
+            spell_id = 23214,
+            name = "Summon Charger",
+            rank = "1",
+            icon = "ability_mount_charger",
         },
-        [10] = {
-            ["name"] = "Blessing of Sanctuary",
-            ["rank"] = 4,
-            ["cost"] = 2070,
-            ["texture"] = "Interface/ICONS/spell_nature_lightningshield",
-            ["id"] = 20914,
-            ["talent"] = true
+        {
+            spell_id = 20914,
+            name = "Blessing of Sanctuary",
+            rank = "4",
+            icon = "spell_nature_lightningshield",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 2070,
+            },
         },
-        [11] = {
-            ["name"] = "Devotion Aura",
-            ["rank"] = 7,
-            ["cost"] = 46000,
-            ["texture"] = "Interface/ICONS/spell_holy_devotionaura",
-            ["id"] = 10293
+        {
+            spell_id = 10293,
+            name = "Devotion Aura",
+            rank = "7",
+            icon = "spell_holy_devotionaura",
+            source = {
+                type = "Trainer",
+                cost = 46000,
+            },
         },
-        [12] = {
-            ["name"] = "Fire Resistance Aura",
-            ["rank"] = 3,
-            ["cost"] = 46000,
-            ["texture"] = "Interface/ICONS/spell_fire_sealoffire",
-            ["id"] = 19900
+        {
+            spell_id = 19900,
+            name = "Fire Resistance Aura",
+            rank = "3",
+            icon = "spell_fire_sealoffire",
+            source = {
+                type = "Trainer",
+                cost = 46000,
+            },
         },
-        [13] = {
-            ["name"] = "Greater Blessing of Kings",
-            ["rank"] = 1,
-            ["cost"] = 2070,
-            ["texture"] = "Interface/ICONS/spell_magic_greaterblessingofkings",
-            ["id"] = 25898,
-            ["talent"] = true
+        {
+            spell_id = 25898,
+            name = "Greater Blessing of Kings",
+            rank = "1",
+            icon = "spell_magic_greaterblessingofkings",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 2070,
+            },
         },
-        [14] = {
-            ["name"] = "Greater Blessing of Salvation",
-            ["rank"] = 1,
-            ["cost"] = 46000,
-            ["texture"] = "Interface/ICONS/spell_holy_greaterblessingofsalvation",
-            ["id"] = 25895
+        {
+            spell_id = 25895,
+            name = "Greater Blessing of Salvation",
+            rank = "1",
+            icon = "spell_holy_greaterblessingofsalvation",
+            source = {
+                type = "Trainer",
+                cost = 46000,
+            },
         },
-        [15] = {
-            ["name"] = "Greater Blessing of Sanctuary",
-            ["rank"] = 1,
-            ["cost"] = 2070,
-            ["texture"] = "Interface/ICONS/spell_holy_greaterblessingofsanctuary",
-            ["id"] = 25899,
-            ["talent"] = true
+        {
+            spell_id = 25899,
+            name = "Greater Blessing of Sanctuary",
+            rank = "1",
+            icon = "spell_holy_greaterblessingofsanctuary",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 2070,
+            },
         },
-        [16] = {
-            ["name"] = "Holy Shield",
-            ["rank"] = 3,
-            ["cost"] = 2070,
-            ["texture"] = "Interface/ICONS/spell_holy_blessingofprotection",
-            ["id"] = 20928,
-            ["talent"] = true
+        {
+            spell_id = 20928,
+            name = "Holy Shield",
+            rank = "3",
+            icon = "spell_holy_blessingofprotection",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 2070,
+            },
         },
-        [17] = {
-            ["name"] = "Seal of Command",
-            ["rank"] = 5,
-            ["cost"] = 2070,
-            ["texture"] = "Interface/ICONS/ability_warrior_innerrage",
-            ["id"] = 20920,
-            ["talent"] = true
+        {
+            spell_id = 20920,
+            name = "Seal of Command",
+            rank = "5",
+            icon = "ability_warrior_innerrage",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 2070,
+            },
+        },
+        {
+            spell_id = 25291,
+            name = "Blessing of Might",
+            rank = 7,
+            icon = "spell_holy_fistofjustice",
+            categories = { "Blessings", },
+            source = {
+                type = "Item",
+                recipe_item_ids = { 21289 },
+                location = "Boss Drop, AQ20",
+            },
+            phase = 4,
+        },
+        {
+            spell_id = 25290,
+            name = "Blessing of Wisdom",
+            rank = 6,
+            icon = "spell_holy_sealofwisdom",
+            categories = { "Blessings", },
+            source = {
+                type = "Item",
+                recipe_item_ids = { 21288 },
+                location = "Boss Drop, AQ20",
+            },
+            phase = 4,
+        },
+        {
+            spell_id = 25292,
+            name = "Holy Light",
+            rank = 9,
+            icon = "spell_holy_holybolt",
+            categories = { "Holy", },
+            source = {
+                type = "Item",
+                recipe_item_ids = { 21290 },
+                location = "Boss Drop, AQ20",
+            },
+            phase = 4,
         },
     },
 }

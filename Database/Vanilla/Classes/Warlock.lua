@@ -3,1153 +3,1611 @@ local _, TFG = ...
 TFG.WARLOCK_VANILLA = {
     [2] = {
         {
-            ["name"] = "Summon Imp",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/spell_shadow_summonimp",
-            ["id"] = 688
+            spell_id = 688,
+            name = "Summon Imp",
+            rank = "1",
+            icon = "spell_shadow_summonimp",
         },
         {
-            ["name"] = "Immolate",
-            ["rank"] = 1,
-            ["cost"] = 10,
-            ["texture"] = "Interface/ICONS/spell_fire_immolation",
-            ["id"] = 348
+            spell_id = 348,
+            name = "Immolate",
+            rank = "1",
+            icon = "spell_fire_immolation",
+            source = {
+                type = "Trainer",
+                cost = 10,
+            },
         },
     },
     [4] = {
         {
-            ["name"] = "Corruption",
-            ["rank"] = 1,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/spell_shadow_abominationexplosion",
-            ["id"] = 172
+            spell_id = 172,
+            name = "Corruption",
+            rank = "1",
+            icon = "spell_shadow_abominationexplosion",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
         {
-            ["name"] = "Curse of Weakness",
-            ["rank"] = 1,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/spell_shadow_curseofmannoroth",
-            ["id"] = 702
+            spell_id = 702,
+            name = "Curse of Weakness",
+            rank = "1",
+            icon = "spell_shadow_curseofmannoroth",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
     },
     [6] = {
         {
-            ["name"] = "Life Tap",
-            ["rank"] = 1,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/spell_shadow_burningspirit",
-            ["id"] = 1454
+            spell_id = 1454,
+            name = "Life Tap",
+            rank = "1",
+            icon = "spell_shadow_burningspirit",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
         {
-            ["name"] = "Shadow Bolt",
-            ["rank"] = 2,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/spell_shadow_shadowbolt",
-            ["id"] = 695
+            spell_id = 695,
+            name = "Shadow Bolt",
+            rank = "2",
+            icon = "spell_shadow_shadowbolt",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
     },
     [8] = {
         {
-            ["name"] = "Curse of Agony",
-            ["rank"] = 1,
-            ["cost"] = 200,
-            ["texture"] = "Interface/ICONS/spell_shadow_curseofsargeras",
-            ["id"] = 980
+            spell_id = 980,
+            name = "Curse of Agony",
+            rank = "1",
+            icon = "spell_shadow_curseofsargeras",
+            source = {
+                type = "Trainer",
+                cost = 200,
+            },
         },
         {
-            ["name"] = "Fear",
-            ["rank"] = 1,
-            ["cost"] = 200,
-            ["texture"] = "Interface/ICONS/spell_shadow_possession",
-            ["id"] = 5782
+            spell_id = 5782,
+            name = "Fear",
+            rank = "1",
+            icon = "spell_shadow_possession",
+            source = {
+                type = "Trainer",
+                cost = 200,
+            },
         },
     },
     [10] = {
         {
-            ["name"] = "Drain Soul",
-            ["rank"] = 1,
-            ["cost"] = 300,
-            ["texture"] = "Interface/ICONS/spell_shadow_haunting",
-            ["id"] = 1120
+            spell_id = 1120,
+            name = "Drain Soul",
+            rank = "1",
+            icon = "spell_shadow_haunting",
+            source = {
+                type = "Trainer",
+                cost = 300,
+            },
         },
         {
-            ["name"] = "Create Healthstone (Minor)",
-            ["rank"] = 1,
-            ["cost"] = 300,
-            ["texture"] = "Interface/ICONS/inv_stone_04",
-            ["id"] = 6201
+            spell_id = 6201,
+            name = "Create Healthstone (Minor)",
+            rank = "1",
+            icon = "inv_stone_04",
+            source = {
+                type = "Trainer",
+                cost = 300,
+            },
         },
         {
-            ["name"] = "Demon Skin",
-            ["rank"] = 2,
-            ["cost"] = 300,
-            ["texture"] = "Interface/ICONS/spell_shadow_ragingscream",
-            ["id"] = 696
+            spell_id = 696,
+            name = "Demon Skin",
+            rank = "2",
+            icon = "spell_shadow_ragingscream",
+            source = {
+                type = "Trainer",
+                cost = 300,
+            },
         },
         {
-            ["name"] = "Summon Voidwalker",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/spell_shadow_summonvoidwalker",
-            ["id"] = 697
+            spell_id = 697,
+            name = "Summon Voidwalker",
+            rank = "1",
+            icon = "spell_shadow_summonvoidwalker",
         },
         {
-            ["name"] = "Immolate",
-            ["rank"] = 2,
-            ["cost"] = 300,
-            ["texture"] = "Interface/ICONS/spell_fire_immolation",
-            ["id"] = 707
+            spell_id = 707,
+            name = "Immolate",
+            rank = "2",
+            icon = "spell_fire_immolation",
+            source = {
+                type = "Trainer",
+                cost = 300,
+            },
         },
     },
     [12] = {
         {
-            ["name"] = "Curse of Weakness",
-            ["rank"] = 2,
-            ["cost"] = 600,
-            ["texture"] = "Interface/ICONS/spell_shadow_curseofmannoroth",
-            ["id"] = 1108
+            spell_id = 1108,
+            name = "Curse of Weakness",
+            rank = "2",
+            icon = "spell_shadow_curseofmannoroth",
+            source = {
+                type = "Trainer",
+                cost = 600,
+            },
         },
         {
-            ["name"] = "Health Funnel",
-            ["rank"] = 1,
-            ["cost"] = 600,
-            ["texture"] = "Interface/ICONS/spell_shadow_lifedrain",
-            ["id"] = 755
+            spell_id = 755,
+            name = "Health Funnel",
+            rank = "1",
+            icon = "spell_shadow_lifedrain",
+            source = {
+                type = "Trainer",
+                cost = 600,
+            },
         },
         {
-            ["name"] = "Shadow Bolt",
-            ["rank"] = 3,
-            ["cost"] = 600,
-            ["texture"] = "Interface/ICONS/spell_shadow_shadowbolt",
-            ["id"] = 705
+            spell_id = 705,
+            name = "Shadow Bolt",
+            rank = "3",
+            icon = "spell_shadow_shadowbolt",
+            source = {
+                type = "Trainer",
+                cost = 600,
+            },
         },
     },
     [14] = {
         {
-            ["name"] = "Corruption",
-            ["rank"] = 2,
-            ["cost"] = 900,
-            ["texture"] = "Interface/ICONS/spell_shadow_abominationexplosion",
-            ["id"] = 6222
+            spell_id = 6222,
+            name = "Corruption",
+            rank = "2",
+            icon = "spell_shadow_abominationexplosion",
+            source = {
+                type = "Trainer",
+                cost = 900,
+            },
         },
         {
-            ["name"] = "Curse of Recklessness",
-            ["rank"] = 1,
-            ["cost"] = 900,
-            ["texture"] = "Interface/ICONS/spell_shadow_unholystrength",
-            ["id"] = 704
+            spell_id = 704,
+            name = "Curse of Recklessness",
+            rank = "1",
+            icon = "spell_shadow_unholystrength",
+            source = {
+                type = "Trainer",
+                cost = 900,
+            },
         },
         {
-            ["name"] = "Drain Life",
-            ["rank"] = 1,
-            ["cost"] = 900,
-            ["texture"] = "Interface/ICONS/spell_shadow_lifedrain02",
-            ["id"] = 689
+            spell_id = 689,
+            name = "Drain Life",
+            rank = "1",
+            icon = "spell_shadow_lifedrain02",
+            source = {
+                type = "Trainer",
+                cost = 900,
+            },
         },
     },
     [16] = {
         {
-            ["name"] = "Life Tap",
-            ["rank"] = 2,
-            ["cost"] = 1200,
-            ["texture"] = "Interface/ICONS/spell_shadow_burningspirit",
-            ["id"] = 1455
+            spell_id = 1455,
+            name = "Life Tap",
+            rank = "2",
+            icon = "spell_shadow_burningspirit",
+            source = {
+                type = "Trainer",
+                cost = 1200,
+            },
         },
         {
-            ["name"] = "Unending Breath",
-            ["rank"] = 1,
-            ["cost"] = 1200,
-            ["texture"] = "Interface/ICONS/spell_shadow_demonbreath",
-            ["id"] = 5697
+            spell_id = 5697,
+            name = "Unending Breath",
+            rank = "1",
+            icon = "spell_shadow_demonbreath",
+            source = {
+                type = "Trainer",
+                cost = 1200,
+            },
         },
     },
     [18] = {
         {
-            ["name"] = "Curse of Agony",
-            ["rank"] = 2,
-            ["cost"] = 1500,
-            ["texture"] = "Interface/ICONS/spell_shadow_curseofsargeras",
-            ["id"] = 1014
+            spell_id = 1014,
+            name = "Curse of Agony",
+            rank = "2",
+            icon = "spell_shadow_curseofsargeras",
+            source = {
+                type = "Trainer",
+                cost = 1500,
+            },
         },
         {
-            ["name"] = "Create Soulstone (Minor)",
-            ["rank"] = 1,
-            ["cost"] = 1500,
-            ["texture"] = "Interface/ICONS/inv_misc_orb_04",
-            ["id"] = 693
+            spell_id = 693,
+            name = "Create Soulstone (Minor)",
+            rank = "1",
+            icon = "inv_misc_orb_04",
+            source = {
+                type = "Trainer",
+                cost = 1500,
+            },
         },
         {
-            ["name"] = "Searing Pain",
-            ["rank"] = 1,
-            ["cost"] = 1500,
-            ["texture"] = "Interface/ICONS/spell_fire_soulburn",
-            ["id"] = 5676
+            spell_id = 5676,
+            name = "Searing Pain",
+            rank = "1",
+            icon = "spell_fire_soulburn",
+            source = {
+                type = "Trainer",
+                cost = 1500,
+            },
         },
     },
     [20] = {
         {
-            ["name"] = "Demon Armor",
-            ["rank"] = 1,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/spell_shadow_ragingscream",
-            ["id"] = 706
+            spell_id = 706,
+            name = "Demon Armor",
+            rank = "1",
+            icon = "spell_shadow_ragingscream",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
         {
-            ["name"] = "Health Funnel",
-            ["rank"] = 2,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/spell_shadow_lifedrain",
-            ["id"] = 3698
+            spell_id = 3698,
+            name = "Health Funnel",
+            rank = "2",
+            icon = "spell_shadow_lifedrain",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
         {
-            ["name"] = "Ritual of Summoning",
-            ["rank"] = 1,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/spell_shadow_twilight",
-            ["id"] = 698
+            spell_id = 698,
+            name = "Ritual of Summoning",
+            rank = "1",
+            icon = "spell_shadow_twilight",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
         {
-            ["name"] = "Summon Succubus",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/spell_shadow_summonsuccubus",
-            ["id"] = 712
+            spell_id = 712,
+            name = "Summon Succubus",
+            rank = "1",
+            icon = "spell_shadow_summonsuccubus",
         },
         {
-            ["name"] = "Immolate",
-            ["rank"] = 3,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/spell_fire_immolation",
-            ["id"] = 1094
+            spell_id = 1094,
+            name = "Immolate",
+            rank = "3",
+            icon = "spell_fire_immolation",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
         {
-            ["name"] = "Rain of Fire",
-            ["rank"] = 1,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/spell_shadow_rainoffire",
-            ["id"] = 5740
+            spell_id = 5740,
+            name = "Rain of Fire",
+            rank = "1",
+            icon = "spell_shadow_rainoffire",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
         {
-            ["name"] = "Shadow Bolt",
-            ["rank"] = 4,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/spell_shadow_shadowbolt",
-            ["id"] = 1088
+            spell_id = 1088,
+            name = "Shadow Bolt",
+            rank = "4",
+            icon = "spell_shadow_shadowbolt",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
     },
     [22] = {
         {
-            ["name"] = "Curse of Weakness",
-            ["rank"] = 3,
-            ["cost"] = 2500,
-            ["texture"] = "Interface/ICONS/spell_shadow_curseofmannoroth",
-            ["id"] = 6205
+            spell_id = 6205,
+            name = "Curse of Weakness",
+            rank = "3",
+            icon = "spell_shadow_curseofmannoroth",
+            source = {
+                type = "Trainer",
+                cost = 2500,
+            },
         },
         {
-            ["name"] = "Drain Life",
-            ["rank"] = 2,
-            ["cost"] = 2500,
-            ["texture"] = "Interface/ICONS/spell_shadow_lifedrain02",
-            ["id"] = 699
+            spell_id = 699,
+            name = "Drain Life",
+            rank = "2",
+            icon = "spell_shadow_lifedrain02",
+            source = {
+                type = "Trainer",
+                cost = 2500,
+            },
         },
         {
-            ["name"] = "Create Healthstone (Lesser)",
-            ["rank"] = 1,
-            ["cost"] = 2500,
-            ["texture"] = "Interface/ICONS/inv_stone_04",
-            ["id"] = 6202
+            spell_id = 6202,
+            name = "Create Healthstone (Lesser)",
+            rank = "1",
+            icon = "inv_stone_04",
+            source = {
+                type = "Trainer",
+                cost = 2500,
+            },
         },
         {
-            ["name"] = "Eye of Kilrogg",
-            ["rank"] = 1,
-            ["cost"] = 2500,
-            ["texture"] = "Interface/ICONS/spell_shadow_evileye",
-            ["id"] = 126
+            spell_id = 126,
+            name = "Eye of Kilrogg",
+            rank = "1",
+            icon = "spell_shadow_evileye",
+            source = {
+                type = "Trainer",
+                cost = 2500,
+            },
         },
     },
     [24] = {
         {
-            ["name"] = "Corruption",
-            ["rank"] = 3,
-            ["cost"] = 3000,
-            ["texture"] = "Interface/ICONS/spell_shadow_abominationexplosion",
-            ["id"] = 6223
+            spell_id = 6223,
+            name = "Corruption",
+            rank = "3",
+            icon = "spell_shadow_abominationexplosion",
+            source = {
+                type = "Trainer",
+                cost = 3000,
+            },
         },
         {
-            ["name"] = "Drain Mana",
-            ["rank"] = 1,
-            ["cost"] = 3000,
-            ["texture"] = "Interface/ICONS/spell_shadow_siphonmana",
-            ["id"] = 5138
+            spell_id = 5138,
+            name = "Drain Mana",
+            rank = "1",
+            icon = "spell_shadow_siphonmana",
+            source = {
+                type = "Trainer",
+                cost = 3000,
+            },
         },
         {
-            ["name"] = "Drain Soul",
-            ["rank"] = 2,
-            ["cost"] = 3000,
-            ["texture"] = "Interface/ICONS/spell_shadow_haunting",
-            ["id"] = 8288
+            spell_id = 8288,
+            name = "Drain Soul",
+            rank = "2",
+            icon = "spell_shadow_haunting",
+            source = {
+                type = "Trainer",
+                cost = 3000,
+            },
         },
         {
-            ["name"] = "Sense Demons",
-            ["rank"] = 1,
-            ["cost"] = 3000,
-            ["texture"] = "Interface/ICONS/spell_shadow_metamorphosis",
-            ["id"] = 5500
+            spell_id = 5500,
+            name = "Sense Demons",
+            rank = "1",
+            icon = "spell_shadow_metamorphosis",
+            source = {
+                type = "Trainer",
+                cost = 3000,
+            },
         },
         {
-            ["name"] = "Shadowburn",
-            ["rank"] = 2,
-            ["cost"] = 150,
-            ["texture"] = "Interface/ICONS/spell_shadow_scourgebuild",
-            ["id"] = 18867,
-            ["talent"] = true
+            spell_id = 18867,
+            name = "Shadowburn",
+            rank = "2",
+            icon = "spell_shadow_scourgebuild",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 150,
+            },
         },
     },
     [26] = {
         {
-            ["name"] = "Curse of Tongues",
-            ["rank"] = 1,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/spell_shadow_curseoftounges",
-            ["id"] = 1714
+            spell_id = 1714,
+            name = "Curse of Tongues",
+            rank = "1",
+            icon = "spell_shadow_curseoftounges",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
         {
-            ["name"] = "Life Tap",
-            ["rank"] = 3,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/spell_shadow_burningspirit",
-            ["id"] = 1456
+            spell_id = 1456,
+            name = "Life Tap",
+            rank = "3",
+            icon = "spell_shadow_burningspirit",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
         {
-            ["name"] = "Detect Lesser Invisibility",
-            ["rank"] = 1,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/spell_shadow_detectlesserinvisibility",
-            ["id"] = 132
+            spell_id = 132,
+            name = "Detect Lesser Invisibility",
+            rank = "1",
+            icon = "spell_shadow_detectlesserinvisibility",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
         {
-            ["name"] = "Searing Pain",
-            ["rank"] = 2,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/spell_fire_soulburn",
-            ["id"] = 17919
+            spell_id = 17919,
+            name = "Searing Pain",
+            rank = "2",
+            icon = "spell_fire_soulburn",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
     },
     [28] = {
         {
-            ["name"] = "Curse of Agony",
-            ["rank"] = 3,
-            ["cost"] = 5000,
-            ["texture"] = "Interface/ICONS/spell_shadow_curseofsargeras",
-            ["id"] = 6217
+            spell_id = 6217,
+            name = "Curse of Agony",
+            rank = "3",
+            icon = "spell_shadow_curseofsargeras",
+            source = {
+                type = "Trainer",
+                cost = 5000,
+            },
         },
         {
-            ["name"] = "Curse of Recklessness",
-            ["rank"] = 2,
-            ["cost"] = 5000,
-            ["texture"] = "Interface/ICONS/spell_shadow_unholystrength",
-            ["id"] = 7658
+            spell_id = 7658,
+            name = "Curse of Recklessness",
+            rank = "2",
+            icon = "spell_shadow_unholystrength",
+            source = {
+                type = "Trainer",
+                cost = 5000,
+            },
         },
         {
-            ["name"] = "Banish",
-            ["rank"] = 1,
-            ["cost"] = 5000,
-            ["texture"] = "Interface/ICONS/spell_shadow_cripple",
-            ["id"] = 710
+            spell_id = 710,
+            name = "Banish",
+            rank = "1",
+            icon = "spell_shadow_cripple",
+            source = {
+                type = "Trainer",
+                cost = 5000,
+            },
         },
         {
-            ["name"] = "Create Firestone (Lesser)",
-            ["rank"] = 1,
-            ["cost"] = 5000,
-            ["texture"] = "Interface/ICONS/inv_misc_gem_bloodstone_02",
-            ["id"] = 6366
+            spell_id = 6366,
+            name = "Create Firestone (Lesser)",
+            rank = "1",
+            icon = "inv_misc_gem_bloodstone_02",
+            source = {
+                type = "Trainer",
+                cost = 5000,
+            },
         },
         {
-            ["name"] = "Health Funnel",
-            ["rank"] = 3,
-            ["cost"] = 5000,
-            ["texture"] = "Interface/ICONS/spell_shadow_lifedrain",
-            ["id"] = 3699
+            spell_id = 3699,
+            name = "Health Funnel",
+            rank = "3",
+            icon = "spell_shadow_lifedrain",
+            source = {
+                type = "Trainer",
+                cost = 5000,
+            },
         },
         {
-            ["name"] = "Shadow Bolt",
-            ["rank"] = 5,
-            ["cost"] = 5000,
-            ["texture"] = "Interface/ICONS/spell_shadow_shadowbolt",
-            ["id"] = 1106
+            spell_id = 1106,
+            name = "Shadow Bolt",
+            rank = "5",
+            icon = "spell_shadow_shadowbolt",
+            source = {
+                type = "Trainer",
+                cost = 5000,
+            },
         },
     },
     [30] = {
         {
-            ["name"] = "Drain Life",
-            ["rank"] = 3,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/spell_shadow_lifedrain02",
-            ["id"] = 709
+            spell_id = 709,
+            name = "Drain Life",
+            rank = "3",
+            icon = "spell_shadow_lifedrain02",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
         {
-            ["name"] = "Create Soulstone (Lesser)",
-            ["rank"] = 1,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/inv_misc_orb_04",
-            ["id"] = 20752
-        },        
-        {
-            ["name"] = "Demon Armor",
-            ["rank"] = 2,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/spell_shadow_ragingscream",
-            ["id"] = 1086
+            spell_id = 20752,
+            name = "Create Soulstone (Lesser)",
+            rank = "1",
+            icon = "inv_misc_orb_04",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
         {
-            ["name"] = "Enslave Demon",
-            ["rank"] = 1,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/spell_shadow_enslavedemon",
-            ["id"] = 1098
+            spell_id = 1086,
+            name = "Demon Armor",
+            rank = "2",
+            icon = "spell_shadow_ragingscream",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
         {
-            ["name"] = "Summon Felhunter",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/spell_shadow_summonfelhunter",
-            ["id"] = 691
+            spell_id = 1098,
+            name = "Enslave Demon",
+            rank = "1",
+            icon = "spell_shadow_enslavedemon",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
         {
-            ["name"] = "Hellfire",
-            ["rank"] = 1,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/spell_fire_incinerate",
-            ["id"] = 1949
+            spell_id = 691,
+            name = "Summon Felhunter",
+            rank = "1",
+            icon = "spell_shadow_summonfelhunter",
         },
         {
-            ["name"] = "Immolate",
-            ["rank"] = 4,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/spell_fire_immolation",
-            ["id"] = 2941
+            spell_id = 1949,
+            name = "Hellfire",
+            rank = "1",
+            icon = "spell_fire_incinerate",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
+        },
+        {
+            spell_id = 2941,
+            name = "Immolate",
+            rank = "4",
+            icon = "spell_fire_immolation",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
     },
     [32] = {
         {
-            ["name"] = "Curse of Weakness",
-            ["rank"] = 4,
-            ["cost"] = 7000,
-            ["texture"] = "Interface/ICONS/spell_shadow_curseofmannoroth",
-            ["id"] = 7646
+            spell_id = 7646,
+            name = "Curse of Weakness",
+            rank = "4",
+            icon = "spell_shadow_curseofmannoroth",
+            source = {
+                type = "Trainer",
+                cost = 7000,
+            },
         },
         {
-            ["name"] = "Curse of the Elements",
-            ["rank"] = 1,
-            ["cost"] = 7000,
-            ["texture"] = "Interface/ICONS/spell_shadow_chilltouch",
-            ["id"] = 1490
+            spell_id = 1490,
+            name = "Curse of the Elements",
+            rank = "1",
+            icon = "spell_shadow_chilltouch",
+            source = {
+                type = "Trainer",
+                cost = 7000,
+            },
         },
         {
-            ["name"] = "Fear",
-            ["rank"] = 2,
-            ["cost"] = 7000,
-            ["texture"] = "Interface/ICONS/spell_shadow_possession",
-            ["id"] = 6213
+            spell_id = 6213,
+            name = "Fear",
+            rank = "2",
+            icon = "spell_shadow_possession",
+            source = {
+                type = "Trainer",
+                cost = 7000,
+            },
         },
         {
-            ["name"] = "Shadow Ward",
-            ["rank"] = 1,
-            ["cost"] = 7000,
-            ["texture"] = "Interface/ICONS/spell_shadow_antishadow",
-            ["id"] = 6229
+            spell_id = 6229,
+            name = "Shadow Ward",
+            rank = "1",
+            icon = "spell_shadow_antishadow",
+            source = {
+                type = "Trainer",
+                cost = 7000,
+            },
         },
         {
-            ["name"] = "Shadowburn",
-            ["rank"] = 3,
-            ["cost"] = 350,
-            ["texture"] = "Interface/ICONS/spell_shadow_scourgebuild",
-            ["id"] = 18868,
-            ["talent"] = true
+            spell_id = 18868,
+            name = "Shadowburn",
+            rank = "3",
+            icon = "spell_shadow_scourgebuild",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 350,
+            },
         },
     },
     [34] = {
         {
-            ["name"] = "Corruption",
-            ["rank"] = 4,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/spell_shadow_abominationexplosion",
-            ["id"] = 7648
+            spell_id = 7648,
+            name = "Corruption",
+            rank = "4",
+            icon = "spell_shadow_abominationexplosion",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
         {
-            ["name"] = "Drain Mana",
-            ["rank"] = 2,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/spell_shadow_siphonmana",
-            ["id"] = 6226
+            spell_id = 6226,
+            name = "Drain Mana",
+            rank = "2",
+            icon = "spell_shadow_siphonmana",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
         {
-            ["name"] = "Create Healthstone",
-            ["rank"] = 1,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/inv_stone_04",
-            ["id"] = 5699
+            spell_id = 5699,
+            name = "Create Healthstone",
+            rank = "1",
+            icon = "inv_stone_04",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
         {
-            ["name"] = "Rain of Fire",
-            ["rank"] = 2,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/spell_shadow_rainoffire",
-            ["id"] = 6219
+            spell_id = 6219,
+            name = "Rain of Fire",
+            rank = "2",
+            icon = "spell_shadow_rainoffire",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
         {
-            ["name"] = "Searing Pain",
-            ["rank"] = 3,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/spell_fire_soulburn",
-            ["id"] = 17920
+            spell_id = 17920,
+            name = "Searing Pain",
+            rank = "3",
+            icon = "spell_fire_soulburn",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
     },
     [36] = {
         {
-            ["name"] = "Life Tap",
-            ["rank"] = 4,
-            ["cost"] = 9000,
-            ["texture"] = "Interface/ICONS/spell_shadow_burningspirit",
-            ["id"] = 11687
+            spell_id = 11687,
+            name = "Life Tap",
+            rank = "4",
+            icon = "spell_shadow_burningspirit",
+            source = {
+                type = "Trainer",
+                cost = 9000,
+            },
         },
         {
-            ["name"] = "Create Firestone",
-            ["rank"] = 1,
-            ["cost"] = 9000,
-            ["texture"] = "Interface/ICONS/inv_misc_gem_bloodstone_02",
-            ["id"] = 17951
+            spell_id = 17951,
+            name = "Create Firestone",
+            rank = "1",
+            icon = "inv_misc_gem_bloodstone_02",
+            source = {
+                type = "Trainer",
+                cost = 9000,
+            },
         },
         {
-            ["name"] = "Create Spellstone",
-            ["rank"] = 1,
-            ["cost"] = 9000,
-            ["texture"] = "Interface/ICONS/inv_misc_gem_sapphire_01",
-            ["id"] = 2362
+            spell_id = 2362,
+            name = "Create Spellstone",
+            rank = "1",
+            icon = "inv_misc_gem_sapphire_01",
+            source = {
+                type = "Trainer",
+                cost = 9000,
+            },
         },
         {
-            ["name"] = "Health Funnel",
-            ["rank"] = 4,
-            ["cost"] = 9000,
-            ["texture"] = "Interface/ICONS/spell_shadow_lifedrain",
-            ["id"] = 3700
+            spell_id = 3700,
+            name = "Health Funnel",
+            rank = "4",
+            icon = "spell_shadow_lifedrain",
+            source = {
+                type = "Trainer",
+                cost = 9000,
+            },
         },
         {
-            ["name"] = "Shadow Bolt",
-            ["rank"] = 6,
-            ["cost"] = 9000,
-            ["texture"] = "Interface/ICONS/spell_shadow_shadowbolt",
-            ["id"] = 7641
+            spell_id = 7641,
+            name = "Shadow Bolt",
+            rank = "6",
+            icon = "spell_shadow_shadowbolt",
+            source = {
+                type = "Trainer",
+                cost = 9000,
+            },
         },
     },
     [38] = {
         {
-            ["name"] = "Curse of Agony",
-            ["rank"] = 4,
-            ["cost"] = 10000,
-            ["texture"] = "Interface/ICONS/spell_shadow_curseofsargeras",
-            ["id"] = 11711
+            spell_id = 11711,
+            name = "Curse of Agony",
+            rank = "4",
+            icon = "spell_shadow_curseofsargeras",
+            source = {
+                type = "Trainer",
+                cost = 10000,
+            },
         },
         {
-            ["name"] = "Drain Life",
-            ["rank"] = 4,
-            ["cost"] = 10000,
-            ["texture"] = "Interface/ICONS/spell_shadow_lifedrain02",
-            ["id"] = 7651
+            spell_id = 7651,
+            name = "Drain Life",
+            rank = "4",
+            icon = "spell_shadow_lifedrain02",
+            source = {
+                type = "Trainer",
+                cost = 10000,
+            },
         },
         {
-            ["name"] = "Drain Soul",
-            ["rank"] = 3,
-            ["cost"] = 10000,
-            ["texture"] = "Interface/ICONS/spell_shadow_haunting",
-            ["id"] = 8289
+            spell_id = 8289,
+            name = "Drain Soul",
+            rank = "3",
+            icon = "spell_shadow_haunting",
+            source = {
+                type = "Trainer",
+                cost = 10000,
+            },
         },
         {
-            ["name"] = "Siphon Life",
-            ["rank"] = 2,
-            ["cost"] = 500,
-            ["texture"] = "Interface/ICONS/spell_shadow_requiem",
-            ["id"] = 18879,
-            ["talent"] = true
+            spell_id = 18879,
+            name = "Siphon Life",
+            rank = "2",
+            icon = "spell_shadow_requiem",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 500,
+            },
         },
         {
-            ["name"] = "Detect Invisibility",
-            ["rank"] = 1,
-            ["cost"] = 10000,
-            ["texture"] = "Interface/ICONS/spell_shadow_detectinvisibility",
-            ["id"] = 2970
+            spell_id = 2970,
+            name = "Detect Invisibility",
+            rank = "1",
+            icon = "spell_shadow_detectinvisibility",
+            source = {
+                type = "Trainer",
+                cost = 10000,
+            },
         },
     },
     [40] = {
         {
-            ["name"] = "Howl of Terror",
-            ["rank"] = 1,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/spell_shadow_deathscream",
-            ["id"] = 5484
+            spell_id = 5484,
+            name = "Howl of Terror",
+            rank = "1",
+            icon = "spell_shadow_deathscream",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
         {
-            ["name"] = "Create Soulstone",
-            ["rank"] = 1,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/inv_misc_orb_04",
-            ["id"] = 20755
+            spell_id = 20755,
+            name = "Create Soulstone",
+            rank = "1",
+            icon = "inv_misc_orb_04",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
         {
-            ["name"] = "Demon Armor",
-            ["rank"] = 3,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/spell_shadow_ragingscream",
-            ["id"] = 11733
+            spell_id = 11733,
+            name = "Demon Armor",
+            rank = "3",
+            icon = "spell_shadow_ragingscream",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
         {
-            ["name"] = "Summon Felsteed",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/spell_nature_swiftness",
-            ["id"] = 5784
+            spell_id = 5784,
+            name = "Summon Felsteed",
+            rank = "1",
+            icon = "spell_nature_swiftness",
         },
         {
-            ["name"] = "Immolate",
-            ["rank"] = 5,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/spell_fire_immolation",
-            ["id"] = 11665
+            spell_id = 11665,
+            name = "Immolate",
+            rank = "5",
+            icon = "spell_fire_immolation",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
         {
-            ["name"] = "Shadowburn",
-            ["rank"] = 4,
-            ["cost"] = 550,
-            ["texture"] = "Interface/ICONS/spell_shadow_scourgebuild",
-            ["id"] = 18869,
-            ["talent"] = true
+            spell_id = 18869,
+            name = "Shadowburn",
+            rank = "4",
+            icon = "spell_shadow_scourgebuild",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 550,
+            },
         },
     },
     [42] = {
         {
-            ["name"] = "Curse of Recklessness",
-            ["rank"] = 3,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/spell_shadow_unholystrength",
-            ["id"] = 7659
+            spell_id = 7659,
+            name = "Curse of Recklessness",
+            rank = "3",
+            icon = "spell_shadow_unholystrength",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
         {
-            ["name"] = "Curse of Weakness",
-            ["rank"] = 5,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/spell_shadow_curseofmannoroth",
-            ["id"] = 11707
+            spell_id = 11707,
+            name = "Curse of Weakness",
+            rank = "5",
+            icon = "spell_shadow_curseofmannoroth",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
         {
-            ["name"] = "Death Coil",
-            ["rank"] = 1,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/spell_shadow_deathcoil",
-            ["id"] = 6789
+            spell_id = 6789,
+            name = "Death Coil",
+            rank = "1",
+            icon = "spell_shadow_deathcoil",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
         {
-            ["name"] = "Shadow Ward",
-            ["rank"] = 2,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/spell_shadow_antishadow",
-            ["id"] = 11739
+            spell_id = 11739,
+            name = "Shadow Ward",
+            rank = "2",
+            icon = "spell_shadow_antishadow",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
         {
-            ["name"] = "Hellfire",
-            ["rank"] = 2,
-            ["cost"] = 9900,
-            ["texture"] = "Interface/ICONS/spell_fire_incinerate",
-            ["id"] = 11683
+            spell_id = 11683,
+            name = "Hellfire",
+            rank = "2",
+            icon = "spell_fire_incinerate",
+            source = {
+                type = "Trainer",
+                cost = 9900,
+            },
         },
         {
-            ["name"] = "Searing Pain",
-            ["rank"] = 4,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/spell_fire_soulburn",
-            ["id"] = 17921
+            spell_id = 17921,
+            name = "Searing Pain",
+            rank = "4",
+            icon = "spell_fire_soulburn",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
     },
     [44] = {
         {
-            ["name"] = "Corruption",
-            ["rank"] = 5,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/spell_shadow_abominationexplosion",
-            ["id"] = 11671
+            spell_id = 11671,
+            name = "Corruption",
+            rank = "5",
+            icon = "spell_shadow_abominationexplosion",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
         {
-            ["name"] = "Curse of Shadow",
-            ["rank"] = 1,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/spell_shadow_curseofachimonde",
-            ["id"] = 17862
+            spell_id = 17862,
+            name = "Curse of Shadow",
+            rank = "1",
+            icon = "spell_shadow_curseofachimonde",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
         {
-            ["name"] = "Drain Mana",
-            ["rank"] = 3,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/spell_shadow_siphonmana",
-            ["id"] = 11703
+            spell_id = 11703,
+            name = "Drain Mana",
+            rank = "3",
+            icon = "spell_shadow_siphonmana",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
         {
-            ["name"] = "Enslave Demon",
-            ["rank"] = 2,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/spell_shadow_enslavedemon",
-            ["id"] = 11725
+            spell_id = 11725,
+            name = "Enslave Demon",
+            rank = "2",
+            icon = "spell_shadow_enslavedemon",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
         {
-            ["name"] = "Health Funnel",
-            ["rank"] = 5,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/spell_shadow_lifedrain",
-            ["id"] = 11693
+            spell_id = 11693,
+            name = "Health Funnel",
+            rank = "5",
+            icon = "spell_shadow_lifedrain",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
         {
-            ["name"] = "Shadow Bolt",
-            ["rank"] = 7,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/spell_shadow_shadowbolt",
-            ["id"] = 11659
+            spell_id = 11659,
+            name = "Shadow Bolt",
+            rank = "7",
+            icon = "spell_shadow_shadowbolt",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
     },
     [46] = {
         {
-            ["name"] = "Curse of the Elements",
-            ["rank"] = 2,
-            ["cost"] = 13000,
-            ["texture"] = "Interface/ICONS/spell_shadow_chilltouch",
-            ["id"] = 11721
+            spell_id = 11721,
+            name = "Curse of the Elements",
+            rank = "2",
+            icon = "spell_shadow_chilltouch",
+            source = {
+                type = "Trainer",
+                cost = 13000,
+            },
         },
         {
-            ["name"] = "Drain Life",
-            ["rank"] = 5,
-            ["cost"] = 13000,
-            ["texture"] = "Interface/ICONS/spell_shadow_lifedrain02",
-            ["id"] = 11699
+            spell_id = 11699,
+            name = "Drain Life",
+            rank = "5",
+            icon = "spell_shadow_lifedrain02",
+            source = {
+                type = "Trainer",
+                cost = 13000,
+            },
         },
         {
-            ["name"] = "Life Tap",
-            ["rank"] = 5,
-            ["cost"] = 13000,
-            ["texture"] = "Interface/ICONS/spell_shadow_burningspirit",
-            ["id"] = 11688
+            spell_id = 11688,
+            name = "Life Tap",
+            rank = "5",
+            icon = "spell_shadow_burningspirit",
+            source = {
+                type = "Trainer",
+                cost = 13000,
+            },
         },
         {
-            ["name"] = "Create Firestone (Greater)",
-            ["rank"] = 1,
-            ["cost"] = 13000,
-            ["texture"] = "Interface/ICONS/inv_misc_gem_bloodstone_02",
-            ["id"] = 17952
+            spell_id = 17952,
+            name = "Create Firestone (Greater)",
+            rank = "1",
+            icon = "inv_misc_gem_bloodstone_02",
+            source = {
+                type = "Trainer",
+                cost = 13000,
+            },
         },
         {
-            ["name"] = "Create Healthstone (Greater)",
-            ["rank"] = 1,
-            ["cost"] = 13000,
-            ["texture"] = "Interface/ICONS/inv_stone_04",
-            ["id"] = 11729
+            spell_id = 11729,
+            name = "Create Healthstone (Greater)",
+            rank = "1",
+            icon = "inv_stone_04",
+            source = {
+                type = "Trainer",
+                cost = 13000,
+            },
         },
         {
-            ["name"] = "Rain of Fire",
-            ["rank"] = 3,
-            ["cost"] = 13000,
-            ["texture"] = "Interface/ICONS/spell_shadow_rainoffire",
-            ["id"] = 11677
+            spell_id = 11677,
+            name = "Rain of Fire",
+            rank = "3",
+            icon = "spell_shadow_rainoffire",
+            source = {
+                type = "Trainer",
+                cost = 13000,
+            },
         },
     },
     [48] = {
         {
-            ["name"] = "Curse of Agony",
-            ["rank"] = 5,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/spell_shadow_curseofsargeras",
-            ["id"] = 11712
+            spell_id = 11712,
+            name = "Curse of Agony",
+            rank = "5",
+            icon = "spell_shadow_curseofsargeras",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
         {
-            ["name"] = "Siphon Life",
-            ["rank"] = 3,
-            ["cost"] = 700,
-            ["texture"] = "Interface/ICONS/spell_shadow_requiem",
-            ["id"] = 18880,
-            ["talent"] = true
+            spell_id = 18880,
+            name = "Siphon Life",
+            rank = "3",
+            icon = "spell_shadow_requiem",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 700,
+            },
         },
         {
-            ["name"] = "Banish",
-            ["rank"] = 2,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/spell_shadow_cripple",
-            ["id"] = 18647
+            spell_id = 18647,
+            name = "Banish",
+            rank = "2",
+            icon = "spell_shadow_cripple",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
         {
-            ["name"] = "Create Spellstone (Greater)",
-            ["rank"] = 1,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/inv_misc_gem_sapphire_01",
-            ["id"] = 17727
+            spell_id = 17727,
+            name = "Create Spellstone (Greater)",
+            rank = "1",
+            icon = "inv_misc_gem_sapphire_01",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
         {
-            ["name"] = "Conflagrate",
-            ["rank"] = 2,
-            ["cost"] = 700,
-            ["texture"] = "Interface/ICONS/spell_fire_fireball",
-            ["id"] = 18930,
-            ["talent"] = true
+            spell_id = 18930,
+            name = "Conflagrate",
+            rank = "2",
+            icon = "spell_fire_fireball",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 700,
+            },
         },
         {
-            ["name"] = "Shadowburn",
-            ["rank"] = 5,
-            ["cost"] = 700,
-            ["texture"] = "Interface/ICONS/spell_shadow_scourgebuild",
-            ["id"] = 18870,
-            ["talent"] = true
+            spell_id = 18870,
+            name = "Shadowburn",
+            rank = "5",
+            icon = "spell_shadow_scourgebuild",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 700,
+            },
         },
         {
-            ["name"] = "Soul Fire",
-            ["rank"] = 1,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/spell_fire_fireball02",
-            ["id"] = 6353
+            spell_id = 6353,
+            name = "Soul Fire",
+            rank = "1",
+            icon = "spell_fire_fireball02",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
     },
     [50] = {
         {
-            ["name"] = "Curse of Tongues",
-            ["rank"] = 2,
-            ["cost"] = 15000,
-            ["texture"] = "Interface/ICONS/spell_shadow_curseoftounges",
-            ["id"] = 11719
+            spell_id = 11719,
+            name = "Curse of Tongues",
+            rank = "2",
+            icon = "spell_shadow_curseoftounges",
+            source = {
+                type = "Trainer",
+                cost = 15000,
+            },
         },
         {
-            ["name"] = "Dark Pact",
-            ["rank"] = 2,
-            ["cost"] = 750,
-            ["texture"] = "Interface/ICONS/spell_shadow_darkritual",
-            ["id"] = 18937,
-            ["talent"] = true
+            spell_id = 18937,
+            name = "Dark Pact",
+            rank = "2",
+            icon = "spell_shadow_darkritual",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 750,
+            },
         },
         {
-            ["name"] = "Death Coil",
-            ["rank"] = 2,
-            ["cost"] = 15000,
-            ["texture"] = "Interface/ICONS/spell_shadow_deathcoil",
-            ["id"] = 17925
+            spell_id = 17925,
+            name = "Death Coil",
+            rank = "2",
+            icon = "spell_shadow_deathcoil",
+            source = {
+                type = "Trainer",
+                cost = 15000,
+            },
         },
         {
-            ["name"] = "Create Soulstone (Greater)",
-            ["rank"] = 1,
-            ["cost"] = 15000,
-            ["texture"] = "Interface/ICONS/inv_misc_orb_04",
-            ["id"] = 20756
+            spell_id = 20756,
+            name = "Create Soulstone (Greater)",
+            rank = "1",
+            icon = "inv_misc_orb_04",
+            source = {
+                type = "Trainer",
+                cost = 15000,
+            },
         },
         {
-            ["name"] = "Demon Armor",
-            ["rank"] = 4,
-            ["cost"] = 15000,
-            ["texture"] = "Interface/ICONS/spell_shadow_ragingscream",
-            ["id"] = 11734
+            spell_id = 11734,
+            name = "Demon Armor",
+            rank = "4",
+            icon = "spell_shadow_ragingscream",
+            source = {
+                type = "Trainer",
+                cost = 15000,
+            },
         },
         {
-            ["name"] = "Detect Greater Invisibility",
-            ["rank"] = 1,
-            ["cost"] = 15000,
-            ["texture"] = "Interface/ICONS/spell_shadow_detectinvisibility",
-            ["id"] = 11743
+            spell_id = 11743,
+            name = "Detect Greater Invisibility",
+            rank = "1",
+            icon = "spell_shadow_detectinvisibility",
+            source = {
+                type = "Trainer",
+                cost = 15000,
+            },
         },
         {
-            ["name"] = "Inferno",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/spell_shadow_summoninfernal",
-            ["id"] = 1122
+            spell_id = 1122,
+            name = "Inferno",
+            rank = "1",
+            icon = "spell_shadow_summoninfernal",
         },
         {
-            ["name"] = "Immolate",
-            ["rank"] = 6,
-            ["cost"] = 15000,
-            ["texture"] = "Interface/ICONS/spell_fire_immolation",
-            ["id"] = 11667
+            spell_id = 11667,
+            name = "Immolate",
+            rank = "6",
+            icon = "spell_fire_immolation",
+            source = {
+                type = "Trainer",
+                cost = 15000,
+            },
         },
         {
-            ["name"] = "Searing Pain",
-            ["rank"] = 5,
-            ["cost"] = 15000,
-            ["texture"] = "Interface/ICONS/spell_fire_soulburn",
-            ["id"] = 17922
+            spell_id = 17922,
+            name = "Searing Pain",
+            rank = "5",
+            icon = "spell_fire_soulburn",
+            source = {
+                type = "Trainer",
+                cost = 15000,
+            },
         },
     },
     [52] = {
         {
-            ["name"] = "Curse of Weakness",
-            ["rank"] = 6,
-            ["cost"] = 18000,
-            ["texture"] = "Interface/ICONS/spell_shadow_curseofmannoroth",
-            ["id"] = 11708
+            spell_id = 11708,
+            name = "Curse of Weakness",
+            rank = "6",
+            icon = "spell_shadow_curseofmannoroth",
+            source = {
+                type = "Trainer",
+                cost = 18000,
+            },
         },
         {
-            ["name"] = "Drain Soul",
-            ["rank"] = 4,
-            ["cost"] = 18000,
-            ["texture"] = "Interface/ICONS/spell_shadow_haunting",
-            ["id"] = 11675
+            spell_id = 11675,
+            name = "Drain Soul",
+            rank = "4",
+            icon = "spell_shadow_haunting",
+            source = {
+                type = "Trainer",
+                cost = 18000,
+            },
         },
         {
-            ["name"] = "Health Funnel",
-            ["rank"] = 6,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/spell_shadow_lifedrain",
-            ["id"] = 11694
+            spell_id = 11694,
+            name = "Health Funnel",
+            rank = "6",
+            icon = "spell_shadow_lifedrain",
         },
         {
-            ["name"] = "Shadow Ward",
-            ["rank"] = 3,
-            ["cost"] = 18000,
-            ["texture"] = "Interface/ICONS/spell_shadow_antishadow",
-            ["id"] = 11740
+            spell_id = 11740,
+            name = "Shadow Ward",
+            rank = "3",
+            icon = "spell_shadow_antishadow",
+            source = {
+                type = "Trainer",
+                cost = 18000,
+            },
         },
         {
-            ["name"] = "Shadow Bolt",
-            ["rank"] = 8,
-            ["cost"] = 18000,
-            ["texture"] = "Interface/ICONS/spell_shadow_shadowbolt",
-            ["id"] = 11660
+            spell_id = 11660,
+            name = "Shadow Bolt",
+            rank = "8",
+            icon = "spell_shadow_shadowbolt",
+            source = {
+                type = "Trainer",
+                cost = 18000,
+            },
         },
     },
     [54] = {
         {
-            ["name"] = "Corruption",
-            ["rank"] = 6,
-            ["cost"] = 20000,
-            ["texture"] = "Interface/ICONS/spell_shadow_abominationexplosion",
-            ["id"] = 11672
+            spell_id = 11672,
+            name = "Corruption",
+            rank = "6",
+            icon = "spell_shadow_abominationexplosion",
+            source = {
+                type = "Trainer",
+                cost = 20000,
+            },
         },
         {
-            ["name"] = "Drain Life",
-            ["rank"] = 6,
-            ["cost"] = 20000,
-            ["texture"] = "Interface/ICONS/spell_shadow_lifedrain02",
-            ["id"] = 11700
+            spell_id = 11700,
+            name = "Drain Life",
+            rank = "6",
+            icon = "spell_shadow_lifedrain02",
+            source = {
+                type = "Trainer",
+                cost = 20000,
+            },
         },
         {
-            ["name"] = "Drain Mana",
-            ["rank"] = 4,
-            ["cost"] = 20000,
-            ["texture"] = "Interface/ICONS/spell_shadow_siphonmana",
-            ["id"] = 11704
+            spell_id = 11704,
+            name = "Drain Mana",
+            rank = "4",
+            icon = "spell_shadow_siphonmana",
+            source = {
+                type = "Trainer",
+                cost = 20000,
+            },
         },
         {
-            ["name"] = "Howl of Terror",
-            ["rank"] = 2,
-            ["cost"] = 20000,
-            ["texture"] = "Interface/ICONS/spell_shadow_deathscream",
-            ["id"] = 17928
+            spell_id = 17928,
+            name = "Howl of Terror",
+            rank = "2",
+            icon = "spell_shadow_deathscream",
+            source = {
+                type = "Trainer",
+                cost = 20000,
+            },
         },
         {
-            ["name"] = "Conflagrate",
-            ["rank"] = 3,
-            ["cost"] = 1000,
-            ["texture"] = "Interface/ICONS/spell_fire_fireball",
-            ["id"] = 18931,
-            ["talent"] = true
+            spell_id = 18931,
+            name = "Conflagrate",
+            rank = "3",
+            icon = "spell_fire_fireball",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 1000,
+            },
         },
         {
-            ["name"] = "Hellfire",
-            ["rank"] = 3,
-            ["cost"] = 18000,
-            ["texture"] = "Interface/ICONS/spell_fire_incinerate",
-            ["id"] = 11684
+            spell_id = 11684,
+            name = "Hellfire",
+            rank = "3",
+            icon = "spell_fire_incinerate",
+            source = {
+                type = "Trainer",
+                cost = 18000,
+            },
         },
     },
     [56] = {
         {
-            ["name"] = "Curse of Recklessness",
-            ["rank"] = 4,
-            ["cost"] = 22000,
-            ["texture"] = "Interface/ICONS/spell_shadow_unholystrength",
-            ["id"] = 11717
+            spell_id = 11717,
+            name = "Curse of Recklessness",
+            rank = "4",
+            icon = "spell_shadow_unholystrength",
+            source = {
+                type = "Trainer",
+                cost = 22000,
+            },
         },
         {
-            ["name"] = "Curse of Shadow",
-            ["rank"] = 2,
-            ["cost"] = 22000,
-            ["texture"] = "Interface/ICONS/spell_shadow_curseofachimonde",
-            ["id"] = 17937
+            spell_id = 17937,
+            name = "Curse of Shadow",
+            rank = "2",
+            icon = "spell_shadow_curseofachimonde",
+            source = {
+                type = "Trainer",
+                cost = 22000,
+            },
         },
         {
-            ["name"] = "Fear",
-            ["rank"] = 3,
-            ["cost"] = 22000,
-            ["texture"] = "Interface/ICONS/spell_shadow_possession",
-            ["id"] = 6215
+            spell_id = 6215,
+            name = "Fear",
+            rank = "3",
+            icon = "spell_shadow_possession",
+            source = {
+                type = "Trainer",
+                cost = 22000,
+            },
         },
         {
-            ["name"] = "Life Tap",
-            ["rank"] = 6,
-            ["cost"] = 22000,
-            ["texture"] = "Interface/ICONS/spell_shadow_burningspirit",
-            ["id"] = 11689
+            spell_id = 11689,
+            name = "Life Tap",
+            rank = "6",
+            icon = "spell_shadow_burningspirit",
+            source = {
+                type = "Trainer",
+                cost = 22000,
+            },
         },
         {
-            ["name"] = "Create Firestone (Major)",
-            ["rank"] = 1,
-            ["cost"] = 22000,
-            ["texture"] = "Interface/ICONS/inv_misc_gem_bloodstone_02",
-            ["id"] = 17953
+            spell_id = 17953,
+            name = "Create Firestone (Major)",
+            rank = "1",
+            icon = "inv_misc_gem_bloodstone_02",
+            source = {
+                type = "Trainer",
+                cost = 22000,
+            },
         },
         {
-            ["name"] = "Shadowburn",
-            ["rank"] = 6,
-            ["cost"] = 1100,
-            ["texture"] = "Interface/ICONS/spell_shadow_scourgebuild",
-            ["id"] = 18871,
-            ["talent"] = true
+            spell_id = 18871,
+            name = "Shadowburn",
+            rank = "6",
+            icon = "spell_shadow_scourgebuild",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 1100,
+            },
         },
         {
-            ["name"] = "Soul Fire",
-            ["rank"] = 2,
-            ["cost"] = 22000,
-            ["texture"] = "Interface/ICONS/spell_fire_fireball02",
-            ["id"] = 17924
+            spell_id = 17924,
+            name = "Soul Fire",
+            rank = "2",
+            icon = "spell_fire_fireball02",
+            source = {
+                type = "Trainer",
+                cost = 22000,
+            },
         },
     },
     [58] = {
         {
-            ["name"] = "Curse of Agony",
-            ["rank"] = 6,
-            ["cost"] = 24000,
-            ["texture"] = "Interface/ICONS/spell_shadow_curseofsargeras",
-            ["id"] = 11713
+            spell_id = 11713,
+            name = "Curse of Agony",
+            rank = "6",
+            icon = "spell_shadow_curseofsargeras",
+            source = {
+                type = "Trainer",
+                cost = 24000,
+            },
         },
         {
-            ["name"] = "Death Coil",
-            ["rank"] = 3,
-            ["cost"] = 24000,
-            ["texture"] = "Interface/ICONS/spell_shadow_deathcoil",
-            ["id"] = 17926
+            spell_id = 17926,
+            name = "Death Coil",
+            rank = "3",
+            icon = "spell_shadow_deathcoil",
+            source = {
+                type = "Trainer",
+                cost = 24000,
+            },
         },
         {
-            ["name"] = "Siphon Life",
-            ["rank"] = 4,
-            ["cost"] = 1200,
-            ["texture"] = "Interface/ICONS/spell_shadow_requiem",
-            ["id"] = 18881,
-            ["talent"] = true
+            spell_id = 18881,
+            name = "Siphon Life",
+            rank = "4",
+            icon = "spell_shadow_requiem",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 1200,
+            },
         },
         {
-            ["name"] = "Create Healthstone (Major)",
-            ["rank"] = 1,
-            ["cost"] = 24000,
-            ["texture"] = "Interface/ICONS/inv_stone_04",
-            ["id"] = 11730
+            spell_id = 11730,
+            name = "Create Healthstone (Major)",
+            rank = "1",
+            icon = "inv_stone_04",
+            source = {
+                type = "Trainer",
+                cost = 24000,
+            },
         },
         {
-            ["name"] = "Enslave Demon",
-            ["rank"] = 3,
-            ["cost"] = 24000,
-            ["texture"] = "Interface/ICONS/spell_shadow_enslavedemon",
-            ["id"] = 11726
+            spell_id = 11726,
+            name = "Enslave Demon",
+            rank = "3",
+            icon = "spell_shadow_enslavedemon",
+            source = {
+                type = "Trainer",
+                cost = 24000,
+            },
         },
         {
-            ["name"] = "Rain of Fire",
-            ["rank"] = 4,
-            ["cost"] = 24000,
-            ["texture"] = "Interface/ICONS/spell_shadow_rainoffire",
-            ["id"] = 11678
+            spell_id = 11678,
+            name = "Rain of Fire",
+            rank = "4",
+            icon = "spell_shadow_rainoffire",
+            source = {
+                type = "Trainer",
+                cost = 24000,
+            },
         },
         {
-            ["name"] = "Searing Pain",
-            ["rank"] = 6,
-            ["cost"] = 24000,
-            ["texture"] = "Interface/ICONS/spell_fire_soulburn",
-            ["id"] = 17923
+            spell_id = 17923,
+            name = "Searing Pain",
+            rank = "6",
+            icon = "spell_fire_soulburn",
+            source = {
+                type = "Trainer",
+                cost = 24000,
+            },
         },
     },
     [60] = {
         {
-            ["name"] = "Curse of Doom",
-            ["rank"] = 1,
-            ["cost"] = 26000,
-            ["texture"] = "Interface/ICONS/spell_shadow_auraofdarkness",
-            ["id"] = 603
+            spell_id = 603,
+            name = "Curse of Doom",
+            rank = "1",
+            icon = "spell_shadow_auraofdarkness",
+            source = {
+                type = "Trainer",
+                cost = 26000,
+            },
         },
         {
-            ["name"] = "Curse of the Elements",
-            ["rank"] = 3,
-            ["cost"] = 26000,
-            ["texture"] = "Interface/ICONS/spell_shadow_chilltouch",
-            ["id"] = 11722
+            spell_id = 11722,
+            name = "Curse of the Elements",
+            rank = "3",
+            icon = "spell_shadow_chilltouch",
+            source = {
+                type = "Trainer",
+                cost = 26000,
+            },
         },
         {
-            ["name"] = "Dark Pact",
-            ["rank"] = 3,
-            ["cost"] = 1300,
-            ["texture"] = "Interface/ICONS/spell_shadow_darkritual",
-            ["id"] = 18938,
-            ["talent"] = true
+            spell_id = 18938,
+            name = "Dark Pact",
+            rank = "3",
+            icon = "spell_shadow_darkritual",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 1300,
+            },
         },
         {
-            ["name"] = "Create Soulstone (Major)",
-            ["rank"] = 1,
-            ["cost"] = 26000,
-            ["texture"] = "Interface/ICONS/inv_misc_orb_04",
-            ["id"] = 20757
+            spell_id = 20757,
+            name = "Create Soulstone (Major)",
+            rank = "1",
+            icon = "inv_misc_orb_04",
+            source = {
+                type = "Trainer",
+                cost = 26000,
+            },
         },
         {
-            ["name"] = "Create Spellstone (Major)",
-            ["rank"] = 1,
-            ["cost"] = 26000,
-            ["texture"] = "Interface/ICONS/inv_misc_gem_sapphire_01",
-            ["id"] = 17728
+            spell_id = 17728,
+            name = "Create Spellstone (Major)",
+            rank = "1",
+            icon = "inv_misc_gem_sapphire_01",
+            source = {
+                type = "Trainer",
+                cost = 26000,
+            },
         },
         {
-            ["name"] = "Demon Armor",
-            ["rank"] = 5,
-            ["cost"] = 26000,
-            ["texture"] = "Interface/ICONS/spell_shadow_ragingscream",
-            ["id"] = 11735
+            spell_id = 11735,
+            name = "Demon Armor",
+            rank = "5",
+            icon = "spell_shadow_ragingscream",
+            source = {
+                type = "Trainer",
+                cost = 26000,
+            },
         },
         {
-            ["name"] = "Health Funnel",
-            ["rank"] = 7,
-            ["cost"] = 26000,
-            ["texture"] = "Interface/ICONS/spell_shadow_lifedrain",
-            ["id"] = 11695
-        }, 
-        {
-            ["name"] = "Ritual of Doom",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/spell_shadow_antimagicshell",
-            ["id"] = 18540
+            spell_id = 11695,
+            name = "Health Funnel",
+            rank = "7",
+            icon = "spell_shadow_lifedrain",
+            source = {
+                type = "Trainer",
+                cost = 26000,
+            },
         },
         {
-            ["name"] = "Summon Dreadsteed",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/ability_mount_dreadsteed",
-            ["id"] = 23161
+            spell_id = 18540,
+            name = "Ritual of Doom",
+            rank = "1",
+            icon = "spell_shadow_antimagicshell",
         },
         {
-            ["name"] = "Conflagrate",
-            ["rank"] = 4,
-            ["cost"] = 1300,
-            ["texture"] = "Interface/ICONS/spell_fire_fireball",
-            ["id"] = 18932,
-            ["talent"] = true
+            spell_id = 23161,
+            name = "Summon Dreadsteed",
+            rank = "1",
+            icon = "ability_mount_dreadsteed",
         },
         {
-            ["name"] = "Immolate",
-            ["rank"] = 7,
-            ["cost"] = 26000,
-            ["texture"] = "Interface/ICONS/spell_fire_immolation",
-            ["id"] = 11668
+            spell_id = 18932,
+            name = "Conflagrate",
+            rank = "4",
+            icon = "spell_fire_fireball",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 1300,
+            },
         },
         {
-            ["name"] = "Shadow Bolt",
-            ["rank"] = 9,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/spell_shadow_shadowbolt",
-            ["id"] = 11661
+            spell_id = 11668,
+            name = "Immolate",
+            rank = "7",
+            icon = "spell_fire_immolation",
+            source = {
+                type = "Trainer",
+                cost = 26000,
+            },
+        },
+        {
+            spell_id = 11661,
+            name = "Shadow Bolt",
+            rank = "9",
+            icon = "spell_shadow_shadowbolt",
+        },
+        {
+            spell_id = 25311,
+            name = "Corruption",
+            rank = 7,
+            icon = "spell_shadow_abominationexplosion",
+            source = {
+                type = "Item",
+                recipe_item_ids = { 21283 },
+                location = "Boss Drop, AQ20",
+            },
+            phase = 4,
+        },
+        {
+            spell_id = 25309,
+            name = "Immolate",
+            rank = 8,
+            icon = "spell_fire_immolation",
+            source = {
+                type = "Item",
+                recipe_item_ids = { 21282 },
+                location = "Boss Drop, AQ20",
+            },
+            phase = 4,
+        },
+        {
+            spell_id = 25307,
+            name = "Shadow Bolt",
+            rank = 10,
+            icon = "spell_shadow_shadowbolt",
+            source = {
+                type = "Item",
+                recipe_item_ids = { 21281 },
+                location = "Boss Drop, AQ20",
+            },
+            phase = 4,
         },
     },
 }

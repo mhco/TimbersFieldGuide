@@ -3,1462 +3,1561 @@ local _, TFG = ...
 TFG.HUNTER_TBC = {
     [1] = {
         {
-            ["id"] = 3127,
-            ["name"] = "Parry",
-            ["rank"] = 0,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/ability_parry"
+            spell_id = 3127,
+            name = "Parry",
+            rank = "1",
+            icon = "ability_parry",
         },
         {
-            ["id"] = 2764,
-            ["name"] = "Throw",
-            ["rank"] = 0,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/ability_throw"
+            spell_id = 2764,
+            name = "Throw",
+            rank = "1",
+            icon = "ability_throw",
         },
         {
-            ["id"] = 75,
-            ["name"] = "Auto Shot",
-            ["rank"] = 0,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/ability_whirlwind"
+            spell_id = 75,
+            name = "Auto Shot",
+            rank = "1",
+            icon = "ability_whirlwind",
         },
         {
-            ["id"] = 2973,
-            ["name"] = "Raptor Strike",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/ability_meleedamage"
+            spell_id = 2973,
+            name = "Raptor Strike",
+            rank = "1",
+            icon = "ability_meleedamage",
         },
         {
-            ["id"] = 1494,
-            ["name"] = "Track Beasts",
-            ["rank"] = 0,
-            ["cost"] = 10,
-            ["texture"] = "Interface/ICONS/ability_tracking"
+            spell_id = 1494,
+            name = "Track Beasts",
+            rank = "1",
+            icon = "ability_tracking",
+            source = {
+                type = "Trainer",
+                cost = 10,
+            },
         },
     },
     [4] = {
         {
-            ["id"] = 13163,
-            ["name"] = "Aspect of the Monkey",
-            ["rank"] = 0,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/ability_hunter_aspectofthemonkey"
+            spell_id = 13163,
+            name = "Aspect of the Monkey",
+            rank = "1",
+            icon = "ability_hunter_aspectofthemonkey",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
         {
-            ["id"] = 1978,
-            ["name"] = "Serpent Sting",
-            ["rank"] = 1,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/ability_hunter_quickshot"
+            spell_id = 1978,
+            name = "Serpent Sting",
+            rank = "1",
+            icon = "ability_hunter_quickshot",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
     },
     [6] = {
         {
-            ["id"] = 3044,
-            ["name"] = "Arcane Shot",
-            ["rank"] = 1,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/ability_impalingbolt"
+            spell_id = 3044,
+            name = "Arcane Shot",
+            rank = "1",
+            icon = "ability_impalingbolt",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
         {
-            ["id"] = 1130,
-            ["name"] = "Hunter's Mark",
-            ["rank"] = 1,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/ability_hunter_snipershot"
+            spell_id = 1130,
+            name = "Hunter's Mark",
+            rank = "1",
+            icon = "ability_hunter_snipershot",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
     },
     [8] = {
         {
-            ["id"] = 5116,
-            ["name"] = "Concussive Shot",
-            ["rank"] = 0,
-            ["cost"] = 200,
-            ["texture"] = "Interface/ICONS/spell_frost_stun"
+            spell_id = 5116,
+            name = "Concussive Shot",
+            rank = "1",
+            icon = "spell_frost_stun",
+            source = {
+                type = "Trainer",
+                cost = 200,
+            },
         },
         {
-            ["id"] = 14260,
-            ["name"] = "Raptor Strike",
-            ["rank"] = 2,
-            ["cost"] = 200,
-            ["texture"] = "Interface/ICONS/ability_meleedamage"
+            spell_id = 14260,
+            name = "Raptor Strike",
+            rank = "2",
+            icon = "ability_meleedamage",
+            source = {
+                type = "Trainer",
+                cost = 200,
+            },
         },
     },
     [10] = {
         {
-            ["id"] = 13165,
-            ["name"] = "Aspect of the Hawk",
-            ["rank"] = 1,
-            ["cost"] = 400,
-            ["texture"] = "Interface/ICONS/spell_nature_ravenform"
+            spell_id = 13165,
+            name = "Aspect of the Hawk",
+            rank = "1",
+            icon = "spell_nature_ravenform",
+            source = {
+                type = "Trainer",
+                cost = 400,
+            },
         },
         {
-            ["id"] = 883,
-            ["name"] = "Call Pet",
-            ["rank"] = 0,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/ability_hunter_beastcall"
+            spell_id = 883,
+            name = "Call Pet",
+            rank = "1",
+            icon = "ability_hunter_beastcall",
         },
         {
-            ["id"] = 2641,
-            ["name"] = "Dismiss Pet",
-            ["rank"] = 0,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/spell_nature_spiritwolf"
+            spell_id = 2641,
+            name = "Dismiss Pet",
+            rank = "1",
+            icon = "spell_nature_spiritwolf",
         },
         {
-            ["id"] = 6991,
-            ["name"] = "Feed Pet",
-            ["rank"] = 0,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/ability_hunter_beasttraining"
+            spell_id = 6991,
+            name = "Feed Pet",
+            rank = "1",
+            icon = "ability_hunter_beasttraining",
         },
         {
-            ["id"] = 4195,
-            ["name"] = "Great Stamina",
-            ["rank"] = 1,
-            ["cost"] = 10,
-            ["texture"] = "Interface/ICONS/spell_nature_unyeildingstamina"
+            spell_id = 982,
+            name = "Revive Pet",
+            rank = "1",
+            icon = "ability_hunter_beastsoothe",
         },
         {
-            ["id"] = 24547,
-            ["name"] = "Natural Armor",
-            ["rank"] = 1,
-            ["cost"] = 10,
-            ["texture"] = "Interface/ICONS/spell_nature_spiritarmor"
+            spell_id = 13549,
+            name = "Serpent Sting",
+            rank = "2",
+            icon = "ability_hunter_quickshot",
+            source = {
+                type = "Trainer",
+                cost = 400,
+            },
         },
         {
-            ["id"] = 982,
-            ["name"] = "Revive Pet",
-            ["rank"] = 0,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/ability_hunter_beastsoothe"
+            spell_id = 1515,
+            name = "Tame Beast",
+            rank = "1",
+            icon = "ability_hunter_beasttaming",
         },
         {
-            ["id"] = 13549,
-            ["name"] = "Serpent Sting",
-            ["rank"] = 2,
-            ["cost"] = 400,
-            ["texture"] = "Interface/ICONS/ability_hunter_quickshot"
-        },
-        {
-            ["id"] = 1515,
-            ["name"] = "Tame Beast",
-            ["rank"] = 0,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/ability_hunter_beasttaming"
-        },
-        {
-            ["id"] = 19883,
-            ["name"] = "Track Humanoids",
-            ["rank"] = 0,
-            ["cost"] = 400,
-            ["texture"] = "Interface/ICONS/spell_holy_prayerofhealing"
+            spell_id = 19883,
+            name = "Track Humanoids",
+            rank = "1",
+            icon = "spell_holy_prayerofhealing",
+            source = {
+                type = "Trainer",
+                cost = 400,
+            },
         },
     },
     [12] = {
         {
-            ["id"] = 14281,
-            ["name"] = "Arcane Shot",
-            ["rank"] = 2,
-            ["cost"] = 600,
-            ["texture"] = "Interface/ICONS/ability_impalingbolt"
+            spell_id = 14281,
+            name = "Arcane Shot",
+            rank = "2",
+            icon = "ability_impalingbolt",
+            source = {
+                type = "Trainer",
+                cost = 600,
+            },
         },
         {
-            ["id"] = 20736,
-            ["name"] = "Distracting Shot",
-            ["rank"] = 1,
-            ["cost"] = 600,
-            ["texture"] = "Interface/ICONS/spell_arcane_blink"
+            spell_id = 20736,
+            name = "Distracting Shot",
+            rank = "1",
+            icon = "spell_arcane_blink",
+            source = {
+                type = "Trainer",
+                cost = 600,
+            },
         },
         {
-            ["id"] = 4196,
-            ["name"] = "Great Stamina",
-            ["rank"] = 2,
-            ["cost"] = 120,
-            ["texture"] = "Interface/ICONS/spell_nature_unyeildingstamina"
+            spell_id = 136,
+            name = "Mend Pet",
+            rank = "1",
+            icon = "ability_hunter_mendpet",
+            source = {
+                type = "Trainer",
+                cost = 600,
+            },
         },
         {
-            ["id"] = 136,
-            ["name"] = "Mend Pet",
-            ["rank"] = 1,
-            ["cost"] = 600,
-            ["texture"] = "Interface/ICONS/ability_hunter_mendpet"
-        },
-        {
-            ["id"] = 24556,
-            ["name"] = "Natural Armor",
-            ["rank"] = 2,
-            ["cost"] = 120,
-            ["texture"] = "Interface/ICONS/spell_nature_spiritarmor"
-        },
-        {
-            ["id"] = 2974,
-            ["name"] = "Wing Clip",
-            ["rank"] = 1,
-            ["cost"] = 600,
-            ["texture"] = "Interface/ICONS/ability_rogue_trip"
+            spell_id = 2974,
+            name = "Wing Clip",
+            rank = "1",
+            icon = "ability_rogue_trip",
+            source = {
+                type = "Trainer",
+                cost = 600,
+            },
         },
     },
     [14] = {
         {
-            ["id"] = 6197,
-            ["name"] = "Eagle Eye",
-            ["rank"] = 0,
-            ["cost"] = 1200,
-            ["texture"] = "Interface/ICONS/ability_hunter_eagleeye"
+            spell_id = 6197,
+            name = "Eagle Eye",
+            rank = "1",
+            icon = "ability_hunter_eagleeye",
+            source = {
+                type = "Trainer",
+                cost = 1200,
+            },
         },
         {
-            ["id"] = 1002,
-            ["name"] = "Eyes of the Beast",
-            ["rank"] = 0,
-            ["cost"] = 1200,
-            ["texture"] = "Interface/ICONS/ability_eyeoftheowl"
+            spell_id = 1002,
+            name = "Eyes of the Beast",
+            rank = "1",
+            icon = "ability_eyeoftheowl",
+            source = {
+                type = "Trainer",
+                cost = 1200,
+            },
         },
         {
-            ["id"] = 1513,
-            ["name"] = "Scare Beast",
-            ["rank"] = 1,
-            ["cost"] = 1200,
-            ["texture"] = "Interface/ICONS/ability_druid_cower"
+            spell_id = 1513,
+            name = "Scare Beast",
+            rank = "1",
+            icon = "ability_druid_cower",
+            source = {
+                type = "Trainer",
+                cost = 1200,
+            },
         },
     },
     [16] = {
         {
-            ["id"] = 13795,
-            ["name"] = "Immolation Trap",
-            ["rank"] = 1,
-            ["cost"] = 1800,
-            ["texture"] = "Interface/ICONS/spell_fire_flameshock"
+            spell_id = 13795,
+            name = "Immolation Trap",
+            rank = "1",
+            icon = "spell_fire_flameshock",
+            source = {
+                type = "Trainer",
+                cost = 1800,
+            },
         },
         {
-            ["id"] = 1495,
-            ["name"] = "Mongoose Bite",
-            ["rank"] = 1,
-            ["cost"] = 1800,
-            ["texture"] = "Interface/ICONS/ability_hunter_swiftstrike"
+            spell_id = 1495,
+            name = "Mongoose Bite",
+            rank = "1",
+            icon = "ability_hunter_swiftstrike",
+            source = {
+                type = "Trainer",
+                cost = 1800,
+            },
         },
         {
-            ["id"] = 14261,
-            ["name"] = "Raptor Strike",
-            ["rank"] = 3,
-            ["cost"] = 1800,
-            ["texture"] = "Interface/ICONS/ability_meleedamage"
+            spell_id = 14261,
+            name = "Raptor Strike",
+            rank = "3",
+            icon = "ability_meleedamage",
+            source = {
+                type = "Trainer",
+                cost = 1800,
+            },
         },
     },
     [18] = {
         {
-            ["id"] = 14318,
-            ["name"] = "Aspect of the Hawk",
-            ["rank"] = 2,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/spell_nature_ravenform"
+            spell_id = 14318,
+            name = "Aspect of the Hawk",
+            rank = "2",
+            icon = "spell_nature_ravenform",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
         {
-            ["id"] = 4197,
-            ["name"] = "Great Stamina",
-            ["rank"] = 3,
-            ["cost"] = 400,
-            ["texture"] = "Interface/ICONS/spell_nature_unyeildingstamina"
+            spell_id = 2643,
+            name = "Multi-Shot",
+            rank = "1",
+            icon = "ability_upgrademoonglaive",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
         {
-            ["id"] = 2643,
-            ["name"] = "Multi-Shot",
-            ["rank"] = 1,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/ability_upgrademoonglaive"
+            spell_id = 13550,
+            name = "Serpent Sting",
+            rank = "3",
+            icon = "ability_hunter_quickshot",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
         {
-            ["id"] = 24557,
-            ["name"] = "Natural Armor",
-            ["rank"] = 3,
-            ["cost"] = 400,
-            ["texture"] = "Interface/ICONS/spell_nature_spiritarmor"
-        },
-        {
-            ["id"] = 13550,
-            ["name"] = "Serpent Sting",
-            ["rank"] = 3,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/ability_hunter_quickshot"
-        },
-        {
-            ["id"] = 19884,
-            ["name"] = "Track Undead",
-            ["rank"] = 0,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/spell_shadow_darksummoning"
+            spell_id = 19884,
+            name = "Track Undead",
+            rank = "1",
+            icon = "spell_shadow_darksummoning",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
     },
     [20] = {
         {
-            ["id"] = 24495,
-            ["name"] = "Arcane Resistance",
-            ["rank"] = 1,
-            ["cost"] = 440,
-            ["texture"] = "Interface/ICONS/spell_nature_starfall"
+            spell_id = 14282,
+            name = "Arcane Shot",
+            rank = "3",
+            icon = "ability_impalingbolt",
+            source = {
+                type = "Trainer",
+                cost = 2200,
+            },
         },
         {
-            ["id"] = 14282,
-            ["name"] = "Arcane Shot",
-            ["rank"] = 3,
-            ["cost"] = 2200,
-            ["texture"] = "Interface/ICONS/ability_impalingbolt"
+            spell_id = 5118,
+            name = "Aspect of the Cheetah",
+            rank = "1",
+            icon = "ability_mount_jungletiger",
+            source = {
+                type = "Trainer",
+                cost = 2200,
+            },
         },
         {
-            ["id"] = 5118,
-            ["name"] = "Aspect of the Cheetah",
-            ["rank"] = 0,
-            ["cost"] = 2200,
-            ["texture"] = "Interface/ICONS/ability_mount_jungletiger"
+            spell_id = 781,
+            name = "Disengage",
+            rank = "1",
+            icon = "ability_rogue_feint",
+            source = {
+                type = "Trainer",
+                cost = 2200,
+            },
         },
         {
-            ["id"] = 781,
-            ["name"] = "Disengage",
-            ["rank"] = 1,
-            ["cost"] = 2200,
-            ["texture"] = "Interface/ICONS/ability_rogue_feint"
+            spell_id = 14274,
+            name = "Distracting Shot",
+            rank = "2",
+            icon = "spell_arcane_blink",
+            source = {
+                type = "Trainer",
+                cost = 2200,
+            },
         },
         {
-            ["id"] = 14274,
-            ["name"] = "Distracting Shot",
-            ["rank"] = 2,
-            ["cost"] = 2200,
-            ["texture"] = "Interface/ICONS/spell_arcane_blink"
+            spell_id = 1499,
+            name = "Freezing Trap",
+            rank = "1",
+            icon = "spell_frost_chainsofice",
+            source = {
+                type = "Trainer",
+                cost = 2200,
+            },
         },
         {
-            ["id"] = 24440,
-            ["name"] = "Fire Resistance",
-            ["rank"] = 1,
-            ["cost"] = 440,
-            ["texture"] = "Interface/ICONS/spell_fire_firearmor"
-        },
-        {
-            ["id"] = 1499,
-            ["name"] = "Freezing Trap",
-            ["rank"] = 1,
-            ["cost"] = 2200,
-            ["texture"] = "Interface/ICONS/spell_frost_chainsofice"
-        },
-        {
-            ["id"] = 24475,
-            ["name"] = "Frost Resistance",
-            ["rank"] = 1,
-            ["cost"] = 440,
-            ["texture"] = "Interface/ICONS/spell_frost_frostward"
-        },
-        {
-            ["id"] = 14923,
-            ["name"] = "Growl",
-            ["rank"] = 3,
-            ["cost"] = 440,
-            ["texture"] = "Interface/ICONS/ability_physical_taunt"
-        },
-        {
-            ["id"] = 3111,
-            ["name"] = "Mend Pet",
-            ["rank"] = 2,
-            ["cost"] = 2200,
-            ["texture"] = "Interface/ICONS/ability_hunter_mendpet"
-        },
-        {
-            ["id"] = 24494,
-            ["name"] = "Nature Resistance",
-            ["rank"] = 1,
-            ["cost"] = 440,
-            ["texture"] = "Interface/ICONS/spell_nature_resistnature"
-        },
-        {
-            ["id"] = 24490,
-            ["name"] = "Shadow Resistance",
-            ["rank"] = 1,
-            ["cost"] = 440,
-            ["texture"] = "Interface/ICONS/spell_shadow_antishadow"
+            spell_id = 3111,
+            name = "Mend Pet",
+            rank = "2",
+            icon = "ability_hunter_mendpet",
+            source = {
+                type = "Trainer",
+                cost = 2200,
+            },
         },
     },
     [22] = {
         {
-            ["id"] = 14323,
-            ["name"] = "Hunter's Mark",
-            ["rank"] = 2,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/ability_hunter_snipershot"
+            spell_id = 14323,
+            name = "Hunter's Mark",
+            rank = "2",
+            icon = "ability_hunter_snipershot",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
         {
-            ["id"] = 3043,
-            ["name"] = "Scorpid Sting",
-            ["rank"] = 0,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/ability_hunter_criticalshot"
+            spell_id = 3043,
+            name = "Scorpid Sting",
+            rank = "1",
+            icon = "ability_hunter_criticalshot",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
     },
     [24] = {
         {
-            ["id"] = 1462,
-            ["name"] = "Beast Lore",
-            ["rank"] = 0,
-            ["cost"] = 7000,
-            ["texture"] = "Interface/ICONS/ability_physical_taunt"
+            spell_id = 1462,
+            name = "Beast Lore",
+            rank = "1",
+            icon = "ability_physical_taunt",
+            source = {
+                type = "Trainer",
+                cost = 7000,
+            },
         },
         {
-            ["id"] = 4198,
-            ["name"] = "Great Stamina",
-            ["rank"] = 4,
-            ["cost"] = 1400,
-            ["texture"] = "Interface/ICONS/spell_nature_unyeildingstamina"
+            spell_id = 14262,
+            name = "Raptor Strike",
+            rank = "4",
+            icon = "ability_meleedamage",
+            source = {
+                type = "Trainer",
+                cost = 7000,
+            },
         },
         {
-            ["id"] = 24558,
-            ["name"] = "Natural Armor",
-            ["rank"] = 4,
-            ["cost"] = 1400,
-            ["texture"] = "Interface/ICONS/spell_nature_spiritarmor"
-        },
-        {
-            ["id"] = 14262,
-            ["name"] = "Raptor Strike",
-            ["rank"] = 4,
-            ["cost"] = 7000,
-            ["texture"] = "Interface/ICONS/ability_meleedamage"
-        },
-        {
-            ["id"] = 19885,
-            ["name"] = "Track Hidden",
-            ["rank"] = 0,
-            ["cost"] = 7000,
-            ["texture"] = "Interface/ICONS/ability_stealth"
+            spell_id = 19885,
+            name = "Track Hidden",
+            rank = "1",
+            icon = "ability_stealth",
+            source = {
+                type = "Trainer",
+                cost = 7000,
+            },
         },
     },
     [26] = {
         {
-            ["id"] = 14302,
-            ["name"] = "Immolation Trap",
-            ["rank"] = 2,
-            ["cost"] = 7000,
-            ["texture"] = "Interface/ICONS/spell_fire_flameshock"
+            spell_id = 14302,
+            name = "Immolation Trap",
+            rank = "2",
+            icon = "spell_fire_flameshock",
+            source = {
+                type = "Trainer",
+                cost = 7000,
+            },
         },
         {
-            ["id"] = 3045,
-            ["name"] = "Rapid Fire",
-            ["rank"] = 0,
-            ["cost"] = 7000,
-            ["texture"] = "Interface/ICONS/ability_hunter_runningshot"
+            spell_id = 3045,
+            name = "Rapid Fire",
+            rank = "1",
+            icon = "ability_hunter_runningshot",
+            source = {
+                type = "Trainer",
+                cost = 7000,
+            },
         },
         {
-            ["id"] = 13551,
-            ["name"] = "Serpent Sting",
-            ["rank"] = 4,
-            ["cost"] = 7000,
-            ["texture"] = "Interface/ICONS/ability_hunter_quickshot"
+            spell_id = 13551,
+            name = "Serpent Sting",
+            rank = "4",
+            icon = "ability_hunter_quickshot",
+            source = {
+                type = "Trainer",
+                cost = 7000,
+            },
         },
         {
-            ["id"] = 19880,
-            ["name"] = "Track Elementals",
-            ["rank"] = 0,
-            ["cost"] = 7000,
-            ["texture"] = "Interface/ICONS/spell_frost_summonwaterelemental"
+            spell_id = 19880,
+            name = "Track Elementals",
+            rank = "1",
+            icon = "spell_frost_summonwaterelemental",
+            source = {
+                type = "Trainer",
+                cost = 7000,
+            },
         },
     },
     [28] = {
         {
-            ["id"] = 20900,
-            ["name"] = "Aimed Shot",
-            ["rank"] = 2,
-            ["cost"] = 400,
-            ["texture"] = "Interface/ICONS/inv_spear_07",
-            ["talent"] = true
+            spell_id = 20900,
+            name = "Aimed Shot",
+            rank = "2",
+            icon = "inv_spear_07",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 400,
+            },
         },
         {
-            ["id"] = 14283,
-            ["name"] = "Arcane Shot",
-            ["rank"] = 4,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/ability_impalingbolt"
+            spell_id = 14283,
+            name = "Arcane Shot",
+            rank = "4",
+            icon = "ability_impalingbolt",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
         {
-            ["id"] = 14319,
-            ["name"] = "Aspect of the Hawk",
-            ["rank"] = 3,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/spell_nature_ravenform"
+            spell_id = 14319,
+            name = "Aspect of the Hawk",
+            rank = "3",
+            icon = "spell_nature_ravenform",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
         {
-            ["id"] = 13809,
-            ["name"] = "Frost Trap",
-            ["rank"] = 0,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/spell_frost_freezingbreath"
+            spell_id = 13809,
+            name = "Frost Trap",
+            rank = "1",
+            icon = "spell_frost_freezingbreath",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
         {
-            ["id"] = 3661,
-            ["name"] = "Mend Pet",
-            ["rank"] = 3,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/ability_hunter_mendpet"
+            spell_id = 3661,
+            name = "Mend Pet",
+            rank = "3",
+            icon = "ability_hunter_mendpet",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
     },
     [30] = {
         {
-            ["id"] = 24508,
-            ["name"] = "Arcane Resistance",
-            ["rank"] = 2,
-            ["cost"] = 1600,
-            ["texture"] = "Interface/ICONS/spell_nature_starfall"
+            spell_id = 13161,
+            name = "Aspect of the Beast",
+            rank = "1",
+            icon = "ability_mount_pinktiger",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
         {
-            ["id"] = 13161,
-            ["name"] = "Aspect of the Beast",
-            ["rank"] = 0,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/ability_mount_pinktiger"
+            spell_id = 15629,
+            name = "Distracting Shot",
+            rank = "3",
+            icon = "spell_arcane_blink",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
         {
-            ["id"] = 15629,
-            ["name"] = "Distracting Shot",
-            ["rank"] = 3,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/spell_arcane_blink"
+            spell_id = 5384,
+            name = "Feign Death",
+            rank = "1",
+            icon = "ability_rogue_feigndeath",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
         {
-            ["id"] = 5384,
-            ["name"] = "Feign Death",
-            ["rank"] = 0,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/ability_rogue_feigndeath"
+            spell_id = 14269,
+            name = "Mongoose Bite",
+            rank = "2",
+            icon = "ability_hunter_swiftstrike",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
         {
-            ["id"] = 24441,
-            ["name"] = "Fire Resistance",
-            ["rank"] = 2,
-            ["cost"] = 1600,
-            ["texture"] = "Interface/ICONS/spell_fire_firearmor"
+            spell_id = 14288,
+            name = "Multi-Shot",
+            rank = "2",
+            icon = "ability_upgrademoonglaive",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
         {
-            ["id"] = 24476,
-            ["name"] = "Frost Resistance",
-            ["rank"] = 2,
-            ["cost"] = 1600,
-            ["texture"] = "Interface/ICONS/spell_frost_frostward"
-        },
-        {
-            ["id"] = 4199,
-            ["name"] = "Great Stamina",
-            ["rank"] = 5,
-            ["cost"] = 1600,
-            ["texture"] = "Interface/ICONS/spell_nature_unyeildingstamina"
-        },
-        {
-            ["id"] = 14924,
-            ["name"] = "Growl",
-            ["rank"] = 4,
-            ["cost"] = 1600,
-            ["texture"] = "Interface/ICONS/ability_physical_taunt"
-        },
-        {
-            ["id"] = 14269,
-            ["name"] = "Mongoose Bite",
-            ["rank"] = 2,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/ability_hunter_swiftstrike"
-        },
-        {
-            ["id"] = 14288,
-            ["name"] = "Multi-Shot",
-            ["rank"] = 2,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/ability_upgrademoonglaive"
-        },
-        {
-            ["id"] = 24559,
-            ["name"] = "Natural Armor",
-            ["rank"] = 5,
-            ["cost"] = 1600,
-            ["texture"] = "Interface/ICONS/spell_nature_spiritarmor"
-        },
-        {
-            ["id"] = 24511,
-            ["name"] = "Nature Resistance",
-            ["rank"] = 2,
-            ["cost"] = 1600,
-            ["texture"] = "Interface/ICONS/spell_nature_resistnature"
-        },
-        {
-            ["id"] = 14326,
-            ["name"] = "Scare Beast",
-            ["rank"] = 2,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/ability_druid_cower"
-        },
-        {
-            ["id"] = 24514,
-            ["name"] = "Shadow Resistance",
-            ["rank"] = 2,
-            ["cost"] = 1600,
-            ["texture"] = "Interface/ICONS/spell_shadow_antishadow"
+            spell_id = 14326,
+            name = "Scare Beast",
+            rank = "2",
+            icon = "ability_druid_cower",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
     },
     [32] = {
         {
-            ["id"] = 1543,
-            ["name"] = "Flare",
-            ["rank"] = 0,
-            ["cost"] = 10000,
-            ["texture"] = "Interface/ICONS/spell_fire_flare"
+            spell_id = 1543,
+            name = "Flare",
+            rank = "1",
+            icon = "spell_fire_flare",
+            source = {
+                type = "Trainer",
+                cost = 10000,
+            },
         },
         {
-            ["id"] = 14263,
-            ["name"] = "Raptor Strike",
-            ["rank"] = 5,
-            ["cost"] = 10000,
-            ["texture"] = "Interface/ICONS/ability_meleedamage"
+            spell_id = 14263,
+            name = "Raptor Strike",
+            rank = "5",
+            icon = "ability_meleedamage",
+            source = {
+                type = "Trainer",
+                cost = 10000,
+            },
         },
         {
-            ["id"] = 19878,
-            ["name"] = "Track Demons",
-            ["rank"] = 0,
-            ["cost"] = 10000,
-            ["texture"] = "Interface/ICONS/spell_shadow_summonfelhunter"
+            spell_id = 19878,
+            name = "Track Demons",
+            rank = "1",
+            icon = "spell_shadow_summonfelhunter",
+            source = {
+                type = "Trainer",
+                cost = 10000,
+            },
         },
     },
     [34] = {
         {
-            ["id"] = 14272,
-            ["name"] = "Disengage",
-            ["rank"] = 2,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/ability_rogue_feint"
+            spell_id = 14272,
+            name = "Disengage",
+            rank = "2",
+            icon = "ability_rogue_feint",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
         {
-            ["id"] = 13813,
-            ["name"] = "Explosive Trap",
-            ["rank"] = 1,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/spell_fire_selfdestruct"
+            spell_id = 13813,
+            name = "Explosive Trap",
+            rank = "1",
+            icon = "spell_fire_selfdestruct",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
         {
-            ["id"] = 13552,
-            ["name"] = "Serpent Sting",
-            ["rank"] = 5,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/ability_hunter_quickshot"
+            spell_id = 13552,
+            name = "Serpent Sting",
+            rank = "5",
+            icon = "ability_hunter_quickshot",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
     },
     [36] = {
         {
-            ["id"] = 20901,
-            ["name"] = "Aimed Shot",
-            ["rank"] = 3,
-            ["cost"] = 700,
-            ["texture"] = "Interface/ICONS/inv_spear_07",
-            ["talent"] = true
+            spell_id = 20901,
+            name = "Aimed Shot",
+            rank = "3",
+            icon = "inv_spear_07",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 700,
+            },
         },
         {
-            ["id"] = 14284,
-            ["name"] = "Arcane Shot",
-            ["rank"] = 5,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/ability_impalingbolt"
+            spell_id = 14284,
+            name = "Arcane Shot",
+            rank = "5",
+            icon = "ability_impalingbolt",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
         {
-            ["id"] = 4200,
-            ["name"] = "Great Stamina",
-            ["rank"] = 6,
-            ["cost"] = 2800,
-            ["texture"] = "Interface/ICONS/spell_nature_unyeildingstamina"
+            spell_id = 14303,
+            name = "Immolation Trap",
+            rank = "3",
+            icon = "spell_fire_flameshock",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
         {
-            ["id"] = 14303,
-            ["name"] = "Immolation Trap",
-            ["rank"] = 3,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/spell_fire_flameshock"
+            spell_id = 3662,
+            name = "Mend Pet",
+            rank = "4",
+            icon = "ability_hunter_mendpet",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
         {
-            ["id"] = 3662,
-            ["name"] = "Mend Pet",
-            ["rank"] = 4,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/ability_hunter_mendpet"
-        },
-        {
-            ["id"] = 24560,
-            ["name"] = "Natural Armor",
-            ["rank"] = 6,
-            ["cost"] = 2800,
-            ["texture"] = "Interface/ICONS/spell_nature_spiritarmor"
-        },
-        {
-            ["id"] = 3034,
-            ["name"] = "Viper Sting",
-            ["rank"] = 1,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/ability_hunter_aimedshot"
+            spell_id = 3034,
+            name = "Viper Sting",
+            rank = "1",
+            icon = "ability_hunter_aimedshot",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
     },
     [38] = {
         {
-            ["id"] = 14320,
-            ["name"] = "Aspect of the Hawk",
-            ["rank"] = 4,
-            ["cost"] = 16000,
-            ["texture"] = "Interface/ICONS/spell_nature_ravenform"
+            spell_id = 14320,
+            name = "Aspect of the Hawk",
+            rank = "4",
+            icon = "spell_nature_ravenform",
+            source = {
+                type = "Trainer",
+                cost = 16000,
+            },
         },
         {
-            ["id"] = 14267,
-            ["name"] = "Wing Clip",
-            ["rank"] = 2,
-            ["cost"] = 16000,
-            ["texture"] = "Interface/ICONS/ability_rogue_trip"
+            spell_id = 14267,
+            name = "Wing Clip",
+            rank = "2",
+            icon = "ability_rogue_trip",
+            source = {
+                type = "Trainer",
+                cost = 16000,
+            },
         },
     },
     [40] = {
         {
-            ["id"] = 24509,
-            ["name"] = "Arcane Resistance",
-            ["rank"] = 3,
-            ["cost"] = 3600,
-            ["texture"] = "Interface/ICONS/spell_nature_starfall"
+            spell_id = 13159,
+            name = "Aspect of the Pack",
+            rank = "1",
+            icon = "ability_mount_whitetiger",
+            source = {
+                type = "Trainer",
+                cost = 18000,
+            },
         },
         {
-            ["id"] = 13159,
-            ["name"] = "Aspect of the Pack",
-            ["rank"] = 0,
-            ["cost"] = 18000,
-            ["texture"] = "Interface/ICONS/ability_mount_whitetiger"
+            spell_id = 15630,
+            name = "Distracting Shot",
+            rank = "4",
+            icon = "spell_arcane_blink",
+            source = {
+                type = "Trainer",
+                cost = 18000,
+            },
         },
         {
-            ["id"] = 15630,
-            ["name"] = "Distracting Shot",
-            ["rank"] = 4,
-            ["cost"] = 18000,
-            ["texture"] = "Interface/ICONS/spell_arcane_blink"
+            spell_id = 14310,
+            name = "Freezing Trap",
+            rank = "2",
+            icon = "spell_frost_chainsofice",
+            source = {
+                type = "Trainer",
+                cost = 18000,
+            },
         },
         {
-            ["id"] = 24463,
-            ["name"] = "Fire Resistance",
-            ["rank"] = 3,
-            ["cost"] = 3600,
-            ["texture"] = "Interface/ICONS/spell_fire_firearmor"
+            spell_id = 14324,
+            name = "Hunter's Mark",
+            rank = "3",
+            icon = "ability_hunter_snipershot",
+            source = {
+                type = "Trainer",
+                cost = 18000,
+            },
         },
         {
-            ["id"] = 14310,
-            ["name"] = "Freezing Trap",
-            ["rank"] = 2,
-            ["cost"] = 18000,
-            ["texture"] = "Interface/ICONS/spell_frost_chainsofice"
+            spell_id = 14264,
+            name = "Raptor Strike",
+            rank = "6",
+            icon = "ability_meleedamage",
+            source = {
+                type = "Trainer",
+                cost = 18000,
+            },
         },
         {
-            ["id"] = 24477,
-            ["name"] = "Frost Resistance",
-            ["rank"] = 3,
-            ["cost"] = 3600,
-            ["texture"] = "Interface/ICONS/spell_frost_frostward"
+            spell_id = 19882,
+            name = "Track Giants",
+            rank = "1",
+            icon = "ability_racial_avatar",
+            source = {
+                type = "Trainer",
+                cost = 18000,
+            },
         },
         {
-            ["id"] = 14925,
-            ["name"] = "Growl",
-            ["rank"] = 5,
-            ["cost"] = 3600,
-            ["texture"] = "Interface/ICONS/ability_physical_taunt"
-        },
-        {
-            ["id"] = 14324,
-            ["name"] = "Hunter's Mark",
-            ["rank"] = 3,
-            ["cost"] = 18000,
-            ["texture"] = "Interface/ICONS/ability_hunter_snipershot"
-        },
-        {
-            ["id"] = 24512,
-            ["name"] = "Nature Resistance",
-            ["rank"] = 3,
-            ["cost"] = 3600,
-            ["texture"] = "Interface/ICONS/spell_nature_resistnature"
-        },
-        {
-            ["id"] = 14264,
-            ["name"] = "Raptor Strike",
-            ["rank"] = 6,
-            ["cost"] = 18000,
-            ["texture"] = "Interface/ICONS/ability_meleedamage"
-        },
-        {
-            ["id"] = 24515,
-            ["name"] = "Shadow Resistance",
-            ["rank"] = 3,
-            ["cost"] = 3600,
-            ["texture"] = "Interface/ICONS/spell_shadow_antishadow"
-        },
-        {
-            ["id"] = 19882,
-            ["name"] = "Track Giants",
-            ["rank"] = 0,
-            ["cost"] = 18000,
-            ["texture"] = "Interface/ICONS/ability_racial_avatar"
-        },
-        {
-            ["id"] = 1510,
-            ["name"] = "Volley",
-            ["rank"] = 1,
-            ["cost"] = 18000,
-            ["texture"] = "Interface/ICONS/ability_marksmanship"
+            spell_id = 1510,
+            name = "Volley",
+            rank = "1",
+            icon = "ability_marksmanship",
+            source = {
+                type = "Trainer",
+                cost = 18000,
+            },
         },
     },
     [42] = {
         {
-            ["id"] = 20909,
-            ["name"] = "Counterattack",
-            ["rank"] = 2,
-            ["cost"] = 1200,
-            ["texture"] = "Interface/ICONS/ability_warrior_challange",
-            ["talent"] = true
+            spell_id = 20909,
+            name = "Counterattack",
+            rank = "2",
+            icon = "ability_warrior_challange",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 1200,
+            },
         },
         {
-            ["id"] = 4201,
-            ["name"] = "Great Stamina",
-            ["rank"] = 7,
-            ["cost"] = 4800,
-            ["texture"] = "Interface/ICONS/spell_nature_unyeildingstamina"
+            spell_id = 14289,
+            name = "Multi-Shot",
+            rank = "3",
+            icon = "ability_upgrademoonglaive",
+            source = {
+                type = "Trainer",
+                cost = 24000,
+            },
         },
         {
-            ["id"] = 14289,
-            ["name"] = "Multi-Shot",
-            ["rank"] = 3,
-            ["cost"] = 24000,
-            ["texture"] = "Interface/ICONS/ability_upgrademoonglaive"
-        },
-        {
-            ["id"] = 24561,
-            ["name"] = "Natural Armor",
-            ["rank"] = 7,
-            ["cost"] = 4800,
-            ["texture"] = "Interface/ICONS/spell_nature_spiritarmor"
-        },
-        {
-            ["id"] = 13553,
-            ["name"] = "Serpent Sting",
-            ["rank"] = 6,
-            ["cost"] = 24000,
-            ["texture"] = "Interface/ICONS/ability_hunter_quickshot"
+            spell_id = 13553,
+            name = "Serpent Sting",
+            rank = "6",
+            icon = "ability_hunter_quickshot",
+            source = {
+                type = "Trainer",
+                cost = 24000,
+            },
         },
     },
     [44] = {
         {
-            ["id"] = 20902,
-            ["name"] = "Aimed Shot",
-            ["rank"] = 4,
-            ["cost"] = 1300,
-            ["texture"] = "Interface/ICONS/inv_spear_07",
-            ["talent"] = true
+            spell_id = 20902,
+            name = "Aimed Shot",
+            rank = "4",
+            icon = "inv_spear_07",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 1300,
+            },
         },
         {
-            ["id"] = 14285,
-            ["name"] = "Arcane Shot",
-            ["rank"] = 6,
-            ["cost"] = 26000,
-            ["texture"] = "Interface/ICONS/ability_impalingbolt"
+            spell_id = 14285,
+            name = "Arcane Shot",
+            rank = "6",
+            icon = "ability_impalingbolt",
+            source = {
+                type = "Trainer",
+                cost = 26000,
+            },
         },
         {
-            ["id"] = 14316,
-            ["name"] = "Explosive Trap",
-            ["rank"] = 2,
-            ["cost"] = 26000,
-            ["texture"] = "Interface/ICONS/spell_fire_selfdestruct"
+            spell_id = 14316,
+            name = "Explosive Trap",
+            rank = "2",
+            icon = "spell_fire_selfdestruct",
+            source = {
+                type = "Trainer",
+                cost = 26000,
+            },
         },
         {
-            ["id"] = 13542,
-            ["name"] = "Mend Pet",
-            ["rank"] = 5,
-            ["cost"] = 26000,
-            ["texture"] = "Interface/ICONS/ability_hunter_mendpet"
+            spell_id = 13542,
+            name = "Mend Pet",
+            rank = "5",
+            icon = "ability_hunter_mendpet",
+            source = {
+                type = "Trainer",
+                cost = 26000,
+            },
         },
         {
-            ["id"] = 14270,
-            ["name"] = "Mongoose Bite",
-            ["rank"] = 3,
-            ["cost"] = 26000,
-            ["texture"] = "Interface/ICONS/ability_hunter_swiftstrike"
+            spell_id = 14270,
+            name = "Mongoose Bite",
+            rank = "3",
+            icon = "ability_hunter_swiftstrike",
+            source = {
+                type = "Trainer",
+                cost = 26000,
+            },
         },
     },
     [46] = {
         {
-            ["id"] = 20043,
-            ["name"] = "Aspect of the Wild",
-            ["rank"] = 1,
-            ["cost"] = 28000,
-            ["texture"] = "Interface/ICONS/spell_nature_protectionformnature"
+            spell_id = 20043,
+            name = "Aspect of the Wild",
+            rank = "1",
+            icon = "spell_nature_protectionformnature",
+            source = {
+                type = "Trainer",
+                cost = 28000,
+            },
         },
         {
-            ["id"] = 14304,
-            ["name"] = "Immolation Trap",
-            ["rank"] = 4,
-            ["cost"] = 28000,
-            ["texture"] = "Interface/ICONS/spell_fire_flameshock"
+            spell_id = 14304,
+            name = "Immolation Trap",
+            rank = "4",
+            icon = "spell_fire_flameshock",
+            source = {
+                type = "Trainer",
+                cost = 28000,
+            },
         },
         {
-            ["id"] = 14327,
-            ["name"] = "Scare Beast",
-            ["rank"] = 3,
-            ["cost"] = 28000,
-            ["texture"] = "Interface/ICONS/ability_druid_cower"
+            spell_id = 14327,
+            name = "Scare Beast",
+            rank = "3",
+            icon = "ability_druid_cower",
+            source = {
+                type = "Trainer",
+                cost = 28000,
+            },
         },
         {
-            ["id"] = 14279,
-            ["name"] = "Viper Sting",
-            ["rank"] = 2,
-            ["cost"] = 28000,
-            ["texture"] = "Interface/ICONS/ability_hunter_aimedshot"
+            spell_id = 14279,
+            name = "Viper Sting",
+            rank = "2",
+            icon = "ability_hunter_aimedshot",
+            source = {
+                type = "Trainer",
+                cost = 28000,
+            },
         },
     },
     [48] = {
         {
-            ["id"] = 14321,
-            ["name"] = "Aspect of the Hawk",
-            ["rank"] = 5,
-            ["cost"] = 32000,
-            ["texture"] = "Interface/ICONS/spell_nature_ravenform"
+            spell_id = 14321,
+            name = "Aspect of the Hawk",
+            rank = "5",
+            icon = "spell_nature_ravenform",
+            source = {
+                type = "Trainer",
+                cost = 32000,
+            },
         },
         {
-            ["id"] = 14273,
-            ["name"] = "Disengage",
-            ["rank"] = 3,
-            ["cost"] = 32000,
-            ["texture"] = "Interface/ICONS/ability_rogue_feint"
+            spell_id = 14273,
+            name = "Disengage",
+            rank = "3",
+            icon = "ability_rogue_feint",
+            source = {
+                type = "Trainer",
+                cost = 32000,
+            },
         },
         {
-            ["id"] = 4202,
-            ["name"] = "Great Stamina",
-            ["rank"] = 8,
-            ["cost"] = 6400,
-            ["texture"] = "Interface/ICONS/spell_nature_unyeildingstamina"
-        },
-        {
-            ["id"] = 24562,
-            ["name"] = "Natural Armor",
-            ["rank"] = 8,
-            ["cost"] = 6400,
-            ["texture"] = "Interface/ICONS/spell_nature_spiritarmor"
-        },
-        {
-            ["id"] = 14265,
-            ["name"] = "Raptor Strike",
-            ["rank"] = 7,
-            ["cost"] = 32000,
-            ["texture"] = "Interface/ICONS/ability_meleedamage"
+            spell_id = 14265,
+            name = "Raptor Strike",
+            rank = "7",
+            icon = "ability_meleedamage",
+            source = {
+                type = "Trainer",
+                cost = 32000,
+            },
         },
     },
     [50] = {
         {
-            ["id"] = 20905,
-            ["name"] = "Trueshot Aura",
-            ["rank"] = 2,
-            ["cost"] = 1800,
-            ["texture"] = "Interface/ICONS/ability_trueshot",
-            ["talent"] = true
+            spell_id = 20905,
+            name = "Trueshot Aura",
+            rank = "2",
+            icon = "ability_trueshot",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 1800,
+            },
         },
         {
-            ["id"] = 24132,
-            ["name"] = "Wyvern Sting",
-            ["rank"] = 2,
-            ["cost"] = 1800,
-            ["texture"] = "Interface/ICONS/inv_spear_02",
-            ["talent"] = true
+            spell_id = 24132,
+            name = "Wyvern Sting",
+            rank = "2",
+            icon = "inv_spear_02",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 1800,
+            },
         },
         {
-            ["id"] = 24510,
-            ["name"] = "Arcane Resistance",
-            ["rank"] = 4,
-            ["cost"] = 7200,
-            ["texture"] = "Interface/ICONS/spell_nature_starfall"
+            spell_id = 15631,
+            name = "Distracting Shot",
+            rank = "5",
+            icon = "spell_arcane_blink",
+            source = {
+                type = "Trainer",
+                cost = 36000,
+            },
         },
         {
-            ["id"] = 15631,
-            ["name"] = "Distracting Shot",
-            ["rank"] = 5,
-            ["cost"] = 36000,
-            ["texture"] = "Interface/ICONS/spell_arcane_blink"
+            spell_id = 13554,
+            name = "Serpent Sting",
+            rank = "7",
+            icon = "ability_hunter_quickshot",
+            source = {
+                type = "Trainer",
+                cost = 36000,
+            },
         },
         {
-            ["id"] = 24464,
-            ["name"] = "Fire Resistance",
-            ["rank"] = 4,
-            ["cost"] = 7200,
-            ["texture"] = "Interface/ICONS/spell_fire_firearmor"
+            spell_id = 19879,
+            name = "Track Dragonkin",
+            rank = "1",
+            icon = "inv_misc_head_dragon_01",
+            source = {
+                type = "Trainer",
+                cost = 36000,
+            },
         },
         {
-            ["id"] = 24478,
-            ["name"] = "Frost Resistance",
-            ["rank"] = 4,
-            ["cost"] = 7200,
-            ["texture"] = "Interface/ICONS/spell_frost_frostward"
-        },
-        {
-            ["id"] = 14926,
-            ["name"] = "Growl",
-            ["rank"] = 6,
-            ["cost"] = 7200,
-            ["texture"] = "Interface/ICONS/ability_physical_taunt"
-        },
-        {
-            ["id"] = 24513,
-            ["name"] = "Nature Resistance",
-            ["rank"] = 4,
-            ["cost"] = 7200,
-            ["texture"] = "Interface/ICONS/spell_nature_resistnature"
-        },
-        {
-            ["id"] = 13554,
-            ["name"] = "Serpent Sting",
-            ["rank"] = 7,
-            ["cost"] = 36000,
-            ["texture"] = "Interface/ICONS/ability_hunter_quickshot"
-        },
-        {
-            ["id"] = 24516,
-            ["name"] = "Shadow Resistance",
-            ["rank"] = 4,
-            ["cost"] = 7200,
-            ["texture"] = "Interface/ICONS/spell_shadow_antishadow"
-        },
-        {
-            ["id"] = 19879,
-            ["name"] = "Track Dragonkin",
-            ["rank"] = 0,
-            ["cost"] = 36000,
-            ["texture"] = "Interface/ICONS/inv_misc_head_dragon_01"
-        },
-        {
-            ["id"] = 14294,
-            ["name"] = "Volley",
-            ["rank"] = 2,
-            ["cost"] = 36000,
-            ["texture"] = "Interface/ICONS/ability_marksmanship"
+            spell_id = 14294,
+            name = "Volley",
+            rank = "2",
+            icon = "ability_marksmanship",
+            source = {
+                type = "Trainer",
+                cost = 36000,
+            },
         },
     },
     [52] = {
         {
-            ["id"] = 20903,
-            ["name"] = "Aimed Shot",
-            ["rank"] = 5,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/inv_spear_07",
-            ["talent"] = true
+            spell_id = 20903,
+            name = "Aimed Shot",
+            rank = "5",
+            icon = "inv_spear_07",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
         {
-            ["id"] = 14286,
-            ["name"] = "Arcane Shot",
-            ["rank"] = 7,
-            ["cost"] = 40000,
-            ["texture"] = "Interface/ICONS/ability_impalingbolt"
+            spell_id = 14286,
+            name = "Arcane Shot",
+            rank = "7",
+            icon = "ability_impalingbolt",
+            source = {
+                type = "Trainer",
+                cost = 40000,
+            },
         },
         {
-            ["id"] = 13543,
-            ["name"] = "Mend Pet",
-            ["rank"] = 6,
-            ["cost"] = 40000,
-            ["texture"] = "Interface/ICONS/ability_hunter_mendpet"
+            spell_id = 13543,
+            name = "Mend Pet",
+            rank = "6",
+            icon = "ability_hunter_mendpet",
+            source = {
+                type = "Trainer",
+                cost = 40000,
+            },
         },
     },
     [54] = {
         {
-            ["id"] = 20910,
-            ["name"] = "Counterattack",
-            ["rank"] = 3,
-            ["cost"] = 2100,
-            ["texture"] = "Interface/ICONS/ability_warrior_challange",
-            ["talent"] = true
+            spell_id = 20910,
+            name = "Counterattack",
+            rank = "3",
+            icon = "ability_warrior_challange",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 2100,
+            },
         },
         {
-            ["id"] = 14317,
-            ["name"] = "Explosive Trap",
-            ["rank"] = 3,
-            ["cost"] = 42000,
-            ["texture"] = "Interface/ICONS/spell_fire_selfdestruct"
+            spell_id = 14317,
+            name = "Explosive Trap",
+            rank = "3",
+            icon = "spell_fire_selfdestruct",
+            source = {
+                type = "Trainer",
+                cost = 42000,
+            },
         },
         {
-            ["id"] = 5048,
-            ["name"] = "Great Stamina",
-            ["rank"] = 9,
-            ["cost"] = 8400,
-            ["texture"] = "Interface/ICONS/spell_nature_unyeildingstamina"
-        },
-        {
-            ["id"] = 14290,
-            ["name"] = "Multi-Shot",
-            ["rank"] = 4,
-            ["cost"] = 42000,
-            ["texture"] = "Interface/ICONS/ability_upgrademoonglaive"
-        },
-        {
-            ["id"] = 24631,
-            ["name"] = "Natural Armor",
-            ["rank"] = 9,
-            ["cost"] = 8400,
-            ["texture"] = "Interface/ICONS/spell_nature_spiritarmor"
+            spell_id = 14290,
+            name = "Multi-Shot",
+            rank = "4",
+            icon = "ability_upgrademoonglaive",
+            source = {
+                type = "Trainer",
+                cost = 42000,
+            },
         },
     },
     [56] = {
         {
-            ["id"] = 20190,
-            ["name"] = "Aspect of the Wild",
-            ["rank"] = 2,
-            ["cost"] = 46000,
-            ["texture"] = "Interface/ICONS/spell_nature_protectionformnature"
+            spell_id = 20190,
+            name = "Aspect of the Wild",
+            rank = "2",
+            icon = "spell_nature_protectionformnature",
+            source = {
+                type = "Trainer",
+                cost = 46000,
+            },
         },
         {
-            ["id"] = 14305,
-            ["name"] = "Immolation Trap",
-            ["rank"] = 5,
-            ["cost"] = 46000,
-            ["texture"] = "Interface/ICONS/spell_fire_flameshock"
+            spell_id = 14305,
+            name = "Immolation Trap",
+            rank = "5",
+            icon = "spell_fire_flameshock",
+            source = {
+                type = "Trainer",
+                cost = 46000,
+            },
         },
         {
-            ["id"] = 14266,
-            ["name"] = "Raptor Strike",
-            ["rank"] = 8,
-            ["cost"] = 46000,
-            ["texture"] = "Interface/ICONS/ability_meleedamage"
+            spell_id = 14266,
+            name = "Raptor Strike",
+            rank = "8",
+            icon = "ability_meleedamage",
+            source = {
+                type = "Trainer",
+                cost = 46000,
+            },
         },
         {
-            ["id"] = 14280,
-            ["name"] = "Viper Sting",
-            ["rank"] = 3,
-            ["cost"] = 46000,
-            ["texture"] = "Interface/ICONS/ability_hunter_aimedshot"
+            spell_id = 14280,
+            name = "Viper Sting",
+            rank = "3",
+            icon = "ability_hunter_aimedshot",
+            source = {
+                type = "Trainer",
+                cost = 46000,
+            },
         },
     },
     [58] = {
         {
-            ["id"] = 14322,
-            ["name"] = "Aspect of the Hawk",
-            ["rank"] = 6,
-            ["cost"] = 48000,
-            ["texture"] = "Interface/ICONS/spell_nature_ravenform"
+            spell_id = 14322,
+            name = "Aspect of the Hawk",
+            rank = "6",
+            icon = "spell_nature_ravenform",
+            source = {
+                type = "Trainer",
+                cost = 48000,
+            },
         },
         {
-            ["id"] = 14325,
-            ["name"] = "Hunter's Mark",
-            ["rank"] = 4,
-            ["cost"] = 48000,
-            ["texture"] = "Interface/ICONS/ability_hunter_snipershot"
+            spell_id = 14325,
+            name = "Hunter's Mark",
+            rank = "4",
+            icon = "ability_hunter_snipershot",
+            source = {
+                type = "Trainer",
+                cost = 48000,
+            },
         },
         {
-            ["id"] = 14271,
-            ["name"] = "Mongoose Bite",
-            ["rank"] = 4,
-            ["cost"] = 48000,
-            ["texture"] = "Interface/ICONS/ability_hunter_swiftstrike"
+            spell_id = 14271,
+            name = "Mongoose Bite",
+            rank = "4",
+            icon = "ability_hunter_swiftstrike",
+            source = {
+                type = "Trainer",
+                cost = 48000,
+            },
         },
         {
-            ["id"] = 13555,
-            ["name"] = "Serpent Sting",
-            ["rank"] = 8,
-            ["cost"] = 48000,
-            ["texture"] = "Interface/ICONS/ability_hunter_quickshot"
+            spell_id = 13555,
+            name = "Serpent Sting",
+            rank = "8",
+            icon = "ability_hunter_quickshot",
+            source = {
+                type = "Trainer",
+                cost = 48000,
+            },
         },
         {
-            ["id"] = 14295,
-            ["name"] = "Volley",
-            ["rank"] = 3,
-            ["cost"] = 48000,
-            ["texture"] = "Interface/ICONS/ability_marksmanship"
+            spell_id = 14295,
+            name = "Volley",
+            rank = "3",
+            icon = "ability_marksmanship",
+            source = {
+                type = "Trainer",
+                cost = 48000,
+            },
         },
     },
     [60] = {
         {
-            ["id"] = 20904,
-            ["name"] = "Aimed Shot",
-            ["rank"] = 6,
-            ["cost"] = 2500,
-            ["texture"] = "Interface/ICONS/inv_spear_07",
-            ["talent"] = true
+            spell_id = 20904,
+            name = "Aimed Shot",
+            rank = "6",
+            icon = "inv_spear_07",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 2500,
+            },
         },
         {
-            ["id"] = 20906,
-            ["name"] = "Trueshot Aura",
-            ["rank"] = 3,
-            ["cost"] = 2500,
-            ["texture"] = "Interface/ICONS/ability_trueshot",
-            ["talent"] = true
+            spell_id = 20906,
+            name = "Trueshot Aura",
+            rank = "3",
+            icon = "ability_trueshot",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 2500,
+            },
         },
         {
-            ["id"] = 24133,
-            ["name"] = "Wyvern Sting",
-            ["rank"] = 3,
-            ["cost"] = 2500,
-            ["texture"] = "Interface/ICONS/inv_spear_02",
-            ["talent"] = true
+            spell_id = 24133,
+            name = "Wyvern Sting",
+            rank = "3",
+            icon = "inv_spear_02",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 2500,
+            },
         },
         {
-            ["id"] = 14287,
-            ["name"] = "Arcane Shot",
-            ["rank"] = 8,
-            ["cost"] = 50000,
-            ["texture"] = "Interface/ICONS/ability_impalingbolt"
+            spell_id = 14287,
+            name = "Arcane Shot",
+            rank = "8",
+            icon = "ability_impalingbolt",
+            source = {
+                type = "Trainer",
+                cost = 50000,
+            },
         },
         {
-            ["id"] = 25296,
-            ["name"] = "Aspect of the Hawk",
-            ["rank"] = 7,
-            ["cost"] = 50000,
-            ["texture"] = "Interface/ICONS/spell_nature_ravenform"
+            spell_id = 25296,
+            name = "Aspect of the Hawk",
+            rank = "7",
+            icon = "spell_nature_ravenform",
+            source = {
+                type = "Trainer",
+                cost = 50000,
+            },
         },
         {
-            ["id"] = 15632,
-            ["name"] = "Distracting Shot",
-            ["rank"] = 6,
-            ["cost"] = 50000,
-            ["texture"] = "Interface/ICONS/spell_arcane_blink"
+            spell_id = 15632,
+            name = "Distracting Shot",
+            rank = "6",
+            icon = "spell_arcane_blink",
+            source = {
+                type = "Trainer",
+                cost = 50000,
+            },
         },
         {
-            ["id"] = 14311,
-            ["name"] = "Freezing Trap",
-            ["rank"] = 3,
-            ["cost"] = 50000,
-            ["texture"] = "Interface/ICONS/spell_frost_chainsofice"
+            spell_id = 14311,
+            name = "Freezing Trap",
+            rank = "3",
+            icon = "spell_frost_chainsofice",
+            source = {
+                type = "Trainer",
+                cost = 50000,
+            },
         },
         {
-            ["id"] = 5049,
-            ["name"] = "Great Stamina",
-            ["rank"] = 10,
-            ["cost"] = 10000,
-            ["texture"] = "Interface/ICONS/spell_nature_unyeildingstamina"
+            spell_id = 13544,
+            name = "Mend Pet",
+            rank = "7",
+            icon = "ability_hunter_mendpet",
+            source = {
+                type = "Trainer",
+                cost = 50000,
+            },
         },
         {
-            ["id"] = 14927,
-            ["name"] = "Growl",
-            ["rank"] = 7,
-            ["cost"] = 10000,
-            ["texture"] = "Interface/ICONS/ability_physical_taunt"
+            spell_id = 25294,
+            name = "Multi-Shot",
+            rank = "5",
+            icon = "ability_upgrademoonglaive",
+            source = {
+                type = "Trainer",
+                cost = 50000,
+            },
         },
         {
-            ["id"] = 13544,
-            ["name"] = "Mend Pet",
-            ["rank"] = 7,
-            ["cost"] = 50000,
-            ["texture"] = "Interface/ICONS/ability_hunter_mendpet"
+            spell_id = 25295,
+            name = "Serpent Sting",
+            rank = "9",
+            icon = "ability_hunter_quickshot",
+            source = {
+                type = "Trainer",
+                cost = 50000,
+            },
         },
         {
-            ["id"] = 25294,
-            ["name"] = "Multi-Shot",
-            ["rank"] = 5,
-            ["cost"] = 50000,
-            ["texture"] = "Interface/ICONS/ability_upgrademoonglaive"
+            spell_id = 19801,
+            name = "Tranquilizing Shot",
+            rank = "1",
+            icon = "spell_nature_drowsy",
+            source = {
+                type = "Trainer",
+                cost = 50000,
+            },
         },
         {
-            ["id"] = 24632,
-            ["name"] = "Natural Armor",
-            ["rank"] = 10,
-            ["cost"] = 10000,
-            ["texture"] = "Interface/ICONS/spell_nature_spiritarmor"
-        },
-        {
-            ["id"] = 25295,
-            ["name"] = "Serpent Sting",
-            ["rank"] = 9,
-            ["cost"] = 50000,
-            ["texture"] = "Interface/ICONS/ability_hunter_quickshot"
-        },
-        {
-            ["id"] = 19801,
-            ["name"] = "Tranquilizing Shot",
-            ["rank"] = 0,
-            ["cost"] = 50000,
-            ["texture"] = "Interface/ICONS/spell_nature_drowsy"
-        },
-        {
-            ["id"] = 14268,
-            ["name"] = "Wing Clip",
-            ["rank"] = 3,
-            ["cost"] = 50000,
-            ["texture"] = "Interface/ICONS/ability_rogue_trip"
+            spell_id = 14268,
+            name = "Wing Clip",
+            rank = "3",
+            icon = "ability_rogue_trip",
+            source = {
+                type = "Trainer",
+                cost = 50000,
+            },
         },
     },
     [61] = {
         {
-            ["id"] = 27025,
-            ["name"] = "Explosive Trap",
-            ["rank"] = 4,
-            ["cost"] = 68000,
-            ["texture"] = "Interface/ICONS/spell_fire_selfdestruct"
+            spell_id = 27025,
+            name = "Explosive Trap",
+            rank = "4",
+            icon = "spell_fire_selfdestruct",
+            source = {
+                type = "Trainer",
+                cost = 68000,
+            },
         },
     },
     [62] = {
         {
-            ["id"] = 27015,
-            ["name"] = "Disengage",
-            ["rank"] = 4,
-            ["cost"] = 77000,
-            ["texture"] = "Interface/ICONS/ability_rogue_feint"
+            spell_id = 27015,
+            name = "Disengage",
+            rank = "4",
+            icon = "ability_rogue_feint",
+            source = {
+                type = "Trainer",
+                cost = 77000,
+            },
         },
         {
-            ["id"] = 34120,
-            ["name"] = "Steady Shot",
-            ["rank"] = 1,
-            ["cost"] = 77000,
-            ["texture"] = "Interface/ICONS/ability_hunter_steadyshot"
+            spell_id = 34120,
+            name = "Steady Shot",
+            rank = "1",
+            icon = "ability_hunter_steadyshot",
+            source = {
+                type = "Trainer",
+                cost = 77000,
+            },
         },
     },
     [63] = {
         {
-            ["id"] = 27014,
-            ["name"] = "Raptor Strike",
-            ["rank"] = 9,
-            ["cost"] = 87000,
-            ["texture"] = "Interface/ICONS/ability_meleedamage"
+            spell_id = 27014,
+            name = "Raptor Strike",
+            rank = "9",
+            icon = "ability_meleedamage",
+            source = {
+                type = "Trainer",
+                cost = 87000,
+            },
         },
     },
     [64] = {
         {
-            ["id"] = 34074,
-            ["name"] = "Aspect of the Viper",
-            ["rank"] = 0,
-            ["cost"] = 100000,
-            ["texture"] = "Interface/ICONS/ability_hunter_aspectoftheviper"
+            spell_id = 34074,
+            name = "Aspect of the Viper",
+            rank = "1",
+            icon = "ability_hunter_aspectoftheviper",
+            source = {
+                type = "Trainer",
+                cost = 100000,
+            },
         },
     },
     [65] = {
         {
-            ["id"] = 27023,
-            ["name"] = "Immolation Trap",
-            ["rank"] = 6,
-            ["cost"] = 110000,
-            ["texture"] = "Interface/ICONS/spell_fire_flameshock"
+            spell_id = 27023,
+            name = "Immolation Trap",
+            rank = "6",
+            icon = "spell_fire_flameshock",
+            source = {
+                type = "Trainer",
+                cost = 110000,
+            },
         },
     },
     [66] = {
         {
-            ["id"] = 27067,
-            ["name"] = "Counterattack",
-            ["rank"] = 4,
-            ["cost"] = 2500,
-            ["texture"] = "Interface/ICONS/ability_warrior_challange",
-            ["talent"] = true
+            spell_id = 27067,
+            name = "Counterattack",
+            rank = "4",
+            icon = "ability_warrior_challange",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 2500,
+            },
         },
         {
-            ["id"] = 34026,
-            ["name"] = "Kill Command",
-            ["rank"] = 1,
-            ["cost"] = 120000,
-            ["texture"] = "Interface/ICONS/ability_hunter_killcommand"
+            spell_id = 34026,
+            name = "Kill Command",
+            rank = "1",
+            icon = "ability_hunter_killcommand",
+            source = {
+                type = "Trainer",
+                cost = 120000,
+            },
         },
         {
-            ["id"] = 27018,
-            ["name"] = "Viper Sting",
-            ["rank"] = 4,
-            ["cost"] = 120000,
-            ["texture"] = "Interface/ICONS/ability_hunter_aimedshot"
+            spell_id = 27018,
+            name = "Viper Sting",
+            rank = "4",
+            icon = "ability_hunter_aimedshot",
+            source = {
+                type = "Trainer",
+                cost = 120000,
+            },
         },
     },
     [67] = {
         {
-            ["id"] = 27021,
-            ["name"] = "Multi-Shot",
-            ["rank"] = 6,
-            ["cost"] = 140000,
-            ["texture"] = "Interface/ICONS/ability_upgrademoonglaive"
+            spell_id = 27021,
+            name = "Multi-Shot",
+            rank = "6",
+            icon = "ability_upgrademoonglaive",
+            source = {
+                type = "Trainer",
+                cost = 140000,
+            },
         },
         {
-            ["id"] = 27016,
-            ["name"] = "Serpent Sting",
-            ["rank"] = 10,
-            ["cost"] = 140000,
-            ["texture"] = "Interface/ICONS/ability_hunter_quickshot"
+            spell_id = 27016,
+            name = "Serpent Sting",
+            rank = "10",
+            icon = "ability_hunter_quickshot",
+            source = {
+                type = "Trainer",
+                cost = 140000,
+            },
         },
         {
-            ["id"] = 27022,
-            ["name"] = "Volley",
-            ["rank"] = 4,
-            ["cost"] = 140000,
-            ["texture"] = "Interface/ICONS/ability_marksmanship"
+            spell_id = 27022,
+            name = "Volley",
+            rank = "4",
+            icon = "ability_marksmanship",
+            source = {
+                type = "Trainer",
+                cost = 140000,
+            },
         },
     },
     [68] = {
         {
-            ["id"] = 27044,
-            ["name"] = "Aspect of the Hawk",
-            ["rank"] = 8,
-            ["cost"] = 150000,
-            ["texture"] = "Interface/ICONS/spell_nature_ravenform"
+            spell_id = 27044,
+            name = "Aspect of the Hawk",
+            rank = "8",
+            icon = "spell_nature_ravenform",
+            source = {
+                type = "Trainer",
+                cost = 150000,
+            },
         },
         {
-            ["id"] = 27045,
-            ["name"] = "Aspect of the Wild",
-            ["rank"] = 3,
-            ["cost"] = 150000,
-            ["texture"] = "Interface/ICONS/spell_nature_protectionformnature"
+            spell_id = 27045,
+            name = "Aspect of the Wild",
+            rank = "3",
+            icon = "spell_nature_protectionformnature",
+            source = {
+                type = "Trainer",
+                cost = 150000,
+            },
         },
         {
-            ["id"] = 27046,
-            ["name"] = "Mend Pet",
-            ["rank"] = 8,
-            ["cost"] = 150000,
-            ["texture"] = "Interface/ICONS/ability_hunter_mendpet"
+            spell_id = 27046,
+            name = "Mend Pet",
+            rank = "8",
+            icon = "ability_hunter_mendpet",
+            source = {
+                type = "Trainer",
+                cost = 150000,
+            },
         },
         {
-            ["id"] = 34600,
-            ["name"] = "Snake Trap",
-            ["rank"] = 0,
-            ["cost"] = 150000,
-            ["texture"] = "Interface/ICONS/ability_hunter_snaketrap"
+            spell_id = 34600,
+            name = "Snake Trap",
+            rank = "1",
+            icon = "ability_hunter_snaketrap",
+            source = {
+                type = "Trainer",
+                cost = 150000,
+            },
         },
     },
     [69] = {
         {
-            ["id"] = 27019,
-            ["name"] = "Arcane Shot",
-            ["rank"] = 9,
-            ["cost"] = 170000,
-            ["texture"] = "Interface/ICONS/ability_impalingbolt"
+            spell_id = 27019,
+            name = "Arcane Shot",
+            rank = "9",
+            icon = "ability_impalingbolt",
+            source = {
+                type = "Trainer",
+                cost = 170000,
+            },
         },
         {
-            ["id"] = 27020,
-            ["name"] = "Distracting Shot",
-            ["rank"] = 7,
-            ["cost"] = 170000,
-            ["texture"] = "Interface/ICONS/spell_arcane_blink"
+            spell_id = 27020,
+            name = "Distracting Shot",
+            rank = "7",
+            icon = "spell_arcane_blink",
+            source = {
+                type = "Trainer",
+                cost = 170000,
+            },
         },
     },
     [70] = {
         {
-            ["id"] = 27065,
-            ["name"] = "Aimed Shot",
-            ["rank"] = 7,
-            ["cost"] = 2700,
-            ["texture"] = "Interface/ICONS/inv_spear_07",
-            ["talent"] = true
+            spell_id = 27065,
+            name = "Aimed Shot",
+            rank = "7",
+            icon = "inv_spear_07",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 2700,
+            },
         },
         {
-            ["id"] = 27066,
-            ["name"] = "Trueshot Aura",
-            ["rank"] = 4,
-            ["cost"] = 2700,
-            ["texture"] = "Interface/ICONS/ability_trueshot",
-            ["talent"] = true
+            spell_id = 27066,
+            name = "Trueshot Aura",
+            rank = "4",
+            icon = "ability_trueshot",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 2700,
+            },
         },
         {
-            ["id"] = 27068,
-            ["name"] = "Wyvern Sting",
-            ["rank"] = 4,
-            ["cost"] = 2700,
-            ["texture"] = "Interface/ICONS/inv_spear_02",
-            ["talent"] = true
+            spell_id = 27068,
+            name = "Wyvern Sting",
+            rank = "4",
+            icon = "inv_spear_02",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 2700,
+            },
         },
         {
-            ["id"] = 34477,
-            ["name"] = "Misdirection",
-            ["rank"] = 0,
-            ["cost"] = 190000,
-            ["texture"] = "Interface/ICONS/ability_hunter_misdirection"
+            spell_id = 34477,
+            name = "Misdirection",
+            rank = "1",
+            icon = "ability_hunter_misdirection",
+            source = {
+                type = "Trainer",
+                cost = 190000,
+            },
         },
         {
-            ["id"] = 36916,
-            ["name"] = "Mongoose Bite",
-            ["rank"] = 5,
-            ["cost"] = 190000,
-            ["texture"] = "Interface/ICONS/ability_hunter_swiftstrike"
+            spell_id = 36916,
+            name = "Mongoose Bite",
+            rank = "5",
+            icon = "ability_hunter_swiftstrike",
+            source = {
+                type = "Trainer",
+                cost = 190000,
+            },
         },
     },
 }

@@ -3,792 +3,1118 @@ local _, TFG = ...
 TFG.WARRIOR_VANILLA = {
     [2] = {
         {
-            ["name"] = "Battle Shout",
-            ["rank"] = 1,
-            ["cost"] = 10,
-            ["texture"] = "Interface/ICONS/ability_warrior_battleshout",
-            ["id"] = 6673
+            spell_id = 6673,
+            name = "Battle Shout",
+            rank = "1",
+            icon = "ability_warrior_battleshout",
+            source = {
+                type = "Trainer",
+                cost = 10,
+            },
         },
     },
     [4] = {
         {
-            ["name"] = "Charge",
-            ["rank"] = 1,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/ability_warrior_charge",
-            ["id"] = 100
+            spell_id = 100,
+            name = "Charge",
+            rank = "1",
+            icon = "ability_warrior_charge",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
         {
-            ["name"] = "Rend",
-            ["rank"] = 1,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/ability_gouge",
-            ["id"] = 772
+            spell_id = 772,
+            name = "Rend",
+            rank = "1",
+            icon = "ability_gouge",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
     },
     [6] = {
         {
-            ["name"] = "Parry",
-            ["rank"] = 1,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/ability_parry",
-            ["id"] = 3127
+            spell_id = 3127,
+            name = "Parry",
+            rank = "1",
+            icon = "ability_parry",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
         {
-            ["name"] = "Thunder Clap",
-            ["rank"] = 1,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/spell_nature_thunderclap",
-            ["id"] = 6343
+            spell_id = 6343,
+            name = "Thunder Clap",
+            rank = "1",
+            icon = "spell_nature_thunderclap",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
     },
     [8] = {
         {
-            ["name"] = "Hamstring",
-            ["rank"] = 1,
-            ["cost"] = 200,
-            ["texture"] = "Interface/ICONS/ability_shockwave",
-            ["id"] = 1715
+            spell_id = 1715,
+            name = "Hamstring",
+            rank = "1",
+            icon = "ability_shockwave",
+            source = {
+                type = "Trainer",
+                cost = 200,
+            },
         },
         {
-            ["name"] = "Heroic Strike",
-            ["rank"] = 2,
-            ["cost"] = 200,
-            ["texture"] = "Interface/ICONS/ability_rogue_ambush",
-            ["id"] = 284
+            spell_id = 284,
+            name = "Heroic Strike",
+            rank = "2",
+            icon = "ability_rogue_ambush",
+            source = {
+                type = "Trainer",
+                cost = 200,
+            },
         },
     },
     [10] = {
         {
-            ["name"] = "Rend",
-            ["rank"] = 2,
-            ["cost"] = 600,
-            ["texture"] = "Interface/ICONS/ability_gouge",
-            ["id"] = 6546
+            spell_id = 6546,
+            name = "Rend",
+            rank = "2",
+            icon = "ability_gouge",
+            source = {
+                type = "Trainer",
+                cost = 600,
+            },
         },
         {
-            ["name"] = "Bloodrage",
-            ["rank"] = 1,
-            ["cost"] = 600,
-            ["texture"] = "Interface/ICONS/ability_racial_bloodrage",
-            ["id"] = 2687
+            spell_id = 2687,
+            name = "Bloodrage",
+            rank = "1",
+            icon = "ability_racial_bloodrage",
+            source = {
+                type = "Trainer",
+                cost = 600,
+            },
         },
         {
-            ["name"] = "Defensive Stance",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/ability_warrior_defensivestance",
-            ["id"] = 71
+            spell_id = 71,
+            name = "Defensive Stance",
+            rank = "1",
+            icon = "ability_warrior_defensivestance",
         },
         {
-            ["name"] = "Sunder Armor",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/ability_warrior_sunder",
-            ["id"] = 7386
+            spell_id = 7386,
+            name = "Sunder Armor",
+            rank = "1",
+            icon = "ability_warrior_sunder",
         },
         {
-            ["name"] = "Taunt",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/spell_nature_reincarnation",
-            ["id"] = 355
+            spell_id = 355,
+            name = "Taunt",
+            rank = "1",
+            icon = "spell_nature_reincarnation",
         },
     },
     [12] = {
         {
-            ["name"] = "Overpower",
-            ["rank"] = 1,
-            ["cost"] = 1000,
-            ["texture"] = "Interface/ICONS/ability_meleedamage",
-            ["id"] = 7384
+            spell_id = 7384,
+            name = "Overpower",
+            rank = "1",
+            icon = "ability_meleedamage",
+            source = {
+                type = "Trainer",
+                cost = 1000,
+            },
         },
         {
-            ["name"] = "Battle Shout",
-            ["rank"] = 2,
-            ["cost"] = 1000,
-            ["texture"] = "Interface/ICONS/ability_warrior_battleshout",
-            ["id"] = 5242
+            spell_id = 5242,
+            name = "Battle Shout",
+            rank = "2",
+            icon = "ability_warrior_battleshout",
+            source = {
+                type = "Trainer",
+                cost = 1000,
+            },
         },
         {
-            ["name"] = "Shield Bash",
-            ["rank"] = 1,
-            ["cost"] = 1000,
-            ["texture"] = "Interface/ICONS/ability_warrior_shieldbash",
-            ["id"] = 72
+            spell_id = 72,
+            name = "Shield Bash",
+            rank = "1",
+            icon = "ability_warrior_shieldbash",
+            source = {
+                type = "Trainer",
+                cost = 1000,
+            },
         },
     },
     [14] = {
         {
-            ["name"] = "Demoralizing Shout",
-            ["rank"] = 1,
-            ["cost"] = 1500,
-            ["texture"] = "Interface/ICONS/ability_warrior_warcry",
-            ["id"] = 1160
+            spell_id = 1160,
+            name = "Demoralizing Shout",
+            rank = "1",
+            icon = "ability_warrior_warcry",
+            source = {
+                type = "Trainer",
+                cost = 1500,
+            },
         },
         {
-            ["name"] = "Revenge",
-            ["rank"] = 1,
-            ["cost"] = 1500,
-            ["texture"] = "Interface/ICONS/ability_warrior_revenge",
-            ["id"] = 6572
+            spell_id = 6572,
+            name = "Revenge",
+            rank = "1",
+            icon = "ability_warrior_revenge",
+            source = {
+                type = "Trainer",
+                cost = 1500,
+            },
         },
     },
     [16] = {
         {
-            ["name"] = "Heroic Strike",
-            ["rank"] = 3,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/ability_rogue_ambush",
-            ["id"] = 285
+            spell_id = 285,
+            name = "Heroic Strike",
+            rank = "3",
+            icon = "ability_rogue_ambush",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
         {
-            ["name"] = "Mocking Blow",
-            ["rank"] = 1,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/ability_warrior_punishingblow",
-            ["id"] = 694
+            spell_id = 694,
+            name = "Mocking Blow",
+            rank = "1",
+            icon = "ability_warrior_punishingblow",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
         {
-            ["name"] = "Shield Block",
-            ["rank"] = 1,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/ability_defend",
-            ["id"] = 2565
+            spell_id = 2565,
+            name = "Shield Block",
+            rank = "1",
+            icon = "ability_defend",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
     },
     [18] = {
         {
-            ["name"] = "Thunder Clap",
-            ["rank"] = 2,
-            ["cost"] = 3000,
-            ["texture"] = "Interface/ICONS/spell_nature_thunderclap",
-            ["id"] = 8198
+            spell_id = 8198,
+            name = "Thunder Clap",
+            rank = "2",
+            icon = "spell_nature_thunderclap",
+            source = {
+                type = "Trainer",
+                cost = 3000,
+            },
         },
         {
-            ["name"] = "Disarm",
-            ["rank"] = 1,
-            ["cost"] = 3000,
-            ["texture"] = "Interface/ICONS/ability_warrior_disarm",
-            ["id"] = 676
+            spell_id = 676,
+            name = "Disarm",
+            rank = "1",
+            icon = "ability_warrior_disarm",
+            source = {
+                type = "Trainer",
+                cost = 3000,
+            },
         },
     },
     [20] = {
         {
-            ["name"] = "Dual Wield",
-            ["rank"] = 1,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/ability_dualwield",
-            ["id"] = 674
+            spell_id = 674,
+            name = "Dual Wield",
+            rank = "1",
+            icon = "ability_dualwield",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
         {
-            ["name"] = "Rend",
-            ["rank"] = 3,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/ability_gouge",
-            ["id"] = 6547
+            spell_id = 6547,
+            name = "Rend",
+            rank = "3",
+            icon = "ability_gouge",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
         {
-            ["name"] = "Retaliation",
-            ["rank"] = 1,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/ability_warrior_challange",
-            ["id"] = 20230
+            spell_id = 20230,
+            name = "Retaliation",
+            rank = "1",
+            icon = "ability_warrior_challange",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
         {
-            ["name"] = "Cleave",
-            ["rank"] = 1,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/ability_warrior_cleave",
-            ["id"] = 845
+            spell_id = 845,
+            name = "Cleave",
+            rank = "1",
+            icon = "ability_warrior_cleave",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
     },
     [22] = {
         {
-            ["name"] = "Battle Shout",
-            ["rank"] = 3,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/ability_warrior_battleshout",
-            ["id"] = 6192
+            spell_id = 6192,
+            name = "Battle Shout",
+            rank = "3",
+            icon = "ability_warrior_battleshout",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
         {
-            ["name"] = "Intimidating Shout",
-            ["rank"] = 1,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/ability_golemthunderclap",
-            ["id"] = 5246
+            spell_id = 5246,
+            name = "Intimidating Shout",
+            rank = "1",
+            icon = "ability_golemthunderclap",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
         {
-            ["name"] = "Sunder Armor",
-            ["rank"] = 2,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/ability_warrior_sunder",
-            ["id"] = 7405
+            spell_id = 7405,
+            name = "Sunder Armor",
+            rank = "2",
+            icon = "ability_warrior_sunder",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
     },
     [24] = {
         {
-            ["name"] = "Heroic Strike",
-            ["rank"] = 4,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/ability_rogue_ambush",
-            ["id"] = 1608
+            spell_id = 1608,
+            name = "Heroic Strike",
+            rank = "4",
+            icon = "ability_rogue_ambush",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
         {
-            ["name"] = "Demoralizing Shout",
-            ["rank"] = 2,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/ability_warrior_warcry",
-            ["id"] = 6190
+            spell_id = 6190,
+            name = "Demoralizing Shout",
+            rank = "2",
+            icon = "ability_warrior_warcry",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
         {
-            ["name"] = "Execute",
-            ["rank"] = 1,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/inv_sword_48",
-            ["id"] = 5308
+            spell_id = 5308,
+            name = "Execute",
+            rank = "1",
+            icon = "inv_sword_48",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
         {
-            ["name"] = "Revenge",
-            ["rank"] = 2,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/ability_warrior_revenge",
-            ["id"] = 6574
+            spell_id = 6574,
+            name = "Revenge",
+            rank = "2",
+            icon = "ability_warrior_revenge",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
     },
     [26] = {
         {
-            ["name"] = "Charge",
-            ["rank"] = 2,
-            ["cost"] = 10000,
-            ["texture"] = "Interface/ICONS/ability_warrior_charge",
-            ["id"] = 6178
+            spell_id = 6178,
+            name = "Charge",
+            rank = "2",
+            icon = "ability_warrior_charge",
+            source = {
+                type = "Trainer",
+                cost = 10000,
+            },
         },
         {
-            ["name"] = "Mocking Blow",
-            ["rank"] = 2,
-            ["cost"] = 10000,
-            ["texture"] = "Interface/ICONS/ability_warrior_punishingblow",
-            ["id"] = 7400
+            spell_id = 7400,
+            name = "Mocking Blow",
+            rank = "2",
+            icon = "ability_warrior_punishingblow",
+            source = {
+                type = "Trainer",
+                cost = 10000,
+            },
         },
         {
-            ["name"] = "Challenging Shout",
-            ["rank"] = 1,
-            ["cost"] = 10000,
-            ["texture"] = "Interface/ICONS/ability_bullrush",
-            ["id"] = 1161
+            spell_id = 1161,
+            name = "Challenging Shout",
+            rank = "1",
+            icon = "ability_bullrush",
+            source = {
+                type = "Trainer",
+                cost = 10000,
+            },
         },
     },
     [28] = {
         {
-            ["name"] = "Overpower",
-            ["rank"] = 2,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/ability_meleedamage",
-            ["id"] = 7887
+            spell_id = 7887,
+            name = "Overpower",
+            rank = "2",
+            icon = "ability_meleedamage",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
         {
-            ["name"] = "Thunder Clap",
-            ["rank"] = 3,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/spell_nature_thunderclap",
-            ["id"] = 8204
+            spell_id = 8204,
+            name = "Thunder Clap",
+            rank = "3",
+            icon = "spell_nature_thunderclap",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
         {
-            ["name"] = "Shield Wall",
-            ["rank"] = 1,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/ability_warrior_shieldwall",
-            ["id"] = 871
+            spell_id = 871,
+            name = "Shield Wall",
+            rank = "1",
+            icon = "ability_warrior_shieldwall",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
     },
     [30] = {
         {
-            ["name"] = "Rend",
-            ["rank"] = 4,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/ability_gouge",
-            ["id"] = 6548
+            spell_id = 6548,
+            name = "Rend",
+            rank = "4",
+            icon = "ability_gouge",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
         {
-            ["name"] = "Berserker Stance",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/ability_racial_avatar",
-            ["id"] = 2458
+            spell_id = 2458,
+            name = "Berserker Stance",
+            rank = "1",
+            icon = "ability_racial_avatar",
         },
         {
-            ["name"] = "Cleave",
-            ["rank"] = 2,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/ability_warrior_cleave",
-            ["id"] = 7369
+            spell_id = 7369,
+            name = "Cleave",
+            rank = "2",
+            icon = "ability_warrior_cleave",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
         {
-            ["name"] = "Intercept",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/ability_rogue_sprint",
-            ["id"] = 20252
+            spell_id = 20252,
+            name = "Intercept",
+            rank = "1",
+            icon = "ability_rogue_sprint",
         },
         {
-            ["name"] = "Slam",
-            ["rank"] = 1,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/ability_warrior_decisivestrike",
-            ["id"] = 1464
+            spell_id = 1464,
+            name = "Slam",
+            rank = "1",
+            icon = "ability_warrior_decisivestrike",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
     },
     [32] = {
         {
-            ["name"] = "Hamstring",
-            ["rank"] = 2,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/ability_shockwave",
-            ["id"] = 7372
+            spell_id = 7372,
+            name = "Hamstring",
+            rank = "2",
+            icon = "ability_shockwave",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
         {
-            ["name"] = "Heroic Strike",
-            ["rank"] = 5,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/ability_rogue_ambush",
-            ["id"] = 11564
+            spell_id = 11564,
+            name = "Heroic Strike",
+            rank = "5",
+            icon = "ability_rogue_ambush",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
         {
-            ["name"] = "Battle Shout",
-            ["rank"] = 4,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/ability_warrior_battleshout",
-            ["id"] = 11549
+            spell_id = 11549,
+            name = "Battle Shout",
+            rank = "4",
+            icon = "ability_warrior_battleshout",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
         {
-            ["name"] = "Berserker Rage",
-            ["rank"] = 1,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/spell_nature_ancestralguardian",
-            ["id"] = 18499
+            spell_id = 18499,
+            name = "Berserker Rage",
+            rank = "1",
+            icon = "spell_nature_ancestralguardian",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
         {
-            ["name"] = "Execute",
-            ["rank"] = 2,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/inv_sword_48",
-            ["id"] = 20658
+            spell_id = 20658,
+            name = "Execute",
+            rank = "2",
+            icon = "inv_sword_48",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
         {
-            ["name"] = "Shield Bash",
-            ["rank"] = 2,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/ability_warrior_shieldbash",
-            ["id"] = 1671
+            spell_id = 1671,
+            name = "Shield Bash",
+            rank = "2",
+            icon = "ability_warrior_shieldbash",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
     },
     [34] = {
         {
-            ["name"] = "Demoralizing Shout",
-            ["rank"] = 3,
-            ["cost"] = 16000,
-            ["texture"] = "Interface/ICONS/ability_warrior_warcry",
-            ["id"] = 11554
+            spell_id = 11554,
+            name = "Demoralizing Shout",
+            rank = "3",
+            icon = "ability_warrior_warcry",
+            source = {
+                type = "Trainer",
+                cost = 16000,
+            },
         },
         {
-            ["name"] = "Revenge",
-            ["rank"] = 3,
-            ["cost"] = 16000,
-            ["texture"] = "Interface/ICONS/ability_warrior_revenge",
-            ["id"] = 7379
+            spell_id = 7379,
+            name = "Revenge",
+            rank = "3",
+            icon = "ability_warrior_revenge",
+            source = {
+                type = "Trainer",
+                cost = 16000,
+            },
         },
         {
-            ["name"] = "Sunder Armor",
-            ["rank"] = 3,
-            ["cost"] = 16000,
-            ["texture"] = "Interface/ICONS/ability_warrior_sunder",
-            ["id"] = 8380
+            spell_id = 8380,
+            name = "Sunder Armor",
+            rank = "3",
+            icon = "ability_warrior_sunder",
+            source = {
+                type = "Trainer",
+                cost = 16000,
+            },
         },
     },
     [36] = {
         {
-            ["name"] = "Mocking Blow",
-            ["rank"] = 3,
-            ["cost"] = 18000,
-            ["texture"] = "Interface/ICONS/ability_warrior_punishingblow",
-            ["id"] = 7402
+            spell_id = 7402,
+            name = "Mocking Blow",
+            rank = "3",
+            icon = "ability_warrior_punishingblow",
+            source = {
+                type = "Trainer",
+                cost = 18000,
+            },
         },
         {
-            ["name"] = "Whirlwind",
-            ["rank"] = 1,
-            ["cost"] = 18000,
-            ["texture"] = "Interface/ICONS/ability_whirlwind",
-            ["id"] = 1680
+            spell_id = 1680,
+            name = "Whirlwind",
+            rank = "1",
+            icon = "ability_whirlwind",
+            source = {
+                type = "Trainer",
+                cost = 18000,
+            },
         },
     },
     [38] = {
         {
-            ["name"] = "Thunder Clap",
-            ["rank"] = 4,
-            ["cost"] = 20000,
-            ["texture"] = "Interface/ICONS/spell_nature_thunderclap",
-            ["id"] = 8205
+            spell_id = 8205,
+            name = "Thunder Clap",
+            rank = "4",
+            icon = "spell_nature_thunderclap",
+            source = {
+                type = "Trainer",
+                cost = 20000,
+            },
         },
         {
-            ["name"] = "Pummel",
-            ["rank"] = 1,
-            ["cost"] = 20000,
-            ["texture"] = "Interface/ICONS/inv_gauntlets_04",
-            ["id"] = 6552
+            spell_id = 6552,
+            name = "Pummel",
+            rank = "1",
+            icon = "inv_gauntlets_04",
+            source = {
+                type = "Trainer",
+                cost = 20000,
+            },
         },
         {
-            ["name"] = "Slam",
-            ["rank"] = 2,
-            ["cost"] = 20000,
-            ["texture"] = "Interface/ICONS/ability_warrior_decisivestrike",
-            ["id"] = 8820
+            spell_id = 8820,
+            name = "Slam",
+            rank = "2",
+            icon = "ability_warrior_decisivestrike",
+            source = {
+                type = "Trainer",
+                cost = 20000,
+            },
         },
     },
     [40] = {
         {
-            ["name"] = "Plate Mail",
-            ["rank"] = 1,
-            ["cost"] = 22000,
-            ["texture"] = "Interface/ICONS/inv_chest_plate01",
-            ["id"] = 750
+            spell_id = 750,
+            name = "Plate Mail",
+            rank = "1",
+            icon = "inv_chest_plate01",
+            source = {
+                type = "Trainer",
+                cost = 22000,
+            },
         },
         {
-            ["name"] = "Heroic Strike",
-            ["rank"] = 6,
-            ["cost"] = 22000,
-            ["texture"] = "Interface/ICONS/ability_rogue_ambush",
-            ["id"] = 11565
+            spell_id = 11565,
+            name = "Heroic Strike",
+            rank = "6",
+            icon = "ability_rogue_ambush",
+            source = {
+                type = "Trainer",
+                cost = 22000,
+            },
         },
         {
-            ["name"] = "Rend",
-            ["rank"] = 5,
-            ["cost"] = 22000,
-            ["texture"] = "Interface/ICONS/ability_gouge",
-            ["id"] = 11572
+            spell_id = 11572,
+            name = "Rend",
+            rank = "5",
+            icon = "ability_gouge",
+            source = {
+                type = "Trainer",
+                cost = 22000,
+            },
         },
         {
-            ["name"] = "Cleave",
-            ["rank"] = 3,
-            ["cost"] = 22000,
-            ["texture"] = "Interface/ICONS/ability_warrior_cleave",
-            ["id"] = 11608
+            spell_id = 11608,
+            name = "Cleave",
+            rank = "3",
+            icon = "ability_warrior_cleave",
+            source = {
+                type = "Trainer",
+                cost = 22000,
+            },
         },
         {
-            ["name"] = "Execute",
-            ["rank"] = 3,
-            ["cost"] = 22000,
-            ["texture"] = "Interface/ICONS/inv_sword_48",
-            ["id"] = 20660
+            spell_id = 20660,
+            name = "Execute",
+            rank = "3",
+            icon = "inv_sword_48",
+            source = {
+                type = "Trainer",
+                cost = 22000,
+            },
         },
     },
     [42] = {
         {
-            ["name"] = "Battle Shout",
-            ["rank"] = 5,
-            ["cost"] = 32000,
-            ["texture"] = "Interface/ICONS/ability_warrior_battleshout",
-            ["id"] = 11550
+            spell_id = 11550,
+            name = "Battle Shout",
+            rank = "5",
+            icon = "ability_warrior_battleshout",
+            source = {
+                type = "Trainer",
+                cost = 32000,
+            },
         },
         {
-            ["name"] = "Intercept",
-            ["rank"] = 2,
-            ["cost"] = 32000,
-            ["texture"] = "Interface/ICONS/ability_rogue_sprint",
-            ["id"] = 20616
+            spell_id = 20616,
+            name = "Intercept",
+            rank = "2",
+            icon = "ability_rogue_sprint",
+            source = {
+                type = "Trainer",
+                cost = 32000,
+            },
         },
     },
     [44] = {
         {
-            ["name"] = "Overpower",
-            ["rank"] = 3,
-            ["cost"] = 34000,
-            ["texture"] = "Interface/ICONS/ability_meleedamage",
-            ["id"] = 11584
+            spell_id = 11584,
+            name = "Overpower",
+            rank = "3",
+            icon = "ability_meleedamage",
+            source = {
+                type = "Trainer",
+                cost = 34000,
+            },
         },
         {
-            ["name"] = "Demoralizing Shout",
-            ["rank"] = 4,
-            ["cost"] = 34000,
-            ["texture"] = "Interface/ICONS/ability_warrior_warcry",
-            ["id"] = 11555
+            spell_id = 11555,
+            name = "Demoralizing Shout",
+            rank = "4",
+            icon = "ability_warrior_warcry",
+            source = {
+                type = "Trainer",
+                cost = 34000,
+            },
         },
         {
-            ["name"] = "Revenge",
-            ["rank"] = 4,
-            ["cost"] = 34000,
-            ["texture"] = "Interface/ICONS/ability_warrior_revenge",
-            ["id"] = 11600
+            spell_id = 11600,
+            name = "Revenge",
+            rank = "4",
+            icon = "ability_warrior_revenge",
+            source = {
+                type = "Trainer",
+                cost = 34000,
+            },
         },
     },
     [46] = {
         {
-            ["name"] = "Charge",
-            ["rank"] = 3,
-            ["cost"] = 36000,
-            ["texture"] = "Interface/ICONS/ability_warrior_charge",
-            ["id"] = 11578
+            spell_id = 11578,
+            name = "Charge",
+            rank = "3",
+            icon = "ability_warrior_charge",
+            source = {
+                type = "Trainer",
+                cost = 36000,
+            },
         },
         {
-            ["name"] = "Mocking Blow",
-            ["rank"] = 4,
-            ["cost"] = 36000,
-            ["texture"] = "Interface/ICONS/ability_warrior_punishingblow",
-            ["id"] = 20559
+            spell_id = 20559,
+            name = "Mocking Blow",
+            rank = "4",
+            icon = "ability_warrior_punishingblow",
+            source = {
+                type = "Trainer",
+                cost = 36000,
+            },
         },
         {
-            ["name"] = "Slam",
-            ["rank"] = 3,
-            ["cost"] = 36000,
-            ["texture"] = "Interface/ICONS/ability_warrior_decisivestrike",
-            ["id"] = 11604
+            spell_id = 11604,
+            name = "Slam",
+            rank = "3",
+            icon = "ability_warrior_decisivestrike",
+            source = {
+                type = "Trainer",
+                cost = 36000,
+            },
         },
         {
-            ["name"] = "Sunder Armor",
-            ["rank"] = 4,
-            ["cost"] = 36000,
-            ["texture"] = "Interface/ICONS/ability_warrior_sunder",
-            ["id"] = 11596
+            spell_id = 11596,
+            name = "Sunder Armor",
+            rank = "4",
+            icon = "ability_warrior_sunder",
+            source = {
+                type = "Trainer",
+                cost = 36000,
+            },
         },
     },
     [48] = {
         {
-            ["name"] = "Heroic Strike",
-            ["rank"] = 7,
-            ["cost"] = 40000,
-            ["texture"] = "Interface/ICONS/ability_rogue_ambush",
-            ["id"] = 11566
+            spell_id = 11566,
+            name = "Heroic Strike",
+            rank = "7",
+            icon = "ability_rogue_ambush",
+            source = {
+                type = "Trainer",
+                cost = 40000,
+            },
         },
         {
-            ["name"] = "Mortal Strike",
-            ["rank"] = 2,
-            ["cost"] = 200, -- Typo on pservers?
-            ["texture"] = "Interface/ICONS/ability_warrior_savageblow",
-            ["id"] = 21551,
-            ["talent"] = true
+            spell_id = 21551,
+            name = "Mortal Strike",
+            rank = "2",
+            icon = "ability_warrior_savageblow",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 200,
+            },
         },
         {
-            ["name"] = "Thunder Clap",
-            ["rank"] = 5,
-            ["cost"] = 40000,
-            ["texture"] = "Interface/ICONS/spell_nature_thunderclap",
-            ["id"] = 11580
+            spell_id = 11580,
+            name = "Thunder Clap",
+            rank = "5",
+            icon = "spell_nature_thunderclap",
+            source = {
+                type = "Trainer",
+                cost = 40000,
+            },
         },
         {
-            ["name"] = "Bloodthirst",
-            ["rank"] = 2,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/spell_nature_bloodlust",
-            ["id"] = 23892,
-            ["talent"] = true
+            spell_id = 23892,
+            name = "Bloodthirst",
+            rank = "2",
+            icon = "spell_nature_bloodlust",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
         {
-            ["name"] = "Execute",
-            ["rank"] = 4,
-            ["cost"] = 40000,
-            ["texture"] = "Interface/ICONS/inv_sword_48",
-            ["id"] = 20661
+            spell_id = 20661,
+            name = "Execute",
+            rank = "4",
+            icon = "inv_sword_48",
+            source = {
+                type = "Trainer",
+                cost = 40000,
+            },
         },
         {
-            ["name"] = "Shield Slam",
-            ["rank"] = 2,
-            ["cost"] = 200, -- Typo on pservers?
-            ["texture"] = "Interface/ICONS/inv_shield_05",
-            ["id"] = 23923,
-            ["talent"] = true
+            spell_id = 23923,
+            name = "Shield Slam",
+            rank = "2",
+            icon = "inv_shield_05",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 200,
+            },
         },
     },
     [50] = {
         {
-            ["name"] = "Rend",
-            ["rank"] = 6,
-            ["cost"] = 42000,
-            ["texture"] = "Interface/ICONS/ability_gouge",
-            ["id"] = 11573
+            spell_id = 11573,
+            name = "Rend",
+            rank = "6",
+            icon = "ability_gouge",
+            source = {
+                type = "Trainer",
+                cost = 42000,
+            },
         },
         {
-            ["name"] = "Cleave",
-            ["rank"] = 4,
-            ["cost"] = 42000,
-            ["texture"] = "Interface/ICONS/ability_warrior_cleave",
-            ["id"] = 11609
+            spell_id = 11609,
+            name = "Cleave",
+            rank = "4",
+            icon = "ability_warrior_cleave",
+            source = {
+                type = "Trainer",
+                cost = 42000,
+            },
         },
         {
-            ["name"] = "Recklessness",
-            ["rank"] = 1,
-            ["cost"] = 42000,
-            ["texture"] = "Interface/ICONS/ability_criticalstrike",
-            ["id"] = 1719
+            spell_id = 1719,
+            name = "Recklessness",
+            rank = "1",
+            icon = "ability_criticalstrike",
+            source = {
+                type = "Trainer",
+                cost = 42000,
+            },
         },
     },
     [52] = {
         {
-            ["name"] = "Battle Shout",
-            ["rank"] = 6,
-            ["cost"] = 54000,
-            ["texture"] = "Interface/ICONS/ability_warrior_battleshout",
-            ["id"] = 11551
+            spell_id = 11551,
+            name = "Battle Shout",
+            rank = "6",
+            icon = "ability_warrior_battleshout",
+            source = {
+                type = "Trainer",
+                cost = 54000,
+            },
         },
         {
-            ["name"] = "Intercept",
-            ["rank"] = 3,
-            ["cost"] = 54000,
-            ["texture"] = "Interface/ICONS/ability_rogue_sprint",
-            ["id"] = 20617
+            spell_id = 20617,
+            name = "Intercept",
+            rank = "3",
+            icon = "ability_rogue_sprint",
+            source = {
+                type = "Trainer",
+                cost = 54000,
+            },
         },
         {
-            ["name"] = "Shield Bash",
-            ["rank"] = 3,
-            ["cost"] = 54000,
-            ["texture"] = "Interface/ICONS/ability_warrior_shieldbash",
-            ["id"] = 1672
+            spell_id = 1672,
+            name = "Shield Bash",
+            rank = "3",
+            icon = "ability_warrior_shieldbash",
+            source = {
+                type = "Trainer",
+                cost = 54000,
+            },
         },
     },
     [54] = {
         {
-            ["name"] = "Hamstring",
-            ["rank"] = 3,
-            ["cost"] = 56000,
-            ["texture"] = "Interface/ICONS/ability_shockwave",
-            ["id"] = 7373
+            spell_id = 7373,
+            name = "Hamstring",
+            rank = "3",
+            icon = "ability_shockwave",
+            source = {
+                type = "Trainer",
+                cost = 56000,
+            },
         },
         {
-            ["name"] = "Mortal Strike",
-            ["rank"] = 3,
-            ["cost"] = 2800,
-            ["texture"] = "Interface/ICONS/ability_warrior_savageblow",
-            ["id"] = 21552,
-            ["talent"] = true
+            spell_id = 21552,
+            name = "Mortal Strike",
+            rank = "3",
+            icon = "ability_warrior_savageblow",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 2800,
+            },
         },
         {
-            ["name"] = "Bloodthirst",
-            ["rank"] = 3,
-            ["cost"] = 2800,
-            ["texture"] = "Interface/ICONS/spell_nature_bloodlust",
-            ["id"] = 23893,
-            ["talent"] = true
+            spell_id = 23893,
+            name = "Bloodthirst",
+            rank = "3",
+            icon = "spell_nature_bloodlust",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 2800,
+            },
         },
         {
-            ["name"] = "Demoralizing Shout",
-            ["rank"] = 5,
-            ["cost"] = 56000,
-            ["texture"] = "Interface/ICONS/ability_warrior_warcry",
-            ["id"] = 11556
+            spell_id = 11556,
+            name = "Demoralizing Shout",
+            rank = "5",
+            icon = "ability_warrior_warcry",
+            source = {
+                type = "Trainer",
+                cost = 56000,
+            },
         },
         {
-            ["name"] = "Slam",
-            ["rank"] = 4,
-            ["cost"] = 56000,
-            ["texture"] = "Interface/ICONS/ability_warrior_decisivestrike",
-            ["id"] = 11605
+            spell_id = 11605,
+            name = "Slam",
+            rank = "4",
+            icon = "ability_warrior_decisivestrike",
+            source = {
+                type = "Trainer",
+                cost = 56000,
+            },
         },
         {
-            ["name"] = "Revenge",
-            ["rank"] = 5,
-            ["cost"] = 56000,
-            ["texture"] = "Interface/ICONS/ability_warrior_revenge",
-            ["id"] = 11601
+            spell_id = 11601,
+            name = "Revenge",
+            rank = "5",
+            icon = "ability_warrior_revenge",
+            source = {
+                type = "Trainer",
+                cost = 56000,
+            },
         },
         {
-            ["name"] = "Shield Slam",
-            ["rank"] = 3,
-            ["cost"] = 2800,
-            ["texture"] = "Interface/ICONS/inv_shield_05",
-            ["id"] = 23924,
-            ["talent"] = true
+            spell_id = 23924,
+            name = "Shield Slam",
+            rank = "3",
+            icon = "inv_shield_05",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 2800,
+            },
         },
     },
     [56] = {
         {
-            ["name"] = "Heroic Strike",
-            ["rank"] = 8,
-            ["cost"] = 58000,
-            ["texture"] = "Interface/ICONS/ability_rogue_ambush",
-            ["id"] = 11567
+            spell_id = 11567,
+            name = "Heroic Strike",
+            rank = "8",
+            icon = "ability_rogue_ambush",
+            source = {
+                type = "Trainer",
+                cost = 58000,
+            },
         },
         {
-            ["name"] = "Mocking Blow",
-            ["rank"] = 5,
-            ["cost"] = 58000,
-            ["texture"] = "Interface/ICONS/ability_warrior_punishingblow",
-            ["id"] = 20560
+            spell_id = 20560,
+            name = "Mocking Blow",
+            rank = "5",
+            icon = "ability_warrior_punishingblow",
+            source = {
+                type = "Trainer",
+                cost = 58000,
+            },
         },
         {
-            ["name"] = "Execute",
-            ["rank"] = 5,
-            ["cost"] = 58000,
-            ["texture"] = "Interface/ICONS/inv_sword_48",
-            ["id"] = 20662
+            spell_id = 20662,
+            name = "Execute",
+            rank = "5",
+            icon = "inv_sword_48",
+            source = {
+                type = "Trainer",
+                cost = 58000,
+            },
         },
     },
     [58] = {
         {
-            ["name"] = "Thunder Clap",
-            ["rank"] = 6,
-            ["cost"] = 60000,
-            ["texture"] = "Interface/ICONS/spell_nature_thunderclap",
-            ["id"] = 11581
+            spell_id = 11581,
+            name = "Thunder Clap",
+            rank = "6",
+            icon = "spell_nature_thunderclap",
+            source = {
+                type = "Trainer",
+                cost = 60000,
+            },
         },
         {
-            ["name"] = "Pummel",
-            ["rank"] = 2,
-            ["cost"] = 60000,
-            ["texture"] = "Interface/ICONS/inv_gauntlets_04",
-            ["id"] = 6554
+            spell_id = 6554,
+            name = "Pummel",
+            rank = "2",
+            icon = "inv_gauntlets_04",
+            source = {
+                type = "Trainer",
+                cost = 60000,
+            },
         },
         {
-            ["name"] = "Sunder Armor",
-            ["rank"] = 5,
-            ["cost"] = 60000,
-            ["texture"] = "Interface/ICONS/ability_warrior_sunder",
-            ["id"] = 11597
+            spell_id = 11597,
+            name = "Sunder Armor",
+            rank = "5",
+            icon = "ability_warrior_sunder",
+            source = {
+                type = "Trainer",
+                cost = 60000,
+            },
         },
     },
     [60] = {
         {
-            ["name"] = "Mortal Strike",
-            ["rank"] = 4,
-            ["cost"] = 3100,
-            ["texture"] = "Interface/ICONS/ability_warrior_savageblow",
-            ["id"] = 21553,
-            ["talent"] = true
+            spell_id = 21553,
+            name = "Mortal Strike",
+            rank = "4",
+            icon = "ability_warrior_savageblow",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 3100,
+            },
         },
         {
-            ["name"] = "Overpower",
-            ["rank"] = 4,
-            ["cost"] = 62000,
-            ["texture"] = "Interface/ICONS/ability_meleedamage",
-            ["id"] = 11585
+            spell_id = 11585,
+            name = "Overpower",
+            rank = "4",
+            icon = "ability_meleedamage",
+            source = {
+                type = "Trainer",
+                cost = 62000,
+            },
         },
         {
-            ["name"] = "Rend",
-            ["rank"] = 7,
-            ["cost"] = 62000,
-            ["texture"] = "Interface/ICONS/ability_gouge",
-            ["id"] = 11574
+            spell_id = 11574,
+            name = "Rend",
+            rank = "7",
+            icon = "ability_gouge",
+            source = {
+                type = "Trainer",
+                cost = 62000,
+            },
         },
         {
-            ["name"] = "Bloodthirst",
-            ["rank"] = 4,
-            ["cost"] = 3100,
-            ["texture"] = "Interface/ICONS/spell_nature_bloodlust",
-            ["id"] = 23894,
-            ["talent"] = true
+            spell_id = 23894,
+            name = "Bloodthirst",
+            rank = "4",
+            icon = "spell_nature_bloodlust",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 3100,
+            },
         },
         {
-            ["name"] = "Cleave",
-            ["rank"] = 5,
-            ["cost"] = 62000,
-            ["texture"] = "Interface/ICONS/ability_warrior_cleave",
-            ["id"] = 20569
+            spell_id = 20569,
+            name = "Cleave",
+            rank = "5",
+            icon = "ability_warrior_cleave",
+            source = {
+                type = "Trainer",
+                cost = 62000,
+            },
         },
         {
-            ["name"] = "Shield Slam",
-            ["rank"] = 4,
-            ["cost"] = 3100,
-            ["texture"] = "Interface/ICONS/inv_shield_05",
-            ["id"] = 23925,
-            ["talent"] = true
+            spell_id = 23925,
+            name = "Shield Slam",
+            rank = "4",
+            icon = "inv_shield_05",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 3100,
+            },
+        },
+        {
+            spell_id = 25289,
+            name = "Battle Shout",
+            rank = 7,
+            icon = "ability_warrior_battleshout",
+            categories = { "Shout", },
+            source = {
+                type = "Item",
+                recipe_item_ids = { 21298 },
+                location = "Boss Drop, AQ20",
+            },
+            phase = 4,
+        },
+        {
+            spell_id = 25288,
+            name = "Revenge",
+            rank = 6,
+            icon = "ability_warrior_revenge",
+            source = {
+                type = "Item",
+                recipe_item_ids = { 21299 },
+                location = "Boss Drop, AQ20",
+            },
+            phase = 4,
+        },
+        {
+            spell_id = 25958,
+            name = "Heroic Strike",
+            rank = 9,
+            icon = "ability_rogue_ambush",
+            source = {
+                type = "Item",
+                recipe_item_ids = { 21297 },
+                location = "Boss Drop, AQ20",
+            },
+            phase = 4,
         },
     },
 }

@@ -1,1380 +1,1977 @@
 local _, TFG = ...
 
+-- ==========================================================================
+-- ABILITY TEMPLATE
+-- ==========================================================================
+--[[
+{
+    [1] = [
+        {
+            spell_id = 3561,
+            name = "Teleport: Stormwind",
+            rank = 1,
+            icon = "spell_arcane_teleportstormwind",
+            type = "Ability", -- Ability, Talent
+            categories = { "Teleport", },
+            group = nil,
+            faction = "Alliance", -- Horde, Alliance, empty for both
+            races = {},
+            source = {
+                type = "Trainer", -- Trainer, Item, Quest
+                cost = 2000,
+                recipe_item_ids = {},
+                quest_ids = {},
+                location = "Portal Trainers in major cities",
+            },
+            phase = 1,
+        }
+    ]
+}
+--]]
+
+-- ==========================================================================
+-- ABILITIES
+-- ==========================================================================
 TFG.DRUID_VANILLA = {
     [2] = {
         {
-            ["name"] = "Mark of the Wild",
-            ["rank"] = 1,
-            ["cost"] = 10,
-            ["texture"] = "Interface/ICONS/spell_nature_regeneration",
-            ["id"] = 1126
+            spell_id = 1126,
+            name = "Mark of the Wild",
+            rank = "1",
+            icon = "spell_nature_regeneration",
+            source = {
+                type = "Trainer",
+                cost = 10,
+            },
         },
     },
     [4] = {
         {
-            ["name"] = "Moonfire",
-            ["rank"] = 1,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/spell_nature_starfall",
-            ["id"] = 8921
+            spell_id = 8921,
+            name = "Moonfire",
+            rank = "1",
+            icon = "spell_nature_starfall",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
         {
-            ["name"] = "Rejuvenation",
-            ["rank"] = 1,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/spell_nature_rejuvenation",
-            ["id"] = 774
+            spell_id = 774,
+            name = "Rejuvenation",
+            rank = "1",
+            icon = "spell_nature_rejuvenation",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
     },
     [6] = {
         {
-            ["name"] = "Thorns",
-            ["rank"] = 1,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/spell_nature_thorns",
-            ["id"] = 467
+            spell_id = 467,
+            name = "Thorns",
+            rank = "1",
+            icon = "spell_nature_thorns",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
         {
-            ["name"] = "Wrath",
-            ["rank"] = 2,
-            ["cost"] = 100,
-            ["texture"] = "Interface/ICONS/spell_nature_abolishmagic",
-            ["id"] = 5177
+            spell_id = 5177,
+            name = "Wrath",
+            rank = "2",
+            icon = "spell_nature_abolishmagic",
+            source = {
+                type = "Trainer",
+                cost = 100,
+            },
         },
     },
     [8] = {
         {
-            ["name"] = "Entangling Roots",
-            ["rank"] = 1,
-            ["cost"] = 200,
-            ["texture"] = "Interface/ICONS/spell_nature_stranglevines",
-            ["id"] = 339
+            spell_id = 339,
+            name = "Entangling Roots",
+            rank = "1",
+            icon = "spell_nature_stranglevines",
+            source = {
+                type = "Trainer",
+                cost = 200,
+            },
         },
         {
-            ["name"] = "Healing Touch",
-            ["rank"] = 2,
-            ["cost"] = 200,
-            ["texture"] = "Interface/ICONS/spell_nature_healingtouch",
-            ["id"] = 5186
+            spell_id = 5186,
+            name = "Healing Touch",
+            rank = "2",
+            icon = "spell_nature_healingtouch",
+            source = {
+                type = "Trainer",
+                cost = 200,
+            },
         },
     },
     [10] = {
         {
-            ["name"] = "Moonfire",
-            ["rank"] = 2,
-            ["cost"] = 300,
-            ["texture"] = "Interface/ICONS/spell_nature_starfall",
-            ["id"] = 8924
+            spell_id = 8924,
+            name = "Moonfire",
+            rank = "2",
+            icon = "spell_nature_starfall",
+            source = {
+                type = "Trainer",
+                cost = 300,
+            },
         },
         {
-            ["name"] = "Teleport: Moonglade",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/spell_arcane_teleportmoonglade",
-            ["id"] = 18960
+            spell_id = 18960,
+            name = "Teleport: Moonglade",
+            rank = "1",
+            icon = "spell_arcane_teleportmoonglade",
         },
         {
-            ["name"] = "Bear Form",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/ability_racial_bearform",
-            ["id"] = 5487,
-            ["group"] = "bear_form",
+            spell_id = 5487,
+            name = "Bear Form",
+            rank = "1",
+            icon = "ability_racial_bearform",
+            group = "bear_form",
         },
         {
-            ["name"] = "Demoralizing Roar",
-            ["rank"] = 1,
-            ["cost"] = 300,
-            ["texture"] = "Interface/ICONS/ability_druid_demoralizingroar",
-            ["id"] = 99
+            spell_id = 99,
+            name = "Demoralizing Roar",
+            rank = "1",
+            icon = "ability_druid_demoralizingroar",
+            source = {
+                type = "Trainer",
+                cost = 300,
+            },
         },
         {
-            ["name"] = "Growl",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/ability_physical_taunt",
-            ["id"] = 6795
+            spell_id = 6795,
+            name = "Growl",
+            rank = "1",
+            icon = "ability_physical_taunt",
         },
         {
-            ["name"] = "Maul",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/ability_druid_maul",
-            ["id"] = 6807
+            spell_id = 6807,
+            name = "Maul",
+            rank = "1",
+            icon = "ability_druid_maul",
         },
         {
-            ["name"] = "Mark of the Wild",
-            ["rank"] = 2,
-            ["cost"] = 300,
-            ["texture"] = "Interface/ICONS/spell_nature_regeneration",
-            ["id"] = 5232
+            spell_id = 5232,
+            name = "Mark of the Wild",
+            rank = "2",
+            icon = "spell_nature_regeneration",
+            source = {
+                type = "Trainer",
+                cost = 300,
+            },
         },
         {
-            ["name"] = "Rejuvenation",
-            ["rank"] = 2,
-            ["cost"] = 300,
-            ["texture"] = "Interface/ICONS/spell_nature_rejuvenation",
-            ["id"] = 1058
+            spell_id = 1058,
+            name = "Rejuvenation",
+            rank = "2",
+            icon = "spell_nature_rejuvenation",
+            source = {
+                type = "Trainer",
+                cost = 300,
+            },
         },
     },
     [12] = {
         {
-            ["name"] = "Enrage",
-            ["rank"] = 1,
-            ["cost"] = 800,
-            ["texture"] = "Interface/ICONS/ability_druid_enrage",
-            ["id"] = 5229
+            spell_id = 5229,
+            name = "Enrage",
+            rank = "1",
+            icon = "ability_druid_enrage",
+            source = {
+                type = "Trainer",
+                cost = 800,
+            },
         },
         {
-            ["name"] = "Regrowth",
-            ["rank"] = 1,
-            ["cost"] = 800,
-            ["texture"] = "Interface/ICONS/spell_nature_resistnature",
-            ["id"] = 8936
+            spell_id = 8936,
+            name = "Regrowth",
+            rank = "1",
+            icon = "spell_nature_resistnature",
+            source = {
+                type = "Trainer",
+                cost = 800,
+            },
         },
     },
     [14] = {
         {
-            ["name"] = "Thorns",
-            ["rank"] = 2,
-            ["cost"] = 900,
-            ["texture"] = "Interface/ICONS/spell_nature_thorns",
-            ["id"] = 782
+            spell_id = 782,
+            name = "Thorns",
+            rank = "2",
+            icon = "spell_nature_thorns",
+            source = {
+                type = "Trainer",
+                cost = 900,
+            },
         },
         {
-            ["name"] = "Wrath",
-            ["rank"] = 3,
-            ["cost"] = 900,
-            ["texture"] = "Interface/ICONS/spell_nature_abolishmagic",
-            ["id"] = 5178
+            spell_id = 5178,
+            name = "Wrath",
+            rank = "3",
+            icon = "spell_nature_abolishmagic",
+            source = {
+                type = "Trainer",
+                cost = 900,
+            },
         },
         {
-            ["name"] = "Bash",
-            ["rank"] = 1,
-            ["cost"] = 900,
-            ["texture"] = "Interface/ICONS/ability_druid_bash",
-            ["id"] = 5211
+            spell_id = 5211,
+            name = "Bash",
+            rank = "1",
+            icon = "ability_druid_bash",
+            source = {
+                type = "Trainer",
+                cost = 900,
+            },
         },
         {
-            ["name"] = "Cure Poison",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/spell_nature_nullifypoison",
-            ["id"] = 8946
+            spell_id = 8946,
+            name = "Cure Poison",
+            rank = "1",
+            icon = "spell_nature_nullifypoison",
         },
         {
-            ["name"] = "Healing Touch",
-            ["rank"] = 3,
-            ["cost"] = 900,
-            ["texture"] = "Interface/ICONS/spell_nature_healingtouch",
-            ["id"] = 5187
+            spell_id = 5187,
+            name = "Healing Touch",
+            rank = "3",
+            icon = "spell_nature_healingtouch",
+            source = {
+                type = "Trainer",
+                cost = 900,
+            },
         },
     },
     [16] = {
         {
-            ["name"] = "Moonfire",
-            ["rank"] = 3,
-            ["cost"] = 1800,
-            ["texture"] = "Interface/ICONS/spell_nature_starfall",
-            ["id"] = 8925
+            spell_id = 8925,
+            name = "Moonfire",
+            rank = "3",
+            icon = "spell_nature_starfall",
+            source = {
+                type = "Trainer",
+                cost = 1800,
+            },
         },
         {
-            ["name"] = "Aquatic Form",
-            ["rank"] = 1,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/ability_druid_aquaticform",
-            ["id"] = 1066
+            spell_id = 1066,
+            name = "Aquatic Form",
+            rank = "1",
+            icon = "ability_druid_aquaticform",
         },
         {
-            ["name"] = "Swipe",
-            ["rank"] = 1,
-            ["cost"] = 1800,
-            ["texture"] = "Interface/ICONS/inv_misc_monsterclaw_03",
-            ["id"] = 779
+            spell_id = 779,
+            name = "Swipe",
+            rank = "1",
+            icon = "inv_misc_monsterclaw_03",
+            source = {
+                type = "Trainer",
+                cost = 1800,
+            },
         },
         {
-            ["name"] = "Rejuvenation",
-            ["rank"] = 3,
-            ["cost"] = 1800,
-            ["texture"] = "Interface/ICONS/spell_nature_rejuvenation",
-            ["id"] = 1430
+            spell_id = 1430,
+            name = "Rejuvenation",
+            rank = "3",
+            icon = "spell_nature_rejuvenation",
+            source = {
+                type = "Trainer",
+                cost = 1800,
+            },
         },
     },
     [18] = {
         {
-            ["name"] = "Entangling Roots",
-            ["rank"] = 2,
-            ["cost"] = 1900,
-            ["texture"] = "Interface/ICONS/spell_nature_stranglevines",
-            ["id"] = 1062
+            spell_id = 1062,
+            name = "Entangling Roots",
+            rank = "2",
+            icon = "spell_nature_stranglevines",
+            source = {
+                type = "Trainer",
+                cost = 1900,
+            },
         },
         {
-            ["name"] = "Faerie Fire",
-            ["rank"] = 1,
-            ["cost"] = 1900,
-            ["texture"] = "Interface/ICONS/spell_nature_faeriefire",
-            ["id"] = 770
+            spell_id = 770,
+            name = "Faerie Fire",
+            rank = "1",
+            icon = "spell_nature_faeriefire",
+            source = {
+                type = "Trainer",
+                cost = 1900,
+            },
         },
         {
-            ["name"] = "Hibernate",
-            ["rank"] = 1,
-            ["cost"] = 1900,
-            ["texture"] = "Interface/ICONS/spell_nature_sleep",
-            ["id"] = 2637
+            spell_id = 2637,
+            name = "Hibernate",
+            rank = "1",
+            icon = "spell_nature_sleep",
+            source = {
+                type = "Trainer",
+                cost = 1900,
+            },
         },
         {
-            ["name"] = "Nature's Grasp",
-            ["rank"] = 2,
-            ["cost"] = 95,
-            ["texture"] = "Interface/ICONS/spell_nature_natureswrath",
-            ["id"] = 16810,
-            ["talent"] = true
+            spell_id = 16810,
+            name = "Nature's Grasp",
+            rank = "2",
+            icon = "spell_nature_natureswrath",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 95,
+            },
         },
         {
-            ["name"] = "Maul",
-            ["rank"] = 2,
-            ["cost"] = 1900,
-            ["texture"] = "Interface/ICONS/ability_druid_maul",
-            ["id"] = 6808
+            spell_id = 6808,
+            name = "Maul",
+            rank = "2",
+            icon = "ability_druid_maul",
+            source = {
+                type = "Trainer",
+                cost = 1900,
+            },
         },
         {
-            ["name"] = "Regrowth",
-            ["rank"] = 2,
-            ["cost"] = 1900,
-            ["texture"] = "Interface/ICONS/spell_nature_resistnature",
-            ["id"] = 8938
+            spell_id = 8938,
+            name = "Regrowth",
+            rank = "2",
+            icon = "spell_nature_resistnature",
+            source = {
+                type = "Trainer",
+                cost = 1900,
+            },
         },
     },
     [20] = {
         {
-            ["name"] = "Starfire",
-            ["rank"] = 1,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/spell_arcane_starfire",
-            ["id"] = 2912
+            spell_id = 2912,
+            name = "Starfire",
+            rank = "1",
+            icon = "spell_arcane_starfire",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
         {
-            ["name"] = "Cat Form",
-            ["rank"] = 1,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/ability_druid_catform",
-            ["id"] = 768
+            spell_id = 768,
+            name = "Cat Form",
+            rank = "1",
+            icon = "ability_druid_catform",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
         {
-            ["name"] = "Claw",
-            ["rank"] = 1,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/ability_druid_rake",
-            ["id"] = 1082
+            spell_id = 1082,
+            name = "Claw",
+            rank = "1",
+            icon = "ability_druid_rake",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
         {
-            ["name"] = "Demoralizing Roar",
-            ["rank"] = 2,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/ability_druid_demoralizingroar",
-            ["id"] = 1735
+            spell_id = 1735,
+            name = "Demoralizing Roar",
+            rank = "2",
+            icon = "ability_druid_demoralizingroar",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
         {
-            ["name"] = "Prowl",
-            ["rank"] = 1,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/ability_ambush",
-            ["id"] = 5215
+            spell_id = 5215,
+            name = "Prowl",
+            rank = "1",
+            icon = "ability_ambush",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
         {
-            ["name"] = "Rip",
-            ["rank"] = 1,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/ability_ghoulfrenzy",
-            ["id"] = 1079
+            spell_id = 1079,
+            name = "Rip",
+            rank = "1",
+            icon = "ability_ghoulfrenzy",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
         {
-            ["name"] = "Healing Touch",
-            ["rank"] = 4,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/spell_nature_healingtouch",
-            ["id"] = 5188
+            spell_id = 5188,
+            name = "Healing Touch",
+            rank = "4",
+            icon = "spell_nature_healingtouch",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
         {
-            ["name"] = "Mark of the Wild",
-            ["rank"] = 3,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/spell_nature_regeneration",
-            ["id"] = 6756
+            spell_id = 6756,
+            name = "Mark of the Wild",
+            rank = "3",
+            icon = "spell_nature_regeneration",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
         {
-            ["name"] = "Rebirth",
-            ["rank"] = 1,
-            ["cost"] = 2000,
-            ["texture"] = "Interface/ICONS/spell_nature_reincarnation",
-            ["id"] = 20484
+            spell_id = 20484,
+            name = "Rebirth",
+            rank = "1",
+            icon = "spell_nature_reincarnation",
+            source = {
+                type = "Trainer",
+                cost = 2000,
+            },
         },
     },
     [22] = {
         {
-            ["name"] = "Moonfire",
-            ["rank"] = 4,
-            ["cost"] = 3000,
-            ["texture"] = "Interface/ICONS/spell_nature_starfall",
-            ["id"] = 8926
+            spell_id = 8926,
+            name = "Moonfire",
+            rank = "4",
+            icon = "spell_nature_starfall",
+            source = {
+                type = "Trainer",
+                cost = 3000,
+            },
         },
         {
-            ["name"] = "Soothe Animal",
-            ["rank"] = 1,
-            ["cost"] = 3000,
-            ["texture"] = "Interface/ICONS/ability_hunter_beastsoothe",
-            ["id"] = 2908
+            spell_id = 2908,
+            name = "Soothe Animal",
+            rank = "1",
+            icon = "ability_hunter_beastsoothe",
+            source = {
+                type = "Trainer",
+                cost = 3000,
+            },
         },
         {
-            ["name"] = "Wrath",
-            ["rank"] = 4,
-            ["cost"] = 3000,
-            ["texture"] = "Interface/ICONS/spell_nature_abolishmagic",
-            ["id"] = 5179
+            spell_id = 5179,
+            name = "Wrath",
+            rank = "4",
+            icon = "spell_nature_abolishmagic",
+            source = {
+                type = "Trainer",
+                cost = 3000,
+            },
         },
         {
-            ["name"] = "Shred",
-            ["rank"] = 1,
-            ["cost"] = 3000,
-            ["texture"] = "Interface/ICONS/spell_shadow_vampiricaura",
-            ["id"] = 5221
+            spell_id = 5221,
+            name = "Shred",
+            rank = "1",
+            icon = "spell_shadow_vampiricaura",
+            source = {
+                type = "Trainer",
+                cost = 3000,
+            },
         },
         {
-            ["name"] = "Rejuvenation",
-            ["rank"] = 4,
-            ["cost"] = 3000,
-            ["texture"] = "Interface/ICONS/spell_nature_rejuvenation",
-            ["id"] = 2090
+            spell_id = 2090,
+            name = "Rejuvenation",
+            rank = "4",
+            icon = "spell_nature_rejuvenation",
+            source = {
+                type = "Trainer",
+                cost = 3000,
+            },
         },
     },
     [24] = {
         {
-            ["name"] = "Thorns",
-            ["rank"] = 3,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/spell_nature_thorns",
-            ["id"] = 1075
+            spell_id = 1075,
+            name = "Thorns",
+            rank = "3",
+            icon = "spell_nature_thorns",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
         {
-            ["name"] = "Rake",
-            ["rank"] = 1,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/ability_druid_disembowel",
-            ["id"] = 1822
+            spell_id = 1822,
+            name = "Rake",
+            rank = "1",
+            icon = "ability_druid_disembowel",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
         {
-            ["name"] = "Swipe",
-            ["rank"] = 2,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/inv_misc_monsterclaw_03",
-            ["id"] = 780
+            spell_id = 780,
+            name = "Swipe",
+            rank = "2",
+            icon = "inv_misc_monsterclaw_03",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
         {
-            ["name"] = "Tiger's Fury",
-            ["rank"] = 1,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/ability_mount_jungletiger",
-            ["id"] = 5217
+            spell_id = 5217,
+            name = "Tiger's Fury",
+            rank = "1",
+            icon = "ability_mount_jungletiger",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
         {
-            ["name"] = "Regrowth",
-            ["rank"] = 3,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/spell_nature_resistnature",
-            ["id"] = 8939
+            spell_id = 8939,
+            name = "Regrowth",
+            rank = "3",
+            icon = "spell_nature_resistnature",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
         {
-            ["name"] = "Remove Curse",
-            ["rank"] = 1,
-            ["cost"] = 4000,
-            ["texture"] = "Interface/ICONS/spell_holy_removecurse",
-            ["id"] = 2782
+            spell_id = 2782,
+            name = "Remove Curse",
+            rank = "1",
+            icon = "spell_holy_removecurse",
+            source = {
+                type = "Trainer",
+                cost = 4000,
+            },
         },
     },
     [26] = {
         {
-            ["name"] = "Starfire",
-            ["rank"] = 2,
-            ["cost"] = 4500,
-            ["texture"] = "Interface/ICONS/spell_arcane_starfire",
-            ["id"] = 8949
+            spell_id = 8949,
+            name = "Starfire",
+            rank = "2",
+            icon = "spell_arcane_starfire",
+            source = {
+                type = "Trainer",
+                cost = 4500,
+            },
         },
         {
-            ["name"] = "Dash",
-            ["rank"] = 1,
-            ["cost"] = 4500,
-            ["texture"] = "Interface/ICONS/ability_druid_dash",
-            ["id"] = 1850
+            spell_id = 1850,
+            name = "Dash",
+            rank = "1",
+            icon = "ability_druid_dash",
+            source = {
+                type = "Trainer",
+                cost = 4500,
+            },
         },
         {
-            ["name"] = "Maul",
-            ["rank"] = 3,
-            ["cost"] = 4500,
-            ["texture"] = "Interface/ICONS/ability_druid_maul",
-            ["id"] = 6809
+            spell_id = 6809,
+            name = "Maul",
+            rank = "3",
+            icon = "ability_druid_maul",
+            source = {
+                type = "Trainer",
+                cost = 4500,
+            },
         },
         {
-            ["name"] = "Abolish Poison",
-            ["rank"] = 1,
-            ["cost"] = 4500,
-            ["texture"] = "Interface/ICONS/spell_nature_nullifypoison_02",
-            ["id"] = 2893
+            spell_id = 2893,
+            name = "Abolish Poison",
+            rank = "1",
+            icon = "spell_nature_nullifypoison_02",
+            source = {
+                type = "Trainer",
+                cost = 4500,
+            },
         },
         {
-            ["name"] = "Healing Touch",
-            ["rank"] = 5,
-            ["cost"] = 4500,
-            ["texture"] = "Interface/ICONS/spell_nature_healingtouch",
-            ["id"] = 5189
+            spell_id = 5189,
+            name = "Healing Touch",
+            rank = "5",
+            icon = "spell_nature_healingtouch",
+            source = {
+                type = "Trainer",
+                cost = 4500,
+            },
         },
     },
     [28] = {
         {
-            ["name"] = "Entangling Roots",
-            ["rank"] = 3,
-            ["cost"] = 5000,
-            ["texture"] = "Interface/ICONS/spell_nature_stranglevines",
-            ["id"] = 5195
+            spell_id = 5195,
+            name = "Entangling Roots",
+            rank = "3",
+            icon = "spell_nature_stranglevines",
+            source = {
+                type = "Trainer",
+                cost = 5000,
+            },
         },
         {
-            ["name"] = "Moonfire",
-            ["rank"] = 5,
-            ["cost"] = 5000,
-            ["texture"] = "Interface/ICONS/spell_nature_starfall",
-            ["id"] = 8927
+            spell_id = 8927,
+            name = "Moonfire",
+            rank = "5",
+            icon = "spell_nature_starfall",
+            source = {
+                type = "Trainer",
+                cost = 5000,
+            },
         },
         {
-            ["name"] = "Nature's Grasp",
-            ["rank"] = 3,
-            ["cost"] = 250,
-            ["texture"] = "Interface/ICONS/spell_nature_natureswrath",
-            ["id"] = 16811,
-            ["talent"] = true
+            spell_id = 16811,
+            name = "Nature's Grasp",
+            rank = "3",
+            icon = "spell_nature_natureswrath",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 250,
+            },
         },
         {
-            ["name"] = "Challenging Roar",
-            ["rank"] = 1,
-            ["cost"] = 5000,
-            ["texture"] = "Interface/ICONS/ability_druid_challangingroar",
-            ["id"] = 5209
+            spell_id = 5209,
+            name = "Challenging Roar",
+            rank = "1",
+            icon = "ability_druid_challangingroar",
+            source = {
+                type = "Trainer",
+                cost = 5000,
+            },
         },
         {
-            ["name"] = "Claw",
-            ["rank"] = 2,
-            ["cost"] = 5000,
-            ["texture"] = "Interface/ICONS/ability_druid_rake",
-            ["id"] = 3029
+            spell_id = 3029,
+            name = "Claw",
+            rank = "2",
+            icon = "ability_druid_rake",
+            source = {
+                type = "Trainer",
+                cost = 5000,
+            },
         },
         {
-            ["name"] = "Cower",
-            ["rank"] = 1,
-            ["cost"] = 5000,
-            ["texture"] = "Interface/ICONS/ability_druid_cower",
-            ["id"] = 8998
+            spell_id = 8998,
+            name = "Cower",
+            rank = "1",
+            icon = "ability_druid_cower",
+            source = {
+                type = "Trainer",
+                cost = 5000,
+            },
         },
         {
-            ["name"] = "Rip",
-            ["rank"] = 2,
-            ["cost"] = 5000,
-            ["texture"] = "Interface/ICONS/ability_ghoulfrenzy",
-            ["id"] = 9492
+            spell_id = 9492,
+            name = "Rip",
+            rank = "2",
+            icon = "ability_ghoulfrenzy",
+            source = {
+                type = "Trainer",
+                cost = 5000,
+            },
         },
         {
-            ["name"] = "Rejuvenation",
-            ["rank"] = 5,
-            ["cost"] = 5000,
-            ["texture"] = "Interface/ICONS/spell_nature_rejuvenation",
-            ["id"] = 2091
+            spell_id = 2091,
+            name = "Rejuvenation",
+            rank = "5",
+            icon = "spell_nature_rejuvenation",
+            source = {
+                type = "Trainer",
+                cost = 5000,
+            },
         },
     },
     [30] = {
         {
-            ["name"] = "Faerie Fire",
-            ["rank"] = 2,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/spell_nature_faeriefire",
-            ["id"] = 778
+            spell_id = 778,
+            name = "Faerie Fire",
+            rank = "2",
+            icon = "spell_nature_faeriefire",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
         {
-            ["name"] = "Wrath",
-            ["rank"] = 5,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/spell_nature_abolishmagic",
-            ["id"] = 5180
-        },    
-        {
-            ["name"] = "Bash",
-            ["rank"] = 2,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/ability_druid_bash",
-            ["id"] = 6798
+            spell_id = 5180,
+            name = "Wrath",
+            rank = "5",
+            icon = "spell_nature_abolishmagic",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
         {
-            ["name"] = "Faerie Fire (Feral)",
-            ["rank"] = 2,
-            ["cost"] = 300,
-            ["texture"] = "Interface/ICONS/spell_nature_faeriefire",
-            ["id"] = 17390,
-            ["talent"] = true
+            spell_id = 6798,
+            name = "Bash",
+            rank = "2",
+            icon = "ability_druid_bash",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
         {
-            ["name"] = "Shred",
-            ["rank"] = 2,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/spell_shadow_vampiricaura",
-            ["id"] = 6800
+            spell_id = 17390,
+            name = "Faerie Fire (Feral)",
+            rank = "2",
+            icon = "spell_nature_faeriefire",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 300,
+            },
         },
         {
-            ["name"] = "Travel Form",
-            ["rank"] = 1,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/ability_druid_travelform",
-            ["id"] = 783
+            spell_id = 6800,
+            name = "Shred",
+            rank = "2",
+            icon = "spell_shadow_vampiricaura",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
         {
-            ["name"] = "Insect Swarm",
-            ["rank"] = 2,
-            ["cost"] = 300,
-            ["texture"] = "Interface/ICONS/spell_nature_insectswarm",
-            ["id"] = 24974,
-            ["talent"] = true
+            spell_id = 783,
+            name = "Travel Form",
+            rank = "1",
+            icon = "ability_druid_travelform",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
         {
-            ["name"] = "Mark of the Wild",
-            ["rank"] = 4,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/spell_nature_regeneration",
-            ["id"] = 5234
+            spell_id = 24974,
+            name = "Insect Swarm",
+            rank = "2",
+            icon = "spell_nature_insectswarm",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 300,
+            },
         },
         {
-            ["name"] = "Rebirth",
-            ["rank"] = 2,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/spell_nature_reincarnation",
-            ["id"] = 20739
+            spell_id = 5234,
+            name = "Mark of the Wild",
+            rank = "4",
+            icon = "spell_nature_regeneration",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
         {
-            ["name"] = "Regrowth",
-            ["rank"] = 4,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/spell_nature_resistnature",
-            ["id"] = 8940
+            spell_id = 20739,
+            name = "Rebirth",
+            rank = "2",
+            icon = "spell_nature_reincarnation",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
         {
-            ["name"] = "Tranquility",
-            ["rank"] = 1,
-            ["cost"] = 6000,
-            ["texture"] = "Interface/ICONS/spell_nature_tranquility",
-            ["id"] = 740
+            spell_id = 8940,
+            name = "Regrowth",
+            rank = "4",
+            icon = "spell_nature_resistnature",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
+        },
+        {
+            spell_id = 740,
+            name = "Tranquility",
+            rank = "1",
+            icon = "spell_nature_tranquility",
+            source = {
+                type = "Trainer",
+                cost = 6000,
+            },
         },
     },
     [32] = {
         {
-            ["name"] = "Demoralizing Roar",
-            ["rank"] = 3,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/ability_druid_demoralizingroar",
-            ["id"] = 9490
+            spell_id = 9490,
+            name = "Demoralizing Roar",
+            rank = "3",
+            icon = "ability_druid_demoralizingroar",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
         {
-            ["name"] = "Ferocious Bite",
-            ["rank"] = 1,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/ability_druid_ferociousbite",
-            ["id"] = 22568
+            spell_id = 22568,
+            name = "Ferocious Bite",
+            rank = "1",
+            icon = "ability_druid_ferociousbite",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
         {
-            ["name"] = "Ravage",
-            ["rank"] = 1,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/ability_druid_ravage",
-            ["id"] = 6785
+            spell_id = 6785,
+            name = "Ravage",
+            rank = "1",
+            icon = "ability_druid_ravage",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
         {
-            ["name"] = "Track Humanoids",
-            ["rank"] = 1,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/ability_tracking",
-            ["id"] = 5225
+            spell_id = 5225,
+            name = "Track Humanoids",
+            rank = "1",
+            icon = "ability_tracking",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
         {
-            ["name"] = "Healing Touch",
-            ["rank"] = 6,
-            ["cost"] = 8000,
-            ["texture"] = "Interface/ICONS/spell_nature_healingtouch",
-            ["id"] = 6778
+            spell_id = 6778,
+            name = "Healing Touch",
+            rank = "6",
+            icon = "spell_nature_healingtouch",
+            source = {
+                type = "Trainer",
+                cost = 8000,
+            },
         },
     },
     [34] = {
         {
-            ["name"] = "Moonfire",
-            ["rank"] = 6,
-            ["cost"] = 10000,
-            ["texture"] = "Interface/ICONS/spell_nature_starfall",
-            ["id"] = 8928
+            spell_id = 8928,
+            name = "Moonfire",
+            rank = "6",
+            icon = "spell_nature_starfall",
+            source = {
+                type = "Trainer",
+                cost = 10000,
+            },
         },
         {
-            ["name"] = "Starfire",
-            ["rank"] = 3,
-            ["cost"] = 10000,
-            ["texture"] = "Interface/ICONS/spell_arcane_starfire",
-            ["id"] = 8950
+            spell_id = 8950,
+            name = "Starfire",
+            rank = "3",
+            icon = "spell_arcane_starfire",
+            source = {
+                type = "Trainer",
+                cost = 10000,
+            },
         },
         {
-            ["name"] = "Thorns",
-            ["rank"] = 4,
-            ["cost"] = 10000,
-            ["texture"] = "Interface/ICONS/spell_nature_thorns",
-            ["id"] = 8914
+            spell_id = 8914,
+            name = "Thorns",
+            rank = "4",
+            icon = "spell_nature_thorns",
+            source = {
+                type = "Trainer",
+                cost = 10000,
+            },
         },
         {
-            ["name"] = "Maul",
-            ["rank"] = 4,
-            ["cost"] = 10000,
-            ["texture"] = "Interface/ICONS/ability_druid_maul",
-            ["id"] = 8972
+            spell_id = 8972,
+            name = "Maul",
+            rank = "4",
+            icon = "ability_druid_maul",
+            source = {
+                type = "Trainer",
+                cost = 10000,
+            },
         },
         {
-            ["name"] = "Rake",
-            ["rank"] = 2,
-            ["cost"] = 10000,
-            ["texture"] = "Interface/ICONS/ability_druid_disembowel",
-            ["id"] = 1823
+            spell_id = 1823,
+            name = "Rake",
+            rank = "2",
+            icon = "ability_druid_disembowel",
+            source = {
+                type = "Trainer",
+                cost = 10000,
+            },
         },
         {
-            ["name"] = "Swipe",
-            ["rank"] = 3,
-            ["cost"] = 10000,
-            ["texture"] = "Interface/ICONS/inv_misc_monsterclaw_03",
-            ["id"] = 769
+            spell_id = 769,
+            name = "Swipe",
+            rank = "3",
+            icon = "inv_misc_monsterclaw_03",
+            source = {
+                type = "Trainer",
+                cost = 10000,
+            },
         },
         {
-            ["name"] = "Rejuvenation",
-            ["rank"] = 6,
-            ["cost"] = 10000,
-            ["texture"] = "Interface/ICONS/spell_nature_rejuvenation",
-            ["id"] = 3627
+            spell_id = 3627,
+            name = "Rejuvenation",
+            rank = "6",
+            icon = "spell_nature_rejuvenation",
+            source = {
+                type = "Trainer",
+                cost = 10000,
+            },
         },
     },
     [36] = {
         {
-            ["name"] = "Frenzied Regeneration",
-            ["rank"] = 1,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/ability_bullrush",
-            ["id"] = 22842
+            spell_id = 22842,
+            name = "Frenzied Regeneration",
+            rank = "1",
+            icon = "ability_bullrush",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
         {
-            ["name"] = "Pounce",
-            ["rank"] = 1,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/ability_druid_supriseattack",
-            ["id"] = 9005
+            spell_id = 9005,
+            name = "Pounce",
+            rank = "1",
+            icon = "ability_druid_supriseattack",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
         {
-            ["name"] = "Rip",
-            ["rank"] = 3,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/ability_ghoulfrenzy",
-            ["id"] = 9493
+            spell_id = 9493,
+            name = "Rip",
+            rank = "3",
+            icon = "ability_ghoulfrenzy",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
         {
-            ["name"] = "Tiger's Fury",
-            ["rank"] = 2,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/ability_mount_jungletiger",
-            ["id"] = 6793
+            spell_id = 6793,
+            name = "Tiger's Fury",
+            rank = "2",
+            icon = "ability_mount_jungletiger",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
         {
-            ["name"] = "Regrowth",
-            ["rank"] = 5,
-            ["cost"] = 11000,
-            ["texture"] = "Interface/ICONS/spell_nature_resistnature",
-            ["id"] = 8941
+            spell_id = 8941,
+            name = "Regrowth",
+            rank = "5",
+            icon = "spell_nature_resistnature",
+            source = {
+                type = "Trainer",
+                cost = 11000,
+            },
         },
     },
     [38] = {
         {
-            ["name"] = "Entangling Roots",
-            ["rank"] = 4,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/spell_nature_stranglevines",
-            ["id"] = 5196
+            spell_id = 5196,
+            name = "Entangling Roots",
+            rank = "4",
+            icon = "spell_nature_stranglevines",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
         {
-            ["name"] = "Hibernate",
-            ["rank"] = 2,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/spell_nature_sleep",
-            ["id"] = 18657
+            spell_id = 18657,
+            name = "Hibernate",
+            rank = "2",
+            icon = "spell_nature_sleep",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
         {
-            ["name"] = "Nature's Grasp",
-            ["rank"] = 4,
-            ["cost"] = 600,
-            ["texture"] = "Interface/ICONS/spell_nature_natureswrath",
-            ["id"] = 16812,
-            ["talent"] = true
+            spell_id = 16812,
+            name = "Nature's Grasp",
+            rank = "4",
+            icon = "spell_nature_natureswrath",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 600,
+            },
         },
         {
-            ["name"] = "Soothe Animal",
-            ["rank"] = 2,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/ability_hunter_beastsoothe",
-            ["id"] = 8955
+            spell_id = 8955,
+            name = "Soothe Animal",
+            rank = "2",
+            icon = "ability_hunter_beastsoothe",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
         {
-            ["name"] = "Wrath",
-            ["rank"] = 6,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/spell_nature_abolishmagic",
-            ["id"] = 6780
+            spell_id = 6780,
+            name = "Wrath",
+            rank = "6",
+            icon = "spell_nature_abolishmagic",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
         {
-            ["name"] = "Claw",
-            ["rank"] = 3,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/ability_druid_rake",
-            ["id"] = 5201
+            spell_id = 5201,
+            name = "Claw",
+            rank = "3",
+            icon = "ability_druid_rake",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
         {
-            ["name"] = "Shred",
-            ["rank"] = 3,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/spell_shadow_vampiricaura",
-            ["id"] = 8992
+            spell_id = 8992,
+            name = "Shred",
+            rank = "3",
+            icon = "spell_shadow_vampiricaura",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
         {
-            ["name"] = "Healing Touch",
-            ["rank"] = 7,
-            ["cost"] = 12000,
-            ["texture"] = "Interface/ICONS/spell_nature_healingtouch",
-            ["id"] = 8903
+            spell_id = 8903,
+            name = "Healing Touch",
+            rank = "7",
+            icon = "spell_nature_healingtouch",
+            source = {
+                type = "Trainer",
+                cost = 12000,
+            },
         },
     },
     [40] = {
         {
-            ["name"] = "Hurricane",
-            ["rank"] = 1,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/spell_nature_cyclone",
-            ["id"] = 16914
+            spell_id = 16914,
+            name = "Hurricane",
+            rank = "1",
+            icon = "spell_nature_cyclone",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
         {
-            ["name"] = "Moonfire",
-            ["rank"] = 7,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/spell_nature_starfall",
-            ["id"] = 8929
-        }, 
-        {
-            ["name"] = "Cower",
-            ["rank"] = 2,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/ability_druid_cower",
-            ["id"] = 9000
+            spell_id = 8929,
+            name = "Moonfire",
+            rank = "7",
+            icon = "spell_nature_starfall",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
         {
-            ["name"] = "Dire Bear Form",
-            ["rank"] = 1,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/ability_racial_bearform",
-            ["id"] = 9634,
-            ["group"] = "bear_form",
+            spell_id = 9000,
+            name = "Cower",
+            rank = "2",
+            icon = "ability_druid_cower",
         },
         {
-            ["name"] = "Feline Grace",
-            ["rank"] = 1,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/inv_feather_01",
-            ["id"] = 20719
+            spell_id = 9634,
+            name = "Dire Bear Form",
+            rank = "1",
+            icon = "ability_racial_bearform",
+            group = "bear_form",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
         {
-            ["name"] = "Ferocious Bite",
-            ["rank"] = 2,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/ability_druid_ferociousbite",
-            ["id"] = 22827
+            spell_id = 20719,
+            name = "Feline Grace",
+            rank = "1",
+            icon = "inv_feather_01",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
         {
-            ["name"] = "Prowl",
-            ["rank"] = 2,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/ability_ambush",
-            ["id"] = 6783
+            spell_id = 22827,
+            name = "Ferocious Bite",
+            rank = "2",
+            icon = "ability_druid_ferociousbite",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
         {
-            ["name"] = "Innervate",
-            ["rank"] = 1,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/spell_nature_lightning",
-            ["id"] = 29166
+            spell_id = 6783,
+            name = "Prowl",
+            rank = "2",
+            icon = "ability_ambush",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
         {
-            ["name"] = "Insect Swarm",
-            ["rank"] = 3,
-            ["cost"] = 700,
-            ["texture"] = "Interface/ICONS/spell_nature_insectswarm",
-            ["id"] = 24975,
-            ["talent"] = true
+            spell_id = 29166,
+            name = "Innervate",
+            rank = "1",
+            icon = "spell_nature_lightning",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
         {
-            ["name"] = "Mark of the Wild",
-            ["rank"] = 5,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/spell_nature_regeneration",
-            ["id"] = 8907
+            spell_id = 24975,
+            name = "Insect Swarm",
+            rank = "3",
+            icon = "spell_nature_insectswarm",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 700,
+            },
         },
         {
-            ["name"] = "Rebirth",
-            ["rank"] = 3,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/spell_nature_reincarnation",
-            ["id"] = 20742
+            spell_id = 8907,
+            name = "Mark of the Wild",
+            rank = "5",
+            icon = "spell_nature_regeneration",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
         {
-            ["name"] = "Rejuvenation",
-            ["rank"] = 7,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/spell_nature_rejuvenation",
-            ["id"] = 8910
+            spell_id = 20742,
+            name = "Rebirth",
+            rank = "3",
+            icon = "spell_nature_reincarnation",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
         {
-            ["name"] = "Tranquility",
-            ["rank"] = 2,
-            ["cost"] = 14000,
-            ["texture"] = "Interface/ICONS/spell_nature_tranquility",
-            ["id"] = 8918
+            spell_id = 8910,
+            name = "Rejuvenation",
+            rank = "7",
+            icon = "spell_nature_rejuvenation",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
+        },
+        {
+            spell_id = 8918,
+            name = "Tranquility",
+            rank = "2",
+            icon = "spell_nature_tranquility",
+            source = {
+                type = "Trainer",
+                cost = 14000,
+            },
         },
     },
     [42] = {
         {
-            ["name"] = "Faerie Fire",
-            ["rank"] = 3,
-            ["cost"] = 16000,
-            ["texture"] = "Interface/ICONS/spell_nature_faeriefire",
-            ["id"] = 9749
+            spell_id = 9749,
+            name = "Faerie Fire",
+            rank = "3",
+            icon = "spell_nature_faeriefire",
+            source = {
+                type = "Trainer",
+                cost = 16000,
+            },
         },
         {
-            ["name"] = "Starfire",
-            ["rank"] = 4,
-            ["cost"] = 16000,
-            ["texture"] = "Interface/ICONS/spell_arcane_starfire",
-            ["id"] = 8951
+            spell_id = 8951,
+            name = "Starfire",
+            rank = "4",
+            icon = "spell_arcane_starfire",
+            source = {
+                type = "Trainer",
+                cost = 16000,
+            },
         },
         {
-            ["name"] = "Demoralizing Roar",
-            ["rank"] = 4,
-            ["cost"] = 16000,
-            ["texture"] = "Interface/ICONS/ability_druid_demoralizingroar",
-            ["id"] = 9747
+            spell_id = 9747,
+            name = "Demoralizing Roar",
+            rank = "4",
+            icon = "ability_druid_demoralizingroar",
+            source = {
+                type = "Trainer",
+                cost = 16000,
+            },
         },
         {
-            ["name"] = "Faerie Fire (Feral)",
-            ["rank"] = 3,
-            ["cost"] = 800,
-            ["texture"] = "Interface/ICONS/spell_nature_faeriefire",
-            ["id"] = 17391,
-            ["talent"] = true
+            spell_id = 17391,
+            name = "Faerie Fire (Feral)",
+            rank = "3",
+            icon = "spell_nature_faeriefire",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 800,
+            },
         },
         {
-            ["name"] = "Maul",
-            ["rank"] = 5,
-            ["cost"] = 16000,
-            ["texture"] = "Interface/ICONS/ability_druid_maul",
-            ["id"] = 9745
+            spell_id = 9745,
+            name = "Maul",
+            rank = "5",
+            icon = "ability_druid_maul",
+            source = {
+                type = "Trainer",
+                cost = 16000,
+            },
         },
         {
-            ["name"] = "Ravage",
-            ["rank"] = 2,
-            ["cost"] = 16000,
-            ["texture"] = "Interface/ICONS/ability_druid_ravage",
-            ["id"] = 6787
+            spell_id = 6787,
+            name = "Ravage",
+            rank = "2",
+            icon = "ability_druid_ravage",
+            source = {
+                type = "Trainer",
+                cost = 16000,
+            },
         },
         {
-            ["name"] = "Regrowth",
-            ["rank"] = 6,
-            ["cost"] = 16000,
-            ["texture"] = "Interface/ICONS/spell_nature_resistnature",
-            ["id"] = 9750
+            spell_id = 9750,
+            name = "Regrowth",
+            rank = "6",
+            icon = "spell_nature_resistnature",
+            source = {
+                type = "Trainer",
+                cost = 16000,
+            },
         },
     },
     [44] = {
         {
-            ["name"] = "Barkskin",
-            ["rank"] = 1,
-            ["cost"] = 18000,
-            ["texture"] = "Interface/ICONS/spell_nature_stoneclawtotem",
-            ["id"] = 22812
+            spell_id = 22812,
+            name = "Barkskin",
+            rank = "1",
+            icon = "spell_nature_stoneclawtotem",
+            source = {
+                type = "Trainer",
+                cost = 18000,
+            },
         },
         {
-            ["name"] = "Thorns",
-            ["rank"] = 5,
-            ["cost"] = 18000,
-            ["texture"] = "Interface/ICONS/spell_nature_thorns",
-            ["id"] = 9756
+            spell_id = 9756,
+            name = "Thorns",
+            rank = "5",
+            icon = "spell_nature_thorns",
+            source = {
+                type = "Trainer",
+                cost = 18000,
+            },
         },
         {
-            ["name"] = "Rake",
-            ["rank"] = 3,
-            ["cost"] = 18000,
-            ["texture"] = "Interface/ICONS/ability_druid_disembowel",
-            ["id"] = 1824
+            spell_id = 1824,
+            name = "Rake",
+            rank = "3",
+            icon = "ability_druid_disembowel",
+            source = {
+                type = "Trainer",
+                cost = 18000,
+            },
         },
         {
-            ["name"] = "Rip",
-            ["rank"] = 4,
-            ["cost"] = 18000,
-            ["texture"] = "Interface/ICONS/ability_ghoulfrenzy",
-            ["id"] = 9752
+            spell_id = 9752,
+            name = "Rip",
+            rank = "4",
+            icon = "ability_ghoulfrenzy",
+            source = {
+                type = "Trainer",
+                cost = 18000,
+            },
         },
         {
-            ["name"] = "Swipe",
-            ["rank"] = 4,
-            ["cost"] = 18000,
-            ["texture"] = "Interface/ICONS/inv_misc_monsterclaw_03",
-            ["id"] = 9754
+            spell_id = 9754,
+            name = "Swipe",
+            rank = "4",
+            icon = "inv_misc_monsterclaw_03",
+            source = {
+                type = "Trainer",
+                cost = 18000,
+            },
         },
         {
-            ["name"] = "Healing Touch",
-            ["rank"] = 8,
-            ["cost"] = 18000,
-            ["texture"] = "Interface/ICONS/spell_nature_healingtouch",
-            ["id"] = 9758
+            spell_id = 9758,
+            name = "Healing Touch",
+            rank = "8",
+            icon = "spell_nature_healingtouch",
+            source = {
+                type = "Trainer",
+                cost = 18000,
+            },
         },
     },
     [46] = {
         {
-            ["name"] = "Moonfire",
-            ["rank"] = 8,
-            ["cost"] = 20000,
-            ["texture"] = "Interface/ICONS/spell_nature_starfall",
-            ["id"] = 9833
+            spell_id = 9833,
+            name = "Moonfire",
+            rank = "8",
+            icon = "spell_nature_starfall",
+            source = {
+                type = "Trainer",
+                cost = 20000,
+            },
         },
         {
-            ["name"] = "Wrath",
-            ["rank"] = 7,
-            ["cost"] = 20000,
-            ["texture"] = "Interface/ICONS/spell_nature_abolishmagic",
-            ["id"] = 8905
-        },  
-        {
-            ["name"] = "Bash",
-            ["rank"] = 3,
-            ["cost"] = 20000,
-            ["texture"] = "Interface/ICONS/ability_druid_bash",
-            ["id"] = 8983
+            spell_id = 8905,
+            name = "Wrath",
+            rank = "7",
+            icon = "spell_nature_abolishmagic",
+            source = {
+                type = "Trainer",
+                cost = 20000,
+            },
         },
         {
-            ["name"] = "Dash",
-            ["rank"] = 2,
-            ["cost"] = 20000,
-            ["texture"] = "Interface/ICONS/ability_druid_dash",
-            ["id"] = 9821
+            spell_id = 8983,
+            name = "Bash",
+            rank = "3",
+            icon = "ability_druid_bash",
+            source = {
+                type = "Trainer",
+                cost = 20000,
+            },
         },
         {
-            ["name"] = "Frenzied Regeneration",
-            ["rank"] = 2,
-            ["cost"] = 20000,
-            ["texture"] = "Interface/ICONS/ability_bullrush",
-            ["id"] = 22895
+            spell_id = 9821,
+            name = "Dash",
+            rank = "2",
+            icon = "ability_druid_dash",
+            source = {
+                type = "Trainer",
+                cost = 20000,
+            },
         },
         {
-            ["name"] = "Pounce",
-            ["rank"] = 2,
-            ["cost"] = 20000,
-            ["texture"] = "Interface/ICONS/ability_druid_supriseattack",
-            ["id"] = 9823
+            spell_id = 22895,
+            name = "Frenzied Regeneration",
+            rank = "2",
+            icon = "ability_bullrush",
+            source = {
+                type = "Trainer",
+                cost = 20000,
+            },
         },
         {
-            ["name"] = "Shred",
-            ["rank"] = 4,
-            ["cost"] = 20000,
-            ["texture"] = "Interface/ICONS/spell_shadow_vampiricaura",
-            ["id"] = 9829
+            spell_id = 9823,
+            name = "Pounce",
+            rank = "2",
+            icon = "ability_druid_supriseattack",
+            source = {
+                type = "Trainer",
+                cost = 20000,
+            },
         },
         {
-            ["name"] = "Rejuvenation",
-            ["rank"] = 8,
-            ["cost"] = 20000,
-            ["texture"] = "Interface/ICONS/spell_nature_rejuvenation",
-            ["id"] = 9839
+            spell_id = 9829,
+            name = "Shred",
+            rank = "4",
+            icon = "spell_shadow_vampiricaura",
+            source = {
+                type = "Trainer",
+                cost = 20000,
+            },
+        },
+        {
+            spell_id = 9839,
+            name = "Rejuvenation",
+            rank = "8",
+            icon = "spell_nature_rejuvenation",
+            source = {
+                type = "Trainer",
+                cost = 20000,
+            },
         },
     },
     [48] = {
         {
-            ["name"] = "Entangling Roots",
-            ["rank"] = 5,
-            ["cost"] = 22000,
-            ["texture"] = "Interface/ICONS/spell_nature_stranglevines",
-            ["id"] = 9852
+            spell_id = 9852,
+            name = "Entangling Roots",
+            rank = "5",
+            icon = "spell_nature_stranglevines",
+            source = {
+                type = "Trainer",
+                cost = 22000,
+            },
         },
         {
-            ["name"] = "Nature's Grasp",
-            ["rank"] = 5,
-            ["cost"] = 1100,
-            ["texture"] = "Interface/ICONS/spell_nature_natureswrath",
-            ["id"] = 16813,
-            ["talent"] = true
+            spell_id = 16813,
+            name = "Nature's Grasp",
+            rank = "5",
+            icon = "spell_nature_natureswrath",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 1100,
+            },
         },
         {
-            ["name"] = "Claw",
-            ["rank"] = 4,
-            ["cost"] = 22000,
-            ["texture"] = "Interface/ICONS/ability_druid_rake",
-            ["id"] = 9849
+            spell_id = 9849,
+            name = "Claw",
+            rank = "4",
+            icon = "ability_druid_rake",
+            source = {
+                type = "Trainer",
+                cost = 22000,
+            },
         },
         {
-            ["name"] = "Ferocious Bite",
-            ["rank"] = 3,
-            ["cost"] = 22000,
-            ["texture"] = "Interface/ICONS/ability_druid_ferociousbite",
-            ["id"] = 22828
+            spell_id = 22828,
+            name = "Ferocious Bite",
+            rank = "3",
+            icon = "ability_druid_ferociousbite",
+            source = {
+                type = "Trainer",
+                cost = 22000,
+            },
         },
         {
-            ["name"] = "Tiger's Fury",
-            ["rank"] = 3,
-            ["cost"] = 22000,
-            ["texture"] = "Interface/ICONS/ability_mount_jungletiger",
-            ["id"] = 9845
+            spell_id = 9845,
+            name = "Tiger's Fury",
+            rank = "3",
+            icon = "ability_mount_jungletiger",
+            source = {
+                type = "Trainer",
+                cost = 22000,
+            },
         },
         {
-            ["name"] = "Regrowth",
-            ["rank"] = 7,
-            ["cost"] = 22000,
-            ["texture"] = "Interface/ICONS/spell_nature_resistnature",
-            ["id"] = 9856
+            spell_id = 9856,
+            name = "Regrowth",
+            rank = "7",
+            icon = "spell_nature_resistnature",
+            source = {
+                type = "Trainer",
+                cost = 22000,
+            },
         },
     },
     [50] = {
         {
-            ["name"] = "Hurricane",
-            ["rank"] = 2,
-            ["cost"] = 23000,
-            ["texture"] = "Interface/ICONS/spell_nature_cyclone",
-            ["id"] = 17401
+            spell_id = 17401,
+            name = "Hurricane",
+            rank = "2",
+            icon = "spell_nature_cyclone",
+            source = {
+                type = "Trainer",
+                cost = 23000,
+            },
         },
         {
-            ["name"] = "Starfire",
-            ["rank"] = 5,
-            ["cost"] = 23000,
-            ["texture"] = "Interface/ICONS/spell_arcane_starfire",
-            ["id"] = 9875
+            spell_id = 9875,
+            name = "Starfire",
+            rank = "5",
+            icon = "spell_arcane_starfire",
+            source = {
+                type = "Trainer",
+                cost = 23000,
+            },
         },
         {
-            ["name"] = "Maul",
-            ["rank"] = 6,
-            ["cost"] = 23000,
-            ["texture"] = "Interface/ICONS/ability_druid_maul",
-            ["id"] = 9880
+            spell_id = 9880,
+            name = "Maul",
+            rank = "6",
+            icon = "ability_druid_maul",
+            source = {
+                type = "Trainer",
+                cost = 23000,
+            },
         },
         {
-            ["name"] = "Ravage",
-            ["rank"] = 3,
-            ["cost"] = 23000,
-            ["texture"] = "Interface/ICONS/ability_druid_ravage",
-            ["id"] = 9866
+            spell_id = 9866,
+            name = "Ravage",
+            rank = "3",
+            icon = "ability_druid_ravage",
+            source = {
+                type = "Trainer",
+                cost = 23000,
+            },
         },
         {
-            ["name"] = "Healing Touch",
-            ["rank"] = 9,
-            ["cost"] = 23000,
-            ["texture"] = "Interface/ICONS/spell_nature_healingtouch",
-            ["id"] = 9888
+            spell_id = 9888,
+            name = "Healing Touch",
+            rank = "9",
+            icon = "spell_nature_healingtouch",
+            source = {
+                type = "Trainer",
+                cost = 23000,
+            },
         },
         {
-            ["name"] = "Insect Swarm",
-            ["rank"] = 4,
-            ["cost"] = 1150,
-            ["texture"] = "Interface/ICONS/spell_nature_insectswarm",
-            ["id"] = 24976,
-            ["talent"] = true
+            spell_id = 24976,
+            name = "Insect Swarm",
+            rank = "4",
+            icon = "spell_nature_insectswarm",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 1150,
+            },
         },
         {
-            ["name"] = "Mark of the Wild",
-            ["rank"] = 6,
-            ["cost"] = 23000,
-            ["texture"] = "Interface/ICONS/spell_nature_regeneration",
-            ["id"] = 9884
+            spell_id = 9884,
+            name = "Mark of the Wild",
+            rank = "6",
+            icon = "spell_nature_regeneration",
+            source = {
+                type = "Trainer",
+                cost = 23000,
+            },
         },
         {
-            ["name"] = "Rebirth",
-            ["rank"] = 4,
-            ["cost"] = 23000,
-            ["texture"] = "Interface/ICONS/spell_nature_reincarnation",
-            ["id"] = 20747
+            spell_id = 20747,
+            name = "Rebirth",
+            rank = "4",
+            icon = "spell_nature_reincarnation",
+            source = {
+                type = "Trainer",
+                cost = 23000,
+            },
         },
         {
-            ["name"] = "Tranquility",
-            ["rank"] = 3,
-            ["cost"] = 23000,
-            ["texture"] = "Interface/ICONS/spell_nature_tranquility",
-            ["id"] = 9862
+            spell_id = 9862,
+            name = "Tranquility",
+            rank = "3",
+            icon = "spell_nature_tranquility",
+            source = {
+                type = "Trainer",
+                cost = 23000,
+            },
         },
     },
     [52] = {
         {
-            ["name"] = "Moonfire",
-            ["rank"] = 9,
-            ["cost"] = 26000,
-            ["texture"] = "Interface/ICONS/spell_nature_starfall",
-            ["id"] = 9834
+            spell_id = 9834,
+            name = "Moonfire",
+            rank = "9",
+            icon = "spell_nature_starfall",
+            source = {
+                type = "Trainer",
+                cost = 26000,
+            },
         },
         {
-            ["name"] = "Cower",
-            ["rank"] = 3,
-            ["cost"] = 26000,
-            ["texture"] = "Interface/ICONS/ability_druid_cower",
-            ["id"] = 9892
+            spell_id = 9892,
+            name = "Cower",
+            rank = "3",
+            icon = "ability_druid_cower",
+            source = {
+                type = "Trainer",
+                cost = 26000,
+            },
         },
         {
-            ["name"] = "Demoralizing Roar",
-            ["rank"] = 5,
-            ["cost"] = 26000,
-            ["texture"] = "Interface/ICONS/ability_druid_demoralizingroar",
-            ["id"] = 9898
+            spell_id = 9898,
+            name = "Demoralizing Roar",
+            rank = "5",
+            icon = "ability_druid_demoralizingroar",
+            source = {
+                type = "Trainer",
+                cost = 26000,
+            },
         },
         {
-            ["name"] = "Rip",
-            ["rank"] = 5,
-            ["cost"] = 26000,
-            ["texture"] = "Interface/ICONS/ability_ghoulfrenzy",
-            ["id"] = 9894
+            spell_id = 9894,
+            name = "Rip",
+            rank = "5",
+            icon = "ability_ghoulfrenzy",
+            source = {
+                type = "Trainer",
+                cost = 26000,
+            },
         },
         {
-            ["name"] = "Rejuvenation",
-            ["rank"] = 9,
-            ["cost"] = 26000,
-            ["texture"] = "Interface/ICONS/spell_nature_rejuvenation",
-            ["id"] = 9840
+            spell_id = 9840,
+            name = "Rejuvenation",
+            rank = "9",
+            icon = "spell_nature_rejuvenation",
+            source = {
+                type = "Trainer",
+                cost = 26000,
+            },
         },
     },
     [54] = {
         {
-            ["name"] = "Faerie Fire",
-            ["rank"] = 4,
-            ["cost"] = 28000,
-            ["texture"] = "Interface/ICONS/spell_nature_faeriefire",
-            ["id"] = 9907
+            spell_id = 9907,
+            name = "Faerie Fire",
+            rank = "4",
+            icon = "spell_nature_faeriefire",
+            source = {
+                type = "Trainer",
+                cost = 28000,
+            },
         },
         {
-            ["name"] = "Soothe Animal",
-            ["rank"] = 3,
-            ["cost"] = 28000,
-            ["texture"] = "Interface/ICONS/ability_hunter_beastsoothe",
-            ["id"] = 9901
+            spell_id = 9901,
+            name = "Soothe Animal",
+            rank = "3",
+            icon = "ability_hunter_beastsoothe",
+            source = {
+                type = "Trainer",
+                cost = 28000,
+            },
         },
         {
-            ["name"] = "Thorns",
-            ["rank"] = 6,
-            ["cost"] = 28000,
-            ["texture"] = "Interface/ICONS/spell_nature_thorns",
-            ["id"] = 9910
+            spell_id = 9910,
+            name = "Thorns",
+            rank = "6",
+            icon = "spell_nature_thorns",
+            source = {
+                type = "Trainer",
+                cost = 28000,
+            },
         },
         {
-            ["name"] = "Wrath",
-            ["rank"] = 8,
-            ["cost"] = 28000,
-            ["texture"] = "Interface/ICONS/spell_nature_abolishmagic",
-            ["id"] = 9912
+            spell_id = 9912,
+            name = "Wrath",
+            rank = "8",
+            icon = "spell_nature_abolishmagic",
+            source = {
+                type = "Trainer",
+                cost = 28000,
+            },
         },
         {
-            ["name"] = "Faerie Fire (Feral)",
-            ["rank"] = 4,
-            ["cost"] = 1400,
-            ["texture"] = "Interface/ICONS/spell_nature_faeriefire",
-            ["id"] = 17392,
-            ["talent"] = true
+            spell_id = 17392,
+            name = "Faerie Fire (Feral)",
+            rank = "4",
+            icon = "spell_nature_faeriefire",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 1400,
+            },
         },
         {
-            ["name"] = "Rake",
-            ["rank"] = 4,
-            ["cost"] = 28000,
-            ["texture"] = "Interface/ICONS/ability_druid_disembowel",
-            ["id"] = 9904
+            spell_id = 9904,
+            name = "Rake",
+            rank = "4",
+            icon = "ability_druid_disembowel",
+            source = {
+                type = "Trainer",
+                cost = 28000,
+            },
         },
         {
-            ["name"] = "Shred",
-            ["rank"] = 5,
-            ["cost"] = 28000,
-            ["texture"] = "Interface/ICONS/spell_shadow_vampiricaura",
-            ["id"] = 9830
+            spell_id = 9830,
+            name = "Shred",
+            rank = "5",
+            icon = "spell_shadow_vampiricaura",
+            source = {
+                type = "Trainer",
+                cost = 28000,
+            },
         },
         {
-            ["name"] = "Swipe",
-            ["rank"] = 5,
-            ["cost"] = 28000,
-            ["texture"] = "Interface/ICONS/inv_misc_monsterclaw_03",
-            ["id"] = 9908
+            spell_id = 9908,
+            name = "Swipe",
+            rank = "5",
+            icon = "inv_misc_monsterclaw_03",
+            source = {
+                type = "Trainer",
+                cost = 28000,
+            },
         },
         {
-            ["name"] = "Regrowth",
-            ["rank"] = 8,
-            ["cost"] = 28000,
-            ["texture"] = "Interface/ICONS/spell_nature_resistnature",
-            ["id"] = 9857
+            spell_id = 9857,
+            name = "Regrowth",
+            rank = "8",
+            icon = "spell_nature_resistnature",
+            source = {
+                type = "Trainer",
+                cost = 28000,
+            },
         },
     },
     [56] = {
         {
-            ["name"] = "Ferocious Bite",
-            ["rank"] = 4,
-            ["cost"] = 30000,
-            ["texture"] = "Interface/ICONS/ability_druid_ferociousbite",
-            ["id"] = 22829
+            spell_id = 22829,
+            name = "Ferocious Bite",
+            rank = "4",
+            icon = "ability_druid_ferociousbite",
+            source = {
+                type = "Trainer",
+                cost = 30000,
+            },
         },
         {
-            ["name"] = "Frenzied Regeneration",
-            ["rank"] = 3,
-            ["cost"] = 30000,
-            ["texture"] = "Interface/ICONS/ability_bullrush",
-            ["id"] = 22896
+            spell_id = 22896,
+            name = "Frenzied Regeneration",
+            rank = "3",
+            icon = "ability_bullrush",
+            source = {
+                type = "Trainer",
+                cost = 30000,
+            },
         },
         {
-            ["name"] = "Pounce",
-            ["rank"] = 3,
-            ["cost"] = 30000,
-            ["texture"] = "Interface/ICONS/ability_druid_supriseattack",
-            ["id"] = 9827
+            spell_id = 9827,
+            name = "Pounce",
+            rank = "3",
+            icon = "ability_druid_supriseattack",
+            source = {
+                type = "Trainer",
+                cost = 30000,
+            },
         },
         {
-            ["name"] = "Healing Touch",
-            ["rank"] = 10,
-            ["cost"] = 30000,
-            ["texture"] = "Interface/ICONS/spell_nature_healingtouch",
-            ["id"] = 9889
+            spell_id = 9889,
+            name = "Healing Touch",
+            rank = "10",
+            icon = "spell_nature_healingtouch",
+            source = {
+                type = "Trainer",
+                cost = 30000,
+            },
         },
     },
     [58] = {
         {
-            ["name"] = "Entangling Roots",
-            ["rank"] = 6,
-            ["cost"] = 32000,
-            ["texture"] = "Interface/ICONS/spell_nature_stranglevines",
-            ["id"] = 9853
+            spell_id = 9853,
+            name = "Entangling Roots",
+            rank = "6",
+            icon = "spell_nature_stranglevines",
+            source = {
+                type = "Trainer",
+                cost = 32000,
+            },
         },
         {
-            ["name"] = "Hibernate",
-            ["rank"] = 3,
-            ["cost"] = 32000,
-            ["texture"] = "Interface/ICONS/spell_nature_sleep",
-            ["id"] = 18658
+            spell_id = 18658,
+            name = "Hibernate",
+            rank = "3",
+            icon = "spell_nature_sleep",
+            source = {
+                type = "Trainer",
+                cost = 32000,
+            },
         },
         {
-            ["name"] = "Moonfire",
-            ["rank"] = 10,
-            ["cost"] = 32000,
-            ["texture"] = "Interface/ICONS/spell_nature_starfall",
-            ["id"] = 9835
+            spell_id = 9835,
+            name = "Moonfire",
+            rank = "10",
+            icon = "spell_nature_starfall",
+            source = {
+                type = "Trainer",
+                cost = 32000,
+            },
         },
         {
-            ["name"] = "Nature's Grasp",
-            ["rank"] = 6,
-            ["cost"] = 1600,
-            ["texture"] = "Interface/ICONS/spell_nature_natureswrath",
-            ["id"] = 17329,
-            ["talent"] = true
+            spell_id = 17329,
+            name = "Nature's Grasp",
+            rank = "6",
+            icon = "spell_nature_natureswrath",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 1600,
+            },
         },
         {
-            ["name"] = "Starfire",
-            ["rank"] = 6,
-            ["cost"] = 32000,
-            ["texture"] = "Interface/ICONS/spell_arcane_starfire",
-            ["id"] = 9876
+            spell_id = 9876,
+            name = "Starfire",
+            rank = "6",
+            icon = "spell_arcane_starfire",
+            source = {
+                type = "Trainer",
+                cost = 32000,
+            },
         },
         {
-            ["name"] = "Claw",
-            ["rank"] = 5,
-            ["cost"] = 32000,
-            ["texture"] = "Interface/ICONS/ability_druid_rake",
-            ["id"] = 9850
+            spell_id = 9850,
+            name = "Claw",
+            rank = "5",
+            icon = "ability_druid_rake",
+            source = {
+                type = "Trainer",
+                cost = 32000,
+            },
         },
         {
-            ["name"] = "Maul",
-            ["rank"] = 7,
-            ["cost"] = 32000,
-            ["texture"] = "Interface/ICONS/ability_druid_maul",
-            ["id"] = 9881
+            spell_id = 9881,
+            name = "Maul",
+            rank = "7",
+            icon = "ability_druid_maul",
+            source = {
+                type = "Trainer",
+                cost = 32000,
+            },
         },
         {
-            ["name"] = "Ravage",
-            ["rank"] = 4,
-            ["cost"] = 32000,
-            ["texture"] = "Interface/ICONS/ability_druid_ravage",
-            ["id"] = 9867
+            spell_id = 9867,
+            name = "Ravage",
+            rank = "4",
+            icon = "ability_druid_ravage",
+            source = {
+                type = "Trainer",
+                cost = 32000,
+            },
         },
         {
-            ["name"] = "Rejuvenation",
-            ["rank"] = 10,
-            ["cost"] = 32000,
-            ["texture"] = "Interface/ICONS/spell_nature_rejuvenation",
-            ["id"] = 9841
+            spell_id = 9841,
+            name = "Rejuvenation",
+            rank = "10",
+            icon = "spell_nature_rejuvenation",
+            source = {
+                type = "Trainer",
+                cost = 32000,
+            },
         },
     },
     [60] = {
         {
-            ["name"] = "Hurricane",
-            ["rank"] = 3,
-            ["cost"] = 34000,
-            ["texture"] = "Interface/ICONS/spell_nature_cyclone",
-            ["id"] = 17402
+            spell_id = 17402,
+            name = "Hurricane",
+            rank = "3",
+            icon = "spell_nature_cyclone",
+            source = {
+                type = "Trainer",
+                cost = 34000,
+            },
         },
         {
-            ["name"] = "Prowl",
-            ["rank"] = 3,
-            ["cost"] = 34000,
-            ["texture"] = "Interface/ICONS/ability_ambush",
-            ["id"] = 9913
+            spell_id = 9913,
+            name = "Prowl",
+            rank = "3",
+            icon = "ability_ambush",
+            source = {
+                type = "Trainer",
+                cost = 34000,
+            },
         },
         {
-            ["name"] = "Rip",
-            ["rank"] = 6,
-            ["cost"] = 34000,
-            ["texture"] = "Interface/ICONS/ability_ghoulfrenzy",
-            ["id"] = 9896
+            spell_id = 9896,
+            name = "Rip",
+            rank = "6",
+            icon = "ability_ghoulfrenzy",
+            source = {
+                type = "Trainer",
+                cost = 34000,
+            },
         },
         {
-            ["name"] = "Tiger's Fury",
-            ["rank"] = 4,
-            ["cost"] = 34000,
-            ["texture"] = "Interface/ICONS/ability_mount_jungletiger",
-            ["id"] = 9846
+            spell_id = 9846,
+            name = "Tiger's Fury",
+            rank = "4",
+            icon = "ability_mount_jungletiger",
+            source = {
+                type = "Trainer",
+                cost = 34000,
+            },
         },
         {
-            ["name"] = "Insect Swarm",
-            ["rank"] = 5,
-            ["cost"] = 1700,
-            ["texture"] = "Interface/ICONS/spell_nature_insectswarm",
-            ["id"] = 24977,
-            ["talent"] = true
+            spell_id = 24977,
+            name = "Insect Swarm",
+            rank = "5",
+            icon = "spell_nature_insectswarm",
+            type = "Talent",
+            source = {
+                type = "Trainer",
+                cost = 1700,
+            },
         },
         {
-            ["name"] = "Mark of the Wild",
-            ["rank"] = 7,
-            ["cost"] = 34000,
-            ["texture"] = "Interface/ICONS/spell_nature_regeneration",
-            ["id"] = 9885
+            spell_id = 9885,
+            name = "Mark of the Wild",
+            rank = "7",
+            icon = "spell_nature_regeneration",
+            source = {
+                type = "Trainer",
+                cost = 34000,
+            },
         },
         {
-            ["name"] = "Rebirth",
-            ["rank"] = 5,
-            ["cost"] = 34000,
-            ["texture"] = "Interface/ICONS/spell_nature_reincarnation",
-            ["id"] = 20748
+            spell_id = 20748,
+            name = "Rebirth",
+            rank = "5",
+            icon = "spell_nature_reincarnation",
+            source = {
+                type = "Trainer",
+                cost = 34000,
+            },
         },
         {
-            ["name"] = "Regrowth",
-            ["rank"] = 9,
-            ["cost"] = 34000,
-            ["texture"] = "Interface/ICONS/spell_nature_resistnature",
-            ["id"] = 9858
+            spell_id = 9858,
+            name = "Regrowth",
+            rank = "9",
+            icon = "spell_nature_resistnature",
+            source = {
+                type = "Trainer",
+                cost = 34000,
+            },
         },
         {
-            ["name"] = "Tranquility",
-            ["rank"] = 4,
-            ["cost"] = 0,
-            ["texture"] = "Interface/ICONS/spell_nature_tranquility",
-            ["id"] = 9863
+            spell_id = 9863,
+            name = "Tranquility",
+            rank = "4",
+            icon = "spell_nature_tranquility",
+        },
+        {
+            spell_id = 25297,
+            name = "Healing Touch",
+            rank = 11,
+            icon = "spell_nature_healingtouch",
+            categories = { "Resto", },
+            source = {
+                type = "Item",
+                recipe_item_ids = { 21294 },
+                location = "Boss Drop, AQ20",
+            },
+            phase = 4,
+        },
+        {
+            spell_id = 25299,
+            name = "Rejuvenation",
+            rank = 11,
+            icon = "spell_nature_rejuvenation",
+            categories = { "Resto", },
+            source = {
+                type = "Item",
+                recipe_item_ids = { 21296 },
+                location = "Boss Drop, AQ20",
+            },
+            phase = 4,
+        },
+        {
+            spell_id = 25298,
+            name = "Starfire",
+            rank = 7,
+            icon = "spell_arcane_starfire",
+            categories = { "Balance", },
+            source = {
+                type = "Item",
+                recipe_item_ids = { 21295 },
+                location = "Boss Drop, AQ20",
+            },
+            phase = 4,
         },
     },
 }

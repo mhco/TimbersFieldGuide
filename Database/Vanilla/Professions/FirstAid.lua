@@ -1,21 +1,10 @@
 local _, TFG = ...
 
-TFG.FIRSTAID_TBC = {
+TFG.FIRSTAID_VANILLA = {
     [1] = {
-        {
-            spell_id = 3273,
-            name = "First Aid",
-            categories = { "Profession Training" },
-            icon = "spell_holy_sealofsacrifice",
-            source = {
-                type = "Trainer",
-                cost = 100,
-            },
-        },
         {
             spell_id = 3275,
             name = "Linen Bandage",
-            categories = { "Bandages" },
             icon = "inv_misc_bandage_15",
             source = {
                 type = "Trainer",
@@ -26,12 +15,35 @@ TFG.FIRSTAID_TBC = {
             },
             levels = { 1, 30, 45, 60 },
         },
+        {
+            spell_id = 3273,
+            name = "First Aid",
+            icon = "spell_holy_sealofsacrifice",
+            source = {
+                type = "Trainer",
+            },
+        },
+        {
+            spell_id = 10846,
+            name = "First Aid",
+            icon = "spell_holy_sealofsacrifice",
+            source = {
+                type = "Trainer",
+            },
+        },
+        {
+            spell_id = 7924,
+            name = "First Aid",
+            icon = "spell_holy_sealofsacrifice",
+            source = {
+                type = "Trainer",
+            },
+        },
     },
     [40] = {
         {
             spell_id = 3276,
             name = "Heavy Linen Bandage",
-            categories = { "Bandages" },
             icon = "inv_misc_bandage_18",
             source = {
                 type = "Trainer",
@@ -48,34 +60,16 @@ TFG.FIRSTAID_TBC = {
         {
             spell_id = 3274,
             name = "First Aid",
-            categories = { "Profession Training" },
             icon = "spell_holy_sealofsacrifice",
             source = {
                 type = "Trainer",
-                cost = 500,
             },
         },
     },
     [80] = {
         {
-            spell_id = 3277,
-            name = "Wool Bandage",
-            categories = { "Bandages" },
-            icon = "inv_misc_bandage_14",
-            source = {
-                type = "Trainer",
-                cost = 250,
-            },
-            product = { item_id = 3530, qty = 1 },
-            materials = {
-                { item_id = 2592, qty = 1 },
-            },
-            levels = { 80, 80, 115, 150 },
-        },
-        {
             spell_id = 7934,
             name = "Anti-Venom",
-            categories = { "Anti-Venoms" },
             icon = "inv_misc_slime_01",
             source = {
                 type = "Trainer",
@@ -87,12 +81,25 @@ TFG.FIRSTAID_TBC = {
             },
             levels = { 80, 80, 115, 150 },
         },
+        {
+            spell_id = 3277,
+            name = "Wool Bandage",
+            icon = "inv_misc_bandage_14",
+            source = {
+                type = "Trainer",
+                cost = 250,
+            },
+            product = { item_id = 3530, qty = 1 },
+            materials = {
+                { item_id = 2592, qty = 1 },
+            },
+            levels = { 80, 80, 115, 150 },
+        },
     },
     [115] = {
         {
             spell_id = 3278,
             name = "Heavy Wool Bandage",
-            categories = { "Bandages" },
             icon = "inv_misc_bandage_17",
             source = {
                 type = "Trainer",
@@ -105,29 +112,14 @@ TFG.FIRSTAID_TBC = {
             levels = { 115, 115, 150, 185 },
         },
     },
-    [125] = {
-        {
-            spell_id = 7924,
-            name = "First Aid",
-            categories = { "Profession Training" },
-            icon = "spell_holy_sealofsacrifice",
-            source = {
-                type = "Item",
-                recipe_item_ids = { 16084 },
-                cost = 10000,
-            },
-        },
-    },
     [130] = {
         {
             spell_id = 7935,
             name = "Strong Anti-Venom",
-            categories = { "Anti-Venoms" },
             icon = "inv_misc_slime_01",
             source = {
                 type = "Item",
                 recipe_item_ids = { 6454 },
-                location = "World Drop",
             },
             product = { item_id = 6453, qty = 3 },
             materials = {
@@ -140,7 +132,6 @@ TFG.FIRSTAID_TBC = {
         {
             spell_id = 7928,
             name = "Silk Bandage",
-            categories = { "Bandages" },
             icon = "inv_misc_bandage_01",
             source = {
                 type = "Trainer",
@@ -157,7 +148,6 @@ TFG.FIRSTAID_TBC = {
         {
             spell_id = 7929,
             name = "Heavy Silk Bandage",
-            categories = { "Bandages" },
             icon = "inv_misc_bandage_02",
             source = {
                 type = "Item",
@@ -174,7 +164,6 @@ TFG.FIRSTAID_TBC = {
         {
             spell_id = 10840,
             name = "Mageweave Bandage",
-            categories = { "Bandages" },
             icon = "inv_misc_bandage_19",
             source = {
                 type = "Item",
@@ -187,22 +176,10 @@ TFG.FIRSTAID_TBC = {
             levels = { 210, 210, 240, 270 },
         },
     },
-    [225] = {
-        {
-            spell_id = 10846,
-            name = "First Aid",
-            categories = { "Profession Training" },
-            icon = "spell_holy_sealofsacrifice",
-            source = {
-                type = "Trainer",
-            },
-        },
-    },
     [240] = {
         {
             spell_id = 10841,
             name = "Heavy Mageweave Bandage",
-            categories = { "Bandages" },
             icon = "inv_misc_bandage_20",
             source = {
                 type = "Trainer",
@@ -218,7 +195,6 @@ TFG.FIRSTAID_TBC = {
         {
             spell_id = 18629,
             name = "Runecloth Bandage",
-            categories = { "Bandages" },
             icon = "inv_misc_bandage_11",
             source = {
                 type = "Trainer",
@@ -234,7 +210,6 @@ TFG.FIRSTAID_TBC = {
         {
             spell_id = 18630,
             name = "Heavy Runecloth Bandage",
-            categories = { "Bandages" },
             icon = "inv_misc_bandage_12",
             source = {
                 type = "Trainer",
@@ -248,67 +223,18 @@ TFG.FIRSTAID_TBC = {
     },
     [300] = {
         {
-            spell_id = 27028,
-            name = "First Aid",
-            categories = { "Profession Training" },
-            icon = "spell_holy_sealofsacrifice",
-            source = {
-                type = "Item",
-                recipe_item_ids = { 21990 },
-                cost = 50000,
-            },
-        },
-        {
             spell_id = 23787,
             name = "Powerful Anti-Venom",
-            categories = { "Anti-Venoms" },
             icon = "inv_drink_14",
             source = {
                 type = "Item",
                 recipe_item_ids = { 19442 },
-                location = "Argent Dawn - Honored",
             },
             product = { item_id = 19440, qty = 1 },
             materials = {
                 { item_id = 19441, qty = 1 },
             },
             levels = { 300, 300, 330, 360 },
-        },
-    },
-    [330] = {
-        {
-            spell_id = 27032,
-            name = "Netherweave Bandage",
-            categories = { "Bandages" },
-            icon = "inv_misc_bandage_netherweave",
-            source = {
-                type = "Item",
-                recipe_item_ids = { 21992 },
-                location = "Aresella, Falcon Watch, Hellfire Peninsula",
-            },
-            product = { item_id = 21990, qty = 1 },
-            materials = {
-                { item_id = 21877, qty = 1 },
-            },
-            levels = { 330, 330, 360, 390 },
-        },
-    },
-    [360] = {
-        {
-            spell_id = 27033,
-            name = "Heavy Netherweave Bandage",
-            categories = { "Bandages" },
-            icon = "inv_misc_bandage_netherweave_heavy",
-            source = {
-                type = "Item",
-                recipe_item_ids = { 21993 },
-                location = "Aresella, Falcon Watch, Hellfire Peninsula",
-            },
-            product = { item_id = 21991, qty = 1 },
-            materials = {
-                { item_id = 21877, qty = 2 },
-            },
-            levels = { 360, 360, 385, 410 },
         },
     },
 }

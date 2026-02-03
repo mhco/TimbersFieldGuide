@@ -16,7 +16,45 @@ UIDropDownMenu_SetWidth(expansionDropdown, 80)
 expansionDropdown:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -30, -8)
 
 local function OnClickExpansion(self)
-    TFG.selectedExpansion = self.value
+    local newExpansion = self.value
+    local selectedFile = TFG.selectedFile
+
+    -- Map child items by name when switching expansions (not by index)
+    -- This ensures "Weapon Skills" stays selected even if it's at different indices
+    local parentKey, childIndex = string.match(selectedFile or "", "^(.+)::(%d+)$")
+    if parentKey and childIndex then
+        -- Get the child name from the OLD expansion
+        local oldExpansionData = TFG.DATABASE_FILES[TFG.selectedExpansion:upper()]
+        if oldExpansionData and oldExpansionData.files then
+            local oldParent = oldExpansionData.files.classes[parentKey] or oldExpansionData.files.skills[parentKey]
+            if oldParent and oldParent.children then
+                local idx = tonumber(childIndex)
+                local childName = nil
+                if oldParent.children[idx] and oldParent.children[idx].name then
+                    childName = oldParent.children[idx].name
+                end
+
+                -- Find the equivalent child name in the NEW expansion
+                if childName then
+                    local newExpansionData = TFG.DATABASE_FILES[newExpansion:upper()]
+                    if newExpansionData and newExpansionData.files then
+                        local newParent = newExpansionData.files.classes[parentKey] or newExpansionData.files.skills[parentKey]
+                        if newParent and newParent.children then
+                            for newIdx, child in ipairs(newParent.children) do
+                                if child.name == childName then
+                                    selectedFile = parentKey .. "::" .. tostring(newIdx)
+                                    break
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+
+    TFG.selectedExpansion = newExpansion
+    TFG.selectedFile = selectedFile
     UIDropDownMenu_SetSelectedID(expansionDropdown, self:GetID())
     if TFG.professionPopup and TFG.professionPopup:IsShown() then
         TFG.professionPopup:Hide()
