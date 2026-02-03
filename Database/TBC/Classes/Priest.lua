@@ -2252,6 +2252,7 @@ TFG.PRIEST_TBC = {
             name = "Prayer of Spirit",
             rank = "1",
             icon = "spell_holy_prayerofspirit",
+            type = "Talent",
             source = {
                 type = "Trainer",
                 cost = 2300,
@@ -2768,9 +2769,10 @@ TFG.PRIEST_TBC = {
             name = "Prayer of Spirit",
             rank = "2",
             icon = "spell_holy_prayerofspirit",
+            type = "Talent",
             source = {
                 type = "Trainer",
-                cost = 3400,
+                cost = 2300,
             },
         },
         {
