@@ -1473,6 +1473,12 @@ resizeButton:SetScript("OnMouseUp", function(_, button)
         if w<700 then w=700 end
         if h<500 then h=500 end
         frame:SetSize(w,h)
+        if frame.ClampToScreen then
+            frame:ClampToScreen()
+        end
+        if frame.SavePosition then
+            frame:SavePosition()
+        end
         frame:Relayout()
     end
 end)

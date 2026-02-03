@@ -27,6 +27,24 @@ SlashCmdList["TFG"] = function(msg)
         return
     end
 
+    local cmd = input:lower()
+    if cmd == "reset" or cmd == "resetpos" or cmd == "resetposition" then
+        local ok, err = pcall(function()
+            if TFG.frame.ResetPosition then
+                TFG.frame:ResetPosition()
+            else
+                TFG.frame:ClearAllPoints()
+                TFG.frame:SetPoint("CENTER")
+            end
+        end)
+        if ok then
+            print("TFG: window position reset.")
+        else
+            print("TFG: error resetting window position: " .. tostring(err))
+        end
+        return
+    end
+
     local ok, err = pcall(function()
         if (TFG.frame:IsShown()) then
             TFG.frame:Hide()
@@ -47,7 +65,8 @@ if TIMBER_BROADCAST and TIMBER_BROADCAST.Register then
     TIMBER_BROADCAST.Register("TimbersFieldGuide", function(msg)
         msg = (msg or ""):match("^%s*(.-)%s*$") -- trim
         if msg == "" or msg == "help" then
-            print("TimbersFieldGuide: Usage: /tfg  — show/hide guild roster")
+            print("TimbersFieldGuide: Usage: /tfg  — show/hide window")
+            print("TimbersFieldGuide:        /tfg reset  — reset window position")
             return
         end
     end)
