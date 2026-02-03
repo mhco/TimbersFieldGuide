@@ -94,7 +94,6 @@ TFG.DATABASE_FILES = {
                 },
             },
             skills = {
-                --[[
                 professions = {
                     name = "Professions",
                     children = {
@@ -103,7 +102,6 @@ TFG.DATABASE_FILES = {
                         {name = "Blacksmithing", file = TFG.BLACKSMITHING_VANILLA},
                         {name = "Enchanting", file = TFG.ENCHANTING_VANILLA},
                         {name = "Engineering", file = TFG.ENGINEERING_VANILLA},
-                        {name = "Jewelcrafting", file = TFG.JEWELCRAFTING_VANILLA},
                         {name = "Leatherworking", file = TFG.LEATHERWORKING_VANILLA},
                         {name = "Tailoring", file = TFG.TAILORING_VANILLA},
                         {name = "Mining", file = TFG.MINING_VANILLA},
@@ -117,7 +115,6 @@ TFG.DATABASE_FILES = {
                         {name = "Fishing", file = TFG.FISHING_VANILLA},
                     },
                 },
-                --]]
                 skills = {
                     name = "Skills",
                     children = {
