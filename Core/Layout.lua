@@ -355,9 +355,14 @@ local function extractCategoriesFromDatabase(database)
     local set = {}
     for _, spells in pairs(database or {}) do
         for _, spell in ipairs(spells) do
-            local cat = getSpellCategory(spell)
-            if cat and cat ~= "" then
-                set[cat] = true
+            if spell.categories and type(spell.categories) == "table" then
+                for _, cat in ipairs(spell.categories) do
+                    if cat and cat ~= "" then
+                        set[cat] = true
+                    end
+                end
+            elseif spell.category and spell.category ~= "" then
+                set[spell.category] = true
             end
         end
     end
