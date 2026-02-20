@@ -2607,7 +2607,7 @@ TFG.ALCHEMY_TBC = {
         {
             spell_id = 28566,
             name = "Transmute: Primal Air to Fire",
-            categories = { "Transmutes" },
+            categories = { "Transmutations" },
             icon = "inv_elemental_primal_fire",
             source = {
                 type = "Item",
@@ -2622,7 +2622,7 @@ TFG.ALCHEMY_TBC = {
         {
             spell_id = 28567,
             name = "Transmute: Primal Earth to Water",
-            categories = { "Transmutes" },
+            categories = { "Transmutations" },
             icon = "inv_elemental_primal_water",
             source = {
                 type = "Item",
@@ -2637,7 +2637,7 @@ TFG.ALCHEMY_TBC = {
         {
             spell_id = 28568,
             name = "Transmute: Primal Fire to Earth",
-            categories = { "Transmutes" },
+            categories = { "Transmutations" },
             icon = "inv_elemental_primal_earth",
             source = {
                 type = "Item",
@@ -2652,7 +2652,7 @@ TFG.ALCHEMY_TBC = {
         {
             spell_id = 28569,
             name = "Transmute: Primal Water to Air",
-            categories = { "Transmutes" },
+            categories = { "Transmutations" },
             icon = "inv_elemental_primal_air",
             source = {
                 type = "Item",
@@ -2667,7 +2667,7 @@ TFG.ALCHEMY_TBC = {
         {
             spell_id = 29688,
             name = "Transmute: Primal Might",
-            categories = { "Transmutes" },
+            categories = { "Transmutations" },
             icon = "spell_nature_lightningoverload",
             source = {
                 type = "Item",
@@ -2686,7 +2686,7 @@ TFG.ALCHEMY_TBC = {
         {
             spell_id = 32765,
             name = "Transmute: Earthstorm Diamond",
-            categories = { "Transmutes" },
+            categories = { "Transmutations" },
             icon = "inv_misc_gem_diamond_04",
             source = {
                 type = "Item",
@@ -2705,7 +2705,7 @@ TFG.ALCHEMY_TBC = {
         {
             spell_id = 32766,
             name = "Transmute: Skyfire Diamond",
-            categories = { "Transmutes" },
+            categories = { "Transmutations" },
             icon = "inv_misc_gem_diamond_05",
             source = {
                 type = "Item",
@@ -3008,7 +3008,7 @@ TFG.ALCHEMY_TBC = {
         {
             spell_id = 28580,
             name = "Transmute: Primal Shadow to Water",
-            categories = { "Transmutes" },
+            categories = { "Transmutations" },
             icon = "inv_elemental_primal_water",
             source = {
                 type = "Trainer",
@@ -3022,7 +3022,7 @@ TFG.ALCHEMY_TBC = {
         {
             spell_id = 28581,
             name = "Transmute: Primal Water to Shadow",
-            categories = { "Transmutes" },
+            categories = { "Transmutations" },
             icon = "inv_elemental_primal_shadow",
             source = {
                 type = "Trainer",
@@ -3036,7 +3036,7 @@ TFG.ALCHEMY_TBC = {
         {
             spell_id = 28582,
             name = "Transmute: Primal Mana to Fire",
-            categories = { "Transmutes" },
+            categories = { "Transmutations" },
             icon = "inv_elemental_primal_fire",
             source = {
                 type = "Trainer",
@@ -3050,7 +3050,7 @@ TFG.ALCHEMY_TBC = {
         {
             spell_id = 28583,
             name = "Transmute: Primal Fire to Mana",
-            categories = { "Transmutes" },
+            categories = { "Transmutations" },
             icon = "inv_elemental_primal_mana",
             source = {
                 type = "Trainer",
@@ -3064,7 +3064,7 @@ TFG.ALCHEMY_TBC = {
         {
             spell_id = 28584,
             name = "Transmute: Primal Life to Earth",
-            categories = { "Transmutes" },
+            categories = { "Transmutations" },
             icon = "inv_elemental_primal_earth",
             source = {
                 type = "Trainer",
@@ -3078,7 +3078,7 @@ TFG.ALCHEMY_TBC = {
         {
             spell_id = 28585,
             name = "Transmute: Primal Earth to Life",
-            categories = { "Transmutes" },
+            categories = { "Transmutations" },
             icon = "inv_elemental_primal_life",
             source = {
                 type = "Trainer",

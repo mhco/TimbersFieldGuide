@@ -13,8 +13,170 @@ TFG.COOKING_TBC = {
             },
         },
         {
+            spell_id = 818,
+            name = "Basic Campfire",
+            categories = { "Miscellaneous" },
+            icon = "spell_fire_fire",
+            source = {
+                type = "Trainer",
+            },
+        },
+        {
+            spell_id = 2538,
+            name = "Charred Wolf Meat",
+            categories = { "Food" },
+            icon = "inv_misc_food_18",
+            source = {
+                type = "Trainer",
+            },
+            product = { item_id = 2679, qty = 1 },
+            materials = {
+                { item_id = 2672, qty = 1 },
+            },
+            levels = { 1, 45, 65, 85 },
+        },
+        {
+            spell_id = 2540,
+            name = "Roasted Boar Meat",
+            categories = { "Food" },
+            icon = "inv_misc_food_18",
+            source = {
+                type = "Trainer",
+            },
+            product = { item_id = 2681, qty = 1 },
+            materials = {
+                { item_id = 769, qty = 1 },
+            },
+            levels = { 1, 45, 65, 85 },
+        },
+        {
+            spell_id = 37836,
+            name = "Spice Bread",
+            categories = { "Food" },
+            icon = "inv_misc_food_95_grainbread",
+            source = {
+                type = "Trainer",
+                cost = 10,
+            },
+            product = { item_id = 30816, qty = 1 },
+            materials = {
+                { item_id = 30817, qty = 1 },
+                { item_id = 2678, qty = 1 },
+            },
+            levels = { 1, 30, 35, 40 },
+        },
+        {
+            spell_id = 7751,
+            name = "Brilliant Smallfish",
+            categories = { "Food" },
+            icon = "inv_misc_fish_07",
+            source = {
+                type = "Item",
+                recipe_item_ids = { 6325 },
+            },
+            product = { item_id = 6290, qty = 1 },
+            materials = {
+                { item_id = 6291, qty = 1 },
+            },
+            levels = { 1, 45, 65, 85 },
+        },
+        {
+            spell_id = 7752,
+            name = "Slitherskin Mackerel",
+            categories = { "Food" },
+            icon = "inv_misc_fish_24",
+            source = {
+                type = "Item",
+                recipe_item_ids = { 6326 },
+            },
+            product = { item_id = 787, qty = 1 },
+            materials = {
+                { item_id = 6303, qty = 1 },
+            },
+            levels = { 1, 45, 65, 85 },
+        },
+        {
+            spell_id = 8604,
+            name = "Herb Baked Egg",
+            categories = { "Stamina", "Spirit" },
+            icon = "inv_egg_03",
+            source = {
+                type = "Item",
+                recipe_item_ids = { 6891 },
+            },
+            product = { item_id = 6888, qty = 1 },
+            materials = {
+                { item_id = 6889, qty = 1 },
+                { item_id = 2678, qty = 1 },
+            },
+            levels = { 1, 45, 65, 85 },
+        },
+        {
+            spell_id = 15935,
+            name = "Crispy Bat Wing",
+            categories = { "Stamina", "Spirit" },
+            icon = "inv_misc_food_46",
+            source = {
+                type = "Item",
+                recipe_item_ids = { 12226 },
+            },
+            product = { item_id = 12224, qty = 1 },
+            materials = {
+                { item_id = 12223, qty = 1 },
+                { item_id = 2678, qty = 1 },
+            },
+            levels = { 1, 45, 65, 85 },
+        },
+        {
+            spell_id = 33276,
+            name = "Lynx Steak",
+            categories = { "Stamina", "Spirit" },
+            icon = "inv_misc_food_47",
+            source = {
+                type = "Item",
+                recipe_item_ids = { 27685 },
+            },
+            product = { item_id = 27635, qty = 1 },
+            materials = {
+                { item_id = 27668, qty = 1 },
+            },
+            levels = { 1, 45, 65, 85 },
+        },
+        {
+            spell_id = 33277,
+            name = "Roasted Moongraze Tenderloin",
+            categories = { "Stamina", "Spirit" },
+            icon = "inv_misc_food_60",
+            source = {
+                type = "Item",
+                recipe_item_ids = { 27686 },
+            },
+            product = { item_id = 24105, qty = 1 },
+            materials = {
+                { item_id = 23676, qty = 1 },
+            },
+            levels = { 1, 45, 65, 85 },
+        },
+        {
+            spell_id = 21143,
+            name = "Gingerbread Cookie",
+            categories = { "Stamina", "Spirit" },
+            icon = "inv_misc_food_62",
+            source = {
+                type = "Item",
+                recipe_item_ids = { 17200 },
+            },
+            product = { item_id = 17197, qty = 1 },
+            materials = {
+                { item_id = 6889, qty = 1 },
+                { item_id = 17194, qty = 1 },
+            },
+            levels = { 1, 45, 65, 85 },
+        },
+        {
             spell_id = 43779,
             name = "Delicious Chocolate Cake",
+            categories = { "Special" },
             icon = "inv_misc_celebrationcake_01",
             source = {
                 type = "Item",
@@ -31,161 +193,12 @@ TFG.COOKING_TBC = {
             },
             levels = { 1, 50, 62, 75 },
         },
-        {
-            spell_id = 7751,
-            name = "Brilliant Smallfish",
-            icon = "inv_misc_fish_07",
-            source = {
-                type = "Item",
-                recipe_item_ids = { 6325 },
-            },
-            product = { item_id = 6290, qty = 1 },
-            materials = {
-                { item_id = 6291, qty = 1 },
-            },
-            levels = { 1, 45, 65, 85 },
-        },
-        {
-            spell_id = 7752,
-            name = "Slitherskin Mackerel",
-            icon = "inv_misc_fish_24",
-            source = {
-                type = "Item",
-                recipe_item_ids = { 6326 },
-            },
-            product = { item_id = 787, qty = 1 },
-            materials = {
-                { item_id = 6303, qty = 1 },
-            },
-            levels = { 1, 45, 65, 85 },
-        },
-        {
-            spell_id = 8604,
-            name = "Herb Baked Egg",
-            icon = "inv_egg_03",
-            source = {
-                type = "Item",
-                recipe_item_ids = { 6891 },
-            },
-            product = { item_id = 6888, qty = 1 },
-            materials = {
-                { item_id = 6889, qty = 1 },
-                { item_id = 2678, qty = 1 },
-            },
-            levels = { 1, 45, 65, 85 },
-        },
-        {
-            spell_id = 15935,
-            name = "Crispy Bat Wing",
-            icon = "inv_misc_food_46",
-            source = {
-                type = "Item",
-                recipe_item_ids = { 12226 },
-            },
-            product = { item_id = 12224, qty = 1 },
-            materials = {
-                { item_id = 12223, qty = 1 },
-                { item_id = 2678, qty = 1 },
-            },
-            levels = { 1, 45, 65, 85 },
-        },
-        {
-            spell_id = 21143,
-            name = "Gingerbread Cookie",
-            icon = "inv_misc_food_62",
-            source = {
-                type = "Item",
-                recipe_item_ids = { 17200 },
-            },
-            product = { item_id = 17197, qty = 1 },
-            materials = {
-                { item_id = 6889, qty = 1 },
-                { item_id = 17194, qty = 1 },
-            },
-            levels = { 1, 45, 65, 85 },
-        },
-        {
-            spell_id = 33276,
-            name = "Lynx Steak",
-            icon = "inv_misc_food_47",
-            source = {
-                type = "Item",
-                recipe_item_ids = { 27685 },
-            },
-            product = { item_id = 27635, qty = 1 },
-            materials = {
-                { item_id = 27668, qty = 1 },
-            },
-            levels = { 1, 45, 65, 85 },
-        },
-        {
-            spell_id = 33277,
-            name = "Roasted Moongraze Tenderloin",
-            icon = "inv_misc_food_60",
-            source = {
-                type = "Item",
-                recipe_item_ids = { 27686 },
-            },
-            product = { item_id = 24105, qty = 1 },
-            materials = {
-                { item_id = 23676, qty = 1 },
-            },
-            levels = { 1, 45, 65, 85 },
-        },
-        {
-            spell_id = 37836,
-            name = "Spice Bread",
-            icon = "inv_misc_food_95_grainbread",
-            source = {
-                type = "Trainer",
-                cost = 10,
-            },
-            product = { item_id = 30816, qty = 1 },
-            materials = {
-                { item_id = 30817, qty = 1 },
-                { item_id = 2678, qty = 1 },
-            },
-            levels = { 1, 30, 35, 40 },
-        },
-        {
-            spell_id = 2538,
-            name = "Charred Wolf Meat",
-            icon = "inv_misc_food_18",
-            source = {
-                type = "Trainer",
-            },
-            product = { item_id = 2679, qty = 1 },
-            materials = {
-                { item_id = 2672, qty = 1 },
-            },
-            levels = { 1, 45, 65, 85 },
-        },
-        {
-            spell_id = 2540,
-            name = "Roasted Boar Meat",
-            icon = "inv_misc_food_18",
-            source = {
-                type = "Trainer",
-            },
-            product = { item_id = 2681, qty = 1 },
-            materials = {
-                { item_id = 769, qty = 1 },
-            },
-            levels = { 1, 45, 65, 85 },
-        },
-        {
-            spell_id = 818,
-            name = "Basic Campfire",
-            icon = "spell_fire_fire",
-            source = {
-                type = "Trainer",
-            },
-        },
     },
     [10] = {
         {
             spell_id = 2539,
             name = "Spiced Wolf Meat",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_65",
             source = {
                 type = "Trainer",
@@ -201,6 +214,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 6412,
             name = "Kaldorei Spider Kabob",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_68",
             source = {
                 type = "Item",
@@ -217,6 +231,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 6413,
             name = "Scorpid Surprise",
+            categories = { "Food" },
             icon = "inv_misc_food_10",
             source = {
                 type = "Item",
@@ -233,6 +248,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 2795,
             name = "Beer Basted Boar Ribs",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_48",
             source = {
                 type = "Item",
@@ -250,6 +266,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 6414,
             name = "Roasted Kodo Meat",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_60",
             source = {
                 type = "Item",
@@ -265,6 +282,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 21144,
             name = "Egg Nog",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_drink_04",
             source = {
                 type = "Item",
@@ -284,6 +302,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 8607,
             name = "Smoked Bear Meat",
+            categories = { "Food" },
             icon = "inv_misc_food_13",
             source = {
                 type = "Item",
@@ -300,6 +319,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 2541,
             name = "Coyote Steak",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_65",
             source = {
                 type = "Trainer",
@@ -314,6 +334,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 2542,
             name = "Goretusk Liver Pie",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_10",
             source = {
                 type = "Item",
@@ -339,6 +360,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 6415,
             name = "Fillet of Frenzy",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_fish_05",
             source = {
                 type = "Item",
@@ -354,6 +376,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 6416,
             name = "Strider Stew",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_bowl_01",
             source = {
                 type = "Item",
@@ -369,6 +392,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 6499,
             name = "Boiled Clams",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_shell_02",
             source = {
                 type = "Trainer",
@@ -384,6 +408,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 7753,
             name = "Longjaw Mud Snapper",
+            categories = { "Food" },
             icon = "inv_misc_fish_32",
             source = {
                 type = "Item",
@@ -398,6 +423,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 7754,
             name = "Loch Frenzy Delight",
+            categories = { "Food" },
             icon = "inv_potion_01",
             source = {
                 type = "Item",
@@ -413,6 +439,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 7827,
             name = "Rainbow Fin Albacore",
+            categories = { "Food" },
             icon = "inv_misc_fish_27",
             source = {
                 type = "Item",
@@ -427,6 +454,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 33278,
             name = "Bat Bites",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_86_basilisk",
             source = {
                 type = "Item",
@@ -443,6 +471,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 3371,
             name = "Blood Sausage",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_49",
             source = {
                 type = "Item",
@@ -459,6 +488,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 9513,
             name = "Thistle Tea",
+            categories = { "Miscellaneous" },
             icon = "inv_drink_milk_05",
             source = {
                 type = "Item",
@@ -474,6 +504,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 28267,
             name = "Crunchy Spider Surprise",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_88_ravagernuggets",
             source = {
                 type = "Item",
@@ -490,6 +521,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 2543,
             name = "Westfall Stew",
+            categories = { "Food" },
             icon = "inv_misc_bowl_01",
             source = {
                 type = "Item",
@@ -506,6 +538,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 2544,
             name = "Crab Cake",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_08",
             source = {
                 type = "Trainer",
@@ -523,6 +556,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 2546,
             name = "Dry Pork Ribs",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_48",
             source = {
                 type = "Trainer",
@@ -538,6 +572,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 3370,
             name = "Crocolisk Steak",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_47",
             source = {
                 type = "Item",
@@ -553,6 +588,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 25704,
             name = "Smoked Sagefish",
+            categories = { "MP5" },
             icon = "inv_misc_fish_20",
             source = {
                 type = "Item",
@@ -570,6 +606,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 2545,
             name = "Cooked Crab Claw",
+            categories = { "Food" },
             icon = "inv_misc_birdbeck_02",
             source = {
                 type = "Item",
@@ -585,6 +622,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 8238,
             name = "Savory Deviate Delight",
+            categories = { "Special" },
             icon = "inv_misc_monsterhead_04",
             source = {
                 type = "Item",
@@ -602,6 +640,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 3372,
             name = "Murloc Fin Soup",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_bowl_01",
             source = {
                 type = "Item",
@@ -617,6 +656,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 6417,
             name = "Dig Rat Stew",
+            categories = { "Food" },
             icon = "inv_misc_bowl_01",
             source = {
                 type = "Item",
@@ -631,6 +671,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 6501,
             name = "Clam Chowder",
+            categories = { "Food" },
             icon = "inv_potion_01",
             source = {
                 type = "Item",
@@ -649,6 +690,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 2549,
             name = "Seasoned Wolf Kabob",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_16",
             source = {
                 type = "Item",
@@ -664,6 +706,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 6418,
             name = "Crispy Lizard Tail",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_17",
             source = {
                 type = "Item",
@@ -679,6 +722,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 7755,
             name = "Bristle Whisker Catfish",
+            categories = { "Food" },
             icon = "inv_misc_fish_30",
             source = {
                 type = "Item",
@@ -693,6 +737,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 2547,
             name = "Redridge Goulash",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_bowl_01",
             source = {
                 type = "Item",
@@ -708,6 +753,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 45695,
             name = "Captain Rumsey's Lager",
+            categories = { "Miscellaneous" },
             icon = "inv_drink_03",
             source = {
                 type = "Item",
@@ -725,6 +771,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 3377,
             name = "Gooey Spider Cake",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_10",
             source = {
                 type = "Item",
@@ -740,6 +787,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 3397,
             name = "Big Bear Steak",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_47",
             source = {
                 type = "Item",
@@ -755,6 +803,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 6419,
             name = "Lean Venison",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_72",
             source = {
                 type = "Item",
@@ -770,6 +819,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 2548,
             name = "Succulent Pork Ribs",
+            categories = { "Food" },
             icon = "inv_misc_food_16",
             source = {
                 type = "Item",
@@ -787,6 +837,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 3373,
             name = "Crocolisk Gumbo",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_bowl_01",
             source = {
                 type = "Item",
@@ -816,6 +867,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 3398,
             name = "Hot Lion Chops",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_18",
             source = {
                 type = "Item",
@@ -831,6 +883,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 6500,
             name = "Goblin Deviled Clams",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_shell_01",
             source = {
                 type = "Trainer",
@@ -846,6 +899,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 15853,
             name = "Lean Wolf Steak",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_47",
             source = {
                 type = "Item",
@@ -863,6 +917,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 3376,
             name = "Curiously Tasty Omelet",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_egg_04",
             source = {
                 type = "Item",
@@ -880,6 +935,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 3399,
             name = "Tasty Lion Steak",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_14",
             source = {
                 type = "Item",
@@ -895,6 +951,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 24418,
             name = "Heavy Crocolisk Stew",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_64",
             source = {
                 type = "Item",
@@ -912,6 +969,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 3400,
             name = "Soothing Turtle Bisque",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_bowl_01",
             source = {
                 type = "Item",
@@ -927,6 +985,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 4094,
             name = "Barbecued Buzzard Wing",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_18",
             source = {
                 type = "Item",
@@ -942,6 +1001,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 7213,
             name = "Giant Clam Scorcho",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_ammo_firetar",
             source = {
                 type = "Item",
@@ -957,6 +1017,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 15855,
             name = "Roast Raptor",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_50",
             source = {
                 type = "Item",
@@ -972,6 +1033,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 15856,
             name = "Hot Wolf Ribs",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_48",
             source = {
                 type = "Item",
@@ -987,6 +1049,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 15861,
             name = "Jungle Stew",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_drink_17",
             source = {
                 type = "Item",
@@ -1003,6 +1066,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 15863,
             name = "Carrion Surprise",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_49",
             source = {
                 type = "Item",
@@ -1018,6 +1082,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 15865,
             name = "Mystery Stew",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_drink_19",
             source = {
                 type = "Item",
@@ -1033,6 +1098,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 20916,
             name = "Mithril Headed Trout",
+            categories = { "Food" },
             icon = "inv_misc_fish_02",
             source = {
                 type = "Item",
@@ -1047,6 +1113,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 25954,
             name = "Sagefish Delight",
+            categories = { "MP5" },
             icon = "inv_misc_fish_21",
             source = {
                 type = "Item",
@@ -1062,6 +1129,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 7828,
             name = "Rockscale Cod",
+            categories = { "Food" },
             icon = "inv_misc_fish_04",
             source = {
                 type = "Item",
@@ -1076,6 +1144,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 13028,
             name = "Goldthorn Tea",
+            categories = { "Food" },
             icon = "inv_drink_15",
             source = {
                 type = "Trainer",
@@ -1092,6 +1161,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 15906,
             name = "Dragonbreath Chili",
+            categories = { "Miscellaneous" },
             icon = "inv_drink_17",
             source = {
                 type = "Item",
@@ -1108,6 +1178,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 15910,
             name = "Heavy Kodo Stew",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_drink_19",
             source = {
                 type = "Item",
@@ -1124,6 +1195,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 21175,
             name = "Spider Sausage",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_66",
             source = {
                 type = "Trainer",
@@ -1151,6 +1223,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 15915,
             name = "Spiced Chili Crab",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_48",
             source = {
                 type = "Item",
@@ -1166,6 +1239,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 15933,
             name = "Monster Omelet",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_06",
             source = {
                 type = "Item",
@@ -1181,7 +1255,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 18238,
             name = "Spotted Yellowtail",
-            icon = "inv_misc_fish_01",
+            categories = { "Food" },
             source = {
                 type = "Item",
                 recipe_item_ids = { 13939 },
@@ -1195,6 +1269,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 18239,
             name = "Cooked Glossy Mightfish",
+            categories = { "Stamina" },
             icon = "inv_misc_monsterhead_03",
             source = {
                 type = "Item",
@@ -1210,6 +1285,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 18241,
             name = "Filet of Redgill",
+            categories = { "Food" },
             icon = "inv_misc_fish_06",
             source = {
                 type = "Item",
@@ -1224,6 +1300,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 20626,
             name = "Undermine Clam Chowder",
+            categories = { "Food" },
             icon = "inv_drink_17",
             source = {
                 type = "Item",
@@ -1240,6 +1317,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 22480,
             name = "Tender Wolf Steak",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_47",
             source = {
                 type = "Item",
@@ -1257,6 +1335,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 18240,
             name = "Grilled Squid",
+            categories = { "Agility" },
             icon = "inv_misc_fish_13",
             source = {
                 type = "Item",
@@ -1272,6 +1351,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 18242,
             name = "Hot Smoked Bass",
+            categories = { "Spirit" },
             icon = "inv_misc_fish_03",
             source = {
                 type = "Item",
@@ -1289,6 +1369,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 18243,
             name = "Nightfin Soup",
+            categories = { "MP5" },
             icon = "inv_drink_17",
             source = {
                 type = "Item",
@@ -1304,6 +1385,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 18244,
             name = "Poached Sunscale Salmon",
+            categories = { "HP5" },
             icon = "inv_misc_fish_19",
             source = {
                 type = "Item",
@@ -1318,6 +1400,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 46684,
             name = "Charred Bear Kabobs",
+            categories = { "Attack Power" },
             icon = "inv_misc_food_68",
             source = {
                 type = "Item",
@@ -1332,6 +1415,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 46688,
             name = "Juicy Bear Burger",
+            categories = { "Spell Damage" },
             icon = "inv_misc_food_65",
             source = {
                 type = "Item",
@@ -1357,6 +1441,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 18245,
             name = "Lobster Stew",
+            categories = { "Food" },
             icon = "inv_drink_17",
             source = {
                 type = "Item",
@@ -1372,6 +1457,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 18246,
             name = "Mightfish Steak",
+            categories = { "Stamina" },
             icon = "inv_misc_food_47",
             source = {
                 type = "Item",
@@ -1388,6 +1474,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 18247,
             name = "Baked Salmon",
+            categories = { "Food" },
             icon = "inv_misc_fish_20",
             source = {
                 type = "Item",
@@ -1403,6 +1490,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 22761,
             name = "Runn Tum Tuber Surprise",
+            categories = { "Intellect" },
             icon = "inv_misc_food_63",
             source = {
                 type = "Item",
@@ -1420,6 +1508,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 24801,
             name = "Smoked Desert Dumplings",
+            categories = { "Strength" },
             icon = "inv_misc_food_64",
             source = {
                 type = "Trainer",
@@ -1436,6 +1525,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 43772,
             name = "Kibler's Bits",
+            categories = { "Pet" },
             icon = "inv_misc_food_49",
             source = {
                 type = "Item",
@@ -1450,6 +1540,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 25659,
             name = "Dirge's Kickin' Chimaerok Chops",
+            categories = { "Stamina" },
             icon = "inv_misc_food_65",
             source = {
                 type = "Item",
@@ -1467,6 +1558,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 33279,
             name = "Buzzard Bites",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_85_stegadonbite",
             source = {
                 type = "Item",
@@ -1481,6 +1573,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 33284,
             name = "Ravager Dog",
+            categories = { "Attack Power", "Spirit" },
             icon = "inv_misc_food_53",
             source = {
                 type = "Item",
@@ -1495,6 +1588,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 33290,
             name = "Blackened Trout",
+            categories = { "Food" },
             icon = "inv_misc_food_77",
             source = {
                 type = "Item",
@@ -1509,6 +1603,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 33291,
             name = "Feltail Delight",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_74",
             source = {
                 type = "Item",
@@ -1523,6 +1618,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 36210,
             name = "Clam Bar",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_27",
             source = {
                 type = "Item",
@@ -1538,6 +1634,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 43758,
             name = "Stormchops",
+            categories = { "Miscellaneous" },
             icon = "inv_misc_food_91",
             source = {
                 type = "Item",
@@ -1553,6 +1650,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 43761,
             name = "Broiled Bloodfin",
+            categories = { "Resistance" },
             icon = "inv_misc_fish_29",
             source = {
                 type = "Item",
@@ -1569,6 +1667,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 33285,
             name = "Sporeling Snack",
+            categories = { "Pet" },
             icon = "inv_misc_food_87_sporelingsnack",
             source = {
                 type = "Item",
@@ -1583,6 +1682,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 33292,
             name = "Blackened Sporefish",
+            categories = { "Stamina", "MP5" },
             icon = "inv_misc_food_79",
             source = {
                 type = "Item",
@@ -1599,6 +1699,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 33286,
             name = "Blackened Basilisk",
+            categories = { "Spell Damage", "Spirit" },
             icon = "inv_misc_food_86_basilisk",
             source = {
                 type = "Item",
@@ -1615,6 +1716,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 33293,
             name = "Grilled Mudfish",
+            categories = { "Agility", "Spirit" },
             icon = "inv_misc_food_78",
             source = {
                 type = "Item",
@@ -1629,6 +1731,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 33294,
             name = "Poached Bluefish",
+            categories = { "Spell Damage", "Spirit" },
             icon = "inv_misc_food_76",
             source = {
                 type = "Item",
@@ -1645,6 +1748,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 33287,
             name = "Roasted Clefthoof",
+            categories = { "Strength", "Spirit" },
             icon = "inv_misc_food_60",
             source = {
                 type = "Item",
@@ -1659,6 +1763,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 33288,
             name = "Warp Burger",
+            categories = { "Agility", "Spirit" },
             icon = "inv_misc_food_65",
             source = {
                 type = "Item",
@@ -1673,6 +1778,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 33289,
             name = "Talbuk Steak",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_84_roastclefthoof",
             source = {
                 type = "Item",
@@ -1687,6 +1793,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 33295,
             name = "Golden Fish Sticks",
+            categories = { "Healing", "Spirit" },
             icon = "inv_misc_fish_18",
             source = {
                 type = "Item",
@@ -1701,6 +1808,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 43707,
             name = "Skullfish Soup",
+            categories = { "Spell Critical Strike", "Spirit" },
             icon = "inv_misc_food_63",
             source = {
                 type = "Item",
@@ -1715,6 +1823,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 43765,
             name = "Spicy Hot Talbuk",
+            categories = { "Hit Rating", "Spirit" },
             icon = "inv_misc_food_84_roastclefthoof",
             source = {
                 type = "Item",
@@ -1730,6 +1839,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 45022,
             name = "Hot Apple Cider",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_drink_23",
             source = {
                 type = "Item",
@@ -1748,6 +1858,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 38867,
             name = "Mok'Nathal Shortribs",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_48",
             source = {
                 type = "Item",
@@ -1762,6 +1873,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 38868,
             name = "Crunchy Serpent",
+            categories = { "Spell Damage", "Spirit" },
             icon = "inv_misc_food_88_ravagernuggets",
             source = {
                 type = "Item",
@@ -1776,6 +1888,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 42296,
             name = "Stewed Trout",
+            categories = { "Food" },
             icon = "inv_misc_food_64",
             source = {
                 type = "Trainer",
@@ -1794,6 +1907,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 33296,
             name = "Spicy Crawdad",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_fish_16",
             source = {
                 type = "Item",
@@ -1810,6 +1924,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 42302,
             name = "Fisherman's Feast",
+            categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_88_ravagernuggets",
             source = {
                 type = "Trainer",
@@ -1826,6 +1941,7 @@ TFG.COOKING_TBC = {
         {
             spell_id = 42305,
             name = "Hot Buttered Trout",
+            categories = { "Food" },
             icon = "inv_misc_food_76",
             source = {
                 type = "Trainer",
