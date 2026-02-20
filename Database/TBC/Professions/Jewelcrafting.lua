@@ -16,6 +16,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26926,
             name = "Heavy Copper Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_12",
             source = {
                 type = "Trainer",
@@ -33,6 +34,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31252,
             name = "Prospecting",
+            categories = { "Other" },
             icon = "inv_misc_gem_bloodgem_01",
             source = {
                 type = "Trainer",
@@ -41,6 +43,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 32178,
             name = "Malachite Pendant",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_01",
             source = {
                 type = "Trainer",
@@ -56,6 +59,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 32179,
             name = "Tigerseye Band",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_21",
             source = {
                 type = "Trainer",
@@ -71,6 +75,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25255,
             name = "Delicate Copper Wire",
+            categories = { "Materials" },
             icon = "inv_jewelcrafting_delicatecopperwire",
             source = {
                 type = "Trainer",
@@ -86,6 +91,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25283,
             name = "Inlaid Malachite Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_23",
             source = {
                 type = "Trainer",
@@ -101,6 +107,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26928,
             name = "Ornate Tigerseye Necklace",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_02",
             source = {
                 type = "Trainer",
@@ -117,6 +124,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25493,
             name = "Braided Copper Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_13",
             source = {
                 type = "Trainer",
@@ -130,6 +138,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26925,
             name = "Woven Copper Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_12",
             source = {
                 type = "Trainer",
@@ -144,6 +153,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 32259,
             name = "Rough Stone Statue",
+            categories = { "Statue" },
             icon = "inv_misc_statue_08",
             source = {
                 type = "Trainer",
@@ -168,6 +178,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25280,
             name = "Elegant Silver Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_01",
             source = {
                 type = "Trainer",
@@ -182,6 +193,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25490,
             name = "Solid Bronze Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_14",
             source = {
                 type = "Trainer",
@@ -196,6 +208,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26927,
             name = "Thick Bronze Necklace",
+            categories = { "Equipment - Necklace" },
             icon = "inv_belt_19",
             source = {
                 type = "Trainer",
@@ -212,6 +225,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25278,
             name = "Bronze Setting",
+            categories = { "Materials" },
             icon = "inv_jewelcrafting_bronzesetting",
             source = {
                 type = "Trainer",
@@ -226,6 +240,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 32801,
             name = "Coarse Stone Statue",
+            categories = { "Statue" },
             icon = "inv_misc_statue_05",
             source = {
                 type = "Trainer",
@@ -242,6 +257,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25284,
             name = "Simple Pearl Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_28",
             source = {
                 type = "Trainer",
@@ -260,6 +276,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 37818,
             name = "Bronze Band of Force",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_34",
             source = {
                 type = "Trainer",
@@ -280,6 +297,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25287,
             name = "Gloom Band",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_16",
             source = {
                 type = "Trainer",
@@ -298,6 +316,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 36523,
             name = "Brilliant Necklace",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_01",
             source = {
                 type = "Trainer",
@@ -316,6 +335,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25317,
             name = "Ring of Silver Might",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_05",
             source = {
                 type = "Trainer",
@@ -330,6 +350,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 38175,
             name = "Bronze Torc",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_29naxxramas",
             source = {
                 type = "Trainer",
@@ -348,6 +369,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25305,
             name = "Heavy Silver Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_26",
             source = {
                 type = "Trainer",
@@ -367,6 +389,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25318,
             name = "Ring of Twilight Shadows",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_34",
             source = {
                 type = "Trainer",
@@ -384,6 +407,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 36524,
             name = "Heavy Jade Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_11",
             source = {
                 type = "Trainer",
@@ -402,6 +426,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25339,
             name = "Amulet of the Moon",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_11",
             source = {
                 type = "Item",
@@ -417,6 +442,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25498,
             name = "Barbaric Iron Collar",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_22",
             source = {
                 type = "Trainer",
@@ -433,6 +459,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 32807,
             name = "Heavy Stone Statue",
+            categories = { "Statue" },
             icon = "inv_misc_statue_09",
             source = {
                 type = "Trainer",
@@ -449,6 +476,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25321,
             name = "Moonsoul Crown",
+            categories = { "Equipment - Head" },
             icon = "inv_crown_15",
             source = {
                 type = "Trainer",
@@ -467,6 +495,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25610,
             name = "Pendant of the Agate Shield",
+            categories = { "Equipment - Neck" },
             icon = "inv_shield_21",
             source = {
                 type = "Item",
@@ -484,6 +513,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25323,
             name = "Wicked Moonstone Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_02",
             source = {
                 type = "Item",
@@ -500,6 +530,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25612,
             name = "Heavy Iron Knuckles",
+            categories = { "Equipment - Weapon" },
             icon = "inv_gauntlets_04",
             source = {
                 type = "Item",
@@ -526,6 +557,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25613,
             name = "Golden Dragon Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_40",
             source = {
                 type = "Trainer",
@@ -544,6 +576,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25320,
             name = "Heavy Golden Necklace of Battle",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_08",
             source = {
                 type = "Item",
@@ -560,6 +593,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25617,
             name = "Blazing Citrine Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_20",
             source = {
                 type = "Item",
@@ -575,6 +609,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25615,
             name = "Mithril Filigree",
+            categories = { "Materials" },
             icon = "inv_jewelcrafting_mithrilfiligree",
             source = {
                 type = "Trainer",
@@ -591,6 +626,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25618,
             name = "Jade Pendant of Blasting",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_01",
             source = {
                 type = "Item",
@@ -608,6 +644,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25619,
             name = "The Jade Eye",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_11",
             source = {
                 type = "Item",
@@ -623,6 +660,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25620,
             name = "Engraved Truesilver Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_35",
             source = {
                 type = "Trainer",
@@ -640,6 +678,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 32808,
             name = "Solid Stone Statue",
+            categories = { "Statue" },
             icon = "inv_misc_statue_06",
             source = {
                 type = "Trainer",
@@ -656,6 +695,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25621,
             name = "Citrine Ring of Rapid Healing",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_29",
             source = {
                 type = "Trainer",
@@ -672,6 +712,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 34955,
             name = "Golden Ring of Power",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_46",
             source = {
                 type = "Trainer",
@@ -691,6 +732,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 25622,
             name = "Citrine Pendant of Golden Healing",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_06",
             source = {
                 type = "Item",
@@ -710,6 +752,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26872,
             name = "Figurine - Jade Owl",
+            categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_jadeowl",
             source = {
                 type = "Trainer",
@@ -727,6 +770,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26873,
             name = "Figurine - Golden Hare",
+            categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_goldenhare",
             source = {
                 type = "Item",
@@ -742,6 +786,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 34959,
             name = "Truesilver Commander's Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_30",
             source = {
                 type = "Trainer",
@@ -760,6 +805,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26874,
             name = "Aquamarine Signet",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_05",
             source = {
                 type = "Trainer",
@@ -777,6 +823,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26875,
             name = "Figurine - Black Pearl Panther",
+            categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_blackpearlpanther",
             source = {
                 type = "Item",
@@ -794,6 +841,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26876,
             name = "Aquamarine Pendant of the Warrior",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_16",
             source = {
                 type = "Trainer",
@@ -811,6 +859,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26878,
             name = "Ruby Crown of Restoration",
+            categories = { "Equipment - Head" },
             icon = "inv_crown_13",
             source = {
                 type = "Item",
@@ -829,6 +878,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26881,
             name = "Figurine - Truesilver Crab",
+            categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_truesilvercrab",
             source = {
                 type = "Item",
@@ -847,6 +897,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26880,
             name = "Thorium Setting",
+            categories = { "Materials" },
             icon = "inv_jewelcrafting_thoriumsetting",
             source = {
                 type = "Trainer",
@@ -861,6 +912,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 32809,
             name = "Dense Stone Statue",
+            categories = { "Statue" },
             icon = "inv_misc_statue_10",
             source = {
                 type = "Trainer",
@@ -886,6 +938,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 36525,
             name = "Red Ring of Destruction",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_25",
             source = {
                 type = "Trainer",
@@ -903,6 +956,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26882,
             name = "Figurine - Truesilver Boar",
+            categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_truesilverboar",
             source = {
                 type = "Item",
@@ -921,6 +975,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26883,
             name = "Ruby Pendant of Fire",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_15",
             source = {
                 type = "Trainer",
@@ -938,6 +993,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26885,
             name = "Truesilver Healing Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_26",
             source = {
                 type = "Trainer",
@@ -955,6 +1011,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26887,
             name = "The Aquamarine Ward",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_29",
             source = {
                 type = "Item",
@@ -972,6 +1029,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26896,
             name = "Gem Studded Band",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_37",
             source = {
                 type = "Item",
@@ -989,6 +1047,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26897,
             name = "Opal Necklace of Impact",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_14",
             source = {
                 type = "Item",
@@ -1009,6 +1068,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26900,
             name = "Figurine - Ruby Serpent",
+            categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_rubyserpent",
             source = {
                 type = "Item",
@@ -1026,6 +1086,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26902,
             name = "Simple Opal Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_17",
             source = {
                 type = "Trainer",
@@ -1043,6 +1104,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 36526,
             name = "Diamond Focus Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_42",
             source = {
                 type = "Trainer",
@@ -1060,6 +1122,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26903,
             name = "Sapphire Signet",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_29",
             source = {
                 type = "Trainer",
@@ -1076,6 +1139,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26906,
             name = "Emerald Crown of Destruction",
+            categories = { "Equipment - Head" },
             icon = "inv_crown_14",
             source = {
                 type = "Item",
@@ -1105,6 +1169,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26907,
             name = "Onslaught Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_27",
             source = {
                 type = "Trainer",
@@ -1121,6 +1186,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26908,
             name = "Sapphire Pendant of Winter Night",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_11",
             source = {
                 type = "Trainer",
@@ -1137,6 +1203,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 34960,
             name = "Glowing Thorium Band",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_35",
             source = {
                 type = "Trainer",
@@ -1154,6 +1221,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26909,
             name = "Figurine - Emerald Owl",
+            categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_jadeowl",
             source = {
                 type = "Item",
@@ -1171,6 +1239,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26910,
             name = "Ring of Bitter Shadows",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_ahnqiraj_01",
             source = {
                 type = "Item",
@@ -1189,6 +1258,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26911,
             name = "Living Emerald Pendant",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_01",
             source = {
                 type = "Trainer",
@@ -1205,6 +1275,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 34961,
             name = "Emerald Lion Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_18",
             source = {
                 type = "Trainer",
@@ -1222,6 +1293,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26912,
             name = "Figurine - Black Diamond Crab",
+            categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_truesilvercrab",
             source = {
                 type = "Item",
@@ -1240,6 +1312,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26914,
             name = "Figurine - Dark Iron Scorpid",
+            categories = { "Equipment - Trinket"},
             icon = "ability_hunter_pet_crab",
             source = {
                 type = "Item",
@@ -1256,6 +1329,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28903,
             name = "Teardrop Blood Garnet",
+            categories = { "Gem - Red" },
             icon = "inv_misc_gem_bloodgem_02",
             source = {
                 type = "Item",
@@ -1270,6 +1344,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28910,
             name = "Inscribed Flame Spessarite",
+            categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_misc_gem_flamespessarite_02",
             source = {
                 type = "Item",
@@ -1284,6 +1359,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28916,
             name = "Radiant Deep Peridot",
+            categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_misc_gem_deepperidot_02",
             source = {
                 type = "Item",
@@ -1298,6 +1374,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28925,
             name = "Glowing Shadow Draenite",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_misc_gem_ebondraenite_02",
             source = {
                 type = "Item",
@@ -1312,6 +1389,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28938,
             name = "Brilliant Golden Draenite",
+            categories = { "Gem - Yellow" },
             icon = "inv_misc_gem_goldendraenite_02",
             source = {
                 type = "Item",
@@ -1326,6 +1404,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28950,
             name = "Solid Azure Moonstone",
+            categories = { "Gem - Blue" },
             icon = "inv_misc_gem_azuredraenite_02",
             source = {
                 type = "Item",
@@ -1342,6 +1421,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26915,
             name = "Necklace of the Diamond Tower",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_35",
             source = {
                 type = "Item",
@@ -1358,6 +1438,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28905,
             name = "Bold Blood Garnet",
+            categories = { "Gem - Red" },
             icon = "inv_misc_gem_bloodgem_02",
             source = {
                 type = "Item",
@@ -1372,6 +1453,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28912,
             name = "Luminous Flame Spessarite",
+            categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_misc_gem_flamespessarite_02",
             source = {
                 type = "Item",
@@ -1386,6 +1468,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28917,
             name = "Jagged Deep Peridot",
+            categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_misc_gem_deepperidot_02",
             source = {
                 type = "Item",
@@ -1400,6 +1483,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28927,
             name = "Royal Shadow Draenite",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_misc_gem_ebondraenite_02",
             source = {
                 type = "Item",
@@ -1414,6 +1498,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28944,
             name = "Gleaming Golden Draenite",
+            categories = { "Gem - Yellow" },
             icon = "inv_misc_gem_goldendraenite_02",
             source = {
                 type = "Item",
@@ -1428,6 +1513,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28953,
             name = "Sparkling Azure Moonstone",
+            categories = { "Gem - Blue" },
             icon = "inv_misc_gem_azuredraenite_02",
             source = {
                 type = "Item",
@@ -1442,6 +1528,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 34590,
             name = "Bright Blood Garnet",
+            categories = { "Gem - Red" },
             icon = "inv_misc_gem_bloodgem_02",
             source = {
                 type = "Item",
@@ -1458,6 +1545,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31049,
             name = "Golden Draenite Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_60",
             source = {
                 type = "Trainer",
@@ -1473,6 +1561,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26916,
             name = "Band of Natural Fire",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_41",
             source = {
                 type = "Trainer",
@@ -1489,6 +1578,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31048,
             name = "Fel Iron Blood Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_39",
             source = {
                 type = "Trainer",
@@ -1506,6 +1596,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26918,
             name = "Arcanite Sword Pendant",
+            categories = { "Equipment - Neck" },
             icon = "inv_weapon_shortblade_06",
             source = {
                 type = "Item",
@@ -1522,6 +1613,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28906,
             name = "Runed Blood Garnet",
+            categories = { "Gem - Red" },
             icon = "inv_misc_gem_bloodgem_02",
             source = {
                 type = "Item",
@@ -1536,6 +1628,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28914,
             name = "Glinting Flame Spessarite",
+            categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_misc_gem_flamespessarite_02",
             source = {
                 type = "Item",
@@ -1550,6 +1643,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28918,
             name = "Enduring Deep Peridot",
+            categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_misc_gem_deepperidot_02",
             source = {
                 type = "Item",
@@ -1564,6 +1658,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28933,
             name = "Shifting Shadow Draenite",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_misc_gem_ebondraenite_02",
             source = {
                 type = "Item",
@@ -1578,6 +1673,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28947,
             name = "Thick Golden Draenite",
+            categories = { "Gem - Yellow" },
             icon = "inv_misc_gem_goldendraenite_02",
             source = {
                 type = "Item",
@@ -1592,6 +1688,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28955,
             name = "Stormy Azure Moonstone",
+            categories = { "Gem - Blue" },
             icon = "inv_misc_gem_azuredraenite_02",
             source = {
                 type = "Item",
@@ -1608,6 +1705,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31050,
             name = "Azure Moonstone Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_50naxxramas",
             source = {
                 type = "Trainer",
@@ -1626,6 +1724,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 26920,
             name = "Blood Crown",
+            categories = { "Equipment - Head" },
             icon = "inv_crown_13",
             source = {
                 type = "Trainer",
@@ -1634,6 +1733,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 41414,
             name = "Brilliant Pearl Band",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_05",
             source = {
                 type = "Trainer",
@@ -1649,6 +1749,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28907,
             name = "Delicate Blood Garnet",
+            categories = { "Gem - Red" },
             icon = "inv_misc_gem_bloodgem_02",
             source = {
                 type = "Item",
@@ -1663,6 +1764,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28915,
             name = "Potent Flame Spessarite",
+            categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_misc_gem_flamespessarite_02",
             source = {
                 type = "Item",
@@ -1677,6 +1779,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28924,
             name = "Dazzling Deep Peridot",
+            categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_misc_gem_deepperidot_02",
             source = {
                 type = "Item",
@@ -1691,6 +1794,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28936,
             name = "Sovereign Shadow Draenite",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_misc_gem_ebondraenite_02",
             source = {
                 type = "Item",
@@ -1705,6 +1809,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28948,
             name = "Rigid Golden Draenite",
+            categories = { "Gem - Yellow" },
             icon = "inv_misc_gem_goldendraenite_02",
             source = {
                 type = "Item",
@@ -1719,6 +1824,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 28957,
             name = "Lustrous Azure Moonstone",
+            categories = { "Gem - Blue" },
             icon = "inv_misc_gem_azuredraenite_02",
             source = {
                 type = "Item",
@@ -1733,6 +1839,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 34069,
             name = "Smooth Golden Draenite",
+            categories = { "Gem - Yellow" },
             icon = "inv_misc_gem_goldendraenite_02",
             source = {
                 type = "Item",
@@ -1747,6 +1854,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 39451,
             name = "Great Golden Draenite",
+            categories = { "Gem - Yellow" },
             icon = "inv_misc_gem_goldendraenite_02",
             source = {
                 type = "Item",
@@ -1761,6 +1869,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 39455,
             name = "Balanced Shadow Draenite",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_misc_gem_ebondraenite_02",
             source = {
                 type = "Item",
@@ -1775,6 +1884,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 39458,
             name = "Infused Shadow Draenite",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_misc_gem_ebondraenite_02",
             source = {
                 type = "Item",
@@ -1789,6 +1899,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 39466,
             name = "Veiled Flame Spessarite",
+            categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_misc_gem_flamespessarite_02",
             source = {
                 type = "Item",
@@ -1803,6 +1914,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 39467,
             name = "Wicked Flame Spessarite",
+            categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_misc_gem_flamespessarite_02",
             source = {
                 type = "Item",
@@ -1817,6 +1929,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 38068,
             name = "Mercurial Adamantite",
+            categories = { "Materials" },
             icon = "spell_arcane_arcanepotency",
             source = {
                 type = "Trainer",
@@ -1832,6 +1945,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 41420,
             name = "Purified Jaggal Pearl",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_misc_gem_pearl_08",
             source = {
                 type = "Trainer",
@@ -1849,6 +1963,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 41415,
             name = "The Black Pearl",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_16",
             source = {
                 type = "Trainer",
@@ -1866,6 +1981,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31051,
             name = "Thick Adamantite Necklace",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_29naxxramas",
             source = {
                 type = "Trainer",
@@ -1881,6 +1997,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31052,
             name = "Heavy Adamantite Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_59",
             source = {
                 type = "Trainer",
@@ -1898,6 +2015,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 40514,
             name = "Necklace of the Deep",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_03",
             source = {
                 type = "Trainer",
@@ -1916,6 +2034,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31058,
             name = "Heavy Felsteel Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_64",
             source = {
                 type = "Item",
@@ -1933,6 +2052,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31053,
             name = "Khorium Band of Shadows",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_62",
             source = {
                 type = "Item",
@@ -1949,6 +2069,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31084,
             name = "Bold Living Ruby",
+            categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_livingruby_03",
             source = {
                 type = "Item",
@@ -1963,6 +2084,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31085,
             name = "Delicate Living Ruby",
+            categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_livingruby_03",
             source = {
                 type = "Item",
@@ -1977,6 +2099,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31087,
             name = "Teardrop Living Ruby",
+            categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_livingruby_03",
             source = {
                 type = "Item",
@@ -1991,6 +2114,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31088,
             name = "Runed Living Ruby",
+            categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_livingruby_03",
             source = {
                 type = "Item",
@@ -2005,6 +2129,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31089,
             name = "Bright Living Ruby",
+            categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_livingruby_03",
             source = {
                 type = "Item",
@@ -2019,6 +2144,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31090,
             name = "Subtle Living Ruby",
+            categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_livingruby_03",
             source = {
                 type = "Item",
@@ -2033,6 +2159,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31091,
             name = "Flashing Living Ruby",
+            categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_livingruby_03",
             source = {
                 type = "Item",
@@ -2047,6 +2174,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31092,
             name = "Solid Star of Elune",
+            categories = { "Gem - Blue" },
             icon = "inv_jewelcrafting_starofelune_03",
             source = {
                 type = "Item",
@@ -2061,6 +2189,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31094,
             name = "Lustrous Star of Elune",
+            categories = { "Gem - Blue" },
             icon = "inv_jewelcrafting_starofelune_03",
             source = {
                 type = "Item",
@@ -2075,6 +2204,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31095,
             name = "Stormy Star of Elune",
+            categories = { "Gem - Blue" },
             icon = "inv_jewelcrafting_starofelune_03",
             source = {
                 type = "Item",
@@ -2089,6 +2219,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31096,
             name = "Brilliant Dawnstone",
+            categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_dawnstone_03",
             source = {
                 type = "Item",
@@ -2103,6 +2234,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31097,
             name = "Smooth Dawnstone",
+            categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_dawnstone_03",
             source = {
                 type = "Item",
@@ -2117,6 +2249,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31098,
             name = "Rigid Dawnstone",
+            categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_dawnstone_03",
             source = {
                 type = "Item",
@@ -2131,6 +2264,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31099,
             name = "Gleaming Dawnstone",
+            categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_dawnstone_03",
             source = {
                 type = "Item",
@@ -2145,6 +2279,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31100,
             name = "Thick Dawnstone",
+            categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_dawnstone_03",
             source = {
                 type = "Item",
@@ -2159,6 +2294,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31101,
             name = "Mystic Dawnstone",
+            categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_dawnstone_03",
             source = {
                 type = "Item",
@@ -2173,6 +2309,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31102,
             name = "Sovereign Nightseye",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_nightseye_03",
             source = {
                 type = "Item",
@@ -2187,6 +2324,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31103,
             name = "Shifting Nightseye",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_nightseye_03",
             source = {
                 type = "Item",
@@ -2201,6 +2339,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31104,
             name = "Glowing Nightseye",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_nightseye_03",
             source = {
                 type = "Item",
@@ -2215,6 +2354,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31105,
             name = "Royal Nightseye",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_nightseye_03",
             source = {
                 type = "Item",
@@ -2229,6 +2369,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31106,
             name = "Inscribed Noble Topaz",
+            categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_nobletopaz_03",
             source = {
                 type = "Item",
@@ -2243,6 +2384,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31107,
             name = "Potent Noble Topaz",
+            categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_nobletopaz_03",
             source = {
                 type = "Item",
@@ -2257,6 +2399,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31108,
             name = "Luminous Noble Topaz",
+            categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_nobletopaz_03",
             source = {
                 type = "Item",
@@ -2271,6 +2414,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31109,
             name = "Glinting Noble Topaz",
+            categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_nobletopaz_03",
             source = {
                 type = "Item",
@@ -2285,6 +2429,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31110,
             name = "Enduring Talasite",
+            categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_talasite_03",
             source = {
                 type = "Item",
@@ -2299,6 +2444,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31111,
             name = "Radiant Talasite",
+            categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_talasite_03",
             source = {
                 type = "Item",
@@ -2313,6 +2459,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31112,
             name = "Dazzling Talasite",
+            categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_talasite_03",
             source = {
                 type = "Item",
@@ -2327,6 +2474,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31113,
             name = "Jagged Talasite",
+            categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_talasite_03",
             source = {
                 type = "Item",
@@ -2341,6 +2489,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31149,
             name = "Sparkling Star of Elune",
+            categories = { "Gem - Blue" },
             icon = "inv_jewelcrafting_starofelune_03",
             source = {
                 type = "Item",
@@ -2355,6 +2504,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 39452,
             name = "Great Dawnstone",
+            categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_dawnstone_03",
             source = {
                 type = "Item",
@@ -2369,6 +2519,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 39462,
             name = "Infused Nightseye",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_nightseye_03",
             source = {
                 type = "Item",
@@ -2383,6 +2534,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 39463,
             name = "Balanced Nightseye",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_nightseye_03",
             source = {
                 type = "Item",
@@ -2397,6 +2549,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 39470,
             name = "Veiled Noble Topaz",
+            categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_nobletopaz_03",
             source = {
                 type = "Item",
@@ -2411,6 +2564,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 39471,
             name = "Wicked Noble Topaz",
+            categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_nobletopaz_03",
             source = {
                 type = "Item",
@@ -2425,6 +2579,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 41429,
             name = "Purified Shadow Pearl",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_misc_gem_pearl_07",
             source = {
                 type = "Trainer",
@@ -2440,6 +2595,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 43493,
             name = "Steady Talasite",
+            categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_talasite_03",
             source = {
                 type = "Item",
@@ -2454,6 +2610,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 46403,
             name = "Quick Dawnstone",
+            categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_dawnstone_03",
             source = {
                 type = "Item",
@@ -2468,6 +2625,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 46404,
             name = "Reckless Noble Topaz",
+            categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_nobletopaz_03",
             source = {
                 type = "Item",
@@ -2482,6 +2640,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 46405,
             name = "Forceful Talasite",
+            categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_talasite_03",
             source = {
                 type = "Item",
@@ -2496,6 +2655,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 46803,
             name = "Regal Nightseye",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_nightseye_03",
             source = {
                 type = "Item",
@@ -2510,6 +2670,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 47280,
             name = "Brilliant Glass",
+            categories = { "Other" },
             icon = "inv_misc_gem_diamond_03",
             source = {
                 type = "Trainer",
@@ -2531,6 +2692,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31054,
             name = "Khorium Band of Frost",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_57",
             source = {
                 type = "Item",
@@ -2547,6 +2709,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31055,
             name = "Khorium Inferno Band",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_61",
             source = {
                 type = "Item",
@@ -2563,6 +2726,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31060,
             name = "Delicate Eternium Ring",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_65",
             source = {
                 type = "Item",
@@ -2578,6 +2742,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31067,
             name = "Thick Felsteel Necklace",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_17",
             source = {
                 type = "Item",
@@ -2593,6 +2758,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31068,
             name = "Living Ruby Pendant",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_15",
             source = {
                 type = "Item",
@@ -2611,6 +2777,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31056,
             name = "Khorium Band of Leaves",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_56",
             source = {
                 type = "Item",
@@ -2627,6 +2794,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31062,
             name = "Pendant of Frozen Flame",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_36",
             source = {
                 type = "Item",
@@ -2644,6 +2812,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31063,
             name = "Pendant of Thawing",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_34",
             source = {
                 type = "Item",
@@ -2661,6 +2830,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31064,
             name = "Pendant of Withering",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_31",
             source = {
                 type = "Item",
@@ -2678,6 +2848,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31065,
             name = "Pendant of Shadow's End",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_33",
             source = {
                 type = "Item",
@@ -2695,6 +2866,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31066,
             name = "Pendant of the Null Rune",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_32",
             source = {
                 type = "Item",
@@ -2711,6 +2883,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31070,
             name = "Braided Eternium Chain",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_07",
             source = {
                 type = "Item",
@@ -2726,6 +2899,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31071,
             name = "Eye of the Night",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_28",
             source = {
                 type = "Item",
@@ -2742,6 +2916,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 37855,
             name = "Ring of Arcane Shielding",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_68",
             source = {
                 type = "Item",
@@ -2757,6 +2932,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 42558,
             name = "Don Julio's Heart",
+            categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
                 type = "Item",
@@ -2771,6 +2947,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 42588,
             name = "Kailee's Rose",
+            categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
                 type = "Item",
@@ -2785,6 +2962,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 42589,
             name = "Crimson Sun",
+            categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
                 type = "Item",
@@ -2799,6 +2977,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 42590,
             name = "Falling Star",
+            categories = { "Gem - Blue" },
             icon = "inv_jewelcrafting_empyreansapphire_02",
             source = {
                 type = "Item",
@@ -2813,6 +2992,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 42591,
             name = "Stone of Blades",
+            categories = { "Gem - Yellow"},
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
                 type = "Item",
@@ -2827,6 +3007,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 42592,
             name = "Blood of Amber",
+            categories = { "Gem - Yellow"},
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
                 type = "Item",
@@ -2841,6 +3022,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 42593,
             name = "Facet of Eternity",
+            categories = { "Gem - Yellow"},
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
                 type = "Item",
@@ -2857,6 +3039,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 46122,
             name = "Loop of Forged Power",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_35",
             source = {
                 type = "Item",
@@ -2874,6 +3057,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 46123,
             name = "Ring of Flowing Life",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_35",
             source = {
                 type = "Item",
@@ -2891,6 +3075,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 46124,
             name = "Hard Khorium Band",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_55",
             source = {
                 type = "Item",
@@ -2908,6 +3093,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 46125,
             name = "Pendant of Sunfire",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_30",
             source = {
                 type = "Item",
@@ -2924,6 +3110,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 46126,
             name = "Amulet of Flowing Life",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_30",
             source = {
                 type = "Item",
@@ -2939,6 +3126,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 46127,
             name = "Hard Khorium Choker",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_35",
             source = {
                 type = "Item",
@@ -2954,6 +3142,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31057,
             name = "Arcane Khorium Band",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_63",
             source = {
                 type = "Item",
@@ -2970,6 +3159,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31061,
             name = "Blazing Eternium Band",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_55",
             source = {
                 type = "Item",
@@ -2986,6 +3176,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31072,
             name = "Embrace of the Dawn",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_29naxxramas",
             source = {
                 type = "Item",
@@ -3002,6 +3193,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31076,
             name = "Chain of the Twilight Owl",
+            categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_ahnqiraj_02",
             source = {
                 type = "Item",
@@ -3018,6 +3210,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 32866,
             name = "Powerful Earthstorm Diamond",
+            categories = { "Meta" },
             icon = "inv_misc_gem_diamond_06",
             source = {
                 type = "Item",
@@ -3032,6 +3225,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 32867,
             name = "Bracing Earthstorm Diamond",
+            categories = { "Meta" },
             icon = "inv_misc_gem_diamond_06",
             source = {
                 type = "Item",
@@ -3046,6 +3240,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 32868,
             name = "Tenacious Earthstorm Diamond",
+            categories = { "Meta" },
             icon = "inv_misc_gem_diamond_06",
             source = {
                 type = "Item",
@@ -3060,6 +3255,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 32869,
             name = "Brutal Earthstorm Diamond",
+            categories = { "Meta" },
             icon = "inv_misc_gem_diamond_06",
             source = {
                 type = "Item",
@@ -3074,6 +3270,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 32870,
             name = "Insightful Earthstorm Diamond",
+            categories = { "Meta" },
             icon = "inv_misc_gem_diamond_06",
             source = {
                 type = "Item",
@@ -3088,6 +3285,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 32871,
             name = "Destructive Skyfire Diamond",
+            categories = { "Meta" },
             icon = "inv_misc_gem_diamond_07",
             source = {
                 type = "Item",
@@ -3102,6 +3300,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 32872,
             name = "Mystical Skyfire Diamond",
+            categories = { "Meta" },
             icon = "inv_misc_gem_diamond_07",
             source = {
                 type = "Item",
@@ -3116,6 +3315,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 32873,
             name = "Swift Skyfire Diamond",
+            categories = { "Meta" },
             icon = "inv_misc_gem_diamond_07",
             source = {
                 type = "Item",
@@ -3130,6 +3330,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 32874,
             name = "Enigmatic Skyfire Diamond",
+            categories = { "Meta" },
             icon = "inv_misc_gem_diamond_07",
             source = {
                 type = "Item",
@@ -3144,6 +3345,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 39961,
             name = "Relentless Earthstorm Diamond",
+            categories = { "Meta" },
             icon = "inv_misc_gem_diamond_06",
             source = {
                 type = "Item",
@@ -3158,6 +3360,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 39963,
             name = "Thundering Skyfire Diamond",
+            categories = { "Meta" },
             icon = "inv_misc_gem_diamond_07",
             source = {
                 type = "Item",
@@ -3172,6 +3375,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 41418,
             name = "Crown of the Sea Witch",
+            categories = { "Equipment - Head"},
             icon = "inv_crown_01",
             source = {
                 type = "Trainer",
@@ -3189,6 +3393,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 44794,
             name = "Chaotic Skyfire Diamond",
+            categories = { "Meta" },
             icon = "inv_misc_gem_diamond_07",
             source = {
                 type = "Item",
@@ -3205,6 +3410,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31077,
             name = "Coronet of the Verdant Flame",
+            categories = { "Equipment - Head"},
             icon = "inv_crown_01",
             source = {
                 type = "Item",
@@ -3222,6 +3428,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31078,
             name = "Circlet of Arcane Might",
+            categories = { "Equipment - Head"},
             icon = "inv_crown_02",
             source = {
                 type = "Item",
@@ -3239,6 +3446,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31079,
             name = "Figurine - Felsteel Boar",
+            categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_truesilverboar",
             source = {
                 type = "Item",
@@ -3255,6 +3463,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31080,
             name = "Figurine - Dawnstone Crab",
+            categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_truesilvercrab",
             source = {
                 type = "Item",
@@ -3271,6 +3480,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31081,
             name = "Figurine - Living Ruby Serpent",
+            categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_rubyserpent",
             source = {
                 type = "Item",
@@ -3287,6 +3497,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31082,
             name = "Figurine - Talasite Owl",
+            categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_jadeowl",
             source = {
                 type = "Item",
@@ -3303,6 +3514,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 31083,
             name = "Figurine - Nightseye Panther",
+            categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_blackpearlpanther",
             source = {
                 type = "Item",
@@ -3319,6 +3531,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 46597,
             name = "Eternal Earthstorm Diamond",
+            categories = { "Meta" },
             icon = "inv_misc_gem_diamond_06",
             source = {
                 type = "Item",
@@ -3333,6 +3546,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 46601,
             name = "Ember Skyfire Diamond",
+            categories = { "Meta" },
             icon = "inv_misc_gem_diamond_07",
             source = {
                 type = "Item",
@@ -3349,6 +3563,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 38503,
             name = "The Frozen Eye",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_70",
             source = {
                 type = "Item",
@@ -3366,6 +3581,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 38504,
             name = "The Natural Ward",
+            categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_69",
             source = {
                 type = "Item",
@@ -3383,6 +3599,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 39705,
             name = "Bold Crimson Spinel",
+            categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
                 type = "Item",
@@ -3397,6 +3614,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 39706,
             name = "Delicate Crimson Spinel",
+            categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
                 type = "Item",
@@ -3411,6 +3629,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 39710,
             name = "Teardrop Crimson Spinel",
+            categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
                 type = "Item",
@@ -3425,6 +3644,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 39711,
             name = "Runed Crimson Spinel",
+            categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
                 type = "Item",
@@ -3439,6 +3659,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 39712,
             name = "Bright Crimson Spinel",
+            categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
                 type = "Item",
@@ -3453,6 +3674,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 39713,
             name = "Subtle Crimson Spinel",
+            categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
                 type = "Item",
@@ -3467,6 +3689,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 39714,
             name = "Flashing Crimson Spinel",
+            categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
                 type = "Item",
@@ -3481,6 +3704,7 @@ TFG.JEWELCRAFTING_TBC = {
         {
             spell_id = 39715,
             name = "Solid Empyrean Sapphire",
+            categories = { "Gem - Blue" },
             icon = "inv_jewelcrafting_empyreansapphire_02",
             source = {
                 type = "Item",
@@ -3491,10 +3715,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32228, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39716,
             name = "Sparkling Empyrean Sapphire",
+            categories = { "Gem - Blue" },
             icon = "inv_jewelcrafting_empyreansapphire_02",
             source = {
                 type = "Item",
@@ -3505,10 +3731,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32228, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39717,
             name = "Lustrous Empyrean Sapphire",
+            categories = { "Gem - Blue" },
             icon = "inv_jewelcrafting_empyreansapphire_02",
             source = {
                 type = "Item",
@@ -3519,10 +3747,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32228, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39718,
             name = "Stormy Empyrean Sapphire",
+            categories = { "Gem - Blue" },
             icon = "inv_jewelcrafting_empyreansapphire_02",
             source = {
                 type = "Item",
@@ -3533,10 +3763,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32228, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39719,
             name = "Brilliant Lionseye",
+            categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
                 type = "Item",
@@ -3547,10 +3779,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32229, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39720,
             name = "Smooth Lionseye",
+            categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
                 type = "Item",
@@ -3561,10 +3795,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32229, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39721,
             name = "Rigid Lionseye",
+            categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
                 type = "Item",
@@ -3575,10 +3811,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32229, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39722,
             name = "Gleaming Lionseye",
+            categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
                 type = "Item",
@@ -3589,10 +3827,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32229, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39723,
             name = "Thick Lionseye",
+            categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
                 type = "Item",
@@ -3603,10 +3843,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32229, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39724,
             name = "Mystic Lionseye",
+            categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
                 type = "Item",
@@ -3617,10 +3859,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32229, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39725,
             name = "Great Lionseye",
+            categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
                 type = "Item",
@@ -3631,10 +3875,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32229, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39727,
             name = "Sovereign Shadowsong Amethyst",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_shadowsongamethyst_02",
             source = {
                 type = "Item",
@@ -3645,10 +3891,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32230, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39728,
             name = "Shifting Shadowsong Amethyst",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_shadowsongamethyst_02",
             source = {
                 type = "Item",
@@ -3659,10 +3907,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32230, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39729,
             name = "Balanced Shadowsong Amethyst",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_shadowsongamethyst_02",
             source = {
                 type = "Item",
@@ -3673,10 +3923,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32230, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39730,
             name = "Infused Shadowsong Amethyst",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_shadowsongamethyst_02",
             source = {
                 type = "Item",
@@ -3687,10 +3939,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32230, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39731,
             name = "Glowing Shadowsong Amethyst",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_shadowsongamethyst_02",
             source = {
                 type = "Item",
@@ -3701,10 +3955,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32230, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39732,
             name = "Royal Shadowsong Amethyst",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_shadowsongamethyst_02",
             source = {
                 type = "Item",
@@ -3715,10 +3971,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32230, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39733,
             name = "Inscribed Pyrestone",
+            categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_pyrestone_02",
             source = {
                 type = "Item",
@@ -3729,10 +3987,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32231, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39734,
             name = "Potent Pyrestone",
+            categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_pyrestone_02",
             source = {
                 type = "Item",
@@ -3743,10 +4003,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32231, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39735,
             name = "Luminous Pyrestone",
+            categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_pyrestone_02",
             source = {
                 type = "Item",
@@ -3757,10 +4019,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32231, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39736,
             name = "Glinting Pyrestone",
+            categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_pyrestone_02",
             source = {
                 type = "Item",
@@ -3771,10 +4035,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32231, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39737,
             name = "Veiled Pyrestone",
+            categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_pyrestone_02",
             source = {
                 type = "Item",
@@ -3785,10 +4051,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32231, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39738,
             name = "Wicked Pyrestone",
+            categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_pyrestone_02",
             source = {
                 type = "Item",
@@ -3799,10 +4067,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32231, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39739,
             name = "Enduring Seaspray Emerald",
+            categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_seasprayemerald_02",
             source = {
                 type = "Item",
@@ -3813,10 +4083,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32249, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39740,
             name = "Radiant Seaspray Emerald",
+            categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_seasprayemerald_02",
             source = {
                 type = "Item",
@@ -3827,10 +4099,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32249, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39741,
             name = "Dazzling Seaspray Emerald",
+            categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_seasprayemerald_02",
             source = {
                 type = "Item",
@@ -3841,10 +4115,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32249, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 39742,
             name = "Jagged Seaspray Emerald",
+            categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_seasprayemerald_02",
             source = {
                 type = "Item",
@@ -3855,10 +4131,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32249, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 46775,
             name = "Figurine - Empyrean Tortoise",
+            categories = { "Equipment - Trinket"},
             icon = "ability_hunter_pet_turtle",
             source = {
                 type = "Item",
@@ -3871,10 +4149,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 23440, qty = 6 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 46776,
             name = "Figurine - Khorium Boar",
+            categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_truesilverboar",
             source = {
                 type = "Item",
@@ -3887,10 +4167,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 22452, qty = 8 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 5,
         },
         {
             spell_id = 46777,
             name = "Figurine - Crimson Serpent",
+            categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_rubyserpent",
             source = {
                 type = "Item",
@@ -3903,10 +4185,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 21884, qty = 8 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 5,
         },
         {
             spell_id = 46778,
             name = "Figurine - Shadowsong Panther",
+            categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_blackpearlpanther",
             source = {
                 type = "Item",
@@ -3919,10 +4203,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 22456, qty = 8 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 5,
         },
         {
             spell_id = 46779,
             name = "Figurine - Seaspray Albatross",
+            categories = { "Equipment - Trinket"},
             icon = "inv_qirajidol_obsidian",
             source = {
                 type = "Item",
@@ -3935,10 +4221,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 22457, qty = 8 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 5,
         },
         {
             spell_id = 47053,
             name = "Forceful Seaspray Emerald",
+            categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_seasprayemerald_02",
             source = {
                 type = "Item",
@@ -3949,10 +4237,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32249, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 47054,
             name = "Steady Seaspray Emerald",
+            categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_seasprayemerald_02",
             source = {
                 type = "Item",
@@ -3963,10 +4253,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32249, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 47055,
             name = "Reckless Pyrestone",
+            categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_pyrestone_02",
             source = {
                 type = "Item",
@@ -3977,10 +4269,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32231, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 47056,
             name = "Quick Lionseye",
+            categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
                 type = "Item",
@@ -3991,10 +4285,12 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32229, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
         {
             spell_id = 48789,
             name = "Purified Shadowsong Amethyst",
+            categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_shadowsongamethyst_02",
             source = {
                 type = "Item",
@@ -4005,6 +4301,7 @@ TFG.JEWELCRAFTING_TBC = {
                 { item_id = 32230, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
+            phase = 3,
         },
     },
 }
