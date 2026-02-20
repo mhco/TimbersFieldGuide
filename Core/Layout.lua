@@ -935,7 +935,12 @@ local function ensureProfessionPopup()
             local questId = nil
             local questEntry = nil
             if spellData.source.type == "Quest" and spellData.source.quest_ids and spellData.source.quest_ids[1] then
-                questEntry = spellData.source.quest_ids[1]
+                local raw = spellData.source.quest_ids[1]
+                if type(raw) == "number" then
+                    questEntry = { id = raw }
+                else
+                    questEntry = raw
+                end
                 questId = tonumber(questEntry.id)
             end
             if questId and questId > 0 then
