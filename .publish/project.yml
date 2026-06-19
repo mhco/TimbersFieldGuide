@@ -1,0 +1,27 @@
+name: Timber's Field Guide
+summary: A scrollable list of spells for each and every class. See what abilities and talents you can learn at any given level.
+logo: Docs/cover.png
+license: gpl-3.0-only
+curseforge:
+    project_id: "1413887"
+    description: |-
+        A scrollable list of abilities and talents for each class. With an option to toggle between vanilla and TBC, you can use this addon to assist with leveling across multiple expansions. See the cost of each ability, what skills you have available to train, which ones you've already learned, and more.
+
+        Access the window by typing "/tfg" or "/timbersfieldguide". You can set a keybind to open/close the window in the "Options > Keybinds > AddOns" menu. This addon comes with a minimap icon that can be toggled with "/tfg minimap".
+
+         
+
+        ![](https://media.forgecdn.net/attachments/description/1413887/description_1186558f-8f63-46b0-8bdc-c108ea763f43.png)
+    project_name: Timber's Field Guide
+    slug: timbers-field-guide
+    logo: Docs/cover.png
+    summary: A scrollable list of spells for each and every class. See what abilities and talents you can learn at any given level.
+    main_category: Quests & Leveling
+    additional_categories:
+        - Miscellaneous
+        - Class
+    allow_comments: true
+    project_distribution: allow
+    source_code: github
+    source_code_url: https://github.com/mhco/TimbersFieldGuide
+    automatic_packaging: tagged-commits

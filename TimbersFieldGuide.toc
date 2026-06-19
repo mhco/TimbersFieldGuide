@@ -1,14 +1,14 @@
 ## Interface: 11508, 20505
 ## Title: Timber's Field Guide
-## Author: Timbervale
-## Version: v2026.02.20
+## Notes: A scrollable list of spells for each and every class. See what abilities and talents you can learn at any given level.
+## Author: Timbervale-DreamscytheUS
+## Version: v2026.06.19a
+## SavedVariables: TimbersFieldGuideDB
+## X-License: gpl-3.0-only
+## X-Curse-Project-ID: 1413887
 ## Category: Timber's AddOns
 ## IconTexture: Interface\Icons\Inv_scroll_07
-## SavedVariables: TimbersFieldGuideDB
 
-# DebugWindow.lua
-
-# Load databases first
 Database/Vanilla/Classes/Druid.lua
 Database/Vanilla/Classes/Hunter.lua
 Database/Vanilla/Classes/HunterPets.lua
@@ -34,7 +34,6 @@ Database/Vanilla/Professions/Mining.lua
 Database/Vanilla/Professions/Skinning.lua
 Database/Vanilla/Professions/Tailoring.lua
 Database/Vanilla/Skills/WeaponSkills.lua
-
 Database/TBC/Classes/Druid.lua
 Database/TBC/Classes/Hunter.lua
 Database/TBC/Classes/HunterPets.lua
@@ -58,20 +57,16 @@ Database/TBC/Professions/Herbalism.lua
 Database/TBC/Professions/Jewelcrafting.lua
 Database/TBC/Professions/Leatherworking.lua
 Database/TBC/Professions/Mining.lua
+Database/TBC/Professions/Poisons.lua
 Database/TBC/Professions/Skinning.lua
 Database/TBC/Professions/Tailoring.lua
 Database/TBC/Skills/Riding.lua
 Database/TBC/Skills/WeaponSkills.lua
-
-# Core
 TimbersFieldGuide.lua
-
-# Embedded libraries
 Libs/LibStub/LibStub.lua
 Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua
 Libs/LibDataBroker-1.1/LibDataBroker-1.1.lua
 Libs/LibDBIcon-1.0/LibDBIcon-1.0.lua
-
 Core/Constants.lua
 Core/Util.lua
 Core/Database.lua

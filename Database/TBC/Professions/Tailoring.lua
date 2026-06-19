@@ -5002,6 +5002,7 @@ TFG.TAILORING_TBC = {
         {
             spell_id = 46128,
             name = "Sunfire Handwraps",
+            phase = 5,
             categories = { "Hands" },
             icon = "inv_gauntlets_49",
             source = {
@@ -5020,6 +5021,7 @@ TFG.TAILORING_TBC = {
         {
             spell_id = 46129,
             name = "Hands of Eternal Light",
+            phase = 5,
             categories = { "Hands" },
             icon = "inv_gauntlets_63",
             source = {
@@ -5039,6 +5041,7 @@ TFG.TAILORING_TBC = {
         {
             spell_id = 46130,
             name = "Sunfire Robe",
+            phase = 5,
             categories = { "Chest" },
             icon = "inv_chest_cloth_02",
             source = {
@@ -5057,6 +5060,7 @@ TFG.TAILORING_TBC = {
         {
             spell_id = 46131,
             name = "Robe of Eternal Light",
+            phase = 5,
             categories = { "Chest" },
             icon = "inv_chest_cloth_51",
             source = {
@@ -5560,6 +5564,7 @@ TFG.TAILORING_TBC = {
         {
             spell_id = 50194,
             name = "Mycah's Botanical Bag",
+            phase = 2,
             categories = { "Bag" },
             icon = "inv_misc_bag_27",
             source = {
@@ -5577,6 +5582,7 @@ TFG.TAILORING_TBC = {
         {
             spell_id = 36315,
             name = "Belt of Blasting",
+            phase = 2,
             categories = { "Waist" },
             icon = "inv_belt_13",
             source = {
@@ -5596,6 +5602,7 @@ TFG.TAILORING_TBC = {
         {
             spell_id = 36317,
             name = "Boots of Blasting",
+            phase = 2,
             categories = { "Feet" },
             icon = "inv_boots_cloth_05",
             source = {
@@ -5615,6 +5622,7 @@ TFG.TAILORING_TBC = {
         {
             spell_id = 36316,
             name = "Belt of the Long Road",
+            phase = 2,
             categories = { "Waist" },
             icon = "inv_belt_05",
             source = {
@@ -5635,6 +5643,7 @@ TFG.TAILORING_TBC = {
         {
             spell_id = 36318,
             name = "Boots of the Long Road",
+            phase = 2,
             categories = { "Feet" },
             icon = "inv_boots_cloth_14",
             source = {
@@ -5654,6 +5663,7 @@ TFG.TAILORING_TBC = {
         {
             spell_id = 40020,
             name = "Soulguard Slippers",
+            phase = 3,
             categories = { "Feet" },
             icon = "inv_boots_cloth_10",
             source = {
@@ -5674,6 +5684,7 @@ TFG.TAILORING_TBC = {
         {
             spell_id = 40021,
             name = "Soulguard Bracers",
+            phase = 3,
             categories = { "Wrist" },
             icon = "inv_bracer_09",
             source = {
@@ -5694,6 +5705,7 @@ TFG.TAILORING_TBC = {
         {
             spell_id = 40023,
             name = "Soulguard Leggings",
+            phase = 3,
             categories = { "Legs" },
             icon = "inv_pants_cloth_09",
             source = {
@@ -5714,6 +5726,7 @@ TFG.TAILORING_TBC = {
         {
             spell_id = 40024,
             name = "Soulguard Girdle",
+            phase = 3,
             categories = { "Waist" },
             icon = "inv_belt_07",
             source = {
@@ -5734,6 +5747,7 @@ TFG.TAILORING_TBC = {
         {
             spell_id = 40060,
             name = "Night's End",
+            phase = 3,
             categories = { "Back" },
             icon = "inv_misc_cape_20",
             source = {
@@ -5754,6 +5768,7 @@ TFG.TAILORING_TBC = {
         {
             spell_id = 41205,
             name = "Bracers of Nimble Thought",
+            phase = 3,
             categories = { "Wrist" },
             icon = "inv_bracer_13",
             source = {
@@ -5773,6 +5788,7 @@ TFG.TAILORING_TBC = {
         {
             spell_id = 41206,
             name = "Mantle of Nimble Thought",
+            phase = 3,
             categories = { "Shoulder" },
             icon = "inv_shoulder_02",
             source = {
@@ -5792,6 +5808,7 @@ TFG.TAILORING_TBC = {
         {
             spell_id = 41207,
             name = "Swiftheal Wraps",
+            phase = 3,
             categories = { "Hands" },
             icon = "inv_bracer_13",
             source = {
@@ -5811,6 +5828,7 @@ TFG.TAILORING_TBC = {
         {
             spell_id = 41208,
             name = "Swiftheal Mantle",
+            phase = 3,
             categories = { "Shoulder" },
             icon = "inv_shoulder_25",
             source = {

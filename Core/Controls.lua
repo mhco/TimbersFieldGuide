@@ -19,37 +19,17 @@ local function OnClickExpansion(self)
     local newExpansion = self.value
     local selectedFile = TFG.selectedFile
 
-    -- Map child items by name when switching expansions (not by index)
-    -- This ensures "Weapon Skills" stays selected even if it's at different indices
-    local parentKey, childIndex = string.match(selectedFile or "", "^(.+)::(%d+)$")
-    if parentKey and childIndex then
-        -- Get the child name from the OLD expansion
-        local oldExpansionData = TFG.DATABASE_FILES[TFG.selectedExpansion:upper()]
-        if oldExpansionData and oldExpansionData.files then
-            local oldParent = oldExpansionData.files.classes[parentKey] or oldExpansionData.files.skills[parentKey]
-            if oldParent and oldParent.children then
-                local idx = tonumber(childIndex)
-                local childName = nil
-                if oldParent.children[idx] and oldParent.children[idx].name then
-                    childName = oldParent.children[idx].name
-                end
+    -- Convert legacy index selections to stable child keys. If the destination
+    -- expansion lacks the view, retain the stable key so the UI can show an
+    -- explicit unavailable state instead of silently selecting a different child.
+    local oldInfo = TFG.GetSelectionInfo(TFG.selectedExpansion, selectedFile)
+    if oldInfo and oldInfo.child then
+        selectedFile = TFG.MakeChildSelection(oldInfo.parentKey, oldInfo.child, oldInfo.childIndex)
 
-                -- Find the equivalent child name in the NEW expansion
-                if childName then
-                    local newExpansionData = TFG.DATABASE_FILES[newExpansion:upper()]
-                    if newExpansionData and newExpansionData.files then
-                        local newParent = newExpansionData.files.classes[parentKey] or newExpansionData.files.skills[parentKey]
-                        if newParent and newParent.children then
-                            for newIdx, child in ipairs(newParent.children) do
-                                if child.name == childName then
-                                    selectedFile = parentKey .. "::" .. tostring(newIdx)
-                                    break
-                                end
-                            end
-                        end
-                    end
-                end
-            end
+        local newExpansionData = TFG.DATABASE_FILES[newExpansion:upper()]
+        local newInfo = TFG.GetSelectionInfo(newExpansionData, selectedFile)
+        if newInfo and newInfo.child then
+            selectedFile = TFG.MakeChildSelection(newInfo.parentKey, newInfo.child, newInfo.childIndex)
         end
     end
 
@@ -63,7 +43,7 @@ local function OnClickExpansion(self)
 end
 
 UIDropDownMenu_Initialize(expansionDropdown, function(self, level, menuList)
-    for i, expansion in pairs(expansionList) do
+    for i, expansion in ipairs(expansionList) do
         local info = UIDropDownMenu_CreateInfo()
         info.text = expansion["color"] .. expansion["name"]
         info.value = expansion["name"]:upper()
@@ -74,7 +54,7 @@ end)
 
 -- Set default selection to client expansion
 local c = 0
-for i, expansion in pairs(expansionList) do
+for i, expansion in ipairs(expansionList) do
     c = c+1
     if expansion["name"]:upper() == TFG.selectedExpansion:upper() then
         UIDropDownMenu_SetSelectedID(expansionDropdown, c)

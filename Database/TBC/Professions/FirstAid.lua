@@ -1,6 +1,6 @@
 local _, TFG = ...
 
-TFG.FIRSTAID_TBC = {
+TFG.FIRST_AID_TBC = {
     [1] = {
         {
             spell_id = 3273,

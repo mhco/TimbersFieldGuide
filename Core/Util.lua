@@ -26,7 +26,7 @@ function TFG.isAlliance()
 end
 
 -- Sets the background to the given class. Class must be a capitalized string.
-function setBackground(class)
+function TFG.SetBackground(class)
     local f = TFG and TFG.frame or nil
     if not f then return end
 

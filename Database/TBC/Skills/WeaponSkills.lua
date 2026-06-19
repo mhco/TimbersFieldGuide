@@ -198,10 +198,6 @@ TFG.WEAPON_SKILLS_TBC = {
         {
             id = 201,
             name = "One-Handed Swords",
-            source = {
-                type = "Trainer",
-                cost = 1000,
-            },
             icon = "ability_meleedamage",
             source = {
                 type = "Trainer",

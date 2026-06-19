@@ -1,4 +1,4 @@
-local addonName, TFG = ...
+local _, TFG = ...
 
 local UI = TFG.UI
 
@@ -19,7 +19,7 @@ frame:SetBackdrop({
     },
 })
 frame:SetBackdropColor(1,1,1,1)
-setBackground(TFG.selectedFile:lower())
+TFG.SetBackground(TFG.selectedFile:lower())
 
 local CLAMP_MARGIN = 40
 
@@ -87,6 +87,7 @@ function frame:ResetPosition()
 end
 
 frame:ApplySavedPosition()
+frame:Hide()
 
 frame:EnableMouse(true)
 frame:SetMovable(true)
@@ -161,46 +162,3 @@ _G.TimbersFieldGuide_Toggle = function()
         TFG.frame:Show()
     end
 end
-
--- Attempt to create/register a debug tab/module for common debug addons (e.g. _DebugLog).
-local function tryRegisterDebugTab()
-    local names = {"_DebugLog", "DebugLog", "Debug", "Debugger", "DebugFrame"}
-    local methods = {"Register", "RegisterModule", "AddModule", "AddTab", "CreateTab"}
-    for _, n in ipairs(names) do
-        local g = _G[n]
-        if g then
-            pcall(function()
-                for _, m in ipairs(methods) do
-                    if type(g[m]) == "function" then
-                        -- Some APIs expect (moduleName) or (self, moduleName)
-                        pcall(g[m], g, "TimbersFieldGuide")
-                        pcall(g[m], "TimbersFieldGuide")
-                    end
-                end
-                -- Some debug globals are simple functions that accept a registration call.
-                if type(g.Register) ~= "function" and type(g) == "function" then pcall(g, "TimbersFieldGuide") end
-            end)
-            return true
-        end
-    end
-    return false
-end
-
--- Try immediate registration (in case debug addon already loaded), and also on ADDON_LOADED.
-pcall(tryRegisterDebugTab)
-local evt = CreateFrame("Frame")
-evt:RegisterEvent("ADDON_LOADED")
-evt:SetScript("OnEvent", function(self, event, name)
-    if event == "ADDON_LOADED" and name == addonName then
-        pcall(tryRegisterDebugTab)
-    end
-end)
--- If DebugWindow is present, show it so users can see debug output immediately.
-evt:RegisterEvent("PLAYER_LOGIN")
-evt:SetScript("OnEvent", function(self, event, name)
-    if event == "PLAYER_LOGIN" then
-        if _G.DebugWindow and type(_G.DebugWindow.Show) == "function" then
-            pcall(function() _G.DebugWindow:Show() end)
-        end
-    end
-end)

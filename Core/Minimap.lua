@@ -151,19 +151,6 @@ local function registerIcon()
         TFG._minimapRegistered = true
     end
 
-    -- Safety net: ensure right-click opens our menu even if this LibDBIcon version
-    -- doesn't forward RightButton clicks to the LDB OnClick handler.
-    local btn = icon.GetMinimapButton and icon:GetMinimapButton("TimbersFieldGuide")
-    if btn and not btn._tfgHooked then
-        btn:RegisterForClicks("LeftButtonUp", "RightButtonUp")
-        btn:HookScript("OnClick", function(self, button)
-            if button == "RightButton" then
-                openMinimapMenu(self)
-            end
-        end)
-        btn._tfgHooked = true
-    end
-
     if TimbersFieldGuideDB.minimap.hide then
         icon:Hide("TimbersFieldGuide")
     else

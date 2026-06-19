@@ -1,4 +1,6 @@
-{
+local _, TFG = ...
+
+TFG.ROGUE_POISONS_DETAILS_TBC = {
     [1] = {
         {
             spell_id = 2842,
