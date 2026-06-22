@@ -5090,7 +5090,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             source = {
                 {
                     type = "Item",
-                    recipe_item_ids = { 29719, 31361 },
+                    item_id = 29719,
+                },
+                {
+                    item_id = 31361,
                 },
             },
             product = { item_id = 29533, qty = 1 },
@@ -5463,7 +5466,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             source = {
                 {
                     type = "Item",
-                    recipe_item_ids = { 25738, 29213 },
+                    item_id = 25738,
+                },
+                {
+                    item_id = 29213,
                 },
             },
             product = { item_id = 25695, qty = 1 },
@@ -5744,7 +5750,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             source = {
                 {
                     type = "Item",
-                    recipe_item_ids = { 34201, 34218 },
+                    item_id = 34201,
+                },
+                {
+                    item_id = 34218,
                 },
             },
             product = { item_id = 34106, qty = 1 },
@@ -5891,7 +5900,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             source = {
                 {
                     type = "Item",
-                    recipe_item_ids = { 25739, 29214 },
+                    item_id = 25739,
+                },
+                {
+                    item_id = 29214,
                 },
             },
             product = { item_id = 25697, qty = 1 },
@@ -5911,7 +5923,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             source = {
                 {
                     type = "Item",
-                    recipe_item_ids = { 25740, 29215 },
+                    item_id = 25740,
+                },
+                {
+                    item_id = 29215,
                 },
             },
             product = { item_id = 25696, qty = 1 },
@@ -6151,6 +6166,12 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                     type = "Item",
                     item_id = 29724,
                 },
+                {
+                    type = "Drop",
+                    item_id = 35302,
+                    location = "Kael'thas Sunstrider, Magister's Terrace",
+                    phase = 5,
+                },
             },
             product = { item_id = 29503, qty = 1 },
             materials = {
@@ -6209,6 +6230,12 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 29727,
+                },
+                {
+                    type = "Drop",
+                    item_id = 35303,
+                    location = "Kael'thas Sunstrider, Magister's Terrace",
+                    phase = 5,
                 },
             },
             product = { item_id = 29506, qty = 1 },
@@ -6289,6 +6316,12 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                     type = "Item",
                     item_id = 29731,
                 },
+                {
+                    type = "Drop",
+                    item_id = 35300,
+                    location = "Kael'thas Sunstrider, Magister's Terrace",
+                    phase = 5,
+                },
             },
             product = { item_id = 29509, qty = 1 },
             materials = {
@@ -6328,6 +6361,12 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 29733,
+                },
+                {
+                    type = "Drop",
+                    item_id = 35301,
+                    location = "Kael'thas Sunstrider, Magister's Terrace",
+                    phase = 5,
                 },
             },
             product = { item_id = 29511, qty = 1 },
@@ -6387,7 +6426,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             source = {
                 {
                     type = "Item",
-                    recipe_item_ids = { 29722, 31362 },
+                    item_id = 29722,
+                },
+                {
+                    item_id = 31362,
                 },
             },
             product = { item_id = 29535, qty = 1 },

@@ -2515,7 +2515,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             source = {
                 {
                     type = "Item",
-                    recipe_item_ids = { 20726, 33153 },
+                    item_id = 20726,
+                },
+                {
+                    item_id = 33153,
                 },
             },
             materials = {
@@ -2605,7 +2608,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             source = {
                 {
                     type = "Item",
-                    recipe_item_ids = { 20731, 33152 },
+                    item_id = 20731,
+                },
+                {
+                    item_id = 33152,
                 },
             },
             materials = {
@@ -2659,7 +2665,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             source = {
                 {
                     type = "Item",
-                    recipe_item_ids = { 20734, 33149 },
+                    item_id = 20734,
+                },
+                {
+                    item_id = 33149,
                 },
             },
             materials = {
@@ -2677,7 +2686,13 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             source = {
                 {
                     type = "Item",
-                    recipe_item_ids = { 20735, 33150, 33151 },
+                    item_id = 20735,
+                },
+                {
+                    item_id = 33150,
+                },
+                {
+                    item_id = 33151,
                 },
             },
             materials = {
@@ -2695,7 +2710,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             source = {
                 {
                     type = "Item",
-                    recipe_item_ids = { 20736, 33148 },
+                    item_id = 20736,
+                },
+                {
+                    item_id = 33148,
                 },
             },
             materials = {
@@ -2837,6 +2855,12 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 22542,
+                },
+                {
+                    type = "Drop",
+                    item_id = 35298,
+                    location = "Kael'thas Sunstrider, Magister's Terrace",
+                    phase = 5,
                 },
             },
             materials = {
@@ -3056,7 +3080,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             source = {
                 {
                     type = "Item",
-                    recipe_item_ids = { 24000, 22531 },
+                    item_id = 24000,
+                },
+                {
+                    item_id = 22531,
                 },
             },
             materials = {
@@ -3350,7 +3377,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             source = {
                 {
                     type = "Item",
-                    recipe_item_ids = { 22547, 24003 },
+                    item_id = 22547,
+                },
+                {
+                    item_id = 24003,
                 },
             },
             materials = {
@@ -3779,6 +3809,12 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
                     item_id = 28279,
                     location = "Trash Drop, Multiple Dungeons and Raids, or Kael'thas Sunstrider in Magisters' Terrace",
                 },
+                {
+                    type = "Drop",
+                    item_id = 35299,
+                    location = "Kael'thas Sunstrider, Magister's Terrace",
+                    phase = 5,
+                },
             },
             materials = {
                 { item_id = 22449, qty = 8 },
@@ -3796,6 +3832,12 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
                     type = "Item",
                     item_id = 28280,
                     location = "Trash Drop, Multiple Dungeons and Raids, or Kael'thas Sunstrider in Magisters' Terrace",
+                },
+                {
+                    type = "Drop",
+                    item_id = 35297,
+                    location = "Kael'thas Sunstrider, Magister's Terrace",
+                    phase = 5,
                 },
             },
             materials = {

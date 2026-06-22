@@ -5286,6 +5286,12 @@ TFG.BLACKSMITHING_BURNING_CRUSADE = {
                     type = "Item",
                     item_id = 33186,
                 },
+                {
+                    type = "Drop",
+                    item_id = 35296,
+                    location = "Kael'thas Sunstrider, Magister's Terrace",
+                    phase = 5,
+                },
             },
             product = { item_id = 33185, qty = 1 },
             materials = {
@@ -5754,7 +5760,10 @@ TFG.BLACKSMITHING_BURNING_CRUSADE = {
             source = {
                 {
                     type = "Item",
-                    recipe_item_ids = { 23619, 24002 },
+                    item_id = 23619,
+                },
+                {
+                    item_id = 24002,
                 },
             },
             product = { item_id = 23530, qty = 1 },

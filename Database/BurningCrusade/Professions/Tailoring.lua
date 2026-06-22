@@ -5175,6 +5175,12 @@ TFG.TAILORING_BURNING_CRUSADE = {
                     item_id = 24296,
                     location = "Tempest Keep",
                 },
+                {
+                    type = "Drop",
+                    item_id = 35308,
+                    location = "Kael'thas Sunstrider, Magister's Terrace",
+                    phase = 5,
+                },
             },
             product = { item_id = 24249, qty = 1 },
             materials = {
@@ -5720,6 +5726,12 @@ TFG.TAILORING_BURNING_CRUSADE = {
                     type = "Item",
                     item_id = 24302,
                     location = "World Drop or Kael'thas Sunstrider, Magisters' Terrace",
+                },
+                {
+                    type = "Drop",
+                    item_id = 35309,
+                    location = "Kael'thas Sunstrider, Magister's Terrace",
+                    phase = 5,
                 },
             },
             product = { item_id = 24255, qty = 1 },

@@ -1844,7 +1844,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             source = {
                 {
                     type = "Item",
-                    recipe_item_ids = { 23142, 31359 },
+                    item_id = 23142,
+                },
+                {
+                    item_id = 31359,
                 },
             },
             product = { item_id = 23105, qty = 1 },
@@ -2377,6 +2380,12 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                     type = "Item",
                     item_id = 24196,
                 },
+                {
+                    type = "Drop",
+                    item_id = 35305,
+                    location = "Kael'thas Sunstrider, Magister's Terrace",
+                    phase = 5,
+                },
             },
             product = { item_id = 24030, qty = 1 },
             materials = {
@@ -2393,6 +2402,12 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 24192,
+                },
+                {
+                    type = "Drop",
+                    item_id = 35306,
+                    location = "Kael'thas Sunstrider, Magister's Terrace",
+                    phase = 5,
                 },
             },
             product = { item_id = 24031, qty = 1 },
@@ -2442,8 +2457,16 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_starofelune_03",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 24199, 35304 },
+                    type = "Drop",
+                    item_id = 24199,
+                    location = "World Drop",
+                    phase = 1,
+                },
+                {
+                    type = "Drop",
+                    item_id = 35304,
+                    location = "Kael'thas Sunstrider, Magister's Terrace",
+                    phase = 5,
                 },
             },
             product = { item_id = 24033, qty = 1 },
@@ -2529,6 +2552,12 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 24205,
+                },
+                {
+                    type = "Drop",
+                    item_id = 35307,
+                    location = "Kael'thas Sunstrider, Magister's Terrace",
+                    phase = 5,
                 },
             },
             product = { item_id = 24051, qty = 1 },
@@ -3894,7 +3923,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             source = {
                 {
                     type = "Item",
-                    recipe_item_ids = { 24180, 31358 },
+                    item_id = 24180,
+                },
+                {
+                    item_id = 31358,
                 },
             },
             product = { item_id = 24125, qty = 1 },
@@ -4045,8 +4077,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32274, 35244 },
+                    type = "Drop",
+                    item_id = 32274,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35244,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Friendly",
+                    phase = 5,
                 },
             },
             product = { item_id = 32193, qty = 1 },
@@ -4062,8 +4103,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32277, 35246 },
+                    type = "Drop",
+                    item_id = 32277,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35246,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Friendly",
+                    phase = 5,
                 },
             },
             product = { item_id = 32194, qty = 1 },
@@ -4079,8 +4129,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32281, 35250 },
+                    type = "Drop",
+                    item_id = 32281,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35250,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Friendly",
+                    phase = 5,
                 },
             },
             product = { item_id = 32195, qty = 1 },
@@ -4096,8 +4155,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32282, 35248 },
+                    type = "Drop",
+                    item_id = 32282,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35248,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Friendly",
+                    phase = 5,
                 },
             },
             product = { item_id = 32196, qty = 1 },
@@ -4113,8 +4181,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32283, 35245 },
+                    type = "Drop",
+                    item_id = 32283,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35245,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Friendly",
+                    phase = 5,
                 },
             },
             product = { item_id = 32197, qty = 1 },
@@ -4130,8 +4207,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32284, 35249 },
+                    type = "Drop",
+                    item_id = 32284,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35249,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Friendly",
+                    phase = 5,
                 },
             },
             product = { item_id = 32198, qty = 1 },
@@ -4147,8 +4233,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32285, 35247 },
+                    type = "Drop",
+                    item_id = 32285,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35247,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Exalted",
+                    phase = 5,
                 },
             },
             product = { item_id = 32199, qty = 1 },
@@ -4164,8 +4259,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_empyreansapphire_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32286, 35263 },
+                    type = "Drop",
+                    item_id = 32286,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35263,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Friendly",
+                    phase = 5,
                 },
             },
             product = { item_id = 32200, qty = 1 },
@@ -4182,8 +4286,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_empyreansapphire_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32287, 35264 },
+                    type = "Drop",
+                    item_id = 32287,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35264,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Friendly",
+                    phase = 5,
                 },
             },
             product = { item_id = 32201, qty = 1 },
@@ -4200,8 +4313,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_empyreansapphire_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32288, 35262 },
+                    type = "Drop",
+                    item_id = 32288,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35262,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Friendly",
+                    phase = 5,
                 },
             },
             product = { item_id = 32202, qty = 1 },
@@ -4218,8 +4340,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_empyreansapphire_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32289, 35265 },
+                    type = "Drop",
+                    item_id = 32289,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35265,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Exalted",
+                    phase = 5,
                 },
             },
             product = { item_id = 32203, qty = 1 },
@@ -4236,8 +4367,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32290, 35255 },
+                    type = "Drop",
+                    item_id = 32290,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35255,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Friendly",
+                    phase = 5,
                 },
             },
             product = { item_id = 32204, qty = 1 },
@@ -4254,8 +4394,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32291, 35260 },
+                    type = "Drop",
+                    item_id = 32291,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35260,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Friendly",
+                    phase = 5,
                 },
             },
             product = { item_id = 32205, qty = 1 },
@@ -4272,8 +4421,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32292, 35259 },
+                    type = "Drop",
+                    item_id = 32292,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35259,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Revered",
+                    phase = 5,
                 },
             },
             product = { item_id = 32206, qty = 1 },
@@ -4290,8 +4448,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32293, 35256 },
+                    type = "Drop",
+                    item_id = 32293,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35256,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Friendly",
+                    phase = 5,
                 },
             },
             product = { item_id = 32207, qty = 1 },
@@ -4308,8 +4475,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32294, 35261 },
+                    type = "Drop",
+                    item_id = 32294,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35261,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Friendly",
+                    phase = 5,
                 },
             },
             product = { item_id = 32208, qty = 1 },
@@ -4326,8 +4502,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32295, 35258 },
+                    type = "Drop",
+                    item_id = 32295,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35258,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Exalted",
+                    phase = 5,
                 },
             },
             product = { item_id = 32209, qty = 1 },
@@ -4344,8 +4529,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32296, 35257 },
+                    type = "Drop",
+                    item_id = 32296,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35257,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Exalted",
+                    phase = 5,
                 },
             },
             product = { item_id = 32210, qty = 1 },
@@ -4362,8 +4556,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_shadowsongamethyst_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32297, 35243 },
+                    type = "Drop",
+                    item_id = 32297,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35243,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Exalted",
+                    phase = 5,
                 },
             },
             product = { item_id = 32211, qty = 1 },
@@ -4380,8 +4583,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_shadowsongamethyst_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32298, 35242 },
+                    type = "Drop",
+                    item_id = 32298,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35242,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Exalted",
+                    phase = 5,
                 },
             },
             product = { item_id = 32212, qty = 1 },
@@ -4398,8 +4610,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_shadowsongamethyst_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32299, 35238 },
+                    type = "Drop",
+                    item_id = 32299,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35238,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Honored",
+                    phase = 5,
                 },
             },
             product = { item_id = 32213, qty = 1 },
@@ -4416,8 +4637,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_shadowsongamethyst_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32300, 35240 },
+                    type = "Drop",
+                    item_id = 32300,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35240,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Honored",
+                    phase = 5,
                 },
             },
             product = { item_id = 32214, qty = 1 },
@@ -4434,8 +4664,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_shadowsongamethyst_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32301, 35239 },
+                    type = "Drop",
+                    item_id = 32301,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35239,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Honored",
+                    phase = 5,
                 },
             },
             product = { item_id = 32215, qty = 1 },
@@ -4452,8 +4691,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_shadowsongamethyst_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32302, 35241 },
+                    type = "Drop",
+                    item_id = 32302,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35241,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Revered",
+                    phase = 5,
                 },
             },
             product = { item_id = 32216, qty = 1 },
@@ -4470,8 +4718,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_pyrestone_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32303, 35267 },
+                    type = "Drop",
+                    item_id = 32303,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35267,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Exalted",
+                    phase = 5,
                 },
             },
             product = { item_id = 32217, qty = 1 },
@@ -4488,8 +4745,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_pyrestone_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32304, 35269 },
+                    type = "Drop",
+                    item_id = 32304,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35269,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Honored",
+                    phase = 5,
                 },
             },
             product = { item_id = 32218, qty = 1 },
@@ -4506,8 +4772,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_pyrestone_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32305, 35268 },
+                    type = "Drop",
+                    item_id = 32305,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35268,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Honored",
+                    phase = 5,
                 },
             },
             product = { item_id = 32219, qty = 1 },
@@ -4524,8 +4799,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_pyrestone_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32306, 35266 },
+                    type = "Drop",
+                    item_id = 32306,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35266,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Honored",
+                    phase = 5,
                 },
             },
             product = { item_id = 32220, qty = 1 },
@@ -4542,8 +4826,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_pyrestone_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32307, 35270 },
+                    type = "Drop",
+                    item_id = 32307,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35270,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Exalted",
+                    phase = 5,
                 },
             },
             product = { item_id = 32221, qty = 1 },
@@ -4560,8 +4853,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_pyrestone_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32308, 35271 },
+                    type = "Drop",
+                    item_id = 32308,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35271,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Revered",
+                    phase = 5,
                 },
             },
             product = { item_id = 32222, qty = 1 },
@@ -4578,8 +4880,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_seasprayemerald_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32309, 35252 },
+                    type = "Drop",
+                    item_id = 32309,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35252,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Revered",
+                    phase = 5,
                 },
             },
             product = { item_id = 32223, qty = 1 },
@@ -4596,8 +4907,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_seasprayemerald_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32310, 35254 },
+                    type = "Drop",
+                    item_id = 32310,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35254,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Honored",
+                    phase = 5,
                 },
             },
             product = { item_id = 32224, qty = 1 },
@@ -4614,8 +4934,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_seasprayemerald_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32311, 35251 },
+                    type = "Drop",
+                    item_id = 32311,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35251,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Honored",
+                    phase = 5,
                 },
             },
             product = { item_id = 32225, qty = 1 },
@@ -4632,8 +4961,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_seasprayemerald_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 32312, 35253 },
+                    type = "Drop",
+                    item_id = 32312,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35253,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Honored",
+                    phase = 5,
                 },
             },
             product = { item_id = 32226, qty = 1 },
@@ -4750,8 +5088,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_seasprayemerald_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 35765, 35769 },
+                    type = "Drop",
+                    item_id = 35765,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35769,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Revered",
+                    phase = 5,
                 },
             },
             product = { item_id = 35759, qty = 1 },
@@ -4768,8 +5115,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_seasprayemerald_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 35764, 35766 },
+                    type = "Drop",
+                    item_id = 35764,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35766,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Revered",
+                    phase = 5,
                 },
             },
             product = { item_id = 35758, qty = 1 },
@@ -4786,8 +5142,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_pyrestone_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 35762, 35767 },
+                    type = "Drop",
+                    item_id = 35762,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35767,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Revered",
+                    phase = 5,
                 },
             },
             product = { item_id = 35760, qty = 1 },
@@ -4804,8 +5169,17 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 35763, 35768 },
+                    type = "Drop",
+                    item_id = 35763,
+                    location = "World Drop",
+                    phase = 3,
+                },
+                {
+                    type = "Vendor",
+                    item_id = 35768,
+                    cost = 130000,
+                    location = "Shaani / Ontuvo, Shattered Sun Offensive - Revered",
+                    phase = 5,
                 },
             },
             product = { item_id = 35761, qty = 1 },

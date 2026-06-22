@@ -3435,6 +3435,12 @@ TFG.ENGINEERING_BURNING_CRUSADE = {
                     type = "Item",
                     item_id = 23883,
                 },
+                {
+                    type = "Drop",
+                    item_id = 35310,
+                    location = "Kael'thas Sunstrider, Magister's Terrace",
+                    phase = 5,
+                },
             },
             product = { item_id = 33092, qty = 20 },
             materials = {
@@ -3721,8 +3727,16 @@ TFG.ENGINEERING_BURNING_CRUSADE = {
             icon = "inv_potion_168",
             source = {
                 {
-                    type = "Item",
-                    recipe_item_ids = { 23884, 35311 },
+                    type = "Drop",
+                    item_id = 23884,
+                    location = "World Drop",
+                    phase = 1,
+                },
+                {
+                    type = "Drop",
+                    item_id = 35311,
+                    location = "Kael'thas Sunstrider, Magister's Terrace",
+                    phase = 5,
                 },
             },
             product = { item_id = 33093, qty = 20 },

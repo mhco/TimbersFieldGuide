@@ -2889,6 +2889,12 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
                     type = "Item",
                     item_id = 22913,
                 },
+                {
+                    type = "Drop",
+                    item_id = 35295,
+                    location = "Kael'thas Sunstrider, Magister's Terrace",
+                    phase = 5,
+                },
             },
             product = { item_id = 22838, qty = 1 },
             materials = {
@@ -3035,7 +3041,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             source = {
                 {
                     type = "Item",
-                    recipe_item_ids = { 25870, 29232 },
+                    item_id = 25870,
+                },
+                {
+                    item_id = 29232,
                 },
             },
             product = { item_id = 25868, qty = 1 },
@@ -3215,6 +3224,12 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 22926,
+                },
+                {
+                    type = "Drop",
+                    item_id = 35294,
+                    location = "Kael'thas Sunstrider, Magister's Terrace",
+                    phase = 5,
                 },
             },
             product = { item_id = 22848, qty = 1 },
