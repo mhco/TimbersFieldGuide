@@ -7,7 +7,9 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Light Leather",
             icon = "inv_misc_leatherscrap_03",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 2318, qty = 1 },
             materials = {
@@ -20,7 +22,9 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Light Armor Kit",
             icon = "inv_misc_armorkit_17",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 2304, qty = 1 },
             materials = {
@@ -33,7 +37,9 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Handstitched Leather Boots",
             icon = "inv_boots_04",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 2302, qty = 1 },
             materials = {
@@ -47,7 +53,9 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Handstitched Leather Bracers",
             icon = "inv_bracer_08",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 7277, qty = 1 },
             materials = {
@@ -61,7 +69,9 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Handstitched Leather Cloak",
             icon = "inv_helmet_48",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 7276, qty = 1 },
             materials = {
@@ -75,7 +85,9 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Handstitched Leather Vest",
             icon = "inv_chest_wolf",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 5957, qty = 1 },
             materials = {
@@ -89,7 +101,9 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Dragonscale Leatherworking",
             icon = "inv_misc_monsterscales_03",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -97,7 +111,9 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Elemental Leatherworking",
             icon = "spell_fire_volcano",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -105,7 +121,9 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Leatherworking",
             icon = "inv_misc_armorkit_17",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -113,7 +131,9 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Tribal Leatherworking",
             icon = "spell_nature_nullward",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -123,8 +143,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Handstitched Leather Pants",
             icon = "inv_pants_wolf",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 2303, qty = 1 },
             materials = {
@@ -140,8 +162,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Handstitched Leather Belt",
             icon = "inv_belt_04",
             source = {
-                type = "Trainer",
-                cost = 75,
+                {
+                    type = "Trainer",
+                    cost = 75,
+                },
             },
             product = { item_id = 4237, qty = 1 },
             materials = {
@@ -157,8 +181,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Light Leather Quiver",
             icon = "inv_misc_quiver_01",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 7278, qty = 1 },
             materials = {
@@ -172,8 +198,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Small Leather Ammo Pouch",
             icon = "inv_misc_ammo_bullet_01",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 7279, qty = 1 },
             materials = {
@@ -189,8 +217,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Cured Light Hide",
             icon = "inv_misc_pelt_wolf_01",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 4231, qty = 1 },
             materials = {
@@ -204,8 +234,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Rugged Leather Pants",
             icon = "inv_pants_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7288 },
+                {
+                    type = "Item",
+                    item_id = 7288,
+                },
             },
             product = { item_id = 7280, qty = 1 },
             materials = {
@@ -221,8 +253,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Embossed Leather Vest",
             icon = "inv_chest_leather_09",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 2300, qty = 1 },
             materials = {
@@ -236,8 +270,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Kodo Hide Bag",
             icon = "inv_misc_bag_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5083 },
+                {
+                    type = "Item",
+                    item_id = 5083,
+                },
             },
             product = { item_id = 5081, qty = 1 },
             materials = {
@@ -254,7 +290,9 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Leatherworking",
             icon = "inv_misc_armorkit_17",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -264,8 +302,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Embossed Leather Boots",
             icon = "inv_boots_05",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 2309, qty = 1 },
             materials = {
@@ -279,8 +319,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Embossed Leather Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Trainer",
-                cost = 150,
+                {
+                    type = "Trainer",
+                    cost = 150,
+                },
             },
             product = { item_id = 4239, qty = 1 },
             materials = {
@@ -296,8 +338,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Embossed Leather Cloak",
             icon = "inv_helmet_48",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 2310, qty = 1 },
             materials = {
@@ -311,8 +355,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "White Leather Jerkin",
             icon = "inv_chest_wolf",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2407 },
+                {
+                    type = "Item",
+                    item_id = 2407,
+                },
             },
             product = { item_id = 2311, qty = 1 },
             materials = {
@@ -329,8 +375,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Light Leather Bracers",
             icon = "inv_bracer_04",
             source = {
-                type = "Trainer",
-                cost = 150,
+                {
+                    type = "Trainer",
+                    cost = 150,
+                },
             },
             product = { item_id = 7281, qty = 1 },
             materials = {
@@ -346,8 +394,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Embossed Leather Pants",
             icon = "inv_pants_02",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 4242, qty = 1 },
             materials = {
@@ -362,8 +412,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Fine Leather Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2408 },
+                {
+                    type = "Item",
+                    item_id = 2408,
+                },
             },
             product = { item_id = 2312, qty = 1 },
             materials = {
@@ -380,8 +432,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Fine Leather Belt",
             icon = "inv_belt_04",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 4246, qty = 1 },
             materials = {
@@ -397,8 +451,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Fine Leather Cloak",
             icon = "inv_misc_cape_10",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 2308, qty = 1 },
             materials = {
@@ -412,8 +468,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Fine Leather Tunic",
             icon = "inv_chest_leather_09",
             source = {
-                type = "Trainer",
-                cost = 350,
+                {
+                    type = "Trainer",
+                    cost = 350,
+                },
             },
             product = { item_id = 4243, qty = 1 },
             materials = {
@@ -430,8 +488,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Moonglow Vest",
             icon = "inv_chest_leather_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6710 },
+                {
+                    type = "Item",
+                    item_id = 6710,
+                },
             },
             product = { item_id = 6709, qty = 1 },
             materials = {
@@ -447,8 +507,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Deviate Scale Cloak",
             icon = "inv_misc_monsterscales_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6474 },
+                {
+                    type = "Item",
+                    item_id = 6474,
+                },
             },
             product = { item_id = 6466, qty = 1 },
             materials = {
@@ -463,8 +525,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Murloc Scale Belt",
             icon = "inv_belt_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5786 },
+                {
+                    type = "Item",
+                    item_id = 5786,
+                },
             },
             product = { item_id = 5780, qty = 1 },
             materials = {
@@ -479,8 +543,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Fine Leather Boots",
             icon = "inv_boots_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2406 },
+                {
+                    type = "Item",
+                    item_id = 2406,
+                },
             },
             product = { item_id = 2307, qty = 1 },
             materials = {
@@ -496,8 +562,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Light Leather Pants",
             icon = "inv_pants_02",
             source = {
-                type = "Trainer",
-                cost = 400,
+                {
+                    type = "Trainer",
+                    cost = 400,
+                },
             },
             product = { item_id = 7282, qty = 1 },
             materials = {
@@ -512,8 +580,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Murloc Scale Breastplate",
             icon = "inv_chest_chain_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5787 },
+                {
+                    type = "Item",
+                    item_id = 5787,
+                },
             },
             product = { item_id = 5781, qty = 1 },
             materials = {
@@ -531,8 +601,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Medium Leather",
             icon = "inv_misc_leatherscrap_05",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 2319, qty = 1 },
             materials = {
@@ -545,8 +617,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Cured Medium Hide",
             icon = "inv_misc_pelt_bear_02",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 4233, qty = 1 },
             materials = {
@@ -560,8 +634,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Medium Armor Kit",
             icon = "inv_misc_armorkit_15",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 2313, qty = 1 },
             materials = {
@@ -575,8 +651,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Black Whelp Cloak",
             icon = "inv_misc_monsterscales_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7289 },
+                {
+                    type = "Item",
+                    item_id = 7289,
+                },
             },
             product = { item_id = 7283, qty = 1 },
             materials = {
@@ -591,8 +669,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Black Whelp Tunic",
             icon = "inv_chest_cloth_45",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20576 },
+                {
+                    type = "Item",
+                    item_id = 20576,
+                },
             },
             product = { item_id = 20575, qty = 1 },
             materials = {
@@ -608,8 +688,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Dark Leather Tunic",
             icon = "inv_chest_leather_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2409 },
+                {
+                    type = "Item",
+                    item_id = 2409,
+                },
             },
             product = { item_id = 2317, qty = 1 },
             materials = {
@@ -624,8 +706,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Hillman's Leather Vest",
             icon = "inv_chest_leather_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4293 },
+                {
+                    type = "Item",
+                    item_id = 4293,
+                },
             },
             product = { item_id = 4244, qty = 1 },
             materials = {
@@ -640,8 +724,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Dark Leather Boots",
             icon = "inv_boots_05",
             source = {
-                type = "Trainer",
-                cost = 350,
+                {
+                    type = "Trainer",
+                    cost = 350,
+                },
             },
             product = { item_id = 2315, qty = 1 },
             materials = {
@@ -658,8 +744,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Deviate Scale Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6475 },
+                {
+                    type = "Item",
+                    item_id = 6475,
+                },
             },
             product = { item_id = 6467, qty = 1 },
             materials = {
@@ -674,8 +762,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Fine Leather Pants",
             icon = "inv_pants_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5972 },
+                {
+                    type = "Item",
+                    item_id = 5972,
+                },
             },
             product = { item_id = 5958, qty = 1 },
             materials = {
@@ -692,8 +782,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Dark Leather Cloak",
             icon = "inv_misc_cape_10",
             source = {
-                type = "Trainer",
-                cost = 350,
+                {
+                    type = "Trainer",
+                    cost = 350,
+                },
             },
             product = { item_id = 2316, qty = 1 },
             materials = {
@@ -710,8 +802,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Deviate Scale Belt",
             icon = "inv_belt_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6476 },
+                {
+                    type = "Item",
+                    item_id = 6476,
+                },
             },
             product = { item_id = 6468, qty = 1 },
             materials = {
@@ -726,8 +820,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Dark Leather Pants",
             icon = "inv_pants_09",
             source = {
-                type = "Trainer",
-                cost = 400,
+                {
+                    type = "Trainer",
+                    cost = 400,
+                },
             },
             product = { item_id = 5961, qty = 1 },
             materials = {
@@ -744,8 +840,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Hillman's Belt",
             icon = "inv_belt_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4294 },
+                {
+                    type = "Item",
+                    item_id = 4294,
+                },
             },
             product = { item_id = 4250, qty = 1 },
             materials = {
@@ -760,8 +858,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Nimble Leather Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 7285, qty = 1 },
             materials = {
@@ -776,8 +876,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Red Whelp Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7290 },
+                {
+                    type = "Item",
+                    item_id = 7290,
+                },
             },
             product = { item_id = 7284, qty = 1 },
             materials = {
@@ -792,8 +894,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Toughened Leather Armor",
             icon = "inv_chest_leather_10",
             source = {
-                type = "Trainer",
-                cost = 450,
+                {
+                    type = "Trainer",
+                    cost = 450,
+                },
             },
             product = { item_id = 2314, qty = 1 },
             materials = {
@@ -808,8 +912,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Dark Leather Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7360 },
+                {
+                    type = "Item",
+                    item_id = 7360,
+                },
             },
             product = { item_id = 4248, qty = 1 },
             materials = {
@@ -827,7 +933,9 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Leatherworking",
             icon = "inv_misc_armorkit_17",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -835,8 +943,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Dark Leather Belt",
             icon = "inv_belt_03",
             source = {
-                type = "Trainer",
-                cost = 400,
+                {
+                    type = "Trainer",
+                    cost = 400,
+                },
             },
             product = { item_id = 4249, qty = 1 },
             materials = {
@@ -852,8 +962,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Fletcher's Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 7348, qty = 1 },
             materials = {
@@ -870,8 +982,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Hillman's Shoulders",
             icon = "inv_shoulder_08",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 4251, qty = 1 },
             materials = {
@@ -888,8 +1002,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Toughened Leather Gloves",
             icon = "inv_gauntlets_24",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 4253, qty = 1 },
             materials = {
@@ -906,8 +1022,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Earthen Leather Shoulders",
             icon = "inv_shoulder_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7362 },
+                {
+                    type = "Item",
+                    item_id = 7362,
+                },
             },
             product = { item_id = 7352, qty = 1 },
             materials = {
@@ -922,8 +1040,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Herbalist's Gloves",
             icon = "inv_gauntlets_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7361 },
+                {
+                    type = "Item",
+                    item_id = 7361,
+                },
             },
             product = { item_id = 7349, qty = 1 },
             materials = {
@@ -940,8 +1060,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Dark Leather Shoulders",
             icon = "inv_shoulder_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4296 },
+                {
+                    type = "Item",
+                    item_id = 4296,
+                },
             },
             product = { item_id = 4252, qty = 1 },
             materials = {
@@ -957,8 +1079,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Pilferer's Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7363 },
+                {
+                    type = "Item",
+                    item_id = 7363,
+                },
             },
             product = { item_id = 7358, qty = 1 },
             materials = {
@@ -975,8 +1099,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Heavy Earthen Gloves",
             icon = "inv_gauntlets_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7364 },
+                {
+                    type = "Item",
+                    item_id = 7364,
+                },
             },
             product = { item_id = 7359, qty = 1 },
             materials = {
@@ -992,8 +1118,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Hillman's Leather Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 4247, qty = 1 },
             materials = {
@@ -1009,8 +1137,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Heavy Leather",
             icon = "inv_misc_leatherscrap_07",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 4234, qty = 1 },
             materials = {
@@ -1023,8 +1153,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Heavy Leather Ball",
             icon = "inv_misc_throwingball_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18731 },
+                {
+                    type = "Item",
+                    item_id = 18731,
+                },
             },
             product = { item_id = 18662, qty = 1 },
             materials = {
@@ -1038,8 +1170,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Cured Heavy Hide",
             icon = "inv_misc_pelt_wolf_02",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 4236, qty = 1 },
             materials = {
@@ -1053,8 +1187,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Barbaric Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4297 },
+                {
+                    type = "Item",
+                    item_id = 4297,
+                },
             },
             product = { item_id = 4254, qty = 1 },
             materials = {
@@ -1069,8 +1205,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Heavy Leather Ammo Pouch",
             icon = "inv_misc_bag_09",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 7372, qty = 1 },
             materials = {
@@ -1084,8 +1222,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Heavy Quiver",
             icon = "inv_misc_quiver_02",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 7371, qty = 1 },
             materials = {
@@ -1099,8 +1239,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Heavy Armor Kit",
             icon = "inv_misc_armorkit_16",
             source = {
-                type = "Trainer",
-                cost = 750,
+                {
+                    type = "Trainer",
+                    cost = 750,
+                },
             },
             product = { item_id = 4265, qty = 1 },
             materials = {
@@ -1114,8 +1256,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Hillman's Cloak",
             icon = "inv_misc_cape_07",
             source = {
-                type = "Trainer",
-                cost = 600,
+                {
+                    type = "Trainer",
+                    cost = 600,
+                },
             },
             product = { item_id = 3719, qty = 1 },
             materials = {
@@ -1131,8 +1275,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Barbaric Bracers",
             icon = "inv_bracer_15",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18949 },
+                {
+                    type = "Item",
+                    item_id = 18949,
+                },
             },
             product = { item_id = 18948, qty = 1 },
             materials = {
@@ -1149,8 +1295,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Green Leather Armor",
             icon = "inv_chest_leather_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7613 },
+                {
+                    type = "Item",
+                    item_id = 7613,
+                },
             },
             product = { item_id = 4255, qty = 1 },
             materials = {
@@ -1167,8 +1315,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Green Leather Belt",
             icon = "inv_belt_17",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 4257, qty = 1 },
             materials = {
@@ -1185,8 +1335,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Guardian Pants",
             icon = "inv_pants_02",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 5962, qty = 1 },
             materials = {
@@ -1203,8 +1355,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Dusky Leather Leggings",
             icon = "inv_pants_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7449 },
+                {
+                    type = "Item",
+                    item_id = 7449,
+                },
             },
             product = { item_id = 7373, qty = 1 },
             materials = {
@@ -1219,8 +1373,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Raptor Hide Belt",
             icon = "inv_belt_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13288 },
+                {
+                    type = "Item",
+                    item_id = 13288,
+                },
             },
             product = { item_id = 4456, qty = 1 },
             materials = {
@@ -1235,8 +1391,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Raptor Hide Harness",
             icon = "inv_chest_leather_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13287 },
+                {
+                    type = "Item",
+                    item_id = 13287,
+                },
             },
             product = { item_id = 4455, qty = 1 },
             materials = {
@@ -1253,8 +1411,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Barbaric Leggings",
             icon = "inv_pants_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5973 },
+                {
+                    type = "Item",
+                    item_id = 5973,
+                },
             },
             product = { item_id = 5963, qty = 1 },
             materials = {
@@ -1269,8 +1429,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Guardian Belt",
             icon = "inv_belt_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4298 },
+                {
+                    type = "Item",
+                    item_id = 4298,
+                },
             },
             product = { item_id = 4258, qty = 1 },
             materials = {
@@ -1286,8 +1448,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Thick Murloc Armor",
             icon = "inv_chest_chain_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5788 },
+                {
+                    type = "Item",
+                    item_id = 5788,
+                },
             },
             product = { item_id = 5782, qty = 1 },
             materials = {
@@ -1305,8 +1469,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Barbaric Shoulders",
             icon = "inv_shoulder_08",
             source = {
-                type = "Trainer",
-                cost = 1200,
+                {
+                    type = "Trainer",
+                    cost = 1200,
+                },
             },
             product = { item_id = 5964, qty = 1 },
             materials = {
@@ -1321,8 +1487,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Dusky Leather Armor",
             icon = "inv_chest_leather_03",
             source = {
-                type = "Trainer",
-                cost = 1500,
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
             },
             product = { item_id = 7374, qty = 1 },
             materials = {
@@ -1337,8 +1505,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Green Whelp Armor",
             icon = "inv_chest_chain_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7450 },
+                {
+                    type = "Item",
+                    item_id = 7450,
+                },
             },
             product = { item_id = 7375, qty = 1 },
             materials = {
@@ -1353,8 +1523,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Guardian Armor",
             icon = "inv_chest_leather_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4299 },
+                {
+                    type = "Item",
+                    item_id = 4299,
+                },
             },
             product = { item_id = 4256, qty = 1 },
             materials = {
@@ -1372,8 +1544,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Frost Leather Cloak",
             icon = "inv_misc_cape_04",
             source = {
-                type = "Trainer",
-                cost = 2000,
+                {
+                    type = "Trainer",
+                    cost = 2000,
+                },
             },
             product = { item_id = 7377, qty = 1 },
             materials = {
@@ -1389,8 +1563,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Green Leather Bracers",
             icon = "inv_bracer_12",
             source = {
-                type = "Trainer",
-                cost = 1200,
+                {
+                    type = "Trainer",
+                    cost = 1200,
+                },
             },
             product = { item_id = 4259, qty = 1 },
             materials = {
@@ -1408,8 +1584,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Gem-studded Leather Belt",
             icon = "inv_belt_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14635 },
+                {
+                    type = "Item",
+                    item_id = 14635,
+                },
             },
             product = { item_id = 4262, qty = 1 },
             materials = {
@@ -1426,8 +1604,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Dusky Bracers",
             icon = "inv_bracer_07",
             source = {
-                type = "Trainer",
-                cost = 2000,
+                {
+                    type = "Trainer",
+                    cost = 2000,
+                },
             },
             product = { item_id = 7378, qty = 1 },
             materials = {
@@ -1442,8 +1622,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Guardian Cloak",
             icon = "inv_misc_cape_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5974 },
+                {
+                    type = "Item",
+                    item_id = 5974,
+                },
             },
             product = { item_id = 5965, qty = 1 },
             materials = {
@@ -1460,8 +1642,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Gloves of the Greatfather",
             icon = "inv_gauntlets_21",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17722 },
+                {
+                    type = "Item",
+                    item_id = 17722,
+                },
             },
             product = { item_id = 17721, qty = 1 },
             materials = {
@@ -1476,8 +1660,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Green Whelp Bracers",
             icon = "inv_bracer_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7451 },
+                {
+                    type = "Item",
+                    item_id = 7451,
+                },
             },
             product = { item_id = 7386, qty = 1 },
             materials = {
@@ -1492,8 +1678,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Murloc Scale Bracers",
             icon = "inv_bracer_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5789 },
+                {
+                    type = "Item",
+                    item_id = 5789,
+                },
             },
             product = { item_id = 5783, qty = 1 },
             materials = {
@@ -1509,8 +1697,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Barbaric Harness",
             icon = "inv_chest_leather_04",
             source = {
-                type = "Trainer",
-                cost = 2000,
+                {
+                    type = "Trainer",
+                    cost = 2000,
+                },
             },
             product = { item_id = 5739, qty = 1 },
             materials = {
@@ -1525,8 +1715,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Guardian Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Trainer",
-                cost = 2400,
+                {
+                    type = "Trainer",
+                    cost = 2400,
+                },
             },
             product = { item_id = 5966, qty = 1 },
             materials = {
@@ -1543,8 +1735,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Dusky Belt",
             icon = "inv_belt_06",
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
             product = { item_id = 7387, qty = 1 },
             materials = {
@@ -1560,8 +1754,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Guardian Leather Bracers",
             icon = "inv_bracer_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4300 },
+                {
+                    type = "Item",
+                    item_id = 4300,
+                },
             },
             product = { item_id = 4260, qty = 1 },
             materials = {
@@ -1578,7 +1774,9 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Leatherworking",
             icon = "inv_misc_armorkit_17",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -1586,8 +1784,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Cured Thick Hide",
             icon = "inv_misc_pelt_bear_01",
             source = {
-                type = "Trainer",
-                cost = 2000,
+                {
+                    type = "Trainer",
+                    cost = 2000,
+                },
             },
             product = { item_id = 8172, qty = 1 },
             materials = {
@@ -1601,8 +1801,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Thick Leather",
             icon = "inv_misc_leatherscrap_08",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 4304, qty = 1 },
             materials = {
@@ -1615,8 +1817,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Shadowskin Gloves",
             icon = "inv_gauntlets_32",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18239 },
+                {
+                    type = "Item",
+                    item_id = 18239,
+                },
             },
             product = { item_id = 18238, qty = 1 },
             materials = {
@@ -1634,8 +1838,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Barbaric Belt",
             icon = "inv_belt_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4301 },
+                {
+                    type = "Item",
+                    item_id = 4301,
+                },
             },
             product = { item_id = 4264, qty = 1 },
             materials = {
@@ -1653,8 +1859,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Comfortable Leather Hat",
             icon = "inv_helmet_15",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8384 },
+                {
+                    type = "Item",
+                    item_id = 8384,
+                },
             },
             product = { item_id = 8174, qty = 1 },
             materials = {
@@ -1669,8 +1877,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Dusky Boots",
             icon = "inv_boots_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7452 },
+                {
+                    type = "Item",
+                    item_id = 7452,
+                },
             },
             product = { item_id = 7390, qty = 1 },
             materials = {
@@ -1686,8 +1896,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Swift Boots",
             icon = "inv_boots_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7453 },
+                {
+                    type = "Item",
+                    item_id = 7453,
+                },
             },
             product = { item_id = 7391, qty = 1 },
             materials = {
@@ -1703,8 +1915,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Thick Armor Kit",
             icon = "inv_misc_armorkit_07",
             source = {
-                type = "Trainer",
-                cost = 2000,
+                {
+                    type = "Trainer",
+                    cost = 2000,
+                },
             },
             product = { item_id = 8173, qty = 1 },
             materials = {
@@ -1720,8 +1934,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Nightscape Headband",
             icon = "inv_belt_24",
             source = {
-                type = "Trainer",
-                cost = 3000,
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
             },
             product = { item_id = 8176, qty = 1 },
             materials = {
@@ -1735,8 +1951,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Nightscape Tunic",
             icon = "inv_chest_leather_03",
             source = {
-                type = "Trainer",
-                cost = 3000,
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
             },
             product = { item_id = 8175, qty = 1 },
             materials = {
@@ -1750,8 +1968,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Turtle Scale Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8385 },
+                {
+                    type = "Item",
+                    item_id = 8385,
+                },
             },
             product = { item_id = 8187, qty = 1 },
             materials = {
@@ -1768,8 +1988,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Nightscape Shoulders",
             icon = "inv_shoulder_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8409 },
+                {
+                    type = "Item",
+                    item_id = 8409,
+                },
             },
             product = { item_id = 8192, qty = 1 },
             materials = {
@@ -1784,8 +2006,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Turtle Scale Bracers",
             icon = "inv_bracer_06",
             source = {
-                type = "Trainer",
-                cost = 3500,
+                {
+                    type = "Trainer",
+                    cost = 3500,
+                },
             },
             product = { item_id = 8198, qty = 1 },
             materials = {
@@ -1800,8 +2024,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Turtle Scale Breastplate",
             icon = "inv_chest_chain_12",
             source = {
-                type = "Trainer",
-                cost = 3000,
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
             },
             product = { item_id = 8189, qty = 1 },
             materials = {
@@ -1818,8 +2044,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Big Voodoo Robe",
             icon = "inv_chest_cloth_25",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8386 },
+                {
+                    type = "Item",
+                    item_id = 8386,
+                },
             },
             product = { item_id = 8200, qty = 1 },
             materials = {
@@ -1836,8 +2064,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Big Voodoo Mask",
             icon = "inv_banner_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8387 },
+                {
+                    type = "Item",
+                    item_id = 8387,
+                },
             },
             product = { item_id = 8201, qty = 1 },
             materials = {
@@ -1852,8 +2082,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Tough Scorpid Bracers",
             icon = "inv_bracer_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8397 },
+                {
+                    type = "Item",
+                    item_id = 8397,
+                },
             },
             product = { item_id = 8205, qty = 1 },
             materials = {
@@ -1868,8 +2100,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Tough Scorpid Breastplate",
             icon = "inv_chest_leather_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8395 },
+                {
+                    type = "Item",
+                    item_id = 8395,
+                },
             },
             product = { item_id = 8203, qty = 1 },
             materials = {
@@ -1884,8 +2118,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Wild Leather Shoulders",
             icon = "inv_shoulder_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8403 },
+                {
+                    type = "Item",
+                    item_id = 8403,
+                },
             },
             product = { item_id = 8210, qty = 1 },
             materials = {
@@ -1902,8 +2138,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Dragonscale Gauntlets",
             icon = "inv_gauntlets_10",
             source = {
-                type = "Trainer",
-                cost = 9000,
+                {
+                    type = "Trainer",
+                    cost = 9000,
+                },
             },
             product = { item_id = 8347, qty = 1 },
             materials = {
@@ -1919,8 +2157,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Wolfshead Helm",
             icon = "inv_helmet_04",
             source = {
-                type = "Trainer",
-                cost = 9000,
+                {
+                    type = "Trainer",
+                    cost = 9000,
+                },
             },
             product = { item_id = 8345, qty = 1 },
             materials = {
@@ -1937,8 +2177,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Quickdraw Quiver",
             icon = "inv_misc_quiver_07",
             source = {
-                type = "Trainer",
-                cost = 3600,
+                {
+                    type = "Trainer",
+                    cost = 3600,
+                },
             },
             product = { item_id = 8217, qty = 1 },
             materials = {
@@ -1954,8 +2196,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Thick Leather Ammo Pouch",
             icon = "inv_misc_bag_09_black",
             source = {
-                type = "Trainer",
-                cost = 3600,
+                {
+                    type = "Trainer",
+                    cost = 3600,
+                },
             },
             product = { item_id = 8218, qty = 1 },
             materials = {
@@ -1971,8 +2215,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Tough Scorpid Gloves",
             icon = "inv_gauntlets_24",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8398 },
+                {
+                    type = "Item",
+                    item_id = 8398,
+                },
             },
             product = { item_id = 8204, qty = 1 },
             materials = {
@@ -1987,8 +2233,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Wild Leather Helmet",
             icon = "inv_helmet_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8405 },
+                {
+                    type = "Item",
+                    item_id = 8405,
+                },
             },
             product = { item_id = 8214, qty = 1 },
             materials = {
@@ -2003,8 +2251,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Wild Leather Vest",
             icon = "inv_chest_cloth_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8404 },
+                {
+                    type = "Item",
+                    item_id = 8404,
+                },
             },
             product = { item_id = 8211, qty = 1 },
             materials = {
@@ -2021,8 +2271,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Gauntlets of the Sea",
             icon = "inv_gauntlets_30",
             source = {
-                type = "Trainer",
-                cost = 9000,
+                {
+                    type = "Trainer",
+                    cost = 9000,
+                },
             },
             product = { item_id = 8346, qty = 1 },
             materials = {
@@ -2039,8 +2291,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Nightscape Pants",
             icon = "inv_pants_11",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 8193, qty = 1 },
             materials = {
@@ -2054,8 +2308,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Turtle Scale Helm",
             icon = "inv_helmet_40",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 8191, qty = 1 },
             materials = {
@@ -2072,8 +2328,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Nightscape Boots",
             icon = "inv_boots_05",
             source = {
-                type = "Trainer",
-                cost = 4500,
+                {
+                    type = "Trainer",
+                    cost = 4500,
+                },
             },
             product = { item_id = 8197, qty = 1 },
             materials = {
@@ -2087,8 +2345,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Tough Scorpid Boots",
             icon = "inv_boots_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8399 },
+                {
+                    type = "Item",
+                    item_id = 8399,
+                },
             },
             product = { item_id = 8209, qty = 1 },
             materials = {
@@ -2103,8 +2363,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Turtle Scale Leggings",
             icon = "inv_pants_02",
             source = {
-                type = "Trainer",
-                cost = 4500,
+                {
+                    type = "Trainer",
+                    cost = 4500,
+                },
             },
             product = { item_id = 8185, qty = 1 },
             materials = {
@@ -2121,8 +2383,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Big Voodoo Cloak",
             icon = "inv_misc_cape_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8390 },
+                {
+                    type = "Item",
+                    item_id = 8390,
+                },
             },
             product = { item_id = 8216, qty = 1 },
             materials = {
@@ -2137,8 +2401,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Big Voodoo Pants",
             icon = "inv_pants_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8389 },
+                {
+                    type = "Item",
+                    item_id = 8389,
+                },
             },
             product = { item_id = 8202, qty = 1 },
             materials = {
@@ -2153,8 +2419,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Tough Scorpid Shoulders",
             icon = "inv_shoulder_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8400 },
+                {
+                    type = "Item",
+                    item_id = 8400,
+                },
             },
             product = { item_id = 8207, qty = 1 },
             materials = {
@@ -2171,8 +2439,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Tough Scorpid Leggings",
             icon = "inv_pants_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8401 },
+                {
+                    type = "Item",
+                    item_id = 8401,
+                },
             },
             product = { item_id = 8206, qty = 1 },
             materials = {
@@ -2187,8 +2457,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Wild Leather Boots",
             icon = "inv_boots_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8406 },
+                {
+                    type = "Item",
+                    item_id = 8406,
+                },
             },
             product = { item_id = 8213, qty = 1 },
             materials = {
@@ -2205,8 +2477,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Rugged Leather",
             icon = "inv_misc_leatherscrap_02",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 8170, qty = 1 },
             materials = {
@@ -2219,8 +2493,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Cured Rugged Hide",
             icon = "inv_misc_pelt_bear_03",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 15407, qty = 1 },
             materials = {
@@ -2234,8 +2510,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Rugged Armor Kit",
             icon = "inv_misc_armorkit_09",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 15564, qty = 1 },
             materials = {
@@ -2248,8 +2526,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Feathered Breastplate",
             icon = "inv_chest_leather_06",
             source = {
-                type = "Trainer",
-                cost = 5500,
+                {
+                    type = "Trainer",
+                    cost = 5500,
+                },
             },
             product = { item_id = 8349, qty = 1 },
             materials = {
@@ -2266,7 +2546,9 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Helm of Fire",
             icon = "inv_helmet_08",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 8348, qty = 1 },
             materials = {
@@ -2283,8 +2565,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Tough Scorpid Helm",
             icon = "inv_helmet_20",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8402 },
+                {
+                    type = "Item",
+                    item_id = 8402,
+                },
             },
             product = { item_id = 8208, qty = 1 },
             materials = {
@@ -2299,8 +2583,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Wild Leather Cloak",
             icon = "inv_misc_cape_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8408 },
+                {
+                    type = "Item",
+                    item_id = 8408,
+                },
             },
             product = { item_id = 8215, qty = 1 },
             materials = {
@@ -2315,8 +2601,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Wild Leather Leggings",
             icon = "inv_pants_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8407 },
+                {
+                    type = "Item",
+                    item_id = 8407,
+                },
             },
             product = { item_id = 8212, qty = 1 },
             materials = {
@@ -2333,7 +2621,9 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Dragonscale Breastplate",
             icon = "inv_chest_chain_07",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 8367, qty = 1 },
             materials = {
@@ -2349,8 +2639,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Heavy Scorpid Bracers",
             icon = "inv_bracer_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15724 },
+                {
+                    type = "Item",
+                    item_id = 15724,
+                },
             },
             product = { item_id = 15077, qty = 1 },
             materials = {
@@ -2367,8 +2659,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Green Dragonscale Breastplate",
             icon = "inv_chest_chain_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15726 },
+                {
+                    type = "Item",
+                    item_id = 15726,
+                },
             },
             product = { item_id = 15045, qty = 1 },
             materials = {
@@ -2383,8 +2677,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Wicked Leather Gauntlets",
             icon = "inv_gauntlets_31",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15725 },
+                {
+                    type = "Item",
+                    item_id = 15725,
+                },
             },
             product = { item_id = 15083, qty = 1 },
             materials = {
@@ -2401,8 +2697,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Chimeric Gloves",
             icon = "inv_gauntlets_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15729 },
+                {
+                    type = "Item",
+                    item_id = 15729,
+                },
             },
             product = { item_id = 15074, qty = 1 },
             materials = {
@@ -2417,8 +2715,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Heavy Scorpid Vest",
             icon = "inv_chest_chain_15",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15727 },
+                {
+                    type = "Item",
+                    item_id = 15727,
+                },
             },
             product = { item_id = 15076, qty = 1 },
             materials = {
@@ -2433,8 +2733,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Wicked Leather Bracers",
             icon = "inv_bracer_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15728 },
+                {
+                    type = "Item",
+                    item_id = 15728,
+                },
             },
             product = { item_id = 15084, qty = 1 },
             materials = {
@@ -2451,8 +2753,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Green Dragonscale Leggings",
             icon = "inv_pants_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15733 },
+                {
+                    type = "Item",
+                    item_id = 15733,
+                },
             },
             product = { item_id = 15046, qty = 1 },
             materials = {
@@ -2467,8 +2771,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Ironfeather Shoulders",
             icon = "inv_shoulder_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15735 },
+                {
+                    type = "Item",
+                    item_id = 15735,
+                },
             },
             product = { item_id = 15067, qty = 1 },
             materials = {
@@ -2484,8 +2790,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Living Shoulders",
             icon = "inv_shoulder_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15734 },
+                {
+                    type = "Item",
+                    item_id = 15734,
+                },
             },
             product = { item_id = 15061, qty = 1 },
             materials = {
@@ -2500,8 +2808,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Runic Leather Gauntlets",
             icon = "inv_gauntlets_31",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15731 },
+                {
+                    type = "Item",
+                    item_id = 15731,
+                },
             },
             product = { item_id = 15091, qty = 1 },
             materials = {
@@ -2516,8 +2826,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Volcanic Leggings",
             icon = "inv_pants_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15732 },
+                {
+                    type = "Item",
+                    item_id = 15732,
+                },
             },
             product = { item_id = 15054, qty = 1 },
             materials = {
@@ -2535,8 +2847,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Stormshroud Pants",
             icon = "inv_pants_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15741 },
+                {
+                    type = "Item",
+                    item_id = 15741,
+                },
             },
             product = { item_id = 15057, qty = 1 },
             materials = {
@@ -2552,8 +2866,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Warbear Harness",
             icon = "inv_chest_leather_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20253 },
+                {
+                    type = "Item",
+                    item_id = 20253,
+                },
             },
             product = { item_id = 15064, qty = 1 },
             materials = {
@@ -2568,8 +2884,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Chimeric Boots",
             icon = "inv_boots_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15737 },
+                {
+                    type = "Item",
+                    item_id = 15737,
+                },
             },
             product = { item_id = 15073, qty = 1 },
             materials = {
@@ -2584,8 +2902,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Frostsaber Boots",
             icon = "inv_boots_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15740 },
+                {
+                    type = "Item",
+                    item_id = 15740,
+                },
             },
             product = { item_id = 15071, qty = 1 },
             materials = {
@@ -2600,8 +2920,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Heavy Scorpid Gauntlets",
             icon = "inv_gauntlets_24",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15738 },
+                {
+                    type = "Item",
+                    item_id = 15738,
+                },
             },
             product = { item_id = 15078, qty = 1 },
             materials = {
@@ -2616,8 +2938,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Runic Leather Bracers",
             icon = "inv_bracer_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15739 },
+                {
+                    type = "Item",
+                    item_id = 15739,
+                },
             },
             product = { item_id = 15092, qty = 1 },
             materials = {
@@ -2635,7 +2959,9 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Green Dragonscale Gauntlets",
             icon = "inv_gauntlets_12",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 20296, qty = 1 },
             materials = {
@@ -2651,8 +2977,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Chimeric Leggings",
             icon = "inv_pants_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15746 },
+                {
+                    type = "Item",
+                    item_id = 15746,
+                },
             },
             product = { item_id = 15072, qty = 1 },
             materials = {
@@ -2667,8 +2995,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Heavy Scorpid Belt",
             icon = "inv_belt_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15743 },
+                {
+                    type = "Item",
+                    item_id = 15743,
+                },
             },
             product = { item_id = 15082, qty = 1 },
             materials = {
@@ -2683,8 +3013,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Runic Leather Belt",
             icon = "inv_belt_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15745 },
+                {
+                    type = "Item",
+                    item_id = 15745,
+                },
             },
             product = { item_id = 15093, qty = 1 },
             materials = {
@@ -2699,8 +3031,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Wicked Leather Headband",
             icon = "inv_misc_bandage_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15744 },
+                {
+                    type = "Item",
+                    item_id = 15744,
+                },
             },
             product = { item_id = 15086, qty = 1 },
             materials = {
@@ -2717,8 +3051,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Blue Dragonscale Breastplate",
             icon = "inv_chest_chain_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15751 },
+                {
+                    type = "Item",
+                    item_id = 15751,
+                },
             },
             product = { item_id = 15048, qty = 1 },
             materials = {
@@ -2734,8 +3070,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Living Leggings",
             icon = "inv_pants_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15752 },
+                {
+                    type = "Item",
+                    item_id = 15752,
+                },
             },
             product = { item_id = 15060, qty = 1 },
             materials = {
@@ -2751,8 +3089,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Stormshroud Armor",
             icon = "inv_chest_leather_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15753 },
+                {
+                    type = "Item",
+                    item_id = 15753,
+                },
             },
             product = { item_id = 15056, qty = 1 },
             materials = {
@@ -2769,8 +3109,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Warbear Woolies",
             icon = "inv_pants_wolf",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20254 },
+                {
+                    type = "Item",
+                    item_id = 20254,
+                },
             },
             product = { item_id = 15065, qty = 1 },
             materials = {
@@ -2785,8 +3127,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Frostsaber Leggings",
             icon = "inv_pants_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15747 },
+                {
+                    type = "Item",
+                    item_id = 15747,
+                },
             },
             product = { item_id = 15069, qty = 1 },
             materials = {
@@ -2801,8 +3145,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Heavy Scorpid Leggings",
             icon = "inv_pants_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15748 },
+                {
+                    type = "Item",
+                    item_id = 15748,
+                },
             },
             product = { item_id = 15079, qty = 1 },
             materials = {
@@ -2817,8 +3163,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Volcanic Breastplate",
             icon = "inv_chest_leather_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15749 },
+                {
+                    type = "Item",
+                    item_id = 15749,
+                },
             },
             product = { item_id = 15053, qty = 1 },
             materials = {
@@ -2834,8 +3182,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Gordok Ogre Suit",
             icon = "inv_chest_chain_14",
             source = {
-                type = "Quest",
-                quest_ids = { 5518 },
+                {
+                    type = "Quest",
+                    quest_id = 5518,
+                },
             },
             product = { item_id = 18258, qty = 1 },
             materials = {
@@ -2853,8 +3203,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Black Dragonscale Breastplate",
             icon = "inv_chest_plate06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15759 },
+                {
+                    type = "Item",
+                    item_id = 15759,
+                },
             },
             product = { item_id = 15050, qty = 1 },
             materials = {
@@ -2870,8 +3222,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Dawn Treaders",
             icon = "inv_boots_cloth_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19328 },
+                {
+                    type = "Item",
+                    item_id = 19328,
+                },
             },
             product = { item_id = 19052, qty = 1 },
             materials = {
@@ -2888,8 +3242,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Devilsaur Gauntlets",
             icon = "inv_gauntlets_26",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15758 },
+                {
+                    type = "Item",
+                    item_id = 15758,
+                },
             },
             product = { item_id = 15063, qty = 1 },
             materials = {
@@ -2904,8 +3260,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Ironfeather Breastplate",
             icon = "inv_chest_leather_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15760 },
+                {
+                    type = "Item",
+                    item_id = 15760,
+                },
             },
             product = { item_id = 15066, qty = 1 },
             materials = {
@@ -2922,8 +3280,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Might of the Timbermaw",
             icon = "inv_belt_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19326 },
+                {
+                    type = "Item",
+                    item_id = 19326,
+                },
             },
             product = { item_id = 19044, qty = 1 },
             materials = {
@@ -2940,8 +3300,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Chimeric Vest",
             icon = "inv_chest_leather_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15755 },
+                {
+                    type = "Item",
+                    item_id = 15755,
+                },
             },
             product = { item_id = 15075, qty = 1 },
             materials = {
@@ -2956,8 +3318,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Runic Leather Headband",
             icon = "inv_misc_bandage_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15756 },
+                {
+                    type = "Item",
+                    item_id = 15756,
+                },
             },
             product = { item_id = 15094, qty = 1 },
             materials = {
@@ -2972,8 +3336,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Wicked Leather Pants",
             icon = "inv_pants_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15757 },
+                {
+                    type = "Item",
+                    item_id = 15757,
+                },
             },
             product = { item_id = 15087, qty = 1 },
             materials = {
@@ -2991,8 +3357,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Corehound Boots",
             icon = "inv_boots_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17022 },
+                {
+                    type = "Item",
+                    item_id = 17022,
+                },
             },
             product = { item_id = 16982, qty = 1 },
             materials = {
@@ -3008,8 +3376,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Blue Dragonscale Shoulders",
             icon = "inv_shoulder_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15763 },
+                {
+                    type = "Item",
+                    item_id = 15763,
+                },
             },
             product = { item_id = 15049, qty = 1 },
             materials = {
@@ -3026,8 +3396,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Stormshroud Shoulders",
             icon = "inv_shoulder_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15764 },
+                {
+                    type = "Item",
+                    item_id = 15764,
+                },
             },
             product = { item_id = 15058, qty = 1 },
             materials = {
@@ -3044,8 +3416,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Frostsaber Gloves",
             icon = "inv_gauntlets_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15761 },
+                {
+                    type = "Item",
+                    item_id = 15761,
+                },
             },
             product = { item_id = 15070, qty = 1 },
             materials = {
@@ -3060,8 +3434,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Heavy Scorpid Helm",
             icon = "inv_helmet_20",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15762 },
+                {
+                    type = "Item",
+                    item_id = 15762,
+                },
             },
             product = { item_id = 15080, qty = 1 },
             materials = {
@@ -3079,8 +3455,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Black Dragonscale Boots",
             icon = "inv_boots_plate_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17025 },
+                {
+                    type = "Item",
+                    item_id = 17025,
+                },
             },
             product = { item_id = 16984, qty = 1 },
             materials = {
@@ -3097,8 +3475,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Chromatic Cloak",
             icon = "inv_misc_cape_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18517 },
+                {
+                    type = "Item",
+                    item_id = 18517,
+                },
             },
             product = { item_id = 18509, qty = 1 },
             materials = {
@@ -3116,8 +3496,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Chromatic Gauntlets",
             icon = "inv_gauntlets_22",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19331 },
+                {
+                    type = "Item",
+                    item_id = 19331,
+                },
             },
             product = { item_id = 19157, qty = 1 },
             materials = {
@@ -3135,8 +3517,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Corehound Belt",
             icon = "inv_belt_24",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19332 },
+                {
+                    type = "Item",
+                    item_id = 19332,
+                },
             },
             product = { item_id = 19162, qty = 1 },
             materials = {
@@ -3153,8 +3537,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Dreamscale Breastplate",
             icon = "inv_chest_plate08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20382 },
+                {
+                    type = "Item",
+                    item_id = 20382,
+                },
             },
             product = { item_id = 20380, qty = 1 },
             materials = {
@@ -3171,8 +3557,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Hide of the Wild",
             icon = "inv_misc_cape_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18518 },
+                {
+                    type = "Item",
+                    item_id = 18518,
+                },
             },
             product = { item_id = 18510, qty = 1 },
             materials = {
@@ -3190,8 +3578,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Icy Scale Bracers",
             icon = "inv_bracer_07",
             source = {
-                type = "Quest",
-                quest_ids = { 9233 },
+                {
+                    type = "Quest",
+                    quest_id = 9233,
+                },
             },
             product = { item_id = 22665, qty = 1 },
             materials = {
@@ -3208,8 +3598,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Icy Scale Breastplate",
             icon = "inv_chest_plate09",
             source = {
-                type = "Quest",
-                quest_ids = { 9233 },
+                {
+                    type = "Quest",
+                    quest_id = 9233,
+                },
             },
             product = { item_id = 22664, qty = 1 },
             materials = {
@@ -3226,8 +3618,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Icy Scale Gauntlets",
             icon = "inv_gauntlets_28",
             source = {
-                type = "Quest",
-                quest_ids = { 9233 },
+                {
+                    type = "Quest",
+                    quest_id = 9233,
+                },
             },
             product = { item_id = 22666, qty = 1 },
             materials = {
@@ -3244,8 +3638,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Lava Belt",
             icon = "inv_belt_32",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19330 },
+                {
+                    type = "Item",
+                    item_id = 19330,
+                },
             },
             product = { item_id = 19149, qty = 1 },
             materials = {
@@ -3260,8 +3656,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Molten Belt",
             icon = "inv_belt_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19333 },
+                {
+                    type = "Item",
+                    item_id = 19333,
+                },
             },
             product = { item_id = 19163, qty = 1 },
             materials = {
@@ -3278,8 +3676,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Molten Helm",
             icon = "inv_helmet_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17023 },
+                {
+                    type = "Item",
+                    item_id = 17023,
+                },
             },
             product = { item_id = 16983, qty = 1 },
             materials = {
@@ -3295,8 +3695,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Polar Bracers",
             icon = "inv_bracer_07",
             source = {
-                type = "Quest",
-                quest_ids = { 9233 },
+                {
+                    type = "Quest",
+                    quest_id = 9233,
+                },
             },
             product = { item_id = 22663, qty = 1 },
             materials = {
@@ -3313,8 +3715,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Polar Gloves",
             icon = "inv_gauntlets_06",
             source = {
-                type = "Quest",
-                quest_ids = { 9233 },
+                {
+                    type = "Quest",
+                    quest_id = 9233,
+                },
             },
             product = { item_id = 22662, qty = 1 },
             materials = {
@@ -3331,8 +3735,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Polar Tunic",
             icon = "inv_chest_cloth_08",
             source = {
-                type = "Quest",
-                quest_ids = { 9233 },
+                {
+                    type = "Quest",
+                    quest_id = 9233,
+                },
             },
             product = { item_id = 22661, qty = 1 },
             materials = {
@@ -3349,8 +3755,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Shifting Cloak",
             icon = "inv_misc_cape_20",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18519 },
+                {
+                    type = "Item",
+                    item_id = 18519,
+                },
             },
             product = { item_id = 18511, qty = 1 },
             materials = {
@@ -3368,8 +3776,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Black Dragonscale Leggings",
             icon = "inv_pants_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15781 },
+                {
+                    type = "Item",
+                    item_id = 15781,
+                },
             },
             product = { item_id = 15052, qty = 1 },
             materials = {
@@ -3386,8 +3796,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Black Dragonscale Shoulders",
             icon = "inv_shoulder_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15770 },
+                {
+                    type = "Item",
+                    item_id = 15770,
+                },
             },
             product = { item_id = 15051, qty = 1 },
             materials = {
@@ -3404,8 +3816,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Blood Tiger Breastplate",
             icon = "inv_chest_leather_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19772 },
+                {
+                    type = "Item",
+                    item_id = 19772,
+                },
             },
             product = { item_id = 19688, qty = 1 },
             materials = {
@@ -3421,8 +3835,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Blood Tiger Shoulders",
             icon = "inv_shoulder_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19773 },
+                {
+                    type = "Item",
+                    item_id = 19773,
+                },
             },
             product = { item_id = 19689, qty = 1 },
             materials = {
@@ -3438,7 +3854,9 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Blue Dragonscale Leggings",
             icon = "inv_pants_mail_15",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 20295, qty = 1 },
             materials = {
@@ -3454,8 +3872,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Bramblewood Belt",
             icon = "inv_belt_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22769 },
+                {
+                    type = "Item",
+                    item_id = 22769,
+                },
             },
             product = { item_id = 22761, qty = 1 },
             materials = {
@@ -3470,8 +3890,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Bramblewood Boots",
             icon = "inv_boots_cloth_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22770 },
+                {
+                    type = "Item",
+                    item_id = 22770,
+                },
             },
             product = { item_id = 22760, qty = 1 },
             materials = {
@@ -3487,8 +3909,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Bramblewood Helm",
             icon = "inv_helmet_58",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22771 },
+                {
+                    type = "Item",
+                    item_id = 22771,
+                },
             },
             product = { item_id = 22759, qty = 1 },
             materials = {
@@ -3504,8 +3928,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Core Armor Kit",
             icon = "inv_misc_armorkit_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18252 },
+                {
+                    type = "Item",
+                    item_id = 18252,
+                },
             },
             product = { item_id = 18251, qty = 1 },
             materials = {
@@ -3519,8 +3945,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Devilsaur Leggings",
             icon = "inv_pants_wolf",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15772 },
+                {
+                    type = "Item",
+                    item_id = 15772,
+                },
             },
             product = { item_id = 15062, qty = 1 },
             materials = {
@@ -3536,8 +3964,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Girdle of Insight",
             icon = "inv_belt_26",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18514 },
+                {
+                    type = "Item",
+                    item_id = 18514,
+                },
             },
             product = { item_id = 18504, qty = 1 },
             materials = {
@@ -3553,8 +3983,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Golden Mantle of the Dawn",
             icon = "inv_shoulder_26",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19329 },
+                {
+                    type = "Item",
+                    item_id = 19329,
+                },
             },
             product = { item_id = 19058, qty = 1 },
             materials = {
@@ -3571,8 +4003,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Living Breastplate",
             icon = "inv_chest_plate07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15771 },
+                {
+                    type = "Item",
+                    item_id = 15771,
+                },
             },
             product = { item_id = 15059, qty = 1 },
             materials = {
@@ -3589,8 +4023,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Mongoose Boots",
             icon = "inv_boots_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18515 },
+                {
+                    type = "Item",
+                    item_id = 18515,
+                },
             },
             product = { item_id = 18506, qty = 1 },
             materials = {
@@ -3607,8 +4043,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Onyxia Scale Cloak",
             icon = "inv_misc_cape_05",
             source = {
-                type = "Quest",
-                quest_ids = { 7493, 7497 },
+                {
+                    type = "Quest",
+                    quest_ids = { 7493, 7497 },
+                },
             },
             product = { item_id = 15138, qty = 1 },
             materials = {
@@ -3623,8 +4061,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Primal Batskin Bracers",
             icon = "inv_bracer_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19771 },
+                {
+                    type = "Item",
+                    item_id = 19771,
+                },
             },
             product = { item_id = 19687, qty = 1 },
             materials = {
@@ -3640,8 +4080,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Primal Batskin Gloves",
             icon = "inv_gauntlets_31",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19770 },
+                {
+                    type = "Item",
+                    item_id = 19770,
+                },
             },
             product = { item_id = 19686, qty = 1 },
             materials = {
@@ -3657,8 +4099,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Primal Batskin Jerkin",
             icon = "inv_chest_leather_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19769 },
+                {
+                    type = "Item",
+                    item_id = 19769,
+                },
             },
             product = { item_id = 19685, qty = 1 },
             materials = {
@@ -3674,8 +4118,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Red Dragonscale Breastplate",
             icon = "inv_chest_chain_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15730 },
+                {
+                    type = "Item",
+                    item_id = 15730,
+                },
             },
             product = { item_id = 15047, qty = 1 },
             materials = {
@@ -3690,8 +4136,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Sandstalker Bracers",
             icon = "inv_bracer_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20509 },
+                {
+                    type = "Item",
+                    item_id = 20509,
+                },
             },
             product = { item_id = 20476, qty = 1 },
             materials = {
@@ -3706,8 +4154,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Sandstalker Breastplate",
             icon = "inv_chest_plate07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20511 },
+                {
+                    type = "Item",
+                    item_id = 20511,
+                },
             },
             product = { item_id = 20478, qty = 1 },
             materials = {
@@ -3723,8 +4173,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Sandstalker Gauntlets",
             icon = "inv_gauntlets_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20510 },
+                {
+                    type = "Item",
+                    item_id = 20510,
+                },
             },
             product = { item_id = 20477, qty = 1 },
             materials = {
@@ -3740,8 +4192,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Spitfire Bracers",
             icon = "inv_bracer_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20506 },
+                {
+                    type = "Item",
+                    item_id = 20506,
+                },
             },
             product = { item_id = 20481, qty = 1 },
             materials = {
@@ -3756,8 +4210,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Spitfire Breastplate",
             icon = "inv_chest_leather_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20508 },
+                {
+                    type = "Item",
+                    item_id = 20508,
+                },
             },
             product = { item_id = 20479, qty = 1 },
             materials = {
@@ -3773,8 +4229,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Spitfire Gauntlets",
             icon = "inv_gauntlets_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20507 },
+                {
+                    type = "Item",
+                    item_id = 20507,
+                },
             },
             product = { item_id = 20480, qty = 1 },
             materials = {
@@ -3790,8 +4248,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Stormshroud Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21548 },
+                {
+                    type = "Item",
+                    item_id = 21548,
+                },
             },
             product = { item_id = 21278, qty = 1 },
             materials = {
@@ -3808,8 +4268,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Swift Flight Bracers",
             icon = "inv_bracer_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18516 },
+                {
+                    type = "Item",
+                    item_id = 18516,
+                },
             },
             product = { item_id = 18508, qty = 1 },
             materials = {
@@ -3826,8 +4288,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Timbermaw Brawlers",
             icon = "inv_gauntlets_26",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19327 },
+                {
+                    type = "Item",
+                    item_id = 19327,
+                },
             },
             product = { item_id = 19049, qty = 1 },
             materials = {
@@ -3844,8 +4308,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Frostsaber Tunic",
             icon = "inv_chest_chain_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15779 },
+                {
+                    type = "Item",
+                    item_id = 15779,
+                },
             },
             product = { item_id = 15068, qty = 1 },
             materials = {
@@ -3861,8 +4327,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Heavy Scorpid Shoulders",
             icon = "inv_shoulder_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15774 },
+                {
+                    type = "Item",
+                    item_id = 15774,
+                },
             },
             product = { item_id = 15081, qty = 1 },
             materials = {
@@ -3878,8 +4346,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Runic Leather Armor",
             icon = "inv_chest_leather_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15776 },
+                {
+                    type = "Item",
+                    item_id = 15776,
+                },
             },
             product = { item_id = 15090, qty = 1 },
             materials = {
@@ -3896,8 +4366,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Runic Leather Pants",
             icon = "inv_pants_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15765 },
+                {
+                    type = "Item",
+                    item_id = 15765,
+                },
             },
             product = { item_id = 15095, qty = 1 },
             materials = {
@@ -3913,8 +4385,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Runic Leather Shoulders",
             icon = "inv_shoulder_15",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15777 },
+                {
+                    type = "Item",
+                    item_id = 15777,
+                },
             },
             product = { item_id = 15096, qty = 1 },
             materials = {
@@ -3931,8 +4405,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Volcanic Shoulders",
             icon = "inv_shoulder_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15775 },
+                {
+                    type = "Item",
+                    item_id = 15775,
+                },
             },
             product = { item_id = 15055, qty = 1 },
             materials = {
@@ -3948,8 +4424,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Wicked Leather Armor",
             icon = "inv_chest_plate06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15773 },
+                {
+                    type = "Item",
+                    item_id = 15773,
+                },
             },
             product = { item_id = 15085, qty = 1 },
             materials = {
@@ -3966,8 +4444,10 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             name = "Wicked Leather Belt",
             icon = "inv_belt_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15768 },
+                {
+                    type = "Item",
+                    item_id = 15768,
+                },
             },
             product = { item_id = 15088, qty = 1 },
             materials = {

@@ -7,7 +7,9 @@ TFG.HERBALISM_CLASSIC_ERA = {
             name = "Find Herbs",
             icon = "inv_misc_flower_02",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -15,7 +17,9 @@ TFG.HERBALISM_CLASSIC_ERA = {
             name = "Herb Gathering",
             icon = "spell_nature_naturetouchgrow",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -25,7 +29,9 @@ TFG.HERBALISM_CLASSIC_ERA = {
             name = "Herb Gathering",
             icon = "spell_nature_naturetouchgrow",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -35,7 +41,9 @@ TFG.HERBALISM_CLASSIC_ERA = {
             name = "Herb Gathering",
             icon = "spell_nature_naturetouchgrow",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -45,7 +53,9 @@ TFG.HERBALISM_CLASSIC_ERA = {
             name = "Herb Gathering",
             icon = "spell_nature_naturetouchgrow",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },

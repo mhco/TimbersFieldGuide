@@ -7,7 +7,9 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Runed Copper Rod",
             icon = "inv_staff_goldfeathered_01",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 6218, qty = 1 },
             materials = {
@@ -22,7 +24,9 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchanting",
             icon = "trade_engraving",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -32,8 +36,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Lesser Magic Wand",
             icon = "inv_staff_02",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 11287, qty = 1 },
             materials = {
@@ -49,8 +55,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Chest - Minor Health",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             materials = {
                 { item_id = 10940, qty = 1 },
@@ -64,8 +72,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Chest - Minor Mana",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6342 },
+                {
+                    type = "Item",
+                    item_id = 6342,
+                },
             },
             materials = {
                 { item_id = 10938, qty = 1 },
@@ -77,7 +87,9 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Disenchant",
             icon = "spell_holy_removecurse",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             levels = { 0, 20, 40, 60 },
         },
@@ -88,8 +100,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Chest - Minor Absorption",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             materials = {
                 { item_id = 10940, qty = 2 },
@@ -104,8 +118,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Minor Wizard Oil",
             icon = "inv_poison_mindnumbing",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20758 },
+                {
+                    type = "Item",
+                    item_id = 20758,
+                },
             },
             product = { item_id = 20744, qty = 1 },
             materials = {
@@ -120,8 +136,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Cloak - Minor Resistance",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             materials = {
                 { item_id = 10940, qty = 1 },
@@ -136,7 +154,9 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchanting",
             icon = "trade_engraving",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -144,8 +164,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Minor Stamina",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             materials = {
                 { item_id = 10940, qty = 3 },
@@ -159,8 +181,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Minor Spirit",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6344 },
+                {
+                    type = "Item",
+                    item_id = 6344,
+                },
             },
             materials = {
                 { item_id = 10938, qty = 2 },
@@ -172,8 +196,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Chest - Lesser Health",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             materials = {
                 { item_id = 10940, qty = 2 },
@@ -188,8 +214,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Greater Magic Wand",
             icon = "inv_staff_07",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 11288, qty = 1 },
             materials = {
@@ -203,8 +231,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Cloak - Minor Protection",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             materials = {
                 { item_id = 10940, qty = 3 },
@@ -217,7 +247,9 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Minor Health",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 10940, qty = 1 },
@@ -231,8 +263,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Minor Agility",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 400,
+                {
+                    type = "Trainer",
+                    cost = 400,
+                },
             },
             materials = {
                 { item_id = 10940, qty = 2 },
@@ -245,8 +279,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Minor Strength",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6347 },
+                {
+                    type = "Item",
+                    item_id = 6347,
+                },
             },
             materials = {
                 { item_id = 10940, qty = 5 },
@@ -258,8 +294,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Chest - Lesser Mana",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6346 },
+                {
+                    type = "Item",
+                    item_id = 6346,
+                },
             },
             materials = {
                 { item_id = 10939, qty = 1 },
@@ -272,7 +310,9 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Minor Deflect",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 10938, qty = 1 },
@@ -287,8 +327,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Weapon - Minor Beastslayer",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6348 },
+                {
+                    type = "Item",
+                    item_id = 6348,
+                },
             },
             materials = {
                 { item_id = 10940, qty = 4 },
@@ -301,8 +343,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Weapon - Minor Striking",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             materials = {
                 { item_id = 10940, qty = 2 },
@@ -318,8 +362,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Runed Silver Rod",
             icon = "inv_staff_01",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 6339, qty = 1 },
             materials = {
@@ -335,8 +381,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant 2H Weapon - Lesser Intellect",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6349 },
+                {
+                    type = "Item",
+                    item_id = 6349,
+                },
             },
             materials = {
                 { item_id = 10939, qty = 3 },
@@ -348,8 +396,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant 2H Weapon - Minor Impact",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             materials = {
                 { item_id = 10940, qty = 4 },
@@ -364,8 +414,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Shield - Minor Stamina",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 600,
+                {
+                    type = "Trainer",
+                    cost = 600,
+                },
             },
             materials = {
                 { item_id = 10998, qty = 1 },
@@ -380,8 +432,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant 2H Weapon - Lesser Spirit",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11038 },
+                {
+                    type = "Item",
+                    item_id = 11038,
+                },
             },
             materials = {
                 { item_id = 10998, qty = 1 },
@@ -394,8 +448,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Cloak - Minor Agility",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11039 },
+                {
+                    type = "Item",
+                    item_id = 11039,
+                },
             },
             materials = {
                 { item_id = 10998, qty = 1 },
@@ -409,8 +465,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Cloak - Lesser Protection",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 800,
+                {
+                    type = "Trainer",
+                    cost = 800,
+                },
             },
             materials = {
                 { item_id = 10940, qty = 6 },
@@ -423,8 +481,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Shield - Lesser Protection",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11081 },
+                {
+                    type = "Item",
+                    item_id = 11081,
+                },
             },
             materials = {
                 { item_id = 10998, qty = 1 },
@@ -440,8 +500,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Lesser Spirit",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6375 },
+                {
+                    type = "Item",
+                    item_id = 6375,
+                },
             },
             materials = {
                 { item_id = 10998, qty = 2 },
@@ -453,8 +515,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Chest - Health",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             materials = {
                 { item_id = 10940, qty = 4 },
@@ -469,7 +533,9 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchanting",
             icon = "trade_engraving",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -477,8 +543,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Boots - Minor Agility",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6377 },
+                {
+                    type = "Item",
+                    item_id = 6377,
+                },
             },
             materials = {
                 { item_id = 10940, qty = 6 },
@@ -491,8 +559,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Boots - Minor Stamina",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 1400,
+                {
+                    type = "Trainer",
+                    cost = 1400,
+                },
             },
             materials = {
                 { item_id = 10940, qty = 8 },
@@ -504,8 +574,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Cloak - Lesser Fire Resistance",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 1250,
+                {
+                    type = "Trainer",
+                    cost = 1250,
+                },
             },
             materials = {
                 { item_id = 6371, qty = 1 },
@@ -520,8 +592,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Lesser Stamina",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 1500,
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
             },
             materials = {
                 { item_id = 11083, qty = 2 },
@@ -533,8 +607,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Shield - Lesser Spirit",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 1500,
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
             },
             materials = {
                 { item_id = 10998, qty = 2 },
@@ -549,8 +625,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Cloak - Lesser Shadow Resistance",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11098 },
+                {
+                    type = "Item",
+                    item_id = 11098,
+                },
             },
             materials = {
                 { item_id = 11082, qty = 1 },
@@ -565,8 +643,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Lesser Strength",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11101 },
+                {
+                    type = "Item",
+                    item_id = 11101,
+                },
             },
             materials = {
                 { item_id = 11083, qty = 2 },
@@ -578,8 +658,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Chest - Lesser Absorption",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
             materials = {
                 { item_id = 10940, qty = 2 },
@@ -593,8 +675,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Weapon - Lesser Striking",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 2000,
+                {
+                    type = "Trainer",
+                    cost = 2000,
+                },
             },
             materials = {
                 { item_id = 11083, qty = 2 },
@@ -609,8 +693,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant 2H Weapon - Lesser Impact",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 2400,
+                {
+                    type = "Trainer",
+                    cost = 2400,
+                },
             },
             materials = {
                 { item_id = 11083, qty = 3 },
@@ -623,8 +709,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Chest - Mana",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 2400,
+                {
+                    type = "Trainer",
+                    cost = 2400,
+                },
             },
             materials = {
                 { item_id = 11082, qty = 1 },
@@ -637,8 +725,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Gloves - Fishing",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11152 },
+                {
+                    type = "Item",
+                    item_id = 11152,
+                },
             },
             materials = {
                 { item_id = 11083, qty = 1 },
@@ -651,8 +741,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Gloves - Herbalism",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11151 },
+                {
+                    type = "Item",
+                    item_id = 11151,
+                },
             },
             materials = {
                 { item_id = 11083, qty = 1 },
@@ -665,8 +757,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Gloves - Mining",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11150 },
+                {
+                    type = "Item",
+                    item_id = 11150,
+                },
             },
             materials = {
                 { item_id = 11083, qty = 1 },
@@ -681,8 +775,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Minor Mana Oil",
             icon = "inv_potion_98",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20752 },
+                {
+                    type = "Item",
+                    item_id = 20752,
+                },
             },
             product = { item_id = 20745, qty = 1 },
             materials = {
@@ -697,8 +793,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Runed Golden Rod",
             icon = "inv_staff_10",
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
             product = { item_id = 11130, qty = 1 },
             materials = {
@@ -714,8 +812,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Lesser Intellect",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
             materials = {
                 { item_id = 11082, qty = 2 },
@@ -727,8 +827,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Chest - Minor Stats",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
             materials = {
                 { item_id = 11082, qty = 1 },
@@ -744,8 +846,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Lesser Mystic Wand",
             icon = "inv_staff_02",
             source = {
-                type = "Trainer",
-                cost = 2600,
+                {
+                    type = "Trainer",
+                    cost = 2600,
+                },
             },
             product = { item_id = 11289, qty = 1 },
             materials = {
@@ -760,8 +864,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Cloak - Defense",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 2600,
+                {
+                    type = "Trainer",
+                    cost = 2600,
+                },
             },
             materials = {
                 { item_id = 11138, qty = 1 },
@@ -774,8 +880,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Shield - Lesser Stamina",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 2600,
+                {
+                    type = "Trainer",
+                    cost = 2600,
+                },
             },
             materials = {
                 { item_id = 11134, qty = 1 },
@@ -790,8 +898,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Boots - Lesser Agility",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 2800,
+                {
+                    type = "Trainer",
+                    cost = 2800,
+                },
             },
             materials = {
                 { item_id = 11083, qty = 1 },
@@ -804,8 +914,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Chest - Greater Health",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 2700,
+                {
+                    type = "Trainer",
+                    cost = 2700,
+                },
             },
             materials = {
                 { item_id = 11083, qty = 3 },
@@ -819,8 +931,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Spirit",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 2800,
+                {
+                    type = "Trainer",
+                    cost = 2800,
+                },
             },
             materials = {
                 { item_id = 11134, qty = 1 },
@@ -834,8 +948,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Boots - Lesser Stamina",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 2800,
+                {
+                    type = "Trainer",
+                    cost = 2800,
+                },
             },
             materials = {
                 { item_id = 11083, qty = 4 },
@@ -847,8 +963,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Lesser Deflection",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11163 },
+                {
+                    type = "Item",
+                    item_id = 11163,
+                },
             },
             materials = {
                 { item_id = 11134, qty = 1 },
@@ -861,8 +979,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Stamina",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 2800,
+                {
+                    type = "Trainer",
+                    cost = 2800,
+                },
             },
             materials = {
                 { item_id = 11083, qty = 6 },
@@ -876,8 +996,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Greater Mystic Wand",
             icon = "inv_wand_07",
             source = {
-                type = "Trainer",
-                cost = 3000,
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
             },
             product = { item_id = 11290, qty = 1 },
             materials = {
@@ -892,8 +1014,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Cloak - Fire Resistance",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 3000,
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
             },
             materials = {
                 { item_id = 11134, qty = 1 },
@@ -906,8 +1030,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Weapon - Lesser Beastslayer",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11164 },
+                {
+                    type = "Item",
+                    item_id = 11164,
+                },
             },
             materials = {
                 { item_id = 11134, qty = 1 },
@@ -921,8 +1047,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Weapon - Lesser Elemental Slayer",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11165 },
+                {
+                    type = "Item",
+                    item_id = 11165,
+                },
             },
             materials = {
                 { item_id = 11134, qty = 1 },
@@ -938,8 +1066,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Strength",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 3600,
+                {
+                    type = "Trainer",
+                    cost = 3600,
+                },
             },
             materials = {
                 { item_id = 11137, qty = 1 },
@@ -951,8 +1081,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Shield - Spirit",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 3200,
+                {
+                    type = "Trainer",
+                    cost = 3200,
+                },
             },
             materials = {
                 { item_id = 11135, qty = 1 },
@@ -967,8 +1099,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Chest - Greater Mana",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 3800,
+                {
+                    type = "Trainer",
+                    cost = 3800,
+                },
             },
             materials = {
                 { item_id = 11135, qty = 1 },
@@ -982,8 +1116,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Boots - Lesser Spirit",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11167 },
+                {
+                    type = "Item",
+                    item_id = 11167,
+                },
             },
             materials = {
                 { item_id = 11135, qty = 1 },
@@ -996,8 +1132,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Weapon - Winter's Might",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17725 },
+                {
+                    type = "Item",
+                    item_id = 17725,
+                },
             },
             materials = {
                 { item_id = 11135, qty = 3 },
@@ -1014,8 +1152,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Shield - Lesser Block",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11168 },
+                {
+                    type = "Item",
+                    item_id = 11168,
+                },
             },
             materials = {
                 { item_id = 11135, qty = 2 },
@@ -1029,8 +1169,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Weapon - Striking",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             materials = {
                 { item_id = 11135, qty = 2 },
@@ -1045,7 +1187,9 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchanting",
             icon = "trade_engraving",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -1053,8 +1197,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Lesser Wizard Oil",
             icon = "inv_potion_103",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20753 },
+                {
+                    type = "Item",
+                    item_id = 20753,
+                },
             },
             product = { item_id = 20746, qty = 1 },
             materials = {
@@ -1069,8 +1215,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Runed Truesilver Rod",
             icon = "inv_staff_11",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 11145, qty = 1 },
             materials = {
@@ -1086,8 +1234,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant 2H Weapon - Impact",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             materials = {
                 { item_id = 11137, qty = 4 },
@@ -1100,8 +1250,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Chest - Lesser Stats",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             materials = {
                 { item_id = 11135, qty = 2 },
@@ -1115,8 +1267,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Gloves - Skinning",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11166 },
+                {
+                    type = "Item",
+                    item_id = 11166,
+                },
             },
             materials = {
                 { item_id = 11137, qty = 1 },
@@ -1131,8 +1285,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Cloak - Greater Defense",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 4200,
+                {
+                    type = "Trainer",
+                    cost = 4200,
+                },
             },
             materials = {
                 { item_id = 11137, qty = 3 },
@@ -1144,8 +1300,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Cloak - Resistance",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 4200,
+                {
+                    type = "Trainer",
+                    cost = 4200,
+                },
             },
             materials = {
                 { item_id = 11174, qty = 1 },
@@ -1159,8 +1317,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Intellect",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 4400,
+                {
+                    type = "Trainer",
+                    cost = 4400,
+                },
             },
             materials = {
                 { item_id = 11174, qty = 2 },
@@ -1172,8 +1332,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Gloves - Agility",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 4400,
+                {
+                    type = "Trainer",
+                    cost = 4400,
+                },
             },
             materials = {
                 { item_id = 11174, qty = 1 },
@@ -1186,8 +1348,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Shield - Stamina",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11202 },
+                {
+                    type = "Item",
+                    item_id = 11202,
+                },
             },
             materials = {
                 { item_id = 11137, qty = 5 },
@@ -1201,8 +1365,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Boots - Stamina",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 4600,
+                {
+                    type = "Trainer",
+                    cost = 4600,
+                },
             },
             materials = {
                 { item_id = 11137, qty = 5 },
@@ -1214,8 +1380,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Gloves - Advanced Mining",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11203 },
+                {
+                    type = "Item",
+                    item_id = 11203,
+                },
             },
             materials = {
                 { item_id = 11137, qty = 3 },
@@ -1230,8 +1398,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Greater Spirit",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11204 },
+                {
+                    type = "Item",
+                    item_id = 11204,
+                },
             },
             materials = {
                 { item_id = 11174, qty = 3 },
@@ -1244,8 +1414,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Chest - Superior Health",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 4800,
+                {
+                    type = "Trainer",
+                    cost = 4800,
+                },
             },
             materials = {
                 { item_id = 11137, qty = 6 },
@@ -1259,8 +1431,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Boots - Minor Speed",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             materials = {
                 { item_id = 11177, qty = 1 },
@@ -1274,8 +1448,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Cloak - Lesser Agility",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11206 },
+                {
+                    type = "Item",
+                    item_id = 11206,
+                },
             },
             materials = {
                 { item_id = 11174, qty = 2 },
@@ -1287,8 +1463,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Gloves - Advanced Herbalism",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11205 },
+                {
+                    type = "Item",
+                    item_id = 11205,
+                },
             },
             materials = {
                 { item_id = 11137, qty = 3 },
@@ -1301,8 +1479,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Gloves - Strength",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             materials = {
                 { item_id = 11174, qty = 2 },
@@ -1317,8 +1497,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Chest - Superior Mana",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 5400,
+                {
+                    type = "Trainer",
+                    cost = 5400,
+                },
             },
             materials = {
                 { item_id = 11175, qty = 1 },
@@ -1331,8 +1513,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Shield - Greater Spirit",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 5400,
+                {
+                    type = "Trainer",
+                    cost = 5400,
+                },
             },
             materials = {
                 { item_id = 11175, qty = 1 },
@@ -1345,8 +1529,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Weapon - Demonslaying",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11208 },
+                {
+                    type = "Item",
+                    item_id = 11208,
+                },
             },
             materials = {
                 { item_id = 11177, qty = 1 },
@@ -1362,8 +1548,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Boots - Agility",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 5800,
+                {
+                    type = "Trainer",
+                    cost = 5800,
+                },
             },
             materials = {
                 { item_id = 11175, qty = 2 },
@@ -1375,8 +1563,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Deflection",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11223 },
+                {
+                    type = "Item",
+                    item_id = 11223,
+                },
             },
             materials = {
                 { item_id = 11175, qty = 1 },
@@ -1389,8 +1579,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Shield - Frost Resistance",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11224 },
+                {
+                    type = "Item",
+                    item_id = 11224,
+                },
             },
             materials = {
                 { item_id = 11178, qty = 1 },
@@ -1405,8 +1597,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant 2H Weapon - Greater Impact",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 6200,
+                {
+                    type = "Trainer",
+                    cost = 6200,
+                },
             },
             materials = {
                 { item_id = 11178, qty = 2 },
@@ -1419,8 +1613,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Greater Strength",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 6200,
+                {
+                    type = "Trainer",
+                    cost = 6200,
+                },
             },
             materials = {
                 { item_id = 11176, qty = 2 },
@@ -1435,8 +1631,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Greater Stamina",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11225 },
+                {
+                    type = "Item",
+                    item_id = 11225,
+                },
             },
             materials = {
                 { item_id = 11176, qty = 5 },
@@ -1448,8 +1646,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Chest - Stats",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 6200,
+                {
+                    type = "Trainer",
+                    cost = 6200,
+                },
             },
             materials = {
                 { item_id = 11178, qty = 1 },
@@ -1463,8 +1663,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Weapon - Greater Striking",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 6200,
+                {
+                    type = "Trainer",
+                    cost = 6200,
+                },
             },
             materials = {
                 { item_id = 11178, qty = 2 },
@@ -1479,8 +1681,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchanted Leather",
             icon = "inv_misc_rune_05",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 12810, qty = 1 },
             materials = {
@@ -1494,8 +1698,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchanted Thorium",
             icon = "inv_ingot_eternium",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 12655, qty = 1 },
             materials = {
@@ -1509,8 +1715,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Lesser Mana Oil",
             icon = "inv_potion_99",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20754 },
+                {
+                    type = "Item",
+                    item_id = 20754,
+                },
             },
             product = { item_id = 20747, qty = 1 },
             materials = {
@@ -1525,8 +1733,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Gloves - Minor Haste",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
-                cost = 6500,
+                {
+                    type = "Trainer",
+                    cost = 6500,
+                },
             },
             materials = {
                 { item_id = 11178, qty = 2 },
@@ -1539,8 +1749,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Gloves - Riding Skill",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11226 },
+                {
+                    type = "Item",
+                    item_id = 11226,
+                },
             },
             materials = {
                 { item_id = 11178, qty = 2 },
@@ -1555,8 +1767,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Greater Intellect",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16214 },
+                {
+                    type = "Item",
+                    item_id = 16214,
+                },
             },
             materials = {
                 { item_id = 16202, qty = 3 },
@@ -1570,8 +1784,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Boots - Greater Stamina",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16215 },
+                {
+                    type = "Item",
+                    item_id = 16215,
+                },
             },
             materials = {
                 { item_id = 11176, qty = 10 },
@@ -1585,8 +1801,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Smoking Heart of the Mountain",
             icon = "inv_misc_gem_bloodstone_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11813 },
+                {
+                    type = "Item",
+                    item_id = 11813,
+                },
             },
             product = { item_id = 11811, qty = 1 },
             materials = {
@@ -1601,8 +1819,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Cloak - Greater Resistance",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16216 },
+                {
+                    type = "Item",
+                    item_id = 16216,
+                },
             },
             materials = {
                 { item_id = 16202, qty = 2 },
@@ -1619,8 +1839,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Shield - Greater Stamina",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16217 },
+                {
+                    type = "Item",
+                    item_id = 16217,
+                },
             },
             materials = {
                 { item_id = 11176, qty = 10 },
@@ -1632,8 +1854,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Weapon - Fiery Weapon",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11207 },
+                {
+                    type = "Item",
+                    item_id = 11207,
+                },
             },
             materials = {
                 { item_id = 11177, qty = 4 },
@@ -1648,8 +1872,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Superior Spirit",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16218 },
+                {
+                    type = "Item",
+                    item_id = 16218,
+                },
             },
             materials = {
                 { item_id = 16202, qty = 3 },
@@ -1662,8 +1888,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Gloves - Greater Agility",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16219 },
+                {
+                    type = "Item",
+                    item_id = 16219,
+                },
             },
             materials = {
                 { item_id = 16202, qty = 3 },
@@ -1678,8 +1906,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Wizard Oil",
             icon = "inv_potion_104",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20755 },
+                {
+                    type = "Item",
+                    item_id = 20755,
+                },
             },
             product = { item_id = 20750, qty = 1 },
             materials = {
@@ -1694,8 +1924,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Boots - Spirit",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16220 },
+                {
+                    type = "Item",
+                    item_id = 16220,
+                },
             },
             materials = {
                 { item_id = 16203, qty = 2 },
@@ -1708,8 +1940,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Chest - Major Health",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16221 },
+                {
+                    type = "Item",
+                    item_id = 16221,
+                },
             },
             materials = {
                 { item_id = 16204, qty = 6 },
@@ -1724,8 +1958,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Shield - Superior Spirit",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16222 },
+                {
+                    type = "Item",
+                    item_id = 16222,
+                },
             },
             materials = {
                 { item_id = 16203, qty = 2 },
@@ -1740,8 +1976,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Cloak - Superior Defense",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16224 },
+                {
+                    type = "Item",
+                    item_id = 16224,
+                },
             },
             materials = {
                 { item_id = 16204, qty = 8 },
@@ -1753,8 +1991,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Weapon - Icy Chill",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16223 },
+                {
+                    type = "Item",
+                    item_id = 16223,
+                },
             },
             materials = {
                 { item_id = 14343, qty = 4 },
@@ -1771,8 +2011,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Runed Arcanite Rod",
             icon = "inv_wand_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16243 },
+                {
+                    type = "Item",
+                    item_id = 16243,
+                },
             },
             product = { item_id = 16207, qty = 1 },
             materials = {
@@ -1790,8 +2032,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant 2H Weapon - Agility",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22392 },
+                {
+                    type = "Item",
+                    item_id = 22392,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 10 },
@@ -1806,8 +2050,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Mana Regeneration",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19446 },
+                {
+                    type = "Item",
+                    item_id = 19446,
+                },
             },
             materials = {
                 { item_id = 16204, qty = 16 },
@@ -1821,8 +2067,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Chest - Major Mana",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16242 },
+                {
+                    type = "Item",
+                    item_id = 16242,
+                },
             },
             materials = {
                 { item_id = 16203, qty = 3 },
@@ -1835,8 +2083,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Weapon - Agility",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19445 },
+                {
+                    type = "Item",
+                    item_id = 19445,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 6 },
@@ -1851,8 +2101,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Weapon - Strength",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19444 },
+                {
+                    type = "Item",
+                    item_id = 19444,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 6 },
@@ -1869,8 +2121,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant 2H Weapon - Superior Impact",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16247 },
+                {
+                    type = "Item",
+                    item_id = 16247,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 4 },
@@ -1883,8 +2137,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Boots - Greater Agility",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16245 },
+                {
+                    type = "Item",
+                    item_id = 16245,
+                },
             },
             materials = {
                 { item_id = 16203, qty = 8 },
@@ -1896,8 +2152,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Superior Strength",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16246 },
+                {
+                    type = "Item",
+                    item_id = 16246,
+                },
             },
             materials = {
                 { item_id = 16204, qty = 6 },
@@ -1910,8 +2168,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Gloves - Greater Strength",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16244 },
+                {
+                    type = "Item",
+                    item_id = 16244,
+                },
             },
             materials = {
                 { item_id = 16203, qty = 4 },
@@ -1924,8 +2184,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Weapon - Unholy Weapon",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16248 },
+                {
+                    type = "Item",
+                    item_id = 16248,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 4 },
@@ -1940,8 +2202,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Brilliant Mana Oil",
             icon = "inv_potion_100",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20757 },
+                {
+                    type = "Item",
+                    item_id = 20757,
+                },
             },
             product = { item_id = 20748, qty = 1 },
             materials = {
@@ -1956,8 +2220,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Brilliant Wizard Oil",
             icon = "inv_potion_105",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20756 },
+                {
+                    type = "Item",
+                    item_id = 20756,
+                },
             },
             product = { item_id = 20749, qty = 1 },
             materials = {
@@ -1972,8 +2238,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant 2H Weapon - Major Intellect",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16249 },
+                {
+                    type = "Item",
+                    item_id = 16249,
+                },
             },
             materials = {
                 { item_id = 16203, qty = 12 },
@@ -1986,8 +2254,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant 2H Weapon - Major Spirit",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16255 },
+                {
+                    type = "Item",
+                    item_id = 16255,
+                },
             },
             materials = {
                 { item_id = 16203, qty = 12 },
@@ -2000,8 +2270,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Healing Power",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19447 },
+                {
+                    type = "Item",
+                    item_id = 19447,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 2 },
@@ -2016,8 +2288,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Bracer - Superior Stamina",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16251 },
+                {
+                    type = "Item",
+                    item_id = 16251,
+                },
             },
             materials = {
                 { item_id = 16204, qty = 15 },
@@ -2029,8 +2303,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Chest - Greater Stats",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16253 },
+                {
+                    type = "Item",
+                    item_id = 16253,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 4 },
@@ -2044,8 +2320,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Cloak - Dodge",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20736 },
+                {
+                    type = "Item",
+                    item_id = 20736,
+                },
             },
             materials = {
                 { item_id = 20725, qty = 3 },
@@ -2059,8 +2337,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Cloak - Greater Fire Resistance",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20732 },
+                {
+                    type = "Item",
+                    item_id = 20732,
+                },
             },
             materials = {
                 { item_id = 20725, qty = 3 },
@@ -2074,8 +2354,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Cloak - Greater Nature Resistance",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20733 },
+                {
+                    type = "Item",
+                    item_id = 20733,
+                },
             },
             materials = {
                 { item_id = 20725, qty = 2 },
@@ -2089,8 +2371,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Cloak - Stealth",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20734 },
+                {
+                    type = "Item",
+                    item_id = 20734,
+                },
             },
             materials = {
                 { item_id = 20725, qty = 3 },
@@ -2104,8 +2388,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Cloak - Subtlety",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20735 },
+                {
+                    type = "Item",
+                    item_id = 20735,
+                },
             },
             materials = {
                 { item_id = 20725, qty = 4 },
@@ -2119,8 +2405,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Gloves - Fire Power",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20729 },
+                {
+                    type = "Item",
+                    item_id = 20729,
+                },
             },
             materials = {
                 { item_id = 20725, qty = 2 },
@@ -2134,8 +2422,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Gloves - Frost Power",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20728 },
+                {
+                    type = "Item",
+                    item_id = 20728,
+                },
             },
             materials = {
                 { item_id = 20725, qty = 3 },
@@ -2149,8 +2439,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Gloves - Healing Power",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20730 },
+                {
+                    type = "Item",
+                    item_id = 20730,
+                },
             },
             materials = {
                 { item_id = 20725, qty = 3 },
@@ -2164,8 +2456,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Gloves - Shadow Power",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20727 },
+                {
+                    type = "Item",
+                    item_id = 20727,
+                },
             },
             materials = {
                 { item_id = 20725, qty = 3 },
@@ -2179,8 +2473,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Gloves - Superior Agility",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20731 },
+                {
+                    type = "Item",
+                    item_id = 20731,
+                },
             },
             materials = {
                 { item_id = 20725, qty = 3 },
@@ -2194,8 +2490,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Gloves - Threat",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20726 },
+                {
+                    type = "Item",
+                    item_id = 20726,
+                },
             },
             materials = {
                 { item_id = 20725, qty = 4 },
@@ -2209,8 +2507,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Weapon - Crusader",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16252 },
+                {
+                    type = "Item",
+                    item_id = 16252,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 4 },
@@ -2223,8 +2523,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Weapon - Healing Power",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18260 },
+                {
+                    type = "Item",
+                    item_id = 18260,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 4 },
@@ -2240,8 +2542,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Weapon - Lifestealing",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16254 },
+                {
+                    type = "Item",
+                    item_id = 16254,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 6 },
@@ -2255,8 +2559,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Weapon - Mighty Intellect",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19449 },
+                {
+                    type = "Item",
+                    item_id = 19449,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 15 },
@@ -2270,8 +2576,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Weapon - Mighty Spirit",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19448 },
+                {
+                    type = "Item",
+                    item_id = 19448,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 10 },
@@ -2285,8 +2593,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Weapon - Spell Power",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18259 },
+                {
+                    type = "Item",
+                    item_id = 18259,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 4 },
@@ -2303,8 +2613,10 @@ TFG.ENCHANTING_CLASSIC_ERA = {
             name = "Enchant Weapon - Superior Striking",
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16250 },
+                {
+                    type = "Item",
+                    item_id = 16250,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 2 },

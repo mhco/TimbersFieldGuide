@@ -7,7 +7,9 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Lion's Strength",
             icon = "inv_potion_56",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 2454, qty = 1 },
             materials = {
@@ -22,7 +24,9 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Minor Defense",
             icon = "inv_potion_63",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 5997, qty = 1 },
             materials = {
@@ -36,7 +40,9 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Minor Healing Potion",
             icon = "inv_potion_49",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 118, qty = 1 },
             materials = {
@@ -51,7 +57,9 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Alchemy",
             icon = "trade_alchemy",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -61,8 +69,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Weak Troll's Blood Potion",
             icon = "inv_potion_77",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 3382, qty = 1 },
             materials = {
@@ -79,8 +89,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Minor Mana Potion",
             icon = "inv_potion_70",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 2455, qty = 1 },
             materials = {
@@ -97,8 +109,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Minor Rejuvenation Potion",
             icon = "inv_potion_02",
             source = {
-                type = "Trainer",
-                cost = 150,
+                {
+                    type = "Trainer",
+                    cost = 150,
+                },
             },
             product = { item_id = 2456, qty = 1 },
             materials = {
@@ -115,7 +129,9 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Alchemy",
             icon = "trade_alchemy",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -123,8 +139,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Discolored Healing Potion",
             icon = "inv_potion_35",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4597 },
+                {
+                    type = "Item",
+                    item_id = 4597,
+                },
             },
             product = { item_id = 4596, qty = 1 },
             materials = {
@@ -139,8 +157,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Minor Agility",
             icon = "inv_potion_91",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2553 },
+                {
+                    type = "Item",
+                    item_id = 2553,
+                },
             },
             product = { item_id = 2457, qty = 1 },
             materials = {
@@ -155,8 +175,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Minor Fortitude",
             icon = "inv_potion_42",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 2458, qty = 1 },
             materials = {
@@ -173,8 +195,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Lesser Healing Potion",
             icon = "inv_potion_50",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 858, qty = 1 },
             materials = {
@@ -190,8 +214,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Rage Potion",
             icon = "inv_potion_24",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5640 },
+                {
+                    type = "Item",
+                    item_id = 5640,
+                },
             },
             product = { item_id = 5631, qty = 1 },
             materials = {
@@ -206,8 +232,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Swiftness Potion",
             icon = "inv_potion_95",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2555 },
+                {
+                    type = "Item",
+                    item_id = 2555,
+                },
             },
             product = { item_id = 2459, qty = 1 },
             materials = {
@@ -224,8 +252,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Blackmouth Oil",
             icon = "inv_drink_12",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 6370, qty = 1 },
             materials = {
@@ -241,8 +271,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Giant Growth",
             icon = "inv_potion_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6663 },
+                {
+                    type = "Item",
+                    item_id = 6663,
+                },
             },
             product = { item_id = 6662, qty = 1 },
             materials = {
@@ -257,8 +289,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Water Breathing",
             icon = "inv_potion_17",
             source = {
-                type = "Trainer",
-                cost = 450,
+                {
+                    type = "Trainer",
+                    cost = 450,
+                },
             },
             product = { item_id = 5996, qty = 1 },
             materials = {
@@ -273,8 +307,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Wisdom",
             icon = "inv_potion_06",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 3383, qty = 1 },
             materials = {
@@ -291,8 +327,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Holy Protection Potion",
             icon = "inv_potion_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6053 },
+                {
+                    type = "Item",
+                    item_id = 6053,
+                },
             },
             product = { item_id = 6051, qty = 1 },
             materials = {
@@ -307,8 +345,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Swim Speed Potion",
             icon = "inv_potion_13",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 6372, qty = 1 },
             materials = {
@@ -325,8 +365,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Healing Potion",
             icon = "inv_potion_51",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 929, qty = 1 },
             materials = {
@@ -341,8 +383,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Minor Magic Resistance Potion",
             icon = "inv_potion_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3393 },
+                {
+                    type = "Item",
+                    item_id = 3393,
+                },
             },
             product = { item_id = 3384, qty = 1 },
             materials = {
@@ -359,8 +403,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Poison Resistance",
             icon = "inv_potion_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3394 },
+                {
+                    type = "Item",
+                    item_id = 3394,
+                },
             },
             product = { item_id = 3386, qty = 1 },
             materials = {
@@ -375,8 +421,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Lesser Mana Potion",
             icon = "inv_potion_71",
             source = {
-                type = "Trainer",
-                cost = 1500,
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
             },
             product = { item_id = 3385, qty = 1 },
             materials = {
@@ -393,7 +441,9 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Alchemy",
             icon = "trade_alchemy",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -401,8 +451,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Strong Troll's Blood Potion",
             icon = "inv_potion_78",
             source = {
-                type = "Trainer",
-                cost = 1500,
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
             },
             product = { item_id = 3388, qty = 1 },
             materials = {
@@ -419,8 +471,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Fire Oil",
             icon = "inv_potion_38",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 6371, qty = 1 },
             materials = {
@@ -434,8 +488,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Defense",
             icon = "inv_potion_64",
             source = {
-                type = "Trainer",
-                cost = 2000,
+                {
+                    type = "Trainer",
+                    cost = 2000,
+                },
             },
             product = { item_id = 3389, qty = 1 },
             materials = {
@@ -452,8 +508,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Shadow Protection Potion",
             icon = "inv_potion_44",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6054 },
+                {
+                    type = "Item",
+                    item_id = 6054,
+                },
             },
             product = { item_id = 6048, qty = 1 },
             materials = {
@@ -470,8 +528,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Firepower",
             icon = "inv_potion_33",
             source = {
-                type = "Trainer",
-                cost = 3000,
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
             },
             product = { item_id = 6373, qty = 1 },
             materials = {
@@ -486,8 +546,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Lesser Agility",
             icon = "inv_potion_92",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3396 },
+                {
+                    type = "Item",
+                    item_id = 3396,
+                },
             },
             product = { item_id = 3390, qty = 1 },
             materials = {
@@ -504,8 +566,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Ogre's Strength",
             icon = "inv_potion_57",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6211 },
+                {
+                    type = "Item",
+                    item_id = 6211,
+                },
             },
             product = { item_id = 3391, qty = 1 },
             materials = {
@@ -520,8 +584,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Free Action Potion",
             icon = "inv_potion_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5642 },
+                {
+                    type = "Item",
+                    item_id = 5642,
+                },
             },
             product = { item_id = 5634, qty = 1 },
             materials = {
@@ -538,8 +604,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Greater Healing Potion",
             icon = "inv_potion_52",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 1710, qty = 1 },
             materials = {
@@ -556,8 +624,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Mana Potion",
             icon = "inv_potion_72",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 3827, qty = 1 },
             materials = {
@@ -574,8 +644,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Lesser Invisibility Potion",
             icon = "inv_potion_18",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 3823, qty = 1 },
             materials = {
@@ -590,8 +662,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Shadow Oil",
             icon = "inv_potion_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6068 },
+                {
+                    type = "Item",
+                    item_id = 6068,
+                },
             },
             product = { item_id = 3824, qty = 1 },
             materials = {
@@ -606,8 +680,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Fire Protection Potion",
             icon = "inv_potion_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6055 },
+                {
+                    type = "Item",
+                    item_id = 6055,
+                },
             },
             product = { item_id = 6049, qty = 1 },
             materials = {
@@ -624,9 +700,11 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Fortitude",
             icon = "inv_potion_43",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3830 },
-                cost = 6000,
+                {
+                    type = "Item",
+                    item_id = 3830,
+                    cost = 6000,
+                },
             },
             product = { item_id = 3825, qty = 1 },
             materials = {
@@ -641,8 +719,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Great Rage Potion",
             icon = "inv_potion_21",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5643 },
+                {
+                    type = "Item",
+                    item_id = 5643,
+                },
             },
             product = { item_id = 5633, qty = 1 },
             materials = {
@@ -659,8 +739,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Mighty Troll's Blood Potion",
             icon = "inv_potion_79",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3831 },
+                {
+                    type = "Item",
+                    item_id = 3831,
+                },
             },
             product = { item_id = 3826, qty = 1 },
             materials = {
@@ -677,8 +759,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Agility",
             icon = "inv_potion_93",
             source = {
-                type = "Trainer",
-                cost = 6500,
+                {
+                    type = "Trainer",
+                    cost = 6500,
+                },
             },
             product = { item_id = 8949, qty = 1 },
             materials = {
@@ -695,8 +779,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Frost Protection Potion",
             icon = "inv_potion_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6056 },
+                {
+                    type = "Item",
+                    item_id = 6056,
+                },
             },
             product = { item_id = 6050, qty = 1 },
             materials = {
@@ -711,8 +797,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Frost Power",
             icon = "inv_potion_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17709 },
+                {
+                    type = "Item",
+                    item_id = 17709,
+                },
             },
             product = { item_id = 17708, qty = 1 },
             materials = {
@@ -727,8 +815,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Nature Protection Potion",
             icon = "inv_potion_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6057 },
+                {
+                    type = "Item",
+                    item_id = 6057,
+                },
             },
             product = { item_id = 6052, qty = 1 },
             materials = {
@@ -745,8 +835,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Detect Lesser Invisibility",
             icon = "inv_potion_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3832 },
+                {
+                    type = "Item",
+                    item_id = 3832,
+                },
             },
             product = { item_id = 3828, qty = 1 },
             materials = {
@@ -761,8 +853,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Greater Defense",
             icon = "inv_potion_65",
             source = {
-                type = "Trainer",
-                cost = 7500,
+                {
+                    type = "Trainer",
+                    cost = 7500,
+                },
             },
             product = { item_id = 8951, qty = 1 },
             materials = {
@@ -779,7 +873,9 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Alchemy",
             icon = "trade_alchemy",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -787,8 +883,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Catseye Elixir",
             icon = "inv_potion_36",
             source = {
-                type = "Trainer",
-                cost = 8000,
+                {
+                    type = "Trainer",
+                    cost = 8000,
+                },
             },
             product = { item_id = 10592, qty = 1 },
             materials = {
@@ -803,8 +901,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Frost Oil",
             icon = "inv_potion_20",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14634 },
+                {
+                    type = "Item",
+                    item_id = 14634,
+                },
             },
             product = { item_id = 3829, qty = 1 },
             materials = {
@@ -821,8 +921,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Greater Mana Potion",
             icon = "inv_potion_73",
             source = {
-                type = "Trainer",
-                cost = 9000,
+                {
+                    type = "Trainer",
+                    cost = 9000,
+                },
             },
             product = { item_id = 6149, qty = 1 },
             materials = {
@@ -837,8 +939,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Oil of Immolation",
             icon = "inv_potion_11",
             source = {
-                type = "Trainer",
-                cost = 8000,
+                {
+                    type = "Trainer",
+                    cost = 8000,
+                },
             },
             product = { item_id = 8956, qty = 1 },
             materials = {
@@ -855,8 +959,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Goblin Rocket Fuel",
             icon = "inv_cask_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10644 },
+                {
+                    type = "Item",
+                    item_id = 10644,
+                },
             },
             product = { item_id = 9061, qty = 1 },
             materials = {
@@ -871,8 +977,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Magic Resistance Potion",
             icon = "inv_potion_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9293 },
+                {
+                    type = "Item",
+                    item_id = 9293,
+                },
             },
             product = { item_id = 9036, qty = 1 },
             materials = {
@@ -889,8 +997,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Restorative Potion",
             icon = "inv_potion_01",
             source = {
-                type = "Quest",
-                quest_ids = { 2203, 2501 },
+                {
+                    type = "Quest",
+                    quest_ids = { 2203, 2501 },
+                },
             },
             product = { item_id = 9030, qty = 1 },
             materials = {
@@ -905,8 +1015,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Greater Water Breathing",
             icon = "inv_potion_05",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 18294, qty = 1 },
             materials = {
@@ -921,8 +1033,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Lesser Stoneshield Potion",
             icon = "inv_potion_67",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4624 },
+                {
+                    type = "Item",
+                    item_id = 4624,
+                },
             },
             product = { item_id = 4623, qty = 1 },
             materials = {
@@ -937,8 +1051,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Superior Healing Potion",
             icon = "inv_potion_53",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 3928, qty = 1 },
             materials = {
@@ -955,8 +1071,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Transmute: Iron to Gold",
             icon = "inv_ingot_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9304 },
+                {
+                    type = "Item",
+                    item_id = 9304,
+                },
             },
             product = { item_id = 3577, qty = 1 },
             materials = {
@@ -969,8 +1087,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Transmute: Mithril to Truesilver",
             icon = "inv_ingot_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9305 },
+                {
+                    type = "Item",
+                    item_id = 9305,
+                },
             },
             product = { item_id = 6037, qty = 1 },
             materials = {
@@ -983,8 +1103,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Philosophers' Stone",
             icon = "inv_misc_orb_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9303 },
+                {
+                    type = "Item",
+                    item_id = 9303,
+                },
             },
             product = { item_id = 9149, qty = 1 },
             materials = {
@@ -1000,8 +1122,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Wildvine Potion",
             icon = "inv_potion_34",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9294 },
+                {
+                    type = "Item",
+                    item_id = 9294,
+                },
             },
             product = { item_id = 9144, qty = 1 },
             materials = {
@@ -1018,8 +1142,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Dreamless Sleep Potion",
             icon = "inv_potion_83",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 12190, qty = 1 },
             materials = {
@@ -1033,8 +1159,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Detect Undead",
             icon = "inv_potion_53",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 9154, qty = 1 },
             materials = {
@@ -1050,8 +1178,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Arcane Elixir",
             icon = "inv_potion_30",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 9155, qty = 1 },
             materials = {
@@ -1066,8 +1196,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Greater Intellect",
             icon = "inv_potion_10",
             source = {
-                type = "Trainer",
-                cost = 12000,
+                {
+                    type = "Trainer",
+                    cost = 12000,
+                },
             },
             product = { item_id = 9179, qty = 1 },
             materials = {
@@ -1082,8 +1214,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Invisibility Potion",
             icon = "inv_potion_25",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9295 },
+                {
+                    type = "Item",
+                    item_id = 9295,
+                },
             },
             product = { item_id = 9172, qty = 1 },
             materials = {
@@ -1100,8 +1234,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Dream Vision",
             icon = "inv_potion_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9297 },
+                {
+                    type = "Item",
+                    item_id = 9297,
+                },
             },
             product = { item_id = 9197, qty = 1 },
             materials = {
@@ -1115,8 +1251,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Greater Agility",
             icon = "inv_potion_94",
             source = {
-                type = "Trainer",
-                cost = 12000,
+                {
+                    type = "Trainer",
+                    cost = 12000,
+                },
             },
             product = { item_id = 9187, qty = 1 },
             materials = {
@@ -1131,8 +1269,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Gift of Arthas",
             icon = "inv_potion_28",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9296 },
+                {
+                    type = "Item",
+                    item_id = 9296,
+                },
             },
             product = { item_id = 9088, qty = 1 },
             materials = {
@@ -1149,8 +1289,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Giants",
             icon = "inv_potion_61",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9298 },
+                {
+                    type = "Item",
+                    item_id = 9298,
+                },
             },
             product = { item_id = 9206, qty = 1 },
             materials = {
@@ -1165,8 +1307,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Ghost Dye",
             icon = "inv_poison_mindnumbing",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9302 },
+                {
+                    type = "Item",
+                    item_id = 9302,
+                },
             },
             product = { item_id = 9210, qty = 1 },
             materials = {
@@ -1183,8 +1327,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Stonescale Oil",
             icon = "inv_potion_68",
             source = {
-                type = "Trainer",
-                cost = 15000,
+                {
+                    type = "Trainer",
+                    cost = 15000,
+                },
             },
             product = { item_id = 13423, qty = 1 },
             materials = {
@@ -1198,8 +1344,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Demonslaying",
             icon = "inv_potion_27",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9300 },
+                {
+                    type = "Item",
+                    item_id = 9300,
+                },
             },
             product = { item_id = 9224, qty = 1 },
             materials = {
@@ -1214,8 +1362,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Detect Demon",
             icon = "inv_potion_53",
             source = {
-                type = "Trainer",
-                cost = 14000,
+                {
+                    type = "Trainer",
+                    cost = 14000,
+                },
             },
             product = { item_id = 9233, qty = 1 },
             materials = {
@@ -1229,8 +1379,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Greater Firepower",
             icon = "inv_potion_60",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21547 },
+                {
+                    type = "Item",
+                    item_id = 21547,
+                },
             },
             product = { item_id = 21546, qty = 1 },
             materials = {
@@ -1245,8 +1397,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Shadow Power",
             icon = "inv_potion_46",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9301 },
+                {
+                    type = "Item",
+                    item_id = 9301,
+                },
             },
             product = { item_id = 9264, qty = 1 },
             materials = {
@@ -1260,8 +1414,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Limited Invulnerability Potion",
             icon = "inv_potion_62",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3395 },
+                {
+                    type = "Item",
+                    item_id = 3395,
+                },
             },
             product = { item_id = 3387, qty = 1 },
             materials = {
@@ -1278,8 +1434,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Mighty Rage Potion",
             icon = "inv_potion_41",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13476 },
+                {
+                    type = "Item",
+                    item_id = 13476,
+                },
             },
             product = { item_id = 13442, qty = 1 },
             materials = {
@@ -1295,8 +1453,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Superior Mana Potion",
             icon = "inv_potion_74",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13477 },
+                {
+                    type = "Item",
+                    item_id = 13477,
+                },
             },
             product = { item_id = 13443, qty = 1 },
             materials = {
@@ -1313,8 +1473,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Superior Defense",
             icon = "inv_potion_66",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13478 },
+                {
+                    type = "Item",
+                    item_id = 13478,
+                },
             },
             product = { item_id = 13445, qty = 1 },
             materials = {
@@ -1331,8 +1493,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of the Sages",
             icon = "inv_potion_29",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13479 },
+                {
+                    type = "Item",
+                    item_id = 13479,
+                },
             },
             product = { item_id = 13447, qty = 1 },
             materials = {
@@ -1349,8 +1513,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Transmute: Air to Fire",
             icon = "spell_fire_volcano",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13482 },
+                {
+                    type = "Item",
+                    item_id = 13482,
+                },
             },
             product = { item_id = 7078, qty = 1 },
             materials = {
@@ -1363,8 +1529,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Transmute: Arcanite",
             icon = "inv_misc_stonetablet_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12958 },
+                {
+                    type = "Item",
+                    item_id = 12958,
+                },
             },
             product = { item_id = 12360, qty = 1 },
             materials = {
@@ -1378,8 +1546,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Transmute: Earth to Life",
             icon = "spell_nature_abolishmagic",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13489 },
+                {
+                    type = "Item",
+                    item_id = 13489,
+                },
             },
             product = { item_id = 12803, qty = 1 },
             materials = {
@@ -1392,8 +1562,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Transmute: Earth to Water",
             icon = "spell_nature_acid_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13484 },
+                {
+                    type = "Item",
+                    item_id = 13484,
+                },
             },
             product = { item_id = 7080, qty = 1 },
             materials = {
@@ -1406,8 +1578,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Transmute: Fire to Earth",
             icon = "spell_nature_strengthofearthtotem02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13483 },
+                {
+                    type = "Item",
+                    item_id = 13483,
+                },
             },
             product = { item_id = 7076, qty = 1 },
             materials = {
@@ -1420,8 +1594,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Transmute: Life to Earth",
             icon = "spell_nature_strengthofearthtotem02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13488 },
+                {
+                    type = "Item",
+                    item_id = 13488,
+                },
             },
             product = { item_id = 7076, qty = 1 },
             materials = {
@@ -1434,8 +1610,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Transmute: Undeath to Water",
             icon = "spell_nature_acid_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13486 },
+                {
+                    type = "Item",
+                    item_id = 13486,
+                },
             },
             product = { item_id = 7080, qty = 1 },
             materials = {
@@ -1448,8 +1626,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Transmute: Water to Air",
             icon = "spell_nature_earthbind",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13485 },
+                {
+                    type = "Item",
+                    item_id = 13485,
+                },
             },
             product = { item_id = 7082, qty = 1 },
             materials = {
@@ -1462,8 +1642,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Transmute: Water to Undeath",
             icon = "spell_shadow_shadetruesight",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13487 },
+                {
+                    type = "Item",
+                    item_id = 13487,
+                },
             },
             product = { item_id = 12808, qty = 1 },
             materials = {
@@ -1476,8 +1658,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of Brute Force",
             icon = "inv_potion_40",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13481 },
+                {
+                    type = "Item",
+                    item_id = 13481,
+                },
             },
             product = { item_id = 13453, qty = 1 },
             materials = {
@@ -1492,8 +1676,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Greater Dreamless Sleep Potion",
             icon = "inv_potion_83",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20012 },
+                {
+                    type = "Item",
+                    item_id = 20012,
+                },
             },
             product = { item_id = 20002, qty = 1 },
             materials = {
@@ -1508,8 +1694,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Mageblood Potion",
             icon = "inv_potion_45",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20011 },
+                {
+                    type = "Item",
+                    item_id = 20011,
+                },
             },
             product = { item_id = 20007, qty = 1 },
             materials = {
@@ -1524,8 +1712,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Major Healing Potion",
             icon = "inv_potion_54",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13480 },
+                {
+                    type = "Item",
+                    item_id = 13480,
+                },
             },
             product = { item_id = 13446, qty = 1 },
             materials = {
@@ -1542,8 +1732,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Elixir of the Mongoose",
             icon = "inv_potion_32",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13491 },
+                {
+                    type = "Item",
+                    item_id = 13491,
+                },
             },
             product = { item_id = 13452, qty = 1 },
             materials = {
@@ -1558,8 +1750,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Greater Stoneshield Potion",
             icon = "inv_potion_69",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13490 },
+                {
+                    type = "Item",
+                    item_id = 13490,
+                },
             },
             product = { item_id = 13455, qty = 1 },
             materials = {
@@ -1576,8 +1770,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Greater Arcane Elixir",
             icon = "inv_potion_25",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13493 },
+                {
+                    type = "Item",
+                    item_id = 13493,
+                },
             },
             product = { item_id = 13454, qty = 1 },
             materials = {
@@ -1592,8 +1788,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Living Action Potion",
             icon = "inv_potion_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20013 },
+                {
+                    type = "Item",
+                    item_id = 20013,
+                },
             },
             product = { item_id = 20008, qty = 1 },
             materials = {
@@ -1609,8 +1807,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Purification Potion",
             icon = "inv_potion_31",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13492 },
+                {
+                    type = "Item",
+                    item_id = 13492,
+                },
             },
             product = { item_id = 13462, qty = 1 },
             materials = {
@@ -1627,8 +1827,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Greater Arcane Protection Potion",
             icon = "inv_potion_83",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13497 },
+                {
+                    type = "Item",
+                    item_id = 13497,
+                },
             },
             product = { item_id = 13461, qty = 1 },
             materials = {
@@ -1643,8 +1845,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Greater Fire Protection Potion",
             icon = "inv_potion_24",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13494 },
+                {
+                    type = "Item",
+                    item_id = 13494,
+                },
             },
             product = { item_id = 13457, qty = 1 },
             materials = {
@@ -1659,8 +1863,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Greater Frost Protection Potion",
             icon = "inv_potion_20",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13495 },
+                {
+                    type = "Item",
+                    item_id = 13495,
+                },
             },
             product = { item_id = 13456, qty = 1 },
             materials = {
@@ -1675,8 +1881,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Greater Nature Protection Potion",
             icon = "inv_potion_22",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13496 },
+                {
+                    type = "Item",
+                    item_id = 13496,
+                },
             },
             product = { item_id = 13458, qty = 1 },
             materials = {
@@ -1691,8 +1899,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Greater Shadow Protection Potion",
             icon = "inv_potion_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13499 },
+                {
+                    type = "Item",
+                    item_id = 13499,
+                },
             },
             product = { item_id = 13459, qty = 1 },
             materials = {
@@ -1707,8 +1917,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Major Troll's Blood Potion",
             icon = "inv_potion_80",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20014 },
+                {
+                    type = "Item",
+                    item_id = 20014,
+                },
             },
             product = { item_id = 20004, qty = 1 },
             materials = {
@@ -1725,8 +1937,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Major Mana Potion",
             icon = "inv_potion_76",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13501 },
+                {
+                    type = "Item",
+                    item_id = 13501,
+                },
             },
             product = { item_id = 13444, qty = 1 },
             materials = {
@@ -1743,8 +1957,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Transmute: Elemental Fire",
             icon = "spell_fire_fire",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20761 },
+                {
+                    type = "Item",
+                    item_id = 20761,
+                },
             },
             product = { item_id = 7068, qty = 3 },
             materials = {
@@ -1757,8 +1973,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Major Rejuvenation Potion",
             icon = "inv_potion_47",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18257 },
+                {
+                    type = "Item",
+                    item_id = 18257,
+                },
             },
             product = { item_id = 18253, qty = 1 },
             materials = {
@@ -1774,7 +1992,9 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Alchemist's Stone",
             icon = "inv_misc_orb_02",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 13503, qty = 1 },
             materials = {
@@ -1793,8 +2013,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Flask of Chromatic Resistance",
             icon = "inv_potion_48",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13522 },
+                {
+                    type = "Item",
+                    item_id = 13522,
+                },
             },
             product = { item_id = 13513, qty = 1 },
             materials = {
@@ -1810,8 +2032,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Flask of Distilled Wisdom",
             icon = "inv_potion_97",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13520 },
+                {
+                    type = "Item",
+                    item_id = 13520,
+                },
             },
             product = { item_id = 13511, qty = 1 },
             materials = {
@@ -1827,8 +2051,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Flask of Petrification",
             icon = "inv_potion_26",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13518 },
+                {
+                    type = "Item",
+                    item_id = 13518,
+                },
             },
             product = { item_id = 13506, qty = 1 },
             materials = {
@@ -1844,8 +2070,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Flask of Supreme Power",
             icon = "inv_potion_41",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13521 },
+                {
+                    type = "Item",
+                    item_id = 13521,
+                },
             },
             product = { item_id = 13512, qty = 1 },
             materials = {
@@ -1861,8 +2089,10 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Flask of the Titans",
             icon = "inv_potion_62",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13519 },
+                {
+                    type = "Item",
+                    item_id = 13519,
+                },
             },
             product = { item_id = 13510, qty = 1 },
             materials = {
@@ -1878,7 +2108,9 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             name = "Gurubashi Mojo Madness",
             icon = "inv_poison_mindnumbing",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 19931, qty = 3 },
             materials = {

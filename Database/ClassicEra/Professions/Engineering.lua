@@ -7,7 +7,9 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Rough Blasting Powder",
             icon = "inv_misc_dust_01",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 4357, qty = 1 },
             materials = {
@@ -20,7 +22,9 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Rough Dynamite",
             icon = "inv_misc_bomb_06",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 4358, qty = 2 },
             materials = {
@@ -34,7 +38,9 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Engineering",
             icon = "trade_engineering",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -42,7 +48,9 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Gnomish Engineer",
             icon = "inv_gizmo_02",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -50,7 +58,9 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Goblin Engineer",
             icon = "spell_fire_selfdestruct",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -60,8 +70,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Handful of Copper Bolts",
             icon = "inv_misc_gear_06",
             source = {
-                type = "Trainer",
-                cost = 115,
+                {
+                    type = "Trainer",
+                    cost = 115,
+                },
             },
             product = { item_id = 4359, qty = 1 },
             materials = {
@@ -74,8 +86,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Rough Copper Bomb",
             icon = "inv_misc_bomb_09",
             source = {
-                type = "Trainer",
-                cost = 130,
+                {
+                    type = "Trainer",
+                    cost = 130,
+                },
             },
             product = { item_id = 4360, qty = 2 },
             materials = {
@@ -91,7 +105,9 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Crafted Light Shot",
             icon = "inv_ammo_bullet_02",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 8067, qty = 200 },
             materials = {
@@ -107,7 +123,9 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Engineering",
             icon = "trade_engineering",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -115,8 +133,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Arclight Spanner",
             icon = "inv_misc_wrench_01",
             source = {
-                type = "Trainer",
-                cost = 150,
+                {
+                    type = "Trainer",
+                    cost = 150,
+                },
             },
             product = { item_id = 6219, qty = 1 },
             materials = {
@@ -129,8 +149,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Rough Boomstick",
             icon = "inv_weapon_rifle_03",
             source = {
-                type = "Trainer",
-                cost = 150,
+                {
+                    type = "Trainer",
+                    cost = 150,
+                },
             },
             product = { item_id = 4362, qty = 1 },
             materials = {
@@ -145,8 +167,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Copper Tube",
             icon = "inv_gizmo_pipe_02",
             source = {
-                type = "Trainer",
-                cost = 150,
+                {
+                    type = "Trainer",
+                    cost = 150,
+                },
             },
             product = { item_id = 4361, qty = 1 },
             materials = {
@@ -162,8 +186,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Crude Scope",
             icon = "inv_misc_spyglass_02",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 4405, qty = 1 },
             materials = {
@@ -180,8 +206,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Copper Modulator",
             icon = "inv_gizmo_03",
             source = {
-                type = "Trainer",
-                cost = 225,
+                {
+                    type = "Trainer",
+                    cost = 225,
+                },
             },
             product = { item_id = 4363, qty = 1 },
             materials = {
@@ -198,8 +226,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Coarse Blasting Powder",
             icon = "inv_misc_dust_02",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 4364, qty = 1 },
             materials = {
@@ -212,8 +242,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Crafted Heavy Shot",
             icon = "inv_ammo_bullet_02",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 8068, qty = 200 },
             materials = {
@@ -227,8 +259,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Coarse Dynamite",
             icon = "inv_misc_bomb_06",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 4365, qty = 1 },
             materials = {
@@ -242,8 +276,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Mechanical Squirrel",
             icon = "inv_crate_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4408 },
+                {
+                    type = "Item",
+                    item_id = 4408,
+                },
             },
             product = { item_id = 4401, qty = 1 },
             materials = {
@@ -261,8 +297,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Target Dummy",
             icon = "inv_crate_06",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 4366, qty = 1 },
             materials = {
@@ -280,8 +318,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Silver Contact",
             icon = "inv_ingot_04",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 4404, qty = 5 },
             materials = {
@@ -296,8 +336,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "EZ-Thro Dynamite",
             icon = "inv_misc_bomb_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6716 },
+                {
+                    type = "Item",
+                    item_id = 6716,
+                },
             },
             product = { item_id = 6714, qty = 1 },
             materials = {
@@ -311,8 +353,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Practice Lock",
             icon = "inv_box_01",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 6712, qty = 1 },
             materials = {
@@ -327,8 +371,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Flying Tiger Goggles",
             icon = "inv_helmet_47",
             source = {
-                type = "Trainer",
-                cost = 400,
+                {
+                    type = "Trainer",
+                    cost = 400,
+                },
             },
             product = { item_id = 4368, qty = 1 },
             materials = {
@@ -342,8 +388,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Small Seaforium Charge",
             icon = "inv_misc_urn_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4409 },
+                {
+                    type = "Item",
+                    item_id = 4409,
+                },
             },
             product = { item_id = 4367, qty = 1 },
             materials = {
@@ -361,8 +409,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Bronze Tube",
             icon = "inv_gizmo_pipe_01",
             source = {
-                type = "Trainer",
-                cost = 450,
+                {
+                    type = "Trainer",
+                    cost = 450,
+                },
             },
             product = { item_id = 4371, qty = 1 },
             materials = {
@@ -376,8 +426,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Large Copper Bomb",
             icon = "inv_misc_bomb_01",
             source = {
-                type = "Trainer",
-                cost = 450,
+                {
+                    type = "Trainer",
+                    cost = 450,
+                },
             },
             product = { item_id = 4370, qty = 2 },
             materials = {
@@ -392,8 +444,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Deadly Blunderbuss",
             icon = "inv_weapon_rifle_07",
             source = {
-                type = "Trainer",
-                cost = 420,
+                {
+                    type = "Trainer",
+                    cost = 420,
+                },
             },
             product = { item_id = 4369, qty = 1 },
             materials = {
@@ -411,8 +465,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Standard Scope",
             icon = "inv_misc_spyglass_02",
             source = {
-                type = "Trainer",
-                cost = 475,
+                {
+                    type = "Trainer",
+                    cost = 475,
+                },
             },
             product = { item_id = 4406, qty = 1 },
             materials = {
@@ -428,8 +484,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Small Bronze Bomb",
             icon = "inv_misc_bomb_09",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 4374, qty = 1 },
             materials = {
@@ -445,8 +503,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Lovingly Crafted Boomstick",
             icon = "inv_weapon_rifle_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13309 },
+                {
+                    type = "Item",
+                    item_id = 13309,
+                },
             },
             product = { item_id = 4372, qty = 1 },
             materials = {
@@ -462,8 +522,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Shadow Goggles",
             icon = "inv_helmet_47",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4410 },
+                {
+                    type = "Item",
+                    item_id = 4410,
+                },
             },
             product = { item_id = 4373, qty = 1 },
             materials = {
@@ -479,7 +541,9 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Engineering",
             icon = "trade_engineering",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -487,8 +551,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Crafted Solid Shot",
             icon = "inv_ammo_bullet_02",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 8069, qty = 200 },
             materials = {
@@ -502,8 +568,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Heavy Blasting Powder",
             icon = "classic_inv_misc_dust_06",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 4377, qty = 1 },
             materials = {
@@ -516,8 +584,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Heavy Dynamite",
             icon = "inv_misc_bomb_06",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 4378, qty = 1 },
             materials = {
@@ -531,8 +601,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Small Blue Rocket",
             icon = "inv_misc_missilesmall_blue",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21724 },
+                {
+                    type = "Item",
+                    item_id = 21724,
+                },
             },
             product = { item_id = 21558, qty = 3 },
             materials = {
@@ -546,8 +618,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Small Green Rocket",
             icon = "inv_misc_missilesmall_green",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21725 },
+                {
+                    type = "Item",
+                    item_id = 21725,
+                },
             },
             product = { item_id = 21559, qty = 3 },
             materials = {
@@ -561,8 +635,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Small Red Rocket",
             icon = "inv_misc_missilesmall_red",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21726 },
+                {
+                    type = "Item",
+                    item_id = 21726,
+                },
             },
             product = { item_id = 21557, qty = 3 },
             materials = {
@@ -576,8 +652,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Flame Deflector",
             icon = "inv_gizmo_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4411 },
+                {
+                    type = "Item",
+                    item_id = 4411,
+                },
             },
             product = { item_id = 4376, qty = 1 },
             materials = {
@@ -591,8 +669,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Whirring Bronze Gizmo",
             icon = "inv_gizmo_02",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 4375, qty = 1 },
             materials = {
@@ -606,8 +686,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Gnomish Universal Remote",
             icon = "inv_misc_pocketwatch_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7560 },
+                {
+                    type = "Item",
+                    item_id = 7560,
+                },
             },
             product = { item_id = 7506, qty = 1 },
             materials = {
@@ -626,8 +708,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Silver-plated Shotgun",
             icon = "inv_weapon_rifle_07",
             source = {
-                type = "Trainer",
-                cost = 550,
+                {
+                    type = "Trainer",
+                    cost = 550,
+                },
             },
             product = { item_id = 4379, qty = 1 },
             materials = {
@@ -645,8 +729,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Ornate Spyglass",
             icon = "inv_misc_spyglass_01",
             source = {
-                type = "Trainer",
-                cost = 400,
+                {
+                    type = "Trainer",
+                    cost = 400,
+                },
             },
             product = { item_id = 5507, qty = 1 },
             materials = {
@@ -664,8 +750,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Big Bronze Bomb",
             icon = "inv_misc_bomb_05",
             source = {
-                type = "Trainer",
-                cost = 600,
+                {
+                    type = "Trainer",
+                    cost = 600,
+                },
             },
             product = { item_id = 4380, qty = 2 },
             materials = {
@@ -680,8 +768,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Minor Recombobulator",
             icon = "inv_gizmo_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14639 },
+                {
+                    type = "Item",
+                    item_id = 14639,
+                },
             },
             product = { item_id = 4381, qty = 1 },
             materials = {
@@ -699,8 +789,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Bronze Framework",
             icon = "inv_gizmo_bronzeframework_01",
             source = {
-                type = "Trainer",
-                cost = 600,
+                {
+                    type = "Trainer",
+                    cost = 600,
+                },
             },
             product = { item_id = 4382, qty = 1 },
             materials = {
@@ -715,8 +807,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Moonsight Rifle",
             icon = "inv_weapon_rifle_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4412 },
+                {
+                    type = "Item",
+                    item_id = 4412,
+                },
             },
             product = { item_id = 4383, qty = 1 },
             materials = {
@@ -734,8 +828,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Aquadynamic Fish Attractor",
             icon = "inv_misc_food_26",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 6533, qty = 3 },
             materials = {
@@ -750,8 +846,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Blue Firework",
             icon = "spell_ice_magicdamage",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18649 },
+                {
+                    type = "Item",
+                    item_id = 18649,
+                },
             },
             product = { item_id = 9312, qty = 3 },
             materials = {
@@ -765,8 +863,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Green Firework",
             icon = "spell_nature_abolishmagic",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18648 },
+                {
+                    type = "Item",
+                    item_id = 18648,
+                },
             },
             product = { item_id = 9313, qty = 3 },
             materials = {
@@ -780,8 +880,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Red Firework",
             icon = "spell_fire_fireball02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18647 },
+                {
+                    type = "Item",
+                    item_id = 18647,
+                },
             },
             product = { item_id = 9318, qty = 3 },
             materials = {
@@ -795,8 +897,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Gold Power Core",
             icon = "inv_battery_02",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 10558, qty = 3 },
             materials = {
@@ -809,8 +913,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Green Tinted Goggles",
             icon = "inv_helmet_47",
             source = {
-                type = "Trainer",
-                cost = 750,
+                {
+                    type = "Trainer",
+                    cost = 750,
+                },
             },
             product = { item_id = 4385, qty = 1 },
             materials = {
@@ -825,8 +931,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Explosive Sheep",
             icon = "spell_nature_polymorph",
             source = {
-                type = "Trainer",
-                cost = 750,
+                {
+                    type = "Trainer",
+                    cost = 750,
+                },
             },
             product = { item_id = 4384, qty = 1 },
             materials = {
@@ -844,8 +952,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Ice Deflector",
             icon = "inv_gizmo_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13308 },
+                {
+                    type = "Item",
+                    item_id = 13308,
+                },
             },
             product = { item_id = 4386, qty = 1 },
             materials = {
@@ -861,8 +971,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Iron Strut",
             icon = "inv_spear_05",
             source = {
-                type = "Trainer",
-                cost = 800,
+                {
+                    type = "Trainer",
+                    cost = 800,
+                },
             },
             product = { item_id = 4387, qty = 1 },
             materials = {
@@ -875,8 +987,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Discombobulator Ray",
             icon = "inv_misc_spyglass_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4413 },
+                {
+                    type = "Item",
+                    item_id = 4413,
+                },
             },
             product = { item_id = 4388, qty = 1 },
             materials = {
@@ -894,8 +1008,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Goblin Jumper Cables",
             icon = "inv_misc_enggizmos_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7561 },
+                {
+                    type = "Item",
+                    item_id = 7561,
+                },
             },
             product = { item_id = 7148, qty = 1 },
             materials = {
@@ -913,8 +1029,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Portable Bronze Mortar",
             icon = "inv_musket_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4414 },
+                {
+                    type = "Item",
+                    item_id = 4414,
+                },
             },
             product = { item_id = 4403, qty = 1 },
             materials = {
@@ -932,8 +1050,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Gyrochronatom",
             icon = "inv_misc_pocketwatch_02",
             source = {
-                type = "Trainer",
-                cost = 900,
+                {
+                    type = "Trainer",
+                    cost = 900,
+                },
             },
             product = { item_id = 4389, qty = 1 },
             materials = {
@@ -949,8 +1069,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Solid Blasting Powder",
             icon = "inv_misc_powder_black",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 10505, qty = 1 },
             materials = {
@@ -963,8 +1085,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Solid Dynamite",
             icon = "inv_misc_bomb_06",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 10507, qty = 2 },
             materials = {
@@ -978,8 +1102,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Large Blue Rocket",
             icon = "inv_misc_missilelarge_blue",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21727 },
+                {
+                    type = "Item",
+                    item_id = 21727,
+                },
             },
             product = { item_id = 21589, qty = 3 },
             materials = {
@@ -993,8 +1119,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Large Green Rocket",
             icon = "inv_misc_missilelarge_green",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21728 },
+                {
+                    type = "Item",
+                    item_id = 21728,
+                },
             },
             product = { item_id = 21590, qty = 3 },
             materials = {
@@ -1008,8 +1136,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Large Red Rocket",
             icon = "inv_misc_missilelarge_red",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21729 },
+                {
+                    type = "Item",
+                    item_id = 21729,
+                },
             },
             product = { item_id = 21592, qty = 3 },
             materials = {
@@ -1023,8 +1153,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Compact Harvest Reaper Kit",
             icon = "inv_helmet_08",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 4391, qty = 1 },
             materials = {
@@ -1040,8 +1172,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Gyromatic Micro-Adjustor",
             icon = "inv_misc_screwdriver_02",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 10498, qty = 1 },
             materials = {
@@ -1054,8 +1188,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Iron Grenade",
             icon = "inv_misc_bomb_08",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 4390, qty = 2 },
             materials = {
@@ -1070,8 +1206,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Bright-Eye Goggles",
             icon = "inv_helmet_47",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10601 },
+                {
+                    type = "Item",
+                    item_id = 10601,
+                },
             },
             product = { item_id = 10499, qty = 1 },
             materials = {
@@ -1087,8 +1225,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Accurate Scope",
             icon = "inv_misc_spyglass_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13310 },
+                {
+                    type = "Item",
+                    item_id = 13310,
+                },
             },
             product = { item_id = 4407, qty = 1 },
             materials = {
@@ -1105,8 +1245,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Advanced Target Dummy",
             icon = "inv_crate_05",
             source = {
-                type = "Trainer",
-                cost = 1200,
+                {
+                    type = "Trainer",
+                    cost = 1200,
+                },
             },
             product = { item_id = 4392, qty = 1 },
             materials = {
@@ -1122,8 +1264,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Flash Bomb",
             icon = "inv_misc_ammo_bullet_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6672 },
+                {
+                    type = "Item",
+                    item_id = 6672,
+                },
             },
             product = { item_id = 4852, qty = 1 },
             materials = {
@@ -1138,8 +1282,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Craftsman's Monocle",
             icon = "inv_helmet_44",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4415 },
+                {
+                    type = "Item",
+                    item_id = 4415,
+                },
             },
             product = { item_id = 4393, qty = 1 },
             materials = {
@@ -1155,8 +1301,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Big Iron Bomb",
             icon = "inv_misc_bomb_01",
             source = {
-                type = "Trainer",
-                cost = 1400,
+                {
+                    type = "Trainer",
+                    cost = 1400,
+                },
             },
             product = { item_id = 4394, qty = 2 },
             materials = {
@@ -1171,8 +1319,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "SnowMaster 9000",
             icon = "spell_frost_windwalkon",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17720 },
+                {
+                    type = "Item",
+                    item_id = 17720,
+                },
             },
             product = { item_id = 17716, qty = 1 },
             materials = {
@@ -1190,8 +1340,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Mithril Tube",
             icon = "inv_musket_01",
             source = {
-                type = "Trainer",
-                cost = 1300,
+                {
+                    type = "Trainer",
+                    cost = 1300,
+                },
             },
             product = { item_id = 10559, qty = 1 },
             materials = {
@@ -1204,8 +1356,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Goblin Land Mine",
             icon = "inv_shield_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4416 },
+                {
+                    type = "Item",
+                    item_id = 4416,
+                },
             },
             product = { item_id = 4395, qty = 1 },
             materials = {
@@ -1222,7 +1376,9 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Engineering",
             icon = "trade_engineering",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -1230,8 +1386,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "EZ-Thro Dynamite II",
             icon = "inv_misc_bomb_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18650 },
+                {
+                    type = "Item",
+                    item_id = 18650,
+                },
             },
             product = { item_id = 18588, qty = 1 },
             materials = {
@@ -1245,8 +1403,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Large Seaforium Charge",
             icon = "inv_misc_urn_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4417 },
+                {
+                    type = "Item",
+                    item_id = 4417,
+                },
             },
             product = { item_id = 4398, qty = 1 },
             materials = {
@@ -1261,8 +1421,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Mechanical Repair Kit",
             icon = "inv_gizmo_03",
             source = {
-                type = "Trainer",
-                cost = 1500,
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
             },
             product = { item_id = 11590, qty = 1 },
             materials = {
@@ -1277,8 +1439,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Unstable Trigger",
             icon = "inv_battery_01",
             source = {
-                type = "Trainer",
-                cost = 1500,
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
             },
             product = { item_id = 10560, qty = 1 },
             materials = {
@@ -1293,8 +1457,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Gnomish Cloaking Device",
             icon = "inv_gizmo_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7742 },
+                {
+                    type = "Item",
+                    item_id = 7742,
+                },
             },
             product = { item_id = 4397, qty = 1 },
             materials = {
@@ -1311,8 +1477,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Mechanical Dragonling",
             icon = "inv_misc_head_dragon_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13311 },
+                {
+                    type = "Item",
+                    item_id = 13311,
+                },
             },
             product = { item_id = 4396, qty = 1 },
             materials = {
@@ -1331,7 +1499,9 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "The Mortar: Reloaded",
             icon = "inv_musket_01",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 10577, qty = 1 },
             materials = {
@@ -1346,8 +1516,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Goblin Rocket Fuel Recipe",
             icon = "inv_scroll_03",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 10644, qty = 1 },
             materials = {
@@ -1361,8 +1533,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Inlaid Mithril Cylinder Plans",
             icon = "inv_scroll_05",
             source = {
-                type = "Trainer",
-                cost = 1500,
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
             },
             product = { item_id = 10713, qty = 1 },
             materials = {
@@ -1376,8 +1550,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Lil' Smoky",
             icon = "inv_misc_idol_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11827 },
+                {
+                    type = "Item",
+                    item_id = 11827,
+                },
             },
             product = { item_id = 11826, qty = 1 },
             materials = {
@@ -1394,8 +1570,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Pet Bombling",
             icon = "inv_misc_bomb_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11828 },
+                {
+                    type = "Item",
+                    item_id = 11828,
+                },
             },
             product = { item_id = 11825, qty = 1 },
             materials = {
@@ -1411,8 +1589,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Goblin Sapper Charge",
             icon = "spell_fire_selfdestruct",
             source = {
-                type = "Trainer",
-                cost = 1500,
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
             },
             product = { item_id = 10646, qty = 1 },
             materials = {
@@ -1427,8 +1607,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Fire Goggles",
             icon = "inv_helmet_47",
             source = {
-                type = "Trainer",
-                cost = 1600,
+                {
+                    type = "Trainer",
+                    cost = 1600,
+                },
             },
             product = { item_id = 10500, qty = 1 },
             materials = {
@@ -1444,8 +1626,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Goblin Construction Helmet",
             icon = "inv_helmet_60",
             source = {
-                type = "Trainer",
-                cost = 1500,
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
             },
             product = { item_id = 10543, qty = 1 },
             materials = {
@@ -1460,8 +1644,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Goblin Mining Helmet",
             icon = "inv_helmet_25",
             source = {
-                type = "Trainer",
-                cost = 1500,
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
             },
             product = { item_id = 10542, qty = 1 },
             materials = {
@@ -1476,8 +1662,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Mithril Blunderbuss",
             icon = "inv_weapon_rifle_07",
             source = {
-                type = "Trainer",
-                cost = 1600,
+                {
+                    type = "Trainer",
+                    cost = 1600,
+                },
             },
             product = { item_id = 10508, qty = 1 },
             materials = {
@@ -1494,8 +1682,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Gnomish Shrink Ray",
             icon = "inv_gizmo_09",
             source = {
-                type = "Trainer",
-                cost = 1500,
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
             },
             product = { item_id = 10716, qty = 1 },
             materials = {
@@ -1514,8 +1704,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Hi-Impact Mithril Slugs",
             icon = "inv_ammo_bullet_01",
             source = {
-                type = "Trainer",
-                cost = 1700,
+                {
+                    type = "Trainer",
+                    cost = 1700,
+                },
             },
             product = { item_id = 10512, qty = 200 },
             materials = {
@@ -1529,8 +1721,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Gnomish Goggles",
             icon = "inv_helmet_47",
             source = {
-                type = "Trainer",
-                cost = 1500,
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
             },
             product = { item_id = 10545, qty = 1 },
             materials = {
@@ -1547,8 +1741,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Deadly Scope",
             icon = "inv_misc_spyglass_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10602 },
+                {
+                    type = "Item",
+                    item_id = 10602,
+                },
             },
             product = { item_id = 10546, qty = 1 },
             materials = {
@@ -1563,8 +1759,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Gnomish Net-o-Matic Projector",
             icon = "inv_misc_net_01",
             source = {
-                type = "Trainer",
-                cost = 1800,
+                {
+                    type = "Trainer",
+                    cost = 1800,
+                },
             },
             product = { item_id = 10720, qty = 1 },
             materials = {
@@ -1583,8 +1781,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Mithril Casing",
             icon = "inv_gizmo_mithrilcasing_01",
             source = {
-                type = "Trainer",
-                cost = 1800,
+                {
+                    type = "Trainer",
+                    cost = 1800,
+                },
             },
             product = { item_id = 10561, qty = 1 },
             materials = {
@@ -1597,8 +1797,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Mithril Frag Bomb",
             icon = "inv_misc_bomb_02",
             source = {
-                type = "Trainer",
-                cost = 1800,
+                {
+                    type = "Trainer",
+                    cost = 1800,
+                },
             },
             product = { item_id = 10514, qty = 3 },
             materials = {
@@ -1613,8 +1815,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Gnomish Harm Prevention Belt",
             icon = "inv_belt_06",
             source = {
-                type = "Trainer",
-                cost = 2000,
+                {
+                    type = "Trainer",
+                    cost = 2000,
+                },
             },
             product = { item_id = 10721, qty = 1 },
             materials = {
@@ -1633,8 +1837,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Catseye Ultra Goggles",
             icon = "inv_helmet_47",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10603 },
+                {
+                    type = "Item",
+                    item_id = 10603,
+                },
             },
             product = { item_id = 10501, qty = 1 },
             materials = {
@@ -1649,8 +1855,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Mithril Heavy-bore Rifle",
             icon = "inv_weapon_rifle_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10604 },
+                {
+                    type = "Item",
+                    item_id = 10604,
+                },
             },
             product = { item_id = 10510, qty = 1 },
             materials = {
@@ -1669,8 +1877,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Blue Rocket Cluster",
             icon = "inv_misc_missilesmallcluster_blue",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21730 },
+                {
+                    type = "Item",
+                    item_id = 21730,
+                },
             },
             product = { item_id = 21571, qty = 3 },
             materials = {
@@ -1684,8 +1894,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Green Rocket Cluster",
             icon = "inv_misc_missilesmallcluster_green",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21731 },
+                {
+                    type = "Item",
+                    item_id = 21731,
+                },
             },
             product = { item_id = 21574, qty = 3 },
             materials = {
@@ -1699,8 +1911,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Red Rocket Cluster",
             icon = "inv_misc_missilesmallcluster_red",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21732 },
+                {
+                    type = "Item",
+                    item_id = 21732,
+                },
             },
             product = { item_id = 21576, qty = 3 },
             materials = {
@@ -1714,8 +1928,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Gnomish Rocket Boots",
             icon = "inv_boots_02",
             source = {
-                type = "Trainer",
-                cost = 2200,
+                {
+                    type = "Trainer",
+                    cost = 2200,
+                },
             },
             product = { item_id = 10724, qty = 1 },
             materials = {
@@ -1732,8 +1948,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Goblin Rocket Boots",
             icon = "inv_gizmo_rocketboot_01",
             source = {
-                type = "Trainer",
-                cost = 2200,
+                {
+                    type = "Trainer",
+                    cost = 2200,
+                },
             },
             product = { item_id = 7189, qty = 1 },
             materials = {
@@ -1750,8 +1968,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Parachute Cloak",
             icon = "inv_misc_cape_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10606 },
+                {
+                    type = "Item",
+                    item_id = 10606,
+                },
             },
             product = { item_id = 10518, qty = 1 },
             materials = {
@@ -1767,8 +1987,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Spellpower Goggles Xtreme",
             icon = "inv_helmet_47",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10605 },
+                {
+                    type = "Item",
+                    item_id = 10605,
+                },
             },
             product = { item_id = 10502, qty = 1 },
             materials = {
@@ -1782,8 +2004,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Firework Launcher",
             icon = "inv_musket_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21738 },
+                {
+                    type = "Item",
+                    item_id = 21738,
+                },
             },
             product = { item_id = 21569, qty = 1 },
             materials = {
@@ -1799,8 +2023,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Goblin Mortar",
             icon = "inv_musket_01",
             source = {
-                type = "Trainer",
-                cost = 1500,
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
             },
             product = { item_id = 10577, qty = 1 },
             materials = {
@@ -1819,8 +2045,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Goblin Bomb Dispenser",
             icon = "inv_gizmo_06",
             source = {
-                type = "Trainer",
-                cost = 2400,
+                {
+                    type = "Trainer",
+                    cost = 2400,
+                },
             },
             product = { item_id = 10587, qty = 1 },
             materials = {
@@ -1837,8 +2065,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Deepdive Helmet",
             icon = "inv_helmet_49",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10607 },
+                {
+                    type = "Item",
+                    item_id = 10607,
+                },
             },
             product = { item_id = 10506, qty = 1 },
             materials = {
@@ -1855,8 +2085,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Rose Colored Goggles",
             icon = "inv_helmet_47",
             source = {
-                type = "Trainer",
-                cost = 2200,
+                {
+                    type = "Trainer",
+                    cost = 2200,
+                },
             },
             product = { item_id = 10503, qty = 1 },
             materials = {
@@ -1870,8 +2102,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Gnomish Battle Chicken",
             icon = "spell_magic_polymorphchicken",
             source = {
-                type = "Trainer",
-                cost = 2400,
+                {
+                    type = "Trainer",
+                    cost = 2400,
+                },
             },
             product = { item_id = 10725, qty = 1 },
             materials = {
@@ -1891,8 +2125,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Hi-Explosive Bomb",
             icon = "inv_misc_bomb_07",
             source = {
-                type = "Trainer",
-                cost = 2400,
+                {
+                    type = "Trainer",
+                    cost = 2400,
+                },
             },
             product = { item_id = 10562, qty = 4 },
             materials = {
@@ -1907,8 +2143,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "The Big One",
             icon = "inv_misc_bomb_04",
             source = {
-                type = "Trainer",
-                cost = 2600,
+                {
+                    type = "Trainer",
+                    cost = 2600,
+                },
             },
             product = { item_id = 10586, qty = 2 },
             materials = {
@@ -1924,8 +2162,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Gnomish Mind Control Cap",
             icon = "inv_helmet_49",
             source = {
-                type = "Trainer",
-                cost = 2600,
+                {
+                    type = "Trainer",
+                    cost = 2600,
+                },
             },
             product = { item_id = 10726, qty = 1 },
             materials = {
@@ -1944,8 +2184,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Gnomish Death Ray",
             icon = "inv_gizmo_08",
             source = {
-                type = "Trainer",
-                cost = 2800,
+                {
+                    type = "Trainer",
+                    cost = 2800,
+                },
             },
             product = { item_id = 10645, qty = 1 },
             materials = {
@@ -1962,8 +2204,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Goblin Dragon Gun",
             icon = "spell_fire_flamebolt",
             source = {
-                type = "Trainer",
-                cost = 2800,
+                {
+                    type = "Trainer",
+                    cost = 2800,
+                },
             },
             product = { item_id = 10727, qty = 1 },
             materials = {
@@ -1980,8 +2224,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Sniper Scope",
             icon = "inv_misc_spyglass_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10608 },
+                {
+                    type = "Item",
+                    item_id = 10608,
+                },
             },
             product = { item_id = 10548, qty = 1 },
             materials = {
@@ -1998,8 +2244,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Mithril Gyro-Shot",
             icon = "inv_ammo_bullet_01",
             source = {
-                type = "Trainer",
-                cost = 2800,
+                {
+                    type = "Trainer",
+                    cost = 2800,
+                },
             },
             product = { item_id = 10513, qty = 200 },
             materials = {
@@ -2013,8 +2261,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Green Lens",
             icon = "inv_helmet_44",
             source = {
-                type = "Trainer",
-                cost = 2800,
+                {
+                    type = "Trainer",
+                    cost = 2800,
+                },
             },
             product = { item_id = 10504, qty = 1 },
             materials = {
@@ -2031,8 +2281,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Goblin Rocket Helmet",
             icon = "inv_helmet_49",
             source = {
-                type = "Trainer",
-                cost = 3000,
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
             },
             product = { item_id = 10588, qty = 1 },
             materials = {
@@ -2050,8 +2302,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Dense Blasting Powder",
             icon = "inv_misc_ammo_gunpowder_01",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 15992, qty = 1 },
             materials = {
@@ -2064,8 +2318,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Dense Dynamite",
             icon = "inv_misc_bomb_06",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 18641, qty = 2 },
             materials = {
@@ -2079,8 +2335,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Snake Burst Firework",
             icon = "spell_holy_holybolt",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19027 },
+                {
+                    type = "Item",
+                    item_id = 19027,
+                },
             },
             product = { item_id = 19026, qty = 4 },
             materials = {
@@ -2095,8 +2353,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Mithril Mechanical Dragonling",
             icon = "inv_misc_head_dragon_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10609 },
+                {
+                    type = "Item",
+                    item_id = 10609,
+                },
             },
             product = { item_id = 10576, qty = 1 },
             materials = {
@@ -2114,8 +2374,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Salt Shaker",
             icon = "inv_egg_05",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 15846, qty = 1 },
             materials = {
@@ -2131,8 +2393,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Tranquil Mechanical Yeti",
             icon = "ability_hunter_pet_gorilla",
             source = {
-                type = "Quest",
-                quest_ids = { 8798 },
+                {
+                    type = "Quest",
+                    quest_id = 8798,
+                },
             },
             product = { item_id = 21277, qty = 1 },
             materials = {
@@ -2151,8 +2415,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "World Enlarger",
             icon = "inv_misc_enggizmos_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18661 },
+                {
+                    type = "Item",
+                    item_id = 18661,
+                },
             },
             product = { item_id = 18660, qty = 1 },
             materials = {
@@ -2169,8 +2435,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Truesilver Transformer",
             icon = "inv_staff_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18651 },
+                {
+                    type = "Item",
+                    item_id = 18651,
+                },
             },
             product = { item_id = 18631, qty = 1 },
             materials = {
@@ -2185,8 +2453,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Gyrofreeze Ice Reflector",
             icon = "inv_misc_enggizmos_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18652 },
+                {
+                    type = "Item",
+                    item_id = 18652,
+                },
             },
             product = { item_id = 18634, qty = 1 },
             materials = {
@@ -2204,8 +2474,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Thorium Rifle",
             icon = "inv_weapon_rifle_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16043 },
+                {
+                    type = "Item",
+                    item_id = 16043,
+                },
             },
             product = { item_id = 15995, qty = 1 },
             materials = {
@@ -2222,8 +2494,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Thorium Grenade",
             icon = "inv_misc_bomb_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16041 },
+                {
+                    type = "Item",
+                    item_id = 16041,
+                },
             },
             product = { item_id = 15993, qty = 3 },
             materials = {
@@ -2239,8 +2513,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Thorium Widget",
             icon = "inv_gizmo_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16042 },
+                {
+                    type = "Item",
+                    item_id = 16042,
+                },
             },
             product = { item_id = 15994, qty = 1 },
             materials = {
@@ -2256,8 +2532,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Alarm-O-Bot",
             icon = "inv_misc_enggizmos_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18654 },
+                {
+                    type = "Item",
+                    item_id = 18654,
+                },
             },
             product = { item_id = 18645, qty = 1 },
             materials = {
@@ -2274,8 +2552,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Goblin Jumper Cables XL",
             icon = "inv_misc_enggizmos_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18653 },
+                {
+                    type = "Item",
+                    item_id = 18653,
+                },
             },
             product = { item_id = 18587, qty = 1 },
             materials = {
@@ -2292,8 +2572,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Lifelike Mechanical Toad",
             icon = "inv_misc_monsterhead_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16044 },
+                {
+                    type = "Item",
+                    item_id = 16044,
+                },
             },
             product = { item_id = 15996, qty = 1 },
             materials = {
@@ -2311,8 +2593,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Spellpower Goggles Xtreme Plus",
             icon = "inv_helmet_47",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16045 },
+                {
+                    type = "Item",
+                    item_id = 16045,
+                },
             },
             product = { item_id = 15999, qty = 1 },
             materials = {
@@ -2330,8 +2614,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Large Blue Rocket Cluster",
             icon = "inv_misc_missilelargecluster_blue",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21733 },
+                {
+                    type = "Item",
+                    item_id = 21733,
+                },
             },
             product = { item_id = 21714, qty = 3 },
             materials = {
@@ -2345,8 +2631,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Large Green Rocket Cluster",
             icon = "inv_misc_missilelargecluster_green",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21734 },
+                {
+                    type = "Item",
+                    item_id = 21734,
+                },
             },
             product = { item_id = 21716, qty = 3 },
             materials = {
@@ -2360,8 +2648,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Large Red Rocket Cluster",
             icon = "inv_misc_missilelargecluster_red",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21735 },
+                {
+                    type = "Item",
+                    item_id = 21735,
+                },
             },
             product = { item_id = 21718, qty = 3 },
             materials = {
@@ -2375,8 +2665,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Powerful Seaforium Charge",
             icon = "spell_shadow_detectinvisibility",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18656 },
+                {
+                    type = "Item",
+                    item_id = 18656,
+                },
             },
             product = { item_id = 18594, qty = 1 },
             materials = {
@@ -2392,8 +2684,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Major Recombobulator",
             icon = "inv_misc_enggizmos_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18655 },
+                {
+                    type = "Item",
+                    item_id = 18655,
+                },
             },
             product = { item_id = 18637, qty = 1 },
             materials = {
@@ -2408,8 +2702,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Dark Iron Rifle",
             icon = "inv_weapon_rifle_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16048 },
+                {
+                    type = "Item",
+                    item_id = 16048,
+                },
             },
             product = { item_id = 16004, qty = 1 },
             materials = {
@@ -2427,8 +2723,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Firework Cluster Launcher",
             icon = "inv_misc_enggizmos_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21737 },
+                {
+                    type = "Item",
+                    item_id = 21737,
+                },
             },
             product = { item_id = 21570, qty = 1 },
             materials = {
@@ -2444,8 +2742,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Masterwork Target Dummy",
             icon = "inv_crate_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16046 },
+                {
+                    type = "Item",
+                    item_id = 16046,
+                },
             },
             product = { item_id = 16023, qty = 1 },
             materials = {
@@ -2463,7 +2763,9 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Steam Tonk Controller",
             icon = "inv_misc_enggizmos_20",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 22728, qty = 1 },
             materials = {
@@ -2478,8 +2780,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Thorium Tube",
             icon = "inv_gizmo_pipe_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16047 },
+                {
+                    type = "Item",
+                    item_id = 16047,
+                },
             },
             product = { item_id = 16000, qty = 1 },
             materials = {
@@ -2494,8 +2798,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Thorium Shells",
             icon = "inv_ammo_bullet_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16051 },
+                {
+                    type = "Item",
+                    item_id = 16051,
+                },
             },
             product = { item_id = 15997, qty = 200 },
             materials = {
@@ -2509,8 +2815,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Dark Iron Bomb",
             icon = "inv_misc_bomb_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16049 },
+                {
+                    type = "Item",
+                    item_id = 16049,
+                },
             },
             product = { item_id = 16005, qty = 3 },
             materials = {
@@ -2526,8 +2834,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Delicate Arcanite Converter",
             icon = "inv_gizmo_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16050 },
+                {
+                    type = "Item",
+                    item_id = 16050,
+                },
             },
             product = { item_id = 16006, qty = 1 },
             materials = {
@@ -2541,7 +2851,9 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Dimensional Ripper - Everlook",
             icon = "inv_misc_enggizmos_07",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 18984, qty = 1 },
             materials = {
@@ -2558,7 +2870,9 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Ultrasafe Transporter - Gadgetzan",
             icon = "inv_misc_enggizmos_12",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 18986, qty = 1 },
             materials = {
@@ -2578,8 +2892,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Hyper-Radiant Flame Reflector",
             icon = "inv_misc_enggizmos_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18657 },
+                {
+                    type = "Item",
+                    item_id = 18657,
+                },
             },
             product = { item_id = 18638, qty = 1 },
             materials = {
@@ -2596,8 +2912,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Master Engineer's Goggles",
             icon = "inv_helmet_47",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16053 },
+                {
+                    type = "Item",
+                    item_id = 16053,
+                },
             },
             product = { item_id = 16008, qty = 1 },
             materials = {
@@ -2612,8 +2930,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Voice Amplification Modulator",
             icon = "inv_jewelry_amulet_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16052 },
+                {
+                    type = "Item",
+                    item_id = 16052,
+                },
             },
             product = { item_id = 16009, qty = 1 },
             materials = {
@@ -2631,8 +2951,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Core Marksman Rifle",
             icon = "inv_weapon_rifle_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18292 },
+                {
+                    type = "Item",
+                    item_id = 18292,
+                },
             },
             product = { item_id = 18282, qty = 1 },
             materials = {
@@ -2649,8 +2971,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Force Reactive Disk",
             icon = "spell_arcane_portaldarnassus",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18291 },
+                {
+                    type = "Item",
+                    item_id = 18291,
+                },
             },
             product = { item_id = 18168, qty = 1 },
             materials = {
@@ -2667,8 +2991,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Arcanite Dragonling",
             icon = "inv_misc_head_dragon_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16054 },
+                {
+                    type = "Item",
+                    item_id = 16054,
+                },
             },
             product = { item_id = 16022, qty = 1 },
             materials = {
@@ -2686,8 +3012,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Biznicks 247x128 Accurascope",
             icon = "inv_misc_spyglass_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18290 },
+                {
+                    type = "Item",
+                    item_id = 18290,
+                },
             },
             product = { item_id = 18283, qty = 1 },
             materials = {
@@ -2704,8 +3032,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Bloodvine Goggles",
             icon = "inv_helmet_47",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20000 },
+                {
+                    type = "Item",
+                    item_id = 20000,
+                },
             },
             product = { item_id = 19999, qty = 1 },
             materials = {
@@ -2722,8 +3052,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Bloodvine Lens",
             icon = "inv_helmet_44",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20001 },
+                {
+                    type = "Item",
+                    item_id = 20001,
+                },
             },
             product = { item_id = 19998, qty = 1 },
             materials = {
@@ -2740,8 +3072,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Flawless Arcanite Rifle",
             icon = "inv_weapon_rifle_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16056 },
+                {
+                    type = "Item",
+                    item_id = 16056,
+                },
             },
             product = { item_id = 16007, qty = 1 },
             materials = {
@@ -2759,8 +3093,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Ultra-Flash Shadow Reflector",
             icon = "inv_misc_enggizmos_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18658 },
+                {
+                    type = "Item",
+                    item_id = 18658,
+                },
             },
             product = { item_id = 18639, qty = 1 },
             materials = {
@@ -2778,8 +3114,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Arcane Bomb",
             icon = "spell_shadow_mindbomb",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16055 },
+                {
+                    type = "Item",
+                    item_id = 16055,
+                },
             },
             product = { item_id = 16040, qty = 3 },
             materials = {
@@ -2794,8 +3132,10 @@ TFG.ENGINEERING_CLASSIC_ERA = {
             name = "Field Repair Bot 74A",
             icon = "inv_egg_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18235 },
+                {
+                    type = "Item",
+                    item_id = 18235,
+                },
             },
             product = { item_id = 18232, qty = 1 },
             materials = {

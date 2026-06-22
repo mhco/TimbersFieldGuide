@@ -8,8 +8,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "Profession Training",
             texture = "Interface/ICONS/trade_poisons",
             source = {
-                type = "Trainer",
-                cost = 10,
+                {
+                    type = "Trainer",
+                    cost = 10,
+                },
             },
             phase = 1,
         },
@@ -19,8 +21,9 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 0,
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 6947, qty = 1 },
             materials = {
@@ -36,8 +39,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 3000,
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
             },
             product = { item_id = 3775, qty = 1 },
             materials = {
@@ -55,8 +60,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "Profession Training",
             texture = "Interface/ICONS/trade_poisons",
             source = {
-                type = "Trainer",
-                cost = 10,
+                {
+                    type = "Trainer",
+                    cost = 10,
+                },
             },
             phase = 1,
         },
@@ -68,8 +75,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 5237, qty = 1 },
             materials = {
@@ -87,8 +96,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 8000,
+                {
+                    type = "Trainer",
+                    cost = 8000,
+                },
             },
             product = { item_id = 6949, qty = 1 },
             materials = {
@@ -106,8 +117,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "Profession Training",
             texture = "Interface/ICONS/trade_poisons",
             source = {
-                type = "Trainer",
-                cost = 10,
+                {
+                    type = "Trainer",
+                    cost = 10,
+                },
             },
             phase = 1,
         },
@@ -119,8 +132,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 2892, qty = 1 },
             materials = {
@@ -138,8 +153,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 12000,
+                {
+                    type = "Trainer",
+                    cost = 12000,
+                },
             },
             product = { item_id = 10918, qty = 1 },
             materials = {
@@ -157,8 +174,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 16000,
+                {
+                    type = "Trainer",
+                    cost = 16000,
+                },
             },
             product = { item_id = 6950, qty = 1 },
             materials = {
@@ -176,8 +195,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 18000,
+                {
+                    type = "Trainer",
+                    cost = 18000,
+                },
             },
             product = { item_id = 2893, qty = 1 },
             materials = {
@@ -193,8 +214,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 18000,
+                {
+                    type = "Trainer",
+                    cost = 18000,
+                },
             },
             product = { item_id = 6951, qty = 1 },
             materials = {
@@ -212,8 +235,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 10920, qty = 1 },
             materials = {
@@ -232,8 +257,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "Profession Training",
             texture = "Interface/ICONS/trade_poisons",
             source = {
-                type = "Trainer",
-                cost = 10,
+                {
+                    type = "Trainer",
+                    cost = 10,
+                },
             },
             phase = 1,
         },
@@ -243,8 +270,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 29000,
+                {
+                    type = "Trainer",
+                    cost = 29000,
+                },
             },
             product = { item_id = 8926, qty = 1 },
             materials = {
@@ -262,8 +291,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 31000,
+                {
+                    type = "Trainer",
+                    cost = 31000,
+                },
             },
             product = { item_id = 8984, qty = 1 },
             materials = {
@@ -281,8 +312,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 33000,
+                {
+                    type = "Trainer",
+                    cost = 33000,
+                },
             },
             product = { item_id = 10921, qty = 1 },
             materials = {
@@ -300,8 +333,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 35000,
+                {
+                    type = "Trainer",
+                    cost = 35000,
+                },
             },
             product = { item_id = 3776, qty = 1 },
             materials = {
@@ -319,8 +354,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 46000,
+                {
+                    type = "Trainer",
+                    cost = 46000,
+                },
             },
             product = { item_id = 8927, qty = 1 },
             materials = {
@@ -336,8 +373,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 46000,
+                {
+                    type = "Trainer",
+                    cost = 46000,
+                },
             },
             product = { item_id = 9186, qty = 1 },
             materials = {
@@ -355,8 +394,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 48000,
+                {
+                    type = "Trainer",
+                    cost = 48000,
+                },
             },
             product = { item_id = 8985, qty = 1 },
             materials = {
@@ -374,8 +415,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 50000,
+                {
+                    type = "Trainer",
+                    cost = 50000,
+                },
             },
             product = { item_id = 10922, qty = 1 },
             materials = {
@@ -394,8 +437,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "Profession Training",
             texture = "Interface/ICONS/trade_poisons",
             source = {
-                type = "Trainer",
-                cost = 10,
+                {
+                    type = "Trainer",
+                    cost = 10,
+                },
             },
             phase = 1,
         },
@@ -407,8 +452,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 54000,
+                {
+                    type = "Trainer",
+                    cost = 54000,
+                },
             },
             product = { item_id = 20844, qty = 1 },
             materials = {
@@ -424,8 +471,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 54000,
+                {
+                    type = "Trainer",
+                    cost = 54000,
+                },
             },
             product = { item_id = 8928, qty = 1 },
             materials = {
@@ -443,8 +492,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 65000,
+                {
+                    type = "Trainer",
+                    cost = 65000,
+                },
             },
             product = { item_id = 22053, qty = 1 },
             materials = {
@@ -462,8 +513,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 80000,
+                {
+                    type = "Trainer",
+                    cost = 80000,
+                },
             },
             product = { item_id = 22055, qty = 1 },
             materials = {
@@ -481,8 +534,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 110000,
+                {
+                    type = "Trainer",
+                    cost = 110000,
+                },
             },
             product = { item_id = 21927, qty = 1 },
             materials = {
@@ -500,8 +555,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 140000,
+                {
+                    type = "Trainer",
+                    cost = 140000,
+                },
             },
             product = { item_id = 22054, qty = 1 },
             materials = {
@@ -519,8 +576,10 @@ TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE = {
             category = "",
             texture = "",
             source = {
-                type = "Trainer",
-                cost = 110000,
+                {
+                    type = "Trainer",
+                    cost = 110000,
+                },
             },
             product = { item_id = 21835, qty = 1 },
             materials = {

@@ -8,8 +8,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "inv_misc_food_15",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
         },
         {
@@ -18,7 +20,9 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "spell_fire_fire",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -27,7 +31,9 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_misc_food_18",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 2679, qty = 1 },
             materials = {
@@ -41,7 +47,9 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_misc_food_18",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 2681, qty = 1 },
             materials = {
@@ -55,8 +63,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_misc_food_95_grainbread",
             source = {
-                type = "Trainer",
-                cost = 10,
+                {
+                    type = "Trainer",
+                    cost = 10,
+                },
             },
             product = { item_id = 30816, qty = 1 },
             materials = {
@@ -71,8 +81,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_misc_fish_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6325 },
+                {
+                    type = "Item",
+                    item_id = 6325,
+                },
             },
             product = { item_id = 6290, qty = 1 },
             materials = {
@@ -86,8 +98,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_misc_fish_24",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6326 },
+                {
+                    type = "Item",
+                    item_id = 6326,
+                },
             },
             product = { item_id = 787, qty = 1 },
             materials = {
@@ -101,8 +115,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_egg_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6891 },
+                {
+                    type = "Item",
+                    item_id = 6891,
+                },
             },
             product = { item_id = 6888, qty = 1 },
             materials = {
@@ -117,8 +133,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_46",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12226 },
+                {
+                    type = "Item",
+                    item_id = 12226,
+                },
             },
             product = { item_id = 12224, qty = 1 },
             materials = {
@@ -133,8 +151,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_47",
             source = {
-                type = "Item",
-                recipe_item_ids = { 27685 },
+                {
+                    type = "Item",
+                    item_id = 27685,
+                },
             },
             product = { item_id = 27635, qty = 1 },
             materials = {
@@ -148,8 +168,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_60",
             source = {
-                type = "Item",
-                recipe_item_ids = { 27686 },
+                {
+                    type = "Item",
+                    item_id = 27686,
+                },
             },
             product = { item_id = 24105, qty = 1 },
             materials = {
@@ -163,8 +185,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_62",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17200 },
+                {
+                    type = "Item",
+                    item_id = 17200,
+                },
             },
             product = { item_id = 17197, qty = 1 },
             materials = {
@@ -179,8 +203,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Special" },
             icon = "inv_misc_celebrationcake_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 33925 },
+                {
+                    type = "Item",
+                    item_id = 33925,
+                },
             },
             product = { item_id = 33924, qty = 1 },
             materials = {
@@ -201,8 +227,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_65",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 2680, qty = 1 },
             materials = {
@@ -217,8 +245,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_68",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5482 },
+                {
+                    type = "Item",
+                    item_id = 5482,
+                },
             },
             product = { item_id = 5472, qty = 1 },
             materials = {
@@ -234,8 +264,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_misc_food_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5483 },
+                {
+                    type = "Item",
+                    item_id = 5483,
+                },
             },
             product = { item_id = 5473, qty = 1 },
             materials = {
@@ -251,8 +283,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_48",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2889 },
+                {
+                    type = "Item",
+                    item_id = 2889,
+                },
             },
             product = { item_id = 2888, qty = 1 },
             materials = {
@@ -269,8 +303,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_60",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5484 },
+                {
+                    type = "Item",
+                    item_id = 5484,
+                },
             },
             product = { item_id = 5474, qty = 2 },
             materials = {
@@ -285,8 +321,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_drink_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17201 },
+                {
+                    type = "Item",
+                    item_id = 17201,
+                },
             },
             product = { item_id = 17198, qty = 1 },
             materials = {
@@ -305,8 +343,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_misc_food_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6892 },
+                {
+                    type = "Item",
+                    item_id = 6892,
+                },
             },
             product = { item_id = 6890, qty = 1 },
             materials = {
@@ -322,8 +362,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_65",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 2684, qty = 1 },
             materials = {
@@ -337,8 +379,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2697 },
+                {
+                    type = "Item",
+                    item_id = 2697,
+                },
             },
             product = { item_id = 724, qty = 1 },
             materials = {
@@ -353,8 +397,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "inv_misc_food_15",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
         },
         {
@@ -363,8 +409,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_fish_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5485 },
+                {
+                    type = "Item",
+                    item_id = 5485,
+                },
             },
             product = { item_id = 5476, qty = 2 },
             materials = {
@@ -379,8 +427,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_bowl_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5486 },
+                {
+                    type = "Item",
+                    item_id = 5486,
+                },
             },
             product = { item_id = 5477, qty = 2 },
             materials = {
@@ -395,8 +445,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_shell_02",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 5525, qty = 1 },
             materials = {
@@ -411,8 +463,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_misc_fish_32",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6328 },
+                {
+                    type = "Item",
+                    item_id = 6328,
+                },
             },
             product = { item_id = 4592, qty = 1 },
             materials = {
@@ -426,8 +480,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_potion_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6329 },
+                {
+                    type = "Item",
+                    item_id = 6329,
+                },
             },
             product = { item_id = 6316, qty = 1 },
             materials = {
@@ -442,8 +498,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_misc_fish_27",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6368 },
+                {
+                    type = "Item",
+                    item_id = 6368,
+                },
             },
             product = { item_id = 5095, qty = 1 },
             materials = {
@@ -457,8 +515,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_86_basilisk",
             source = {
-                type = "Item",
-                recipe_item_ids = { 27687 },
+                {
+                    type = "Item",
+                    item_id = 27687,
+                },
             },
             product = { item_id = 27636, qty = 1 },
             materials = {
@@ -474,8 +534,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_49",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3679 },
+                {
+                    type = "Item",
+                    item_id = 3679,
+                },
             },
             product = { item_id = 3220, qty = 2 },
             materials = {
@@ -491,8 +553,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_drink_milk_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18160 },
+                {
+                    type = "Item",
+                    item_id = 18160,
+                },
             },
             product = { item_id = 7676, qty = 1 },
             materials = {
@@ -507,8 +571,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_88_ravagernuggets",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22647 },
+                {
+                    type = "Item",
+                    item_id = 22647,
+                },
             },
             product = { item_id = 22645, qty = 1 },
             materials = {
@@ -524,8 +590,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_misc_bowl_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 728 },
+                {
+                    type = "Item",
+                    item_id = 728,
+                },
             },
             product = { item_id = 733, qty = 1 },
             materials = {
@@ -541,8 +609,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_08",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 2683, qty = 1 },
             materials = {
@@ -559,8 +629,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_48",
             source = {
-                type = "Trainer",
-                cost = 150,
+                {
+                    type = "Trainer",
+                    cost = 150,
+                },
             },
             product = { item_id = 2687, qty = 1 },
             materials = {
@@ -575,8 +647,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_47",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3678 },
+                {
+                    type = "Item",
+                    item_id = 3678,
+                },
             },
             product = { item_id = 3662, qty = 1 },
             materials = {
@@ -591,8 +665,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "MP5" },
             icon = "inv_misc_fish_20",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21099 },
+                {
+                    type = "Item",
+                    item_id = 21099,
+                },
             },
             product = { item_id = 21072, qty = 1 },
             materials = {
@@ -609,8 +685,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_misc_birdbeck_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2698 },
+                {
+                    type = "Item",
+                    item_id = 2698,
+                },
             },
             product = { item_id = 2682, qty = 1 },
             materials = {
@@ -625,8 +703,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Special" },
             icon = "inv_misc_monsterhead_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6661 },
+                {
+                    type = "Item",
+                    item_id = 6661,
+                },
             },
             product = { item_id = 6657, qty = 1 },
             materials = {
@@ -643,8 +723,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_bowl_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3680 },
+                {
+                    type = "Item",
+                    item_id = 3680,
+                },
             },
             product = { item_id = 3663, qty = 1 },
             materials = {
@@ -659,8 +741,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_misc_bowl_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5487 },
+                {
+                    type = "Item",
+                    item_id = 5487,
+                },
             },
             product = { item_id = 5478, qty = 2 },
             materials = {
@@ -674,8 +758,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_potion_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5528 },
+                {
+                    type = "Item",
+                    item_id = 5528,
+                },
             },
             product = { item_id = 5526, qty = 1 },
             materials = {
@@ -693,8 +779,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2701 },
+                {
+                    type = "Item",
+                    item_id = 2701,
+                },
             },
             product = { item_id = 1017, qty = 3 },
             materials = {
@@ -709,8 +797,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5488 },
+                {
+                    type = "Item",
+                    item_id = 5488,
+                },
             },
             product = { item_id = 5479, qty = 2 },
             materials = {
@@ -725,8 +815,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_misc_fish_30",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6330 },
+                {
+                    type = "Item",
+                    item_id = 6330,
+                },
             },
             product = { item_id = 4593, qty = 1 },
             materials = {
@@ -740,8 +832,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_bowl_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2699 },
+                {
+                    type = "Item",
+                    item_id = 2699,
+                },
             },
             product = { item_id = 1082, qty = 1 },
             materials = {
@@ -756,8 +850,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_drink_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 34834 },
+                {
+                    type = "Item",
+                    item_id = 34834,
+                },
             },
             product = { item_id = 34832, qty = 5 },
             materials = {
@@ -774,8 +870,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3683 },
+                {
+                    type = "Item",
+                    item_id = 3683,
+                },
             },
             product = { item_id = 3666, qty = 1 },
             materials = {
@@ -790,8 +888,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_47",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3734 },
+                {
+                    type = "Item",
+                    item_id = 3734,
+                },
             },
             product = { item_id = 3726, qty = 1 },
             materials = {
@@ -806,8 +906,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_72",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5489 },
+                {
+                    type = "Item",
+                    item_id = 5489,
+                },
             },
             product = { item_id = 5480, qty = 2 },
             materials = {
@@ -822,8 +924,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_misc_food_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2700 },
+                {
+                    type = "Item",
+                    item_id = 2700,
+                },
             },
             product = { item_id = 2685, qty = 1 },
             materials = {
@@ -840,8 +944,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_bowl_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3681 },
+                {
+                    type = "Item",
+                    item_id = 3681,
+                },
             },
             product = { item_id = 3664, qty = 1 },
             materials = {
@@ -858,10 +964,12 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "inv_misc_food_15",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16072 },
-                cost = 10000,
-                location = "Ashenvale (A) or Desolace (H)",
+                {
+                    type = "Item",
+                    item_id = 16072,
+                    cost = 10000,
+                    location = "Ashenvale (A) or Desolace (H)",
+                },
             },
         },
         {
@@ -870,8 +978,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3735 },
+                {
+                    type = "Item",
+                    item_id = 3735,
+                },
             },
             product = { item_id = 3727, qty = 1 },
             materials = {
@@ -886,8 +996,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_shell_01",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 5527, qty = 1 },
             materials = {
@@ -902,8 +1014,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_47",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12227 },
+                {
+                    type = "Item",
+                    item_id = 12227,
+                },
             },
             product = { item_id = 12209, qty = 1 },
             materials = {
@@ -920,8 +1034,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_egg_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3682 },
+                {
+                    type = "Item",
+                    item_id = 3682,
+                },
             },
             product = { item_id = 3665, qty = 1 },
             materials = {
@@ -938,8 +1054,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3736 },
+                {
+                    type = "Item",
+                    item_id = 3736,
+                },
             },
             product = { item_id = 3728, qty = 1 },
             materials = {
@@ -954,8 +1072,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_64",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20075 },
+                {
+                    type = "Item",
+                    item_id = 20075,
+                },
             },
             product = { item_id = 20074, qty = 1 },
             materials = {
@@ -972,8 +1092,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_bowl_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3737 },
+                {
+                    type = "Item",
+                    item_id = 3737,
+                },
             },
             product = { item_id = 3729, qty = 1 },
             materials = {
@@ -988,8 +1110,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4609 },
+                {
+                    type = "Item",
+                    item_id = 4609,
+                },
             },
             product = { item_id = 4457, qty = 1 },
             materials = {
@@ -1004,8 +1128,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_ammo_firetar",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6039 },
+                {
+                    type = "Item",
+                    item_id = 6039,
+                },
             },
             product = { item_id = 6038, qty = 1 },
             materials = {
@@ -1020,8 +1146,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_50",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12228 },
+                {
+                    type = "Item",
+                    item_id = 12228,
+                },
             },
             product = { item_id = 12210, qty = 1 },
             materials = {
@@ -1036,8 +1164,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_48",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12229 },
+                {
+                    type = "Item",
+                    item_id = 12229,
+                },
             },
             product = { item_id = 13851, qty = 1 },
             materials = {
@@ -1052,8 +1182,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_drink_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12231 },
+                {
+                    type = "Item",
+                    item_id = 12231,
+                },
             },
             product = { item_id = 12212, qty = 2 },
             materials = {
@@ -1069,8 +1201,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_49",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12232 },
+                {
+                    type = "Item",
+                    item_id = 12232,
+                },
             },
             product = { item_id = 12213, qty = 1 },
             materials = {
@@ -1085,8 +1219,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_drink_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12233 },
+                {
+                    type = "Item",
+                    item_id = 12233,
+                },
             },
             product = { item_id = 12214, qty = 1 },
             materials = {
@@ -1101,8 +1237,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_misc_fish_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17062 },
+                {
+                    type = "Item",
+                    item_id = 17062,
+                },
             },
             product = { item_id = 8364, qty = 1 },
             materials = {
@@ -1116,8 +1254,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "MP5" },
             icon = "inv_misc_fish_21",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21219 },
+                {
+                    type = "Item",
+                    item_id = 21219,
+                },
             },
             product = { item_id = 21217, qty = 1 },
             materials = {
@@ -1132,8 +1272,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_misc_fish_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6369 },
+                {
+                    type = "Item",
+                    item_id = 6369,
+                },
             },
             product = { item_id = 4594, qty = 1 },
             materials = {
@@ -1147,7 +1289,9 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_drink_15",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 10841, qty = 4 },
             materials = {
@@ -1164,8 +1308,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_drink_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12239 },
+                {
+                    type = "Item",
+                    item_id = 12239,
+                },
             },
             product = { item_id = 12217, qty = 1 },
             materials = {
@@ -1181,8 +1327,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_drink_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12240 },
+                {
+                    type = "Item",
+                    item_id = 12240,
+                },
             },
             product = { item_id = 12215, qty = 2 },
             materials = {
@@ -1198,8 +1346,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_66",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 17222, qty = 1 },
             materials = {
@@ -1215,9 +1365,11 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "inv_misc_food_15",
             source = {
-                type = "Quest",
-                quest_ids = { 6610 },
-                location = "Dirge Quikcleave, Gadgetzan, Tanaris",
+                {
+                    type = "Quest",
+                    quest_id = 6610,
+                    location = "Dirge Quikcleave, Gadgetzan, Tanaris",
+                },
             },
         },
         {
@@ -1226,8 +1378,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_48",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16111 },
+                {
+                    type = "Item",
+                    item_id = 16111,
+                },
             },
             product = { item_id = 12216, qty = 1 },
             materials = {
@@ -1242,8 +1396,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16110 },
+                {
+                    type = "Item",
+                    item_id = 16110,
+                },
             },
             product = { item_id = 12218, qty = 1 },
             materials = {
@@ -1257,8 +1413,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             name = "Spotted Yellowtail",
             categories = { "Food" },
             source = {
-                type = "Item",
-                recipe_item_ids = { 13939 },
+                {
+                    type = "Item",
+                    item_id = 13939,
+                },
             },
             product = { item_id = 6887, qty = 1 },
             materials = {
@@ -1272,8 +1430,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina" },
             icon = "inv_misc_monsterhead_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13940 },
+                {
+                    type = "Item",
+                    item_id = 13940,
+                },
             },
             product = { item_id = 13927, qty = 1 },
             materials = {
@@ -1288,8 +1448,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_misc_fish_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13941 },
+                {
+                    type = "Item",
+                    item_id = 13941,
+                },
             },
             product = { item_id = 13930, qty = 1 },
             materials = {
@@ -1303,8 +1465,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_drink_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16767 },
+                {
+                    type = "Item",
+                    item_id = 16767,
+                },
             },
             product = { item_id = 16766, qty = 2 },
             materials = {
@@ -1320,8 +1484,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_47",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18046 },
+                {
+                    type = "Item",
+                    item_id = 18046,
+                },
             },
             product = { item_id = 18045, qty = 1 },
             materials = {
@@ -1338,8 +1504,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Agility" },
             icon = "inv_misc_fish_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13942 },
+                {
+                    type = "Item",
+                    item_id = 13942,
+                },
             },
             product = { item_id = 13928, qty = 1 },
             materials = {
@@ -1354,8 +1522,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Spirit" },
             icon = "inv_misc_fish_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13943 },
+                {
+                    type = "Item",
+                    item_id = 13943,
+                },
             },
             product = { item_id = 13929, qty = 1 },
             materials = {
@@ -1372,8 +1542,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "MP5" },
             icon = "inv_drink_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13945 },
+                {
+                    type = "Item",
+                    item_id = 13945,
+                },
             },
             product = { item_id = 13931, qty = 1 },
             materials = {
@@ -1388,8 +1560,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "HP5" },
             icon = "inv_misc_fish_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13946 },
+                {
+                    type = "Item",
+                    item_id = 13946,
+                },
             },
             product = { item_id = 13932, qty = 1 },
             materials = {
@@ -1403,8 +1577,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Attack Power" },
             icon = "inv_misc_food_68",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35564 },
+                {
+                    type = "Item",
+                    item_id = 35564,
+                },
             },
             product = { item_id = 35563, qty = 1 },
             materials = {
@@ -1418,8 +1594,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Spell Damage" },
             icon = "inv_misc_food_65",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35566 },
+                {
+                    type = "Item",
+                    item_id = 35566,
+                },
             },
             product = { item_id = 35565, qty = 1 },
             materials = {
@@ -1435,7 +1613,9 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "inv_misc_food_15",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -1444,8 +1624,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_drink_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13947 },
+                {
+                    type = "Item",
+                    item_id = 13947,
+                },
             },
             product = { item_id = 13933, qty = 1 },
             materials = {
@@ -1460,8 +1642,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina" },
             icon = "inv_misc_food_47",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13948 },
+                {
+                    type = "Item",
+                    item_id = 13948,
+                },
             },
             product = { item_id = 13934, qty = 1 },
             materials = {
@@ -1477,8 +1661,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_misc_fish_20",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13949 },
+                {
+                    type = "Item",
+                    item_id = 13949,
+                },
             },
             product = { item_id = 13935, qty = 1 },
             materials = {
@@ -1493,8 +1679,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Intellect" },
             icon = "inv_misc_food_63",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18267 },
+                {
+                    type = "Item",
+                    item_id = 18267,
+                },
             },
             product = { item_id = 18254, qty = 1 },
             materials = {
@@ -1511,7 +1699,9 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Strength" },
             icon = "inv_misc_food_64",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 20452, qty = 1 },
             materials = {
@@ -1528,8 +1718,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Pet" },
             icon = "inv_misc_food_49",
             source = {
-                type = "Item",
-                recipe_item_ids = { 33875 },
+                {
+                    type = "Item",
+                    item_id = 33875,
+                },
             },
             product = { item_id = 33874, qty = 1 },
             materials = {
@@ -1543,8 +1735,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina" },
             icon = "inv_misc_food_65",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21025 },
+                {
+                    type = "Item",
+                    item_id = 21025,
+                },
             },
             product = { item_id = 21023, qty = 5 },
             materials = {
@@ -1561,8 +1755,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_85_stegadonbite",
             source = {
-                type = "Item",
-                recipe_item_ids = { 27684 },
+                {
+                    type = "Item",
+                    item_id = 27684,
+                },
             },
             product = { item_id = 27651, qty = 1 },
             materials = {
@@ -1576,8 +1772,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Attack Power", "Spirit" },
             icon = "inv_misc_food_53",
             source = {
-                type = "Item",
-                recipe_item_ids = { 27688 },
+                {
+                    type = "Item",
+                    item_id = 27688,
+                },
             },
             product = { item_id = 27655, qty = 1 },
             materials = {
@@ -1591,8 +1789,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_misc_food_77",
             source = {
-                type = "Item",
-                recipe_item_ids = { 27694 },
+                {
+                    type = "Item",
+                    item_id = 27694,
+                },
             },
             product = { item_id = 27661, qty = 1 },
             materials = {
@@ -1606,8 +1806,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_74",
             source = {
-                type = "Item",
-                recipe_item_ids = { 27695 },
+                {
+                    type = "Item",
+                    item_id = 27695,
+                },
             },
             product = { item_id = 27662, qty = 1 },
             materials = {
@@ -1621,8 +1823,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_27",
             source = {
-                type = "Item",
-                recipe_item_ids = { 30156 },
+                {
+                    type = "Item",
+                    item_id = 30156,
+                },
             },
             product = { item_id = 30155, qty = 1 },
             materials = {
@@ -1637,8 +1841,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_misc_food_91",
             source = {
-                type = "Item",
-                recipe_item_ids = { 33871 },
+                {
+                    type = "Item",
+                    item_id = 33871,
+                },
             },
             product = { item_id = 33866, qty = 1 },
             materials = {
@@ -1653,8 +1859,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Resistance" },
             icon = "inv_misc_fish_29",
             source = {
-                type = "Item",
-                recipe_item_ids = { 33869 },
+                {
+                    type = "Item",
+                    item_id = 33869,
+                },
             },
             product = { item_id = 33867, qty = 1 },
             materials = {
@@ -1670,8 +1878,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Pet" },
             icon = "inv_misc_food_87_sporelingsnack",
             source = {
-                type = "Item",
-                recipe_item_ids = { 27689 },
+                {
+                    type = "Item",
+                    item_id = 27689,
+                },
             },
             product = { item_id = 27656, qty = 1 },
             materials = {
@@ -1685,8 +1895,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "MP5" },
             icon = "inv_misc_food_79",
             source = {
-                type = "Item",
-                recipe_item_ids = { 27696 },
+                {
+                    type = "Item",
+                    item_id = 27696,
+                },
             },
             product = { item_id = 27663, qty = 1 },
             materials = {
@@ -1702,8 +1914,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Spell Damage", "Spirit" },
             icon = "inv_misc_food_86_basilisk",
             source = {
-                type = "Item",
-                recipe_item_ids = { 27690 },
+                {
+                    type = "Item",
+                    item_id = 27690,
+                },
             },
             product = { item_id = 27657, qty = 1 },
             materials = {
@@ -1719,8 +1933,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Agility", "Spirit" },
             icon = "inv_misc_food_78",
             source = {
-                type = "Item",
-                recipe_item_ids = { 27697 },
+                {
+                    type = "Item",
+                    item_id = 27697,
+                },
             },
             product = { item_id = 27664, qty = 1 },
             materials = {
@@ -1734,8 +1950,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Spell Damage", "Spirit" },
             icon = "inv_misc_food_76",
             source = {
-                type = "Item",
-                recipe_item_ids = { 27698 },
+                {
+                    type = "Item",
+                    item_id = 27698,
+                },
             },
             product = { item_id = 27665, qty = 1 },
             materials = {
@@ -1751,8 +1969,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Strength", "Spirit" },
             icon = "inv_misc_food_60",
             source = {
-                type = "Item",
-                recipe_item_ids = { 27691 },
+                {
+                    type = "Item",
+                    item_id = 27691,
+                },
             },
             product = { item_id = 27658, qty = 1 },
             materials = {
@@ -1766,8 +1986,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Agility", "Spirit" },
             icon = "inv_misc_food_65",
             source = {
-                type = "Item",
-                recipe_item_ids = { 27692 },
+                {
+                    type = "Item",
+                    item_id = 27692,
+                },
             },
             product = { item_id = 27659, qty = 1 },
             materials = {
@@ -1781,8 +2003,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_84_roastclefthoof",
             source = {
-                type = "Item",
-                recipe_item_ids = { 27693 },
+                {
+                    type = "Item",
+                    item_id = 27693,
+                },
             },
             product = { item_id = 27660, qty = 1 },
             materials = {
@@ -1796,8 +2020,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Healing", "Spirit" },
             icon = "inv_misc_fish_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 27699 },
+                {
+                    type = "Item",
+                    item_id = 27699,
+                },
             },
             product = { item_id = 27666, qty = 1 },
             materials = {
@@ -1811,8 +2037,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Spell Critical Strike", "Spirit" },
             icon = "inv_misc_food_63",
             source = {
-                type = "Item",
-                recipe_item_ids = { 33870 },
+                {
+                    type = "Item",
+                    item_id = 33870,
+                },
             },
             product = { item_id = 33825, qty = 1 },
             materials = {
@@ -1826,8 +2054,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Hit Rating", "Spirit" },
             icon = "inv_misc_food_84_roastclefthoof",
             source = {
-                type = "Item",
-                recipe_item_ids = { 33873 },
+                {
+                    type = "Item",
+                    item_id = 33873,
+                },
             },
             product = { item_id = 33872, qty = 1 },
             materials = {
@@ -1842,8 +2072,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_drink_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 34413 },
+                {
+                    type = "Item",
+                    item_id = 34413,
+                },
             },
             product = { item_id = 34411, qty = 2 },
             materials = {
@@ -1861,8 +2093,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_48",
             source = {
-                type = "Item",
-                recipe_item_ids = { 31675 },
+                {
+                    type = "Item",
+                    item_id = 31675,
+                },
             },
             product = { item_id = 31672, qty = 1 },
             materials = {
@@ -1876,8 +2110,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Spell Damage", "Spirit" },
             icon = "inv_misc_food_88_ravagernuggets",
             source = {
-                type = "Item",
-                recipe_item_ids = { 31674 },
+                {
+                    type = "Item",
+                    item_id = 31674,
+                },
             },
             product = { item_id = 31673, qty = 1 },
             materials = {
@@ -1891,8 +2127,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_misc_food_64",
             source = {
-                type = "Trainer",
-                cost = 42000,
+                {
+                    type = "Trainer",
+                    cost = 42000,
+                },
             },
             product = { item_id = 33048, qty = 1 },
             materials = {
@@ -1910,8 +2148,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_fish_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 27700 },
+                {
+                    type = "Item",
+                    item_id = 27700,
+                },
             },
             product = { item_id = 27667, qty = 1 },
             materials = {
@@ -1927,8 +2167,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Stamina", "Spirit" },
             icon = "inv_misc_food_88_ravagernuggets",
             source = {
-                type = "Trainer",
-                cost = 60000,
+                {
+                    type = "Trainer",
+                    cost = 60000,
+                },
             },
             product = { item_id = 33052, qty = 6 },
             materials = {
@@ -1944,8 +2186,10 @@ TFG.COOKING_BURNING_CRUSADE = {
             categories = { "Food" },
             icon = "inv_misc_food_76",
             source = {
-                type = "Trainer",
-                cost = 60000,
+                {
+                    type = "Trainer",
+                    cost = 60000,
+                },
             },
             product = { item_id = 33053, qty = 2 },
             materials = {

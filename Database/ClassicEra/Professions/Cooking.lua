@@ -7,7 +7,9 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Charred Wolf Meat",
             icon = "inv_misc_food_18",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 2679, qty = 1 },
             materials = {
@@ -20,7 +22,9 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Roasted Boar Meat",
             icon = "inv_misc_food_18",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 2681, qty = 1 },
             materials = {
@@ -35,8 +39,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Brilliant Smallfish",
             icon = "inv_misc_fish_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6325 },
+                {
+                    type = "Item",
+                    item_id = 6325,
+                },
             },
             product = { item_id = 6290, qty = 1 },
             materials = {
@@ -49,8 +55,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Crispy Bat Wing",
             icon = "inv_misc_food_46",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12226 },
+                {
+                    type = "Item",
+                    item_id = 12226,
+                },
             },
             product = { item_id = 12224, qty = 1 },
             materials = {
@@ -64,8 +72,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Gingerbread Cookie",
             icon = "inv_misc_food_62",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17200 },
+                {
+                    type = "Item",
+                    item_id = 17200,
+                },
             },
             product = { item_id = 17197, qty = 1 },
             materials = {
@@ -79,7 +89,9 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Herb Baked Egg",
             icon = "inv_egg_03",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 6888, qty = 1 },
             materials = {
@@ -93,8 +105,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Slitherskin Mackerel",
             icon = "inv_misc_fish_24",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6326 },
+                {
+                    type = "Item",
+                    item_id = 6326,
+                },
             },
             product = { item_id = 787, qty = 1 },
             materials = {
@@ -107,7 +121,9 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Cooking",
             icon = "inv_misc_food_15",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -115,7 +131,9 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Cooking",
             icon = "inv_misc_food_15",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -123,7 +141,9 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Cooking",
             icon = "inv_misc_food_15",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -133,8 +153,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Kaldorei Spider Kabob",
             icon = "inv_misc_food_68",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5482 },
+                {
+                    type = "Item",
+                    item_id = 5482,
+                },
             },
             product = { item_id = 5472, qty = 1 },
             materials = {
@@ -147,8 +169,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Spiced Wolf Meat",
             icon = "inv_misc_food_65",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 2680, qty = 1 },
             materials = {
@@ -164,8 +188,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Scorpid Surprise",
             icon = "inv_misc_food_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5483 },
+                {
+                    type = "Item",
+                    item_id = 5483,
+                },
             },
             product = { item_id = 5473, qty = 1 },
             materials = {
@@ -180,8 +206,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Beer Basted Boar Ribs",
             icon = "inv_misc_food_48",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2889 },
+                {
+                    type = "Item",
+                    item_id = 2889,
+                },
             },
             product = { item_id = 2888, qty = 1 },
             materials = {
@@ -195,7 +223,9 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Basic Campfire",
             icon = "spell_fire_fire",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 4470, qty = 1 },
@@ -209,8 +239,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Egg Nog",
             icon = "inv_drink_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17201 },
+                {
+                    type = "Item",
+                    item_id = 17201,
+                },
             },
             product = { item_id = 17198, qty = 1 },
             materials = {
@@ -226,8 +258,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Roasted Kodo Meat",
             icon = "inv_misc_food_60",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5484 },
+                {
+                    type = "Item",
+                    item_id = 5484,
+                },
             },
             product = { item_id = 5474, qty = 2 },
             materials = {
@@ -243,8 +277,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Smoked Bear Meat",
             icon = "inv_misc_food_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6892 },
+                {
+                    type = "Item",
+                    item_id = 6892,
+                },
             },
             product = { item_id = 6890, qty = 1 },
             materials = {
@@ -259,7 +295,9 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Cooking",
             icon = "inv_misc_food_15",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -267,8 +305,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Boiled Clams",
             icon = "inv_misc_shell_02",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 5525, qty = 1 },
             materials = {
@@ -282,8 +322,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Coyote Steak",
             icon = "inv_misc_food_65",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 2684, qty = 1 },
             materials = {
@@ -296,8 +338,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Fillet of Frenzy",
             icon = "inv_misc_fish_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5485 },
+                {
+                    type = "Item",
+                    item_id = 5485,
+                },
             },
             product = { item_id = 5476, qty = 2 },
             materials = {
@@ -311,8 +355,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Goretusk Liver Pie",
             icon = "inv_misc_food_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2697 },
+                {
+                    type = "Item",
+                    item_id = 2697,
+                },
             },
             product = { item_id = 724, qty = 1 },
             materials = {
@@ -326,8 +372,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Loch Frenzy Delight",
             icon = "inv_potion_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6329 },
+                {
+                    type = "Item",
+                    item_id = 6329,
+                },
             },
             product = { item_id = 6316, qty = 1 },
             materials = {
@@ -341,8 +389,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Longjaw Mud Snapper",
             icon = "inv_misc_fish_32",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6328 },
+                {
+                    type = "Item",
+                    item_id = 6328,
+                },
             },
             product = { item_id = 4592, qty = 1 },
             materials = {
@@ -355,8 +405,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Rainbow Fin Albacore",
             icon = "inv_misc_fish_27",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6368 },
+                {
+                    type = "Item",
+                    item_id = 6368,
+                },
             },
             product = { item_id = 5095, qty = 1 },
             materials = {
@@ -369,8 +421,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Strider Stew",
             icon = "inv_misc_bowl_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5486 },
+                {
+                    type = "Item",
+                    item_id = 5486,
+                },
             },
             product = { item_id = 5477, qty = 2 },
             materials = {
@@ -386,8 +440,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Blood Sausage",
             icon = "inv_misc_food_49",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3679 },
+                {
+                    type = "Item",
+                    item_id = 3679,
+                },
             },
             product = { item_id = 3220, qty = 2 },
             materials = {
@@ -402,8 +458,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Thistle Tea",
             icon = "inv_drink_milk_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18160 },
+                {
+                    type = "Item",
+                    item_id = 18160,
+                },
             },
             product = { item_id = 7676, qty = 1 },
             materials = {
@@ -419,8 +477,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Crab Cake",
             icon = "inv_misc_food_08",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 2683, qty = 1 },
             materials = {
@@ -434,8 +494,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Westfall Stew",
             icon = "inv_misc_bowl_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 728 },
+                {
+                    type = "Item",
+                    item_id = 728,
+                },
             },
             product = { item_id = 733, qty = 1 },
             materials = {
@@ -452,8 +514,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Crocolisk Steak",
             icon = "inv_misc_food_47",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3678 },
+                {
+                    type = "Item",
+                    item_id = 3678,
+                },
             },
             product = { item_id = 3662, qty = 1 },
             materials = {
@@ -467,8 +531,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Dry Pork Ribs",
             icon = "inv_misc_food_48",
             source = {
-                type = "Trainer",
-                cost = 150,
+                {
+                    type = "Trainer",
+                    cost = 150,
+                },
             },
             product = { item_id = 2687, qty = 1 },
             materials = {
@@ -482,8 +548,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Smoked Sagefish",
             icon = "inv_misc_fish_20",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21099 },
+                {
+                    type = "Item",
+                    item_id = 21099,
+                },
             },
             product = { item_id = 21072, qty = 1 },
             materials = {
@@ -499,8 +567,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Cooked Crab Claw",
             icon = "inv_misc_birdbeck_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2698 },
+                {
+                    type = "Item",
+                    item_id = 2698,
+                },
             },
             product = { item_id = 2682, qty = 1 },
             materials = {
@@ -514,8 +584,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Savory Deviate Delight",
             icon = "inv_misc_monsterhead_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6661 },
+                {
+                    type = "Item",
+                    item_id = 6661,
+                },
             },
             product = { item_id = 6657, qty = 1 },
             materials = {
@@ -531,8 +603,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Clam Chowder",
             icon = "inv_potion_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5528 },
+                {
+                    type = "Item",
+                    item_id = 5528,
+                },
             },
             product = { item_id = 5526, qty = 1 },
             materials = {
@@ -547,8 +621,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Dig Rat Stew",
             icon = "inv_misc_bowl_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5487 },
+                {
+                    type = "Item",
+                    item_id = 5487,
+                },
             },
             product = { item_id = 5478, qty = 2 },
             materials = {
@@ -561,8 +637,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Murloc Fin Soup",
             icon = "inv_misc_bowl_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3680 },
+                {
+                    type = "Item",
+                    item_id = 3680,
+                },
             },
             product = { item_id = 3663, qty = 1 },
             materials = {
@@ -578,8 +656,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Redridge Goulash",
             icon = "inv_misc_bowl_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2699 },
+                {
+                    type = "Item",
+                    item_id = 2699,
+                },
             },
             product = { item_id = 1082, qty = 1 },
             materials = {
@@ -593,8 +673,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Bristle Whisker Catfish",
             icon = "inv_misc_fish_30",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6330 },
+                {
+                    type = "Item",
+                    item_id = 6330,
+                },
             },
             product = { item_id = 4593, qty = 1 },
             materials = {
@@ -607,8 +689,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Crispy Lizard Tail",
             icon = "inv_misc_food_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5488 },
+                {
+                    type = "Item",
+                    item_id = 5488,
+                },
             },
             product = { item_id = 5479, qty = 2 },
             materials = {
@@ -622,8 +706,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Seasoned Wolf Kabob",
             icon = "inv_misc_food_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2701 },
+                {
+                    type = "Item",
+                    item_id = 2701,
+                },
             },
             product = { item_id = 1017, qty = 3 },
             materials = {
@@ -639,8 +725,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Succulent Pork Ribs",
             icon = "inv_misc_food_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2700 },
+                {
+                    type = "Item",
+                    item_id = 2700,
+                },
             },
             product = { item_id = 2685, qty = 1 },
             materials = {
@@ -654,8 +742,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Big Bear Steak",
             icon = "inv_misc_food_47",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3734 },
+                {
+                    type = "Item",
+                    item_id = 3734,
+                },
             },
             product = { item_id = 3726, qty = 1 },
             materials = {
@@ -669,8 +759,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Gooey Spider Cake",
             icon = "inv_misc_food_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3683 },
+                {
+                    type = "Item",
+                    item_id = 3683,
+                },
             },
             product = { item_id = 3666, qty = 1 },
             materials = {
@@ -684,8 +776,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Lean Venison",
             icon = "inv_misc_food_72",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5489 },
+                {
+                    type = "Item",
+                    item_id = 5489,
+                },
             },
             product = { item_id = 5480, qty = 2 },
             materials = {
@@ -701,8 +795,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Crocolisk Gumbo",
             icon = "inv_misc_bowl_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3681 },
+                {
+                    type = "Item",
+                    item_id = 3681,
+                },
             },
             product = { item_id = 3664, qty = 1 },
             materials = {
@@ -718,8 +814,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Goblin Deviled Clams",
             icon = "inv_misc_shell_01",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 5527, qty = 1 },
             materials = {
@@ -733,8 +831,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Lean Wolf Steak",
             icon = "inv_misc_food_47",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12227 },
+                {
+                    type = "Item",
+                    item_id = 12227,
+                },
             },
             product = { item_id = 12209, qty = 1 },
             materials = {
@@ -748,8 +848,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Hot Lion Chops",
             icon = "inv_misc_food_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3735 },
+                {
+                    type = "Item",
+                    item_id = 3735,
+                },
             },
             product = { item_id = 3727, qty = 1 },
             materials = {
@@ -765,8 +867,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Curiously Tasty Omelet",
             icon = "inv_egg_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3682 },
+                {
+                    type = "Item",
+                    item_id = 3682,
+                },
             },
             product = { item_id = 3665, qty = 1 },
             materials = {
@@ -782,8 +886,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Heavy Crocolisk Stew",
             icon = "inv_misc_food_64",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20075 },
+                {
+                    type = "Item",
+                    item_id = 20075,
+                },
             },
             product = { item_id = 20074, qty = 1 },
             materials = {
@@ -797,8 +903,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Tasty Lion Steak",
             icon = "inv_misc_food_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3736 },
+                {
+                    type = "Item",
+                    item_id = 3736,
+                },
             },
             product = { item_id = 3728, qty = 1 },
             materials = {
@@ -814,8 +922,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Rockscale Cod",
             icon = "inv_misc_fish_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6369 },
+                {
+                    type = "Item",
+                    item_id = 6369,
+                },
             },
             product = { item_id = 4594, qty = 1 },
             materials = {
@@ -828,8 +938,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Barbecued Buzzard Wing",
             icon = "inv_misc_food_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4609 },
+                {
+                    type = "Item",
+                    item_id = 4609,
+                },
             },
             product = { item_id = 4457, qty = 1 },
             materials = {
@@ -843,8 +955,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Carrion Surprise",
             icon = "inv_misc_food_49",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12232 },
+                {
+                    type = "Item",
+                    item_id = 12232,
+                },
             },
             product = { item_id = 12213, qty = 1 },
             materials = {
@@ -858,8 +972,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Giant Clam Scorcho",
             icon = "inv_ammo_firetar",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6039 },
+                {
+                    type = "Item",
+                    item_id = 6039,
+                },
             },
             product = { item_id = 6038, qty = 1 },
             materials = {
@@ -873,7 +989,9 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Goldthorn Tea",
             icon = "inv_drink_15",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 10841, qty = 4 },
             materials = {
@@ -887,8 +1005,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Hot Wolf Ribs",
             icon = "inv_misc_food_48",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12229 },
+                {
+                    type = "Item",
+                    item_id = 12229,
+                },
             },
             product = { item_id = 13851, qty = 1 },
             materials = {
@@ -902,8 +1022,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Jungle Stew",
             icon = "inv_drink_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12231 },
+                {
+                    type = "Item",
+                    item_id = 12231,
+                },
             },
             product = { item_id = 12212, qty = 2 },
             materials = {
@@ -918,8 +1040,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Mithril Headed Trout",
             icon = "inv_misc_fish_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17062 },
+                {
+                    type = "Item",
+                    item_id = 17062,
+                },
             },
             product = { item_id = 8364, qty = 1 },
             materials = {
@@ -932,8 +1056,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Mystery Stew",
             icon = "inv_drink_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12233 },
+                {
+                    type = "Item",
+                    item_id = 12233,
+                },
             },
             product = { item_id = 12214, qty = 1 },
             materials = {
@@ -947,8 +1073,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Roast Raptor",
             icon = "inv_misc_food_50",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12228 },
+                {
+                    type = "Item",
+                    item_id = 12228,
+                },
             },
             product = { item_id = 12210, qty = 1 },
             materials = {
@@ -962,8 +1090,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Sagefish Delight",
             icon = "inv_misc_fish_21",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21219 },
+                {
+                    type = "Item",
+                    item_id = 21219,
+                },
             },
             product = { item_id = 21217, qty = 1 },
             materials = {
@@ -977,8 +1107,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Soothing Turtle Bisque",
             icon = "inv_misc_bowl_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3737 },
+                {
+                    type = "Item",
+                    item_id = 3737,
+                },
             },
             product = { item_id = 3729, qty = 1 },
             materials = {
@@ -994,8 +1126,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Dragonbreath Chili",
             icon = "inv_drink_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12239 },
+                {
+                    type = "Item",
+                    item_id = 12239,
+                },
             },
             product = { item_id = 12217, qty = 1 },
             materials = {
@@ -1010,8 +1144,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Heavy Kodo Stew",
             icon = "inv_drink_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12240 },
+                {
+                    type = "Item",
+                    item_id = 12240,
+                },
             },
             product = { item_id = 12215, qty = 2 },
             materials = {
@@ -1026,8 +1162,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Spider Sausage",
             icon = "inv_misc_food_66",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 17222, qty = 1 },
             materials = {
@@ -1042,8 +1180,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Cooked Glossy Mightfish",
             icon = "inv_misc_monsterhead_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13940 },
+                {
+                    type = "Item",
+                    item_id = 13940,
+                },
             },
             product = { item_id = 13927, qty = 1 },
             materials = {
@@ -1057,8 +1197,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Filet of Redgill",
             icon = "inv_misc_fish_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13941 },
+                {
+                    type = "Item",
+                    item_id = 13941,
+                },
             },
             product = { item_id = 13930, qty = 1 },
             materials = {
@@ -1071,8 +1213,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Monster Omelet",
             icon = "inv_misc_food_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16110 },
+                {
+                    type = "Item",
+                    item_id = 16110,
+                },
             },
             product = { item_id = 12218, qty = 1 },
             materials = {
@@ -1086,8 +1230,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Spiced Chili Crab",
             icon = "inv_misc_food_48",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16111 },
+                {
+                    type = "Item",
+                    item_id = 16111,
+                },
             },
             product = { item_id = 12216, qty = 1 },
             materials = {
@@ -1101,8 +1247,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Spotted Yellowtail",
             icon = "inv_misc_fish_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13939 },
+                {
+                    type = "Item",
+                    item_id = 13939,
+                },
             },
             product = { item_id = 6887, qty = 1 },
             materials = {
@@ -1115,8 +1263,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Tender Wolf Steak",
             icon = "inv_misc_food_47",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18046 },
+                {
+                    type = "Item",
+                    item_id = 18046,
+                },
             },
             product = { item_id = 18045, qty = 1 },
             materials = {
@@ -1130,8 +1280,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Undermine Clam Chowder",
             icon = "inv_drink_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16767 },
+                {
+                    type = "Item",
+                    item_id = 16767,
+                },
             },
             product = { item_id = 16766, qty = 2 },
             materials = {
@@ -1148,8 +1300,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Grilled Squid",
             icon = "inv_misc_fish_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13942 },
+                {
+                    type = "Item",
+                    item_id = 13942,
+                },
             },
             product = { item_id = 13928, qty = 1 },
             materials = {
@@ -1163,8 +1317,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Hot Smoked Bass",
             icon = "inv_misc_fish_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13943 },
+                {
+                    type = "Item",
+                    item_id = 13943,
+                },
             },
             product = { item_id = 13929, qty = 1 },
             materials = {
@@ -1180,8 +1336,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Nightfin Soup",
             icon = "inv_drink_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13945 },
+                {
+                    type = "Item",
+                    item_id = 13945,
+                },
             },
             product = { item_id = 13931, qty = 1 },
             materials = {
@@ -1195,8 +1353,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Poached Sunscale Salmon",
             icon = "inv_misc_fish_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13946 },
+                {
+                    type = "Item",
+                    item_id = 13946,
+                },
             },
             product = { item_id = 13932, qty = 1 },
             materials = {
@@ -1211,8 +1371,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Baked Salmon",
             icon = "inv_misc_fish_20",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13949 },
+                {
+                    type = "Item",
+                    item_id = 13949,
+                },
             },
             product = { item_id = 13935, qty = 1 },
             materials = {
@@ -1226,8 +1388,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Lobster Stew",
             icon = "inv_drink_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13947 },
+                {
+                    type = "Item",
+                    item_id = 13947,
+                },
             },
             product = { item_id = 13933, qty = 1 },
             materials = {
@@ -1241,8 +1405,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Mightfish Steak",
             icon = "inv_misc_food_47",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13948 },
+                {
+                    type = "Item",
+                    item_id = 13948,
+                },
             },
             product = { item_id = 13934, qty = 1 },
             materials = {
@@ -1257,8 +1423,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Runn Tum Tuber Surprise",
             icon = "inv_misc_food_63",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18267 },
+                {
+                    type = "Item",
+                    item_id = 18267,
+                },
             },
             product = { item_id = 18254, qty = 1 },
             materials = {
@@ -1274,8 +1442,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Smoked Desert Dumplings",
             icon = "inv_misc_food_64",
             source = {
-                type = "Quest",
-                quest_ids = { 8313 },
+                {
+                    type = "Quest",
+                    quest_id = 8313,
+                },
             },
             product = { item_id = 20452, qty = 1 },
             materials = {
@@ -1291,8 +1461,10 @@ TFG.COOKING_CLASSIC_ERA = {
             name = "Dirge's Kickin' Chimaerok Chops",
             icon = "inv_misc_food_65",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21025 },
+                {
+                    type = "Item",
+                    item_id = 21025,
+                },
             },
             product = { item_id = 21023, qty = 5 },
             materials = {

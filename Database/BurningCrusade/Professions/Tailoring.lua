@@ -8,8 +8,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "trade_tailoring",
             source = {
-                type = "Trainer",
-                cost = 10,
+                {
+                    type = "Trainer",
+                    cost = 10,
+                },
             },
         },
         {
@@ -18,7 +20,9 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bolts & Cloth" },
             icon = "inv_fabric_linen_02",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 2996, qty = 1 },
             materials = {
@@ -32,7 +36,9 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_14",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 2570, qty = 1 },
             materials = {
@@ -47,7 +53,9 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_02",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 4344, qty = 1 },
             materials = {
@@ -62,7 +70,9 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_11",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 10045, qty = 1 },
             materials = {
@@ -77,8 +87,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_white_01",
             source = {
-                type = "Trainer",
-                cost = 25,
+                {
+                    type = "Trainer",
+                    cost = 25,
+                },
             },
             product = { item_id = 2576, qty = 1 },
             materials = {
@@ -96,8 +108,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_shirt_05",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 2568, qty = 1 },
             materials = {
@@ -114,8 +128,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Waist" },
             icon = "inv_belt_05",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 7026, qty = 1 },
             materials = {
@@ -132,8 +148,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_05",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 10046, qty = 1 },
             materials = {
@@ -151,8 +169,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_06",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 4343, qty = 1 },
             materials = {
@@ -167,8 +187,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_21",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 6238, qty = 1 },
             materials = {
@@ -183,8 +205,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_04",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 6241, qty = 1 },
             materials = {
@@ -202,8 +226,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_05",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 4307, qty = 1 },
             materials = {
@@ -220,8 +246,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_red_01",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 2575, qty = 1 },
             materials = {
@@ -237,8 +265,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_blue_01",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 2577, qty = 1 },
             materials = {
@@ -254,8 +284,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_shirt_12",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 6786, qty = 1 },
             materials = {
@@ -272,9 +304,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2598 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 2598,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 2572, qty = 1 },
             materials = {
@@ -292,8 +326,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_01",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 4238, qty = 1 },
             materials = {
@@ -310,8 +346,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "trade_tailoring",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
         },
     },
@@ -322,9 +360,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_37",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6270 },
-                location = "Vendor",
+                {
+                    type = "Item",
+                    item_id = 6270,
+                    location = "Vendor",
+                },
             },
             product = { item_id = 6240, qty = 1 },
             materials = {
@@ -340,9 +380,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_40",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6271 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 6271,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 6239, qty = 1 },
             materials = {
@@ -360,8 +402,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_07",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 2580, qty = 1 },
             materials = {
@@ -376,8 +420,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Wrist" },
             icon = "inv_bracer_12",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 4308, qty = 1 },
             materials = {
@@ -395,8 +441,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_09",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 2569, qty = 1 },
             materials = {
@@ -414,8 +462,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_fur",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 2578, qty = 1 },
             materials = {
@@ -431,8 +481,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_green_01",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 2579, qty = 1 },
             materials = {
@@ -448,8 +500,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_07",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 4309, qty = 1 },
             materials = {
@@ -464,8 +518,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5771 },
+                {
+                    type = "Item",
+                    item_id = 5771,
+                },
             },
             product = { item_id = 5762, qty = 1 },
             materials = {
@@ -481,9 +537,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6272 },
-                location = "Vendor",
+                {
+                    type = "Item",
+                    item_id = 6272,
+                    location = "Vendor",
+                },
             },
             product = { item_id = 6242, qty = 1 },
             materials = {
@@ -501,8 +559,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bolts & Cloth" },
             icon = "inv_fabric_wool_03",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 2997, qty = 1 },
             materials = {
@@ -516,8 +576,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_11",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 10047, qty = 1 },
             materials = {
@@ -532,8 +594,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_10",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 2584, qty = 1 },
             materials = {
@@ -550,8 +614,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_10",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 4240, qty = 1 },
             materials = {
@@ -566,8 +632,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_09",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 4312, qty = 1 },
             materials = {
@@ -585,8 +653,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_39",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 2582, qty = 1 },
             materials = {
@@ -602,8 +672,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_05",
             source = {
-                type = "Trainer",
-                cost = 400,
+                {
+                    type = "Trainer",
+                    cost = 400,
+                },
             },
             product = { item_id = 4310, qty = 1 },
             materials = {
@@ -620,8 +692,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_11",
             source = {
-                type = "Trainer",
-                cost = 400,
+                {
+                    type = "Trainer",
+                    cost = 400,
+                },
             },
             product = { item_id = 5542, qty = 1 },
             materials = {
@@ -639,8 +713,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_09",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 2583, qty = 1 },
             materials = {
@@ -656,8 +732,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4345 },
+                {
+                    type = "Item",
+                    item_id = 4345,
+                },
             },
             product = { item_id = 4313, qty = 1 },
             materials = {
@@ -674,8 +752,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_10_green",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4292 },
+                {
+                    type = "Item",
+                    item_id = 4292,
+                },
             },
             product = { item_id = 4241, qty = 1 },
             materials = {
@@ -693,8 +773,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4346 },
+                {
+                    type = "Item",
+                    item_id = 4346,
+                },
             },
             product = { item_id = 4311, qty = 1 },
             materials = {
@@ -710,8 +792,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_shirt_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6274 },
+                {
+                    type = "Item",
+                    item_id = 6274,
+                },
             },
             product = { item_id = 6263, qty = 1 },
             materials = {
@@ -727,8 +811,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_grey_01",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 2587, qty = 1 },
             materials = {
@@ -746,8 +832,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2601 },
+                {
+                    type = "Item",
+                    item_id = 2601,
+                },
             },
             product = { item_id = 2585, qty = 1 },
             materials = {
@@ -765,8 +853,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shoulder" },
             icon = "inv_shoulder_06",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 4314, qty = 1 },
             materials = {
@@ -781,8 +871,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_red_01",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 4330, qty = 1 },
             materials = {
@@ -798,8 +890,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_shirt_12",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 6787, qty = 1 },
             materials = {
@@ -815,8 +909,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_01",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 4316, qty = 1 },
             materials = {
@@ -833,9 +929,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_10_red",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5772 },
-                location = "Drop, Vendor",
+                {
+                    type = "Item",
+                    item_id = 5772,
+                    location = "Drop, Vendor",
+                },
             },
             product = { item_id = 5763, qty = 1 },
             materials = {
@@ -851,9 +949,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_24",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6275 },
-                location = "Tailoring Supplies Vendors",
+                {
+                    type = "Item",
+                    item_id = 6275,
+                    location = "Tailoring Supplies Vendors",
+                },
             },
             product = { item_id = 6264, qty = 1 },
             materials = {
@@ -871,8 +971,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shoulder" },
             icon = "inv_shoulder_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4347 },
+                {
+                    type = "Item",
+                    item_id = 4347,
+                },
             },
             product = { item_id = 4315, qty = 1 },
             materials = {
@@ -888,8 +990,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_blue_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6390 },
+                {
+                    type = "Item",
+                    item_id = 6390,
+                },
             },
             product = { item_id = 6384, qty = 1 },
             materials = {
@@ -906,8 +1010,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_green_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6391 },
+                {
+                    type = "Item",
+                    item_id = 6391,
+                },
             },
             product = { item_id = 6385, qty = 1 },
             materials = {
@@ -924,8 +1030,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10316 },
+                {
+                    type = "Item",
+                    item_id = 10316,
+                },
             },
             product = { item_id = 10048, qty = 1 },
             materials = {
@@ -943,8 +1051,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "trade_tailoring",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
         },
         {
@@ -953,8 +1063,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bolts & Cloth" },
             icon = "inv_fabric_silk_03",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 4305, qty = 1 },
             materials = {
@@ -968,8 +1080,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_05",
             source = {
-                type = "Trainer",
-                cost = 750,
+                {
+                    type = "Trainer",
+                    cost = 750,
+                },
             },
             product = { item_id = 4320, qty = 1 },
             materials = {
@@ -986,9 +1100,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4348 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 4348,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 4331, qty = 1 },
             materials = {
@@ -1005,9 +1121,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4349 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 4349,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 4317, qty = 1 },
             materials = {
@@ -1025,8 +1143,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_05",
             source = {
-                type = "Trainer",
-                cost = 750,
+                {
+                    type = "Trainer",
+                    cost = 750,
+                },
             },
             product = { item_id = 4318, qty = 1 },
             materials = {
@@ -1044,8 +1164,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_17",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 5766, qty = 1 },
             materials = {
@@ -1061,9 +1183,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_yellow_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14627 },
-                location = "Danielle Zipstitch, Duskwood",
+                {
+                    type = "Item",
+                    item_id = 14627,
+                    location = "Danielle Zipstitch, Duskwood",
+                },
             },
             product = { item_id = 4332, qty = 1 },
             materials = {
@@ -1081,8 +1205,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_08",
             source = {
-                type = "Trainer",
-                cost = 600,
+                {
+                    type = "Trainer",
+                    cost = 600,
+                },
             },
             product = { item_id = 7046, qty = 1 },
             materials = {
@@ -1098,9 +1224,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4350 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 4350,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 4321, qty = 1 },
             materials = {
@@ -1118,8 +1246,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7114 },
+                {
+                    type = "Item",
+                    item_id = 7114,
+                },
             },
             product = { item_id = 4319, qty = 1 },
             materials = {
@@ -1136,9 +1266,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_22",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7092 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 7092,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 7047, qty = 1 },
             materials = {
@@ -1155,8 +1287,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Head" },
             icon = "inv_helmet_29",
             source = {
-                type = "Trainer",
-                cost = 600,
+                {
+                    type = "Trainer",
+                    cost = 600,
+                },
             },
             product = { item_id = 7048, qty = 1 },
             materials = {
@@ -1174,8 +1308,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_07",
             source = {
-                type = "Trainer",
-                cost = 800,
+                {
+                    type = "Trainer",
+                    cost = 800,
+                },
             },
             product = { item_id = 4245, qty = 1 },
             materials = {
@@ -1191,8 +1327,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_37",
             source = {
-                type = "Trainer",
-                cost = 750,
+                {
+                    type = "Trainer",
+                    cost = 750,
+                },
             },
             product = { item_id = 4324, qty = 1 },
             materials = {
@@ -1207,9 +1345,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_29",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5773 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 5773,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 5770, qty = 1 },
             materials = {
@@ -1225,9 +1365,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7091 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 7091,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 7049, qty = 1 },
             materials = {
@@ -1246,9 +1388,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_black_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6401 },
-                location = "Duskwood (A) or Hillsbrad Foothills (H)",
+                {
+                    type = "Item",
+                    item_id = 6401,
+                    location = "Duskwood (A) or Hillsbrad Foothills (H)",
+                },
             },
             product = { item_id = 4333, qty = 1 },
             materials = {
@@ -1266,8 +1410,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_white_01",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 6795, qty = 1 },
             materials = {
@@ -1283,8 +1429,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Head" },
             icon = "inv_misc_bandana_01",
             source = {
-                type = "Trainer",
-                cost = 750,
+                {
+                    type = "Trainer",
+                    cost = 750,
+                },
             },
             product = { item_id = 7050, qty = 1 },
             materials = {
@@ -1301,9 +1449,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Head" },
             icon = "inv_helmet_31",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14630 },
-                location = "Desolace or Stranglethorn Vale",
+                {
+                    type = "Item",
+                    item_id = 14630,
+                    location = "Desolace or Stranglethorn Vale",
+                },
             },
             product = { item_id = 4322, qty = 1 },
             materials = {
@@ -1319,9 +1469,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7090 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 7090,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 7065, qty = 1 },
             materials = {
@@ -1339,8 +1491,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_shirt_04",
             source = {
-                type = "Trainer",
-                cost = 900,
+                {
+                    type = "Trainer",
+                    cost = 900,
+                },
             },
             product = { item_id = 7051, qty = 1 },
             materials = {
@@ -1356,8 +1510,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_08",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 4334, qty = 1 },
             materials = {
@@ -1373,9 +1529,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Head" },
             icon = "inv_helmet_27",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4351 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 4351,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 4323, qty = 1 },
             materials = {
@@ -1393,8 +1551,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bolts & Cloth" },
             icon = "inv_fabric_mageweave_03",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 4339, qty = 1 },
             materials = {
@@ -1408,8 +1568,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Waist" },
             icon = "inv_belt_22",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 7052, qty = 1 },
             materials = {
@@ -1427,8 +1589,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Waist" },
             icon = "inv_belt_04",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 7055, qty = 1 },
             materials = {
@@ -1445,8 +1609,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_red_01",
             source = {
-                type = "Trainer",
-                cost = 750,
+                {
+                    type = "Trainer",
+                    cost = 750,
+                },
             },
             product = { item_id = 6796, qty = 1 },
             materials = {
@@ -1462,9 +1628,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_chest_cloth_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7089 },
-                location = "Feralas (A) or Arathi Highlands (H)",
+                {
+                    type = "Item",
+                    item_id = 7089,
+                    location = "Feralas (A) or Arathi Highlands (H)",
+                },
             },
             product = { item_id = 7053, qty = 1 },
             materials = {
@@ -1480,9 +1648,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4352 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 4352,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 4325, qty = 1 },
             materials = {
@@ -1498,9 +1668,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_07_green",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5774 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 5774,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 5764, qty = 1 },
             materials = {
@@ -1519,8 +1691,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shoulder" },
             icon = "inv_shoulder_18",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 7057, qty = 1 },
             materials = {
@@ -1535,9 +1709,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Waist" },
             icon = "inv_belt_25",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4353 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 4353,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 4328, qty = 1 },
             materials = {
@@ -1553,9 +1729,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_chest_cloth_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7087 },
-                location = "Desolace or Stranglethorn Vale",
+                {
+                    type = "Item",
+                    item_id = 7087,
+                    location = "Desolace or Stranglethorn Vale",
+                },
             },
             product = { item_id = 7056, qty = 1 },
             materials = {
@@ -1574,8 +1752,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_02",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 4326, qty = 1 },
             materials = {
@@ -1591,8 +1771,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_shirt_04",
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
             product = { item_id = 7058, qty = 1 },
             materials = {
@@ -1608,9 +1790,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_07_black",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5775 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 5775,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 5765, qty = 1 },
             materials = {
@@ -1626,9 +1810,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4354 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 4354,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 4335, qty = 1 },
             materials = {
@@ -1646,8 +1832,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_02",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 7054, qty = 1 },
             materials = {
@@ -1666,9 +1854,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shoulder" },
             icon = "inv_shoulder_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7084 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 7084,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 7059, qty = 1 },
             materials = {
@@ -1685,9 +1875,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shoulder" },
             icon = "inv_shoulder_27",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7085 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 7085,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 7060, qty = 1 },
             materials = {
@@ -1704,9 +1896,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_green_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17724 },
-                location = "Winter Veil Quests",
+                {
+                    type = "Item",
+                    item_id = 17724,
+                    location = "Winter Veil Quests",
+                },
             },
             product = { item_id = 17723, qty = 1 },
             materials = {
@@ -1724,8 +1918,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_06",
             source = {
-                type = "Trainer",
-                cost = 3000,
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
             },
             product = { item_id = 7062, qty = 1 },
             materials = {
@@ -1741,9 +1937,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Waist" },
             icon = "inv_belt_24",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7086 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 7086,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 7061, qty = 1 },
             materials = {
@@ -1763,8 +1961,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "trade_tailoring",
             source = {
-                type = "Trainer",
-                cost = 50000,
+                {
+                    type = "Trainer",
+                    cost = 50000,
+                },
             },
         },
         {
@@ -1773,9 +1973,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4355 },
-                location = "Hillsbrad Foothills (A) or Dustwallow Marsh (H)",
+                {
+                    type = "Item",
+                    item_id = 4355,
+                    location = "Hillsbrad Foothills (A) or Dustwallow Marsh (H)",
+                },
             },
             product = { item_id = 4327, qty = 1 },
             materials = {
@@ -1792,9 +1994,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Waist" },
             icon = "inv_belt_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4356 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 4356,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 4329, qty = 1 },
             materials = {
@@ -1812,9 +2016,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_black_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10728 },
-                location = "Narkk, Stranglethorn Vale",
+                {
+                    type = "Item",
+                    item_id = 10728,
+                    location = "Narkk, Stranglethorn Vale",
+                },
             },
             product = { item_id = 4336, qty = 1 },
             materials = {
@@ -1832,8 +2038,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_leather_03",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 9998, qty = 1 },
             materials = {
@@ -1848,8 +2056,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_09",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 9999, qty = 1 },
             materials = {
@@ -1864,9 +2074,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_25",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7088 },
-                location = "Vizzklick, Gadgetzan, Tanaris",
+                {
+                    type = "Item",
+                    item_id = 7088,
+                    location = "Vizzklick, Gadgetzan, Tanaris",
+                },
             },
             product = { item_id = 7063, qty = 1 },
             materials = {
@@ -1886,8 +2098,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_05",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 7064, qty = 1 },
             materials = {
@@ -1916,8 +2130,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_13",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 10001, qty = 1 },
             materials = {
@@ -1932,8 +2148,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_11",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 10002, qty = 1 },
             materials = {
@@ -1951,8 +2169,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_05",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 10003, qty = 1 },
             materials = {
@@ -1967,8 +2187,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_38",
             source = {
-                type = "Trainer",
-                cost = 5500,
+                {
+                    type = "Trainer",
+                    cost = 5500,
+                },
             },
             product = { item_id = 10004, qty = 1 },
             materials = {
@@ -1984,8 +2206,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_orange_01",
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
             product = { item_id = 10056, qty = 1 },
             materials = {
@@ -2001,9 +2225,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_shirt_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10300 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 10300,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 10007, qty = 1 },
             materials = {
@@ -2019,9 +2245,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10302 },
-                location = "Drop",
+                {
+                    type = "Item",
+                    item_id = 10302,
+                    location = "Drop",
+                },
             },
             product = { item_id = 10009, qty = 1 },
             materials = {
@@ -2037,9 +2265,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10301 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 10301,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 10008, qty = 1 },
             materials = {
@@ -2057,9 +2287,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_orange_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10311 },
-                location = "Darnassus (A) or Thunder Bluff (H)",
+                {
+                    type = "Item",
+                    item_id = 10311,
+                    location = "Darnassus (A) or Thunder Bluff (H)",
+                },
             },
             product = { item_id = 10052, qty = 1 },
             materials = {
@@ -2077,8 +2309,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_10_black",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 10050, qty = 1 },
             materials = {
@@ -2093,8 +2327,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_25",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 10042, qty = 1 },
             materials = {
@@ -2110,8 +2346,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_09",
             source = {
-                type = "Trainer",
-                cost = 6000,
+                {
+                    type = "Trainer",
+                    cost = 6000,
+                },
             },
             product = { item_id = 10023, qty = 1 },
             materials = {
@@ -2127,8 +2365,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_18",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 10019, qty = 1 },
             materials = {
@@ -2145,8 +2385,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_42",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 10021, qty = 1 },
             materials = {
@@ -2163,9 +2405,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10312 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 10312,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 10018, qty = 1 },
             materials = {
@@ -2181,9 +2425,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_enchantedmageweave",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22307 },
-                location = "Enchanting Supplies Vendors",
+                {
+                    type = "Item",
+                    item_id = 22307,
+                    location = "Enchanting Supplies Vendors",
+                },
             },
             product = { item_id = 22246, qty = 1 },
             materials = {
@@ -2201,8 +2447,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Head" },
             icon = "inv_misc_bandana_01",
             source = {
-                type = "Trainer",
-                cost = 6000,
+                {
+                    type = "Trainer",
+                    cost = 6000,
+                },
             },
             product = { item_id = 10024, qty = 1 },
             materials = {
@@ -2217,8 +2465,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_05",
             source = {
-                type = "Trainer",
-                cost = 6000,
+                {
+                    type = "Trainer",
+                    cost = 6000,
+                },
             },
             product = { item_id = 10026, qty = 1 },
             materials = {
@@ -2234,8 +2484,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shoulder" },
             icon = "inv_shoulder_25",
             source = {
-                type = "Trainer",
-                cost = 6000,
+                {
+                    type = "Trainer",
+                    cost = 6000,
+                },
             },
             product = { item_id = 10027, qty = 1 },
             materials = {
@@ -2250,9 +2502,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_purple_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10314 },
-                location = "Ironforge (A) or Orgrimmar (H)",
+                {
+                    type = "Item",
+                    item_id = 10314,
+                    location = "Ironforge (A) or Orgrimmar (H)",
+                },
             },
             product = { item_id = 10054, qty = 1 },
             materials = {
@@ -2270,8 +2524,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shoulder" },
             icon = "inv_shoulder_25",
             source = {
-                type = "Trainer",
-                cost = 6500,
+                {
+                    type = "Trainer",
+                    cost = 6500,
+                },
             },
             product = { item_id = 10028, qty = 1 },
             materials = {
@@ -2287,8 +2543,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_10_red",
             source = {
-                type = "Trainer",
-                cost = 6500,
+                {
+                    type = "Trainer",
+                    cost = 6500,
+                },
             },
             product = { item_id = 10051, qty = 1 },
             materials = {
@@ -2304,8 +2562,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_21",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 10053, qty = 1 },
             materials = {
@@ -2322,9 +2582,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_red_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10317 },
-                location = "Ironforge (A) or Orgrimmar (H)",
+                {
+                    type = "Item",
+                    item_id = 10317,
+                    location = "Ironforge (A) or Orgrimmar (H)",
+                },
             },
             product = { item_id = 10055, qty = 1 },
             materials = {
@@ -2340,9 +2602,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shoulder" },
             icon = "inv_shoulder_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10315 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 10315,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 10029, qty = 1 },
             materials = {
@@ -2360,8 +2624,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_05",
             source = {
-                type = "Trainer",
-                cost = 7000,
+                {
+                    type = "Trainer",
+                    cost = 7000,
+                },
             },
             product = { item_id = 10031, qty = 1 },
             materials = {
@@ -2378,9 +2644,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shirt" },
             icon = "inv_shirt_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10321 },
-                location = "Ironforge (A) or Undercity (H)",
+                {
+                    type = "Item",
+                    item_id = 10321,
+                    location = "Ironforge (A) or Undercity (H)",
+                },
             },
             product = { item_id = 10034, qty = 1 },
             materials = {
@@ -2395,9 +2663,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Head" },
             icon = "inv_helmet_29",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10318 },
-                location = "Cowardly Crosby, Stranglethorn Vale",
+                {
+                    type = "Item",
+                    item_id = 10318,
+                    location = "Cowardly Crosby, Stranglethorn Vale",
+                },
             },
             product = { item_id = 10030, qty = 1 },
             materials = {
@@ -2413,9 +2683,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Head" },
             icon = "inv_misc_bandana_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10320 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 10320,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 10033, qty = 1 },
             materials = {
@@ -2433,8 +2705,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_05",
             source = {
-                type = "Trainer",
-                cost = 7500,
+                {
+                    type = "Trainer",
+                    cost = 7500,
+                },
             },
             product = { item_id = 10044, qty = 1 },
             materials = {
@@ -2451,9 +2725,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10323 },
-                location = "Ironforge (A) or Undercity (H)",
+                {
+                    type = "Item",
+                    item_id = 10323,
+                    location = "Ironforge (A) or Undercity (H)",
+                },
             },
             product = { item_id = 10035, qty = 1 },
             materials = {
@@ -2468,9 +2744,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 38328 },
-                location = "Hauty Modiste, Steamwheedle Port, Tanaris",
+                {
+                    type = "Item",
+                    item_id = 38328,
+                    location = "Hauty Modiste, Steamwheedle Port, Tanaris",
+                },
             },
             product = { item_id = 38278, qty = 1 },
             materials = {
@@ -2486,9 +2764,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Head" },
             icon = "inv_helmet_27",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10463 },
-                location = "The Undermarket quest, Searing Gorge",
+                {
+                    type = "Item",
+                    item_id = 10463,
+                    location = "The Undermarket quest, Searing Gorge",
+                },
             },
             product = { item_id = 10025, qty = 1 },
             materials = {
@@ -2506,8 +2786,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bolts & Cloth" },
             icon = "inv_fabric_purplefire_02",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 14048, qty = 1 },
             materials = {
@@ -2521,8 +2803,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Head" },
             icon = "inv_crown_01",
             source = {
-                type = "Trainer",
-                cost = 7500,
+                {
+                    type = "Trainer",
+                    cost = 7500,
+                },
             },
             product = { item_id = 10041, qty = 1 },
             materials = {
@@ -2541,9 +2825,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bolts & Cloth" },
             icon = "inv_fabric_moonrag_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14526 },
-                location = "Qia, Everlook, Winterspring",
+                {
+                    type = "Item",
+                    item_id = 14526,
+                    location = "Qia, Everlook, Winterspring",
+                },
             },
             product = { item_id = 14342, qty = 1 },
             materials = {
@@ -2557,9 +2843,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_shirt_black_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10326 },
-                location = "Ironforge (A) or Undercity (H)",
+                {
+                    type = "Item",
+                    item_id = 10326,
+                    location = "Ironforge (A) or Undercity (H)",
+                },
             },
             product = { item_id = 10036, qty = 1 },
             materials = {
@@ -2574,9 +2862,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_56",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21722 },
-                location = "Winter Veil Quest",
+                {
+                    type = "Item",
+                    item_id = 21722,
+                    location = "Winter Veil Quest",
+                },
             },
             product = { item_id = 21154, qty = 1 },
             materials = {
@@ -2593,9 +2883,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_55",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21723 },
-                location = "Winter Veil Quest",
+                {
+                    type = "Item",
+                    item_id = 21723,
+                    location = "Winter Veil Quest",
+                },
             },
             product = { item_id = 21542, qty = 1 },
             materials = {
@@ -2612,9 +2904,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_shirt_black_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 38327 },
-                location = "Hauty Modiste, Steamwheedle Port, Tanaris",
+                {
+                    type = "Item",
+                    item_id = 38327,
+                    location = "Hauty Modiste, Steamwheedle Port, Tanaris",
+                },
             },
             product = { item_id = 38277, qty = 1 },
             materials = {
@@ -2631,9 +2925,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 37915 },
-                location = "Hauty Modiste, Steamwheedle Port, Tanaris",
+                {
+                    type = "Item",
+                    item_id = 37915,
+                    location = "Hauty Modiste, Steamwheedle Port, Tanaris",
+                },
             },
             product = { item_id = 6836, qty = 1 },
             materials = {
@@ -2648,9 +2944,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10325 },
-                location = "Stormwind (A) or Thunder Bluff (H)",
+                {
+                    type = "Item",
+                    item_id = 10325,
+                    location = "Stormwind (A) or Thunder Bluff (H)",
+                },
             },
             product = { item_id = 10040, qty = 1 },
             materials = {
@@ -2666,9 +2964,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_christmas01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 34261 },
-                location = "Penney Copperpinch, Orgrimmar",
+                {
+                    type = "Item",
+                    item_id = 34261,
+                    location = "Penney Copperpinch, Orgrimmar",
+                },
             },
             product = { item_id = 34087, qty = 1 },
             materials = {
@@ -2685,9 +2985,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_christmas02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 34319 },
-                location = "Wulmort Jinglepocket, Ironforge",
+                {
+                    type = "Item",
+                    item_id = 34319,
+                    location = "Wulmort Jinglepocket, Ironforge",
+                },
             },
             product = { item_id = 34085, qty = 1 },
             materials = {
@@ -2706,8 +3008,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Waist" },
             icon = "inv_belt_15",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 13856, qty = 1 },
             materials = {
@@ -2722,9 +3026,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14466 },
-                cost = 10000,
+                {
+                    type = "Item",
+                    item_id = 14466,
+                    cost = 10000,
+                },
             },
             product = { item_id = 13869, qty = 1 },
             materials = {
@@ -2740,9 +3046,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14467 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 14467,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 13868, qty = 1 },
             materials = {
@@ -2760,9 +3068,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14469 },
-                cost = 10000,
+                {
+                    type = "Item",
+                    item_id = 14469,
+                    cost = 10000,
+                },
             },
             product = { item_id = 13858, qty = 1 },
             materials = {
@@ -2778,9 +3088,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14470 },
-                cost = 10000,
+                {
+                    type = "Item",
+                    item_id = 14470,
+                    cost = 10000,
+                },
             },
             product = { item_id = 13857, qty = 1 },
             materials = {
@@ -2796,9 +3108,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14468 },
-                location = "Qia, Everlook, Winterspring",
+                {
+                    type = "Item",
+                    item_id = 14468,
+                    location = "Qia, Everlook, Winterspring",
+                },
             },
             product = { item_id = 14046, qty = 1 },
             materials = {
@@ -2814,9 +3128,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_soulbag",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21358 },
-                location = "Vizzklick, Gadgetzan, Tanaris",
+                {
+                    type = "Item",
+                    item_id = 21358,
+                    location = "Vizzklick, Gadgetzan, Tanaris",
+                },
             },
             product = { item_id = 21340, qty = 1 },
             materials = {
@@ -2833,9 +3149,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14471 },
-                location = "Dropped by Twilight Fire Guards in Searing Gorge",
+                {
+                    type = "Item",
+                    item_id = 14471,
+                    location = "Dropped by Twilight Fire Guards in Searing Gorge",
+                },
             },
             product = { item_id = 14042, qty = 1 },
             materials = {
@@ -2853,9 +3171,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Waist" },
             icon = "inv_belt_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14473 },
-                cost = 10000,
+                {
+                    type = "Item",
+                    item_id = 14473,
+                    cost = 10000,
+                },
             },
             product = { item_id = 14143, qty = 1 },
             materials = {
@@ -2872,9 +3192,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14472 },
-                cost = 10000,
+                {
+                    type = "Item",
+                    item_id = 14472,
+                    cost = 10000,
+                },
             },
             product = { item_id = 13860, qty = 1 },
             materials = {
@@ -2890,10 +3212,12 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14474 },
-                cost = 10000,
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 14474,
+                    cost = 10000,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 13870, qty = 1 },
             materials = {
@@ -2911,9 +3235,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_21",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14479 },
-                cost = 10000,
+                {
+                    type = "Item",
+                    item_id = 14479,
+                    cost = 10000,
+                },
             },
             product = { item_id = 14101, qty = 1 },
             materials = {
@@ -2929,9 +3255,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_26",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14478 },
-                cost = 10000,
+                {
+                    type = "Item",
+                    item_id = 14478,
+                    cost = 10000,
+                },
             },
             product = { item_id = 14100, qty = 1 },
             materials = {
@@ -2947,9 +3275,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14477 },
-                cost = 10000,
+                {
+                    type = "Item",
+                    item_id = 14477,
+                    cost = 10000,
+                },
             },
             product = { item_id = 14142, qty = 1 },
             materials = {
@@ -2966,9 +3296,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14476 },
-                location = "Dropped by Twilight Fire Guards in Searing Gorge",
+                {
+                    type = "Item",
+                    item_id = 14476,
+                    location = "Dropped by Twilight Fire Guards in Searing Gorge",
+                },
             },
             product = { item_id = 14043, qty = 1 },
             materials = {
@@ -2986,8 +3318,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "trade_tailoring",
             source = {
-                type = "Trainer",
-                cost = 100000,
+                {
+                    type = "Trainer",
+                    cost = 100000,
+                },
             },
         },
         {
@@ -2996,9 +3330,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14484 },
-                cost = 12500,
+                {
+                    type = "Item",
+                    item_id = 14484,
+                    cost = 12500,
+                },
             },
             product = { item_id = 14103, qty = 1 },
             materials = {
@@ -3014,9 +3350,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_shirt_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14480 },
-                cost = 12500,
+                {
+                    type = "Item",
+                    item_id = 14480,
+                    cost = 12500,
+                },
             },
             product = { item_id = 14141, qty = 1 },
             materials = {
@@ -3033,9 +3371,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_25",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14481 },
-                cost = 12500,
+                {
+                    type = "Item",
+                    item_id = 14481,
+                    cost = 12500,
+                },
             },
             product = { item_id = 13863, qty = 1 },
             materials = {
@@ -3051,9 +3391,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14485 },
-                cost = 12500,
+                {
+                    type = "Item",
+                    item_id = 14485,
+                    cost = 12500,
+                },
             },
             product = { item_id = 14132, qty = 1 },
             materials = {
@@ -3069,9 +3411,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14482 },
-                location = "Thaurissan Firewalker in Burning Steppes",
+                {
+                    type = "Item",
+                    item_id = 14482,
+                    location = "Thaurissan Firewalker in Burning Steppes",
+                },
             },
             product = { item_id = 14044, qty = 1 },
             materials = {
@@ -3087,9 +3431,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14483 },
-                location = "Lorelae Wintersong, Moonglade",
+                {
+                    type = "Item",
+                    item_id = 14483,
+                    location = "Lorelae Wintersong, Moonglade",
+                },
             },
             product = { item_id = 14107, qty = 1 },
             materials = {
@@ -3105,9 +3451,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14486 },
-                location = "Overmaster Pyron near Blackrock Depths entrance",
+                {
+                    type = "Item",
+                    item_id = 14486,
+                    location = "Overmaster Pyron near Blackrock Depths entrance",
+                },
             },
             product = { item_id = 14134, qty = 1 },
             materials = {
@@ -3125,9 +3473,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_enchantedrunecloth",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22308 },
-                location = "Kania, Cenarion Hold, Silithus",
+                {
+                    type = "Item",
+                    item_id = 22308,
+                    location = "Kania, Cenarion Hold, Silithus",
+                },
             },
             product = { item_id = 22248, qty = 1 },
             materials = {
@@ -3143,9 +3493,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_cenarionherbbag",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22310 },
-                location = "Mishta, Cenarion Hold, Silithus",
+                {
+                    type = "Item",
+                    item_id = 22310,
+                    location = "Mishta, Cenarion Hold, Silithus",
+                },
             },
             product = { item_id = 22251, qty = 1 },
             materials = {
@@ -3164,9 +3516,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14489 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 14489,
+                    cost = 15000,
+                },
             },
             product = { item_id = 13871, qty = 1 },
             materials = {
@@ -3182,9 +3536,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14488 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 14488,
+                    cost = 15000,
+                },
             },
             product = { item_id = 13864, qty = 1 },
             materials = {
@@ -3202,9 +3558,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14490 },
-                location = "Thaurissan Firewalker in Burning Steppes",
+                {
+                    type = "Item",
+                    item_id = 14490,
+                    location = "Thaurissan Firewalker in Burning Steppes",
+                },
             },
             product = { item_id = 14045, qty = 1 },
             materials = {
@@ -3222,8 +3580,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_49",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14493 },
+                {
+                    type = "Item",
+                    item_id = 14493,
+                },
             },
             product = { item_id = 14136, qty = 1 },
             materials = {
@@ -3241,9 +3601,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14492 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 14492,
+                    cost = 15000,
+                },
             },
             product = { item_id = 14108, qty = 1 },
             materials = {
@@ -3260,9 +3622,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14491 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 14491,
+                    cost = 15000,
+                },
             },
             product = { item_id = 13865, qty = 1 },
             materials = {
@@ -3278,8 +3642,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_felclothbag",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21369 },
+                {
+                    type = "Item",
+                    item_id = 21369,
+                },
             },
             product = { item_id = 21341, qty = 1 },
             materials = {
@@ -3296,9 +3662,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Other" },
             icon = "inv_chest_chain_14",
             source = {
-                type = "Trainer",
-                recipe_item_ids = { 18517 },
-                location = "Quest",
+                {
+                    type = "Trainer",
+                    item_id = 18517,
+                    location = "Quest",
+                },
             },
             product = { item_id = 18258, qty = 1 },
             materials = {
@@ -3317,8 +3685,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14494 },
+                {
+                    type = "Item",
+                    item_id = 14494,
+                },
             },
             product = { item_id = 14104, qty = 1 },
             materials = {
@@ -3335,8 +3705,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14497 },
+                {
+                    type = "Item",
+                    item_id = 14497,
+                },
             },
             product = { item_id = 14137, qty = 1 },
             materials = {
@@ -3352,9 +3724,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14495 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 14495,
+                    cost = 15000,
+                },
             },
             product = { item_id = 14144, qty = 1 },
             materials = {
@@ -3370,9 +3744,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Head" },
             icon = "inv_helmet_34",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14496 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 14496,
+                    cost = 15000,
+                },
             },
             product = { item_id = 14111, qty = 1 },
             materials = {
@@ -3388,9 +3764,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Waist" },
             icon = "inv_belt_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19215 },
-                location = "Meilosh, Felwood",
+                {
+                    type = "Item",
+                    item_id = 19215,
+                    location = "Meilosh, Felwood",
+                },
             },
             product = { item_id = 19047, qty = 1 },
             materials = {
@@ -3407,9 +3785,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_cloth_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19216 },
-                location = "Argent Dawn - Revered",
+                {
+                    type = "Item",
+                    item_id = 19216,
+                    location = "Argent Dawn - Revered",
+                },
             },
             product = { item_id = 19056, qty = 1 },
             materials = {
@@ -3427,9 +3807,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_05",
             source = {
-                type = "Trainer",
-                recipe_item_ids = { 15779 },
-                location = "World Drop",
+                {
+                    type = "Trainer",
+                    item_id = 15779,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 15802, qty = 1 },
             materials = {
@@ -3448,9 +3830,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Head" },
             icon = "inv_misc_bandana_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14498 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 14498,
+                    cost = 15000,
+                },
             },
             product = { item_id = 13866, qty = 1 },
             materials = {
@@ -3468,9 +3852,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_bracer_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18265 },
-                location = "Molten Core Trash",
+                {
+                    type = "Item",
+                    item_id = 18265,
+                    location = "Molten Core Trash",
+                },
             },
             product = { item_id = 18263, qty = 1 },
             materials = {
@@ -3488,8 +3874,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14499 },
+                {
+                    type = "Item",
+                    item_id = 14499,
+                },
             },
             product = { item_id = 14155, qty = 1 },
             materials = {
@@ -3505,9 +3893,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_46",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14500 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 14500,
+                    cost = 15000,
+                },
             },
             product = { item_id = 14128, qty = 1 },
             materials = {
@@ -3523,8 +3913,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14501 },
+                {
+                    type = "Item",
+                    item_id = 14501,
+                },
             },
             product = { item_id = 14138, qty = 1 },
             materials = {
@@ -3540,8 +3932,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shoulder" },
             icon = "inv_shoulder_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14507 },
+                {
+                    type = "Item",
+                    item_id = 14507,
+                },
             },
             product = { item_id = 14139, qty = 1 },
             materials = {
@@ -3557,9 +3951,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shoulder" },
             icon = "inv_shoulder_21",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14504 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 14504,
+                    cost = 15000,
+                },
             },
             product = { item_id = 13867, qty = 1 },
             materials = {
@@ -3576,9 +3972,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Head" },
             icon = "inv_helmet_63",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14505 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 14505,
+                    cost = 15000,
+                },
             },
             product = { item_id = 14130, qty = 1 },
             materials = {
@@ -3595,9 +3993,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14506 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 14506,
+                    cost = 15000,
+                },
             },
             product = { item_id = 14106, qty = 1 },
             materials = {
@@ -3614,8 +4014,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Head" },
             icon = "inv_misc_bandana_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14509 },
+                {
+                    type = "Item",
+                    item_id = 14509,
+                },
             },
             product = { item_id = 14140, qty = 1 },
             materials = {
@@ -3633,9 +4035,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shoulder" },
             icon = "inv_shoulder_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14508 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 14508,
+                    cost = 15000,
+                },
             },
             product = { item_id = 14112, qty = 1 },
             materials = {
@@ -3653,9 +4057,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14511 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 14511,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 14146, qty = 1 },
             materials = {
@@ -3675,9 +4081,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14510 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 14510,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 14156, qty = 1 },
             materials = {
@@ -3695,9 +4103,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_31",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14512 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 14512,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 14154, qty = 1 },
             materials = {
@@ -3716,9 +4126,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_38",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14513 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 14513,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 14152, qty = 1 },
             materials = {
@@ -3737,9 +4149,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_51",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14514 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 14514,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 14153, qty = 1 },
             materials = {
@@ -3758,9 +4172,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shoulder" },
             icon = "inv_shoulder_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17017 },
-                location = "Molten Core Trash",
+                {
+                    type = "Item",
+                    item_id = 17017,
+                    location = "Molten Core Trash",
+                },
             },
             product = { item_id = 16980, qty = 1 },
             materials = {
@@ -3778,9 +4194,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_26",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17018 },
-                location = "Molten Core Trash",
+                {
+                    type = "Item",
+                    item_id = 17018,
+                    location = "Molten Core Trash",
+                },
             },
             product = { item_id = 16979, qty = 1 },
             materials = {
@@ -3798,9 +4216,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Waist" },
             icon = "inv_belt_31",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18414 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 18414,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 18405, qty = 1 },
             materials = {
@@ -3820,9 +4240,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18415 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 18415,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 18407, qty = 1 },
             materials = {
@@ -3840,9 +4262,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18416 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 18416,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 18408, qty = 1 },
             materials = {
@@ -3859,9 +4283,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18417 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 18417,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 18409, qty = 1 },
             materials = {
@@ -3878,9 +4304,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18418 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 18418,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 18413, qty = 1 },
             materials = {
@@ -3897,9 +4325,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18487 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 18487,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 18486, qty = 1 },
             materials = {
@@ -3916,9 +4346,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shoulder" },
             icon = "inv_shoulder_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19218 },
-                location = "Meilosh, Felwood",
+                {
+                    type = "Item",
+                    item_id = 19218,
+                    location = "Meilosh, Felwood",
+                },
             },
             product = { item_id = 19050, qty = 1 },
             materials = {
@@ -3935,9 +4367,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shoulder" },
             icon = "inv_shoulder_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19217 },
-                location = "Argent Dawn - Exalted",
+                {
+                    type = "Item",
+                    item_id = 19217,
+                    location = "Argent Dawn - Exalted",
+                },
             },
             product = { item_id = 19059, qty = 1 },
             materials = {
@@ -3953,9 +4387,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19219 },
-                location = "Molten Core Trash",
+                {
+                    type = "Item",
+                    item_id = 19219,
+                    location = "Molten Core Trash",
+                },
             },
             product = { item_id = 19156, qty = 1 },
             materials = {
@@ -3973,9 +4409,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19220 },
-                location = "Molten Core Trash",
+                {
+                    type = "Item",
+                    item_id = 19220,
+                    location = "Molten Core Trash",
+                },
             },
             product = { item_id = 19165, qty = 1 },
             materials = {
@@ -3993,9 +4431,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19764 },
-                location = "Zandalar Tribe - Friendly",
+                {
+                    type = "Item",
+                    item_id = 19764,
+                    location = "Zandalar Tribe - Friendly",
+                },
             },
             product = { item_id = 19682, qty = 1 },
             materials = {
@@ -4013,9 +4453,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_cloth_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19765 },
-                location = "Zandalar Tribe - Friendly",
+                {
+                    type = "Item",
+                    item_id = 19765,
+                    location = "Zandalar Tribe - Friendly",
+                },
             },
             product = { item_id = 19683, qty = 1 },
             materials = {
@@ -4033,9 +4475,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_cloth_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19766 },
-                location = "Zandalar Tribe - Friendly",
+                {
+                    type = "Item",
+                    item_id = 19766,
+                    location = "Zandalar Tribe - Friendly",
+                },
             },
             product = { item_id = 19684, qty = 1 },
             materials = {
@@ -4053,9 +4497,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_cloth_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20546 },
-                location = "Quest Reward - True Believers",
+                {
+                    type = "Item",
+                    item_id = 20546,
+                    location = "Quest Reward - True Believers",
+                },
             },
             product = { item_id = 20538, qty = 1 },
             materials = {
@@ -4072,9 +4518,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Waist" },
             icon = "inv_belt_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20548 },
-                location = "Quest Reward - True Believers",
+                {
+                    type = "Item",
+                    item_id = 20548,
+                    location = "Quest Reward - True Believers",
+                },
             },
             product = { item_id = 20539, qty = 1 },
             materials = {
@@ -4092,9 +4540,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20547 },
-                location = "Quest Reward - True Believers",
+                {
+                    type = "Item",
+                    item_id = 20547,
+                    location = "Quest Reward - True Believers",
+                },
             },
             product = { item_id = 20537, qty = 1 },
             materials = {
@@ -4112,9 +4562,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_corefelclothbag",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21371 },
-                location = "Molten Core Trash",
+                {
+                    type = "Item",
+                    item_id = 21371,
+                    location = "Molten Core Trash",
+                },
             },
             product = { item_id = 21342, qty = 1 },
             materials = {
@@ -4132,9 +4584,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_bigbagofenchantments",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22309 },
-                location = "Boss Drop, Magister Kalendris, Dire Maul (West)",
+                {
+                    type = "Item",
+                    item_id = 22309,
+                    location = "Boss Drop, Magister Kalendris, Dire Maul (West)",
+                },
             },
             product = { item_id = 22249, qty = 1 },
             materials = {
@@ -4151,9 +4605,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_satchelofcenarius",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22312 },
-                location = "Mishta, Cenarion Hold, Silithus",
+                {
+                    type = "Item",
+                    item_id = 22312,
+                    location = "Mishta, Cenarion Hold, Silithus",
+                },
             },
             product = { item_id = 22252, qty = 1 },
             materials = {
@@ -4170,10 +4626,12 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_06",
             source = {
-                type = "Item",
-                quest_ids = { 9239 },
-                recipe_item_ids = { 22684 },
-                location = "Craftsman Wilhelm, Light's Hope Chapel, Eastern Plaguelands",
+                {
+                    type = "Item",
+                    quest_id = 9239,
+                    item_id = 22684,
+                    location = "Craftsman Wilhelm, Light's Hope Chapel, Eastern Plaguelands",
+                },
             },
             product = { item_id = 22654, qty = 1 },
             materials = {
@@ -4190,10 +4648,12 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_08",
             source = {
-                type = "Item",
-                quest_ids = { 9240 },
-                recipe_item_ids = { 22686 },
-                location = "Craftsman Wilhelm, Light's Hope Chapel, Eastern Plaguelands",
+                {
+                    type = "Item",
+                    quest_id = 9240,
+                    item_id = 22686,
+                    location = "Craftsman Wilhelm, Light's Hope Chapel, Eastern Plaguelands",
+                },
             },
             product = { item_id = 22652, qty = 1 },
             materials = {
@@ -4210,10 +4670,12 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_16",
             source = {
-                type = "Item",
-                quest_ids = { 9237 },
-                recipe_item_ids = { 22685 },
-                location = "Craftsman Wilhelm, Light's Hope Chapel, Eastern Plaguelands",
+                {
+                    type = "Item",
+                    quest_id = 9237,
+                    item_id = 22685,
+                    location = "Craftsman Wilhelm, Light's Hope Chapel, Eastern Plaguelands",
+                },
             },
             product = { item_id = 22658, qty = 1 },
             materials = {
@@ -4230,10 +4692,12 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Wrist" },
             icon = "inv_bracer_07",
             source = {
-                type = "Item",
-                quest_ids = { 9238 },
-                recipe_item_ids = { 22687 },
-                location = "Craftsman Wilhelm, Light's Hope Chapel, Eastern Plaguelands",
+                {
+                    type = "Item",
+                    quest_id = 9238,
+                    item_id = 22687,
+                    location = "Craftsman Wilhelm, Light's Hope Chapel, Eastern Plaguelands",
+                },
             },
             product = { item_id = 22655, qty = 1 },
             materials = {
@@ -4250,9 +4714,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "" },
             icon = "inv_misc_cape_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22683 },
-                location = "Mishta, Cenarion Hold, Silithus",
+                {
+                    type = "Item",
+                    item_id = 22683,
+                    location = "Mishta, Cenarion Hold, Silithus",
+                },
             },
             product = { item_id = 22660, qty = 1 },
             materials = {
@@ -4269,9 +4735,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_plate07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22774 },
-                location = "Mishta, Cenarion Hold, Silithus",
+                {
+                    type = "Item",
+                    item_id = 22774,
+                    location = "Mishta, Cenarion Hold, Silithus",
+                },
             },
             product = { item_id = 22756, qty = 1 },
             materials = {
@@ -4288,9 +4756,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Head" },
             icon = "inv_crown_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22773 },
-                location = "Mishta, Cenarion Hold, Silithus",
+                {
+                    type = "Item",
+                    item_id = 22773,
+                    location = "Mishta, Cenarion Hold, Silithus",
+                },
             },
             product = { item_id = 22757, qty = 1 },
             materials = {
@@ -4307,9 +4777,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shoulder" },
             icon = "inv_shoulder_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22772 },
-                location = "Mishta, Cenarion Hold, Silithus",
+                {
+                    type = "Item",
+                    item_id = 22772,
+                    location = "Mishta, Cenarion Hold, Silithus",
+                },
             },
             product = { item_id = 22758, qty = 1 },
             materials = {
@@ -4326,8 +4798,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bolts & Cloth" },
             icon = "inv_fabric_netherweave_bolt",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 21840, qty = 1 },
             materials = {
@@ -4341,8 +4815,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Other" },
             icon = "inv_misc_net_01",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 24268, qty = 2 },
             materials = {
@@ -4358,8 +4834,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Wrist" },
             icon = "inv_bracer_07",
             source = {
-                type = "Trainer",
-                cost = 15000,
+                {
+                    type = "Trainer",
+                    cost = 15000,
+                },
             },
             product = { item_id = 21849, qty = 1 },
             materials = {
@@ -4374,8 +4852,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Waist" },
             icon = "inv_belt_04",
             source = {
-                type = "Trainer",
-                cost = 15000,
+                {
+                    type = "Trainer",
+                    cost = 15000,
+                },
             },
             product = { item_id = 21850, qty = 1 },
             materials = {
@@ -4392,8 +4872,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_23_netherweave",
             source = {
-                type = "Trainer",
-                cost = 15000,
+                {
+                    type = "Trainer",
+                    cost = 15000,
+                },
             },
             product = { item_id = 21841, qty = 1 },
             materials = {
@@ -4410,8 +4892,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_27",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 21851, qty = 1 },
             materials = {
@@ -4429,8 +4913,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_09",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 21852, qty = 1 },
             materials = {
@@ -4445,9 +4931,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bolts & Cloth" },
             icon = "inv_fabric_netherweave_bolt_imbued",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21892 },
-                location = "Shattrath City, Silvermoon City, or The Exodar",
+                {
+                    type = "Item",
+                    item_id = 21892,
+                    location = "Shattrath City, Silvermoon City, or The Exodar",
+                },
             },
             product = { item_id = 21842, qty = 1 },
             materials = {
@@ -4464,8 +4952,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_05",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 21853, qty = 1 },
             materials = {
@@ -4481,9 +4971,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Enhancement" },
             icon = "spell_nature_astralrecal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24292 },
-                location = "Quartermaster Enuril, Shattrath City",
+                {
+                    type = "Item",
+                    item_id = 24292,
+                    location = "Quartermaster Enuril, Shattrath City",
+                },
             },
             product = { item_id = 24273, qty = 1 },
             materials = {
@@ -4498,9 +4990,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Enhancement" },
             icon = "spell_nature_lightning",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24293 },
-                location = "Quartermaster Endarin, Shattrath City",
+                {
+                    type = "Item",
+                    item_id = 24293,
+                    location = "Quartermaster Endarin, Shattrath City",
+                },
             },
             product = { item_id = 24275, qty = 1 },
             materials = {
@@ -4517,9 +5011,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_29",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21896 },
-                location = "Eiin, Shattrath City",
+                {
+                    type = "Item",
+                    item_id = 21896,
+                    location = "Eiin, Shattrath City",
+                },
             },
             product = { item_id = 21854, qty = 1 },
             materials = {
@@ -4534,9 +5030,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_leather_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21898 },
-                location = "Vendors, Zangarmarsh",
+                {
+                    type = "Item",
+                    item_id = 21898,
+                    location = "Vendors, Zangarmarsh",
+                },
             },
             product = { item_id = 21859, qty = 1 },
             materials = {
@@ -4552,9 +5050,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_15",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24314 },
-                location = "The Consortium - Honored",
+                {
+                    type = "Item",
+                    item_id = 24314,
+                    location = "The Consortium - Honored",
+                },
             },
             product = { item_id = 24270, qty = 1 },
             materials = {
@@ -4569,9 +5069,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_24_netherweave_imbued",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21893 },
-                location = "Eiin, Shattrath City",
+                {
+                    type = "Item",
+                    item_id = 21893,
+                    location = "Eiin, Shattrath City",
+                },
             },
             product = { item_id = 21843, qty = 1 },
             materials = {
@@ -4589,8 +5091,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_shirt_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21897 },
+                {
+                    type = "Item",
+                    item_id = 21897,
+                },
             },
             product = { item_id = 21855, qty = 1 },
             materials = {
@@ -4605,9 +5109,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bolts & Cloth" },
             icon = "inv_fabric_soulcloth_bolt",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21894 },
-                location = "Limited Supply Vendors",
+                {
+                    type = "Item",
+                    item_id = 21894,
+                    location = "Limited Supply Vendors",
+                },
             },
             product = { item_id = 21844, qty = 1 },
             materials = {
@@ -4624,8 +5130,10 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21899 },
+                {
+                    type = "Item",
+                    item_id = 21899,
+                },
             },
             product = { item_id = 21860, qty = 1 },
             materials = {
@@ -4642,9 +5150,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Wrist" },
             icon = "inv_bracer_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21905 },
-                location = "Arcatraz",
+                {
+                    type = "Item",
+                    item_id = 21905,
+                    location = "Arcatraz",
+                },
             },
             product = { item_id = 21866, qty = 1 },
             materials = {
@@ -4660,9 +5170,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Wrist" },
             icon = "inv_bracer_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24296 },
-                location = "Tempest Keep",
+                {
+                    type = "Item",
+                    item_id = 24296,
+                    location = "Tempest Keep",
+                },
             },
             product = { item_id = 24249, qty = 1 },
             materials = {
@@ -4677,9 +5189,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Wrist" },
             icon = "inv_bracer_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24297 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 24297,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 24250, qty = 1 },
             materials = {
@@ -4695,9 +5209,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Wrist" },
             icon = "inv_bracer_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24298 },
-                location = "Vendor/Quest",
+                {
+                    type = "Item",
+                    item_id = 24298,
+                    location = "Vendor/Quest",
+                },
             },
             product = { item_id = 24251, qty = 1 },
             materials = {
@@ -4712,9 +5228,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_20",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24299 },
-                location = "Vendor/Quest",
+                {
+                    type = "Item",
+                    item_id = 24299,
+                    location = "Vendor/Quest",
+                },
             },
             product = { item_id = 24252, qty = 1 },
             materials = {
@@ -4730,9 +5248,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24300 },
-                location = "Vendor/Quest",
+                {
+                    type = "Item",
+                    item_id = 24300,
+                    location = "Vendor/Quest",
+                },
             },
             product = { item_id = 24253, qty = 1 },
             materials = {
@@ -4747,9 +5267,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24301 },
-                location = "Vendor/Quest",
+                {
+                    type = "Item",
+                    item_id = 24301,
+                    location = "Vendor/Quest",
+                },
             },
             product = { item_id = 24254, qty = 1 },
             materials = {
@@ -4764,9 +5286,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 30833 },
-                location = "Nakodu - The Sha'tar",
+                {
+                    type = "Item",
+                    item_id = 30833,
+                    location = "Nakodu - The Sha'tar",
+                },
             },
             product = { item_id = 30831, qty = 1 },
             materials = {
@@ -4783,9 +5307,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Wrist" },
             icon = "inv_bracer_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 30842 },
-                location = "Quartermaster Endarin, Shattrath City",
+                {
+                    type = "Item",
+                    item_id = 30842,
+                    location = "Quartermaster Endarin, Shattrath City",
+                },
             },
             product = { item_id = 30837, qty = 1 },
             materials = {
@@ -4801,9 +5327,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bolts & Cloth" },
             icon = "inv_fabric_moonrag_primal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21895 },
-                location = "Nasmara Moonsong, Shattrath City",
+                {
+                    type = "Item",
+                    item_id = 21895,
+                    location = "Nasmara Moonsong, Shattrath City",
+                },
             },
             product = { item_id = 21845, qty = 1 },
             materials = {
@@ -4819,9 +5347,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bolts & Cloth" },
             icon = "inv_fabric_spellfire",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24316 },
-                location = "Gidge Spellweaver",
+                {
+                    type = "Item",
+                    item_id = 24316,
+                    location = "Gidge Spellweaver",
+                },
             },
             product = { item_id = 24271, qty = 1 },
             materials = {
@@ -4837,9 +5367,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bolts & Cloth" },
             icon = "inv_fabric_felcloth_ebon",
             source = {
-                type = "Item",
-                recipe_item_ids = { 30483 },
-                location = "Gidge Spellweaver",
+                {
+                    type = "Item",
+                    item_id = 30483,
+                    location = "Gidge Spellweaver",
+                },
             },
             product = { item_id = 24272, qty = 1 },
             materials = {
@@ -4857,9 +5389,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Waist" },
             icon = "inv_belt_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21908 },
-                location = "Gidge Spellweaver",
+                {
+                    type = "Item",
+                    item_id = 21908,
+                    location = "Gidge Spellweaver",
+                },
             },
             product = { item_id = 21846, qty = 1 },
             materials = {
@@ -4875,9 +5409,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shoulder" },
             icon = "inv_shoulder_25",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21912 },
-                location = "Andrion Darkspinner",
+                {
+                    type = "Item",
+                    item_id = 21912,
+                    location = "Andrion Darkspinner",
+                },
             },
             product = { item_id = 21869, qty = 1 },
             materials = {
@@ -4893,9 +5429,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Waist" },
             icon = "inv_belt_31",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21916 },
-                location = "Nasmara Moonsong",
+                {
+                    type = "Item",
+                    item_id = 21916,
+                    location = "Nasmara Moonsong",
+                },
             },
             product = { item_id = 21873, qty = 1 },
             materials = {
@@ -4911,9 +5449,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21902 },
-                location = "Vendor",
+                {
+                    type = "Item",
+                    item_id = 21902,
+                    location = "Vendor",
+                },
             },
             product = { item_id = 21863, qty = 1 },
             materials = {
@@ -4931,9 +5471,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21900 },
-                location = "Arrond",
+                {
+                    type = "Item",
+                    item_id = 21900,
+                    location = "Arrond",
+                },
             },
             product = { item_id = 21861, qty = 1 },
             materials = {
@@ -4949,9 +5491,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_45",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21901 },
-                location = "Arrond - Shattrath City",
+                {
+                    type = "Item",
+                    item_id = 21901,
+                    location = "Arrond - Shattrath City",
+                },
             },
             product = { item_id = 21862, qty = 1 },
             materials = {
@@ -4967,9 +5511,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21906 },
-                location = "Sunseeker Astromage",
+                {
+                    type = "Item",
+                    item_id = 21906,
+                    location = "Sunseeker Astromage",
+                },
             },
             product = { item_id = 21867, qty = 1 },
             materials = {
@@ -4985,9 +5531,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 30843 },
-                location = "Quartermaster Endarin, Shattrath City",
+                {
+                    type = "Item",
+                    item_id = 30843,
+                    location = "Quartermaster Endarin, Shattrath City",
+                },
             },
             product = { item_id = 30838, qty = 1 },
             materials = {
@@ -5006,9 +5554,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_49",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35204 },
-                location = "Shadowmoon Valley",
+                {
+                    type = "Item",
+                    item_id = 35204,
+                    location = "Shadowmoon Valley",
+                },
             },
             product = { item_id = 34366, qty = 1 },
             materials = {
@@ -5025,9 +5575,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_63",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35205 },
-                location = "Vendor",
+                {
+                    type = "Item",
+                    item_id = 35205,
+                    location = "Vendor",
+                },
             },
             product = { item_id = 34367, qty = 1 },
             materials = {
@@ -5045,9 +5597,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35206 },
-                location = "Sunwell Plateau",
+                {
+                    type = "Item",
+                    item_id = 35206,
+                    location = "Sunwell Plateau",
+                },
             },
             product = { item_id = 34364, qty = 1 },
             materials = {
@@ -5064,9 +5618,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_51",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35207 },
-                location = "Vendor",
+                {
+                    type = "Item",
+                    item_id = 35207,
+                    location = "Vendor",
+                },
             },
             product = { item_id = 34365, qty = 1 },
             materials = {
@@ -5081,9 +5637,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_gauntlets_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21909 },
-                location = "Gidge Spellweaver",
+                {
+                    type = "Item",
+                    item_id = 21909,
+                    location = "Gidge Spellweaver",
+                },
             },
             product = { item_id = 21847, qty = 1 },
             materials = {
@@ -5099,9 +5657,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_cloth_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21914 },
-                location = "Andrion Darkspinne, Shadowmoon Valley",
+                {
+                    type = "Item",
+                    item_id = 21914,
+                    location = "Andrion Darkspinne, Shadowmoon Valley",
+                },
             },
             product = { item_id = 21870, qty = 1 },
             materials = {
@@ -5117,9 +5677,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shoulder" },
             icon = "inv_shoulder_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21918 },
-                location = "Nasmara Moonsong",
+                {
+                    type = "Item",
+                    item_id = 21918,
+                    location = "Nasmara Moonsong",
+                },
             },
             product = { item_id = 21874, qty = 1 },
             materials = {
@@ -5135,9 +5697,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shoulder" },
             icon = "inv_shoulder_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21903 },
-                location = "Phantom Attendant",
+                {
+                    type = "Item",
+                    item_id = 21903,
+                    location = "Phantom Attendant",
+                },
             },
             product = { item_id = 21864, qty = 1 },
             materials = {
@@ -5152,9 +5716,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Waist" },
             icon = "inv_belt_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24302 },
-                location = "World Drop or Kael'thas Sunstrider, Magisters' Terrace",
+                {
+                    type = "Item",
+                    item_id = 24302,
+                    location = "World Drop or Kael'thas Sunstrider, Magisters' Terrace",
+                },
             },
             product = { item_id = 24255, qty = 1 },
             materials = {
@@ -5170,9 +5736,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Waist" },
             icon = "inv_belt_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24303 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 24303,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 24256, qty = 1 },
             materials = {
@@ -5188,9 +5756,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Waist" },
             icon = "inv_belt_26",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24304 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 24304,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 24257, qty = 1 },
             materials = {
@@ -5206,9 +5776,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24305 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 24305,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 24258, qty = 1 },
             materials = {
@@ -5224,9 +5796,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24306 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 24306,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 24259, qty = 1 },
             materials = {
@@ -5242,9 +5816,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24307 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 24307,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 24260, qty = 1 },
             materials = {
@@ -5262,9 +5838,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21907 },
-                location = "Pathaleon the Calculator, The Mechanar",
+                {
+                    type = "Item",
+                    item_id = 21907,
+                    location = "Pathaleon the Calculator, The Mechanar",
+                },
             },
             product = { item_id = 21868, qty = 1 },
             materials = {
@@ -5280,9 +5858,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 30844 },
-                location = "Quartermaster Endarin, Shattrath City",
+                {
+                    type = "Item",
+                    item_id = 30844,
+                    location = "Quartermaster Endarin, Shattrath City",
+                },
             },
             product = { item_id = 30839, qty = 1 },
             materials = {
@@ -5300,9 +5880,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21910 },
-                location = "Gidge Spellweaver, Shattrath City",
+                {
+                    type = "Item",
+                    item_id = 21910,
+                    location = "Gidge Spellweaver, Shattrath City",
+                },
             },
             product = { item_id = 21848, qty = 1 },
             materials = {
@@ -5318,9 +5900,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_25_mooncloth",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21919 },
-                location = "Drop, Vendor",
+                {
+                    type = "Item",
+                    item_id = 21919,
+                    location = "Drop, Vendor",
+                },
             },
             product = { item_id = 21876, qty = 1 },
             materials = {
@@ -5335,9 +5919,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_26_spellfire",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21911 },
-                location = "Drop, Vendor",
+                {
+                    type = "Item",
+                    item_id = 21911,
+                    location = "Drop, Vendor",
+                },
             },
             product = { item_id = 21858, qty = 1 },
             materials = {
@@ -5353,9 +5939,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21913 },
-                location = "Andrion Darkspinner, Shattrath City",
+                {
+                    type = "Item",
+                    item_id = 21913,
+                    location = "Andrion Darkspinner, Shattrath City",
+                },
             },
             product = { item_id = 21871, qty = 1 },
             materials = {
@@ -5371,9 +5959,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_felclothbag",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21915 },
-                location = "Andrion Darkspinner, Shattrath City",
+                {
+                    type = "Item",
+                    item_id = 21915,
+                    location = "Andrion Darkspinner, Shattrath City",
+                },
             },
             product = { item_id = 21872, qty = 1 },
             materials = {
@@ -5388,9 +5978,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21917 },
-                location = "Nasmara Moonsong, Shattrath City",
+                {
+                    type = "Item",
+                    item_id = 21917,
+                    location = "Nasmara Moonsong, Shattrath City",
+                },
             },
             product = { item_id = 21875, qty = 1 },
             materials = {
@@ -5406,9 +5998,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_chest_cloth_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21904 },
-                location = "Phantom Valet, Karazhan",
+                {
+                    type = "Item",
+                    item_id = 21904,
+                    location = "Phantom Valet, Karazhan",
+                },
             },
             product = { item_id = 21865, qty = 1 },
             materials = {
@@ -5423,9 +6017,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Enhancement" },
             icon = "spell_nature_astralrecalgroup",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24294 },
-                location = "Quartermaster Enuril, Shattrath City",
+                {
+                    type = "Item",
+                    item_id = 24294,
+                    location = "Quartermaster Enuril, Shattrath City",
+                },
             },
             product = { item_id = 24274, qty = 1 },
             materials = {
@@ -5441,9 +6037,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Enhancement" },
             icon = "spell_holy_restoration",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24295 },
-                location = "Quartermaster Endarin, Shattrath City",
+                {
+                    type = "Item",
+                    item_id = 24295,
+                    location = "Quartermaster Endarin, Shattrath City",
+                },
             },
             product = { item_id = 24276, qty = 1 },
             materials = {
@@ -5459,9 +6057,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_cloth_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24308 },
-                location = "Dalliah the Doomsayer, The Arcatraz",
+                {
+                    type = "Item",
+                    item_id = 24308,
+                    location = "Dalliah the Doomsayer, The Arcatraz",
+                },
             },
             product = { item_id = 24261, qty = 1 },
             materials = {
@@ -5477,9 +6077,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_cloth_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24309 },
-                location = "Murmur, Shadow Labyrinth",
+                {
+                    type = "Item",
+                    item_id = 24309,
+                    location = "Murmur, Shadow Labyrinth",
+                },
             },
             product = { item_id = 24262, qty = 1 },
             materials = {
@@ -5495,9 +6097,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_cloth_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24310 },
-                location = "Thorngrin the Tender, The Botanica",
+                {
+                    type = "Item",
+                    item_id = 24310,
+                    location = "Thorngrin the Tender, The Botanica",
+                },
             },
             product = { item_id = 24263, qty = 1 },
             materials = {
@@ -5513,9 +6117,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Head" },
             icon = "inv_helmet_53",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24311 },
-                location = "Warp Splinter, The Botanica",
+                {
+                    type = "Item",
+                    item_id = 24311,
+                    location = "Warp Splinter, The Botanica",
+                },
             },
             product = { item_id = 24264, qty = 1 },
             materials = {
@@ -5531,9 +6137,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Head" },
             icon = "inv_helmet_27",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24312 },
-                location = "Grand Warlock Nethekurse, The Shattered Halls",
+                {
+                    type = "Item",
+                    item_id = 24312,
+                    location = "Grand Warlock Nethekurse, The Shattered Halls",
+                },
             },
             product = { item_id = 24266, qty = 1 },
             materials = {
@@ -5549,9 +6157,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Head" },
             icon = "inv_helmet_70",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24313 },
-                location = "Warlord Kalithresh, The Steamvault",
+                {
+                    type = "Item",
+                    item_id = 24313,
+                    location = "Warlord Kalithresh, The Steamvault",
+                },
             },
             product = { item_id = 24267, qty = 1 },
             materials = {
@@ -5568,9 +6178,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Bag" },
             icon = "inv_misc_bag_27",
             source = {
-                type = "Item",
-                recipe_item_ids = { 38229 },
-                location = "Mycah, Zangarmarsh",
+                {
+                    type = "Item",
+                    item_id = 38229,
+                    location = "Mycah, Zangarmarsh",
+                },
             },
             product = { item_id = 38225, qty = 1 },
             materials = {
@@ -5586,9 +6198,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Waist" },
             icon = "inv_belt_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 30280 },
-                location = "Drop",
+                {
+                    type = "Item",
+                    item_id = 30280,
+                    location = "Drop",
+                },
             },
             product = { item_id = 30038, qty = 1 },
             materials = {
@@ -5606,9 +6220,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_cloth_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 30282 },
-                location = "Drop",
+                {
+                    type = "Item",
+                    item_id = 30282,
+                    location = "Drop",
+                },
             },
             product = { item_id = 30037, qty = 1 },
             materials = {
@@ -5626,9 +6242,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Waist" },
             icon = "inv_belt_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 30281 },
-                location = "Drop",
+                {
+                    type = "Item",
+                    item_id = 30281,
+                    location = "Drop",
+                },
             },
             product = { item_id = 30036, qty = 1 },
             materials = {
@@ -5647,9 +6265,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_cloth_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 30283 },
-                location = "Drop",
+                {
+                    type = "Item",
+                    item_id = 30283,
+                    location = "Drop",
+                },
             },
             product = { item_id = 30035, qty = 1 },
             materials = {
@@ -5667,9 +6287,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Feet" },
             icon = "inv_boots_cloth_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32437 },
-                location = "Okuno, Black Temple",
+                {
+                    type = "Item",
+                    item_id = 32437,
+                    location = "Okuno, Black Temple",
+                },
             },
             product = { item_id = 32391, qty = 1 },
             materials = {
@@ -5688,9 +6310,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Wrist" },
             icon = "inv_bracer_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32438 },
-                location = "Okuno, Black Temple",
+                {
+                    type = "Item",
+                    item_id = 32438,
+                    location = "Okuno, Black Temple",
+                },
             },
             product = { item_id = 32392, qty = 1 },
             materials = {
@@ -5709,9 +6333,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Legs" },
             icon = "inv_pants_cloth_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32439 },
-                location = "Okuno, Black Temple",
+                {
+                    type = "Item",
+                    item_id = 32439,
+                    location = "Okuno, Black Temple",
+                },
             },
             product = { item_id = 32389, qty = 1 },
             materials = {
@@ -5730,9 +6356,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Waist" },
             icon = "inv_belt_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32440 },
-                location = "Okuno, Black Temple",
+                {
+                    type = "Item",
+                    item_id = 32440,
+                    location = "Okuno, Black Temple",
+                },
             },
             product = { item_id = 32390, qty = 1 },
             materials = {
@@ -5751,9 +6379,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Back" },
             icon = "inv_misc_cape_20",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32447 },
-                location = "Okuno, Black Temple",
+                {
+                    type = "Item",
+                    item_id = 32447,
+                    location = "Okuno, Black Temple",
+                },
             },
             product = { item_id = 32420, qty = 1 },
             materials = {
@@ -5772,9 +6402,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Wrist" },
             icon = "inv_bracer_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32754 },
-                location = "Drop",
+                {
+                    type = "Item",
+                    item_id = 32754,
+                    location = "Drop",
+                },
             },
             product = { item_id = 32586, qty = 1 },
             materials = {
@@ -5792,9 +6424,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shoulder" },
             icon = "inv_shoulder_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32755 },
-                location = "Drop",
+                {
+                    type = "Item",
+                    item_id = 32755,
+                    location = "Drop",
+                },
             },
             product = { item_id = 32587, qty = 1 },
             materials = {
@@ -5812,9 +6446,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Hands" },
             icon = "inv_bracer_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32752 },
-                location = "Drop",
+                {
+                    type = "Item",
+                    item_id = 32752,
+                    location = "Drop",
+                },
             },
             product = { item_id = 32584, qty = 1 },
             materials = {
@@ -5832,9 +6468,11 @@ TFG.TAILORING_BURNING_CRUSADE = {
             categories = { "Shoulder" },
             icon = "inv_shoulder_25",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32753 },
-                location = "Drop",
+                {
+                    type = "Item",
+                    item_id = 32753,
+                    location = "Drop",
+                },
             },
             product = { item_id = 32585, qty = 1 },
             materials = {

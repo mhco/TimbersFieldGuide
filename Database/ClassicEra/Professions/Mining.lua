@@ -7,7 +7,9 @@ TFG.MINING_CLASSIC_ERA = {
             name = "Find Minerals",
             icon = "spell_nature_earthquake",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -15,7 +17,9 @@ TFG.MINING_CLASSIC_ERA = {
             name = "Mining",
             icon = "trade_mining",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -23,7 +27,9 @@ TFG.MINING_CLASSIC_ERA = {
             name = "Smelting",
             icon = "spell_fire_flameblades",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -33,7 +39,9 @@ TFG.MINING_CLASSIC_ERA = {
             name = "Smelt Copper",
             icon = "inv_ingot_02",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 2840, qty = 1 },
             materials = {
@@ -49,7 +57,9 @@ TFG.MINING_CLASSIC_ERA = {
             name = "Mining",
             icon = "trade_mining",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -59,8 +69,10 @@ TFG.MINING_CLASSIC_ERA = {
             name = "Smelt Tin",
             icon = "inv_ingot_05",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 3576, qty = 1 },
             materials = {
@@ -74,8 +86,10 @@ TFG.MINING_CLASSIC_ERA = {
             name = "Smelt Bronze",
             icon = "inv_ingot_bronze",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 2841, qty = 2 },
             materials = {
@@ -93,8 +107,10 @@ TFG.MINING_CLASSIC_ERA = {
             name = "Smelt Silver",
             icon = "inv_ingot_01",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 2842, qty = 1 },
             materials = {
@@ -110,7 +126,9 @@ TFG.MINING_CLASSIC_ERA = {
             name = "Mining",
             icon = "trade_mining",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -118,8 +136,10 @@ TFG.MINING_CLASSIC_ERA = {
             name = "Smelt Iron",
             icon = "inv_ingot_iron",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 3575, qty = 1 },
             materials = {
@@ -135,8 +155,10 @@ TFG.MINING_CLASSIC_ERA = {
             name = "Smelt Gold",
             icon = "inv_ingot_03",
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
             product = { item_id = 3577, qty = 1 },
             materials = {
@@ -152,8 +174,10 @@ TFG.MINING_CLASSIC_ERA = {
             name = "Smelt Steel",
             icon = "inv_ingot_steel",
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
             product = { item_id = 3859, qty = 1 },
             materials = {
@@ -171,8 +195,10 @@ TFG.MINING_CLASSIC_ERA = {
             name = "Smelt Mithril",
             icon = "inv_ingot_06",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 3860, qty = 1 },
             materials = {
@@ -188,7 +214,9 @@ TFG.MINING_CLASSIC_ERA = {
             name = "Mining",
             icon = "trade_mining",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -198,8 +226,10 @@ TFG.MINING_CLASSIC_ERA = {
             name = "Smelt Truesilver",
             icon = "inv_ingot_08",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 6037, qty = 1 },
             materials = {
@@ -213,8 +243,10 @@ TFG.MINING_CLASSIC_ERA = {
             name = "Smelt Dark Iron",
             icon = "inv_ingot_mithril",
             source = {
-                type = "Quest",
-                quest_ids = { 4083 },
+                {
+                    type = "Quest",
+                    quest_id = 4083,
+                },
             },
             product = { item_id = 11371, qty = 1 },
             materials = {
@@ -230,8 +262,10 @@ TFG.MINING_CLASSIC_ERA = {
             name = "Smelt Thorium",
             icon = "inv_ingot_07",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 12359, qty = 1 },
             materials = {
@@ -247,7 +281,9 @@ TFG.MINING_CLASSIC_ERA = {
             name = "Smelt Elementium",
             icon = "inv_ingot_thorium",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 17771, qty = 1 },
             materials = {

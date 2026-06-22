@@ -8,7 +8,9 @@ TFG.HERBALISM_BURNING_CRUSADE = {
             icon = "spell_nature_naturetouchgrow",
             categories = { "Profession Training" },
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -17,7 +19,9 @@ TFG.HERBALISM_BURNING_CRUSADE = {
             icon = "inv_misc_flower_02",
             categories = { "Other" },
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -51,8 +55,10 @@ TFG.HERBALISM_BURNING_CRUSADE = {
             icon = "spell_nature_naturetouchgrow",
             categories = { "Profession Training" },
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
         },
         {
@@ -115,8 +121,10 @@ TFG.HERBALISM_BURNING_CRUSADE = {
             icon = "spell_nature_naturetouchgrow",
             categories = { "Profession Training" },
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
         },
         {
@@ -206,8 +214,10 @@ TFG.HERBALISM_BURNING_CRUSADE = {
             icon = "spell_nature_naturetouchgrow",
             categories = { "Profession Training" },
             source = {
-                type = "Trainer",
-                cost = 50000,
+                {
+                    type = "Trainer",
+                    cost = 50000,
+                },
             },
         },
     },
@@ -272,8 +282,10 @@ TFG.HERBALISM_BURNING_CRUSADE = {
             icon = "spell_nature_naturetouchgrow",
             categories = { "Profession Training" },
             source = {
-                type = "Trainer",
-                cost = 100000,
+                {
+                    type = "Trainer",
+                    cost = 100000,
+                },
             },
         },
     },

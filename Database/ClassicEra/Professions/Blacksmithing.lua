@@ -7,7 +7,9 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Rough Copper Vest",
             icon = "inv_chest_chain",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 10421, qty = 1 },
             materials = {
@@ -20,7 +22,9 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Rough Sharpening Stone",
             icon = "inv_stone_sharpeningstone_01",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 2862, qty = 1 },
             materials = {
@@ -33,7 +37,9 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Rough Weightstone",
             icon = "inv_stone_weightstone_01",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 3239, qty = 1 },
             materials = {
@@ -47,7 +53,9 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Copper Bracers",
             icon = "inv_bracer_03",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 2853, qty = 1 },
             materials = {
@@ -60,8 +68,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Copper Chain Pants",
             icon = "inv_pants_03",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 2852, qty = 1 },
             materials = {
@@ -74,7 +84,9 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Armorsmith",
             icon = "inv_chest_plate04",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -82,7 +94,9 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Blacksmithing",
             icon = "trade_blacksmithing",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -90,7 +104,9 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Master Axesmith",
             icon = "inv_axe_05",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -98,7 +114,9 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Master Hammersmith",
             icon = "inv_hammer_23",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -106,7 +124,9 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Master Swordsmith",
             icon = "inv_sword_41",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -114,7 +134,9 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Weaponsmith",
             icon = "inv_sword_25",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -124,8 +146,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Copper Mace",
             icon = "inv_mace_01",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 2844, qty = 1 },
             materials = {
@@ -142,8 +166,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Copper Axe",
             icon = "inv_axe_23",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 2845, qty = 1 },
             materials = {
@@ -158,8 +184,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Copper Chain Boots",
             icon = "inv_boots_01",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 3469, qty = 1 },
             materials = {
@@ -174,8 +202,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Rough Grinding Stone",
             icon = "inv_stone_grindingstone_01",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 3470, qty = 1 },
             materials = {
@@ -188,8 +218,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Copper Shortsword",
             icon = "inv_sword_26",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 2847, qty = 1 },
             materials = {
@@ -206,8 +238,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Copper Claymore",
             icon = "inv_sword_21",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 7955, qty = 1 },
             materials = {
@@ -223,8 +257,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Copper Dagger",
             icon = "inv_weapon_shortblade_14",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 7166, qty = 1 },
             materials = {
@@ -242,8 +278,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Copper Battle Axe",
             icon = "inv_throwingaxe_02",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 3488, qty = 1 },
             materials = {
@@ -260,8 +298,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Copper Chain Vest",
             icon = "inv_chest_chain",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3609 },
+                {
+                    type = "Item",
+                    item_id = 3609,
+                },
             },
             product = { item_id = 3471, qty = 1 },
             materials = {
@@ -276,8 +316,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Copper Chain Belt",
             icon = "inv_belt_02",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 2851, qty = 1 },
             materials = {
@@ -292,8 +334,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Runed Copper Gauntlets",
             icon = "inv_gauntlets_04",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 3472, qty = 1 },
             materials = {
@@ -309,8 +353,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Runed Copper Pants",
             icon = "inv_pants_03",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 3473, qty = 1 },
             materials = {
@@ -327,7 +373,9 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Blacksmithing",
             icon = "trade_blacksmithing",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -337,8 +385,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Gemmed Copper Gauntlets",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3610 },
+                {
+                    type = "Item",
+                    item_id = 3610,
+                },
             },
             product = { item_id = 3474, qty = 1 },
             materials = {
@@ -355,8 +405,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Coarse Sharpening Stone",
             icon = "inv_stone_sharpeningstone_02",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 2863, qty = 1 },
             materials = {
@@ -369,8 +421,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Coarse Weightstone",
             icon = "inv_stone_weightstone_02",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 3240, qty = 1 },
             materials = {
@@ -384,8 +438,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Heavy Copper Maul",
             icon = "inv_hammer_18",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 6214, qty = 1 },
             materials = {
@@ -402,8 +458,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Thick War Axe",
             icon = "inv_throwingaxe_01",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 3489, qty = 1 },
             materials = {
@@ -420,8 +478,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Runed Copper Belt",
             icon = "inv_belt_03",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 2857, qty = 1 },
             materials = {
@@ -436,8 +496,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Coarse Grinding Stone",
             icon = "inv_stone_grindingstone_02",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 3478, qty = 1 },
             materials = {
@@ -452,8 +514,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Runed Copper Breastplate",
             icon = "inv_chest_plate03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2881 },
+                {
+                    type = "Item",
+                    item_id = 2881,
+                },
             },
             product = { item_id = 2864, qty = 1 },
             materials = {
@@ -470,8 +534,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Runed Copper Bracers",
             icon = "inv_bracer_03",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 2854, qty = 1 },
             materials = {
@@ -487,8 +553,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Rough Bronze Boots",
             icon = "inv_boots_01",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 6350, qty = 1 },
             materials = {
@@ -502,8 +570,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Heavy Copper Broadsword",
             icon = "inv_sword_14",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 3487, qty = 1 },
             materials = {
@@ -521,8 +591,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Silver Skeleton Key",
             icon = "inv_misc_key_03",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 15869, qty = 2 },
             materials = {
@@ -536,8 +608,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Silver Rod",
             icon = "inv_staff_01",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 6338, qty = 1 },
             materials = {
@@ -551,8 +625,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Ironforge Breastplate",
             icon = "inv_chest_plate05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6735 },
+                {
+                    type = "Item",
+                    item_id = 6735,
+                },
             },
             product = { item_id = 6731, qty = 1 },
             materials = {
@@ -569,8 +645,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Big Bronze Knife",
             icon = "inv_weapon_shortblade_04",
             source = {
-                type = "Trainer",
-                cost = 600,
+                {
+                    type = "Trainer",
+                    cost = 600,
+                },
             },
             product = { item_id = 3848, qty = 1 },
             materials = {
@@ -587,8 +665,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Rough Bronze Leggings",
             icon = "inv_pants_03",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 2865, qty = 1 },
             materials = {
@@ -601,8 +681,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Rough Bronze Cuirass",
             icon = "inv_chest_chain_08",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 2866, qty = 1 },
             materials = {
@@ -617,8 +699,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Pearl-handled Dagger",
             icon = "inv_weapon_shortblade_05",
             source = {
-                type = "Trainer",
-                cost = 800,
+                {
+                    type = "Trainer",
+                    cost = 800,
+                },
             },
             product = { item_id = 5540, qty = 1 },
             materials = {
@@ -634,8 +718,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Bronze Mace",
             icon = "inv_mace_08",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 2848, qty = 1 },
             materials = {
@@ -650,8 +736,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Rough Bronze Shoulders",
             icon = "inv_shoulder_05",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 3480, qty = 1 },
             materials = {
@@ -668,8 +756,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Bronze Axe",
             icon = "inv_axe_17",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 2849, qty = 1 },
             materials = {
@@ -686,8 +776,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Patterned Bronze Bracers",
             icon = "inv_bracer_07",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 2868, qty = 1 },
             materials = {
@@ -701,8 +793,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Bronze Shortsword",
             icon = "inv_sword_04",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 2850, qty = 1 },
             materials = {
@@ -719,7 +813,9 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Blacksmithing",
             icon = "trade_blacksmithing",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -727,8 +823,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Heavy Sharpening Stone",
             icon = "inv_stone_sharpeningstone_03",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 2871, qty = 1 },
             materials = {
@@ -741,8 +839,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Heavy Weightstone",
             icon = "inv_stone_weightstone_03",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 3241, qty = 1 },
             materials = {
@@ -756,8 +856,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Heavy Grinding Stone",
             icon = "inv_stone_grindingstone_03",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 3486, qty = 1 },
             materials = {
@@ -770,8 +872,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Deadly Bronze Poniard",
             icon = "inv_weapon_shortblade_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2883 },
+                {
+                    type = "Item",
+                    item_id = 2883,
+                },
             },
             product = { item_id = 3490, qty = 1 },
             materials = {
@@ -789,8 +893,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Silvered Bronze Shoulders",
             icon = "inv_shoulder_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2882 },
+                {
+                    type = "Item",
+                    item_id = 2882,
+                },
             },
             product = { item_id = 3481, qty = 1 },
             materials = {
@@ -805,8 +911,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Bronze Warhammer",
             icon = "inv_hammer_18",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 7956, qty = 1 },
             materials = {
@@ -823,8 +931,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Heavy Bronze Mace",
             icon = "inv_mace_08",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 3491, qty = 1 },
             materials = {
@@ -842,8 +952,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Silvered Bronze Boots",
             icon = "inv_boots_01",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 3482, qty = 1 },
             materials = {
@@ -858,8 +970,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Silvered Bronze Breastplate",
             icon = "inv_chest_chain_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5578 },
+                {
+                    type = "Item",
+                    item_id = 5578,
+                },
             },
             product = { item_id = 2869, qty = 1 },
             materials = {
@@ -875,8 +989,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Bronze Greatsword",
             icon = "inv_sword_20",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 7957, qty = 1 },
             materials = {
@@ -893,8 +1009,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Silvered Bronze Gauntlets",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 3483, qty = 1 },
             materials = {
@@ -909,8 +1027,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Bronze Battle Axe",
             icon = "inv_axe_21",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 7958, qty = 1 },
             materials = {
@@ -927,8 +1047,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Iridescent Hammer",
             icon = "inv_hammer_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5543 },
+                {
+                    type = "Item",
+                    item_id = 5543,
+                },
             },
             product = { item_id = 5541, qty = 1 },
             materials = {
@@ -947,8 +1069,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Shining Silver Breastplate",
             icon = "inv_chest_plate15",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 2870, qty = 1 },
             materials = {
@@ -965,8 +1089,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Green Iron Boots",
             icon = "inv_boots_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3611 },
+                {
+                    type = "Item",
+                    item_id = 3611,
+                },
             },
             product = { item_id = 3484, qty = 1 },
             materials = {
@@ -982,8 +1108,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Mighty Iron Hammer",
             icon = "inv_hammer_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3608 },
+                {
+                    type = "Item",
+                    item_id = 3608,
+                },
             },
             product = { item_id = 3492, qty = 1 },
             materials = {
@@ -1003,8 +1131,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Iron Buckle",
             icon = "inv_misc_armorkit_12",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 7071, qty = 2 },
             materials = {
@@ -1017,8 +1147,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Golden Skeleton Key",
             icon = "inv_misc_key_13",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 15870, qty = 2 },
             materials = {
@@ -1032,8 +1164,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Golden Rod",
             icon = "inv_staff_10",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 11128, qty = 1 },
             materials = {
@@ -1047,8 +1181,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Green Iron Gauntlets",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3612 },
+                {
+                    type = "Item",
+                    item_id = 3612,
+                },
             },
             product = { item_id = 3485, qty = 1 },
             materials = {
@@ -1064,8 +1200,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Iron Shield Spike",
             icon = "inv_misc_armorkit_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6044 },
+                {
+                    type = "Item",
+                    item_id = 6044,
+                },
             },
             product = { item_id = 6042, qty = 1 },
             materials = {
@@ -1081,8 +1219,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Green Iron Leggings",
             icon = "inv_pants_05",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 3842, qty = 1 },
             materials = {
@@ -1097,8 +1237,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Silvered Bronze Leggings",
             icon = "inv_pants_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10424 },
+                {
+                    type = "Item",
+                    item_id = 10424,
+                },
             },
             product = { item_id = 10423, qty = 1 },
             materials = {
@@ -1113,8 +1255,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Solid Iron Maul",
             icon = "inv_hammer_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10858 },
+                {
+                    type = "Item",
+                    item_id = 10858,
+                },
             },
             product = { item_id = 3851, qty = 1 },
             materials = {
@@ -1133,8 +1277,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Barbaric Iron Breastplate",
             icon = "inv_chest_chain_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7979 },
+                {
+                    type = "Item",
+                    item_id = 7979,
+                },
             },
             product = { item_id = 7914, qty = 1 },
             materials = {
@@ -1148,8 +1294,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Barbaric Iron Shoulders",
             icon = "inv_shoulder_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7978 },
+                {
+                    type = "Item",
+                    item_id = 7978,
+                },
             },
             product = { item_id = 7913, qty = 1 },
             materials = {
@@ -1165,8 +1313,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Green Iron Shoulders",
             icon = "inv_shoulder_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3870 },
+                {
+                    type = "Item",
+                    item_id = 3870,
+                },
             },
             product = { item_id = 3840, qty = 1 },
             materials = {
@@ -1181,8 +1331,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Hardened Iron Shortsword",
             icon = "inv_sword_20",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12162 },
+                {
+                    type = "Item",
+                    item_id = 12162,
+                },
             },
             product = { item_id = 3849, qty = 1 },
             materials = {
@@ -1201,8 +1353,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Green Iron Bracers",
             icon = "inv_bracer_06",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 3835, qty = 1 },
             materials = {
@@ -1216,8 +1370,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Iron Counterweight",
             icon = "inv_misc_orb_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6045 },
+                {
+                    type = "Item",
+                    item_id = 6045,
+                },
             },
             product = { item_id = 6043, qty = 1 },
             materials = {
@@ -1234,8 +1390,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Golden Iron Destroyer",
             icon = "inv_hammer_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3867 },
+                {
+                    type = "Item",
+                    item_id = 3867,
+                },
             },
             product = { item_id = 3852, qty = 1 },
             materials = {
@@ -1253,8 +1411,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Golden Scale Leggings",
             icon = "inv_pants_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3872 },
+                {
+                    type = "Item",
+                    item_id = 3872,
+                },
             },
             product = { item_id = 3843, qty = 1 },
             materials = {
@@ -1269,8 +1429,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Green Iron Helm",
             icon = "inv_helmet_03",
             source = {
-                type = "Trainer",
-                cost = 1250,
+                {
+                    type = "Trainer",
+                    cost = 1250,
+                },
             },
             product = { item_id = 3836, qty = 1 },
             materials = {
@@ -1287,8 +1449,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Barbaric Iron Helm",
             icon = "inv_helmet_25",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7980 },
+                {
+                    type = "Item",
+                    item_id = 7980,
+                },
             },
             product = { item_id = 7915, qty = 1 },
             materials = {
@@ -1303,8 +1467,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Golden Scale Shoulders",
             icon = "inv_shoulder_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3871 },
+                {
+                    type = "Item",
+                    item_id = 3871,
+                },
             },
             product = { item_id = 3841, qty = 1 },
             materials = {
@@ -1319,8 +1485,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Jade Serpentblade",
             icon = "inv_sword_36",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3866 },
+                {
+                    type = "Item",
+                    item_id = 3866,
+                },
             },
             product = { item_id = 3850, qty = 1 },
             materials = {
@@ -1339,8 +1507,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Green Iron Hauberk",
             icon = "inv_chest_chain",
             source = {
-                type = "Trainer",
-                cost = 7500,
+                {
+                    type = "Trainer",
+                    cost = 7500,
+                },
             },
             product = { item_id = 3844, qty = 1 },
             materials = {
@@ -1357,8 +1527,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Barbaric Iron Boots",
             icon = "inv_boots_plate_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7981 },
+                {
+                    type = "Item",
+                    item_id = 7981,
+                },
             },
             product = { item_id = 7916, qty = 1 },
             materials = {
@@ -1374,8 +1546,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Glinting Steel Dagger",
             icon = "inv_weapon_shortblade_05",
             source = {
-                type = "Trainer",
-                cost = 7500,
+                {
+                    type = "Trainer",
+                    cost = 7500,
+                },
             },
             product = { item_id = 12259, qty = 1 },
             materials = {
@@ -1392,8 +1566,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Moonsteel Broadsword",
             icon = "inv_sword_25",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12163 },
+                {
+                    type = "Item",
+                    item_id = 12163,
+                },
             },
             product = { item_id = 3853, qty = 1 },
             materials = {
@@ -1412,8 +1588,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Barbaric Iron Gloves",
             icon = "inv_gauntlets_31",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7982 },
+                {
+                    type = "Item",
+                    item_id = 7982,
+                },
             },
             product = { item_id = 7917, qty = 1 },
             materials = {
@@ -1428,8 +1606,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Massive Iron Axe",
             icon = "inv_throwingaxe_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12164 },
+                {
+                    type = "Item",
+                    item_id = 12164,
+                },
             },
             product = { item_id = 3855, qty = 1 },
             materials = {
@@ -1446,8 +1626,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Polished Steel Boots",
             icon = "inv_boots_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3874 },
+                {
+                    type = "Item",
+                    item_id = 3874,
+                },
             },
             product = { item_id = 3846, qty = 1 },
             materials = {
@@ -1463,8 +1645,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Golden Scale Bracers",
             icon = "inv_bracer_10",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 6040, qty = 1 },
             materials = {
@@ -1480,8 +1664,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Edge of Winter",
             icon = "inv_axe_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17706 },
+                {
+                    type = "Item",
+                    item_id = 17706,
+                },
             },
             product = { item_id = 17704, qty = 1 },
             materials = {
@@ -1498,8 +1684,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Golden Scale Coif",
             icon = "inv_helmet_36",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6047 },
+                {
+                    type = "Item",
+                    item_id = 6047,
+                },
             },
             product = { item_id = 3837, qty = 1 },
             materials = {
@@ -1514,8 +1702,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Searing Golden Blade",
             icon = "inv_weapon_shortblade_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12261 },
+                {
+                    type = "Item",
+                    item_id = 12261,
+                },
             },
             product = { item_id = 12260, qty = 1 },
             materials = {
@@ -1531,8 +1721,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Steel Weapon Chain",
             icon = "spell_frost_chainsofice",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6046 },
+                {
+                    type = "Item",
+                    item_id = 6046,
+                },
             },
             product = { item_id = 6041, qty = 1 },
             materials = {
@@ -1549,8 +1741,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Golden Scale Cuirass",
             icon = "inv_chest_chain_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3873 },
+                {
+                    type = "Item",
+                    item_id = 3873,
+                },
             },
             product = { item_id = 3845, qty = 1 },
             materials = {
@@ -1568,7 +1762,9 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Blacksmithing",
             icon = "trade_blacksmithing",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -1576,8 +1772,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Solid Grinding Stone",
             icon = "inv_stone_grindingstone_04",
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
             product = { item_id = 7966, qty = 1 },
             materials = {
@@ -1590,8 +1788,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Solid Sharpening Stone",
             icon = "inv_stone_sharpeningstone_04",
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
             product = { item_id = 7964, qty = 1 },
             materials = {
@@ -1604,8 +1804,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Solid Weightstone",
             icon = "inv_stone_weightstone_04",
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
             product = { item_id = 7965, qty = 1 },
             materials = {
@@ -1619,8 +1821,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Truesilver Skeleton Key",
             icon = "inv_misc_key_11",
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
             product = { item_id = 15871, qty = 2 },
             materials = {
@@ -1634,8 +1838,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Truesilver Rod",
             icon = "inv_staff_11",
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
             product = { item_id = 11144, qty = 1 },
             materials = {
@@ -1649,8 +1855,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Frost Tiger Blade",
             icon = "inv_sword_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3868 },
+                {
+                    type = "Item",
+                    item_id = 3868,
+                },
             },
             product = { item_id = 3854, qty = 1 },
             materials = {
@@ -1668,8 +1876,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Golden Scale Boots",
             icon = "inv_boots_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3875 },
+                {
+                    type = "Item",
+                    item_id = 3875,
+                },
             },
             product = { item_id = 3847, qty = 1 },
             materials = {
@@ -1685,8 +1895,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Shadow Crescent Axe",
             icon = "inv_axe_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3869 },
+                {
+                    type = "Item",
+                    item_id = 3869,
+                },
             },
             product = { item_id = 3856, qty = 1 },
             materials = {
@@ -1704,8 +1916,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Steel Breastplate",
             icon = "inv_chest_plate05",
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
             product = { item_id = 7963, qty = 1 },
             materials = {
@@ -1719,8 +1933,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Inlaid Mithril Cylinder",
             icon = "inv_musket_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10713 },
+                {
+                    type = "Item",
+                    item_id = 10713,
+                },
             },
             product = { item_id = 9060, qty = 1 },
             materials = {
@@ -1737,8 +1953,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Golden Scale Gauntlets",
             icon = "inv_gauntlets_29",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9367 },
+                {
+                    type = "Item",
+                    item_id = 9367,
+                },
             },
             product = { item_id = 9366, qty = 1 },
             materials = {
@@ -1754,8 +1972,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Heavy Mithril Gauntlet",
             icon = "inv_gauntlets_27",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 7919, qty = 1 },
             materials = {
@@ -1769,8 +1989,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Heavy Mithril Shoulder",
             icon = "inv_shoulder_22",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 7918, qty = 1 },
             materials = {
@@ -1786,8 +2008,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Heavy Mithril Pants",
             icon = "inv_pants_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7975 },
+                {
+                    type = "Item",
+                    item_id = 7975,
+                },
             },
             product = { item_id = 7921, qty = 1 },
             materials = {
@@ -1801,8 +2025,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Mithril Scale Pants",
             icon = "inv_pants_03",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 7920, qty = 1 },
             materials = {
@@ -1815,8 +2041,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Heavy Mithril Axe",
             icon = "inv_axe_14",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 7941, qty = 1 },
             materials = {
@@ -1834,8 +2062,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Mithril Scale Bracers",
             icon = "inv_bracer_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7995 },
+                {
+                    type = "Item",
+                    item_id = 7995,
+                },
             },
             product = { item_id = 7924, qty = 1 },
             materials = {
@@ -1849,8 +2079,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Mithril Shield Spike",
             icon = "inv_misc_armorkit_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7976 },
+                {
+                    type = "Item",
+                    item_id = 7976,
+                },
             },
             product = { item_id = 7967, qty = 1 },
             materials = {
@@ -1865,8 +2097,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Steel Plate Helm",
             icon = "inv_helmet_03",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 7922, qty = 1 },
             materials = {
@@ -1882,8 +2116,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Ornate Mithril Gloves",
             icon = "inv_gauntlets_31",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7984 },
+                {
+                    type = "Item",
+                    item_id = 7984,
+                },
             },
             product = { item_id = 7927, qty = 1 },
             materials = {
@@ -1899,8 +2135,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Ornate Mithril Pants",
             icon = "inv_pants_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7983 },
+                {
+                    type = "Item",
+                    item_id = 7983,
+                },
             },
             product = { item_id = 7926, qty = 1 },
             materials = {
@@ -1916,8 +2154,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Blue Glittering Axe",
             icon = "inv_axe_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7992 },
+                {
+                    type = "Item",
+                    item_id = 7992,
+                },
             },
             product = { item_id = 7942, qty = 1 },
             materials = {
@@ -1935,8 +2175,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Truesilver Gauntlets",
             icon = "inv_gauntlets_29",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 7938, qty = 1 },
             materials = {
@@ -1954,8 +2196,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Ornate Mithril Shoulders",
             icon = "inv_shoulder_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7985 },
+                {
+                    type = "Item",
+                    item_id = 7985,
+                },
             },
             product = { item_id = 7928, qty = 1 },
             materials = {
@@ -1970,8 +2214,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Wicked Mithril Blade",
             icon = "inv_sword_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8029 },
+                {
+                    type = "Item",
+                    item_id = 8029,
+                },
             },
             product = { item_id = 7943, qty = 1 },
             materials = {
@@ -1989,8 +2235,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Heavy Mithril Breastplate",
             icon = "inv_chest_plate10",
             source = {
-                type = "Trainer",
-                cost = 15000,
+                {
+                    type = "Trainer",
+                    cost = 15000,
+                },
             },
             product = { item_id = 7930, qty = 1 },
             materials = {
@@ -2003,8 +2251,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Mithril Coif",
             icon = "inv_helmet_35",
             source = {
-                type = "Trainer",
-                cost = 15000,
+                {
+                    type = "Trainer",
+                    cost = 15000,
+                },
             },
             product = { item_id = 7931, qty = 1 },
             materials = {
@@ -2018,8 +2268,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Orcish War Leggings",
             icon = "inv_pants_03",
             source = {
-                type = "Quest",
-                quest_ids = { 2756 },
+                {
+                    type = "Quest",
+                    quest_id = 2756,
+                },
             },
             product = { item_id = 7929, qty = 1 },
             materials = {
@@ -2033,8 +2285,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Big Black Mace",
             icon = "inv_mace_15",
             source = {
-                type = "Trainer",
-                cost = 15000,
+                {
+                    type = "Trainer",
+                    cost = 15000,
+                },
             },
             product = { item_id = 7945, qty = 1 },
             materials = {
@@ -2053,8 +2307,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Heavy Mithril Boots",
             icon = "inv_boots_plate_01",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 7933, qty = 1 },
             materials = {
@@ -2068,8 +2324,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Mithril Scale Shoulders",
             icon = "inv_shoulder_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7991 },
+                {
+                    type = "Item",
+                    item_id = 7991,
+                },
             },
             product = { item_id = 7932, qty = 1 },
             materials = {
@@ -2084,8 +2342,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Mithril Spurs",
             icon = "ability_rogue_sprint",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7989 },
+                {
+                    type = "Item",
+                    item_id = 7989,
+                },
             },
             product = { item_id = 7969, qty = 1 },
             materials = {
@@ -2099,8 +2359,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "The Shatterer",
             icon = "inv_hammer_18",
             source = {
-                type = "Trainer",
-                cost = 13500,
+                {
+                    type = "Trainer",
+                    cost = 13500,
+                },
             },
             product = { item_id = 7954, qty = 1 },
             materials = {
@@ -2121,8 +2383,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Ornate Mithril Breastplate",
             icon = "inv_chest_plate10",
             source = {
-                type = "Quest",
-                quest_ids = { 2773 },
+                {
+                    type = "Quest",
+                    quest_id = 2773,
+                },
             },
             product = { item_id = 7935, qty = 1 },
             materials = {
@@ -2138,8 +2402,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Dazzling Mithril Rapier",
             icon = "inv_sword_30",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7993 },
+                {
+                    type = "Item",
+                    item_id = 7993,
+                },
             },
             product = { item_id = 7944, qty = 1 },
             materials = {
@@ -2159,8 +2425,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Heavy Mithril Helm",
             icon = "inv_helmet_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7990 },
+                {
+                    type = "Item",
+                    item_id = 7990,
+                },
             },
             product = { item_id = 7934, qty = 1 },
             materials = {
@@ -2174,8 +2442,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Truesilver Breastplate",
             icon = "inv_chest_plate04",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 7939, qty = 1 },
             materials = {
@@ -2192,8 +2462,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Ornate Mithril Boots",
             icon = "inv_boots_01",
             source = {
-                type = "Quest",
-                quest_ids = { 2772 },
+                {
+                    type = "Quest",
+                    quest_id = 2772,
+                },
             },
             product = { item_id = 7936, qty = 1 },
             materials = {
@@ -2210,8 +2482,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Ornate Mithril Helm",
             icon = "inv_helmet_10",
             source = {
-                type = "Quest",
-                quest_ids = { 2771 },
+                {
+                    type = "Quest",
+                    quest_id = 2771,
+                },
             },
             product = { item_id = 7937, qty = 1 },
             materials = {
@@ -2227,8 +2501,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Phantom Blade",
             icon = "inv_sword_40",
             source = {
-                type = "Trainer",
-                cost = 13500,
+                {
+                    type = "Trainer",
+                    cost = 13500,
+                },
             },
             product = { item_id = 7961, qty = 1 },
             materials = {
@@ -2247,8 +2523,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Runed Mithril Hammer",
             icon = "inv_hammer_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8028 },
+                {
+                    type = "Item",
+                    item_id = 8028,
+                },
             },
             product = { item_id = 7946, qty = 1 },
             materials = {
@@ -2266,8 +2544,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Dense Grinding Stone",
             icon = "inv_stone_grindingstone_05",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 12644, qty = 1 },
             materials = {
@@ -2280,8 +2560,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Dense Sharpening Stone",
             icon = "inv_stone_sharpeningstone_05",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 12404, qty = 1 },
             materials = {
@@ -2294,8 +2576,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Dense Weightstone",
             icon = "inv_stone_weightstone_05",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 12643, qty = 1 },
             materials = {
@@ -2309,8 +2593,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Thorium Armor",
             icon = "inv_chest_plate08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12682 },
+                {
+                    type = "Item",
+                    item_id = 12682,
+                },
             },
             product = { item_id = 12405, qty = 1 },
             materials = {
@@ -2325,8 +2611,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Thorium Belt",
             icon = "inv_belt_30",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12683 },
+                {
+                    type = "Item",
+                    item_id = 12683,
+                },
             },
             product = { item_id = 12406, qty = 1 },
             materials = {
@@ -2340,8 +2628,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Blight",
             icon = "inv_spear_07",
             source = {
-                type = "Trainer",
-                cost = 13500,
+                {
+                    type = "Trainer",
+                    cost = 13500,
+                },
             },
             product = { item_id = 7959, qty = 1 },
             materials = {
@@ -2360,8 +2650,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Thorium Bracers",
             icon = "inv_bracer_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12684 },
+                {
+                    type = "Item",
+                    item_id = 12684,
+                },
             },
             product = { item_id = 12408, qty = 1 },
             materials = {
@@ -2375,8 +2667,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Ebon Shiv",
             icon = "inv_weapon_shortblade_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8030 },
+                {
+                    type = "Item",
+                    item_id = 8030,
+                },
             },
             product = { item_id = 7947, qty = 1 },
             materials = {
@@ -2395,8 +2689,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Radiant Belt",
             icon = "inv_belt_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12685 },
+                {
+                    type = "Item",
+                    item_id = 12685,
+                },
             },
             product = { item_id = 12416, qty = 1 },
             materials = {
@@ -2410,8 +2706,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Truesilver Champion",
             icon = "inv_sword_19",
             source = {
-                type = "Trainer",
-                cost = 13500,
+                {
+                    type = "Trainer",
+                    cost = 13500,
+                },
             },
             product = { item_id = 7960, qty = 1 },
             materials = {
@@ -2431,8 +2729,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Dark Iron Pulverizer",
             icon = "inv_hammer_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11610 },
+                {
+                    type = "Item",
+                    item_id = 11610,
+                },
             },
             product = { item_id = 11608, qty = 1 },
             materials = {
@@ -2446,8 +2746,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Imperial Plate Belt",
             icon = "inv_belt_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12688 },
+                {
+                    type = "Item",
+                    item_id = 12688,
+                },
             },
             product = { item_id = 12424, qty = 1 },
             materials = {
@@ -2462,8 +2764,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Imperial Plate Shoulders",
             icon = "inv_shoulder_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12687 },
+                {
+                    type = "Item",
+                    item_id = 12687,
+                },
             },
             product = { item_id = 12428, qty = 1 },
             materials = {
@@ -2480,8 +2784,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Wildthorn Mail",
             icon = "inv_chest_chain_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12691 },
+                {
+                    type = "Item",
+                    item_id = 12691,
+                },
             },
             product = { item_id = 12624, qty = 1 },
             materials = {
@@ -2498,8 +2804,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Dark Iron Mail",
             icon = "inv_chest_chain_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11614 },
+                {
+                    type = "Item",
+                    item_id = 11614,
+                },
             },
             product = { item_id = 11606, qty = 1 },
             materials = {
@@ -2513,8 +2821,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Imperial Plate Bracers",
             icon = "inv_bracer_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12690 },
+                {
+                    type = "Item",
+                    item_id = 12690,
+                },
             },
             product = { item_id = 12425, qty = 1 },
             materials = {
@@ -2528,8 +2838,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Radiant Breastplate",
             icon = "inv_chest_plate16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12689 },
+                {
+                    type = "Item",
+                    item_id = 12689,
+                },
             },
             product = { item_id = 12415, qty = 1 },
             materials = {
@@ -2546,8 +2858,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Arcanite Skeleton Key",
             icon = "inv_misc_key_08",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 15872, qty = 2 },
             materials = {
@@ -2561,8 +2875,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Arcanite Rod",
             icon = "inv_staff_19",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 16206, qty = 1 },
             materials = {
@@ -2576,8 +2892,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Dark Iron Sunderer",
             icon = "inv_weapon_halberd_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11611 },
+                {
+                    type = "Item",
+                    item_id = 11611,
+                },
             },
             product = { item_id = 11607, qty = 1 },
             materials = {
@@ -2591,8 +2909,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Thorium Shield Spike",
             icon = "inv_misc_armorkit_20",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12692 },
+                {
+                    type = "Item",
+                    item_id = 12692,
+                },
             },
             product = { item_id = 12645, qty = 1 },
             materials = {
@@ -2607,8 +2927,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Dawn's Edge",
             icon = "inv_axe_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12821 },
+                {
+                    type = "Item",
+                    item_id = 12821,
+                },
             },
             product = { item_id = 12774, qty = 1 },
             materials = {
@@ -2626,8 +2948,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Ornate Thorium Handaxe",
             icon = "inv_axe_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12819 },
+                {
+                    type = "Item",
+                    item_id = 12819,
+                },
             },
             product = { item_id = 12773, qty = 1 },
             materials = {
@@ -2645,8 +2969,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Dark Iron Shoulders",
             icon = "inv_shoulder_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11615 },
+                {
+                    type = "Item",
+                    item_id = 11615,
+                },
             },
             product = { item_id = 11605, qty = 1 },
             materials = {
@@ -2660,8 +2986,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Thorium Boots",
             icon = "inv_boots_plate_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12693 },
+                {
+                    type = "Item",
+                    item_id = 12693,
+                },
             },
             product = { item_id = 12409, qty = 1 },
             materials = {
@@ -2676,8 +3004,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Thorium Helm",
             icon = "inv_helmet_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12694 },
+                {
+                    type = "Item",
+                    item_id = 12694,
+                },
             },
             product = { item_id = 12410, qty = 1 },
             materials = {
@@ -2692,8 +3022,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Blazing Rapier",
             icon = "inv_sword_30",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12825 },
+                {
+                    type = "Item",
+                    item_id = 12825,
+                },
             },
             product = { item_id = 12777, qty = 1 },
             materials = {
@@ -2710,8 +3042,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Enchanted Battlehammer",
             icon = "inv_hammer_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12824 },
+                {
+                    type = "Item",
+                    item_id = 12824,
+                },
             },
             product = { item_id = 12776, qty = 1 },
             materials = {
@@ -2728,8 +3062,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Huge Thorium Battleaxe",
             icon = "inv_weapon_halberd_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12823 },
+                {
+                    type = "Item",
+                    item_id = 12823,
+                },
             },
             product = { item_id = 12775, qty = 1 },
             materials = {
@@ -2746,8 +3082,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Dark Iron Plate",
             icon = "inv_chest_plate08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11612 },
+                {
+                    type = "Item",
+                    item_id = 11612,
+                },
             },
             product = { item_id = 11604, qty = 1 },
             materials = {
@@ -2761,8 +3099,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Demon Forged Breastplate",
             icon = "inv_chest_plate06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12696 },
+                {
+                    type = "Item",
+                    item_id = 12696,
+                },
             },
             product = { item_id = 12628, qty = 1 },
             materials = {
@@ -2778,8 +3118,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Radiant Gloves",
             icon = "inv_gauntlets_26",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12695 },
+                {
+                    type = "Item",
+                    item_id = 12695,
+                },
             },
             product = { item_id = 12418, qty = 1 },
             materials = {
@@ -2793,8 +3135,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Serenity",
             icon = "inv_mace_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12827 },
+                {
+                    type = "Item",
+                    item_id = 12827,
+                },
             },
             product = { item_id = 12781, qty = 1 },
             materials = {
@@ -2814,8 +3158,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Dawnbringer Shoulders",
             icon = "inv_shoulder_20",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12698 },
+                {
+                    type = "Item",
+                    item_id = 12698,
+                },
             },
             product = { item_id = 12625, qty = 1 },
             materials = {
@@ -2831,8 +3177,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Fiery Plate Gauntlets",
             icon = "inv_gauntlets_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12699 },
+                {
+                    type = "Item",
+                    item_id = 12699,
+                },
             },
             product = { item_id = 12631, qty = 1 },
             materials = {
@@ -2848,8 +3196,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Girdle of the Dawn",
             icon = "inv_belt_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19203 },
+                {
+                    type = "Item",
+                    item_id = 19203,
+                },
             },
             product = { item_id = 19051, qty = 1 },
             materials = {
@@ -2864,8 +3214,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Heavy Timbermaw Belt",
             icon = "inv_belt_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19202 },
+                {
+                    type = "Item",
+                    item_id = 19202,
+                },
             },
             product = { item_id = 19043, qty = 1 },
             materials = {
@@ -2880,8 +3232,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Radiant Boots",
             icon = "inv_boots_plate_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12697 },
+                {
+                    type = "Item",
+                    item_id = 12697,
+                },
             },
             product = { item_id = 12419, qty = 1 },
             materials = {
@@ -2895,8 +3249,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Corruption",
             icon = "inv_sword_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12830 },
+                {
+                    type = "Item",
+                    item_id = 12830,
+                },
             },
             product = { item_id = 12782, qty = 1 },
             materials = {
@@ -2915,8 +3271,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Volcanic Hammer",
             icon = "inv_hammer_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12828 },
+                {
+                    type = "Item",
+                    item_id = 12828,
+                },
             },
             product = { item_id = 12792, qty = 1 },
             materials = {
@@ -2934,8 +3292,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Dark Iron Bracers",
             icon = "inv_bracer_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17051 },
+                {
+                    type = "Item",
+                    item_id = 17051,
+                },
             },
             product = { item_id = 17014, qty = 1 },
             materials = {
@@ -2950,8 +3310,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Fiery Chain Girdle",
             icon = "inv_belt_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17049 },
+                {
+                    type = "Item",
+                    item_id = 17049,
+                },
             },
             product = { item_id = 16989, qty = 1 },
             materials = {
@@ -2966,8 +3328,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Storm Gauntlets",
             icon = "inv_gauntlets_30",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12703 },
+                {
+                    type = "Item",
+                    item_id = 12703,
+                },
             },
             product = { item_id = 12632, qty = 1 },
             materials = {
@@ -2983,8 +3347,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Imperial Plate Boots",
             icon = "inv_boots_plate_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12700 },
+                {
+                    type = "Item",
+                    item_id = 12700,
+                },
             },
             product = { item_id = 12426, qty = 1 },
             materials = {
@@ -2999,8 +3365,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Imperial Plate Helm",
             icon = "inv_helmet_22",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12701 },
+                {
+                    type = "Item",
+                    item_id = 12701,
+                },
             },
             product = { item_id = 12427, qty = 1 },
             materials = {
@@ -3014,8 +3382,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Radiant Circlet",
             icon = "inv_crown_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12702 },
+                {
+                    type = "Item",
+                    item_id = 12702,
+                },
             },
             product = { item_id = 12417, qty = 1 },
             materials = {
@@ -3031,8 +3401,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Elemental Sharpening Stone",
             icon = "inv_stone_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18264 },
+                {
+                    type = "Item",
+                    item_id = 18264,
+                },
             },
             product = { item_id = 18262, qty = 1 },
             materials = {
@@ -3046,8 +3418,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Black Amnesty",
             icon = "inv_weapon_shortblade_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19208 },
+                {
+                    type = "Item",
+                    item_id = 19208,
+                },
             },
             product = { item_id = 19166, qty = 1 },
             materials = {
@@ -3064,8 +3438,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Black Grasp of the Destroyer",
             icon = "inv_gauntlets_31",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22220 },
+                {
+                    type = "Item",
+                    item_id = 22220,
+                },
             },
             product = { item_id = 22194, qty = 1 },
             materials = {
@@ -3081,8 +3457,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Blackfury",
             icon = "inv_spear_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19209 },
+                {
+                    type = "Item",
+                    item_id = 19209,
+                },
             },
             product = { item_id = 19167, qty = 1 },
             materials = {
@@ -3098,8 +3476,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Blackguard",
             icon = "inv_sword_39",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19211 },
+                {
+                    type = "Item",
+                    item_id = 19211,
+                },
             },
             product = { item_id = 19168, qty = 1 },
             materials = {
@@ -3116,8 +3496,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Dark Iron Boots",
             icon = "inv_boots_chain_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20040 },
+                {
+                    type = "Item",
+                    item_id = 20040,
+                },
             },
             product = { item_id = 20039, qty = 1 },
             materials = {
@@ -3133,8 +3515,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Dark Iron Gauntlets",
             icon = "inv_gauntlets_22",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19207 },
+                {
+                    type = "Item",
+                    item_id = 19207,
+                },
             },
             product = { item_id = 19164, qty = 1 },
             materials = {
@@ -3151,8 +3535,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Dark Iron Helm",
             icon = "inv_helmet_22",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19206 },
+                {
+                    type = "Item",
+                    item_id = 19206,
+                },
             },
             product = { item_id = 19148, qty = 1 },
             materials = {
@@ -3167,8 +3553,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Dark Iron Leggings",
             icon = "inv_pants_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17052 },
+                {
+                    type = "Item",
+                    item_id = 17052,
+                },
             },
             product = { item_id = 17013, qty = 1 },
             materials = {
@@ -3183,8 +3571,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Ebon Hand",
             icon = "inv_hammer_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19210 },
+                {
+                    type = "Item",
+                    item_id = 19210,
+                },
             },
             product = { item_id = 19170, qty = 1 },
             materials = {
@@ -3201,8 +3591,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Fiery Chain Shoulders",
             icon = "inv_shoulder_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17053 },
+                {
+                    type = "Item",
+                    item_id = 17053,
+                },
             },
             product = { item_id = 16988, qty = 1 },
             materials = {
@@ -3217,8 +3609,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Icebane Bracers",
             icon = "inv_bracer_07",
             source = {
-                type = "Quest",
-                quest_ids = { 9233 },
+                {
+                    type = "Quest",
+                    quest_id = 9233,
+                },
             },
             product = { item_id = 22671, qty = 1 },
             materials = {
@@ -3234,8 +3628,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Icebane Breastplate",
             icon = "inv_chest_chain_11",
             source = {
-                type = "Quest",
-                quest_ids = { 9233 },
+                {
+                    type = "Quest",
+                    quest_id = 9233,
+                },
             },
             product = { item_id = 22669, qty = 1 },
             materials = {
@@ -3251,8 +3647,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Icebane Gauntlets",
             icon = "inv_gauntlets_28",
             source = {
-                type = "Quest",
-                quest_ids = { 9233 },
+                {
+                    type = "Quest",
+                    quest_id = 9233,
+                },
             },
             product = { item_id = 22670, qty = 1 },
             materials = {
@@ -3268,8 +3666,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Invulnerable Mail",
             icon = "inv_chest_chain_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12728 },
+                {
+                    type = "Item",
+                    item_id = 12728,
+                },
             },
             product = { item_id = 12641, qty = 1 },
             materials = {
@@ -3285,8 +3685,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Jagged Obsidian Shield",
             icon = "inv_shield_22",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22219 },
+                {
+                    type = "Item",
+                    item_id = 22219,
+                },
             },
             product = { item_id = 22198, qty = 1 },
             materials = {
@@ -3302,8 +3704,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Lionheart Helm",
             icon = "inv_helmet_36",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12717 },
+                {
+                    type = "Item",
+                    item_id = 12717,
+                },
             },
             product = { item_id = 12640, qty = 1 },
             materials = {
@@ -3320,8 +3724,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Nightfall",
             icon = "inv_axe_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19212 },
+                {
+                    type = "Item",
+                    item_id = 19212,
+                },
             },
             product = { item_id = 19169, qty = 1 },
             materials = {
@@ -3338,8 +3744,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Obsidian Mail Tunic",
             icon = "inv_chest_chain_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22221 },
+                {
+                    type = "Item",
+                    item_id = 22221,
+                },
             },
             product = { item_id = 22191, qty = 1 },
             materials = {
@@ -3356,8 +3764,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Persuader",
             icon = "inv_hammer_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22390 },
+                {
+                    type = "Item",
+                    item_id = 22390,
+                },
             },
             product = { item_id = 22384, qty = 1 },
             materials = {
@@ -3375,8 +3785,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Sageblade",
             icon = "inv_sword_51",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22389 },
+                {
+                    type = "Item",
+                    item_id = 22389,
+                },
             },
             product = { item_id = 22383, qty = 1 },
             materials = {
@@ -3392,8 +3804,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Stronghold Gauntlets",
             icon = "inv_gauntlets_30",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12720 },
+                {
+                    type = "Item",
+                    item_id = 12720,
+                },
             },
             product = { item_id = 12639, qty = 1 },
             materials = {
@@ -3410,8 +3824,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Thick Obsidian Breastplate",
             icon = "inv_chest_chain_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22222 },
+                {
+                    type = "Item",
+                    item_id = 22222,
+                },
             },
             product = { item_id = 22196, qty = 1 },
             materials = {
@@ -3428,8 +3844,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Titanic Leggings",
             icon = "inv_pants_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22388 },
+                {
+                    type = "Item",
+                    item_id = 22388,
+                },
             },
             product = { item_id = 22385, qty = 1 },
             materials = {
@@ -3445,8 +3863,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Annihilator",
             icon = "inv_axe_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12835 },
+                {
+                    type = "Item",
+                    item_id = 12835,
+                },
             },
             product = { item_id = 12798, qty = 1 },
             materials = {
@@ -3464,8 +3884,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Arcanite Champion",
             icon = "inv_sword_39",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12834 },
+                {
+                    type = "Item",
+                    item_id = 12834,
+                },
             },
             product = { item_id = 12790, qty = 1 },
             materials = {
@@ -3483,8 +3905,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Arcanite Reaper",
             icon = "inv_axe_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12838 },
+                {
+                    type = "Item",
+                    item_id = 12838,
+                },
             },
             product = { item_id = 12784, qty = 1 },
             materials = {
@@ -3499,8 +3923,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Bloodsoul Breastplate",
             icon = "inv_chest_chain_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19776 },
+                {
+                    type = "Item",
+                    item_id = 19776,
+                },
             },
             product = { item_id = 19690, qty = 1 },
             materials = {
@@ -3516,8 +3942,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Bloodsoul Gauntlets",
             icon = "inv_gauntlets_31",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19778 },
+                {
+                    type = "Item",
+                    item_id = 19778,
+                },
             },
             product = { item_id = 19692, qty = 1 },
             materials = {
@@ -3533,8 +3961,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Bloodsoul Shoulders",
             icon = "inv_shoulder_15",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19777 },
+                {
+                    type = "Item",
+                    item_id = 19777,
+                },
             },
             product = { item_id = 19691, qty = 1 },
             materials = {
@@ -3550,8 +3980,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Dark Iron Destroyer",
             icon = "inv_axe_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17060 },
+                {
+                    type = "Item",
+                    item_id = 17060,
+                },
             },
             product = { item_id = 17016, qty = 1 },
             materials = {
@@ -3567,8 +3999,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Dark Iron Reaver",
             icon = "inv_sword_48",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17059 },
+                {
+                    type = "Item",
+                    item_id = 17059,
+                },
             },
             product = { item_id = 17015, qty = 1 },
             materials = {
@@ -3584,8 +4018,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Darkrune Breastplate",
             icon = "inv_chest_plate06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20554 },
+                {
+                    type = "Item",
+                    item_id = 20554,
+                },
             },
             product = { item_id = 20550, qty = 1 },
             materials = {
@@ -3600,8 +4036,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Darkrune Gauntlets",
             icon = "inv_gauntlets_27",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20553 },
+                {
+                    type = "Item",
+                    item_id = 20553,
+                },
             },
             product = { item_id = 20549, qty = 1 },
             materials = {
@@ -3617,8 +4055,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Darkrune Helm",
             icon = "inv_helmet_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20555 },
+                {
+                    type = "Item",
+                    item_id = 20555,
+                },
             },
             product = { item_id = 20551, qty = 1 },
             materials = {
@@ -3634,8 +4074,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Darksoul Breastplate",
             icon = "inv_chest_plate08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19779 },
+                {
+                    type = "Item",
+                    item_id = 19779,
+                },
             },
             product = { item_id = 19693, qty = 1 },
             materials = {
@@ -3650,8 +4092,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Darksoul Leggings",
             icon = "inv_pants_plate_21",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19780 },
+                {
+                    type = "Item",
+                    item_id = 19780,
+                },
             },
             product = { item_id = 19694, qty = 1 },
             materials = {
@@ -3666,8 +4110,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Darksoul Shoulders",
             icon = "inv_shoulder_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19781 },
+                {
+                    type = "Item",
+                    item_id = 19781,
+                },
             },
             product = { item_id = 19695, qty = 1 },
             materials = {
@@ -3682,8 +4128,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Enchanted Thorium Breastplate",
             icon = "inv_chest_plate10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12727 },
+                {
+                    type = "Item",
+                    item_id = 12727,
+                },
             },
             product = { item_id = 12618, qty = 1 },
             materials = {
@@ -3701,8 +4149,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Enchanted Thorium Helm",
             icon = "inv_helmet_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12725 },
+                {
+                    type = "Item",
+                    item_id = 12725,
+                },
             },
             product = { item_id = 12620, qty = 1 },
             materials = {
@@ -3719,8 +4169,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Enchanted Thorium Leggings",
             icon = "inv_pants_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12726 },
+                {
+                    type = "Item",
+                    item_id = 12726,
+                },
             },
             product = { item_id = 12619, qty = 1 },
             materials = {
@@ -3737,8 +4189,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Frostguard",
             icon = "inv_sword_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12836 },
+                {
+                    type = "Item",
+                    item_id = 12836,
+                },
             },
             product = { item_id = 12797, qty = 1 },
             materials = {
@@ -3756,8 +4210,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Gloves of the Dawn",
             icon = "inv_gauntlets_29",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19205 },
+                {
+                    type = "Item",
+                    item_id = 19205,
+                },
             },
             product = { item_id = 19057, qty = 1 },
             materials = {
@@ -3772,8 +4228,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Hammer of the Titans",
             icon = "inv_hammer_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12833 },
+                {
+                    type = "Item",
+                    item_id = 12833,
+                },
             },
             product = { item_id = 12796, qty = 1 },
             materials = {
@@ -3790,8 +4248,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Heartseeker",
             icon = "inv_sword_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12839 },
+                {
+                    type = "Item",
+                    item_id = 12839,
+                },
             },
             product = { item_id = 12783, qty = 1 },
             materials = {
@@ -3810,8 +4270,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Heavy Obsidian Belt",
             icon = "inv_belt_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22209 },
+                {
+                    type = "Item",
+                    item_id = 22209,
+                },
             },
             product = { item_id = 22197, qty = 1 },
             materials = {
@@ -3826,8 +4288,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Heavy Timbermaw Boots",
             icon = "inv_boots_chain_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19204 },
+                {
+                    type = "Item",
+                    item_id = 19204,
+                },
             },
             product = { item_id = 19048, qty = 1 },
             materials = {
@@ -3842,8 +4306,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Helm of the Great Chief",
             icon = "inv_helmet_24",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12716 },
+                {
+                    type = "Item",
+                    item_id = 12716,
+                },
             },
             product = { item_id = 12636, qty = 1 },
             materials = {
@@ -3860,8 +4326,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Ironvine Belt",
             icon = "inv_belt_21",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22768 },
+                {
+                    type = "Item",
+                    item_id = 22768,
+                },
             },
             product = { item_id = 22764, qty = 1 },
             materials = {
@@ -3875,8 +4343,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Ironvine Breastplate",
             icon = "inv_chest_plate07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22766 },
+                {
+                    type = "Item",
+                    item_id = 22766,
+                },
             },
             product = { item_id = 22762, qty = 1 },
             materials = {
@@ -3892,8 +4362,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Ironvine Gloves",
             icon = "inv_gauntlets_29",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22767 },
+                {
+                    type = "Item",
+                    item_id = 22767,
+                },
             },
             product = { item_id = 22763, qty = 1 },
             materials = {
@@ -3908,8 +4380,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Light Obsidian Belt",
             icon = "inv_belt_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22214 },
+                {
+                    type = "Item",
+                    item_id = 22214,
+                },
             },
             product = { item_id = 22195, qty = 1 },
             materials = {
@@ -3923,8 +4397,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Masterwork Stormhammer",
             icon = "inv_hammer_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12837 },
+                {
+                    type = "Item",
+                    item_id = 12837,
+                },
             },
             product = { item_id = 12794, qty = 1 },
             materials = {
@@ -3941,8 +4417,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Whitesoul Helm",
             icon = "inv_helmet_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12711 },
+                {
+                    type = "Item",
+                    item_id = 12711,
+                },
             },
             product = { item_id = 12633, qty = 1 },
             materials = {
@@ -3959,8 +4437,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Imperial Plate Chest",
             icon = "inv_chest_plate10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12705 },
+                {
+                    type = "Item",
+                    item_id = 12705,
+                },
             },
             product = { item_id = 12422, qty = 1 },
             materials = {
@@ -3974,8 +4454,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Imperial Plate Leggings",
             icon = "inv_pants_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12715 },
+                {
+                    type = "Item",
+                    item_id = 12715,
+                },
             },
             product = { item_id = 12429, qty = 1 },
             materials = {
@@ -3989,8 +4471,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Radiant Leggings",
             icon = "inv_pants_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12713 },
+                {
+                    type = "Item",
+                    item_id = 12713,
+                },
             },
             product = { item_id = 12420, qty = 1 },
             materials = {
@@ -4004,8 +4488,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Runic Breastplate",
             icon = "inv_chest_plate11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12718 },
+                {
+                    type = "Item",
+                    item_id = 12718,
+                },
             },
             product = { item_id = 12613, qty = 1 },
             materials = {
@@ -4020,8 +4506,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Runic Plate Boots",
             icon = "inv_boots_plate_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12707 },
+                {
+                    type = "Item",
+                    item_id = 12707,
+                },
             },
             product = { item_id = 12611, qty = 1 },
             materials = {
@@ -4036,8 +4524,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Runic Plate Helm",
             icon = "inv_helmet_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12714 },
+                {
+                    type = "Item",
+                    item_id = 12714,
+                },
             },
             product = { item_id = 12612, qty = 1 },
             materials = {
@@ -4053,8 +4543,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Runic Plate Leggings",
             icon = "inv_pants_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12719 },
+                {
+                    type = "Item",
+                    item_id = 12719,
+                },
             },
             product = { item_id = 12614, qty = 1 },
             materials = {
@@ -4069,8 +4561,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Runic Plate Shoulders",
             icon = "inv_shoulder_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12706 },
+                {
+                    type = "Item",
+                    item_id = 12706,
+                },
             },
             product = { item_id = 12610, qty = 1 },
             materials = {
@@ -4085,8 +4579,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Thorium Leggings",
             icon = "inv_pants_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12704 },
+                {
+                    type = "Item",
+                    item_id = 12704,
+                },
             },
             product = { item_id = 12414, qty = 1 },
             materials = {
@@ -4100,8 +4596,10 @@ TFG.BLACKSMITHING_CLASSIC_ERA = {
             name = "Sulfuron Hammer",
             icon = "inv_hammer_unique_sulfuras",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18592 },
+                {
+                    type = "Item",
+                    item_id = 18592,
+                },
             },
             product = { item_id = 17193, qty = 1 },
             materials = {

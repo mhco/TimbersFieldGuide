@@ -1,22 +1,29 @@
 local _, TFG = ...
 
 -- ==========================================================================
--- ABILITY TEMPLATE
+-- RECIPE TEMPLATE (source-array schema)
 -- ==========================================================================
+-- Professions have NO top-level `type`; the kind is implicit in the id
+-- (spell_id = a thing you learn/do, item_id = a world item). `product` present
+-- => craftable Recipe. Omit empty fields. Omit `source` when learned by leveling.
 --[[
 {
-    [1] = [
+    [<skillLevel>] = {
         {
             spell_id = 3230,
             name = "Elixir of Minor Agility",
-            categories = { "Elixirs" },
+            categories = { "Elixirs" },     -- e.g. Elixirs, Potions, Gear, Profession Training
             icon = "inv_potion_91",
-            source = {
-                type = "Item", -- Trainer, Item, Quest
-                cost = 0,
-                recipe_item_ids = { 2553 },
-                quest_ids = {},
-                location = "Drop",
+            source = {                       -- ARRAY of source objects; omit if learned by leveling
+                {
+                    type = "Drop",           -- Trainer, Vendor, Drop, Quest, Discovery, Reputation
+                    item_id = 2553,          -- recipe/design/pattern item; omit if none
+                    cost = 0,                -- copper; omit if free
+                    location = "",           -- omit if none
+                    faction = "",            -- LABEL only, on neutral-parent entries; omit otherwise
+                    quest_id = 0,            -- Quest sources; omit otherwise
+                    phase = 1,               -- per-source; omit at launch
+                },
             },
             product = { item_id = 2457, qty = 1 },
             materials = {
@@ -24,10 +31,10 @@ local _, TFG = ...
                 { item_id = 765, qty = 1 },
                 { item_id = 3371, qty = 1 },
             },
-            levels = { 50, 80, 100, 120 },
-            phase = 1,
+            levels = { 50, 80, 100, 120 },   -- orange / yellow / green / gray skill-up points
+            phase = 1,                       -- entry override; usually omit (effective = min of source phases)
         },
-    ],
+    },
 }
 --]]
 
@@ -42,8 +49,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "trade_alchemy",
             source = {
-                type = "Trainer",
-                cost = 10,
+                {
+                    type = "Trainer",
+                    cost = 10,
+                },
             },
         },
         {
@@ -52,7 +61,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_56",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 2454, qty = 1 },
             materials = {
@@ -68,7 +79,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_49",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 118, qty = 1 },
             materials = {
@@ -84,7 +97,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_63",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 5997, qty = 1 },
             materials = {
@@ -101,8 +116,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_77",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 3382, qty = 1 },
             materials = {
@@ -120,8 +137,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_70",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 2455, qty = 1 },
             materials = {
@@ -139,8 +158,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_02",
             source = {
-                type = "Trainer",
-                cost = 150,
+                {
+                    type = "Trainer",
+                    cost = 150,
+                },
             },
             product = { item_id = 2456, qty = 1 },
             materials = {
@@ -158,8 +179,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "trade_alchemy",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
         },
         {
@@ -168,8 +191,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_42",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 2458, qty = 1 },
             materials = {
@@ -185,9 +210,11 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_91",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2553 },
-                location = "Drop",
+                {
+                    type = "Item",
+                    item_id = 2553,
+                    location = "Drop",
+                },
             },
             product = { item_id = 2457, qty = 1 },
             materials = {
@@ -203,8 +230,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_35",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4597 },
+                {
+                    type = "Item",
+                    item_id = 4597,
+                },
             },
             product = { item_id = 4596, qty = 1 },
             materials = {
@@ -222,8 +251,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_50",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 858, qty = 1 },
             materials = {
@@ -240,8 +271,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_95",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2555 },
+                {
+                    type = "Item",
+                    item_id = 2555,
+                },
             },
             product = { item_id = 2459, qty = 1 },
             materials = {
@@ -257,8 +290,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_24",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5640 },
+                {
+                    type = "Item",
+                    item_id = 5640,
+                },
             },
             product = { item_id = 5631, qty = 1 },
             materials = {
@@ -275,8 +310,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_drink_12",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 6370, qty = 1 },
             materials = {
@@ -293,8 +330,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_06",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 3383, qty = 1 },
             materials = {
@@ -310,8 +349,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_17",
             source = {
-                type = "Trainer",
-                cost = 450,
+                {
+                    type = "Trainer",
+                    cost = 450,
+                },
             },
             product = { item_id = 5996, qty = 1 },
             materials = {
@@ -327,8 +368,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6663 },
+                {
+                    type = "Item",
+                    item_id = 6663,
+                },
             },
             product = { item_id = 6662, qty = 1 },
             materials = {
@@ -346,8 +389,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6053 },
+                {
+                    type = "Item",
+                    item_id = 6053,
+                },
             },
             product = { item_id = 6051, qty = 1 },
             materials = {
@@ -363,8 +408,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_13",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 6372, qty = 1 },
             materials = {
@@ -382,8 +429,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3393 },
+                {
+                    type = "Item",
+                    item_id = 3393,
+                },
             },
             product = { item_id = 3384, qty = 1 },
             materials = {
@@ -399,8 +448,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_51",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 929, qty = 1 },
             materials = {
@@ -418,8 +469,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_71",
             source = {
-                type = "Trainer",
-                cost = 1500,
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
             },
             product = { item_id = 3385, qty = 1 },
             materials = {
@@ -435,8 +488,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3394 },
+                {
+                    type = "Item",
+                    item_id = 3394,
+                },
             },
             product = { item_id = 3386, qty = 1 },
             materials = {
@@ -454,8 +509,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "trade_alchemy",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
         },
         {
@@ -464,8 +521,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_78",
             source = {
-                type = "Trainer",
-                cost = 1500,
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
             },
             product = { item_id = 3388, qty = 1 },
             materials = {
@@ -483,8 +542,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_64",
             source = {
-                type = "Trainer",
-                cost = 2000,
+                {
+                    type = "Trainer",
+                    cost = 2000,
+                },
             },
             product = { item_id = 3389, qty = 1 },
             materials = {
@@ -500,8 +561,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_potion_38",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 6371, qty = 1 },
             materials = {
@@ -518,8 +581,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_44",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6054 },
+                {
+                    type = "Item",
+                    item_id = 6054,
+                },
             },
             product = { item_id = 6048, qty = 1 },
             materials = {
@@ -537,8 +602,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_92",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3396 },
+                {
+                    type = "Item",
+                    item_id = 3396,
+                },
             },
             product = { item_id = 3390, qty = 1 },
             materials = {
@@ -554,8 +621,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_33",
             source = {
-                type = "Trainer",
-                cost = 3000,
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
             },
             product = { item_id = 6373, qty = 1 },
             materials = {
@@ -573,8 +642,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_57",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6211 },
+                {
+                    type = "Item",
+                    item_id = 6211,
+                },
             },
             product = { item_id = 3391, qty = 1 },
             materials = {
@@ -590,8 +661,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5642 },
+                {
+                    type = "Item",
+                    item_id = 5642,
+                },
             },
             product = { item_id = 5634, qty = 1 },
             materials = {
@@ -609,8 +682,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_52",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 1710, qty = 1 },
             materials = {
@@ -628,8 +703,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_72",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 3827, qty = 1 },
             materials = {
@@ -647,8 +724,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6055 },
+                {
+                    type = "Item",
+                    item_id = 6055,
+                },
             },
             product = { item_id = 6049, qty = 1 },
             materials = {
@@ -664,8 +743,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_potion_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6068 },
+                {
+                    type = "Item",
+                    item_id = 6068,
+                },
             },
             product = { item_id = 3824, qty = 1 },
             materials = {
@@ -681,8 +762,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_18",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 3823, qty = 1 },
             materials = {
@@ -700,9 +783,11 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_43",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3830 },
-                cost = 6000,
+                {
+                    type = "Item",
+                    item_id = 3830,
+                    cost = 6000,
+                },
             },
             product = { item_id = 3825, qty = 1 },
             materials = {
@@ -718,8 +803,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_21",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5643 },
+                {
+                    type = "Item",
+                    item_id = 5643,
+                },
             },
             product = { item_id = 5633, qty = 1 },
             materials = {
@@ -737,8 +824,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_79",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3831 },
+                {
+                    type = "Item",
+                    item_id = 3831,
+                },
             },
             product = { item_id = 3826, qty = 1 },
             materials = {
@@ -756,8 +845,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_93",
             source = {
-                type = "Trainer",
-                cost = 6500,
+                {
+                    type = "Trainer",
+                    cost = 6500,
+                },
             },
             product = { item_id = 8949, qty = 1 },
             materials = {
@@ -775,8 +866,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6057 },
+                {
+                    type = "Item",
+                    item_id = 6057,
+                },
             },
             product = { item_id = 6052, qty = 1 },
             materials = {
@@ -792,8 +885,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17709 },
+                {
+                    type = "Item",
+                    item_id = 17709,
+                },
             },
             product = { item_id = 17708, qty = 1 },
             materials = {
@@ -809,8 +904,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6056 },
+                {
+                    type = "Item",
+                    item_id = 6056,
+                },
             },
             product = { item_id = 6050, qty = 1 },
             materials = {
@@ -828,8 +925,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3832 },
+                {
+                    type = "Item",
+                    item_id = 3832,
+                },
             },
             product = { item_id = 3828, qty = 1 },
             materials = {
@@ -845,8 +944,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_65",
             source = {
-                type = "Trainer",
-                cost = 7500,
+                {
+                    type = "Trainer",
+                    cost = 7500,
+                },
             },
             product = { item_id = 8951, qty = 1 },
             materials = {
@@ -864,8 +965,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "trade_alchemy",
             source = {
-                type = "Trainer",
-                cost = 50000,
+                {
+                    type = "Trainer",
+                    cost = 50000,
+                },
             },
         },
         {
@@ -874,8 +977,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_potion_20",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14634 },
+                {
+                    type = "Item",
+                    item_id = 14634,
+                },
             },
             product = { item_id = 3829, qty = 1 },
             materials = {
@@ -891,8 +996,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_36",
             source = {
-                type = "Trainer",
-                cost = 8000,
+                {
+                    type = "Trainer",
+                    cost = 8000,
+                },
             },
             product = { item_id = 10592, qty = 1 },
             materials = {
@@ -910,8 +1017,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_73",
             source = {
-                type = "Trainer",
-                cost = 9000,
+                {
+                    type = "Trainer",
+                    cost = 9000,
+                },
             },
             product = { item_id = 6149, qty = 1 },
             materials = {
@@ -927,8 +1036,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_potion_11",
             source = {
-                type = "Trainer",
-                cost = 8000,
+                {
+                    type = "Trainer",
+                    cost = 8000,
+                },
             },
             product = { item_id = 8956, qty = 1 },
             materials = {
@@ -946,8 +1057,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9293 },
+                {
+                    type = "Item",
+                    item_id = 9293,
+                },
             },
             product = { item_id = 9036, qty = 1 },
             materials = {
@@ -963,8 +1076,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_cask_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10644 },
+                {
+                    type = "Item",
+                    item_id = 10644,
+                },
             },
             product = { item_id = 9061, qty = 1 },
             materials = {
@@ -982,8 +1097,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_67",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4624 },
+                {
+                    type = "Item",
+                    item_id = 4624,
+                },
             },
             product = { item_id = 4623, qty = 1 },
             materials = {
@@ -999,8 +1116,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_53",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 3928, qty = 1 },
             materials = {
@@ -1016,8 +1135,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_05",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 18294, qty = 1 },
             materials = {
@@ -1033,7 +1154,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_01",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 9030, qty = 1 },
             materials = {
@@ -1051,8 +1174,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_34",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9294 },
+                {
+                    type = "Item",
+                    item_id = 9294,
+                },
             },
             product = { item_id = 9144, qty = 1 },
             materials = {
@@ -1068,8 +1193,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Stones" },
             icon = "inv_misc_orb_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9303 },
+                {
+                    type = "Item",
+                    item_id = 9303,
+                },
             },
             product = { item_id = 9149, qty = 1 },
             materials = {
@@ -1086,8 +1213,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "inv_ingot_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9304 },
+                {
+                    type = "Item",
+                    item_id = 9304,
+                },
             },
             product = { item_id = 3577, qty = 1 },
             materials = {
@@ -1101,8 +1230,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "inv_ingot_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9305 },
+                {
+                    type = "Item",
+                    item_id = 9305,
+                },
             },
             product = { item_id = 6037, qty = 1 },
             materials = {
@@ -1118,8 +1249,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_53",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 9154, qty = 1 },
             materials = {
@@ -1134,8 +1267,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_83",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 12190, qty = 1 },
             materials = {
@@ -1152,8 +1287,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_30",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 9155, qty = 1 },
             materials = {
@@ -1169,8 +1306,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_25",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9295 },
+                {
+                    type = "Item",
+                    item_id = 9295,
+                },
             },
             product = { item_id = 9172, qty = 1 },
             materials = {
@@ -1186,8 +1325,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_10",
             source = {
-                type = "Trainer",
-                cost = 12000,
+                {
+                    type = "Trainer",
+                    cost = 12000,
+                },
             },
             product = { item_id = 9179, qty = 1 },
             materials = {
@@ -1205,8 +1346,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_28",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9296 },
+                {
+                    type = "Item",
+                    item_id = 9296,
+                },
             },
             product = { item_id = 9088, qty = 1 },
             materials = {
@@ -1222,8 +1365,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_94",
             source = {
-                type = "Trainer",
-                cost = 12000,
+                {
+                    type = "Trainer",
+                    cost = 12000,
+                },
             },
             product = { item_id = 9187, qty = 1 },
             materials = {
@@ -1239,8 +1384,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9297 },
+                {
+                    type = "Item",
+                    item_id = 9297,
+                },
             },
             product = { item_id = 9197, qty = 1 },
             materials = {
@@ -1257,8 +1404,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_61",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9298 },
+                {
+                    type = "Item",
+                    item_id = 9298,
+                },
             },
             product = { item_id = 9206, qty = 1 },
             materials = {
@@ -1274,8 +1423,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_poison_mindnumbing",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9302 },
+                {
+                    type = "Item",
+                    item_id = 9302,
+                },
             },
             product = { item_id = 9210, qty = 1 },
             materials = {
@@ -1293,8 +1444,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_62",
             source = {
-                type = "Item",
-                recipe_item_ids = { 3395 },
+                {
+                    type = "Item",
+                    item_id = 3395,
+                },
             },
             product = { item_id = 3387, qty = 1 },
             materials = {
@@ -1310,8 +1463,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_46",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9301 },
+                {
+                    type = "Item",
+                    item_id = 9301,
+                },
             },
             product = { item_id = 9264, qty = 1 },
             materials = {
@@ -1326,8 +1481,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_27",
             source = {
-                type = "Item",
-                recipe_item_ids = { 9300 },
+                {
+                    type = "Item",
+                    item_id = 9300,
+                },
             },
             product = { item_id = 9224, qty = 1 },
             materials = {
@@ -1343,8 +1500,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_53",
             source = {
-                type = "Trainer",
-                cost = 14000,
+                {
+                    type = "Trainer",
+                    cost = 14000,
+                },
             },
             product = { item_id = 9233, qty = 1 },
             materials = {
@@ -1359,8 +1518,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_60",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21547 },
+                {
+                    type = "Item",
+                    item_id = 21547,
+                },
             },
             product = { item_id = 21546, qty = 1 },
             materials = {
@@ -1376,8 +1537,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_potion_68",
             source = {
-                type = "Trainer",
-                cost = 15000,
+                {
+                    type = "Trainer",
+                    cost = 15000,
+                },
             },
             product = { item_id = 13423, qty = 1 },
             materials = {
@@ -1394,9 +1557,11 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_41",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13476 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 13476,
+                    cost = 15000,
+                },
             },
             product = { item_id = 13442, qty = 1 },
             materials = {
@@ -1413,9 +1578,11 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_74",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13477 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 13477,
+                    cost = 15000,
+                },
             },
             product = { item_id = 13443, qty = 1 },
             materials = {
@@ -1433,8 +1600,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_66",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13478 },
+                {
+                    type = "Item",
+                    item_id = 13478,
+                },
             },
             product = { item_id = 13445, qty = 1 },
             materials = {
@@ -1452,9 +1621,11 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_29",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13479 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 13479,
+                    cost = 15000,
+                },
             },
             product = { item_id = 13447, qty = 1 },
             materials = {
@@ -1472,8 +1643,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "trade_alchemy",
             source = {
-                type = "Trainer",
-                cost = 100000,
+                {
+                    type = "Trainer",
+                    cost = 100000,
+                },
             },
         },
         {
@@ -1482,9 +1655,11 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_54",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13480 },
-                cost = 20000,
+                {
+                    type = "Item",
+                    item_id = 13480,
+                    cost = 20000,
+                },
             },
             product = { item_id = 13446, qty = 1 },
             materials = {
@@ -1500,9 +1675,11 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_59",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13481 },
-                cost = 20000,
+                {
+                    type = "Item",
+                    item_id = 13481,
+                    cost = 20000,
+                },
             },
             product = { item_id = 13453, qty = 1 },
             materials = {
@@ -1518,8 +1695,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_45",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20011 },
+                {
+                    type = "Item",
+                    item_id = 20011,
+                },
             },
             product = { item_id = 20007, qty = 1 },
             materials = {
@@ -1535,8 +1714,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_83",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20012 },
+                {
+                    type = "Item",
+                    item_id = 20012,
+                },
             },
             product = { item_id = 20002, qty = 1 },
             materials = {
@@ -1552,8 +1733,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "inv_misc_stonetablet_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 12958 },
+                {
+                    type = "Item",
+                    item_id = 12958,
+                },
             },
             product = { item_id = 12360, qty = 1 },
             materials = {
@@ -1568,8 +1751,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "spell_fire_volcano",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13482 },
+                {
+                    type = "Item",
+                    item_id = 13482,
+                },
             },
             product = { item_id = 7078, qty = 1 },
             materials = {
@@ -1583,8 +1768,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "spell_nature_strengthofearthtotem02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13483 },
+                {
+                    type = "Item",
+                    item_id = 13483,
+                },
             },
             product = { item_id = 7076, qty = 1 },
             materials = {
@@ -1598,8 +1785,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "spell_nature_acid_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13484 },
+                {
+                    type = "Item",
+                    item_id = 13484,
+                },
             },
             product = { item_id = 7080, qty = 1 },
             materials = {
@@ -1613,8 +1802,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "spell_nature_earthbind",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13485 },
+                {
+                    type = "Item",
+                    item_id = 13485,
+                },
             },
             product = { item_id = 7082, qty = 1 },
             materials = {
@@ -1628,8 +1819,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "spell_nature_acid_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13486 },
+                {
+                    type = "Item",
+                    item_id = 13486,
+                },
             },
             product = { item_id = 7080, qty = 1 },
             materials = {
@@ -1643,8 +1836,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "spell_shadow_shadetruesight",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13487 },
+                {
+                    type = "Item",
+                    item_id = 13487,
+                },
             },
             product = { item_id = 12808, qty = 1 },
             materials = {
@@ -1658,8 +1853,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "spell_nature_strengthofearthtotem02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13488 },
+                {
+                    type = "Item",
+                    item_id = 13488,
+                },
             },
             product = { item_id = 7076, qty = 1 },
             materials = {
@@ -1673,8 +1870,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "spell_nature_abolishmagic",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13489 },
+                {
+                    type = "Item",
+                    item_id = 13489,
+                },
             },
             product = { item_id = 12803, qty = 1 },
             materials = {
@@ -1690,8 +1889,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_69",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13490 },
+                {
+                    type = "Item",
+                    item_id = 13490,
+                },
             },
             product = { item_id = 13455, qty = 1 },
             materials = {
@@ -1707,8 +1908,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_32",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13491 },
+                {
+                    type = "Item",
+                    item_id = 13491,
+                },
             },
             product = { item_id = 13452, qty = 1 },
             materials = {
@@ -1726,9 +1929,11 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_31",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13492 },
-                cost = 20000,
+                {
+                    type = "Item",
+                    item_id = 13492,
+                    cost = 20000,
+                },
             },
             product = { item_id = 13462, qty = 1 },
             materials = {
@@ -1744,9 +1949,11 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_25",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13493 },
-                cost = 20000,
+                {
+                    type = "Item",
+                    item_id = 13493,
+                    cost = 20000,
+                },
             },
             product = { item_id = 13454, qty = 1 },
             materials = {
@@ -1762,8 +1969,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20013 },
+                {
+                    type = "Item",
+                    item_id = 20013,
+                },
             },
             product = { item_id = 20008, qty = 1 },
             materials = {
@@ -1782,8 +1991,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_24",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13494 },
+                {
+                    type = "Item",
+                    item_id = 13494,
+                },
             },
             product = { item_id = 13457, qty = 1 },
             materials = {
@@ -1799,8 +2010,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_20",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13495 },
+                {
+                    type = "Item",
+                    item_id = 13495,
+                },
             },
             product = { item_id = 13456, qty = 1 },
             materials = {
@@ -1816,8 +2029,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_22",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13496 },
+                {
+                    type = "Item",
+                    item_id = 13496,
+                },
             },
             product = { item_id = 13458, qty = 1 },
             materials = {
@@ -1833,8 +2048,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_83",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13497 },
+                {
+                    type = "Item",
+                    item_id = 13497,
+                },
             },
             product = { item_id = 13461, qty = 1 },
             materials = {
@@ -1850,8 +2067,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13499 },
+                {
+                    type = "Item",
+                    item_id = 13499,
+                },
             },
             product = { item_id = 13459, qty = 1 },
             materials = {
@@ -1867,8 +2086,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_80",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20014 },
+                {
+                    type = "Item",
+                    item_id = 20014,
+                },
             },
             product = { item_id = 20004, qty = 1 },
             materials = {
@@ -1886,8 +2107,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_76",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13501 },
+                {
+                    type = "Item",
+                    item_id = 13501,
+                },
             },
             product = { item_id = 13444, qty = 1 },
             materials = {
@@ -1905,8 +2128,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Stones" },
             icon = "spell_holy_pureofheart",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13517 },
+                {
+                    type = "Item",
+                    item_id = 13517,
+                },
             },
             product = { item_id = 13503, qty = 1 },
             materials = {
@@ -1924,8 +2149,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Flasks" },
             icon = "inv_potion_26",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13518 },
+                {
+                    type = "Item",
+                    item_id = 13518,
+                },
             },
             product = { item_id = 13506, qty = 1 },
             materials = {
@@ -1942,8 +2169,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Flasks" },
             icon = "inv_potion_62",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13519 },
+                {
+                    type = "Item",
+                    item_id = 13519,
+                },
             },
             product = { item_id = 13510, qty = 1 },
             materials = {
@@ -1960,8 +2189,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Flasks" },
             icon = "inv_potion_97",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13520 },
+                {
+                    type = "Item",
+                    item_id = 13520,
+                },
             },
             product = { item_id = 13511, qty = 1 },
             materials = {
@@ -1978,8 +2209,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Flasks" },
             icon = "inv_potion_41",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13521 },
+                {
+                    type = "Item",
+                    item_id = 13521,
+                },
             },
             product = { item_id = 13512, qty = 1 },
             materials = {
@@ -1996,8 +2229,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Flasks" },
             icon = "inv_potion_48",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13522 },
+                {
+                    type = "Item",
+                    item_id = 13522,
+                },
             },
             product = { item_id = 13513, qty = 1 },
             materials = {
@@ -2014,8 +2249,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_40",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 28100, qty = 1 },
             materials = {
@@ -2031,8 +2268,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_58",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 28102, qty = 1 },
             materials = {
@@ -2048,8 +2287,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_96",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 28103, qty = 1 },
             materials = {
@@ -2065,8 +2306,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_47",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18257 },
+                {
+                    type = "Item",
+                    item_id = 18257,
+                },
             },
             product = { item_id = 18253, qty = 1 },
             materials = {
@@ -2083,8 +2326,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "spell_fire_fire",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20761 },
+                {
+                    type = "Item",
+                    item_id = 20761,
+                },
             },
             product = { item_id = 7068, qty = 3 },
             materials = {
@@ -2100,8 +2345,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_150",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22900 },
+                {
+                    type = "Item",
+                    item_id = 22900,
+                },
             },
             product = { item_id = 22823, qty = 1 },
             materials = {
@@ -2117,8 +2364,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_147",
             source = {
-                type = "Trainer",
-                cost = 25000,
+                {
+                    type = "Trainer",
+                    cost = 25000,
+                },
             },
             product = { item_id = 22824, qty = 1 },
             materials = {
@@ -2136,8 +2385,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_142",
             source = {
-                type = "Trainer",
-                cost = 25000,
+                {
+                    type = "Trainer",
+                    cost = 25000,
+                },
             },
             product = { item_id = 22825, qty = 1 },
             materials = {
@@ -2153,8 +2404,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_75",
             source = {
-                type = "Trainer",
-                cost = 25000,
+                {
+                    type = "Trainer",
+                    cost = 25000,
+                },
             },
             product = { item_id = 28101, qty = 1 },
             materials = {
@@ -2170,8 +2423,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_158",
             source = {
-                type = "Trainer",
-                cost = 25000,
+                {
+                    type = "Trainer",
+                    cost = 25000,
+                },
             },
             product = { item_id = 32062, qty = 1 },
             materials = {
@@ -2189,8 +2444,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_110",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22901 },
+                {
+                    type = "Item",
+                    item_id = 22901,
+                },
             },
             product = { item_id = 22826, qty = 1 },
             materials = {
@@ -2206,8 +2463,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_111",
             source = {
-                type = "Trainer",
-                cost = 30000,
+                {
+                    type = "Trainer",
+                    cost = 30000,
+                },
             },
             product = { item_id = 28104, qty = 1 },
             materials = {
@@ -2223,7 +2482,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_poison_mindnumbing",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 19931, qty = 3 },
             materials = {
@@ -2242,8 +2503,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_148",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22902 },
+                {
+                    type = "Item",
+                    item_id = 22902,
+                },
             },
             product = { item_id = 22827, qty = 1 },
             materials = {
@@ -2259,8 +2522,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_109",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22903 },
+                {
+                    type = "Item",
+                    item_id = 22903,
+                },
             },
             product = { item_id = 22828, qty = 1 },
             materials = {
@@ -2275,8 +2540,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_154",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32070 },
+                {
+                    type = "Item",
+                    item_id = 32070,
+                },
             },
             product = { item_id = 32063, qty = 1 },
             materials = {
@@ -2292,8 +2559,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_155",
             source = {
-                type = "Trainer",
-                cost = 30000,
+                {
+                    type = "Trainer",
+                    cost = 30000,
+                },
             },
             product = { item_id = 32067, qty = 1 },
             materials = {
@@ -2311,8 +2580,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_131",
             source = {
-                type = "Trainer",
-                cost = 50000,
+                {
+                    type = "Trainer",
+                    cost = 50000,
+                },
             },
             product = { item_id = 22829, qty = 1 },
             materials = {
@@ -2328,8 +2599,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_135",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22904 },
+                {
+                    type = "Item",
+                    item_id = 22904,
+                },
             },
             product = { item_id = 22830, qty = 1 },
             materials = {
@@ -2345,8 +2618,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Stones" },
             icon = "inv_misc_gem_lionseye_01",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 31080, qty = 1 },
             materials = {
@@ -2362,9 +2637,11 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_28",
             source = {
-                type = "Item",
-                recipe_item_ids = { 34481 },
-                cost = 35000,
+                {
+                    type = "Item",
+                    item_id = 34481,
+                    cost = 35000,
+                },
             },
             product = { item_id = 34440, qty = 1 },
             materials = {
@@ -2410,8 +2687,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_159",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32071 },
+                {
+                    type = "Item",
+                    item_id = 32071,
+                },
             },
             product = { item_id = 32068, qty = 1 },
             materials = {
@@ -2429,8 +2708,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_144",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22906 },
+                {
+                    type = "Item",
+                    item_id = 22906,
+                },
             },
             product = { item_id = 22871, qty = 1 },
             materials = {
@@ -2446,8 +2727,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_152",
             source = {
-                type = "Item",
-                recipe_item_ids = { 31680 },
+                {
+                    type = "Item",
+                    item_id = 31680,
+                },
             },
             product = { item_id = 31679, qty = 1 },
             materials = {
@@ -2465,8 +2748,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_137",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22907 },
+                {
+                    type = "Item",
+                    item_id = 22907,
+                },
             },
             product = { item_id = 22832, qty = 1 },
             materials = {
@@ -2484,8 +2769,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_146",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22908 },
+                {
+                    type = "Item",
+                    item_id = 22908,
+                },
             },
             product = { item_id = 22833, qty = 1 },
             materials = {
@@ -2501,8 +2788,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_122",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22909 },
+                {
+                    type = "Item",
+                    item_id = 22909,
+                },
             },
             product = { item_id = 22834, qty = 1 },
             materials = {
@@ -2518,8 +2807,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_140",
             source = {
-                type = "Item",
-                recipe_item_ids = { 31681 },
+                {
+                    type = "Item",
+                    item_id = 31681,
+                },
             },
             product = { item_id = 31676, qty = 1 },
             materials = {
@@ -2537,8 +2828,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_145",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22910 },
+                {
+                    type = "Item",
+                    item_id = 22910,
+                },
             },
             product = { item_id = 22835, qty = 1 },
             materials = {
@@ -2554,8 +2847,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_139",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22911 },
+                {
+                    type = "Item",
+                    item_id = 22911,
+                },
             },
             product = { item_id = 22836, qty = 1 },
             materials = {
@@ -2571,8 +2866,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_106",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22912 },
+                {
+                    type = "Item",
+                    item_id = 22912,
+                },
             },
             product = { item_id = 22837, qty = 1 },
             materials = {
@@ -2588,8 +2885,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_108",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22913 },
+                {
+                    type = "Item",
+                    item_id = 22913,
+                },
             },
             product = { item_id = 22838, qty = 1 },
             materials = {
@@ -2605,8 +2904,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_107",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22914 },
+                {
+                    type = "Item",
+                    item_id = 22914,
+                },
             },
             product = { item_id = 22839, qty = 1 },
             materials = {
@@ -2622,8 +2923,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "inv_elemental_primal_fire",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22915 },
+                {
+                    type = "Item",
+                    item_id = 22915,
+                },
             },
             product = { item_id = 21884, qty = 1 },
             materials = {
@@ -2637,8 +2940,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "inv_elemental_primal_water",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22916 },
+                {
+                    type = "Item",
+                    item_id = 22916,
+                },
             },
             product = { item_id = 21885, qty = 1 },
             materials = {
@@ -2652,8 +2957,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "inv_elemental_primal_earth",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22917 },
+                {
+                    type = "Item",
+                    item_id = 22917,
+                },
             },
             product = { item_id = 22452, qty = 1 },
             materials = {
@@ -2667,8 +2974,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "inv_elemental_primal_air",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22918 },
+                {
+                    type = "Item",
+                    item_id = 22918,
+                },
             },
             product = { item_id = 22451, qty = 1 },
             materials = {
@@ -2682,8 +2991,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "spell_nature_lightningoverload",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23574 },
+                {
+                    type = "Item",
+                    item_id = 23574,
+                },
             },
             product = { item_id = 23571, qty = 1 },
             materials = {
@@ -2701,8 +3012,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "inv_misc_gem_diamond_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25869 },
+                {
+                    type = "Item",
+                    item_id = 25869,
+                },
             },
             product = { item_id = 25867, qty = 1 },
             materials = {
@@ -2720,8 +3033,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "inv_misc_gem_diamond_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25870, 29232 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 25870, 29232 },
+                },
             },
             product = { item_id = 25868, qty = 1 },
             materials = {
@@ -2741,8 +3056,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_151",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22919 },
+                {
+                    type = "Item",
+                    item_id = 22919,
+                },
             },
             product = { item_id = 22840, qty = 1 },
             materials = {
@@ -2760,8 +3077,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_124",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22920 },
+                {
+                    type = "Item",
+                    item_id = 22920,
+                },
             },
             product = { item_id = 22841, qty = 5 },
             materials = {
@@ -2777,8 +3096,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_126",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22921 },
+                {
+                    type = "Item",
+                    item_id = 22921,
+                },
             },
             product = { item_id = 22842, qty = 5 },
             materials = {
@@ -2794,8 +3115,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_127",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22922 },
+                {
+                    type = "Item",
+                    item_id = 22922,
+                },
             },
             product = { item_id = 22844, qty = 5 },
             materials = {
@@ -2811,8 +3134,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_128",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22923 },
+                {
+                    type = "Item",
+                    item_id = 22923,
+                },
             },
             product = { item_id = 22845, qty = 5 },
             materials = {
@@ -2828,8 +3153,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_123",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22924 },
+                {
+                    type = "Item",
+                    item_id = 22924,
+                },
             },
             product = { item_id = 22846, qty = 5 },
             materials = {
@@ -2845,8 +3172,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_125",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22925 },
+                {
+                    type = "Item",
+                    item_id = 22925,
+                },
             },
             product = { item_id = 22847, qty = 5 },
             materials = {
@@ -2862,8 +3191,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_138",
             source = {
-                type = "Item",
-                recipe_item_ids = { 31682 },
+                {
+                    type = "Item",
+                    item_id = 31682,
+                },
             },
             product = { item_id = 31677, qty = 1 },
             materials = {
@@ -2881,8 +3212,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_136",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22926 },
+                {
+                    type = "Item",
+                    item_id = 22926,
+                },
             },
             product = { item_id = 22848, qty = 1 },
             materials = {
@@ -2898,8 +3231,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_133",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22927 },
+                {
+                    type = "Item",
+                    item_id = 22927,
+                },
             },
             product = { item_id = 22849, qty = 1 },
             materials = {
@@ -2917,9 +3252,11 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Flasks" },
             icon = "inv_potion_48",
             source = {
-                type = "Item",
-                recipe_item_ids = { 33209 },
-                location = "The Violet Eye - Honored",
+                {
+                    type = "Item",
+                    item_id = 33209,
+                    location = "The Violet Eye - Honored",
+                },
             },
             product = { item_id = 33208, qty = 1 },
             materials = {
@@ -2936,8 +3273,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Stones" },
             icon = "spell_nature_healingway",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35752 },
+                {
+                    type = "Item",
+                    item_id = 35752,
+                },
             },
             product = { item_id = 35748, qty = 1 },
             materials = {
@@ -2953,8 +3292,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Stones" },
             icon = "spell_nature_healingway",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35753 },
+                {
+                    type = "Item",
+                    item_id = 35753,
+                },
             },
             product = { item_id = 35749, qty = 1 },
             materials = {
@@ -2970,8 +3311,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Stones" },
             icon = "spell_nature_healingway",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35754 },
+                {
+                    type = "Item",
+                    item_id = 35754,
+                },
             },
             product = { item_id = 35750, qty = 1 },
             materials = {
@@ -2987,8 +3330,10 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Stones" },
             icon = "spell_nature_healingway",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35755 },
+                {
+                    type = "Item",
+                    item_id = 35755,
+                },
             },
             product = { item_id = 35751, qty = 1 },
             materials = {
@@ -3006,7 +3351,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Potions" },
             icon = "inv_potion_134",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 22850, qty = 1 },
             materials = {
@@ -3023,7 +3370,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "inv_elemental_primal_water",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 21885, qty = 1 },
             materials = {
@@ -3037,7 +3386,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "inv_elemental_primal_shadow",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 22456, qty = 1 },
             materials = {
@@ -3051,7 +3402,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "inv_elemental_primal_fire",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 21884, qty = 1 },
             materials = {
@@ -3065,7 +3418,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "inv_elemental_primal_mana",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 22457, qty = 1 },
             materials = {
@@ -3079,7 +3434,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "inv_elemental_primal_earth",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 22452, qty = 1 },
             materials = {
@@ -3093,7 +3450,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Transmutations" },
             icon = "inv_elemental_primal_life",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 21886, qty = 1 },
             materials = {
@@ -3107,7 +3466,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Flasks" },
             icon = "inv_potion_119",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 22851, qty = 1 },
             materials = {
@@ -3124,7 +3485,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Flasks" },
             icon = "inv_potion_118",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 22853, qty = 1 },
             materials = {
@@ -3141,7 +3504,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Flasks" },
             icon = "inv_potion_117",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 22854, qty = 1 },
             materials = {
@@ -3158,7 +3523,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Flasks" },
             icon = "inv_potion_116",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 22861, qty = 1 },
             materials = {
@@ -3175,7 +3542,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Flasks" },
             icon = "inv_potion_115",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 22866, qty = 1 },
             materials = {
@@ -3192,7 +3561,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Cauldrons" },
             icon = "inv_misc_cauldron_arcane",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 32839, qty = 1 },
             materials = {
@@ -3208,7 +3579,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Cauldrons" },
             icon = "inv_misc_cauldron_fire",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 32849, qty = 1 },
             materials = {
@@ -3224,7 +3597,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Cauldrons" },
             icon = "inv_misc_cauldron_frost",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 32850, qty = 1 },
             materials = {
@@ -3240,7 +3615,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Cauldrons" },
             icon = "inv_misc_cauldron_nature",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 32851, qty = 1 },
             materials = {
@@ -3256,7 +3633,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Cauldrons" },
             icon = "inv_misc_cauldron_shadow",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 32852, qty = 1 },
             materials = {

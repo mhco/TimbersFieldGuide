@@ -7,7 +7,9 @@ TFG.SKINNING_CLASSIC_ERA = {
             name = "Skinning",
             icon = "inv_misc_pelt_wolf_01",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -17,7 +19,9 @@ TFG.SKINNING_CLASSIC_ERA = {
             name = "Skinning",
             icon = "inv_misc_pelt_wolf_01",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -27,7 +31,9 @@ TFG.SKINNING_CLASSIC_ERA = {
             name = "Skinning",
             icon = "inv_misc_pelt_wolf_01",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -37,7 +43,9 @@ TFG.SKINNING_CLASSIC_ERA = {
             name = "Skinning",
             icon = "inv_misc_pelt_wolf_01",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },

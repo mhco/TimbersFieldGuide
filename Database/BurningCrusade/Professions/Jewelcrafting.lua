@@ -8,7 +8,9 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "inv_misc_gem_01",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -19,8 +21,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_12",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 21932, qty = 1 },
             materials = {
@@ -37,7 +41,9 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Other" },
             icon = "inv_misc_gem_bloodgem_01",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -46,8 +52,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_01",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 25438, qty = 1 },
             materials = {
@@ -62,8 +70,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_21",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 25439, qty = 1 },
             materials = {
@@ -78,7 +88,9 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Materials" },
             icon = "inv_jewelcrafting_delicatecopperwire",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 20816, qty = 1 },
             materials = {
@@ -94,8 +106,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_23",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 20821, qty = 1 },
             materials = {
@@ -110,8 +124,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_02",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 21934, qty = 1 },
             materials = {
@@ -127,7 +143,9 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_13",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 20906, qty = 1 },
             materials = {
@@ -141,7 +159,9 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_12",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 21931, qty = 1 },
             materials = {
@@ -156,7 +176,9 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Statue" },
             icon = "inv_misc_statue_08",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 25498, qty = 1 },
             materials = {
@@ -172,7 +194,9 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "inv_misc_gem_02",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -181,8 +205,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_01",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 20818, qty = 1 },
             materials = {
@@ -196,8 +222,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_14",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 20907, qty = 1 },
             materials = {
@@ -211,8 +239,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Necklace" },
             icon = "inv_belt_19",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 21933, qty = 1 },
             materials = {
@@ -228,8 +258,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Materials" },
             icon = "inv_jewelcrafting_bronzesetting",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 20817, qty = 1 },
             materials = {
@@ -243,8 +275,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Statue" },
             icon = "inv_misc_statue_05",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 25880, qty = 1 },
             materials = {
@@ -260,8 +294,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_28",
             source = {
-                type = "Trainer",
-                cost = 400,
+                {
+                    type = "Trainer",
+                    cost = 400,
+                },
             },
             product = { item_id = 20820, qty = 1 },
             materials = {
@@ -279,8 +315,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_34",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 30804, qty = 1 },
             materials = {
@@ -300,8 +338,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_16",
             source = {
-                type = "Trainer",
-                cost = 400,
+                {
+                    type = "Trainer",
+                    cost = 400,
+                },
             },
             product = { item_id = 20823, qty = 1 },
             materials = {
@@ -319,8 +359,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_01",
             source = {
-                type = "Trainer",
-                cost = 600,
+                {
+                    type = "Trainer",
+                    cost = 600,
+                },
             },
             product = { item_id = 30419, qty = 1 },
             materials = {
@@ -338,8 +380,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_05",
             source = {
-                type = "Trainer",
-                cost = 600,
+                {
+                    type = "Trainer",
+                    cost = 600,
+                },
             },
             product = { item_id = 20827, qty = 1 },
             materials = {
@@ -353,8 +397,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_29naxxramas",
             source = {
-                type = "Trainer",
-                cost = 650,
+                {
+                    type = "Trainer",
+                    cost = 650,
+                },
             },
             product = { item_id = 31154, qty = 1 },
             materials = {
@@ -372,8 +418,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_26",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 20826, qty = 1 },
             materials = {
@@ -392,8 +440,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_34",
             source = {
-                type = "Trainer",
-                cost = 800,
+                {
+                    type = "Trainer",
+                    cost = 800,
+                },
             },
             product = { item_id = 20828, qty = 1 },
             materials = {
@@ -410,8 +460,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_11",
             source = {
-                type = "Trainer",
-                cost = 800,
+                {
+                    type = "Trainer",
+                    cost = 800,
+                },
             },
             product = { item_id = 30420, qty = 1 },
             materials = {
@@ -429,8 +481,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20854 },
+                {
+                    type = "Item",
+                    item_id = 20854,
+                },
             },
             product = { item_id = 20830, qty = 1 },
             materials = {
@@ -445,8 +499,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_22",
             source = {
-                type = "Trainer",
-                cost = 600,
+                {
+                    type = "Trainer",
+                    cost = 600,
+                },
             },
             product = { item_id = 20909, qty = 1 },
             materials = {
@@ -462,8 +518,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Statue" },
             icon = "inv_misc_statue_09",
             source = {
-                type = "Trainer",
-                cost = 600,
+                {
+                    type = "Trainer",
+                    cost = 600,
+                },
             },
             product = { item_id = 25881, qty = 1 },
             materials = {
@@ -479,8 +537,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Head" },
             icon = "inv_crown_15",
             source = {
-                type = "Trainer",
-                cost = 1500,
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
             },
             product = { item_id = 20832, qty = 1 },
             materials = {
@@ -498,8 +558,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_shield_21",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20970 },
+                {
+                    type = "Item",
+                    item_id = 20970,
+                },
             },
             product = { item_id = 20950, qty = 1 },
             materials = {
@@ -516,8 +578,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20855 },
+                {
+                    type = "Item",
+                    item_id = 20855,
+                },
             },
             product = { item_id = 20833, qty = 1 },
             materials = {
@@ -533,8 +597,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Weapon" },
             icon = "inv_gauntlets_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20971 },
+                {
+                    type = "Item",
+                    item_id = 20971,
+                },
             },
             product = { item_id = 20954, qty = 1 },
             materials = {
@@ -549,7 +615,9 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "inv_misc_gem_02",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -560,8 +628,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_40",
             source = {
-                type = "Trainer",
-                cost = 1200,
+                {
+                    type = "Trainer",
+                    cost = 1200,
+                },
             },
             product = { item_id = 20955, qty = 1 },
             materials = {
@@ -579,8 +649,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20856 },
+                {
+                    type = "Item",
+                    item_id = 20856,
+                },
             },
             product = { item_id = 20831, qty = 1 },
             materials = {
@@ -596,8 +668,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_20",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20973 },
+                {
+                    type = "Item",
+                    item_id = 20973,
+                },
             },
             product = { item_id = 20958, qty = 1 },
             materials = {
@@ -612,8 +686,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Materials" },
             icon = "inv_jewelcrafting_mithrilfiligree",
             source = {
-                type = "Trainer",
-                cost = 1500,
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
             },
             product = { item_id = 20963, qty = 1 },
             materials = {
@@ -629,8 +705,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20974 },
+                {
+                    type = "Item",
+                    item_id = 20974,
+                },
             },
             product = { item_id = 20966, qty = 1 },
             materials = {
@@ -647,8 +725,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20975 },
+                {
+                    type = "Item",
+                    item_id = 20975,
+                },
             },
             product = { item_id = 20959, qty = 1 },
             materials = {
@@ -663,8 +743,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_35",
             source = {
-                type = "Trainer",
-                cost = 2000,
+                {
+                    type = "Trainer",
+                    cost = 2000,
+                },
             },
             product = { item_id = 20960, qty = 1 },
             materials = {
@@ -681,8 +763,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Statue" },
             icon = "inv_misc_statue_06",
             source = {
-                type = "Trainer",
-                cost = 2000,
+                {
+                    type = "Trainer",
+                    cost = 2000,
+                },
             },
             product = { item_id = 25882, qty = 1 },
             materials = {
@@ -698,8 +782,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_29",
             source = {
-                type = "Trainer",
-                cost = 2000,
+                {
+                    type = "Trainer",
+                    cost = 2000,
+                },
             },
             product = { item_id = 20961, qty = 1 },
             materials = {
@@ -715,8 +801,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_46",
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
             product = { item_id = 29157, qty = 1 },
             materials = {
@@ -735,8 +823,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20976 },
+                {
+                    type = "Item",
+                    item_id = 20976,
+                },
             },
             product = { item_id = 20967, qty = 1 },
             materials = {
@@ -755,8 +845,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_jadeowl",
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
             product = { item_id = 21748, qty = 1 },
             materials = {
@@ -773,8 +865,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_goldenhare",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21940 },
+                {
+                    type = "Item",
+                    item_id = 21940,
+                },
             },
             product = { item_id = 21756, qty = 1 },
             materials = {
@@ -789,8 +883,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_30",
             source = {
-                type = "Trainer",
-                cost = 3000,
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
             },
             product = { item_id = 29158, qty = 1 },
             materials = {
@@ -808,8 +904,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_05",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 20964, qty = 1 },
             materials = {
@@ -826,8 +924,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_blackpearlpanther",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21941 },
+                {
+                    type = "Item",
+                    item_id = 21941,
+                },
             },
             product = { item_id = 21758, qty = 1 },
             materials = {
@@ -844,8 +944,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_16",
             source = {
-                type = "Trainer",
-                cost = 3000,
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
             },
             product = { item_id = 21755, qty = 1 },
             materials = {
@@ -862,8 +964,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Head" },
             icon = "inv_crown_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21942 },
+                {
+                    type = "Item",
+                    item_id = 21942,
+                },
             },
             product = { item_id = 20969, qty = 1 },
             materials = {
@@ -881,8 +985,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_truesilvercrab",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21943 },
+                {
+                    type = "Item",
+                    item_id = 21943,
+                },
             },
             product = { item_id = 21760, qty = 1 },
             materials = {
@@ -900,8 +1006,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Materials" },
             icon = "inv_jewelcrafting_thoriumsetting",
             source = {
-                type = "Trainer",
-                cost = 3500,
+                {
+                    type = "Trainer",
+                    cost = 3500,
+                },
             },
             product = { item_id = 21752, qty = 1 },
             materials = {
@@ -915,8 +1023,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Statue" },
             icon = "inv_misc_statue_10",
             source = {
-                type = "Trainer",
-                cost = 3500,
+                {
+                    type = "Trainer",
+                    cost = 3500,
+                },
             },
             product = { item_id = 25883, qty = 1 },
             materials = {
@@ -930,7 +1040,9 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "inv_misc_gem_02",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -941,8 +1053,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_25",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 30421, qty = 1 },
             materials = {
@@ -959,8 +1073,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_truesilverboar",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21944 },
+                {
+                    type = "Item",
+                    item_id = 21944,
+                },
             },
             product = { item_id = 21763, qty = 1 },
             materials = {
@@ -978,8 +1094,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_15",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 21764, qty = 1 },
             materials = {
@@ -996,8 +1114,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_26",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 21765, qty = 1 },
             materials = {
@@ -1014,8 +1134,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_29",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21945 },
+                {
+                    type = "Item",
+                    item_id = 21945,
+                },
             },
             product = { item_id = 21754, qty = 1 },
             materials = {
@@ -1032,8 +1154,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_37",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21947 },
+                {
+                    type = "Item",
+                    item_id = 21947,
+                },
             },
             product = { item_id = 21753, qty = 1 },
             materials = {
@@ -1050,8 +1174,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21948 },
+                {
+                    type = "Item",
+                    item_id = 21948,
+                },
             },
             product = { item_id = 21766, qty = 1 },
             materials = {
@@ -1071,8 +1197,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_rubyserpent",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21949 },
+                {
+                    type = "Item",
+                    item_id = 21949,
+                },
             },
             product = { item_id = 21769, qty = 1 },
             materials = {
@@ -1089,8 +1217,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_17",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 21767, qty = 1 },
             materials = {
@@ -1107,8 +1237,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_42",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 30422, qty = 1 },
             materials = {
@@ -1125,8 +1257,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_29",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 21768, qty = 1 },
             materials = {
@@ -1142,8 +1276,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Head" },
             icon = "inv_crown_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21952 },
+                {
+                    type = "Item",
+                    item_id = 21952,
+                },
             },
             product = { item_id = 21774, qty = 1 },
             materials = {
@@ -1161,7 +1297,9 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "inv_misc_gem_02",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -1172,8 +1310,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_27",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 21775, qty = 1 },
             materials = {
@@ -1189,8 +1329,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_11",
             source = {
-                type = "Trainer",
-                cost = 12000,
+                {
+                    type = "Trainer",
+                    cost = 12000,
+                },
             },
             product = { item_id = 21790, qty = 1 },
             materials = {
@@ -1206,8 +1348,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_35",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 29159, qty = 1 },
             materials = {
@@ -1224,8 +1368,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_jadeowl",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21953 },
+                {
+                    type = "Item",
+                    item_id = 21953,
+                },
             },
             product = { item_id = 21777, qty = 1 },
             materials = {
@@ -1242,8 +1388,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_ahnqiraj_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21954 },
+                {
+                    type = "Item",
+                    item_id = 21954,
+                },
             },
             product = { item_id = 21778, qty = 1 },
             materials = {
@@ -1261,8 +1409,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_01",
             source = {
-                type = "Trainer",
-                cost = 15000,
+                {
+                    type = "Trainer",
+                    cost = 15000,
+                },
             },
             product = { item_id = 21791, qty = 1 },
             materials = {
@@ -1278,8 +1428,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_18",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 29160, qty = 1 },
             materials = {
@@ -1296,8 +1448,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_truesilvercrab",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21955 },
+                {
+                    type = "Item",
+                    item_id = 21955,
+                },
             },
             product = { item_id = 21784, qty = 1 },
             materials = {
@@ -1315,8 +1469,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Trinket"},
             icon = "ability_hunter_pet_crab",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21956 },
+                {
+                    type = "Item",
+                    item_id = 21956,
+                },
             },
             product = { item_id = 21789, qty = 1 },
             materials = {
@@ -1332,8 +1488,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_misc_gem_bloodgem_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23130 },
+                {
+                    type = "Item",
+                    item_id = 23130,
+                },
             },
             product = { item_id = 23094, qty = 1 },
             materials = {
@@ -1347,8 +1505,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_misc_gem_flamespessarite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23135 },
+                {
+                    type = "Item",
+                    item_id = 23135,
+                },
             },
             product = { item_id = 23098, qty = 1 },
             materials = {
@@ -1362,8 +1522,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_misc_gem_deepperidot_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23140 },
+                {
+                    type = "Item",
+                    item_id = 23140,
+                },
             },
             product = { item_id = 23103, qty = 1 },
             materials = {
@@ -1377,8 +1539,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_misc_gem_ebondraenite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23144 },
+                {
+                    type = "Item",
+                    item_id = 23144,
+                },
             },
             product = { item_id = 23108, qty = 1 },
             materials = {
@@ -1392,8 +1556,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_misc_gem_goldendraenite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23148 },
+                {
+                    type = "Item",
+                    item_id = 23148,
+                },
             },
             product = { item_id = 23113, qty = 1 },
             materials = {
@@ -1407,8 +1573,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Blue" },
             icon = "inv_misc_gem_azuredraenite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23152 },
+                {
+                    type = "Item",
+                    item_id = 23152,
+                },
             },
             product = { item_id = 23118, qty = 1 },
             materials = {
@@ -1424,8 +1592,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_35",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21957 },
+                {
+                    type = "Item",
+                    item_id = 21957,
+                },
             },
             product = { item_id = 21792, qty = 1 },
             materials = {
@@ -1441,8 +1611,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_misc_gem_bloodgem_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23131 },
+                {
+                    type = "Item",
+                    item_id = 23131,
+                },
             },
             product = { item_id = 23095, qty = 1 },
             materials = {
@@ -1456,8 +1628,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_misc_gem_flamespessarite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23136 },
+                {
+                    type = "Item",
+                    item_id = 23136,
+                },
             },
             product = { item_id = 23099, qty = 1 },
             materials = {
@@ -1471,8 +1645,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_misc_gem_deepperidot_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23141 },
+                {
+                    type = "Item",
+                    item_id = 23141,
+                },
             },
             product = { item_id = 23104, qty = 1 },
             materials = {
@@ -1486,8 +1662,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_misc_gem_ebondraenite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23145 },
+                {
+                    type = "Item",
+                    item_id = 23145,
+                },
             },
             product = { item_id = 23109, qty = 1 },
             materials = {
@@ -1501,8 +1679,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_misc_gem_goldendraenite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23149 },
+                {
+                    type = "Item",
+                    item_id = 23149,
+                },
             },
             product = { item_id = 23114, qty = 1 },
             materials = {
@@ -1516,8 +1696,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Blue" },
             icon = "inv_misc_gem_azuredraenite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23153 },
+                {
+                    type = "Item",
+                    item_id = 23153,
+                },
             },
             product = { item_id = 23119, qty = 1 },
             materials = {
@@ -1531,8 +1713,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_misc_gem_bloodgem_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 28596 },
+                {
+                    type = "Item",
+                    item_id = 28596,
+                },
             },
             product = { item_id = 28595, qty = 1 },
             materials = {
@@ -1548,8 +1732,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_60",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 24075, qty = 1 },
             materials = {
@@ -1564,8 +1750,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_41",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 21779, qty = 1 },
             materials = {
@@ -1581,8 +1769,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_39",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 24074, qty = 1 },
             materials = {
@@ -1599,8 +1789,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_weapon_shortblade_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21958 },
+                {
+                    type = "Item",
+                    item_id = 21958,
+                },
             },
             product = { item_id = 21793, qty = 1 },
             materials = {
@@ -1616,8 +1808,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_misc_gem_bloodgem_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23133 },
+                {
+                    type = "Item",
+                    item_id = 23133,
+                },
             },
             product = { item_id = 23096, qty = 1 },
             materials = {
@@ -1631,8 +1825,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_misc_gem_flamespessarite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23137 },
+                {
+                    type = "Item",
+                    item_id = 23137,
+                },
             },
             product = { item_id = 23100, qty = 1 },
             materials = {
@@ -1646,8 +1842,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_misc_gem_deepperidot_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23142, 31359 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 23142, 31359 },
+                },
             },
             product = { item_id = 23105, qty = 1 },
             materials = {
@@ -1661,8 +1859,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_misc_gem_ebondraenite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23146 },
+                {
+                    type = "Item",
+                    item_id = 23146,
+                },
             },
             product = { item_id = 23110, qty = 1 },
             materials = {
@@ -1676,8 +1876,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_misc_gem_goldendraenite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23150 },
+                {
+                    type = "Item",
+                    item_id = 23150,
+                },
             },
             product = { item_id = 23115, qty = 1 },
             materials = {
@@ -1691,8 +1893,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Blue" },
             icon = "inv_misc_gem_azuredraenite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23154 },
+                {
+                    type = "Item",
+                    item_id = 23154,
+                },
             },
             product = { item_id = 23120, qty = 1 },
             materials = {
@@ -1708,8 +1912,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_50naxxramas",
             source = {
-                type = "Trainer",
-                cost = 25000,
+                {
+                    type = "Trainer",
+                    cost = 25000,
+                },
             },
             product = { item_id = 24076, qty = 1 },
             materials = {
@@ -1727,7 +1933,9 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Head" },
             icon = "inv_crown_13",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -1736,8 +1944,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_05",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 32772, qty = 1 },
             materials = {
@@ -1752,8 +1962,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_misc_gem_bloodgem_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23134 },
+                {
+                    type = "Item",
+                    item_id = 23134,
+                },
             },
             product = { item_id = 23097, qty = 1 },
             materials = {
@@ -1767,8 +1979,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_misc_gem_flamespessarite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23138 },
+                {
+                    type = "Item",
+                    item_id = 23138,
+                },
             },
             product = { item_id = 23101, qty = 1 },
             materials = {
@@ -1782,8 +1996,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_misc_gem_deepperidot_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23143 },
+                {
+                    type = "Item",
+                    item_id = 23143,
+                },
             },
             product = { item_id = 23106, qty = 1 },
             materials = {
@@ -1797,8 +2013,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_misc_gem_ebondraenite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23147 },
+                {
+                    type = "Item",
+                    item_id = 23147,
+                },
             },
             product = { item_id = 23111, qty = 1 },
             materials = {
@@ -1812,8 +2030,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_misc_gem_goldendraenite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23151 },
+                {
+                    type = "Item",
+                    item_id = 23151,
+                },
             },
             product = { item_id = 23116, qty = 1 },
             materials = {
@@ -1827,8 +2047,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Blue" },
             icon = "inv_misc_gem_azuredraenite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 23155 },
+                {
+                    type = "Item",
+                    item_id = 23155,
+                },
             },
             product = { item_id = 23121, qty = 1 },
             materials = {
@@ -1842,8 +2064,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_misc_gem_goldendraenite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 28291 },
+                {
+                    type = "Item",
+                    item_id = 28291,
+                },
             },
             product = { item_id = 28290, qty = 1 },
             materials = {
@@ -1857,8 +2081,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_misc_gem_goldendraenite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 31870 },
+                {
+                    type = "Item",
+                    item_id = 31870,
+                },
             },
             product = { item_id = 31860, qty = 1 },
             materials = {
@@ -1872,8 +2098,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_misc_gem_ebondraenite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 31871 },
+                {
+                    type = "Item",
+                    item_id = 31871,
+                },
             },
             product = { item_id = 31862, qty = 1 },
             materials = {
@@ -1887,8 +2115,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_misc_gem_ebondraenite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 31872 },
+                {
+                    type = "Item",
+                    item_id = 31872,
+                },
             },
             product = { item_id = 31864, qty = 1 },
             materials = {
@@ -1902,8 +2132,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_misc_gem_flamespessarite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 31873 },
+                {
+                    type = "Item",
+                    item_id = 31873,
+                },
             },
             product = { item_id = 31866, qty = 1 },
             materials = {
@@ -1917,8 +2149,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_misc_gem_flamespessarite_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 31874 },
+                {
+                    type = "Item",
+                    item_id = 31874,
+                },
             },
             product = { item_id = 31869, qty = 1 },
             materials = {
@@ -1932,8 +2166,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Materials" },
             icon = "spell_arcane_arcanepotency",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 31079, qty = 1 },
             materials = {
@@ -1948,8 +2184,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_misc_gem_pearl_08",
             source = {
-                type = "Trainer",
-                cost = 8500,
+                {
+                    type = "Trainer",
+                    cost = 8500,
+                },
             },
             product = { item_id = 32833, qty = 1 },
             materials = {
@@ -1966,8 +2204,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_16",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 32774, qty = 1 },
             materials = {
@@ -1984,8 +2224,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_29naxxramas",
             source = {
-                type = "Trainer",
-                cost = 30000,
+                {
+                    type = "Trainer",
+                    cost = 30000,
+                },
             },
             product = { item_id = 24077, qty = 1 },
             materials = {
@@ -2000,8 +2242,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_59",
             source = {
-                type = "Trainer",
-                cost = 30000,
+                {
+                    type = "Trainer",
+                    cost = 30000,
+                },
             },
             product = { item_id = 24078, qty = 1 },
             materials = {
@@ -2018,8 +2262,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_03",
             source = {
-                type = "Trainer",
-                cost = 8500,
+                {
+                    type = "Trainer",
+                    cost = 8500,
+                },
             },
             product = { item_id = 32508, qty = 1 },
             materials = {
@@ -2037,8 +2283,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_64",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24163 },
+                {
+                    type = "Item",
+                    item_id = 24163,
+                },
             },
             product = { item_id = 24087, qty = 1 },
             materials = {
@@ -2055,8 +2303,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_62",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24158 },
+                {
+                    type = "Item",
+                    item_id = 24158,
+                },
             },
             product = { item_id = 24079, qty = 1 },
             materials = {
@@ -2072,8 +2322,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_livingruby_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24193 },
+                {
+                    type = "Item",
+                    item_id = 24193,
+                },
             },
             product = { item_id = 24027, qty = 1 },
             materials = {
@@ -2087,8 +2339,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_livingruby_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24194 },
+                {
+                    type = "Item",
+                    item_id = 24194,
+                },
             },
             product = { item_id = 24028, qty = 1 },
             materials = {
@@ -2102,8 +2356,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_livingruby_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24195 },
+                {
+                    type = "Item",
+                    item_id = 24195,
+                },
             },
             product = { item_id = 24029, qty = 1 },
             materials = {
@@ -2117,8 +2373,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_livingruby_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24196 },
+                {
+                    type = "Item",
+                    item_id = 24196,
+                },
             },
             product = { item_id = 24030, qty = 1 },
             materials = {
@@ -2132,8 +2390,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_livingruby_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24192 },
+                {
+                    type = "Item",
+                    item_id = 24192,
+                },
             },
             product = { item_id = 24031, qty = 1 },
             materials = {
@@ -2147,8 +2407,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_livingruby_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24197 },
+                {
+                    type = "Item",
+                    item_id = 24197,
+                },
             },
             product = { item_id = 24032, qty = 1 },
             materials = {
@@ -2162,8 +2424,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_livingruby_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24198 },
+                {
+                    type = "Item",
+                    item_id = 24198,
+                },
             },
             product = { item_id = 24036, qty = 1 },
             materials = {
@@ -2177,8 +2441,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Blue" },
             icon = "inv_jewelcrafting_starofelune_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24199, 35304 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 24199, 35304 },
+                },
             },
             product = { item_id = 24033, qty = 1 },
             materials = {
@@ -2192,8 +2458,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Blue" },
             icon = "inv_jewelcrafting_starofelune_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24201 },
+                {
+                    type = "Item",
+                    item_id = 24201,
+                },
             },
             product = { item_id = 24037, qty = 1 },
             materials = {
@@ -2207,8 +2475,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Blue" },
             icon = "inv_jewelcrafting_starofelune_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24202 },
+                {
+                    type = "Item",
+                    item_id = 24202,
+                },
             },
             product = { item_id = 24039, qty = 1 },
             materials = {
@@ -2222,8 +2492,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_dawnstone_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24203 },
+                {
+                    type = "Item",
+                    item_id = 24203,
+                },
             },
             product = { item_id = 24047, qty = 1 },
             materials = {
@@ -2237,8 +2509,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_dawnstone_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24204 },
+                {
+                    type = "Item",
+                    item_id = 24204,
+                },
             },
             product = { item_id = 24048, qty = 1 },
             materials = {
@@ -2252,8 +2526,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_dawnstone_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24205 },
+                {
+                    type = "Item",
+                    item_id = 24205,
+                },
             },
             product = { item_id = 24051, qty = 1 },
             materials = {
@@ -2267,8 +2543,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_dawnstone_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24206 },
+                {
+                    type = "Item",
+                    item_id = 24206,
+                },
             },
             product = { item_id = 24050, qty = 1 },
             materials = {
@@ -2282,8 +2560,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_dawnstone_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24207 },
+                {
+                    type = "Item",
+                    item_id = 24207,
+                },
             },
             product = { item_id = 24052, qty = 1 },
             materials = {
@@ -2297,8 +2577,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_dawnstone_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24208 },
+                {
+                    type = "Item",
+                    item_id = 24208,
+                },
             },
             product = { item_id = 24053, qty = 1 },
             materials = {
@@ -2312,8 +2594,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_nightseye_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24209 },
+                {
+                    type = "Item",
+                    item_id = 24209,
+                },
             },
             product = { item_id = 24054, qty = 1 },
             materials = {
@@ -2327,8 +2611,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_nightseye_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24210 },
+                {
+                    type = "Item",
+                    item_id = 24210,
+                },
             },
             product = { item_id = 24055, qty = 1 },
             materials = {
@@ -2342,8 +2628,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_nightseye_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24211 },
+                {
+                    type = "Item",
+                    item_id = 24211,
+                },
             },
             product = { item_id = 24056, qty = 1 },
             materials = {
@@ -2357,8 +2645,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_nightseye_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24212 },
+                {
+                    type = "Item",
+                    item_id = 24212,
+                },
             },
             product = { item_id = 24057, qty = 1 },
             materials = {
@@ -2372,8 +2662,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_nobletopaz_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24213 },
+                {
+                    type = "Item",
+                    item_id = 24213,
+                },
             },
             product = { item_id = 24058, qty = 1 },
             materials = {
@@ -2387,8 +2679,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_nobletopaz_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24214 },
+                {
+                    type = "Item",
+                    item_id = 24214,
+                },
             },
             product = { item_id = 24059, qty = 1 },
             materials = {
@@ -2402,8 +2696,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_nobletopaz_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24215 },
+                {
+                    type = "Item",
+                    item_id = 24215,
+                },
             },
             product = { item_id = 24060, qty = 1 },
             materials = {
@@ -2417,8 +2713,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_nobletopaz_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24216 },
+                {
+                    type = "Item",
+                    item_id = 24216,
+                },
             },
             product = { item_id = 24061, qty = 1 },
             materials = {
@@ -2432,8 +2730,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_talasite_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24217 },
+                {
+                    type = "Item",
+                    item_id = 24217,
+                },
             },
             product = { item_id = 24062, qty = 1 },
             materials = {
@@ -2447,8 +2747,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_talasite_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24218 },
+                {
+                    type = "Item",
+                    item_id = 24218,
+                },
             },
             product = { item_id = 24066, qty = 1 },
             materials = {
@@ -2462,8 +2764,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_talasite_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24219 },
+                {
+                    type = "Item",
+                    item_id = 24219,
+                },
             },
             product = { item_id = 24065, qty = 1 },
             materials = {
@@ -2477,8 +2781,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_talasite_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24220 },
+                {
+                    type = "Item",
+                    item_id = 24220,
+                },
             },
             product = { item_id = 24067, qty = 1 },
             materials = {
@@ -2492,8 +2798,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Blue" },
             icon = "inv_jewelcrafting_starofelune_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24200 },
+                {
+                    type = "Item",
+                    item_id = 24200,
+                },
             },
             product = { item_id = 24035, qty = 1 },
             materials = {
@@ -2507,8 +2815,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_dawnstone_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 31875 },
+                {
+                    type = "Item",
+                    item_id = 31875,
+                },
             },
             product = { item_id = 31861, qty = 1 },
             materials = {
@@ -2522,8 +2832,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_nightseye_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 31877 },
+                {
+                    type = "Item",
+                    item_id = 31877,
+                },
             },
             product = { item_id = 31865, qty = 1 },
             materials = {
@@ -2537,8 +2849,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_nightseye_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 31876 },
+                {
+                    type = "Item",
+                    item_id = 31876,
+                },
             },
             product = { item_id = 31863, qty = 1 },
             materials = {
@@ -2552,8 +2866,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_nobletopaz_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 31878 },
+                {
+                    type = "Item",
+                    item_id = 31878,
+                },
             },
             product = { item_id = 31867, qty = 1 },
             materials = {
@@ -2567,8 +2883,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_nobletopaz_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 31879 },
+                {
+                    type = "Item",
+                    item_id = 31879,
+                },
             },
             product = { item_id = 31868, qty = 1 },
             materials = {
@@ -2582,8 +2900,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_misc_gem_pearl_07",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 32836, qty = 1 },
             materials = {
@@ -2598,8 +2918,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_talasite_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 33783 },
+                {
+                    type = "Item",
+                    item_id = 33783,
+                },
             },
             product = { item_id = 33782, qty = 1 },
             materials = {
@@ -2613,8 +2935,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_dawnstone_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35322 },
+                {
+                    type = "Item",
+                    item_id = 35322,
+                },
             },
             product = { item_id = 35315, qty = 1 },
             materials = {
@@ -2628,8 +2952,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_nobletopaz_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35323 },
+                {
+                    type = "Item",
+                    item_id = 35323,
+                },
             },
             product = { item_id = 35316, qty = 1 },
             materials = {
@@ -2643,8 +2969,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_talasite_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35325 },
+                {
+                    type = "Item",
+                    item_id = 35325,
+                },
             },
             product = { item_id = 35318, qty = 1 },
             materials = {
@@ -2658,8 +2986,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_nightseye_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35708 },
+                {
+                    type = "Item",
+                    item_id = 35708,
+                },
             },
             product = { item_id = 35707, qty = 1 },
             materials = {
@@ -2673,8 +3003,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Other" },
             icon = "inv_misc_gem_diamond_03",
             source = {
-                type = "Trainer",
-                cost = 30000,
+                {
+                    type = "Trainer",
+                    cost = 30000,
+                },
             },
             product = { item_id = 35945, qty = 1 },
             materials = {
@@ -2695,8 +3027,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_57",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24159 },
+                {
+                    type = "Item",
+                    item_id = 24159,
+                },
             },
             product = { item_id = 24080, qty = 1 },
             materials = {
@@ -2712,8 +3046,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_61",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24160 },
+                {
+                    type = "Item",
+                    item_id = 24160,
+                },
             },
             product = { item_id = 24082, qty = 1 },
             materials = {
@@ -2729,8 +3065,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_65",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24164 },
+                {
+                    type = "Item",
+                    item_id = 24164,
+                },
             },
             product = { item_id = 24088, qty = 1 },
             materials = {
@@ -2745,8 +3083,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24166 },
+                {
+                    type = "Item",
+                    item_id = 24166,
+                },
             },
             product = { item_id = 24106, qty = 1 },
             materials = {
@@ -2761,8 +3101,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_15",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24167 },
+                {
+                    type = "Item",
+                    item_id = 24167,
+                },
             },
             product = { item_id = 24110, qty = 1 },
             materials = {
@@ -2780,8 +3122,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_56",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24161 },
+                {
+                    type = "Item",
+                    item_id = 24161,
+                },
             },
             product = { item_id = 24085, qty = 1 },
             materials = {
@@ -2797,8 +3141,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_36",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24174 },
+                {
+                    type = "Item",
+                    item_id = 24174,
+                },
             },
             product = { item_id = 24092, qty = 1 },
             materials = {
@@ -2815,8 +3161,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_34",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24175 },
+                {
+                    type = "Item",
+                    item_id = 24175,
+                },
             },
             product = { item_id = 24093, qty = 1 },
             materials = {
@@ -2833,8 +3181,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_31",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24176 },
+                {
+                    type = "Item",
+                    item_id = 24176,
+                },
             },
             product = { item_id = 24095, qty = 1 },
             materials = {
@@ -2851,8 +3201,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_33",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24177 },
+                {
+                    type = "Item",
+                    item_id = 24177,
+                },
             },
             product = { item_id = 24097, qty = 1 },
             materials = {
@@ -2869,8 +3221,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_32",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24178 },
+                {
+                    type = "Item",
+                    item_id = 24178,
+                },
             },
             product = { item_id = 24098, qty = 1 },
             materials = {
@@ -2886,8 +3240,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24168 },
+                {
+                    type = "Item",
+                    item_id = 24168,
+                },
             },
             product = { item_id = 24114, qty = 1 },
             materials = {
@@ -2902,8 +3258,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_28",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24169 },
+                {
+                    type = "Item",
+                    item_id = 24169,
+                },
             },
             product = { item_id = 24116, qty = 1 },
             materials = {
@@ -2919,8 +3277,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_68",
             source = {
-                type = "Item",
-                recipe_item_ids = { 30826 },
+                {
+                    type = "Item",
+                    item_id = 30826,
+                },
             },
             product = { item_id = 30825, qty = 1 },
             materials = {
@@ -2935,8 +3295,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 33305 },
+                {
+                    type = "Item",
+                    item_id = 33305,
+                },
             },
             product = { item_id = 33133, qty = 1 },
             materials = {
@@ -2950,8 +3312,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 33155 },
+                {
+                    type = "Item",
+                    item_id = 33155,
+                },
             },
             product = { item_id = 33134, qty = 1 },
             materials = {
@@ -2965,8 +3329,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 33156 },
+                {
+                    type = "Item",
+                    item_id = 33156,
+                },
             },
             product = { item_id = 33131, qty = 1 },
             materials = {
@@ -2980,8 +3346,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Blue" },
             icon = "inv_jewelcrafting_empyreansapphire_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 33157 },
+                {
+                    type = "Item",
+                    item_id = 33157,
+                },
             },
             product = { item_id = 33135, qty = 1 },
             materials = {
@@ -2995,8 +3363,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow"},
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 33158 },
+                {
+                    type = "Item",
+                    item_id = 33158,
+                },
             },
             product = { item_id = 33143, qty = 1 },
             materials = {
@@ -3010,8 +3380,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow"},
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 33159 },
+                {
+                    type = "Item",
+                    item_id = 33159,
+                },
             },
             product = { item_id = 33140, qty = 1 },
             materials = {
@@ -3025,8 +3397,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow"},
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 33160 },
+                {
+                    type = "Item",
+                    item_id = 33160,
+                },
             },
             product = { item_id = 33144, qty = 1 },
             materials = {
@@ -3042,8 +3416,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_35",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35198 },
+                {
+                    type = "Item",
+                    item_id = 35198,
+                },
             },
             product = { item_id = 34362, qty = 1 },
             materials = {
@@ -3060,8 +3436,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_35",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35199 },
+                {
+                    type = "Item",
+                    item_id = 35199,
+                },
             },
             product = { item_id = 34363, qty = 1 },
             materials = {
@@ -3078,8 +3456,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_55",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35200 },
+                {
+                    type = "Item",
+                    item_id = 35200,
+                },
             },
             product = { item_id = 34361, qty = 1 },
             materials = {
@@ -3096,8 +3476,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_30",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35201 },
+                {
+                    type = "Item",
+                    item_id = 35201,
+                },
             },
             product = { item_id = 34359, qty = 1 },
             materials = {
@@ -3113,8 +3495,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_30",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35202 },
+                {
+                    type = "Item",
+                    item_id = 35202,
+                },
             },
             product = { item_id = 34360, qty = 1 },
             materials = {
@@ -3129,8 +3513,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_35",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35203 },
+                {
+                    type = "Item",
+                    item_id = 35203,
+                },
             },
             product = { item_id = 34358, qty = 1 },
             materials = {
@@ -3145,8 +3531,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_63",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24162 },
+                {
+                    type = "Item",
+                    item_id = 24162,
+                },
             },
             product = { item_id = 24086, qty = 1 },
             materials = {
@@ -3162,8 +3550,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_55",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24165 },
+                {
+                    type = "Item",
+                    item_id = 24165,
+                },
             },
             product = { item_id = 24089, qty = 1 },
             materials = {
@@ -3179,8 +3569,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_29naxxramas",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24170 },
+                {
+                    type = "Item",
+                    item_id = 24170,
+                },
             },
             product = { item_id = 24117, qty = 1 },
             materials = {
@@ -3196,8 +3588,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Neck" },
             icon = "inv_jewelry_necklace_ahnqiraj_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24171 },
+                {
+                    type = "Item",
+                    item_id = 24171,
+                },
             },
             product = { item_id = 24121, qty = 1 },
             materials = {
@@ -3213,8 +3607,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Meta" },
             icon = "inv_misc_gem_diamond_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25902 },
+                {
+                    type = "Item",
+                    item_id = 25902,
+                },
             },
             product = { item_id = 25896, qty = 1 },
             materials = {
@@ -3228,8 +3624,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Meta" },
             icon = "inv_misc_gem_diamond_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25903 },
+                {
+                    type = "Item",
+                    item_id = 25903,
+                },
             },
             product = { item_id = 25897, qty = 1 },
             materials = {
@@ -3243,8 +3641,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Meta" },
             icon = "inv_misc_gem_diamond_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25905 },
+                {
+                    type = "Item",
+                    item_id = 25905,
+                },
             },
             product = { item_id = 25898, qty = 1 },
             materials = {
@@ -3258,8 +3658,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Meta" },
             icon = "inv_misc_gem_diamond_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25906 },
+                {
+                    type = "Item",
+                    item_id = 25906,
+                },
             },
             product = { item_id = 25899, qty = 1 },
             materials = {
@@ -3273,8 +3675,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Meta" },
             icon = "inv_misc_gem_diamond_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25904 },
+                {
+                    type = "Item",
+                    item_id = 25904,
+                },
             },
             product = { item_id = 25901, qty = 1 },
             materials = {
@@ -3288,8 +3692,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Meta" },
             icon = "inv_misc_gem_diamond_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25907 },
+                {
+                    type = "Item",
+                    item_id = 25907,
+                },
             },
             product = { item_id = 25890, qty = 1 },
             materials = {
@@ -3303,8 +3709,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Meta" },
             icon = "inv_misc_gem_diamond_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25909 },
+                {
+                    type = "Item",
+                    item_id = 25909,
+                },
             },
             product = { item_id = 25893, qty = 1 },
             materials = {
@@ -3318,8 +3726,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Meta" },
             icon = "inv_misc_gem_diamond_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25908 },
+                {
+                    type = "Item",
+                    item_id = 25908,
+                },
             },
             product = { item_id = 25894, qty = 1 },
             materials = {
@@ -3333,8 +3743,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Meta" },
             icon = "inv_misc_gem_diamond_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25910 },
+                {
+                    type = "Item",
+                    item_id = 25910,
+                },
             },
             product = { item_id = 25895, qty = 1 },
             materials = {
@@ -3348,8 +3760,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Meta" },
             icon = "inv_misc_gem_diamond_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32412 },
+                {
+                    type = "Item",
+                    item_id = 32412,
+                },
             },
             product = { item_id = 32409, qty = 1 },
             materials = {
@@ -3363,8 +3777,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Meta" },
             icon = "inv_misc_gem_diamond_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32411 },
+                {
+                    type = "Item",
+                    item_id = 32411,
+                },
             },
             product = { item_id = 32410, qty = 1 },
             materials = {
@@ -3378,8 +3794,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Head"},
             icon = "inv_crown_01",
             source = {
-                type = "Trainer",
-                cost = 30000,
+                {
+                    type = "Trainer",
+                    cost = 30000,
+                },
             },
             product = { item_id = 32776, qty = 1 },
             materials = {
@@ -3396,8 +3814,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Meta" },
             icon = "inv_misc_gem_diamond_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 34689 },
+                {
+                    type = "Item",
+                    item_id = 34689,
+                },
             },
             product = { item_id = 34220, qty = 1 },
             materials = {
@@ -3413,8 +3833,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Head"},
             icon = "inv_crown_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24172 },
+                {
+                    type = "Item",
+                    item_id = 24172,
+                },
             },
             product = { item_id = 24122, qty = 1 },
             materials = {
@@ -3431,8 +3853,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Head"},
             icon = "inv_crown_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24173 },
+                {
+                    type = "Item",
+                    item_id = 24173,
+                },
             },
             product = { item_id = 24123, qty = 1 },
             materials = {
@@ -3449,8 +3873,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_truesilverboar",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24179 },
+                {
+                    type = "Item",
+                    item_id = 24179,
+                },
             },
             product = { item_id = 24124, qty = 1 },
             materials = {
@@ -3466,8 +3892,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_truesilvercrab",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24180, 31358 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 24180, 31358 },
+                },
             },
             product = { item_id = 24125, qty = 1 },
             materials = {
@@ -3483,8 +3911,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_rubyserpent",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24181 },
+                {
+                    type = "Item",
+                    item_id = 24181,
+                },
             },
             product = { item_id = 24126, qty = 1 },
             materials = {
@@ -3500,8 +3930,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_jadeowl",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24182 },
+                {
+                    type = "Item",
+                    item_id = 24182,
+                },
             },
             product = { item_id = 24127, qty = 1 },
             materials = {
@@ -3517,8 +3949,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_blackpearlpanther",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24183 },
+                {
+                    type = "Item",
+                    item_id = 24183,
+                },
             },
             product = { item_id = 24128, qty = 1 },
             materials = {
@@ -3534,8 +3968,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Meta" },
             icon = "inv_misc_gem_diamond_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35502 },
+                {
+                    type = "Item",
+                    item_id = 35502,
+                },
             },
             product = { item_id = 35501, qty = 1 },
             materials = {
@@ -3549,8 +3985,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Meta" },
             icon = "inv_misc_gem_diamond_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35505 },
+                {
+                    type = "Item",
+                    item_id = 35505,
+                },
             },
             product = { item_id = 35503, qty = 1 },
             materials = {
@@ -3566,8 +4004,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_70",
             source = {
-                type = "Item",
-                recipe_item_ids = { 31401 },
+                {
+                    type = "Item",
+                    item_id = 31401,
+                },
             },
             product = { item_id = 31398, qty = 1 },
             materials = {
@@ -3584,8 +4024,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Ring"},
             icon = "inv_jewelry_ring_69",
             source = {
-                type = "Item",
-                recipe_item_ids = { 31402 },
+                {
+                    type = "Item",
+                    item_id = 31402,
+                },
             },
             product = { item_id = 31399, qty = 1 },
             materials = {
@@ -3602,8 +4044,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32274, 35244 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32274, 35244 },
+                },
             },
             product = { item_id = 32193, qty = 1 },
             materials = {
@@ -3617,8 +4061,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32277, 35246 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32277, 35246 },
+                },
             },
             product = { item_id = 32194, qty = 1 },
             materials = {
@@ -3632,8 +4078,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32281, 35250 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32281, 35250 },
+                },
             },
             product = { item_id = 32195, qty = 1 },
             materials = {
@@ -3647,8 +4095,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32282, 35248 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32282, 35248 },
+                },
             },
             product = { item_id = 32196, qty = 1 },
             materials = {
@@ -3662,8 +4112,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32283, 35245 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32283, 35245 },
+                },
             },
             product = { item_id = 32197, qty = 1 },
             materials = {
@@ -3677,8 +4129,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32284, 35249 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32284, 35249 },
+                },
             },
             product = { item_id = 32198, qty = 1 },
             materials = {
@@ -3692,8 +4146,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Red" },
             icon = "inv_jewelcrafting_crimsonspinel_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32285, 35247 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32285, 35247 },
+                },
             },
             product = { item_id = 32199, qty = 1 },
             materials = {
@@ -3707,8 +4163,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Blue" },
             icon = "inv_jewelcrafting_empyreansapphire_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32286, 35263 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32286, 35263 },
+                },
             },
             product = { item_id = 32200, qty = 1 },
             materials = {
@@ -3723,8 +4181,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Blue" },
             icon = "inv_jewelcrafting_empyreansapphire_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32287, 35264 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32287, 35264 },
+                },
             },
             product = { item_id = 32201, qty = 1 },
             materials = {
@@ -3739,8 +4199,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Blue" },
             icon = "inv_jewelcrafting_empyreansapphire_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32288, 35262 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32288, 35262 },
+                },
             },
             product = { item_id = 32202, qty = 1 },
             materials = {
@@ -3755,8 +4217,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Blue" },
             icon = "inv_jewelcrafting_empyreansapphire_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32289, 35265 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32289, 35265 },
+                },
             },
             product = { item_id = 32203, qty = 1 },
             materials = {
@@ -3771,8 +4235,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32290, 35255 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32290, 35255 },
+                },
             },
             product = { item_id = 32204, qty = 1 },
             materials = {
@@ -3787,8 +4253,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32291, 35260 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32291, 35260 },
+                },
             },
             product = { item_id = 32205, qty = 1 },
             materials = {
@@ -3803,8 +4271,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32292, 35259 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32292, 35259 },
+                },
             },
             product = { item_id = 32206, qty = 1 },
             materials = {
@@ -3819,8 +4289,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32293, 35256 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32293, 35256 },
+                },
             },
             product = { item_id = 32207, qty = 1 },
             materials = {
@@ -3835,8 +4307,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32294, 35261 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32294, 35261 },
+                },
             },
             product = { item_id = 32208, qty = 1 },
             materials = {
@@ -3851,8 +4325,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32295, 35258 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32295, 35258 },
+                },
             },
             product = { item_id = 32209, qty = 1 },
             materials = {
@@ -3867,8 +4343,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32296, 35257 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32296, 35257 },
+                },
             },
             product = { item_id = 32210, qty = 1 },
             materials = {
@@ -3883,8 +4361,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_shadowsongamethyst_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32297, 35243 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32297, 35243 },
+                },
             },
             product = { item_id = 32211, qty = 1 },
             materials = {
@@ -3899,8 +4379,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_shadowsongamethyst_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32298, 35242 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32298, 35242 },
+                },
             },
             product = { item_id = 32212, qty = 1 },
             materials = {
@@ -3915,8 +4397,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_shadowsongamethyst_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32299, 35238 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32299, 35238 },
+                },
             },
             product = { item_id = 32213, qty = 1 },
             materials = {
@@ -3931,8 +4415,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_shadowsongamethyst_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32300, 35240 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32300, 35240 },
+                },
             },
             product = { item_id = 32214, qty = 1 },
             materials = {
@@ -3947,8 +4433,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_shadowsongamethyst_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32301, 35239 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32301, 35239 },
+                },
             },
             product = { item_id = 32215, qty = 1 },
             materials = {
@@ -3963,8 +4451,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_shadowsongamethyst_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32302, 35241 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32302, 35241 },
+                },
             },
             product = { item_id = 32216, qty = 1 },
             materials = {
@@ -3979,8 +4469,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_pyrestone_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32303, 35267 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32303, 35267 },
+                },
             },
             product = { item_id = 32217, qty = 1 },
             materials = {
@@ -3995,8 +4487,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_pyrestone_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32304, 35269 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32304, 35269 },
+                },
             },
             product = { item_id = 32218, qty = 1 },
             materials = {
@@ -4011,8 +4505,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_pyrestone_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32305, 35268 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32305, 35268 },
+                },
             },
             product = { item_id = 32219, qty = 1 },
             materials = {
@@ -4027,8 +4523,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_pyrestone_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32306, 35266 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32306, 35266 },
+                },
             },
             product = { item_id = 32220, qty = 1 },
             materials = {
@@ -4043,8 +4541,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_pyrestone_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32307, 35270 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32307, 35270 },
+                },
             },
             product = { item_id = 32221, qty = 1 },
             materials = {
@@ -4059,8 +4559,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_pyrestone_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32308, 35271 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32308, 35271 },
+                },
             },
             product = { item_id = 32222, qty = 1 },
             materials = {
@@ -4075,8 +4577,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_seasprayemerald_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32309, 35252 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32309, 35252 },
+                },
             },
             product = { item_id = 32223, qty = 1 },
             materials = {
@@ -4091,8 +4595,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_seasprayemerald_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32310, 35254 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32310, 35254 },
+                },
             },
             product = { item_id = 32224, qty = 1 },
             materials = {
@@ -4107,8 +4613,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_seasprayemerald_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32311, 35251 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32311, 35251 },
+                },
             },
             product = { item_id = 32225, qty = 1 },
             materials = {
@@ -4123,8 +4631,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_seasprayemerald_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32312, 35253 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 32312, 35253 },
+                },
             },
             product = { item_id = 32226, qty = 1 },
             materials = {
@@ -4139,8 +4649,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Trinket"},
             icon = "ability_hunter_pet_turtle",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35695 },
+                {
+                    type = "Item",
+                    item_id = 35695,
+                },
             },
             product = { item_id = 35693, qty = 1 },
             materials = {
@@ -4157,8 +4669,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_truesilverboar",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35696 },
+                {
+                    type = "Item",
+                    item_id = 35696,
+                },
             },
             product = { item_id = 35694, qty = 1 },
             materials = {
@@ -4175,8 +4689,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_rubyserpent",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35697 },
+                {
+                    type = "Item",
+                    item_id = 35697,
+                },
             },
             product = { item_id = 35700, qty = 1 },
             materials = {
@@ -4193,8 +4709,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Trinket"},
             icon = "inv_jewelcrafting_blackpearlpanther",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35698 },
+                {
+                    type = "Item",
+                    item_id = 35698,
+                },
             },
             product = { item_id = 35702, qty = 1 },
             materials = {
@@ -4211,8 +4729,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Equipment - Trinket"},
             icon = "inv_qirajidol_obsidian",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35699 },
+                {
+                    type = "Item",
+                    item_id = 35699,
+                },
             },
             product = { item_id = 35703, qty = 1 },
             materials = {
@@ -4229,8 +4749,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_seasprayemerald_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35765, 35769 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 35765, 35769 },
+                },
             },
             product = { item_id = 35759, qty = 1 },
             materials = {
@@ -4245,8 +4767,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Green", "Gem - Blue", "Gem - Yellow" },
             icon = "inv_jewelcrafting_seasprayemerald_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35764, 35766 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 35764, 35766 },
+                },
             },
             product = { item_id = 35758, qty = 1 },
             materials = {
@@ -4261,8 +4785,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Orange", "Gem - Red", "Gem - Yellow" },
             icon = "inv_jewelcrafting_pyrestone_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35762, 35767 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 35762, 35767 },
+                },
             },
             product = { item_id = 35760, qty = 1 },
             materials = {
@@ -4277,8 +4803,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Yellow" },
             icon = "inv_jewelcrafting_lionseye_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35763, 35768 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 35763, 35768 },
+                },
             },
             product = { item_id = 35761, qty = 1 },
             materials = {
@@ -4293,8 +4821,10 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             categories = { "Gem - Purple", "Gem - Red", "Gem - Blue" },
             icon = "inv_jewelcrafting_shadowsongamethyst_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 37504 },
+                {
+                    type = "Item",
+                    item_id = 37504,
+                },
             },
             product = { item_id = 37503, qty = 1 },
             materials = {

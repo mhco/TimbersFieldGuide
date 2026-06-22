@@ -8,7 +8,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "trade_engraving",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -16,7 +18,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             name = "Disenchant",
             icon = "inv_enchant_disenchant",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -25,7 +29,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Rods" },
             icon = "inv_staff_goldfeathered_01",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 6218, qty = 1 },
             materials = {
@@ -43,8 +49,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Wands" },
             icon = "inv_staff_02",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 11287, qty = 1 },
             materials = {
@@ -61,7 +69,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 10940, qty = 1 },
@@ -76,8 +86,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6342 },
+                {
+                    type = "Item",
+                    item_id = 6342,
+                },
             },
             materials = {
                 { item_id = 10938, qty = 1 },
@@ -92,7 +104,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 10940, qty = 2 },
@@ -108,7 +122,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 10940, qty = 1 },
@@ -122,8 +138,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Oils" },
             icon = "inv_poison_mindnumbing",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20758 },
+                {
+                    type = "Item",
+                    item_id = 20758,
+                },
             },
             product = { item_id = 20744, qty = 1 },
             materials = {
@@ -141,7 +159,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "trade_engraving",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -150,7 +170,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 10940, qty = 3 },
@@ -165,7 +187,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 10940, qty = 2 },
@@ -179,8 +203,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6344 },
+                {
+                    type = "Item",
+                    item_id = 6344,
+                },
             },
             materials = {
                 { item_id = 10938, qty = 2 },
@@ -195,8 +221,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6345 },
+                {
+                    type = "Item",
+                    item_id = 6345,
+                },
             },
             materials = {
                 { item_id = 10940, qty = 3 },
@@ -210,8 +238,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Wands" },
             icon = "inv_staff_07",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 11288, qty = 1 },
             materials = {
@@ -226,7 +256,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 10940, qty = 1 },
@@ -241,8 +273,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6346 },
+                {
+                    type = "Item",
+                    item_id = 6346,
+                },
             },
             materials = {
                 { item_id = 10939, qty = 1 },
@@ -256,7 +290,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 10940, qty = 2 },
@@ -270,8 +306,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6347 },
+                {
+                    type = "Item",
+                    item_id = 6347,
+                },
             },
             materials = {
                 { item_id = 10940, qty = 5 },
@@ -284,7 +322,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 10938, qty = 1 },
@@ -300,8 +340,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6348 },
+                {
+                    type = "Item",
+                    item_id = 6348,
+                },
             },
             materials = {
                 { item_id = 10940, qty = 4 },
@@ -315,7 +357,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 10940, qty = 2 },
@@ -332,7 +376,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "2H Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 10940, qty = 4 },
@@ -346,8 +392,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "2H Weapon" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6349 },
+                {
+                    type = "Item",
+                    item_id = 6349,
+                },
             },
             materials = {
                 { item_id = 10939, qty = 3 },
@@ -360,8 +408,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Rods" },
             icon = "inv_staff_01",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 6339, qty = 1 },
             materials = {
@@ -380,7 +430,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Shield" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 10998, qty = 1 },
@@ -396,8 +448,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "2H Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11038 },
+                {
+                    type = "Item",
+                    item_id = 11038,
+                },
             },
             materials = {
                 { item_id = 10998, qty = 1 },
@@ -411,8 +465,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11039 },
+                {
+                    type = "Item",
+                    item_id = 11039,
+                },
             },
             materials = {
                 { item_id = 10998, qty = 1 },
@@ -427,7 +483,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 10940, qty = 6 },
@@ -441,8 +499,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Shield" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11081 },
+                {
+                    type = "Item",
+                    item_id = 11081,
+                },
             },
             materials = {
                 { item_id = 10998, qty = 1 },
@@ -459,7 +519,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 10940, qty = 4 },
@@ -473,8 +535,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6375 },
+                {
+                    type = "Item",
+                    item_id = 6375,
+                },
             },
             materials = {
                 { item_id = 10998, qty = 2 },
@@ -489,7 +553,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "trade_engraving",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -498,7 +564,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 6371, qty = 1 },
@@ -512,8 +580,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Boots" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6376 },
+                {
+                    type = "Item",
+                    item_id = 6376,
+                },
             },
             materials = {
                 { item_id = 10940, qty = 8 },
@@ -526,8 +596,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Boots" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6377 },
+                {
+                    type = "Item",
+                    item_id = 6377,
+                },
             },
             materials = {
                 { item_id = 10940, qty = 6 },
@@ -543,7 +615,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Shield" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 10998, qty = 2 },
@@ -557,7 +631,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11083, qty = 2 },
@@ -572,8 +648,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11098 },
+                {
+                    type = "Item",
+                    item_id = 11098,
+                },
             },
             materials = {
                 { item_id = 11082, qty = 1 },
@@ -589,7 +667,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11083, qty = 2 },
@@ -603,8 +683,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11101 },
+                {
+                    type = "Item",
+                    item_id = 11101,
+                },
             },
             materials = {
                 { item_id = 11083, qty = 2 },
@@ -617,7 +699,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 10940, qty = 2 },
@@ -634,7 +718,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "2H Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11083, qty = 3 },
@@ -648,7 +734,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11082, qty = 1 },
@@ -662,8 +750,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11150 },
+                {
+                    type = "Item",
+                    item_id = 11150,
+                },
             },
             materials = {
                 { item_id = 11083, qty = 1 },
@@ -677,8 +767,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11151 },
+                {
+                    type = "Item",
+                    item_id = 11151,
+                },
             },
             materials = {
                 { item_id = 11083, qty = 1 },
@@ -692,8 +784,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11152 },
+                {
+                    type = "Item",
+                    item_id = 11152,
+                },
             },
             materials = {
                 { item_id = 11083, qty = 1 },
@@ -709,7 +803,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11082, qty = 2 },
@@ -722,7 +818,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11082, qty = 1 },
@@ -737,8 +835,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Rods" },
             icon = "inv_staff_10",
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
             product = { item_id = 11130, qty = 1 },
             materials = {
@@ -756,8 +856,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Oils" },
             icon = "inv_potion_98",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20752 },
+                {
+                    type = "Item",
+                    item_id = 20752,
+                },
             },
             product = { item_id = 20745, qty = 1 },
             materials = {
@@ -775,7 +877,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Shield" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11134, qty = 1 },
@@ -789,7 +893,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11138, qty = 1 },
@@ -803,8 +909,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Wands" },
             icon = "inv_staff_02",
             source = {
-                type = "Trainer",
-                cost = 2600,
+                {
+                    type = "Trainer",
+                    cost = 2600,
+                },
             },
             product = { item_id = 11289, qty = 1 },
             materials = {
@@ -822,7 +930,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Boots" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11083, qty = 1 },
@@ -836,7 +946,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11083, qty = 3 },
@@ -851,7 +963,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11134, qty = 1 },
@@ -866,7 +980,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Boots" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11083, qty = 4 },
@@ -879,8 +995,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11163 },
+                {
+                    type = "Item",
+                    item_id = 11163,
+                },
             },
             materials = {
                 { item_id = 11134, qty = 1 },
@@ -894,7 +1012,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11083, qty = 6 },
@@ -909,8 +1029,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11164 },
+                {
+                    type = "Item",
+                    item_id = 11164,
+                },
             },
             materials = {
                 { item_id = 11134, qty = 1 },
@@ -925,8 +1047,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11165 },
+                {
+                    type = "Item",
+                    item_id = 11165,
+                },
             },
             materials = {
                 { item_id = 11134, qty = 1 },
@@ -941,7 +1065,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11134, qty = 1 },
@@ -955,8 +1081,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Wands" },
             icon = "inv_wand_07",
             source = {
-                type = "Trainer",
-                cost = 3000,
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
             },
             product = { item_id = 11290, qty = 1 },
             materials = {
@@ -974,7 +1102,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Shield" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11135, qty = 1 },
@@ -988,7 +1118,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11137, qty = 1 },
@@ -1003,7 +1135,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11135, qty = 1 },
@@ -1018,8 +1152,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Boots" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11167 },
+                {
+                    type = "Item",
+                    item_id = 11167,
+                },
             },
             materials = {
                 { item_id = 11135, qty = 1 },
@@ -1033,8 +1169,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17725 },
+                {
+                    type = "Item",
+                    item_id = 17725,
+                },
             },
             materials = {
                 { item_id = 11135, qty = 3 },
@@ -1052,8 +1190,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Shield" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11168 },
+                {
+                    type = "Item",
+                    item_id = 11168,
+                },
             },
             materials = {
                 { item_id = 11135, qty = 2 },
@@ -1068,7 +1208,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11135, qty = 2 },
@@ -1084,7 +1226,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "2H Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11137, qty = 4 },
@@ -1098,8 +1242,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11166 },
+                {
+                    type = "Item",
+                    item_id = 11166,
+                },
             },
             materials = {
                 { item_id = 11137, qty = 1 },
@@ -1113,7 +1259,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11135, qty = 2 },
@@ -1128,8 +1276,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Rods" },
             icon = "inv_staff_11",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 11145, qty = 1 },
             materials = {
@@ -1147,8 +1297,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Oils" },
             icon = "inv_potion_103",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20753 },
+                {
+                    type = "Item",
+                    item_id = 20753,
+                },
             },
             product = { item_id = 20746, qty = 1 },
             materials = {
@@ -1166,7 +1318,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11137, qty = 3 },
@@ -1179,7 +1333,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11174, qty = 1 },
@@ -1194,7 +1350,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11174, qty = 1 },
@@ -1208,8 +1366,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Shield" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11202 },
+                {
+                    type = "Item",
+                    item_id = 11202,
+                },
             },
             materials = {
                 { item_id = 11137, qty = 5 },
@@ -1222,7 +1382,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11174, qty = 2 },
@@ -1237,7 +1399,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Boots" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11137, qty = 5 },
@@ -1250,8 +1414,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11203 },
+                {
+                    type = "Item",
+                    item_id = 11203,
+                },
             },
             materials = {
                 { item_id = 11137, qty = 3 },
@@ -1267,8 +1433,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11204 },
+                {
+                    type = "Item",
+                    item_id = 11204,
+                },
             },
             materials = {
                 { item_id = 11174, qty = 3 },
@@ -1282,7 +1450,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11137, qty = 6 },
@@ -1297,8 +1467,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11205 },
+                {
+                    type = "Item",
+                    item_id = 11205,
+                },
             },
             materials = {
                 { item_id = 11137, qty = 3 },
@@ -1312,8 +1484,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11206 },
+                {
+                    type = "Item",
+                    item_id = 11206,
+                },
             },
             materials = {
                 { item_id = 11174, qty = 2 },
@@ -1326,7 +1500,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11174, qty = 2 },
@@ -1340,7 +1516,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Boots" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11177, qty = 1 },
@@ -1355,7 +1533,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "trade_engraving",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -1366,7 +1546,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Shield" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11175, qty = 1 },
@@ -1380,8 +1562,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11208 },
+                {
+                    type = "Item",
+                    item_id = 11208,
+                },
             },
             materials = {
                 { item_id = 11177, qty = 1 },
@@ -1396,7 +1580,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11175, qty = 1 },
@@ -1412,8 +1598,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11223 },
+                {
+                    type = "Item",
+                    item_id = 11223,
+                },
             },
             materials = {
                 { item_id = 11175, qty = 1 },
@@ -1427,8 +1615,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Shield" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11224 },
+                {
+                    type = "Item",
+                    item_id = 11224,
+                },
             },
             materials = {
                 { item_id = 11178, qty = 1 },
@@ -1442,7 +1632,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Boots" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11175, qty = 2 },
@@ -1457,7 +1649,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "2H Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11178, qty = 2 },
@@ -1471,7 +1665,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11176, qty = 2 },
@@ -1487,7 +1683,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11178, qty = 1 },
@@ -1502,7 +1700,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11178, qty = 2 },
@@ -1516,8 +1716,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11225 },
+                {
+                    type = "Item",
+                    item_id = 11225,
+                },
             },
             materials = {
                 { item_id = 11176, qty = 5 },
@@ -1532,8 +1734,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11226 },
+                {
+                    type = "Item",
+                    item_id = 11226,
+                },
             },
             materials = {
                 { item_id = 11178, qty = 2 },
@@ -1547,7 +1751,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 11178, qty = 2 },
@@ -1561,8 +1767,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Oils" },
             icon = "inv_potion_99",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20754 },
+                {
+                    type = "Item",
+                    item_id = 20754,
+                },
             },
             product = { item_id = 20747, qty = 1 },
             materials = {
@@ -1578,8 +1786,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_ingot_eternium",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 12655, qty = 1 },
             materials = {
@@ -1594,8 +1804,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_misc_rune_05",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 12810, qty = 1 },
             materials = {
@@ -1612,8 +1824,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16214 },
+                {
+                    type = "Item",
+                    item_id = 16214,
+                },
             },
             materials = {
                 { item_id = 16202, qty = 3 },
@@ -1628,8 +1842,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Boots" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16215 },
+                {
+                    type = "Item",
+                    item_id = 16215,
+                },
             },
             materials = {
                 { item_id = 11176, qty = 10 },
@@ -1644,8 +1860,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11207 },
+                {
+                    type = "Item",
+                    item_id = 11207,
+                },
             },
             materials = {
                 { item_id = 11177, qty = 4 },
@@ -1659,8 +1877,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_misc_gem_bloodstone_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 11813 },
+                {
+                    type = "Item",
+                    item_id = 11813,
+                },
             },
             product = { item_id = 11811, qty = 1 },
             materials = {
@@ -1676,8 +1896,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16216 },
+                {
+                    type = "Item",
+                    item_id = 16216,
+                },
             },
             materials = {
                 { item_id = 16202, qty = 2 },
@@ -1695,8 +1917,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Shield" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16217 },
+                {
+                    type = "Item",
+                    item_id = 16217,
+                },
             },
             materials = {
                 { item_id = 11176, qty = 10 },
@@ -1711,8 +1935,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16218 },
+                {
+                    type = "Item",
+                    item_id = 16218,
+                },
             },
             materials = {
                 { item_id = 16202, qty = 3 },
@@ -1726,8 +1952,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16219 },
+                {
+                    type = "Item",
+                    item_id = 16219,
+                },
             },
             materials = {
                 { item_id = 16202, qty = 3 },
@@ -1743,8 +1971,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Boots" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16220 },
+                {
+                    type = "Item",
+                    item_id = 16220,
+                },
             },
             materials = {
                 { item_id = 16203, qty = 2 },
@@ -1758,8 +1988,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16221 },
+                {
+                    type = "Item",
+                    item_id = 16221,
+                },
             },
             materials = {
                 { item_id = 16204, qty = 6 },
@@ -1773,8 +2005,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Oils" },
             icon = "inv_potion_104",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20755 },
+                {
+                    type = "Item",
+                    item_id = 20755,
+                },
             },
             product = { item_id = 20750, qty = 1 },
             materials = {
@@ -1790,7 +2024,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "trade_engraving",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -1801,8 +2037,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Shield" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16222 },
+                {
+                    type = "Item",
+                    item_id = 16222,
+                },
             },
             materials = {
                 { item_id = 16203, qty = 2 },
@@ -1818,8 +2056,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16224 },
+                {
+                    type = "Item",
+                    item_id = 16224,
+                },
             },
             materials = {
                 { item_id = 16204, qty = 8 },
@@ -1832,8 +2072,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16223 },
+                {
+                    type = "Item",
+                    item_id = 16223,
+                },
             },
             materials = {
                 { item_id = 14343, qty = 4 },
@@ -1851,8 +2093,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16242 },
+                {
+                    type = "Item",
+                    item_id = 16242,
+                },
             },
             materials = {
                 { item_id = 16203, qty = 3 },
@@ -1866,10 +2110,12 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Rods" },
             icon = "inv_wand_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16243 },
-                cost = 20900,
-                location = "Lorelae Wintersong, Moonglade",
+                {
+                    type = "Item",
+                    item_id = 16243,
+                    cost = 20900,
+                    location = "Lorelae Wintersong, Moonglade",
+                },
             },
             product = { item_id = 16207, qty = 1 },
             materials = {
@@ -1888,8 +2134,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19444 },
+                {
+                    type = "Item",
+                    item_id = 19444,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 6 },
@@ -1905,8 +2153,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19445 },
+                {
+                    type = "Item",
+                    item_id = 19445,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 6 },
@@ -1922,8 +2172,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19446 },
+                {
+                    type = "Item",
+                    item_id = 19446,
+                },
             },
             materials = {
                 { item_id = 16204, qty = 16 },
@@ -1938,8 +2190,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "2H Weapon" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22392 },
+                {
+                    type = "Item",
+                    item_id = 22392,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 10 },
@@ -1957,8 +2211,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16246 },
+                {
+                    type = "Item",
+                    item_id = 16246,
+                },
             },
             materials = {
                 { item_id = 16204, qty = 6 },
@@ -1972,8 +2228,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16244 },
+                {
+                    type = "Item",
+                    item_id = 16244,
+                },
             },
             materials = {
                 { item_id = 16203, qty = 4 },
@@ -1987,8 +2245,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Boots" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16245 },
+                {
+                    type = "Item",
+                    item_id = 16245,
+                },
             },
             materials = {
                 { item_id = 16203, qty = 8 },
@@ -2001,8 +2261,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "2H Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16247 },
+                {
+                    type = "Item",
+                    item_id = 16247,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 4 },
@@ -2016,8 +2278,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16248 },
+                {
+                    type = "Item",
+                    item_id = 16248,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 4 },
@@ -2033,8 +2297,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16251 },
+                {
+                    type = "Item",
+                    item_id = 16251,
+                },
             },
             materials = {
                 { item_id = 16204, qty = 15 },
@@ -2047,8 +2313,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16253 },
+                {
+                    type = "Item",
+                    item_id = 16253,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 4 },
@@ -2063,8 +2331,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16250 },
+                {
+                    type = "Item",
+                    item_id = 16250,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 2 },
@@ -2078,8 +2348,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16254 },
+                {
+                    type = "Item",
+                    item_id = 16254,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 6 },
@@ -2094,8 +2366,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16252 },
+                {
+                    type = "Item",
+                    item_id = 16252,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 4 },
@@ -2109,8 +2383,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "2H Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16255 },
+                {
+                    type = "Item",
+                    item_id = 16255,
+                },
             },
             materials = {
                 { item_id = 16203, qty = 12 },
@@ -2124,8 +2400,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "2H Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16249 },
+                {
+                    type = "Item",
+                    item_id = 16249,
+                },
             },
             materials = {
                 { item_id = 16203, qty = 12 },
@@ -2139,8 +2417,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18259 },
+                {
+                    type = "Item",
+                    item_id = 18259,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 4 },
@@ -2158,8 +2438,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18260 },
+                {
+                    type = "Item",
+                    item_id = 18260,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 4 },
@@ -2176,8 +2458,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19447 },
+                {
+                    type = "Item",
+                    item_id = 19447,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 2 },
@@ -2193,8 +2477,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19448 },
+                {
+                    type = "Item",
+                    item_id = 19448,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 10 },
@@ -2209,8 +2495,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19449 },
+                {
+                    type = "Item",
+                    item_id = 19449,
+                },
             },
             materials = {
                 { item_id = 14344, qty = 15 },
@@ -2225,8 +2513,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20726, 33153 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 20726, 33153 },
+                },
             },
             materials = {
                 { item_id = 22448, qty = 4 },
@@ -2241,8 +2531,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20727 },
+                {
+                    type = "Item",
+                    item_id = 20727,
+                },
             },
             materials = {
                 { item_id = 20725, qty = 3 },
@@ -2257,8 +2549,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20728 },
+                {
+                    type = "Item",
+                    item_id = 20728,
+                },
             },
             materials = {
                 { item_id = 20725, qty = 3 },
@@ -2273,8 +2567,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20729 },
+                {
+                    type = "Item",
+                    item_id = 20729,
+                },
             },
             materials = {
                 { item_id = 20725, qty = 2 },
@@ -2289,8 +2585,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20730 },
+                {
+                    type = "Item",
+                    item_id = 20730,
+                },
             },
             materials = {
                 { item_id = 20725, qty = 3 },
@@ -2305,8 +2603,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20731, 33152 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 20731, 33152 },
+                },
             },
             materials = {
                 { item_id = 22448, qty = 3 },
@@ -2321,8 +2621,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20732 },
+                {
+                    type = "Item",
+                    item_id = 20732,
+                },
             },
             materials = {
                 { item_id = 22448, qty = 3 },
@@ -2337,8 +2639,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20733 },
+                {
+                    type = "Item",
+                    item_id = 20733,
+                },
             },
             materials = {
                 { item_id = 22448, qty = 2 },
@@ -2353,8 +2657,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20734, 33149 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 20734, 33149 },
+                },
             },
             materials = {
                 { item_id = 22448, qty = 3 },
@@ -2369,8 +2675,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20735, 33150, 33151 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 20735, 33150, 33151 },
+                },
             },
             materials = {
                 { item_id = 22448, qty = 4 },
@@ -2385,8 +2693,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20736, 33148 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 20736, 33148 },
+                },
             },
             materials = {
                 { item_id = 22448, qty = 3 },
@@ -2401,8 +2711,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Rods" },
             icon = "inv_rod_enchantedfelsteel",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 22461, qty = 1 },
             materials = {
@@ -2419,7 +2731,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 22447, qty = 2 },
@@ -2433,7 +2747,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 22445, qty = 6 },
@@ -2446,8 +2762,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Oils" },
             icon = "inv_potion_105",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20756 },
+                {
+                    type = "Item",
+                    item_id = 20756,
+                },
             },
             product = { item_id = 20749, qty = 1 },
             materials = {
@@ -2463,8 +2781,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Oils" },
             icon = "inv_potion_100",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20757 },
+                {
+                    type = "Item",
+                    item_id = 20757,
+                },
             },
             product = { item_id = 20748, qty = 1 },
             materials = {
@@ -2480,8 +2800,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_enchant_shardprismaticsmall",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 22448, qty = 1 },
             materials = {
@@ -2497,7 +2819,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 22445, qty = 6 },
@@ -2510,8 +2834,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Boots" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22542 },
+                {
+                    type = "Item",
+                    item_id = 22542,
+                },
             },
             materials = {
                 { item_id = 22445, qty = 6 },
@@ -2526,7 +2852,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 22447, qty = 1 },
@@ -2540,7 +2868,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 22447, qty = 3 },
@@ -2555,7 +2885,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Shield" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 22445, qty = 6 },
@@ -2569,7 +2901,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 22445, qty = 8 },
@@ -2582,7 +2916,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 22445, qty = 8 },
@@ -2595,7 +2931,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 22446, qty = 1 },
@@ -2610,8 +2948,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Oils" },
             icon = "inv_potion_101",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22562 },
+                {
+                    type = "Item",
+                    item_id = 22562,
+                },
             },
             product = { item_id = 22521, qty = 1 },
             materials = {
@@ -2629,7 +2969,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 22445, qty = 6 },
@@ -2643,7 +2985,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 22445, qty = 8 },
@@ -2660,8 +3004,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22530 },
+                {
+                    type = "Item",
+                    item_id = 22530,
+                },
             },
             materials = {
                 { item_id = 22448, qty = 2 },
@@ -2675,8 +3021,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Boots" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22543 },
+                {
+                    type = "Item",
+                    item_id = 22543,
+                },
             },
             materials = {
                 { item_id = 22445, qty = 12 },
@@ -2689,7 +3037,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 22446, qty = 2 },
@@ -2704,8 +3054,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 24000, 22531 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 24000, 22531 },
+                },
             },
             materials = {
                 { item_id = 22446, qty = 4 },
@@ -2719,8 +3071,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Shield" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22539 },
+                {
+                    type = "Item",
+                    item_id = 22539,
+                },
             },
             materials = {
                 { item_id = 22446, qty = 4 },
@@ -2733,7 +3087,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -2742,8 +3098,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 28274 },
+                {
+                    type = "Item",
+                    item_id = 28274,
+                },
             },
             materials = {
                 { item_id = 22446, qty = 2 },
@@ -2758,8 +3116,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Shield" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 28282 },
+                {
+                    type = "Item",
+                    item_id = 28282,
+                },
             },
             materials = {
                 { item_id = 22445, qty = 15 },
@@ -2772,8 +3132,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_enchant_prismaticsphere",
             source = {
-                type = "Trainer",
-                cost = 40000,
+                {
+                    type = "Trainer",
+                    cost = 40000,
+                },
             },
             product = { item_id = 22460, qty = 1 },
             materials = {
@@ -2789,8 +3151,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22548 },
+                {
+                    type = "Item",
+                    item_id = 22548,
+                },
             },
             materials = {
                 { item_id = 22446, qty = 4 },
@@ -2807,7 +3171,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Shield" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 22449, qty = 1 },
@@ -2823,8 +3189,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22532 },
+                {
+                    type = "Item",
+                    item_id = 22532,
+                },
             },
             materials = {
                 { item_id = 22446, qty = 8 },
@@ -2837,8 +3205,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_enchant_shardprismaticsmall",
             source = {
-                type = "Trainer",
-                cost = 40000,
+                {
+                    type = "Trainer",
+                    cost = 40000,
+                },
             },
             product = { item_id = 22448, qty = 3 },
             materials = {
@@ -2852,8 +3222,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_enchant_shardprismaticlarge",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22565 },
+                {
+                    type = "Item",
+                    item_id = 22565,
+                },
             },
             product = { item_id = 22449, qty = 1 },
             materials = {
@@ -2869,8 +3241,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Shield" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22540 },
+                {
+                    type = "Item",
+                    item_id = 22540,
+                },
             },
             materials = {
                 { item_id = 22445, qty = 12 },
@@ -2885,8 +3259,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Boots" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22544 },
+                {
+                    type = "Item",
+                    item_id = 22544,
+                },
             },
             materials = {
                 { item_id = 22446, qty = 8 },
@@ -2900,8 +3276,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22552 },
+                {
+                    type = "Item",
+                    item_id = 22552,
+                },
             },
             materials = {
                 { item_id = 22449, qty = 2 },
@@ -2916,8 +3294,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22551 },
+                {
+                    type = "Item",
+                    item_id = 22551,
+                },
             },
             materials = {
                 { item_id = 22449, qty = 2 },
@@ -2931,7 +3311,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             materials = {
                 { item_id = 22445, qty = 12 },
@@ -2945,8 +3327,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Oils" },
             icon = "inv_potion_141",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22563 },
+                {
+                    type = "Item",
+                    item_id = 22563,
+                },
             },
             product = { item_id = 22522, qty = 1 },
             materials = {
@@ -2964,8 +3348,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22547, 24003 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 22547, 24003 },
+                },
             },
             materials = {
                 { item_id = 22449, qty = 4 },
@@ -2980,8 +3366,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 28270 },
+                {
+                    type = "Item",
+                    item_id = 28270,
+                },
             },
             materials = {
                 { item_id = 22446, qty = 4 },
@@ -2997,8 +3385,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22533 },
+                {
+                    type = "Item",
+                    item_id = 22533,
+                },
             },
             materials = {
                 { item_id = 22449, qty = 1 },
@@ -3013,8 +3403,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "2H Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22554 },
+                {
+                    type = "Item",
+                    item_id = 22554,
+                },
             },
             materials = {
                 { item_id = 22449, qty = 4 },
@@ -3028,8 +3420,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22553 },
+                {
+                    type = "Item",
+                    item_id = 22553,
+                },
             },
             materials = {
                 { item_id = 22449, qty = 4 },
@@ -3044,8 +3438,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22555 },
+                {
+                    type = "Item",
+                    item_id = 22555,
+                },
             },
             materials = {
                 { item_id = 22449, qty = 8 },
@@ -3059,8 +3455,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_enchant_voidsphere",
             source = {
-                type = "Trainer",
-                cost = 80000,
+                {
+                    type = "Trainer",
+                    cost = 80000,
+                },
             },
             product = { item_id = 22459, qty = 1 },
             materials = {
@@ -3074,10 +3472,12 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Rods" },
             icon = "inv_rod_enchantedadamantite",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25848 },
-                cost = 100000,
-                location = "Vodesiin, Temple of Telhamat in Hellfire Penninsula (Alliance), Rungor, Stonebreaker Hold in Terokkar Forest (Horde)",
+                {
+                    type = "Item",
+                    item_id = 25848,
+                    cost = 100000,
+                    location = "Vodesiin, Temple of Telhamat in Hellfire Penninsula (Alliance), Rungor, Stonebreaker Hold in Terokkar Forest (Horde)",
+                },
             },
             product = { item_id = 22462, qty = 1 },
             materials = {
@@ -3095,8 +3495,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 28273 },
+                {
+                    type = "Item",
+                    item_id = 28273,
+                },
             },
             materials = {
                 { item_id = 22446, qty = 6 },
@@ -3111,8 +3513,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 28276 },
+                {
+                    type = "Item",
+                    item_id = 28276,
+                },
             },
             materials = {
                 { item_id = 22449, qty = 4 },
@@ -3126,8 +3530,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 28277 },
+                {
+                    type = "Item",
+                    item_id = 28277,
+                },
             },
             materials = {
                 { item_id = 22449, qty = 4 },
@@ -3141,8 +3547,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 28281 },
+                {
+                    type = "Item",
+                    item_id = 28281,
+                },
             },
             materials = {
                 { item_id = 22449, qty = 8 },
@@ -3157,8 +3565,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 33165 },
+                {
+                    type = "Item",
+                    item_id = 33165,
+                },
             },
             materials = {
                 { item_id = 22445, qty = 8 },
@@ -3174,8 +3584,10 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35498 },
+                {
+                    type = "Item",
+                    item_id = 35498,
+                },
             },
             materials = {
                 { item_id = 22456, qty = 2 },
@@ -3191,9 +3603,11 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Bracer" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22534 },
-                location = "Drop, Bloodmaul Geomancer in Blade's Edge Mountains"
+                {
+                    type = "Item",
+                    item_id = 22534,
+                    location = "Drop, Bloodmaul Geomancer in Blade's Edge Mountains"
+                },
             },
             materials = {
                 { item_id = 22449, qty = 6 },
@@ -3208,9 +3622,11 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Ring" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22535 },
-                location = "Ythyar in Karazhan, The Consortium - Revered",
+                {
+                    type = "Item",
+                    item_id = 22535,
+                    location = "Ythyar in Karazhan, The Consortium - Revered",
+                },
             },
             materials = {
                 { item_id = 22449, qty = 2 },
@@ -3224,9 +3640,11 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Ring" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22536 },
-                location = "Alurmi, Keepers of Time - Honored",
+                {
+                    type = "Item",
+                    item_id = 22536,
+                    location = "Alurmi, Keepers of Time - Honored",
+                },
             },
             materials = {
                 { item_id = 22449, qty = 2 },
@@ -3240,9 +3658,11 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Shield" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22541 },
-                location = "Trash Drop, Multiple Raids and Dungeons",
+                {
+                    type = "Item",
+                    item_id = 22541,
+                    location = "Trash Drop, Multiple Raids and Dungeons",
+                },
             },
             materials = {
                 { item_id = 22449, qty = 2 },
@@ -3259,9 +3679,11 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "2H Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22556 },
-                location = "Eredar Deathrbinger, The Arcatraz",
+                {
+                    type = "Item",
+                    item_id = 22556,
+                    location = "Eredar Deathrbinger, The Arcatraz",
+                },
             },
             materials = {
                 { item_id = 22449, qty = 8 },
@@ -3276,9 +3698,11 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22558 },
-                location = "Trash Drop, Multiple Raids and Dungeons",
+                {
+                    type = "Item",
+                    item_id = 22558,
+                    location = "Trash Drop, Multiple Raids and Dungeons",
+                },
             },
             materials = {
                 { item_id = 22449, qty = 12 },
@@ -3293,9 +3717,11 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22557 },
-                location = "Trash Drop, Multiple Raids and Dungeons",
+                {
+                    type = "Item",
+                    item_id = 22557,
+                    location = "Trash Drop, Multiple Raids and Dungeons",
+                },
             },
             materials = {
                 { item_id = 22450, qty = 8 },
@@ -3310,9 +3736,11 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 28271 },
-                location = "Fedryen Swiftspear, Cenarion Expedition - Revered",
+                {
+                    type = "Item",
+                    item_id = 28271,
+                    location = "Fedryen Swiftspear, Cenarion Expedition - Revered",
+                },
             },
             materials = {
                 { item_id = 22446, qty = 8 },
@@ -3327,9 +3755,11 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Gloves" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 28272 },
-                location = "Alurmi, Keepers of Time - Honored",
+                {
+                    type = "Item",
+                    item_id = 28272,
+                    location = "Alurmi, Keepers of Time - Honored",
+                },
             },
             materials = {
                 { item_id = 22446, qty = 6 },
@@ -3344,9 +3774,11 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Boots" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 28279 },
-                location = "Trash Drop, Multiple Dungeons and Raids, or Kael'thas Sunstrider in Magisters' Terrace",
+                {
+                    type = "Item",
+                    item_id = 28279,
+                    location = "Trash Drop, Multiple Dungeons and Raids, or Kael'thas Sunstrider in Magisters' Terrace",
+                },
             },
             materials = {
                 { item_id = 22449, qty = 8 },
@@ -3360,9 +3792,11 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Boots" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 28280 },
-                location = "Trash Drop, Multiple Dungeons and Raids, or Kael'thas Sunstrider in Magisters' Terrace",
+                {
+                    type = "Item",
+                    item_id = 28280,
+                    location = "Trash Drop, Multiple Dungeons and Raids, or Kael'thas Sunstrider in Magisters' Terrace",
+                },
             },
             materials = {
                 { item_id = 22449, qty = 8 },
@@ -3376,9 +3810,11 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Chest" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35500 },
-                location = "Eldara Dawnrunner, Shattered Sun Offensive - Honored",
+                {
+                    type = "Item",
+                    item_id = 35500,
+                    location = "Eldara Dawnrunner, Shattered Sun Offensive - Honored",
+                },
             },
             materials = {
                 { item_id = 22446, qty = 4 },
@@ -3396,9 +3832,11 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Ring" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22537 },
-                location = "The Sha'tar - Revered",
+                {
+                    type = "Item",
+                    item_id = 22537,
+                    location = "The Sha'tar - Revered",
+                },
             },
             materials = {
                 { item_id = 22449, qty = 2 },
@@ -3413,9 +3851,11 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Boots" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22545 },
-                location = "Phantom Stagehand, Karazhan",
+                {
+                    type = "Item",
+                    item_id = 22545,
+                    location = "Phantom Stagehand, Karazhan",
+                },
             },
             materials = {
                 { item_id = 22450, qty = 2 },
@@ -3432,9 +3872,11 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Ring" },
             icon = "inv_misc_note_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22538 },
-                location = "Lower City - Honored",
+                {
+                    type = "Item",
+                    item_id = 22538,
+                    location = "Lower City - Honored",
+                },
             },
             materials = {
                 { item_id = 22450, qty = 2 },
@@ -3448,9 +3890,11 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22560 },
-                location = "Shade of Aran, Karazhan",
+                {
+                    type = "Item",
+                    item_id = 22560,
+                    location = "Shade of Aran, Karazhan",
+                },
             },
             materials = {
                 { item_id = 22450, qty = 12 },
@@ -3467,9 +3911,11 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22561 },
-                location = "Terestian Illhoof, Karazhan",
+                {
+                    type = "Item",
+                    item_id = 22561,
+                    location = "Terestian Illhoof, Karazhan",
+                },
             },
             materials = {
                 { item_id = 22450, qty = 12 },
@@ -3486,9 +3932,11 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22559 },
-                location = "Moroes, Karazhan",
+                {
+                    type = "Item",
+                    item_id = 22559,
+                    location = "Moroes, Karazhan",
+                },
             },
             materials = {
                 { item_id = 22450, qty = 6 },
@@ -3504,9 +3952,11 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Weapon" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 33307 },
-                location = "Multiple Bosses in Zul'Aman"
+                {
+                    type = "Item",
+                    item_id = 33307,
+                    location = "Multiple Bosses in Zul'Aman"
+                },
             },
             materials = {
                 { item_id = 22450, qty = 6 },
@@ -3524,9 +3974,11 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Cloak" },
             icon = "spell_holy_greaterheal",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35756 },
-                location = "Priestess Delrissa, Magisters' Terrace",
+                {
+                    type = "Item",
+                    item_id = 35756,
+                    location = "Priestess Delrissa, Magisters' Terrace",
+                },
             },
             materials = {
                 { item_id = 22446, qty = 8 },
@@ -3541,10 +3993,12 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Rods" },
             icon = "inv_rod_enchantedeternium",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25849 },
-                cost = 120000,
-                location = "Madame Ruby in Shattrath City",
+                {
+                    type = "Item",
+                    item_id = 25849,
+                    cost = 120000,
+                    location = "Madame Ruby in Shattrath City",
+                },
             },
             product = { item_id = 22463, qty = 1 },
             materials = {
@@ -3562,10 +4016,12 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             categories = { "Miscellaneous" },
             icon = "inv_enchant_shardprismaticlarge",
             source = {
-                type = "Item",
-                recipe_item_ids = { 34872 },
-                cost = 120000,
-                location = "Eldara Dawnrunner, Shattered Sun Offensive - Honored",
+                {
+                    type = "Item",
+                    item_id = 34872,
+                    cost = 120000,
+                    location = "Eldara Dawnrunner, Shattered Sun Offensive - Honored",
+                },
             },
             product = { item_id = 22449, qty = 2 },
             materials = {

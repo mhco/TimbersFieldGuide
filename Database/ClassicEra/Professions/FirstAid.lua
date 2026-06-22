@@ -7,7 +7,9 @@ TFG.FIRST_AID_CLASSIC_ERA = {
             name = "Linen Bandage",
             icon = "inv_misc_bandage_15",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 1251, qty = 1 },
             materials = {
@@ -20,7 +22,9 @@ TFG.FIRST_AID_CLASSIC_ERA = {
             name = "First Aid",
             icon = "spell_holy_sealofsacrifice",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -28,7 +32,9 @@ TFG.FIRST_AID_CLASSIC_ERA = {
             name = "First Aid",
             icon = "spell_holy_sealofsacrifice",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -36,7 +42,9 @@ TFG.FIRST_AID_CLASSIC_ERA = {
             name = "First Aid",
             icon = "spell_holy_sealofsacrifice",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -46,8 +54,10 @@ TFG.FIRST_AID_CLASSIC_ERA = {
             name = "Heavy Linen Bandage",
             icon = "inv_misc_bandage_18",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 2581, qty = 1 },
             materials = {
@@ -62,7 +72,9 @@ TFG.FIRST_AID_CLASSIC_ERA = {
             name = "First Aid",
             icon = "spell_holy_sealofsacrifice",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -72,8 +84,10 @@ TFG.FIRST_AID_CLASSIC_ERA = {
             name = "Anti-Venom",
             icon = "inv_misc_slime_01",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 6452, qty = 3 },
             materials = {
@@ -86,8 +100,10 @@ TFG.FIRST_AID_CLASSIC_ERA = {
             name = "Wool Bandage",
             icon = "inv_misc_bandage_14",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 3530, qty = 1 },
             materials = {
@@ -102,8 +118,10 @@ TFG.FIRST_AID_CLASSIC_ERA = {
             name = "Heavy Wool Bandage",
             icon = "inv_misc_bandage_17",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 3531, qty = 1 },
             materials = {
@@ -118,8 +136,10 @@ TFG.FIRST_AID_CLASSIC_ERA = {
             name = "Strong Anti-Venom",
             icon = "inv_misc_slime_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6454 },
+                {
+                    type = "Item",
+                    item_id = 6454,
+                },
             },
             product = { item_id = 6453, qty = 3 },
             materials = {
@@ -134,8 +154,10 @@ TFG.FIRST_AID_CLASSIC_ERA = {
             name = "Silk Bandage",
             icon = "inv_misc_bandage_01",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 6450, qty = 1 },
             materials = {
@@ -150,8 +172,10 @@ TFG.FIRST_AID_CLASSIC_ERA = {
             name = "Heavy Silk Bandage",
             icon = "inv_misc_bandage_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16112 },
+                {
+                    type = "Item",
+                    item_id = 16112,
+                },
             },
             product = { item_id = 6451, qty = 1 },
             materials = {
@@ -166,8 +190,10 @@ TFG.FIRST_AID_CLASSIC_ERA = {
             name = "Mageweave Bandage",
             icon = "inv_misc_bandage_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16113 },
+                {
+                    type = "Item",
+                    item_id = 16113,
+                },
             },
             product = { item_id = 8544, qty = 1 },
             materials = {
@@ -182,7 +208,9 @@ TFG.FIRST_AID_CLASSIC_ERA = {
             name = "Heavy Mageweave Bandage",
             icon = "inv_misc_bandage_20",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 8545, qty = 1 },
             materials = {
@@ -197,7 +225,9 @@ TFG.FIRST_AID_CLASSIC_ERA = {
             name = "Runecloth Bandage",
             icon = "inv_misc_bandage_11",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 14529, qty = 1 },
             materials = {
@@ -212,7 +242,9 @@ TFG.FIRST_AID_CLASSIC_ERA = {
             name = "Heavy Runecloth Bandage",
             icon = "inv_misc_bandage_12",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 14530, qty = 1 },
             materials = {
@@ -227,8 +259,10 @@ TFG.FIRST_AID_CLASSIC_ERA = {
             name = "Powerful Anti-Venom",
             icon = "inv_drink_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19442 },
+                {
+                    type = "Item",
+                    item_id = 19442,
+                },
             },
             product = { item_id = 19440, qty = 1 },
             materials = {

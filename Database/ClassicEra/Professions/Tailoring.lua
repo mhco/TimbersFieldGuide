@@ -7,7 +7,9 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Bolt of Linen Cloth",
             icon = "inv_fabric_linen_02",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 2996, qty = 1 },
             materials = {
@@ -20,7 +22,9 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Brown Linen Shirt",
             icon = "inv_shirt_02",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 4344, qty = 1 },
             materials = {
@@ -34,7 +38,9 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Linen Cloak",
             icon = "inv_misc_cape_14",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 2570, qty = 1 },
             materials = {
@@ -48,7 +54,9 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Simple Linen Pants",
             icon = "inv_pants_11",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 10045, qty = 1 },
             materials = {
@@ -62,8 +70,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "White Linen Shirt",
             icon = "inv_shirt_white_01",
             source = {
-                type = "Trainer",
-                cost = 25,
+                {
+                    type = "Trainer",
+                    cost = 25,
+                },
             },
             product = { item_id = 2576, qty = 1 },
             materials = {
@@ -79,7 +89,9 @@ TFG.TAILORING_CLASSIC_ERA = {
             categories = { "Profession Training" },
             icon = "trade_tailoring",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -89,8 +101,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Brown Linen Vest",
             icon = "inv_shirt_05",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 2568, qty = 1 },
             materials = {
@@ -106,8 +120,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Linen Belt",
             icon = "inv_belt_05",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 7026, qty = 1 },
             materials = {
@@ -123,8 +139,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Simple Linen Boots",
             icon = "inv_boots_05",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 10046, qty = 1 },
             materials = {
@@ -141,8 +159,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Brown Linen Robe",
             icon = "inv_chest_cloth_21",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 6238, qty = 1 },
             materials = {
@@ -156,8 +176,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "White Linen Robe",
             icon = "inv_chest_cloth_04",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 6241, qty = 1 },
             materials = {
@@ -172,8 +194,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Brown Linen Pants",
             icon = "inv_pants_06",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 4343, qty = 1 },
             materials = {
@@ -189,8 +213,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Heavy Linen Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 4307, qty = 1 },
             materials = {
@@ -206,8 +232,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Red Linen Robe",
             icon = "inv_chest_cloth_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2598 },
+                {
+                    type = "Item",
+                    item_id = 2598,
+                },
             },
             product = { item_id = 2572, qty = 1 },
             materials = {
@@ -222,8 +250,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Blue Linen Shirt",
             icon = "inv_shirt_blue_01",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 2577, qty = 1 },
             materials = {
@@ -238,8 +268,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Red Linen Shirt",
             icon = "inv_shirt_red_01",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 2575, qty = 1 },
             materials = {
@@ -254,8 +286,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Simple Dress",
             icon = "inv_shirt_12",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 6786, qty = 1 },
             materials = {
@@ -273,8 +307,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Linen Bag",
             icon = "inv_misc_bag_01",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 4238, qty = 1 },
             materials = {
@@ -291,7 +327,9 @@ TFG.TAILORING_CLASSIC_ERA = {
             categories = { "Profession Training" },
             icon = "trade_tailoring",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -301,8 +339,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Blue Linen Vest",
             icon = "inv_chest_cloth_37",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6270 },
+                {
+                    type = "Item",
+                    item_id = 6270,
+                },
             },
             product = { item_id = 6240, qty = 1 },
             materials = {
@@ -317,8 +357,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Red Linen Vest",
             icon = "inv_chest_cloth_40",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6271 },
+                {
+                    type = "Item",
+                    item_id = 6271,
+                },
             },
             product = { item_id = 6239, qty = 1 },
             materials = {
@@ -335,8 +377,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Green Linen Bracers",
             icon = "inv_bracer_12",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 4308, qty = 1 },
             materials = {
@@ -351,8 +395,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Reinforced Linen Cape",
             icon = "inv_misc_cape_07",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 2580, qty = 1 },
             materials = {
@@ -368,8 +414,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Linen Boots",
             icon = "inv_boots_09",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 2569, qty = 1 },
             materials = {
@@ -386,8 +434,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Barbaric Linen Vest",
             icon = "inv_chest_fur",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 2578, qty = 1 },
             materials = {
@@ -402,8 +452,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Blue Linen Robe",
             icon = "inv_chest_cloth_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6272 },
+                {
+                    type = "Item",
+                    item_id = 6272,
+                },
             },
             product = { item_id = 6242, qty = 1 },
             materials = {
@@ -418,8 +470,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Handstitched Linen Britches",
             icon = "inv_pants_07",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 4309, qty = 1 },
             materials = {
@@ -433,8 +487,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Green Linen Shirt",
             icon = "inv_shirt_green_01",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 2579, qty = 1 },
             materials = {
@@ -449,8 +505,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Red Linen Bag",
             icon = "inv_misc_bag_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5771 },
+                {
+                    type = "Item",
+                    item_id = 5771,
+                },
             },
             product = { item_id = 5762, qty = 1 },
             materials = {
@@ -467,8 +525,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Bolt of Woolen Cloth",
             icon = "inv_fabric_wool_03",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 2997, qty = 1 },
             materials = {
@@ -481,8 +541,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Simple Kilt",
             icon = "inv_pants_11",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 10047, qty = 1 },
             materials = {
@@ -496,8 +558,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Woolen Cape",
             icon = "inv_misc_cape_10",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 2584, qty = 1 },
             materials = {
@@ -513,8 +577,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Soft-soled Linen Boots",
             icon = "inv_boots_09",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 4312, qty = 1 },
             materials = {
@@ -529,8 +595,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Woolen Bag",
             icon = "inv_misc_bag_10",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 4240, qty = 1 },
             materials = {
@@ -546,8 +614,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Heavy Woolen Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Trainer",
-                cost = 400,
+                {
+                    type = "Trainer",
+                    cost = 400,
+                },
             },
             product = { item_id = 4310, qty = 1 },
             materials = {
@@ -561,8 +631,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Green Woolen Vest",
             icon = "inv_chest_cloth_39",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 2582, qty = 1 },
             materials = {
@@ -579,8 +651,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Pearl-clasped Cloak",
             icon = "inv_misc_cape_11",
             source = {
-                type = "Trainer",
-                cost = 400,
+                {
+                    type = "Trainer",
+                    cost = 400,
+                },
             },
             product = { item_id = 5542, qty = 1 },
             materials = {
@@ -597,8 +671,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Red Woolen Boots",
             icon = "inv_boots_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4345 },
+                {
+                    type = "Item",
+                    item_id = 4345,
+                },
             },
             product = { item_id = 4313, qty = 1 },
             materials = {
@@ -614,8 +690,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Woolen Boots",
             icon = "inv_boots_09",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 2583, qty = 1 },
             materials = {
@@ -630,8 +708,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Green Woolen Bag",
             icon = "inv_misc_bag_10_green",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4292 },
+                {
+                    type = "Item",
+                    item_id = 4292,
+                },
             },
             product = { item_id = 4241, qty = 1 },
             materials = {
@@ -648,8 +728,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Gray Woolen Shirt",
             icon = "inv_shirt_grey_01",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 2587, qty = 1 },
             materials = {
@@ -664,8 +746,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Blue Overalls",
             icon = "inv_shirt_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6274 },
+                {
+                    type = "Item",
+                    item_id = 6274,
+                },
             },
             product = { item_id = 6263, qty = 1 },
             materials = {
@@ -680,8 +764,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Heavy Woolen Cloak",
             icon = "inv_misc_cape_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4346 },
+                {
+                    type = "Item",
+                    item_id = 4346,
+                },
             },
             product = { item_id = 4311, qty = 1 },
             materials = {
@@ -698,8 +784,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Gray Woolen Robe",
             icon = "inv_chest_cloth_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2601 },
+                {
+                    type = "Item",
+                    item_id = 2601,
+                },
             },
             product = { item_id = 2585, qty = 1 },
             materials = {
@@ -716,8 +804,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Heavy Woolen Pants",
             icon = "inv_pants_01",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 4316, qty = 1 },
             materials = {
@@ -731,8 +821,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Double-stitched Woolen Shoulders",
             icon = "inv_shoulder_06",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 4314, qty = 1 },
             materials = {
@@ -746,8 +838,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Stylish Red Shirt",
             icon = "inv_shirt_red_01",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 4330, qty = 1 },
             materials = {
@@ -762,8 +856,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "White Woolen Dress",
             icon = "inv_shirt_12",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 6787, qty = 1 },
             materials = {
@@ -780,8 +876,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Greater Adept's Robe",
             icon = "inv_chest_cloth_24",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6275 },
+                {
+                    type = "Item",
+                    item_id = 6275,
+                },
             },
             product = { item_id = 6264, qty = 1 },
             materials = {
@@ -796,8 +894,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Red Woolen Bag",
             icon = "inv_misc_bag_10_red",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5772 },
+                {
+                    type = "Item",
+                    item_id = 5772,
+                },
             },
             product = { item_id = 5763, qty = 1 },
             materials = {
@@ -814,8 +914,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Colorful Kilt",
             icon = "inv_pants_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10316 },
+                {
+                    type = "Item",
+                    item_id = 10316,
+                },
             },
             product = { item_id = 10048, qty = 1 },
             materials = {
@@ -830,8 +932,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Reinforced Woolen Shoulders",
             icon = "inv_shoulder_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4347 },
+                {
+                    type = "Item",
+                    item_id = 4347,
+                },
             },
             product = { item_id = 4315, qty = 1 },
             materials = {
@@ -846,8 +950,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Stylish Blue Shirt",
             icon = "inv_shirt_blue_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6390 },
+                {
+                    type = "Item",
+                    item_id = 6390,
+                },
             },
             product = { item_id = 6384, qty = 1 },
             materials = {
@@ -863,8 +969,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Stylish Green Shirt",
             icon = "inv_shirt_green_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6391 },
+                {
+                    type = "Item",
+                    item_id = 6391,
+                },
             },
             product = { item_id = 6385, qty = 1 },
             materials = {
@@ -883,7 +991,9 @@ TFG.TAILORING_CLASSIC_ERA = {
             categories = { "Profession Training" },
             icon = "trade_tailoring",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -891,8 +1001,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Bolt of Silk Cloth",
             icon = "inv_fabric_silk_03",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 4305, qty = 1 },
             materials = {
@@ -905,8 +1017,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Spidersilk Boots",
             icon = "inv_boots_05",
             source = {
-                type = "Trainer",
-                cost = 750,
+                {
+                    type = "Trainer",
+                    cost = 750,
+                },
             },
             product = { item_id = 4320, qty = 1 },
             materials = {
@@ -922,8 +1036,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Phoenix Gloves",
             icon = "inv_gauntlets_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4348 },
+                {
+                    type = "Item",
+                    item_id = 4348,
+                },
             },
             product = { item_id = 4331, qty = 1 },
             materials = {
@@ -939,8 +1055,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Phoenix Pants",
             icon = "inv_pants_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4349 },
+                {
+                    type = "Item",
+                    item_id = 4349,
+                },
             },
             product = { item_id = 4317, qty = 1 },
             materials = {
@@ -957,8 +1075,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Gloves of Meditation",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Trainer",
-                cost = 750,
+                {
+                    type = "Trainer",
+                    cost = 750,
+                },
             },
             product = { item_id = 4318, qty = 1 },
             materials = {
@@ -975,8 +1095,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Bright Yellow Shirt",
             icon = "inv_shirt_yellow_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14627 },
+                {
+                    type = "Item",
+                    item_id = 14627,
+                },
             },
             product = { item_id = 4332, qty = 1 },
             materials = {
@@ -991,8 +1113,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Lesser Wizard's Robe",
             icon = "inv_chest_cloth_17",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 5766, qty = 1 },
             materials = {
@@ -1009,8 +1133,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Azure Silk Pants",
             icon = "inv_pants_08",
             source = {
-                type = "Trainer",
-                cost = 600,
+                {
+                    type = "Trainer",
+                    cost = 600,
+                },
             },
             product = { item_id = 7046, qty = 1 },
             materials = {
@@ -1025,8 +1151,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Spider Silk Slippers",
             icon = "inv_boots_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4350 },
+                {
+                    type = "Item",
+                    item_id = 4350,
+                },
             },
             product = { item_id = 4321, qty = 1 },
             materials = {
@@ -1043,8 +1171,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Azure Silk Hood",
             icon = "inv_helmet_29",
             source = {
-                type = "Trainer",
-                cost = 600,
+                {
+                    type = "Trainer",
+                    cost = 600,
+                },
             },
             product = { item_id = 7048, qty = 1 },
             materials = {
@@ -1059,8 +1189,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Azure Silk Gloves",
             icon = "inv_gauntlets_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7114 },
+                {
+                    type = "Item",
+                    item_id = 7114,
+                },
             },
             product = { item_id = 4319, qty = 1 },
             materials = {
@@ -1076,8 +1208,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Hands of Darkness",
             icon = "inv_gauntlets_22",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7092 },
+                {
+                    type = "Item",
+                    item_id = 7092,
+                },
             },
             product = { item_id = 7047, qty = 1 },
             materials = {
@@ -1095,8 +1229,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Azure Silk Vest",
             icon = "inv_chest_cloth_37",
             source = {
-                type = "Trainer",
-                cost = 750,
+                {
+                    type = "Trainer",
+                    cost = 750,
+                },
             },
             product = { item_id = 4324, qty = 1 },
             materials = {
@@ -1110,8 +1246,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Robes of Arcana",
             icon = "inv_chest_cloth_29",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5773 },
+                {
+                    type = "Item",
+                    item_id = 5773,
+                },
             },
             product = { item_id = 5770, qty = 1 },
             materials = {
@@ -1126,8 +1264,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Truefaith Gloves",
             icon = "inv_gauntlets_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7091 },
+                {
+                    type = "Item",
+                    item_id = 7091,
+                },
             },
             product = { item_id = 7049, qty = 1 },
             materials = {
@@ -1143,8 +1283,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Small Silk Pack",
             icon = "inv_misc_bag_07",
             source = {
-                type = "Trainer",
-                cost = 800,
+                {
+                    type = "Trainer",
+                    cost = 800,
+                },
             },
             product = { item_id = 4245, qty = 1 },
             materials = {
@@ -1161,8 +1303,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Dark Silk Shirt",
             icon = "inv_shirt_black_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6401 },
+                {
+                    type = "Item",
+                    item_id = 6401,
+                },
             },
             product = { item_id = 4333, qty = 1 },
             materials = {
@@ -1179,8 +1323,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Silk Headband",
             icon = "inv_misc_bandana_01",
             source = {
-                type = "Trainer",
-                cost = 750,
+                {
+                    type = "Trainer",
+                    cost = 750,
+                },
             },
             product = { item_id = 7050, qty = 1 },
             materials = {
@@ -1194,8 +1340,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "White Swashbuckler's Shirt",
             icon = "inv_shirt_white_01",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 6795, qty = 1 },
             materials = {
@@ -1212,8 +1360,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Enchanter's Cowl",
             icon = "inv_helmet_31",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14630 },
+                {
+                    type = "Item",
+                    item_id = 14630,
+                },
             },
             product = { item_id = 4322, qty = 1 },
             materials = {
@@ -1228,8 +1378,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Green Silk Armor",
             icon = "inv_chest_cloth_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7090 },
+                {
+                    type = "Item",
+                    item_id = 7090,
+                },
             },
             product = { item_id = 7065, qty = 1 },
             materials = {
@@ -1246,8 +1398,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Formal White Shirt",
             icon = "inv_shirt_08",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 4334, qty = 1 },
             materials = {
@@ -1262,8 +1416,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Earthen Vest",
             icon = "inv_shirt_04",
             source = {
-                type = "Trainer",
-                cost = 900,
+                {
+                    type = "Trainer",
+                    cost = 900,
+                },
             },
             product = { item_id = 7051, qty = 1 },
             materials = {
@@ -1278,8 +1434,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Shadow Hood",
             icon = "inv_helmet_27",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4351 },
+                {
+                    type = "Item",
+                    item_id = 4351,
+                },
             },
             product = { item_id = 4323, qty = 1 },
             materials = {
@@ -1296,8 +1454,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Bolt of Mageweave",
             icon = "inv_fabric_mageweave_03",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 4339, qty = 1 },
             materials = {
@@ -1310,8 +1470,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Red Swashbuckler's Shirt",
             icon = "inv_shirt_red_01",
             source = {
-                type = "Trainer",
-                cost = 750,
+                {
+                    type = "Trainer",
+                    cost = 750,
+                },
             },
             product = { item_id = 6796, qty = 1 },
             materials = {
@@ -1326,8 +1488,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Azure Silk Belt",
             icon = "inv_belt_22",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 7052, qty = 1 },
             materials = {
@@ -1344,8 +1508,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Azure Silk Cloak",
             icon = "inv_chest_cloth_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7089 },
+                {
+                    type = "Item",
+                    item_id = 7089,
+                },
             },
             product = { item_id = 7053, qty = 1 },
             materials = {
@@ -1360,8 +1526,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Boots of the Enchanter",
             icon = "inv_boots_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4352 },
+                {
+                    type = "Item",
+                    item_id = 4352,
+                },
             },
             product = { item_id = 4325, qty = 1 },
             materials = {
@@ -1376,8 +1544,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Crimson Silk Belt",
             icon = "inv_belt_04",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 7055, qty = 1 },
             materials = {
@@ -1393,8 +1563,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Green Silk Pack",
             icon = "inv_misc_bag_07_green",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5774 },
+                {
+                    type = "Item",
+                    item_id = 5774,
+                },
             },
             product = { item_id = 5764, qty = 1 },
             materials = {
@@ -1412,8 +1584,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Crimson Silk Cloak",
             icon = "inv_chest_cloth_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7087 },
+                {
+                    type = "Item",
+                    item_id = 7087,
+                },
             },
             product = { item_id = 7056, qty = 1 },
             materials = {
@@ -1429,8 +1603,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Green Silken Shoulders",
             icon = "inv_shoulder_18",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 7057, qty = 1 },
             materials = {
@@ -1444,8 +1620,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Spider Belt",
             icon = "inv_belt_25",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4353 },
+                {
+                    type = "Item",
+                    item_id = 4353,
+                },
             },
             product = { item_id = 4328, qty = 1 },
             materials = {
@@ -1462,8 +1640,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Rich Purple Silk Shirt",
             icon = "inv_shirt_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4354 },
+                {
+                    type = "Item",
+                    item_id = 4354,
+                },
             },
             product = { item_id = 4335, qty = 1 },
             materials = {
@@ -1478,8 +1658,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Crimson Silk Vest",
             icon = "inv_shirt_04",
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
             product = { item_id = 7058, qty = 1 },
             materials = {
@@ -1494,8 +1676,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Long Silken Cloak",
             icon = "inv_misc_cape_02",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 4326, qty = 1 },
             materials = {
@@ -1510,8 +1694,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Black Silk Pack",
             icon = "inv_misc_bag_07_black",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5775 },
+                {
+                    type = "Item",
+                    item_id = 5775,
+                },
             },
             product = { item_id = 5765, qty = 1 },
             materials = {
@@ -1528,8 +1714,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Green Holiday Shirt",
             icon = "inv_shirt_green_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17724 },
+                {
+                    type = "Item",
+                    item_id = 17724,
+                },
             },
             product = { item_id = 17723, qty = 1 },
             materials = {
@@ -1544,8 +1732,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Robe of Power",
             icon = "inv_chest_cloth_02",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 7054, qty = 1 },
             materials = {
@@ -1563,8 +1753,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Azure Shoulders",
             icon = "inv_shoulder_27",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7085 },
+                {
+                    type = "Item",
+                    item_id = 7085,
+                },
             },
             product = { item_id = 7060, qty = 1 },
             materials = {
@@ -1580,8 +1772,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Crimson Silk Shoulders",
             icon = "inv_shoulder_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7084 },
+                {
+                    type = "Item",
+                    item_id = 7084,
+                },
             },
             product = { item_id = 7059, qty = 1 },
             materials = {
@@ -1599,8 +1793,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Crimson Silk Pantaloons",
             icon = "inv_pants_06",
             source = {
-                type = "Trainer",
-                cost = 3000,
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
             },
             product = { item_id = 7062, qty = 1 },
             materials = {
@@ -1615,8 +1811,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Earthen Silk Belt",
             icon = "inv_belt_24",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7086 },
+                {
+                    type = "Item",
+                    item_id = 7086,
+                },
             },
             product = { item_id = 7061, qty = 1 },
             materials = {
@@ -1636,7 +1834,9 @@ TFG.TAILORING_CLASSIC_ERA = {
             categories = { "Profession Training" },
             icon = "trade_tailoring",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -1644,8 +1844,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Black Swashbuckler's Shirt",
             icon = "inv_shirt_black_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10728 },
+                {
+                    type = "Item",
+                    item_id = 10728,
+                },
             },
             product = { item_id = 4336, qty = 1 },
             materials = {
@@ -1660,8 +1862,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Icy Cloak",
             icon = "inv_misc_cape_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4355 },
+                {
+                    type = "Item",
+                    item_id = 4355,
+                },
             },
             product = { item_id = 4327, qty = 1 },
             materials = {
@@ -1677,8 +1881,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Star Belt",
             icon = "inv_belt_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4356 },
+                {
+                    type = "Item",
+                    item_id = 4356,
+                },
             },
             product = { item_id = 4329, qty = 1 },
             materials = {
@@ -1697,8 +1903,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Black Mageweave Leggings",
             icon = "inv_pants_09",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 9999, qty = 1 },
             materials = {
@@ -1712,8 +1920,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Black Mageweave Vest",
             icon = "inv_chest_leather_03",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 9998, qty = 1 },
             materials = {
@@ -1727,8 +1937,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Crimson Silk Robe",
             icon = "inv_chest_cloth_25",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7088 },
+                {
+                    type = "Item",
+                    item_id = 7088,
+                },
             },
             product = { item_id = 7063, qty = 1 },
             materials = {
@@ -1747,8 +1959,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Black Mageweave Robe",
             icon = "inv_chest_cloth_13",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 10001, qty = 1 },
             materials = {
@@ -1762,8 +1976,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Crimson Silk Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 7064, qty = 1 },
             materials = {
@@ -1781,8 +1997,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Shadoweave Pants",
             icon = "inv_pants_11",
             source = {
-                type = "Trainer",
-                cost = 4050,
+                {
+                    type = "Trainer",
+                    cost = 4050,
+                },
             },
             product = { item_id = 10002, qty = 1 },
             materials = {
@@ -1799,8 +2017,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "White Bandit Mask",
             icon = "inv_misc_cape_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10301 },
+                {
+                    type = "Item",
+                    item_id = 10301,
+                },
             },
             product = { item_id = 10008, qty = 1 },
             materials = {
@@ -1815,8 +2035,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Orange Mageweave Shirt",
             icon = "inv_shirt_orange_01",
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
             product = { item_id = 10056, qty = 1 },
             materials = {
@@ -1831,8 +2053,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Black Mageweave Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 10003, qty = 1 },
             materials = {
@@ -1846,8 +2070,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Red Mageweave Pants",
             icon = "inv_pants_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10302 },
+                {
+                    type = "Item",
+                    item_id = 10302,
+                },
             },
             product = { item_id = 10009, qty = 1 },
             materials = {
@@ -1862,8 +2088,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Red Mageweave Vest",
             icon = "inv_shirt_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10300 },
+                {
+                    type = "Item",
+                    item_id = 10300,
+                },
             },
             product = { item_id = 10007, qty = 1 },
             materials = {
@@ -1878,8 +2106,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Shadoweave Robe",
             icon = "inv_chest_cloth_38",
             source = {
-                type = "Trainer",
-                cost = 4455,
+                {
+                    type = "Trainer",
+                    cost = 4455,
+                },
             },
             product = { item_id = 10004, qty = 1 },
             materials = {
@@ -1896,8 +2126,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Orange Martial Shirt",
             icon = "inv_shirt_orange_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10311 },
+                {
+                    type = "Item",
+                    item_id = 10311,
+                },
             },
             product = { item_id = 10052, qty = 1 },
             materials = {
@@ -1914,8 +2146,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Dreamweave Gloves",
             icon = "inv_gauntlets_18",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 10019, qty = 1 },
             materials = {
@@ -1931,8 +2165,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Dreamweave Vest",
             icon = "inv_chest_cloth_42",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 10021, qty = 1 },
             materials = {
@@ -1948,8 +2184,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Cindercloth Robe",
             icon = "inv_chest_cloth_25",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 10042, qty = 1 },
             materials = {
@@ -1964,8 +2202,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Enchanted Mageweave Pouch",
             icon = "inv_misc_bag_enchantedmageweave",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22307 },
+                {
+                    type = "Item",
+                    item_id = 22307,
+                },
             },
             product = { item_id = 22246, qty = 1 },
             materials = {
@@ -1980,8 +2220,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Red Mageweave Gloves",
             icon = "inv_gauntlets_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10312 },
+                {
+                    type = "Item",
+                    item_id = 10312,
+                },
             },
             product = { item_id = 10018, qty = 1 },
             materials = {
@@ -1996,8 +2238,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Shadoweave Gloves",
             icon = "inv_gauntlets_09",
             source = {
-                type = "Trainer",
-                cost = 4860,
+                {
+                    type = "Trainer",
+                    cost = 4860,
+                },
             },
             product = { item_id = 10023, qty = 1 },
             materials = {
@@ -2012,8 +2256,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Mageweave Bag",
             icon = "inv_misc_bag_10_black",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 10050, qty = 1 },
             materials = {
@@ -2029,8 +2275,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Lavender Mageweave Shirt",
             icon = "inv_shirt_purple_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10314 },
+                {
+                    type = "Item",
+                    item_id = 10314,
+                },
             },
             product = { item_id = 10054, qty = 1 },
             materials = {
@@ -2045,8 +2293,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Black Mageweave Boots",
             icon = "inv_boots_05",
             source = {
-                type = "Trainer",
-                cost = 6000,
+                {
+                    type = "Trainer",
+                    cost = 6000,
+                },
             },
             product = { item_id = 10026, qty = 1 },
             materials = {
@@ -2061,8 +2311,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Black Mageweave Headband",
             icon = "inv_misc_bandana_01",
             source = {
-                type = "Trainer",
-                cost = 6000,
+                {
+                    type = "Trainer",
+                    cost = 6000,
+                },
             },
             product = { item_id = 10024, qty = 1 },
             materials = {
@@ -2076,8 +2328,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Black Mageweave Shoulders",
             icon = "inv_shoulder_25",
             source = {
-                type = "Trainer",
-                cost = 6000,
+                {
+                    type = "Trainer",
+                    cost = 6000,
+                },
             },
             product = { item_id = 10027, qty = 1 },
             materials = {
@@ -2093,8 +2347,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Pink Mageweave Shirt",
             icon = "inv_shirt_red_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10317 },
+                {
+                    type = "Item",
+                    item_id = 10317,
+                },
             },
             product = { item_id = 10055, qty = 1 },
             materials = {
@@ -2109,8 +2365,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Simple Black Dress",
             icon = "inv_chest_cloth_21",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 10053, qty = 1 },
             materials = {
@@ -2126,8 +2384,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Red Mageweave Shoulders",
             icon = "inv_shoulder_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10315 },
+                {
+                    type = "Item",
+                    item_id = 10315,
+                },
             },
             product = { item_id = 10029, qty = 1 },
             materials = {
@@ -2142,8 +2402,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Shadoweave Shoulders",
             icon = "inv_shoulder_25",
             source = {
-                type = "Trainer",
-                cost = 5265,
+                {
+                    type = "Trainer",
+                    cost = 5265,
+                },
             },
             product = { item_id = 10028, qty = 1 },
             materials = {
@@ -2158,8 +2420,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Red Mageweave Bag",
             icon = "inv_misc_bag_10_red",
             source = {
-                type = "Trainer",
-                cost = 6500,
+                {
+                    type = "Trainer",
+                    cost = 6500,
+                },
             },
             product = { item_id = 10051, qty = 1 },
             materials = {
@@ -2176,8 +2440,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Tuxedo Shirt",
             icon = "inv_shirt_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10321 },
+                {
+                    type = "Item",
+                    item_id = 10321,
+                },
             },
             product = { item_id = 10034, qty = 1 },
             materials = {
@@ -2191,8 +2457,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Admiral's Hat",
             icon = "inv_helmet_29",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10318 },
+                {
+                    type = "Item",
+                    item_id = 10318,
+                },
             },
             product = { item_id = 10030, qty = 1 },
             materials = {
@@ -2207,8 +2475,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Red Mageweave Headband",
             icon = "inv_misc_bandana_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10320 },
+                {
+                    type = "Item",
+                    item_id = 10320,
+                },
             },
             product = { item_id = 10033, qty = 1 },
             materials = {
@@ -2223,8 +2493,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Shadoweave Boots",
             icon = "inv_boots_05",
             source = {
-                type = "Trainer",
-                cost = 5670,
+                {
+                    type = "Trainer",
+                    cost = 5670,
+                },
             },
             product = { item_id = 10031, qty = 1 },
             materials = {
@@ -2242,8 +2514,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Tuxedo Pants",
             icon = "inv_pants_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10323 },
+                {
+                    type = "Item",
+                    item_id = 10323,
+                },
             },
             product = { item_id = 10035, qty = 1 },
             materials = {
@@ -2257,8 +2531,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Cindercloth Boots",
             icon = "inv_boots_05",
             source = {
-                type = "Trainer",
-                cost = 7500,
+                {
+                    type = "Trainer",
+                    cost = 7500,
+                },
             },
             product = { item_id = 10044, qty = 1 },
             materials = {
@@ -2274,8 +2550,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Shadoweave Mask",
             icon = "inv_helmet_27",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10463 },
+                {
+                    type = "Item",
+                    item_id = 10463,
+                },
             },
             product = { item_id = 10025, qty = 1 },
             materials = {
@@ -2292,8 +2570,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Bolt of Runecloth",
             icon = "inv_fabric_purplefire_02",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 14048, qty = 1 },
             materials = {
@@ -2306,8 +2586,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "White Wedding Dress",
             icon = "inv_chest_cloth_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10325 },
+                {
+                    type = "Item",
+                    item_id = 10325,
+                },
             },
             product = { item_id = 10040, qty = 1 },
             materials = {
@@ -2322,8 +2604,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Dreamweave Circlet",
             icon = "inv_crown_01",
             source = {
-                type = "Trainer",
-                cost = 7500,
+                {
+                    type = "Trainer",
+                    cost = 7500,
+                },
             },
             product = { item_id = 10041, qty = 1 },
             materials = {
@@ -2341,8 +2625,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Festive Red Dress",
             icon = "inv_chest_cloth_56",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21722 },
+                {
+                    type = "Item",
+                    item_id = 21722,
+                },
             },
             product = { item_id = 21154, qty = 1 },
             materials = {
@@ -2358,8 +2644,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Festive Red Pant Suit",
             icon = "inv_chest_cloth_55",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21723 },
+                {
+                    type = "Item",
+                    item_id = 21723,
+                },
             },
             product = { item_id = 21542, qty = 1 },
             materials = {
@@ -2375,8 +2663,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Tuxedo Jacket",
             icon = "inv_shirt_black_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 10326 },
+                {
+                    type = "Item",
+                    item_id = 10326,
+                },
             },
             product = { item_id = 10036, qty = 1 },
             materials = {
@@ -2390,8 +2680,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Mooncloth",
             icon = "inv_fabric_moonrag_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14526 },
+                {
+                    type = "Item",
+                    item_id = 14526,
+                },
             },
             product = { item_id = 14342, qty = 1 },
             materials = {
@@ -2406,8 +2698,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Frostweave Robe",
             icon = "inv_chest_cloth_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14467 },
+                {
+                    type = "Item",
+                    item_id = 14467,
+                },
             },
             product = { item_id = 13868, qty = 1 },
             materials = {
@@ -2422,8 +2716,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Frostweave Tunic",
             icon = "inv_chest_cloth_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14466 },
+                {
+                    type = "Item",
+                    item_id = 14466,
+                },
             },
             product = { item_id = 13869, qty = 1 },
             materials = {
@@ -2438,8 +2734,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Runecloth Belt",
             icon = "inv_belt_15",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 13856, qty = 1 },
             materials = {
@@ -2455,8 +2753,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Cindercloth Vest",
             icon = "inv_chest_cloth_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14471 },
+                {
+                    type = "Item",
+                    item_id = 14471,
+                },
             },
             product = { item_id = 14042, qty = 1 },
             materials = {
@@ -2471,8 +2771,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Runecloth Robe",
             icon = "inv_chest_cloth_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14469 },
+                {
+                    type = "Item",
+                    item_id = 14469,
+                },
             },
             product = { item_id = 13858, qty = 1 },
             materials = {
@@ -2487,8 +2789,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Runecloth Tunic",
             icon = "inv_chest_cloth_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14470 },
+                {
+                    type = "Item",
+                    item_id = 14470,
+                },
             },
             product = { item_id = 13857, qty = 1 },
             materials = {
@@ -2503,8 +2807,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Soul Pouch",
             icon = "inv_misc_bag_soulbag",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21358 },
+                {
+                    type = "Item",
+                    item_id = 21358,
+                },
             },
             product = { item_id = 21340, qty = 1 },
             materials = {
@@ -2520,8 +2826,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Runecloth Bag",
             icon = "inv_misc_bag_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14468 },
+                {
+                    type = "Item",
+                    item_id = 14468,
+                },
             },
             product = { item_id = 14046, qty = 1 },
             materials = {
@@ -2538,8 +2846,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Frostweave Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14474 },
+                {
+                    type = "Item",
+                    item_id = 14474,
+                },
             },
             product = { item_id = 13870, qty = 1 },
             materials = {
@@ -2554,8 +2864,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Ghostweave Belt",
             icon = "inv_belt_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14473 },
+                {
+                    type = "Item",
+                    item_id = 14473,
+                },
             },
             product = { item_id = 14143, qty = 1 },
             materials = {
@@ -2571,8 +2883,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Runecloth Cloak",
             icon = "inv_misc_cape_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14472 },
+                {
+                    type = "Item",
+                    item_id = 14472,
+                },
             },
             product = { item_id = 13860, qty = 1 },
             materials = {
@@ -2589,8 +2903,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Brightcloth Gloves",
             icon = "inv_gauntlets_21",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14479 },
+                {
+                    type = "Item",
+                    item_id = 14479,
+                },
             },
             product = { item_id = 14101, qty = 1 },
             materials = {
@@ -2605,8 +2921,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Brightcloth Robe",
             icon = "inv_chest_cloth_26",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14478 },
+                {
+                    type = "Item",
+                    item_id = 14478,
+                },
             },
             product = { item_id = 14100, qty = 1 },
             materials = {
@@ -2621,8 +2939,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Cindercloth Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14476 },
+                {
+                    type = "Item",
+                    item_id = 14476,
+                },
             },
             product = { item_id = 14043, qty = 1 },
             materials = {
@@ -2637,8 +2957,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Ghostweave Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14477 },
+                {
+                    type = "Item",
+                    item_id = 14477,
+                },
             },
             product = { item_id = 14142, qty = 1 },
             materials = {
@@ -2656,8 +2978,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Cloak of Fire",
             icon = "inv_misc_cape_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14486 },
+                {
+                    type = "Item",
+                    item_id = 14486,
+                },
             },
             product = { item_id = 14134, qty = 1 },
             materials = {
@@ -2674,8 +2998,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Brightcloth Cloak",
             icon = "inv_misc_cape_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14484 },
+                {
+                    type = "Item",
+                    item_id = 14484,
+                },
             },
             product = { item_id = 14103, qty = 1 },
             materials = {
@@ -2690,8 +3016,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Cenarion Herb Bag",
             icon = "inv_misc_bag_cenarionherbbag",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22310 },
+                {
+                    type = "Item",
+                    item_id = 22310,
+                },
             },
             product = { item_id = 22251, qty = 1 },
             materials = {
@@ -2707,8 +3035,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Cindercloth Cloak",
             icon = "inv_misc_cape_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14482 },
+                {
+                    type = "Item",
+                    item_id = 14482,
+                },
             },
             product = { item_id = 14044, qty = 1 },
             materials = {
@@ -2723,8 +3053,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Enchanted Runecloth Bag",
             icon = "inv_misc_bag_enchantedrunecloth",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22308 },
+                {
+                    type = "Item",
+                    item_id = 22308,
+                },
             },
             product = { item_id = 22248, qty = 1 },
             materials = {
@@ -2739,8 +3071,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Felcloth Pants",
             icon = "inv_pants_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14483 },
+                {
+                    type = "Item",
+                    item_id = 14483,
+                },
             },
             product = { item_id = 14107, qty = 1 },
             materials = {
@@ -2755,8 +3089,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Ghostweave Vest",
             icon = "inv_shirt_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14480 },
+                {
+                    type = "Item",
+                    item_id = 14480,
+                },
             },
             product = { item_id = 14141, qty = 1 },
             materials = {
@@ -2772,8 +3108,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Runecloth Gloves",
             icon = "inv_gauntlets_25",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14481 },
+                {
+                    type = "Item",
+                    item_id = 14481,
+                },
             },
             product = { item_id = 13863, qty = 1 },
             materials = {
@@ -2788,8 +3126,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Wizardweave Leggings",
             icon = "inv_pants_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14485 },
+                {
+                    type = "Item",
+                    item_id = 14485,
+                },
             },
             product = { item_id = 14132, qty = 1 },
             materials = {
@@ -2806,8 +3146,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Cindercloth Pants",
             icon = "inv_pants_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14490 },
+                {
+                    type = "Item",
+                    item_id = 14490,
+                },
             },
             product = { item_id = 14045, qty = 1 },
             materials = {
@@ -2822,8 +3164,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Frostweave Pants",
             icon = "inv_pants_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14489 },
+                {
+                    type = "Item",
+                    item_id = 14489,
+                },
             },
             product = { item_id = 13871, qty = 1 },
             materials = {
@@ -2838,8 +3182,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Runecloth Boots",
             icon = "inv_boots_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14488 },
+                {
+                    type = "Item",
+                    item_id = 14488,
+                },
             },
             product = { item_id = 13864, qty = 1 },
             materials = {
@@ -2857,7 +3203,9 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Felcloth Bag",
             icon = "inv_misc_bag_felclothbag",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 21341, qty = 1 },
             materials = {
@@ -2873,8 +3221,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Robe of Winter Night",
             icon = "inv_chest_cloth_49",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14493 },
+                {
+                    type = "Item",
+                    item_id = 14493,
+                },
             },
             product = { item_id = 14136, qty = 1 },
             materials = {
@@ -2891,8 +3241,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Felcloth Boots",
             icon = "inv_boots_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14492 },
+                {
+                    type = "Item",
+                    item_id = 14492,
+                },
             },
             product = { item_id = 14108, qty = 1 },
             materials = {
@@ -2908,8 +3260,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Runecloth Pants",
             icon = "inv_pants_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14491 },
+                {
+                    type = "Item",
+                    item_id = 14491,
+                },
             },
             product = { item_id = 13865, qty = 1 },
             materials = {
@@ -2924,8 +3278,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Gordok Ogre Suit",
             icon = "inv_chest_chain_14",
             source = {
-                type = "Quest",
-                quest_ids = { 5519 },
+                {
+                    type = "Quest",
+                    quest_id = 5519,
+                },
             },
             product = { item_id = 18258, qty = 1 },
             materials = {
@@ -2943,8 +3299,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Mooncloth Boots",
             icon = "inv_boots_05",
             source = {
-                type = "Quest",
-                quest_ids = { 6032 },
+                {
+                    type = "Quest",
+                    quest_id = 6032,
+                },
             },
             product = { item_id = 15802, qty = 1 },
             materials = {
@@ -2960,8 +3318,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Argent Boots",
             icon = "inv_boots_cloth_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19216 },
+                {
+                    type = "Item",
+                    item_id = 19216,
+                },
             },
             product = { item_id = 19056, qty = 1 },
             materials = {
@@ -2978,8 +3338,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Mooncloth Leggings",
             icon = "inv_pants_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14497 },
+                {
+                    type = "Item",
+                    item_id = 14497,
+                },
             },
             product = { item_id = 14137, qty = 1 },
             materials = {
@@ -2994,8 +3356,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Wisdom of the Timbermaw",
             icon = "inv_belt_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19215 },
+                {
+                    type = "Item",
+                    item_id = 19215,
+                },
             },
             product = { item_id = 19047, qty = 1 },
             materials = {
@@ -3011,8 +3375,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Brightcloth Pants",
             icon = "inv_pants_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14494 },
+                {
+                    type = "Item",
+                    item_id = 14494,
+                },
             },
             product = { item_id = 14104, qty = 1 },
             materials = {
@@ -3028,8 +3394,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Felcloth Hood",
             icon = "inv_helmet_34",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14496 },
+                {
+                    type = "Item",
+                    item_id = 14496,
+                },
             },
             product = { item_id = 14111, qty = 1 },
             materials = {
@@ -3044,8 +3412,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Ghostweave Pants",
             icon = "inv_pants_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14495 },
+                {
+                    type = "Item",
+                    item_id = 14495,
+                },
             },
             product = { item_id = 14144, qty = 1 },
             materials = {
@@ -3062,8 +3432,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Runecloth Headband",
             icon = "inv_misc_bandana_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14498 },
+                {
+                    type = "Item",
+                    item_id = 14498,
+                },
             },
             product = { item_id = 13866, qty = 1 },
             materials = {
@@ -3080,8 +3452,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Belt of the Archmage",
             icon = "inv_belt_31",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18414 },
+                {
+                    type = "Item",
+                    item_id = 18414,
+                },
             },
             product = { item_id = 18405, qty = 1 },
             materials = {
@@ -3100,8 +3474,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Core Felcloth Bag",
             icon = "inv_misc_bag_corefelclothbag",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21371 },
+                {
+                    type = "Item",
+                    item_id = 21371,
+                },
             },
             product = { item_id = 21342, qty = 1 },
             materials = {
@@ -3118,8 +3494,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Flarecore Gloves",
             icon = "inv_gauntlets_26",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17018 },
+                {
+                    type = "Item",
+                    item_id = 17018,
+                },
             },
             product = { item_id = 16979, qty = 1 },
             materials = {
@@ -3136,8 +3514,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Flarecore Leggings",
             icon = "inv_pants_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19220 },
+                {
+                    type = "Item",
+                    item_id = 19220,
+                },
             },
             product = { item_id = 19165, qty = 1 },
             materials = {
@@ -3154,8 +3534,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Flarecore Mantle",
             icon = "inv_shoulder_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17017 },
+                {
+                    type = "Item",
+                    item_id = 17017,
+                },
             },
             product = { item_id = 16980, qty = 1 },
             materials = {
@@ -3172,8 +3554,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Flarecore Robe",
             icon = "inv_chest_cloth_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19219 },
+                {
+                    type = "Item",
+                    item_id = 19219,
+                },
             },
             product = { item_id = 19156, qty = 1 },
             materials = {
@@ -3190,8 +3574,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Glacial Cloak",
             icon = "inv_misc_cape_16",
             source = {
-                type = "Quest",
-                quest_ids = { 9233 },
+                {
+                    type = "Quest",
+                    quest_id = 9233,
+                },
             },
             product = { item_id = 22658, qty = 1 },
             materials = {
@@ -3207,8 +3593,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Glacial Gloves",
             icon = "inv_gauntlets_06",
             source = {
-                type = "Quest",
-                quest_ids = { 9233 },
+                {
+                    type = "Quest",
+                    quest_id = 9233,
+                },
             },
             product = { item_id = 22654, qty = 1 },
             materials = {
@@ -3224,8 +3612,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Glacial Vest",
             icon = "inv_chest_cloth_08",
             source = {
-                type = "Quest",
-                quest_ids = { 9233 },
+                {
+                    type = "Quest",
+                    quest_id = 9233,
+                },
             },
             product = { item_id = 22652, qty = 1 },
             materials = {
@@ -3241,8 +3631,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Glacial Wrists",
             icon = "inv_bracer_07",
             source = {
-                type = "Quest",
-                quest_ids = { 9233 },
+                {
+                    type = "Quest",
+                    quest_id = 9233,
+                },
             },
             product = { item_id = 22655, qty = 1 },
             materials = {
@@ -3258,8 +3650,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Gloves of Spell Mastery",
             icon = "inv_gauntlets_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14511 },
+                {
+                    type = "Item",
+                    item_id = 14511,
+                },
             },
             product = { item_id = 14146, qty = 1 },
             materials = {
@@ -3278,8 +3672,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Robe of the Archmage",
             icon = "inv_chest_cloth_38",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14513 },
+                {
+                    type = "Item",
+                    item_id = 14513,
+                },
             },
             product = { item_id = 14152, qty = 1 },
             materials = {
@@ -3297,8 +3693,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Robe of the Void",
             icon = "inv_chest_cloth_51",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14514 },
+                {
+                    type = "Item",
+                    item_id = 14514,
+                },
             },
             product = { item_id = 14153, qty = 1 },
             materials = {
@@ -3316,8 +3714,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Truefaith Vestments",
             icon = "inv_chest_cloth_31",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14512 },
+                {
+                    type = "Item",
+                    item_id = 14512,
+                },
             },
             product = { item_id = 14154, qty = 1 },
             materials = {
@@ -3335,8 +3735,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Argent Shoulders",
             icon = "inv_shoulder_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19217 },
+                {
+                    type = "Item",
+                    item_id = 19217,
+                },
             },
             product = { item_id = 19059, qty = 1 },
             materials = {
@@ -3351,8 +3753,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Bloodvine Boots",
             icon = "inv_boots_cloth_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19766 },
+                {
+                    type = "Item",
+                    item_id = 19766,
+                },
             },
             product = { item_id = 19684, qty = 1 },
             materials = {
@@ -3369,8 +3773,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Bloodvine Leggings",
             icon = "inv_pants_cloth_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19765 },
+                {
+                    type = "Item",
+                    item_id = 19765,
+                },
             },
             product = { item_id = 19683, qty = 1 },
             materials = {
@@ -3387,8 +3793,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Bloodvine Vest",
             icon = "inv_chest_cloth_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19764 },
+                {
+                    type = "Item",
+                    item_id = 19764,
+                },
             },
             product = { item_id = 19682, qty = 1 },
             materials = {
@@ -3405,8 +3813,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Bottomless Bag",
             icon = "inv_misc_bag_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14510 },
+                {
+                    type = "Item",
+                    item_id = 14510,
+                },
             },
             product = { item_id = 14156, qty = 1 },
             materials = {
@@ -3423,8 +3833,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Cloak of Warding",
             icon = "inv_misc_cape_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18418 },
+                {
+                    type = "Item",
+                    item_id = 18418,
+                },
             },
             product = { item_id = 18413, qty = 1 },
             materials = {
@@ -3440,8 +3852,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Felcloth Gloves",
             icon = "inv_gauntlets_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18415 },
+                {
+                    type = "Item",
+                    item_id = 18415,
+                },
             },
             product = { item_id = 18407, qty = 1 },
             materials = {
@@ -3458,8 +3872,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Gaea's Embrace",
             icon = "inv_misc_cape_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22683 },
+                {
+                    type = "Item",
+                    item_id = 22683,
+                },
             },
             product = { item_id = 22660, qty = 1 },
             materials = {
@@ -3475,8 +3891,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Inferno Gloves",
             icon = "inv_gauntlets_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18416 },
+                {
+                    type = "Item",
+                    item_id = 18416,
+                },
             },
             product = { item_id = 18408, qty = 1 },
             materials = {
@@ -3492,8 +3910,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Mantle of the Timbermaw",
             icon = "inv_shoulder_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19218 },
+                {
+                    type = "Item",
+                    item_id = 19218,
+                },
             },
             product = { item_id = 19050, qty = 1 },
             materials = {
@@ -3509,8 +3929,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Mooncloth Circlet",
             icon = "inv_misc_bandana_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14509 },
+                {
+                    type = "Item",
+                    item_id = 14509,
+                },
             },
             product = { item_id = 14140, qty = 1 },
             materials = {
@@ -3527,8 +3949,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Mooncloth Gloves",
             icon = "inv_gauntlets_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18417 },
+                {
+                    type = "Item",
+                    item_id = 18417,
+                },
             },
             product = { item_id = 18409, qty = 1 },
             materials = {
@@ -3544,8 +3968,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Mooncloth Robe",
             icon = "inv_chest_cloth_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18487 },
+                {
+                    type = "Item",
+                    item_id = 18487,
+                },
             },
             product = { item_id = 18486, qty = 1 },
             materials = {
@@ -3561,8 +3987,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Mooncloth Shoulders",
             icon = "inv_shoulder_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14507 },
+                {
+                    type = "Item",
+                    item_id = 14507,
+                },
             },
             product = { item_id = 14139, qty = 1 },
             materials = {
@@ -3577,8 +4005,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Mooncloth Vest",
             icon = "inv_chest_cloth_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14501 },
+                {
+                    type = "Item",
+                    item_id = 14501,
+                },
             },
             product = { item_id = 14138, qty = 1 },
             materials = {
@@ -3593,8 +4023,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Runed Stygian Belt",
             icon = "inv_belt_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20548 },
+                {
+                    type = "Item",
+                    item_id = 20548,
+                },
             },
             product = { item_id = 20539, qty = 1 },
             materials = {
@@ -3611,8 +4043,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Runed Stygian Boots",
             icon = "inv_boots_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20547 },
+                {
+                    type = "Item",
+                    item_id = 20547,
+                },
             },
             product = { item_id = 20537, qty = 1 },
             materials = {
@@ -3629,8 +4063,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Runed Stygian Leggings",
             icon = "inv_pants_cloth_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20546 },
+                {
+                    type = "Item",
+                    item_id = 20546,
+                },
             },
             product = { item_id = 20538, qty = 1 },
             materials = {
@@ -3646,8 +4082,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Sylvan Crown",
             icon = "inv_crown_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22773 },
+                {
+                    type = "Item",
+                    item_id = 22773,
+                },
             },
             product = { item_id = 22757, qty = 1 },
             materials = {
@@ -3663,8 +4101,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Sylvan Shoulders",
             icon = "inv_shoulder_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22772 },
+                {
+                    type = "Item",
+                    item_id = 22772,
+                },
             },
             product = { item_id = 22758, qty = 1 },
             materials = {
@@ -3679,8 +4119,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Sylvan Vest",
             icon = "inv_chest_plate07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22774 },
+                {
+                    type = "Item",
+                    item_id = 22774,
+                },
             },
             product = { item_id = 22756, qty = 1 },
             materials = {
@@ -3696,8 +4138,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Big Bag of Enchantment",
             icon = "inv_misc_bag_bigbagofenchantments",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22309 },
+                {
+                    type = "Item",
+                    item_id = 22309,
+                },
             },
             product = { item_id = 22249, qty = 1 },
             materials = {
@@ -3713,8 +4157,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Felcloth Robe",
             icon = "inv_chest_cloth_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14506 },
+                {
+                    type = "Item",
+                    item_id = 14506,
+                },
             },
             product = { item_id = 14106, qty = 1 },
             materials = {
@@ -3730,8 +4176,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Felcloth Shoulders",
             icon = "inv_shoulder_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14508 },
+                {
+                    type = "Item",
+                    item_id = 14508,
+                },
             },
             product = { item_id = 14112, qty = 1 },
             materials = {
@@ -3748,8 +4196,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Mooncloth Bag",
             icon = "inv_misc_bag_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14499 },
+                {
+                    type = "Item",
+                    item_id = 14499,
+                },
             },
             product = { item_id = 14155, qty = 1 },
             materials = {
@@ -3764,8 +4214,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Runecloth Shoulders",
             icon = "inv_shoulder_21",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14504 },
+                {
+                    type = "Item",
+                    item_id = 14504,
+                },
             },
             product = { item_id = 13867, qty = 1 },
             materials = {
@@ -3781,8 +4233,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Satchel of Cenarius",
             icon = "inv_misc_bag_satchelofcenarius",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22312 },
+                {
+                    type = "Item",
+                    item_id = 22312,
+                },
             },
             product = { item_id = 22252, qty = 1 },
             materials = {
@@ -3798,8 +4252,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Wizardweave Robe",
             icon = "inv_chest_cloth_46",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14500 },
+                {
+                    type = "Item",
+                    item_id = 14500,
+                },
             },
             product = { item_id = 14128, qty = 1 },
             materials = {
@@ -3814,8 +4270,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Wizardweave Turban",
             icon = "inv_helmet_63",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14505 },
+                {
+                    type = "Item",
+                    item_id = 14505,
+                },
             },
             product = { item_id = 14130, qty = 1 },
             materials = {
@@ -3831,8 +4289,10 @@ TFG.TAILORING_CLASSIC_ERA = {
             name = "Flarecore Wraps",
             icon = "inv_bracer_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18265 },
+                {
+                    type = "Item",
+                    item_id = 18265,
+                },
             },
             product = { item_id = 18263, qty = 1 },
             materials = {

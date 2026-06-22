@@ -8,8 +8,10 @@ TFG.FISHING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "trade_fishing",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
         },
         {
@@ -18,8 +20,10 @@ TFG.FISHING_BURNING_CRUSADE = {
             categories = { "Gear" },
             icon = "inv_fishingpole_02",
             source = {
-                type = "Vendor",
-                cost = 24,
+                {
+                    type = "Vendor",
+                    cost = 24,
+                },
             },
         },
         {
@@ -28,9 +32,11 @@ TFG.FISHING_BURNING_CRUSADE = {
             categories = { "Gear" },
             icon = "inv_fishingpole_02",
             source = {
-                type = "Quest",
-                quest_ids = { 1141 },
-                location = "Gubber Blump, Auberdine, Darkshore",
+                {
+                    type = "Quest",
+                    quest_id = 1141,
+                    location = "Gubber Blump, Auberdine, Darkshore",
+                },
             },
         },
         {
@@ -39,9 +45,11 @@ TFG.FISHING_BURNING_CRUSADE = {
             categories = { "Gear" },
             icon = "inv_helmet_31",
             source = {
-                type = "Quest",
-                quest_ids = { 8221 },
-                location = "Stranglethorn Fishing Extravaganza, Stranglethorn Vale",
+                {
+                    type = "Quest",
+                    quest_id = 8221,
+                    location = "Stranglethorn Fishing Extravaganza, Stranglethorn Vale",
+                },
             },
         },
         {
@@ -50,9 +58,11 @@ TFG.FISHING_BURNING_CRUSADE = {
             categories = { "Gear" },
             icon = "inv_boots_09",
             source = {
-                type = "Quest",
-                quest_ids = { 8225 },
-                location = "Stranglethorn Fishing Extravaganza, Stranglethorn Vale",
+                {
+                    type = "Quest",
+                    quest_id = 8225,
+                    location = "Stranglethorn Fishing Extravaganza, Stranglethorn Vale",
+                },
             },
         },
     },
@@ -63,8 +73,10 @@ TFG.FISHING_BURNING_CRUSADE = {
             categories = { "Gear" },
             icon = "inv_fishingpole_02",
             source = {
-                type = "Vendor",
-                cost = 902,
+                {
+                    type = "Vendor",
+                    cost = 902,
+                },
             },
         },
     },
@@ -75,8 +87,10 @@ TFG.FISHING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "trade_fishing",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
         },
         {
@@ -85,8 +99,10 @@ TFG.FISHING_BURNING_CRUSADE = {
             categories = { "Gear" },
             icon = "inv_fishingpole_02",
             source = {
-                type = "Item",
-                location = "Fishing in inland lakes and rivers in certain low-level zones like Ashenvale and Hillsbrad Foothills",
+                {
+                    type = "Item",
+                    location = "Fishing in inland lakes and rivers in certain low-level zones like Ashenvale and Hillsbrad Foothills",
+                },
             },
         },
     },
@@ -97,7 +113,9 @@ TFG.FISHING_BURNING_CRUSADE = {
             categories = { "Other" },
             icon = "inv_misc_fish_02",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -106,8 +124,10 @@ TFG.FISHING_BURNING_CRUSADE = {
             categories = { "Gear" },
             icon = "inv_fishingpole_01",
             source = {
-                type = "Item",
-                location = "Shellfish traps off the Southwest coast of Desolace",
+                {
+                    type = "Item",
+                    location = "Shellfish traps off the Southwest coast of Desolace",
+                },
             },
         },
         {
@@ -116,9 +136,11 @@ TFG.FISHING_BURNING_CRUSADE = {
             categories = { "Gear" },
             icon = "inv_fishingpole_01",
             source = {
-                type = "Quest",
-                quest_ids = { 7815 },
-                location = "Katoom the Angler, Eastern coast of The Hinterlands (Horde only)",
+                {
+                    type = "Quest",
+                    quest_id = 7815,
+                    location = "Katoom the Angler, Eastern coast of The Hinterlands (Horde only)",
+                },
             },
         },
     },
@@ -129,8 +151,10 @@ TFG.FISHING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "trade_fishing",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
         },
     },
@@ -141,9 +165,11 @@ TFG.FISHING_BURNING_CRUSADE = {
             categories = { "Gear" },
             icon = "inv_fishingpole_01",
             source = {
-                type = "Quest",
-                quest_ids = { 10037 },
-                location = "Seth, Shattrath City",
+                {
+                    type = "Quest",
+                    quest_id = 10037,
+                    location = "Seth, Shattrath City",
+                },
             },
         },
     },
@@ -154,7 +180,9 @@ TFG.FISHING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "trade_fishing",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -165,8 +193,10 @@ TFG.FISHING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "trade_fishing",
             source = {
-                type = "Trainer",
-                cost = 50000,
+                {
+                    type = "Trainer",
+                    cost = 50000,
+                },
             },
         },
     },
@@ -177,9 +207,11 @@ TFG.FISHING_BURNING_CRUSADE = {
             categories = { "Gear" },
             icon = "inv_fishingpole_01",
             source = {
-                type = "Quest",
-                quest_ids = { 10037 },
-                location = "Stranglethorn Fishing Extravaganza, Stranglethorn Vale",
+                {
+                    type = "Quest",
+                    quest_id = 10037,
+                    location = "Stranglethorn Fishing Extravaganza, Stranglethorn Vale",
+                },
             },
         },
     },

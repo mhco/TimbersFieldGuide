@@ -8,8 +8,10 @@ TFG.FIRST_AID_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "spell_holy_sealofsacrifice",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
         },
         {
@@ -18,7 +20,9 @@ TFG.FIRST_AID_BURNING_CRUSADE = {
             categories = { "Bandages" },
             icon = "inv_misc_bandage_15",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 1251, qty = 1 },
             materials = {
@@ -34,8 +38,10 @@ TFG.FIRST_AID_BURNING_CRUSADE = {
             categories = { "Bandages" },
             icon = "inv_misc_bandage_18",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 2581, qty = 1 },
             materials = {
@@ -51,8 +57,10 @@ TFG.FIRST_AID_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "spell_holy_sealofsacrifice",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
         },
     },
@@ -63,8 +71,10 @@ TFG.FIRST_AID_BURNING_CRUSADE = {
             categories = { "Bandages" },
             icon = "inv_misc_bandage_14",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 3530, qty = 1 },
             materials = {
@@ -78,8 +88,10 @@ TFG.FIRST_AID_BURNING_CRUSADE = {
             categories = { "Anti-Venoms" },
             icon = "inv_misc_slime_01",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 6452, qty = 3 },
             materials = {
@@ -95,8 +107,10 @@ TFG.FIRST_AID_BURNING_CRUSADE = {
             categories = { "Bandages" },
             icon = "inv_misc_bandage_17",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 3531, qty = 1 },
             materials = {
@@ -112,9 +126,11 @@ TFG.FIRST_AID_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "spell_holy_sealofsacrifice",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16084 },
-                cost = 10000,
+                {
+                    type = "Item",
+                    item_id = 16084,
+                    cost = 10000,
+                },
             },
         },
     },
@@ -125,9 +141,11 @@ TFG.FIRST_AID_BURNING_CRUSADE = {
             categories = { "Anti-Venoms" },
             icon = "inv_misc_slime_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6454 },
-                location = "World Drop",
+                {
+                    type = "Item",
+                    item_id = 6454,
+                    location = "World Drop",
+                },
             },
             product = { item_id = 6453, qty = 3 },
             materials = {
@@ -143,8 +161,10 @@ TFG.FIRST_AID_BURNING_CRUSADE = {
             categories = { "Bandages" },
             icon = "inv_misc_bandage_01",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 6450, qty = 1 },
             materials = {
@@ -160,8 +180,10 @@ TFG.FIRST_AID_BURNING_CRUSADE = {
             categories = { "Bandages" },
             icon = "inv_misc_bandage_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16112 },
+                {
+                    type = "Item",
+                    item_id = 16112,
+                },
             },
             product = { item_id = 6451, qty = 1 },
             materials = {
@@ -177,8 +199,10 @@ TFG.FIRST_AID_BURNING_CRUSADE = {
             categories = { "Bandages" },
             icon = "inv_misc_bandage_19",
             source = {
-                type = "Item",
-                recipe_item_ids = { 16113 },
+                {
+                    type = "Item",
+                    item_id = 16113,
+                },
             },
             product = { item_id = 8544, qty = 1 },
             materials = {
@@ -194,7 +218,9 @@ TFG.FIRST_AID_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "spell_holy_sealofsacrifice",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -205,7 +231,9 @@ TFG.FIRST_AID_BURNING_CRUSADE = {
             categories = { "Bandages" },
             icon = "inv_misc_bandage_20",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 8545, qty = 1 },
             materials = {
@@ -221,7 +249,9 @@ TFG.FIRST_AID_BURNING_CRUSADE = {
             categories = { "Bandages" },
             icon = "inv_misc_bandage_11",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 14529, qty = 1 },
             materials = {
@@ -237,7 +267,9 @@ TFG.FIRST_AID_BURNING_CRUSADE = {
             categories = { "Bandages" },
             icon = "inv_misc_bandage_12",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 14530, qty = 1 },
             materials = {
@@ -253,9 +285,11 @@ TFG.FIRST_AID_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "spell_holy_sealofsacrifice",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21990 },
-                cost = 50000,
+                {
+                    type = "Item",
+                    item_id = 21990,
+                    cost = 50000,
+                },
             },
         },
         {
@@ -264,9 +298,11 @@ TFG.FIRST_AID_BURNING_CRUSADE = {
             categories = { "Anti-Venoms" },
             icon = "inv_drink_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19442 },
-                location = "Argent Dawn - Honored",
+                {
+                    type = "Item",
+                    item_id = 19442,
+                    location = "Argent Dawn - Honored",
+                },
             },
             product = { item_id = 19440, qty = 1 },
             materials = {
@@ -282,9 +318,11 @@ TFG.FIRST_AID_BURNING_CRUSADE = {
             categories = { "Bandages" },
             icon = "inv_misc_bandage_netherweave",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21992 },
-                location = "Aresella, Falcon Watch, Hellfire Peninsula",
+                {
+                    type = "Item",
+                    item_id = 21992,
+                    location = "Aresella, Falcon Watch, Hellfire Peninsula",
+                },
             },
             product = { item_id = 21990, qty = 1 },
             materials = {
@@ -300,9 +338,11 @@ TFG.FIRST_AID_BURNING_CRUSADE = {
             categories = { "Bandages" },
             icon = "inv_misc_bandage_netherweave_heavy",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21993 },
-                location = "Aresella, Falcon Watch, Hellfire Peninsula",
+                {
+                    type = "Item",
+                    item_id = 21993,
+                    location = "Aresella, Falcon Watch, Hellfire Peninsula",
+                },
             },
             product = { item_id = 21991, qty = 1 },
             materials = {

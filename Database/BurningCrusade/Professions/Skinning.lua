@@ -8,7 +8,9 @@ TFG.SKINNING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "inv_misc_pelt_wolf_01",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -19,7 +21,9 @@ TFG.SKINNING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "inv_misc_pelt_wolf_01",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -30,7 +34,9 @@ TFG.SKINNING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "inv_misc_pelt_wolf_01",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -41,7 +47,9 @@ TFG.SKINNING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "inv_misc_pelt_wolf_01",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -52,7 +60,9 @@ TFG.SKINNING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "inv_misc_pelt_wolf_01",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },

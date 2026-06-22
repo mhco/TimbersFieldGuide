@@ -7,7 +7,9 @@ TFG.FISHING_CLASSIC_ERA = {
             name = "Fishing",
             icon = "trade_fishing",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -15,7 +17,9 @@ TFG.FISHING_CLASSIC_ERA = {
             name = "Fishing",
             icon = "trade_fishing",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -23,7 +27,9 @@ TFG.FISHING_CLASSIC_ERA = {
             name = "Fishing",
             icon = "trade_fishing",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -33,7 +39,9 @@ TFG.FISHING_CLASSIC_ERA = {
             name = "Fishing",
             icon = "trade_fishing",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },

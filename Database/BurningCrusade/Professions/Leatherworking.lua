@@ -8,7 +8,9 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "inv_misc_armorkit_17",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -16,7 +18,9 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Dragonscale Leatherworking",
             icon = "inv_misc_monsterscales_03",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -24,7 +28,9 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Elemental Leatherworking",
             icon = "spell_fire_volcano",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -32,7 +38,9 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Tribal Leatherworking",
             icon = "spell_nature_nullward",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -40,7 +48,9 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Handstitched Leather Boots",
             icon = "inv_boots_04",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 2302, qty = 1 },
             materials = {
@@ -54,7 +64,9 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Handstitched Leather Vest",
             icon = "inv_chest_wolf",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 5957, qty = 1 },
             materials = {
@@ -68,7 +80,9 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Handstitched Leather Cloak",
             icon = "inv_helmet_48",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 7276, qty = 1 },
             materials = {
@@ -82,7 +96,9 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Handstitched Leather Bracers",
             icon = "inv_bracer_08",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 7277, qty = 1 },
             materials = {
@@ -96,7 +112,9 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Light Armor Kit",
             icon = "inv_misc_armorkit_17",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 2304, qty = 1 },
             materials = {
@@ -109,7 +127,9 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Light Leather",
             icon = "inv_misc_leatherscrap_03",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 2318, qty = 1 },
             materials = {
@@ -124,8 +144,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Handstitched Leather Pants",
             icon = "inv_pants_wolf",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 2303, qty = 1 },
             materials = {
@@ -141,8 +163,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Handstitched Leather Belt",
             icon = "inv_belt_04",
             source = {
-                type = "Trainer",
-                cost = 75,
+                {
+                    type = "Trainer",
+                    cost = 75,
+                },
             },
             product = { item_id = 4237, qty = 1 },
             materials = {
@@ -158,8 +182,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Light Leather Quiver",
             icon = "inv_misc_quiver_01",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 7278, qty = 1 },
             materials = {
@@ -173,8 +199,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Small Leather Ammo Pouch",
             icon = "inv_misc_ammo_bullet_01",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 7279, qty = 1 },
             materials = {
@@ -190,8 +218,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Rugged Leather Pants",
             icon = "inv_pants_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7288 },
+                {
+                    type = "Item",
+                    item_id = 7288,
+                },
             },
             product = { item_id = 7280, qty = 1 },
             materials = {
@@ -205,8 +235,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Cured Light Hide",
             icon = "inv_misc_pelt_wolf_01",
             source = {
-                type = "Trainer",
-                cost = 50,
+                {
+                    type = "Trainer",
+                    cost = 50,
+                },
             },
             product = { item_id = 4231, qty = 1 },
             materials = {
@@ -222,8 +254,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Embossed Leather Vest",
             icon = "inv_chest_leather_09",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 2300, qty = 1 },
             materials = {
@@ -237,8 +271,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Kodo Hide Bag",
             icon = "inv_misc_bag_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5083 },
+                {
+                    type = "Item",
+                    item_id = 5083,
+                },
             },
             product = { item_id = 5081, qty = 1 },
             materials = {
@@ -256,7 +292,9 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "inv_misc_armorkit_17",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -266,8 +304,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Embossed Leather Boots",
             icon = "inv_boots_05",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 2309, qty = 1 },
             materials = {
@@ -281,8 +321,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Embossed Leather Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Trainer",
-                cost = 150,
+                {
+                    type = "Trainer",
+                    cost = 150,
+                },
             },
             product = { item_id = 4239, qty = 1 },
             materials = {
@@ -298,8 +340,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Embossed Leather Cloak",
             icon = "inv_helmet_48",
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
             product = { item_id = 2310, qty = 1 },
             materials = {
@@ -313,8 +357,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "White Leather Jerkin",
             icon = "inv_chest_wolf",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2407 },
+                {
+                    type = "Item",
+                    item_id = 2407,
+                },
             },
             product = { item_id = 2311, qty = 1 },
             materials = {
@@ -331,8 +377,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Light Leather Bracers",
             icon = "inv_bracer_04",
             source = {
-                type = "Trainer",
-                cost = 150,
+                {
+                    type = "Trainer",
+                    cost = 150,
+                },
             },
             product = { item_id = 7281, qty = 1 },
             materials = {
@@ -348,8 +396,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Fine Leather Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2408 },
+                {
+                    type = "Item",
+                    item_id = 2408,
+                },
             },
             product = { item_id = 2312, qty = 1 },
             materials = {
@@ -364,8 +414,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Embossed Leather Pants",
             icon = "inv_pants_02",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 4242, qty = 1 },
             materials = {
@@ -382,8 +434,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Fine Leather Belt",
             icon = "inv_belt_04",
             source = {
-                type = "Trainer",
-                cost = 300,
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
             },
             product = { item_id = 4246, qty = 1 },
             materials = {
@@ -399,8 +453,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Fine Leather Tunic",
             icon = "inv_chest_leather_09",
             source = {
-                type = "Trainer",
-                cost = 350,
+                {
+                    type = "Trainer",
+                    cost = 350,
+                },
             },
             product = { item_id = 4243, qty = 1 },
             materials = {
@@ -415,8 +471,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Fine Leather Cloak",
             icon = "inv_misc_cape_10",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 2308, qty = 1 },
             materials = {
@@ -432,8 +490,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Fine Leather Boots",
             icon = "inv_boots_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2406 },
+                {
+                    type = "Item",
+                    item_id = 2406,
+                },
             },
             product = { item_id = 2307, qty = 1 },
             materials = {
@@ -447,8 +507,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Murloc Scale Belt",
             icon = "inv_belt_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5786 },
+                {
+                    type = "Item",
+                    item_id = 5786,
+                },
             },
             product = { item_id = 5780, qty = 1 },
             materials = {
@@ -463,8 +525,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Deviate Scale Cloak",
             icon = "inv_misc_monsterscales_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6474 },
+                {
+                    type = "Item",
+                    item_id = 6474,
+                },
             },
             product = { item_id = 6466, qty = 1 },
             materials = {
@@ -479,8 +543,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Moonglow Vest",
             icon = "inv_chest_leather_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6710 },
+                {
+                    type = "Item",
+                    item_id = 6710,
+                },
             },
             product = { item_id = 6709, qty = 1 },
             materials = {
@@ -498,8 +564,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Murloc Scale Breastplate",
             icon = "inv_chest_chain_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5787 },
+                {
+                    type = "Item",
+                    item_id = 5787,
+                },
             },
             product = { item_id = 5781, qty = 1 },
             materials = {
@@ -515,8 +583,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Light Leather Pants",
             icon = "inv_pants_02",
             source = {
-                type = "Trainer",
-                cost = 400,
+                {
+                    type = "Trainer",
+                    cost = 400,
+                },
             },
             product = { item_id = 7282, qty = 1 },
             materials = {
@@ -533,8 +603,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Dark Leather Boots",
             icon = "inv_boots_05",
             source = {
-                type = "Trainer",
-                cost = 350,
+                {
+                    type = "Trainer",
+                    cost = 350,
+                },
             },
             product = { item_id = 2315, qty = 1 },
             materials = {
@@ -549,8 +621,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Dark Leather Tunic",
             icon = "inv_chest_leather_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 2409 },
+                {
+                    type = "Item",
+                    item_id = 2409,
+                },
             },
             product = { item_id = 2317, qty = 1 },
             materials = {
@@ -565,8 +639,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Hillman's Leather Vest",
             icon = "inv_chest_leather_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4293 },
+                {
+                    type = "Item",
+                    item_id = 4293,
+                },
             },
             product = { item_id = 4244, qty = 1 },
             materials = {
@@ -581,8 +657,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Black Whelp Cloak",
             icon = "inv_misc_monsterscales_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7289 },
+                {
+                    type = "Item",
+                    item_id = 7289,
+                },
             },
             product = { item_id = 7283, qty = 1 },
             materials = {
@@ -597,8 +675,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Black Whelp Tunic",
             icon = "inv_chest_cloth_45",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20576 },
+                {
+                    type = "Item",
+                    item_id = 20576,
+                },
             },
             product = { item_id = 20575, qty = 1 },
             materials = {
@@ -614,8 +694,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Medium Armor Kit",
             icon = "inv_misc_armorkit_15",
             source = {
-                type = "Trainer",
-                cost = 250,
+                {
+                    type = "Trainer",
+                    cost = 250,
+                },
             },
             product = { item_id = 2313, qty = 1 },
             materials = {
@@ -629,8 +711,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Cured Medium Hide",
             icon = "inv_misc_pelt_bear_02",
             source = {
-                type = "Trainer",
-                cost = 200,
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
             },
             product = { item_id = 4233, qty = 1 },
             materials = {
@@ -644,8 +728,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Medium Leather",
             icon = "inv_misc_leatherscrap_05",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 2319, qty = 1 },
             materials = {
@@ -660,8 +746,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Fine Leather Pants",
             icon = "inv_pants_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5972 },
+                {
+                    type = "Item",
+                    item_id = 5972,
+                },
             },
             product = { item_id = 5958, qty = 1 },
             materials = {
@@ -676,8 +764,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Deviate Scale Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6475 },
+                {
+                    type = "Item",
+                    item_id = 6475,
+                },
             },
             product = { item_id = 6467, qty = 1 },
             materials = {
@@ -693,8 +783,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Dark Leather Cloak",
             icon = "inv_misc_cape_10",
             source = {
-                type = "Trainer",
-                cost = 350,
+                {
+                    type = "Trainer",
+                    cost = 350,
+                },
             },
             product = { item_id = 2316, qty = 1 },
             materials = {
@@ -711,8 +803,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Dark Leather Pants",
             icon = "inv_pants_09",
             source = {
-                type = "Trainer",
-                cost = 400,
+                {
+                    type = "Trainer",
+                    cost = 400,
+                },
             },
             product = { item_id = 5961, qty = 1 },
             materials = {
@@ -727,8 +821,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Deviate Scale Belt",
             icon = "inv_belt_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 6476 },
+                {
+                    type = "Item",
+                    item_id = 6476,
+                },
             },
             product = { item_id = 6468, qty = 1 },
             materials = {
@@ -745,8 +841,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Dark Leather Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7360 },
+                {
+                    type = "Item",
+                    item_id = 7360,
+                },
             },
             product = { item_id = 4248, qty = 1 },
             materials = {
@@ -762,8 +860,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Toughened Leather Armor",
             icon = "inv_chest_leather_10",
             source = {
-                type = "Trainer",
-                cost = 450,
+                {
+                    type = "Trainer",
+                    cost = 450,
+                },
             },
             product = { item_id = 2314, qty = 1 },
             materials = {
@@ -778,8 +878,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Hillman's Belt",
             icon = "inv_belt_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4294 },
+                {
+                    type = "Item",
+                    item_id = 4294,
+                },
             },
             product = { item_id = 4250, qty = 1 },
             materials = {
@@ -794,8 +896,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Red Whelp Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7290 },
+                {
+                    type = "Item",
+                    item_id = 7290,
+                },
             },
             product = { item_id = 7284, qty = 1 },
             materials = {
@@ -810,8 +914,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Nimble Leather Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 7285, qty = 1 },
             materials = {
@@ -828,8 +934,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Dark Leather Belt",
             icon = "inv_belt_03",
             source = {
-                type = "Trainer",
-                cost = 400,
+                {
+                    type = "Trainer",
+                    cost = 400,
+                },
             },
             product = { item_id = 4249, qty = 1 },
             materials = {
@@ -846,7 +954,9 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "inv_misc_armorkit_17",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
         {
@@ -854,8 +964,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Fletcher's Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 7348, qty = 1 },
             materials = {
@@ -872,8 +984,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Hillman's Shoulders",
             icon = "inv_shoulder_08",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 4251, qty = 1 },
             materials = {
@@ -890,8 +1004,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Toughened Leather Gloves",
             icon = "inv_gauntlets_24",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 4253, qty = 1 },
             materials = {
@@ -908,8 +1024,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Herbalist's Gloves",
             icon = "inv_gauntlets_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7361 },
+                {
+                    type = "Item",
+                    item_id = 7361,
+                },
             },
             product = { item_id = 7349, qty = 1 },
             materials = {
@@ -924,8 +1042,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Earthen Leather Shoulders",
             icon = "inv_shoulder_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7362 },
+                {
+                    type = "Item",
+                    item_id = 7362,
+                },
             },
             product = { item_id = 7352, qty = 1 },
             materials = {
@@ -942,8 +1062,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Dark Leather Shoulders",
             icon = "inv_shoulder_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4296 },
+                {
+                    type = "Item",
+                    item_id = 4296,
+                },
             },
             product = { item_id = 4252, qty = 1 },
             materials = {
@@ -959,8 +1081,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Pilferer's Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7363 },
+                {
+                    type = "Item",
+                    item_id = 7363,
+                },
             },
             product = { item_id = 7358, qty = 1 },
             materials = {
@@ -977,8 +1101,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Hillman's Leather Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 4247, qty = 1 },
             materials = {
@@ -992,8 +1118,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Heavy Earthen Gloves",
             icon = "inv_gauntlets_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7364 },
+                {
+                    type = "Item",
+                    item_id = 7364,
+                },
             },
             product = { item_id = 7359, qty = 1 },
             materials = {
@@ -1011,8 +1139,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Hillman's Cloak",
             icon = "inv_misc_cape_07",
             source = {
-                type = "Trainer",
-                cost = 600,
+                {
+                    type = "Trainer",
+                    cost = 600,
+                },
             },
             product = { item_id = 3719, qty = 1 },
             materials = {
@@ -1026,8 +1156,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Barbaric Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4297 },
+                {
+                    type = "Item",
+                    item_id = 4297,
+                },
             },
             product = { item_id = 4254, qty = 1 },
             materials = {
@@ -1042,8 +1174,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Heavy Armor Kit",
             icon = "inv_misc_armorkit_16",
             source = {
-                type = "Trainer",
-                cost = 750,
+                {
+                    type = "Trainer",
+                    cost = 750,
+                },
             },
             product = { item_id = 4265, qty = 1 },
             materials = {
@@ -1057,8 +1191,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Heavy Quiver",
             icon = "inv_misc_quiver_02",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 7371, qty = 1 },
             materials = {
@@ -1072,8 +1208,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Heavy Leather Ammo Pouch",
             icon = "inv_misc_bag_09",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 7372, qty = 1 },
             materials = {
@@ -1087,8 +1225,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Cured Heavy Hide",
             icon = "inv_misc_pelt_wolf_02",
             source = {
-                type = "Trainer",
-                cost = 500,
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
             },
             product = { item_id = 4236, qty = 1 },
             materials = {
@@ -1102,8 +1242,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Heavy Leather",
             icon = "inv_misc_leatherscrap_07",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 4234, qty = 1 },
             materials = {
@@ -1116,8 +1258,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Heavy Leather Ball",
             icon = "inv_misc_throwingball_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18731 },
+                {
+                    type = "Item",
+                    item_id = 18731,
+                },
             },
             product = { item_id = 18662, qty = 1 },
             materials = {
@@ -1133,8 +1277,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Green Leather Armor",
             icon = "inv_chest_leather_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7613 },
+                {
+                    type = "Item",
+                    item_id = 7613,
+                },
             },
             product = { item_id = 4255, qty = 1 },
             materials = {
@@ -1149,8 +1295,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Barbaric Bracers",
             icon = "inv_bracer_15",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18949 },
+                {
+                    type = "Item",
+                    item_id = 18949,
+                },
             },
             product = { item_id = 18948, qty = 1 },
             materials = {
@@ -1169,8 +1317,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Green Leather Belt",
             icon = "inv_belt_17",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 4257, qty = 1 },
             materials = {
@@ -1187,8 +1337,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Guardian Pants",
             icon = "inv_pants_02",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
             product = { item_id = 5962, qty = 1 },
             materials = {
@@ -1205,8 +1357,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Raptor Hide Harness",
             icon = "inv_chest_leather_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13287 },
+                {
+                    type = "Item",
+                    item_id = 13287,
+                },
             },
             product = { item_id = 4455, qty = 1 },
             materials = {
@@ -1221,8 +1375,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Raptor Hide Belt",
             icon = "inv_belt_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 13288 },
+                {
+                    type = "Item",
+                    item_id = 13288,
+                },
             },
             product = { item_id = 4456, qty = 1 },
             materials = {
@@ -1237,8 +1393,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Dusky Leather Leggings",
             icon = "inv_pants_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7449 },
+                {
+                    type = "Item",
+                    item_id = 7449,
+                },
             },
             product = { item_id = 7373, qty = 1 },
             materials = {
@@ -1255,8 +1413,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Guardian Belt",
             icon = "inv_belt_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4298 },
+                {
+                    type = "Item",
+                    item_id = 4298,
+                },
             },
             product = { item_id = 4258, qty = 1 },
             materials = {
@@ -1272,8 +1432,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Thick Murloc Armor",
             icon = "inv_chest_chain_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5788 },
+                {
+                    type = "Item",
+                    item_id = 5788,
+                },
             },
             product = { item_id = 5782, qty = 1 },
             materials = {
@@ -1289,8 +1451,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Barbaric Leggings",
             icon = "inv_pants_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5973 },
+                {
+                    type = "Item",
+                    item_id = 5973,
+                },
             },
             product = { item_id = 5963, qty = 1 },
             materials = {
@@ -1307,8 +1471,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Guardian Armor",
             icon = "inv_chest_leather_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4299 },
+                {
+                    type = "Item",
+                    item_id = 4299,
+                },
             },
             product = { item_id = 4256, qty = 1 },
             materials = {
@@ -1324,8 +1490,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Barbaric Shoulders",
             icon = "inv_shoulder_08",
             source = {
-                type = "Trainer",
-                cost = 1200,
+                {
+                    type = "Trainer",
+                    cost = 1200,
+                },
             },
             product = { item_id = 5964, qty = 1 },
             materials = {
@@ -1340,8 +1508,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Dusky Leather Armor",
             icon = "inv_chest_leather_03",
             source = {
-                type = "Trainer",
-                cost = 1500,
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
             },
             product = { item_id = 7374, qty = 1 },
             materials = {
@@ -1356,8 +1526,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Green Whelp Armor",
             icon = "inv_chest_chain_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7450 },
+                {
+                    type = "Item",
+                    item_id = 7450,
+                },
             },
             product = { item_id = 7375, qty = 1 },
             materials = {
@@ -1374,8 +1546,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Green Leather Bracers",
             icon = "inv_bracer_12",
             source = {
-                type = "Trainer",
-                cost = 1200,
+                {
+                    type = "Trainer",
+                    cost = 1200,
+                },
             },
             product = { item_id = 4259, qty = 1 },
             materials = {
@@ -1391,8 +1565,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Frost Leather Cloak",
             icon = "inv_misc_cape_04",
             source = {
-                type = "Trainer",
-                cost = 2000,
+                {
+                    type = "Trainer",
+                    cost = 2000,
+                },
             },
             product = { item_id = 7377, qty = 1 },
             materials = {
@@ -1410,8 +1586,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Gem-studded Leather Belt",
             icon = "inv_belt_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 14635 },
+                {
+                    type = "Item",
+                    item_id = 14635,
+                },
             },
             product = { item_id = 4262, qty = 1 },
             materials = {
@@ -1428,8 +1606,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Guardian Cloak",
             icon = "inv_misc_cape_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5974 },
+                {
+                    type = "Item",
+                    item_id = 5974,
+                },
             },
             product = { item_id = 5965, qty = 1 },
             materials = {
@@ -1444,8 +1624,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Dusky Bracers",
             icon = "inv_bracer_07",
             source = {
-                type = "Trainer",
-                cost = 2000,
+                {
+                    type = "Trainer",
+                    cost = 2000,
+                },
             },
             product = { item_id = 7378, qty = 1 },
             materials = {
@@ -1462,8 +1644,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Barbaric Harness",
             icon = "inv_chest_leather_04",
             source = {
-                type = "Trainer",
-                cost = 2000,
+                {
+                    type = "Trainer",
+                    cost = 2000,
+                },
             },
             product = { item_id = 5739, qty = 1 },
             materials = {
@@ -1478,8 +1662,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Murloc Scale Bracers",
             icon = "inv_bracer_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 5789 },
+                {
+                    type = "Item",
+                    item_id = 5789,
+                },
             },
             product = { item_id = 5783, qty = 1 },
             materials = {
@@ -1495,8 +1681,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Guardian Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Trainer",
-                cost = 2400,
+                {
+                    type = "Trainer",
+                    cost = 2400,
+                },
             },
             product = { item_id = 5966, qty = 1 },
             materials = {
@@ -1511,8 +1699,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Green Whelp Bracers",
             icon = "inv_bracer_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7451 },
+                {
+                    type = "Item",
+                    item_id = 7451,
+                },
             },
             product = { item_id = 7386, qty = 1 },
             materials = {
@@ -1527,8 +1717,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Gloves of the Greatfather",
             icon = "inv_gauntlets_21",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17722 },
+                {
+                    type = "Item",
+                    item_id = 17722,
+                },
             },
             product = { item_id = 17721, qty = 1 },
             materials = {
@@ -1545,8 +1737,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Guardian Leather Bracers",
             icon = "inv_bracer_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4300 },
+                {
+                    type = "Item",
+                    item_id = 4300,
+                },
             },
             product = { item_id = 4260, qty = 1 },
             materials = {
@@ -1561,8 +1755,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Dusky Belt",
             icon = "inv_belt_06",
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
             product = { item_id = 7387, qty = 1 },
             materials = {
@@ -1580,8 +1776,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Barbaric Belt",
             icon = "inv_belt_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 4301 },
+                {
+                    type = "Item",
+                    item_id = 4301,
+                },
             },
             product = { item_id = 4264, qty = 1 },
             materials = {
@@ -1599,8 +1797,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Dusky Boots",
             icon = "inv_boots_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7452 },
+                {
+                    type = "Item",
+                    item_id = 7452,
+                },
             },
             product = { item_id = 7390, qty = 1 },
             materials = {
@@ -1616,8 +1816,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Swift Boots",
             icon = "inv_boots_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 7453 },
+                {
+                    type = "Item",
+                    item_id = 7453,
+                },
             },
             product = { item_id = 7391, qty = 1 },
             materials = {
@@ -1633,8 +1835,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Thick Armor Kit",
             icon = "inv_misc_armorkit_07",
             source = {
-                type = "Trainer",
-                cost = 2000,
+                {
+                    type = "Trainer",
+                    cost = 2000,
+                },
             },
             product = { item_id = 8173, qty = 1 },
             materials = {
@@ -1648,8 +1852,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Comfortable Leather Hat",
             icon = "inv_helmet_15",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8384 },
+                {
+                    type = "Item",
+                    item_id = 8384,
+                },
             },
             product = { item_id = 8174, qty = 1 },
             materials = {
@@ -1664,8 +1870,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Cured Thick Hide",
             icon = "inv_misc_pelt_bear_01",
             source = {
-                type = "Trainer",
-                cost = 2000,
+                {
+                    type = "Trainer",
+                    cost = 2000,
+                },
             },
             product = { item_id = 8172, qty = 1 },
             materials = {
@@ -1679,8 +1887,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Shadowskin Gloves",
             icon = "inv_gauntlets_32",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18239 },
+                {
+                    type = "Item",
+                    item_id = 18239,
+                },
             },
             product = { item_id = 18238, qty = 1 },
             materials = {
@@ -1698,8 +1908,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Thick Leather",
             icon = "inv_misc_leatherscrap_08",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 4304, qty = 1 },
             materials = {
@@ -1714,8 +1926,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Nightscape Tunic",
             icon = "inv_chest_leather_03",
             source = {
-                type = "Trainer",
-                cost = 3000,
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
             },
             product = { item_id = 8175, qty = 1 },
             materials = {
@@ -1729,8 +1943,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Nightscape Headband",
             icon = "inv_belt_24",
             source = {
-                type = "Trainer",
-                cost = 3000,
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
             },
             product = { item_id = 8176, qty = 1 },
             materials = {
@@ -1744,8 +1960,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Turtle Scale Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8385 },
+                {
+                    type = "Item",
+                    item_id = 8385,
+                },
             },
             product = { item_id = 8187, qty = 1 },
             materials = {
@@ -1762,8 +1980,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Turtle Scale Breastplate",
             icon = "inv_chest_chain_12",
             source = {
-                type = "Trainer",
-                cost = 3000,
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
             },
             product = { item_id = 8189, qty = 1 },
             materials = {
@@ -1778,8 +1998,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Nightscape Shoulders",
             icon = "inv_shoulder_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8409 },
+                {
+                    type = "Item",
+                    item_id = 8409,
+                },
             },
             product = { item_id = 8192, qty = 1 },
             materials = {
@@ -1794,8 +2016,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Turtle Scale Bracers",
             icon = "inv_bracer_06",
             source = {
-                type = "Trainer",
-                cost = 3500,
+                {
+                    type = "Trainer",
+                    cost = 3500,
+                },
             },
             product = { item_id = 8198, qty = 1 },
             materials = {
@@ -1812,8 +2036,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Big Voodoo Robe",
             icon = "inv_chest_cloth_25",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8386 },
+                {
+                    type = "Item",
+                    item_id = 8386,
+                },
             },
             product = { item_id = 8200, qty = 1 },
             materials = {
@@ -1830,8 +2056,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Tough Scorpid Breastplate",
             icon = "inv_chest_leather_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8395 },
+                {
+                    type = "Item",
+                    item_id = 8395,
+                },
             },
             product = { item_id = 8203, qty = 1 },
             materials = {
@@ -1846,8 +2074,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Wild Leather Shoulders",
             icon = "inv_shoulder_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8403 },
+                {
+                    type = "Item",
+                    item_id = 8403,
+                },
             },
             product = { item_id = 8210, qty = 1 },
             materials = {
@@ -1862,8 +2092,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Big Voodoo Mask",
             icon = "inv_banner_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8387 },
+                {
+                    type = "Item",
+                    item_id = 8387,
+                },
             },
             product = { item_id = 8201, qty = 1 },
             materials = {
@@ -1878,8 +2110,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Tough Scorpid Bracers",
             icon = "inv_bracer_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8397 },
+                {
+                    type = "Item",
+                    item_id = 8397,
+                },
             },
             product = { item_id = 8205, qty = 1 },
             materials = {
@@ -1896,8 +2130,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Tough Scorpid Gloves",
             icon = "inv_gauntlets_24",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8398 },
+                {
+                    type = "Item",
+                    item_id = 8398,
+                },
             },
             product = { item_id = 8204, qty = 1 },
             materials = {
@@ -1912,8 +2148,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Wild Leather Vest",
             icon = "inv_chest_cloth_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8404 },
+                {
+                    type = "Item",
+                    item_id = 8404,
+                },
             },
             product = { item_id = 8211, qty = 1 },
             materials = {
@@ -1928,8 +2166,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Wild Leather Helmet",
             icon = "inv_helmet_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8405 },
+                {
+                    type = "Item",
+                    item_id = 8405,
+                },
             },
             product = { item_id = 8214, qty = 1 },
             materials = {
@@ -1944,8 +2184,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Dragonscale Gauntlets",
             icon = "inv_gauntlets_10",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 8347, qty = 1 },
             materials = {
@@ -1961,8 +2203,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Wolfshead Helm",
             icon = "inv_helmet_04",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 8345, qty = 1 },
             materials = {
@@ -1979,8 +2223,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Quickdraw Quiver",
             icon = "inv_misc_quiver_07",
             source = {
-                type = "Trainer",
-                cost = 3600,
+                {
+                    type = "Trainer",
+                    cost = 3600,
+                },
             },
             product = { item_id = 8217, qty = 1 },
             materials = {
@@ -1996,8 +2242,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Thick Leather Ammo Pouch",
             icon = "inv_misc_bag_09_black",
             source = {
-                type = "Trainer",
-                cost = 3600,
+                {
+                    type = "Trainer",
+                    cost = 3600,
+                },
             },
             product = { item_id = 8218, qty = 1 },
             materials = {
@@ -2014,7 +2262,9 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "inv_misc_armorkit_17",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -2024,8 +2274,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Nightscape Pants",
             icon = "inv_pants_11",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 8193, qty = 1 },
             materials = {
@@ -2039,8 +2291,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Turtle Scale Helm",
             icon = "inv_helmet_40",
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
             product = { item_id = 8191, qty = 1 },
             materials = {
@@ -2055,8 +2309,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Gauntlets of the Sea",
             icon = "inv_gauntlets_30",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 8346, qty = 1 },
             materials = {
@@ -2075,8 +2331,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Tough Scorpid Boots",
             icon = "inv_boots_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8399 },
+                {
+                    type = "Item",
+                    item_id = 8399,
+                },
             },
             product = { item_id = 8209, qty = 1 },
             materials = {
@@ -2091,8 +2349,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Turtle Scale Leggings",
             icon = "inv_pants_02",
             source = {
-                type = "Trainer",
-                cost = 4500,
+                {
+                    type = "Trainer",
+                    cost = 4500,
+                },
             },
             product = { item_id = 8185, qty = 1 },
             materials = {
@@ -2107,8 +2367,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Nightscape Boots",
             icon = "inv_boots_05",
             source = {
-                type = "Trainer",
-                cost = 4500,
+                {
+                    type = "Trainer",
+                    cost = 4500,
+                },
             },
             product = { item_id = 8197, qty = 1 },
             materials = {
@@ -2124,8 +2386,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Big Voodoo Pants",
             icon = "inv_pants_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8389 },
+                {
+                    type = "Item",
+                    item_id = 8389,
+                },
             },
             product = { item_id = 8202, qty = 1 },
             materials = {
@@ -2140,8 +2404,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Big Voodoo Cloak",
             icon = "inv_misc_cape_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8390 },
+                {
+                    type = "Item",
+                    item_id = 8390,
+                },
             },
             product = { item_id = 8216, qty = 1 },
             materials = {
@@ -2156,8 +2422,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Tough Scorpid Shoulders",
             icon = "inv_shoulder_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8400 },
+                {
+                    type = "Item",
+                    item_id = 8400,
+                },
             },
             product = { item_id = 8207, qty = 1 },
             materials = {
@@ -2174,8 +2442,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Wild Leather Boots",
             icon = "inv_boots_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8406 },
+                {
+                    type = "Item",
+                    item_id = 8406,
+                },
             },
             product = { item_id = 8213, qty = 1 },
             materials = {
@@ -2190,8 +2460,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Tough Scorpid Leggings",
             icon = "inv_pants_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8401 },
+                {
+                    type = "Item",
+                    item_id = 8401,
+                },
             },
             product = { item_id = 8206, qty = 1 },
             materials = {
@@ -2208,8 +2480,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Tough Scorpid Helm",
             icon = "inv_helmet_20",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8402 },
+                {
+                    type = "Item",
+                    item_id = 8402,
+                },
             },
             product = { item_id = 8208, qty = 1 },
             materials = {
@@ -2224,8 +2498,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Wild Leather Leggings",
             icon = "inv_pants_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8407 },
+                {
+                    type = "Item",
+                    item_id = 8407,
+                },
             },
             product = { item_id = 8212, qty = 1 },
             materials = {
@@ -2240,8 +2516,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Wild Leather Cloak",
             icon = "inv_misc_cape_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 8408 },
+                {
+                    type = "Item",
+                    item_id = 8408,
+                },
             },
             product = { item_id = 8215, qty = 1 },
             materials = {
@@ -2256,8 +2534,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Helm of Fire",
             icon = "inv_helmet_08",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 8348, qty = 1 },
             materials = {
@@ -2274,8 +2554,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Feathered Breastplate",
             icon = "inv_chest_leather_06",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 8349, qty = 1 },
             materials = {
@@ -2292,8 +2574,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Rugged Armor Kit",
             icon = "inv_misc_armorkit_09",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 15564, qty = 1 },
             materials = {
@@ -2306,8 +2590,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Cured Rugged Hide",
             icon = "inv_misc_pelt_bear_03",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 15407, qty = 1 },
             materials = {
@@ -2321,8 +2607,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Rugged Leather",
             icon = "inv_misc_leatherscrap_02",
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
             product = { item_id = 8170, qty = 1 },
             materials = {
@@ -2337,8 +2625,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Dragonscale Breastplate",
             icon = "inv_chest_chain_07",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 8367, qty = 1 },
             materials = {
@@ -2354,8 +2644,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Heavy Scorpid Bracers",
             icon = "inv_bracer_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15724 },
+                {
+                    type = "Item",
+                    item_id = 15724,
+                },
             },
             product = { item_id = 15077, qty = 1 },
             materials = {
@@ -2372,8 +2664,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Wicked Leather Gauntlets",
             icon = "inv_gauntlets_31",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15725 },
+                {
+                    type = "Item",
+                    item_id = 15725,
+                },
             },
             product = { item_id = 15083, qty = 1 },
             materials = {
@@ -2388,8 +2682,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Green Dragonscale Breastplate",
             icon = "inv_chest_chain_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15726 },
+                {
+                    type = "Item",
+                    item_id = 15726,
+                },
             },
             product = { item_id = 15045, qty = 1 },
             materials = {
@@ -2404,8 +2700,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Blackstorm Leggings",
             icon = "inv_pants_leather_03",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 29964, qty = 1 },
             materials = {
@@ -2421,8 +2719,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Wildfeather Leggings",
             icon = "inv_pants_leather_03",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 29970, qty = 1 },
             materials = {
@@ -2439,8 +2739,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Dragonstrike Leggings",
             icon = "inv_pants_plate_20",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 29971, qty = 1 },
             materials = {
@@ -2459,8 +2761,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Heavy Scorpid Vest",
             icon = "inv_chest_chain_15",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15727 },
+                {
+                    type = "Item",
+                    item_id = 15727,
+                },
             },
             product = { item_id = 15076, qty = 1 },
             materials = {
@@ -2475,9 +2779,11 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Wicked Leather Bracers",
             icon = "inv_bracer_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15728 },
-                cost = 10000,
+                {
+                    type = "Item",
+                    item_id = 15728,
+                    cost = 10000,
+                },
             },
             product = { item_id = 15084, qty = 1 },
             materials = {
@@ -2492,8 +2798,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Chimeric Gloves",
             icon = "inv_gauntlets_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15729 },
+                {
+                    type = "Item",
+                    item_id = 15729,
+                },
             },
             product = { item_id = 15074, qty = 1 },
             materials = {
@@ -2510,9 +2818,11 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Runic Leather Gauntlets",
             icon = "inv_gauntlets_31",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15731 },
-                cost = 10000,
+                {
+                    type = "Item",
+                    item_id = 15731,
+                    cost = 10000,
+                },
             },
             product = { item_id = 15091, qty = 1 },
             materials = {
@@ -2527,8 +2837,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Volcanic Leggings",
             icon = "inv_pants_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15732 },
+                {
+                    type = "Item",
+                    item_id = 15732,
+                },
             },
             product = { item_id = 15054, qty = 1 },
             materials = {
@@ -2544,8 +2856,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Green Dragonscale Leggings",
             icon = "inv_pants_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15733 },
+                {
+                    type = "Item",
+                    item_id = 15733,
+                },
             },
             product = { item_id = 15046, qty = 1 },
             materials = {
@@ -2560,8 +2874,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Living Shoulders",
             icon = "inv_shoulder_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15734 },
+                {
+                    type = "Item",
+                    item_id = 15734,
+                },
             },
             product = { item_id = 15061, qty = 1 },
             materials = {
@@ -2576,8 +2892,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Ironfeather Shoulders",
             icon = "inv_shoulder_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15735 },
+                {
+                    type = "Item",
+                    item_id = 15735,
+                },
             },
             product = { item_id = 15067, qty = 1 },
             materials = {
@@ -2595,8 +2913,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Chimeric Boots",
             icon = "inv_boots_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15737 },
+                {
+                    type = "Item",
+                    item_id = 15737,
+                },
             },
             product = { item_id = 15073, qty = 1 },
             materials = {
@@ -2611,8 +2931,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Heavy Scorpid Gauntlets",
             icon = "inv_gauntlets_24",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15738 },
+                {
+                    type = "Item",
+                    item_id = 15738,
+                },
             },
             product = { item_id = 15078, qty = 1 },
             materials = {
@@ -2627,9 +2949,11 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Runic Leather Bracers",
             icon = "inv_bracer_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15739 },
-                cost = 10000,
+                {
+                    type = "Item",
+                    item_id = 15739,
+                    cost = 10000,
+                },
             },
             product = { item_id = 15092, qty = 1 },
             materials = {
@@ -2645,8 +2969,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Frostsaber Boots",
             icon = "inv_boots_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15740 },
+                {
+                    type = "Item",
+                    item_id = 15740,
+                },
             },
             product = { item_id = 15071, qty = 1 },
             materials = {
@@ -2661,8 +2987,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Stormshroud Pants",
             icon = "inv_pants_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15741 },
+                {
+                    type = "Item",
+                    item_id = 15741,
+                },
             },
             product = { item_id = 15057, qty = 1 },
             materials = {
@@ -2678,8 +3006,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Warbear Harness",
             icon = "inv_chest_leather_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15742 },
+                {
+                    type = "Item",
+                    item_id = 15742,
+                },
             },
             product = { item_id = 15064, qty = 1 },
             materials = {
@@ -2695,7 +3025,9 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             categories = { "Profession Training" },
             icon = "inv_misc_armorkit_17",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
         },
     },
@@ -2705,8 +3037,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Heavy Scorpid Belt",
             icon = "inv_belt_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15743 },
+                {
+                    type = "Item",
+                    item_id = 15743,
+                },
             },
             product = { item_id = 15082, qty = 1 },
             materials = {
@@ -2721,9 +3055,11 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Wicked Leather Headband",
             icon = "inv_misc_bandage_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15744 },
-                cost = 10000,
+                {
+                    type = "Item",
+                    item_id = 15744,
+                    cost = 10000,
+                },
             },
             product = { item_id = 15086, qty = 1 },
             materials = {
@@ -2738,9 +3074,11 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Runic Leather Belt",
             icon = "inv_belt_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15745 },
-                cost = 10000,
+                {
+                    type = "Item",
+                    item_id = 15745,
+                    cost = 10000,
+                },
             },
             product = { item_id = 15093, qty = 1 },
             materials = {
@@ -2755,8 +3093,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Chimeric Leggings",
             icon = "inv_pants_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15746 },
+                {
+                    type = "Item",
+                    item_id = 15746,
+                },
             },
             product = { item_id = 15072, qty = 1 },
             materials = {
@@ -2771,8 +3111,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Green Dragonscale Gauntlets",
             icon = "inv_gauntlets_12",
             source = {
-                type = "Trainer",
-                cost = 30000,
+                {
+                    type = "Trainer",
+                    cost = 30000,
+                },
             },
             product = { item_id = 20296, qty = 1 },
             materials = {
@@ -2790,8 +3132,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Frostsaber Leggings",
             icon = "inv_pants_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15747 },
+                {
+                    type = "Item",
+                    item_id = 15747,
+                },
             },
             product = { item_id = 15069, qty = 1 },
             materials = {
@@ -2806,8 +3150,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Heavy Scorpid Leggings",
             icon = "inv_pants_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15748 },
+                {
+                    type = "Item",
+                    item_id = 15748,
+                },
             },
             product = { item_id = 15079, qty = 1 },
             materials = {
@@ -2822,8 +3168,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Volcanic Breastplate",
             icon = "inv_chest_leather_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15749 },
+                {
+                    type = "Item",
+                    item_id = 15749,
+                },
             },
             product = { item_id = 15053, qty = 1 },
             materials = {
@@ -2839,8 +3187,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Blue Dragonscale Breastplate",
             icon = "inv_chest_chain_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15751 },
+                {
+                    type = "Item",
+                    item_id = 15751,
+                },
             },
             product = { item_id = 15048, qty = 1 },
             materials = {
@@ -2856,8 +3206,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Living Leggings",
             icon = "inv_pants_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15752 },
+                {
+                    type = "Item",
+                    item_id = 15752,
+                },
             },
             product = { item_id = 15060, qty = 1 },
             materials = {
@@ -2873,8 +3225,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Stormshroud Armor",
             icon = "inv_chest_leather_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15753 },
+                {
+                    type = "Item",
+                    item_id = 15753,
+                },
             },
             product = { item_id = 15056, qty = 1 },
             materials = {
@@ -2891,8 +3245,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Warbear Woolies",
             icon = "inv_pants_wolf",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15754 },
+                {
+                    type = "Item",
+                    item_id = 15754,
+                },
             },
             product = { item_id = 15065, qty = 1 },
             materials = {
@@ -2907,8 +3263,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Winter Boots",
             icon = "inv_boots_christmas01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 34262 },
+                {
+                    type = "Item",
+                    item_id = 34262,
+                },
             },
             product = { item_id = 34086, qty = 1 },
             materials = {
@@ -2924,7 +3282,9 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Gordok Ogre Suit",
             icon = "inv_chest_chain_14",
             source = {
-                type = "Trainer",
+                {
+                    type = "Trainer",
+                },
             },
             product = { item_id = 18258, qty = 1 },
             materials = {
@@ -2942,8 +3302,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Chimeric Vest",
             icon = "inv_chest_leather_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15755 },
+                {
+                    type = "Item",
+                    item_id = 15755,
+                },
             },
             product = { item_id = 15075, qty = 1 },
             materials = {
@@ -2958,9 +3320,11 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Runic Leather Headband",
             icon = "inv_misc_bandage_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15756 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 15756,
+                    cost = 15000,
+                },
             },
             product = { item_id = 15094, qty = 1 },
             materials = {
@@ -2975,9 +3339,11 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Wicked Leather Pants",
             icon = "inv_pants_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15757 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 15757,
+                    cost = 15000,
+                },
             },
             product = { item_id = 15087, qty = 1 },
             materials = {
@@ -2993,8 +3359,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Devilsaur Gauntlets",
             icon = "inv_gauntlets_26",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15758 },
+                {
+                    type = "Item",
+                    item_id = 15758,
+                },
             },
             product = { item_id = 15063, qty = 1 },
             materials = {
@@ -3009,8 +3377,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Black Dragonscale Breastplate",
             icon = "inv_chest_plate06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15759 },
+                {
+                    type = "Item",
+                    item_id = 15759,
+                },
             },
             product = { item_id = 15050, qty = 1 },
             materials = {
@@ -3026,8 +3396,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Ironfeather Breastplate",
             icon = "inv_chest_leather_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15760 },
+                {
+                    type = "Item",
+                    item_id = 15760,
+                },
             },
             product = { item_id = 15066, qty = 1 },
             materials = {
@@ -3044,8 +3416,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Might of the Timbermaw",
             icon = "inv_belt_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19326 },
+                {
+                    type = "Item",
+                    item_id = 19326,
+                },
             },
             product = { item_id = 19044, qty = 1 },
             materials = {
@@ -3062,8 +3436,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Dawn Treaders",
             icon = "inv_boots_cloth_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19328 },
+                {
+                    type = "Item",
+                    item_id = 19328,
+                },
             },
             product = { item_id = 19052, qty = 1 },
             materials = {
@@ -3082,8 +3458,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Frostsaber Gloves",
             icon = "inv_gauntlets_16",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15761 },
+                {
+                    type = "Item",
+                    item_id = 15761,
+                },
             },
             product = { item_id = 15070, qty = 1 },
             materials = {
@@ -3098,8 +3476,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Heavy Scorpid Helm",
             icon = "inv_helmet_20",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15762 },
+                {
+                    type = "Item",
+                    item_id = 15762,
+                },
             },
             product = { item_id = 15080, qty = 1 },
             materials = {
@@ -3115,8 +3495,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Blue Dragonscale Shoulders",
             icon = "inv_shoulder_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15763 },
+                {
+                    type = "Item",
+                    item_id = 15763,
+                },
             },
             product = { item_id = 15049, qty = 1 },
             materials = {
@@ -3133,8 +3515,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Stormshroud Shoulders",
             icon = "inv_shoulder_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15764 },
+                {
+                    type = "Item",
+                    item_id = 15764,
+                },
             },
             product = { item_id = 15058, qty = 1 },
             materials = {
@@ -3151,8 +3535,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Corehound Boots",
             icon = "inv_boots_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17022 },
+                {
+                    type = "Item",
+                    item_id = 17022,
+                },
             },
             product = { item_id = 16982, qty = 1 },
             materials = {
@@ -3170,8 +3556,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Red Dragonscale Breastplate",
             icon = "inv_chest_chain_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15730 },
+                {
+                    type = "Item",
+                    item_id = 15730,
+                },
             },
             product = { item_id = 15047, qty = 1 },
             materials = {
@@ -3186,9 +3574,11 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Runic Leather Pants",
             icon = "inv_pants_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15765 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 15765,
+                    cost = 15000,
+                },
             },
             product = { item_id = 15095, qty = 1 },
             materials = {
@@ -3204,9 +3594,11 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Wicked Leather Belt",
             icon = "inv_belt_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15768 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 15768,
+                    cost = 15000,
+                },
             },
             product = { item_id = 15088, qty = 1 },
             materials = {
@@ -3221,8 +3613,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Onyxia Scale Cloak",
             icon = "inv_misc_cape_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15769 },
+                {
+                    type = "Item",
+                    item_id = 15769,
+                },
             },
             product = { item_id = 15138, qty = 1 },
             materials = {
@@ -3237,8 +3631,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Black Dragonscale Shoulders",
             icon = "inv_shoulder_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15770 },
+                {
+                    type = "Item",
+                    item_id = 15770,
+                },
             },
             product = { item_id = 15051, qty = 1 },
             materials = {
@@ -3255,8 +3651,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Living Breastplate",
             icon = "inv_chest_plate07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15771 },
+                {
+                    type = "Item",
+                    item_id = 15771,
+                },
             },
             product = { item_id = 15059, qty = 1 },
             materials = {
@@ -3273,8 +3671,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Devilsaur Leggings",
             icon = "inv_pants_wolf",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15772 },
+                {
+                    type = "Item",
+                    item_id = 15772,
+                },
             },
             product = { item_id = 15062, qty = 1 },
             materials = {
@@ -3290,9 +3690,11 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Wicked Leather Armor",
             icon = "inv_chest_plate06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15773 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 15773,
+                    cost = 15000,
+                },
             },
             product = { item_id = 15085, qty = 1 },
             materials = {
@@ -3309,8 +3711,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Heavy Scorpid Shoulders",
             icon = "inv_shoulder_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15774 },
+                {
+                    type = "Item",
+                    item_id = 15774,
+                },
             },
             product = { item_id = 15081, qty = 1 },
             materials = {
@@ -3326,8 +3730,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Volcanic Shoulders",
             icon = "inv_shoulder_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15775 },
+                {
+                    type = "Item",
+                    item_id = 15775,
+                },
             },
             product = { item_id = 15055, qty = 1 },
             materials = {
@@ -3343,9 +3749,11 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Runic Leather Armor",
             icon = "inv_chest_leather_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15776 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 15776,
+                    cost = 15000,
+                },
             },
             product = { item_id = 15090, qty = 1 },
             materials = {
@@ -3362,9 +3770,11 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Runic Leather Shoulders",
             icon = "inv_shoulder_15",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15777 },
-                cost = 15000,
+                {
+                    type = "Item",
+                    item_id = 15777,
+                    cost = 15000,
+                },
             },
             product = { item_id = 15096, qty = 1 },
             materials = {
@@ -3381,8 +3791,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Frostsaber Tunic",
             icon = "inv_chest_chain_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15779 },
+                {
+                    type = "Item",
+                    item_id = 15779,
+                },
             },
             product = { item_id = 15068, qty = 1 },
             materials = {
@@ -3398,8 +3810,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Black Dragonscale Leggings",
             icon = "inv_pants_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 15781 },
+                {
+                    type = "Item",
+                    item_id = 15781,
+                },
             },
             product = { item_id = 15052, qty = 1 },
             materials = {
@@ -3416,8 +3830,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Molten Helm",
             icon = "inv_helmet_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17023 },
+                {
+                    type = "Item",
+                    item_id = 17023,
+                },
             },
             product = { item_id = 16983, qty = 1 },
             materials = {
@@ -3433,8 +3849,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Black Dragonscale Boots",
             icon = "inv_boots_plate_09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 17025 },
+                {
+                    type = "Item",
+                    item_id = 17025,
+                },
             },
             product = { item_id = 16984, qty = 1 },
             materials = {
@@ -3451,8 +3869,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Core Armor Kit",
             icon = "inv_misc_armorkit_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18252 },
+                {
+                    type = "Item",
+                    item_id = 18252,
+                },
             },
             product = { item_id = 18251, qty = 1 },
             materials = {
@@ -3466,8 +3886,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Girdle of Insight",
             icon = "inv_belt_26",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18514 },
+                {
+                    type = "Item",
+                    item_id = 18514,
+                },
             },
             product = { item_id = 18504, qty = 1 },
             materials = {
@@ -3483,8 +3905,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Mongoose Boots",
             icon = "inv_boots_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18515 },
+                {
+                    type = "Item",
+                    item_id = 18515,
+                },
             },
             product = { item_id = 18506, qty = 1 },
             materials = {
@@ -3501,8 +3925,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Swift Flight Bracers",
             icon = "inv_bracer_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18516 },
+                {
+                    type = "Item",
+                    item_id = 18516,
+                },
             },
             product = { item_id = 18508, qty = 1 },
             materials = {
@@ -3519,8 +3945,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Chromatic Cloak",
             icon = "inv_misc_cape_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18517 },
+                {
+                    type = "Item",
+                    item_id = 18517,
+                },
             },
             product = { item_id = 18509, qty = 1 },
             materials = {
@@ -3538,8 +3966,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Hide of the Wild",
             icon = "inv_misc_cape_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18518 },
+                {
+                    type = "Item",
+                    item_id = 18518,
+                },
             },
             product = { item_id = 18510, qty = 1 },
             materials = {
@@ -3557,8 +3987,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Shifting Cloak",
             icon = "inv_misc_cape_20",
             source = {
-                type = "Item",
-                recipe_item_ids = { 18519 },
+                {
+                    type = "Item",
+                    item_id = 18519,
+                },
             },
             product = { item_id = 18511, qty = 1 },
             materials = {
@@ -3576,8 +4008,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Timbermaw Brawlers",
             icon = "inv_gauntlets_26",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19327 },
+                {
+                    type = "Item",
+                    item_id = 19327,
+                },
             },
             product = { item_id = 19049, qty = 1 },
             materials = {
@@ -3594,8 +4028,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Golden Mantle of the Dawn",
             icon = "inv_shoulder_26",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19329 },
+                {
+                    type = "Item",
+                    item_id = 19329,
+                },
             },
             product = { item_id = 19058, qty = 1 },
             materials = {
@@ -3612,8 +4048,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Lava Belt",
             icon = "inv_belt_32",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19330 },
+                {
+                    type = "Item",
+                    item_id = 19330,
+                },
             },
             product = { item_id = 19149, qty = 1 },
             materials = {
@@ -3628,8 +4066,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Chromatic Gauntlets",
             icon = "inv_gauntlets_22",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19331 },
+                {
+                    type = "Item",
+                    item_id = 19331,
+                },
             },
             product = { item_id = 19157, qty = 1 },
             materials = {
@@ -3647,8 +4087,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Corehound Belt",
             icon = "inv_belt_24",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19332 },
+                {
+                    type = "Item",
+                    item_id = 19332,
+                },
             },
             product = { item_id = 19162, qty = 1 },
             materials = {
@@ -3665,8 +4107,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Molten Belt",
             icon = "inv_belt_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19333 },
+                {
+                    type = "Item",
+                    item_id = 19333,
+                },
             },
             product = { item_id = 19163, qty = 1 },
             materials = {
@@ -3683,8 +4127,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Primal Batskin Jerkin",
             icon = "inv_chest_leather_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19769 },
+                {
+                    type = "Item",
+                    item_id = 19769,
+                },
             },
             product = { item_id = 19685, qty = 1 },
             materials = {
@@ -3700,8 +4146,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Primal Batskin Gloves",
             icon = "inv_gauntlets_31",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19770 },
+                {
+                    type = "Item",
+                    item_id = 19770,
+                },
             },
             product = { item_id = 19686, qty = 1 },
             materials = {
@@ -3717,8 +4165,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Primal Batskin Bracers",
             icon = "inv_bracer_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19771 },
+                {
+                    type = "Item",
+                    item_id = 19771,
+                },
             },
             product = { item_id = 19687, qty = 1 },
             materials = {
@@ -3734,8 +4184,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Blood Tiger Breastplate",
             icon = "inv_chest_leather_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19772 },
+                {
+                    type = "Item",
+                    item_id = 19772,
+                },
             },
             product = { item_id = 19688, qty = 1 },
             materials = {
@@ -3751,8 +4203,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Blood Tiger Shoulders",
             icon = "inv_shoulder_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 19773 },
+                {
+                    type = "Item",
+                    item_id = 19773,
+                },
             },
             product = { item_id = 19689, qty = 1 },
             materials = {
@@ -3768,8 +4222,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Blue Dragonscale Leggings",
             icon = "inv_pants_mail_15",
             source = {
-                type = "Trainer",
-                cost = 50000,
+                {
+                    type = "Trainer",
+                    cost = 50000,
+                },
             },
             product = { item_id = 20295, qty = 1 },
             materials = {
@@ -3785,8 +4241,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Dreamscale Breastplate",
             icon = "inv_chest_plate08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20382 },
+                {
+                    type = "Item",
+                    item_id = 20382,
+                },
             },
             product = { item_id = 20380, qty = 1 },
             materials = {
@@ -3803,8 +4261,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Spitfire Bracers",
             icon = "inv_bracer_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20506 },
+                {
+                    type = "Item",
+                    item_id = 20506,
+                },
             },
             product = { item_id = 20481, qty = 1 },
             materials = {
@@ -3819,8 +4279,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Spitfire Gauntlets",
             icon = "inv_gauntlets_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20507 },
+                {
+                    type = "Item",
+                    item_id = 20507,
+                },
             },
             product = { item_id = 20480, qty = 1 },
             materials = {
@@ -3836,8 +4298,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Spitfire Breastplate",
             icon = "inv_chest_leather_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20508 },
+                {
+                    type = "Item",
+                    item_id = 20508,
+                },
             },
             product = { item_id = 20479, qty = 1 },
             materials = {
@@ -3853,8 +4317,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Sandstalker Bracers",
             icon = "inv_bracer_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20509 },
+                {
+                    type = "Item",
+                    item_id = 20509,
+                },
             },
             product = { item_id = 20476, qty = 1 },
             materials = {
@@ -3869,8 +4335,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Sandstalker Gauntlets",
             icon = "inv_gauntlets_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20510 },
+                {
+                    type = "Item",
+                    item_id = 20510,
+                },
             },
             product = { item_id = 20477, qty = 1 },
             materials = {
@@ -3886,8 +4354,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Sandstalker Breastplate",
             icon = "inv_chest_plate07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 20511 },
+                {
+                    type = "Item",
+                    item_id = 20511,
+                },
             },
             product = { item_id = 20478, qty = 1 },
             materials = {
@@ -3903,8 +4373,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Stormshroud Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 21548 },
+                {
+                    type = "Item",
+                    item_id = 21548,
+                },
             },
             product = { item_id = 21278, qty = 1 },
             materials = {
@@ -3921,8 +4393,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Polar Tunic",
             icon = "inv_chest_cloth_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22692 },
+                {
+                    type = "Item",
+                    item_id = 22692,
+                },
             },
             product = { item_id = 22661, qty = 1 },
             materials = {
@@ -3939,8 +4413,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Polar Gloves",
             icon = "inv_gauntlets_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22694 },
+                {
+                    type = "Item",
+                    item_id = 22694,
+                },
             },
             product = { item_id = 22662, qty = 1 },
             materials = {
@@ -3957,8 +4433,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Polar Bracers",
             icon = "inv_bracer_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22695 },
+                {
+                    type = "Item",
+                    item_id = 22695,
+                },
             },
             product = { item_id = 22663, qty = 1 },
             materials = {
@@ -3975,8 +4453,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Icy Scale Breastplate",
             icon = "inv_chest_plate09",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22696 },
+                {
+                    type = "Item",
+                    item_id = 22696,
+                },
             },
             product = { item_id = 22664, qty = 1 },
             materials = {
@@ -3993,8 +4473,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Icy Scale Gauntlets",
             icon = "inv_gauntlets_28",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22697 },
+                {
+                    type = "Item",
+                    item_id = 22697,
+                },
             },
             product = { item_id = 22666, qty = 1 },
             materials = {
@@ -4011,8 +4493,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Icy Scale Bracers",
             icon = "inv_bracer_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22698 },
+                {
+                    type = "Item",
+                    item_id = 22698,
+                },
             },
             product = { item_id = 22665, qty = 1 },
             materials = {
@@ -4029,8 +4513,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Bramblewood Helm",
             icon = "inv_helmet_58",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22771 },
+                {
+                    type = "Item",
+                    item_id = 22771,
+                },
             },
             product = { item_id = 22759, qty = 1 },
             materials = {
@@ -4046,8 +4532,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Bramblewood Boots",
             icon = "inv_boots_cloth_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22770 },
+                {
+                    type = "Item",
+                    item_id = 22770,
+                },
             },
             product = { item_id = 22760, qty = 1 },
             materials = {
@@ -4063,8 +4551,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Bramblewood Belt",
             icon = "inv_belt_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22769 },
+                {
+                    type = "Item",
+                    item_id = 22769,
+                },
             },
             product = { item_id = 22761, qty = 1 },
             materials = {
@@ -4079,8 +4569,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Knothide Armor Kit",
             icon = "inv_misc_armorkit_24",
             source = {
-                type = "Trainer",
-                cost = 15000,
+                {
+                    type = "Trainer",
+                    cost = 15000,
+                },
             },
             product = { item_id = 25650, qty = 1 },
             materials = {
@@ -4093,8 +4585,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Felscale Gloves",
             icon = "inv_gauntlets_04",
             source = {
-                type = "Trainer",
-                cost = 15000,
+                {
+                    type = "Trainer",
+                    cost = 15000,
+                },
             },
             product = { item_id = 25654, qty = 1 },
             materials = {
@@ -4109,8 +4603,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Scaled Draenic Pants",
             icon = "inv_pants_mail_07",
             source = {
-                type = "Trainer",
-                cost = 15000,
+                {
+                    type = "Trainer",
+                    cost = 15000,
+                },
             },
             product = { item_id = 25662, qty = 1 },
             materials = {
@@ -4125,8 +4621,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Thick Draenic Gloves",
             icon = "inv_gauntlets_04",
             source = {
-                type = "Trainer",
-                cost = 15000,
+                {
+                    type = "Trainer",
+                    cost = 15000,
+                },
             },
             product = { item_id = 25669, qty = 1 },
             materials = {
@@ -4140,8 +4638,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Wild Draenish Boots",
             icon = "inv_boots_chain_01",
             source = {
-                type = "Trainer",
-                cost = 15000,
+                {
+                    type = "Trainer",
+                    cost = 15000,
+                },
             },
             product = { item_id = 25673, qty = 1 },
             materials = {
@@ -4155,8 +4655,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Leatherworker's Satchel",
             icon = "inv_misc_bag_20",
             source = {
-                type = "Trainer",
-                cost = 15000,
+                {
+                    type = "Trainer",
+                    cost = 15000,
+                },
             },
             product = { item_id = 34482, qty = 1 },
             materials = {
@@ -4172,8 +4674,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Knothide Leather",
             icon = "inv_misc_leatherscrap_10",
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
             product = { item_id = 21887, qty = 1 },
             materials = {
@@ -4186,8 +4690,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Comfortable Insoles",
             icon = "inv_misc_armorkit_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25726 },
+                {
+                    type = "Item",
+                    item_id = 25726,
+                },
             },
             product = { item_id = 25679, qty = 1 },
             materials = {
@@ -4202,8 +4708,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Felscale Boots",
             icon = "inv_boots_chain_08",
             source = {
-                type = "Trainer",
-                cost = 18000,
+                {
+                    type = "Trainer",
+                    cost = 18000,
+                },
             },
             product = { item_id = 25655, qty = 1 },
             materials = {
@@ -4218,8 +4726,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Scaled Draenic Gloves",
             icon = "inv_gauntlets_04",
             source = {
-                type = "Trainer",
-                cost = 18000,
+                {
+                    type = "Trainer",
+                    cost = 18000,
+                },
             },
             product = { item_id = 25661, qty = 1 },
             materials = {
@@ -4234,8 +4744,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Wild Draenish Gloves",
             icon = "inv_gauntlets_04",
             source = {
-                type = "Trainer",
-                cost = 18000,
+                {
+                    type = "Trainer",
+                    cost = 18000,
+                },
             },
             product = { item_id = 25674, qty = 1 },
             materials = {
@@ -4251,8 +4763,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Thick Draenic Pants",
             icon = "inv_pants_leather_07",
             source = {
-                type = "Trainer",
-                cost = 18000,
+                {
+                    type = "Trainer",
+                    cost = 18000,
+                },
             },
             product = { item_id = 25670, qty = 1 },
             materials = {
@@ -4268,8 +4782,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Felscale Pants",
             icon = "inv_pants_mail_08",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 25656, qty = 1 },
             materials = {
@@ -4284,8 +4800,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Thick Draenic Boots",
             icon = "inv_boots_chain_01",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 25668, qty = 1 },
             materials = {
@@ -4299,8 +4817,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Wild Draenish Leggings",
             icon = "inv_pants_leather_07",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 25675, qty = 1 },
             materials = {
@@ -4316,8 +4836,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Scaled Draenic Vest",
             icon = "inv_chest_chain_16",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 25660, qty = 1 },
             materials = {
@@ -4332,8 +4854,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Vindicator's Armor Kit",
             icon = "inv_misc_armorkit_26",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25721 },
+                {
+                    type = "Item",
+                    item_id = 25721,
+                },
             },
             product = { item_id = 25651, qty = 1 },
             materials = {
@@ -4347,8 +4871,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Magister's Armor Kit",
             icon = "inv_misc_armorkit_22",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25722 },
+                {
+                    type = "Item",
+                    item_id = 25722,
+                },
             },
             product = { item_id = 25652, qty = 1 },
             materials = {
@@ -4362,8 +4888,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Reinforced Mining Bag",
             icon = "inv_misc_bag_15",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29664 },
+                {
+                    type = "Item",
+                    item_id = 29664,
+                },
             },
             product = { item_id = 29540, qty = 1 },
             materials = {
@@ -4377,8 +4905,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Heavy Knothide Leather",
             icon = "inv_misc_leatherscrap_11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25720 },
+                {
+                    type = "Item",
+                    item_id = 25720,
+                },
             },
             product = { item_id = 23793, qty = 1 },
             materials = {
@@ -4391,8 +4921,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Knothide Ammo Pouch",
             icon = "inv_misc_bag_09",
             source = {
-                type = "Trainer",
-                cost = 18000,
+                {
+                    type = "Trainer",
+                    cost = 18000,
+                },
             },
             product = { item_id = 34099, qty = 1 },
             materials = {
@@ -4407,8 +4939,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Knothide Quiver",
             icon = "inv_misc_quiver_06",
             source = {
-                type = "Trainer",
-                cost = 18000,
+                {
+                    type = "Trainer",
+                    cost = 18000,
+                },
             },
             product = { item_id = 34100, qty = 1 },
             materials = {
@@ -4425,8 +4959,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Primalstorm Breastplate",
             icon = "inv_chest_cloth_07",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 29973, qty = 1 },
             materials = {
@@ -4442,8 +4978,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Living Crystal Breastplate",
             icon = "inv_chest_cloth_06",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 29974, qty = 1 },
             materials = {
@@ -4459,8 +4997,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Golden Dragonstrike Breastplate",
             icon = "inv_chest_plate06",
             source = {
-                type = "Trainer",
-                cost = 40000,
+                {
+                    type = "Trainer",
+                    cost = 40000,
+                },
             },
             product = { item_id = 29975, qty = 1 },
             materials = {
@@ -4476,8 +5016,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Thick Draenic Vest",
             icon = "inv_chest_leather_07",
             source = {
-                type = "Trainer",
-                cost = 25000,
+                {
+                    type = "Trainer",
+                    cost = 25000,
+                },
             },
             product = { item_id = 25671, qty = 1 },
             materials = {
@@ -4491,8 +5033,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Wild Draenish Vest",
             icon = "inv_chest_leather_07",
             source = {
-                type = "Trainer",
-                cost = 25000,
+                {
+                    type = "Trainer",
+                    cost = 25000,
+                },
             },
             product = { item_id = 25676, qty = 1 },
             materials = {
@@ -4508,8 +5052,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Felscale Breastplate",
             icon = "inv_chest_chain_13",
             source = {
-                type = "Trainer",
-                cost = 25000,
+                {
+                    type = "Trainer",
+                    cost = 25000,
+                },
             },
             product = { item_id = 25657, qty = 1 },
             materials = {
@@ -4524,8 +5070,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Scaled Draenic Boots",
             icon = "inv_boots_chain_01",
             source = {
-                type = "Trainer",
-                cost = 25000,
+                {
+                    type = "Trainer",
+                    cost = 25000,
+                },
             },
             product = { item_id = 25659, qty = 1 },
             materials = {
@@ -4540,8 +5088,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Cobrahide Leg Armor",
             icon = "inv_misc_armorkit_21",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29719, 31361 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 29719, 31361 },
+                },
             },
             product = { item_id = 29533, qty = 1 },
             materials = {
@@ -4556,8 +5106,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Clefthide Leg Armor",
             icon = "inv_misc_armorkit_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29720 },
+                {
+                    type = "Item",
+                    item_id = 29720,
+                },
             },
             product = { item_id = 29534, qty = 1 },
             materials = {
@@ -4574,8 +5126,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Fel Leather Gloves",
             icon = "inv_gauntlets_22",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25732 },
+                {
+                    type = "Item",
+                    item_id = 25732,
+                },
             },
             product = { item_id = 25685, qty = 1 },
             materials = {
@@ -4591,8 +5145,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Netherfury Belt",
             icon = "inv_belt_15",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25741 },
+                {
+                    type = "Item",
+                    item_id = 25741,
+                },
             },
             product = { item_id = 25694, qty = 1 },
             materials = {
@@ -4609,8 +5165,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Netherfury Leggings",
             icon = "inv_pants_plate_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25742 },
+                {
+                    type = "Item",
+                    item_id = 25742,
+                },
             },
             product = { item_id = 25692, qty = 1 },
             materials = {
@@ -4627,8 +5185,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Shadow Armor Kit",
             icon = "spell_shadow_antishadow",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29669 },
+                {
+                    type = "Item",
+                    item_id = 29669,
+                },
             },
             product = { item_id = 29483, qty = 1 },
             materials = {
@@ -4642,8 +5202,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Flame Armor Kit",
             icon = "spell_fire_sealoffire",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29672 },
+                {
+                    type = "Item",
+                    item_id = 29672,
+                },
             },
             product = { item_id = 29485, qty = 1 },
             materials = {
@@ -4657,8 +5219,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Frost Armor Kit",
             icon = "spell_frost_wizardmark",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29673 },
+                {
+                    type = "Item",
+                    item_id = 29673,
+                },
             },
             product = { item_id = 29486, qty = 1 },
             materials = {
@@ -4672,8 +5236,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Nature Armor Kit",
             icon = "spell_nature_spiritarmor",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29674 },
+                {
+                    type = "Item",
+                    item_id = 29674,
+                },
             },
             product = { item_id = 29487, qty = 1 },
             materials = {
@@ -4687,8 +5253,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Arcane Armor Kit",
             icon = "spell_shadow_sealofkings",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29675 },
+                {
+                    type = "Item",
+                    item_id = 29675,
+                },
             },
             product = { item_id = 29488, qty = 1 },
             materials = {
@@ -4702,8 +5270,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Drums of War",
             icon = "inv_misc_drum_03",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 29528, qty = 1 },
             materials = {
@@ -4719,8 +5289,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Drums of Speed",
             icon = "inv_misc_drum_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29718 },
+                {
+                    type = "Item",
+                    item_id = 29718,
+                },
             },
             product = { item_id = 29530, qty = 1 },
             materials = {
@@ -4734,8 +5306,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Greater Drums of Speed",
             icon = "inv_misc_drum_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 187049 },
+                {
+                    type = "Item",
+                    item_id = 187049,
+                },
             },
             product = { item_id = 185851, qty = 1 },
             materials = {
@@ -4751,8 +5325,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Riding Crop",
             icon = "inv_misc_crop_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25725 },
+                {
+                    type = "Item",
+                    item_id = 25725,
+                },
             },
             product = { item_id = 25653, qty = 1 },
             materials = {
@@ -4768,8 +5344,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Stylin' Purple Hat",
             icon = "inv_helmet_50",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25728 },
+                {
+                    type = "Item",
+                    item_id = 25728,
+                },
             },
             product = { item_id = 25680, qty = 1 },
             materials = {
@@ -4786,8 +5364,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Stylin' Adventure Hat",
             icon = "inv_helmet_51",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25729 },
+                {
+                    type = "Item",
+                    item_id = 25729,
+                },
             },
             product = { item_id = 25681, qty = 1 },
             materials = {
@@ -4804,8 +5384,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Stylin' Crimson Hat",
             icon = "inv_helmet_50",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25731 },
+                {
+                    type = "Item",
+                    item_id = 25731,
+                },
             },
             product = { item_id = 25683, qty = 1 },
             materials = {
@@ -4822,8 +5404,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Stylin' Jungle Hat",
             icon = "inv_helmet_50",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25730 },
+                {
+                    type = "Item",
+                    item_id = 25730,
+                },
             },
             product = { item_id = 25682, qty = 1 },
             materials = {
@@ -4839,8 +5423,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Fel Leather Boots",
             icon = "inv_boots_cloth_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25733 },
+                {
+                    type = "Item",
+                    item_id = 25733,
+                },
             },
             product = { item_id = 25686, qty = 1 },
             materials = {
@@ -4856,8 +5442,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Fel Leather Leggings",
             icon = "inv_pants_leather_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25734 },
+                {
+                    type = "Item",
+                    item_id = 25734,
+                },
             },
             product = { item_id = 25687, qty = 1 },
             materials = {
@@ -4873,8 +5461,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Felstalker Belt",
             icon = "inv_belt_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25738, 29213 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 25738, 29213 },
+                },
             },
             product = { item_id = 25695, qty = 1 },
             materials = {
@@ -4891,8 +5481,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Netherfury Boots",
             icon = "inv_boots_chain_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25743 },
+                {
+                    type = "Item",
+                    item_id = 25743,
+                },
             },
             product = { item_id = 25693, qty = 1 },
             materials = {
@@ -4909,8 +5501,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Enchanted Felscale Leggings",
             icon = "inv_pants_mail_15",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29677 },
+                {
+                    type = "Item",
+                    item_id = 29677,
+                },
             },
             product = { item_id = 29489, qty = 1 },
             materials = {
@@ -4925,8 +5519,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Enchanted Felscale Gloves",
             icon = "inv_gauntlets_15",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29682 },
+                {
+                    type = "Item",
+                    item_id = 29682,
+                },
             },
             product = { item_id = 29490, qty = 1 },
             materials = {
@@ -4941,8 +5537,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Enchanted Felscale Boots",
             icon = "inv_boots_chain_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29684 },
+                {
+                    type = "Item",
+                    item_id = 29684,
+                },
             },
             product = { item_id = 29491, qty = 1 },
             materials = {
@@ -4957,8 +5555,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Flamescale Boots",
             icon = "inv_boots_chain_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29691 },
+                {
+                    type = "Item",
+                    item_id = 29691,
+                },
             },
             product = { item_id = 29493, qty = 1 },
             materials = {
@@ -4974,8 +5574,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Flamescale Leggings",
             icon = "inv_pants_mail_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29689 },
+                {
+                    type = "Item",
+                    item_id = 29689,
+                },
             },
             product = { item_id = 29492, qty = 1 },
             materials = {
@@ -4991,8 +5593,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Flamescale Belt",
             icon = "inv_belt_15",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29693 },
+                {
+                    type = "Item",
+                    item_id = 29693,
+                },
             },
             product = { item_id = 29494, qty = 1 },
             materials = {
@@ -5008,8 +5612,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Enchanted Clefthoof Leggings",
             icon = "inv_pants_leather_21",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29698 },
+                {
+                    type = "Item",
+                    item_id = 29698,
+                },
             },
             product = { item_id = 29495, qty = 1 },
             materials = {
@@ -5024,8 +5630,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Enchanted Clefthoof Gloves",
             icon = "inv_gauntlets_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29700 },
+                {
+                    type = "Item",
+                    item_id = 29700,
+                },
             },
             product = { item_id = 29496, qty = 1 },
             materials = {
@@ -5040,8 +5648,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Enchanted Clefthoof Boots",
             icon = "inv_boots_cloth_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29701 },
+                {
+                    type = "Item",
+                    item_id = 29701,
+                },
             },
             product = { item_id = 29497, qty = 1 },
             materials = {
@@ -5056,8 +5666,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Blastguard Pants",
             icon = "inv_pants_leather_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29702 },
+                {
+                    type = "Item",
+                    item_id = 29702,
+                },
             },
             product = { item_id = 29498, qty = 1 },
             materials = {
@@ -5073,8 +5685,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Blastguard Boots",
             icon = "inv_boots_cloth_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29703 },
+                {
+                    type = "Item",
+                    item_id = 29703,
+                },
             },
             product = { item_id = 29499, qty = 1 },
             materials = {
@@ -5090,8 +5704,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Blastguard Belt",
             icon = "inv_belt_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29704 },
+                {
+                    type = "Item",
+                    item_id = 29704,
+                },
             },
             product = { item_id = 29500, qty = 1 },
             materials = {
@@ -5107,8 +5723,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Quiver of a Thousand Feathers",
             icon = "inv_misc_quiver_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 34200 },
+                {
+                    type = "Item",
+                    item_id = 34200,
+                },
             },
             product = { item_id = 34105, qty = 1 },
             materials = {
@@ -5124,8 +5742,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Netherscale Ammo Pouch",
             icon = "inv_misc_bag_21",
             source = {
-                type = "Item",
-                recipe_item_ids = { 34201, 34218 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 34201, 34218 },
+                },
             },
             product = { item_id = 34106, qty = 1 },
             materials = {
@@ -5141,8 +5761,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Glove Reinforcements",
             icon = "inv_misc_armorkit_08",
             source = {
-                type = "Trainer",
-                cost = 50000,
+                {
+                    type = "Trainer",
+                    cost = 50000,
+                },
             },
             product = { item_id = 34207, qty = 1 },
             materials = {
@@ -5156,8 +5778,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Heavy Knothide Armor Kit",
             icon = "inv_misc_armorkit_25",
             source = {
-                type = "Trainer",
-                cost = 50000,
+                {
+                    type = "Trainer",
+                    cost = 50000,
+                },
             },
             product = { item_id = 34330, qty = 1 },
             materials = {
@@ -5170,8 +5794,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Drums of Restoration",
             icon = "inv_misc_drum_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29714 },
+                {
+                    type = "Item",
+                    item_id = 29714,
+                },
             },
             product = { item_id = 29531, qty = 1 },
             materials = {
@@ -5185,8 +5811,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Greater Drums of Restoration",
             icon = "inv_misc_drum_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 187048 },
+                {
+                    type = "Item",
+                    item_id = 187048,
+                },
             },
             product = { item_id = 185850, qty = 1 },
             materials = {
@@ -5202,8 +5830,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Heavy Clefthoof Leggings",
             icon = "inv_pants_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25736 },
+                {
+                    type = "Item",
+                    item_id = 25736,
+                },
             },
             product = { item_id = 25690, qty = 1 },
             materials = {
@@ -5219,8 +5849,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Heavy Clefthoof Boots",
             icon = "inv_boots_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25737 },
+                {
+                    type = "Item",
+                    item_id = 25737,
+                },
             },
             product = { item_id = 25691, qty = 1 },
             materials = {
@@ -5238,8 +5870,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Heavy Clefthoof Vest",
             icon = "inv_chest_leather_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25735 },
+                {
+                    type = "Item",
+                    item_id = 25735,
+                },
             },
             product = { item_id = 25689, qty = 1 },
             materials = {
@@ -5255,8 +5889,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Felstalker Bracer",
             icon = "inv_bracer_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25739, 29214 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 25739, 29214 },
+                },
             },
             product = { item_id = 25697, qty = 1 },
             materials = {
@@ -5273,8 +5909,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Felstalker Breastplate",
             icon = "inv_chest_chain_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 25740, 29215 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 25740, 29215 },
+                },
             },
             product = { item_id = 25696, qty = 1 },
             materials = {
@@ -5291,8 +5929,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Cloak of Darkness",
             icon = "inv_misc_cape_20",
             source = {
-                type = "Item",
-                recipe_item_ids = { 33124 },
+                {
+                    type = "Item",
+                    item_id = 33124,
+                },
             },
             product = { item_id = 33122, qty = 1 },
             materials = {
@@ -5308,8 +5948,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Bag of Many Hides",
             icon = "inv_misc_bag_21",
             source = {
-                type = "Item",
-                recipe_item_ids = { 34491 },
+                {
+                    type = "Item",
+                    item_id = 34491,
+                },
             },
             product = { item_id = 34490, qty = 1 },
             materials = {
@@ -5329,8 +5971,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Leather Gauntlets of the Sun",
             icon = "inv_gauntlets_24",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35212 },
+                {
+                    type = "Item",
+                    item_id = 35212,
+                },
             },
             product = { item_id = 34372, qty = 1 },
             materials = {
@@ -5347,8 +5991,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Fletcher's Gloves of the Phoenix",
             icon = "inv_gauntlets_59",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35213 },
+                {
+                    type = "Item",
+                    item_id = 35213,
+                },
             },
             product = { item_id = 34374, qty = 1 },
             materials = {
@@ -5365,8 +6011,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Gloves of Immortal Dusk",
             icon = "inv_gauntlets_28",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35214 },
+                {
+                    type = "Item",
+                    item_id = 35214,
+                },
             },
             product = { item_id = 34370, qty = 1 },
             materials = {
@@ -5383,8 +6031,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Sun-Drenched Scale Gloves",
             icon = "inv_gauntlets_61",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35215 },
+                {
+                    type = "Item",
+                    item_id = 35215,
+                },
             },
             product = { item_id = 34376, qty = 1 },
             materials = {
@@ -5401,8 +6051,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Leather Chestguard of the Sun",
             icon = "inv_chest_leather_01",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35216 },
+                {
+                    type = "Item",
+                    item_id = 35216,
+                },
             },
             product = { item_id = 34371, qty = 1 },
             materials = {
@@ -5418,8 +6070,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Embrace of the Phoenix",
             icon = "inv_chest_chain_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35217 },
+                {
+                    type = "Item",
+                    item_id = 35217,
+                },
             },
             product = { item_id = 34373, qty = 1 },
             materials = {
@@ -5435,8 +6089,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Carapace of Sun and Shadow",
             icon = "inv_chest_plate02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35218 },
+                {
+                    type = "Item",
+                    item_id = 35218,
+                },
             },
             product = { item_id = 34369, qty = 1 },
             materials = {
@@ -5452,8 +6108,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Sun-Drenched Scale Chestguard",
             icon = "inv_chest_mail_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 35219 },
+                {
+                    type = "Item",
+                    item_id = 35219,
+                },
             },
             product = { item_id = 34375, qty = 1 },
             materials = {
@@ -5469,8 +6127,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Cobrascale Hood",
             icon = "inv_helmet_38",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29723 },
+                {
+                    type = "Item",
+                    item_id = 29723,
+                },
             },
             product = { item_id = 29502, qty = 1 },
             materials = {
@@ -5487,8 +6147,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Cobrascale Gloves",
             icon = "inv_gauntlets_15",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29724 },
+                {
+                    type = "Item",
+                    item_id = 29724,
+                },
             },
             product = { item_id = 29503, qty = 1 },
             materials = {
@@ -5505,8 +6167,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Windscale Hood",
             icon = "inv_helmet_29",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29725 },
+                {
+                    type = "Item",
+                    item_id = 29725,
+                },
             },
             product = { item_id = 29504, qty = 1 },
             materials = {
@@ -5523,8 +6187,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Hood of Primal Life",
             icon = "inv_helmet_32",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29726 },
+                {
+                    type = "Item",
+                    item_id = 29726,
+                },
             },
             product = { item_id = 29505, qty = 1 },
             materials = {
@@ -5540,8 +6206,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Gloves of the Living Touch",
             icon = "inv_gauntlets_25",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29727 },
+                {
+                    type = "Item",
+                    item_id = 29727,
+                },
             },
             product = { item_id = 29506, qty = 1 },
             materials = {
@@ -5557,8 +6225,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Windslayer Wraps",
             icon = "inv_gauntlets_25",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29728 },
+                {
+                    type = "Item",
+                    item_id = 29728,
+                },
             },
             product = { item_id = 29507, qty = 1 },
             materials = {
@@ -5575,8 +6245,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Living Dragonscale Helm",
             icon = "inv_helmet_13",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29729 },
+                {
+                    type = "Item",
+                    item_id = 29729,
+                },
             },
             product = { item_id = 29508, qty = 1 },
             materials = {
@@ -5593,8 +6265,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Earthen Netherscale Boots",
             icon = "inv_boots_chain_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29730 },
+                {
+                    type = "Item",
+                    item_id = 29730,
+                },
             },
             product = { item_id = 29512, qty = 1 },
             materials = {
@@ -5611,8 +6285,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Windstrike Gloves",
             icon = "inv_gauntlets_10",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29731 },
+                {
+                    type = "Item",
+                    item_id = 29731,
+                },
             },
             product = { item_id = 29509, qty = 1 },
             materials = {
@@ -5629,8 +6305,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Netherdrake Helm",
             icon = "inv_helmet_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29732 },
+                {
+                    type = "Item",
+                    item_id = 29732,
+                },
             },
             product = { item_id = 29510, qty = 1 },
             materials = {
@@ -5647,8 +6325,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Netherdrake Gloves",
             icon = "inv_gauntlets_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29733 },
+                {
+                    type = "Item",
+                    item_id = 29733,
+                },
             },
             product = { item_id = 29511, qty = 1 },
             materials = {
@@ -5665,8 +6345,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Thick Netherscale Breastplate",
             icon = "inv_chest_plate08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29734 },
+                {
+                    type = "Item",
+                    item_id = 29734,
+                },
             },
             product = { item_id = 29514, qty = 1 },
             materials = {
@@ -5683,8 +6365,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Shadowprowler's Chestguard",
             icon = "inv_chest_plate11",
             source = {
-                type = "Item",
-                recipe_item_ids = { 33205 },
+                {
+                    type = "Item",
+                    item_id = 33205,
+                },
             },
             product = { item_id = 33204, qty = 1 },
             materials = {
@@ -5701,8 +6385,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Nethercobra Leg Armor",
             icon = "inv_misc_armorkit_25",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29722, 31362 },
+                {
+                    type = "Item",
+                    recipe_item_ids = { 29722, 31362 },
+                },
             },
             product = { item_id = 29535, qty = 1 },
             materials = {
@@ -5718,8 +6404,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Nethercleft Leg Armor",
             icon = "inv_misc_armorkit_25",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29721 },
+                {
+                    type = "Item",
+                    item_id = 29721,
+                },
             },
             product = { item_id = 29536, qty = 1 },
             materials = {
@@ -5735,8 +6423,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Drums of Battle",
             icon = "inv_misc_drum_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29717 },
+                {
+                    type = "Item",
+                    item_id = 29717,
+                },
             },
             product = { item_id = 29529, qty = 1 },
             materials = {
@@ -5750,8 +6440,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Greater Drums of Battle",
             icon = "inv_misc_drum_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 185926 },
+                {
+                    type = "Item",
+                    item_id = 185926,
+                },
             },
             product = { item_id = 185848, qty = 1 },
             materials = {
@@ -5767,8 +6459,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Drums of Panic",
             icon = "inv_misc_drum_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 29713 },
+                {
+                    type = "Item",
+                    item_id = 29713,
+                },
             },
             product = { item_id = 29532, qty = 1 },
             materials = {
@@ -5782,8 +6476,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Greater Drums of Panic",
             icon = "inv_misc_drum_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 185925 },
+                {
+                    type = "Item",
+                    item_id = 185925,
+                },
             },
             product = { item_id = 185849, qty = 1 },
             materials = {
@@ -5799,8 +6495,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Ebon Netherscale Breastplate",
             icon = "inv_chest_plate08",
             source = {
-                type = "Trainer",
-                cost = 100000,
+                {
+                    type = "Trainer",
+                    cost = 100000,
+                },
             },
             product = { item_id = 29515, qty = 1 },
             materials = {
@@ -5817,8 +6515,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Ebon Netherscale Belt",
             icon = "inv_belt_29",
             source = {
-                type = "Trainer",
-                cost = 100000,
+                {
+                    type = "Trainer",
+                    cost = 100000,
+                },
             },
             product = { item_id = 29516, qty = 1 },
             materials = {
@@ -5835,8 +6535,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Ebon Netherscale Bracers",
             icon = "inv_bracer_19",
             source = {
-                type = "Trainer",
-                cost = 100000,
+                {
+                    type = "Trainer",
+                    cost = 100000,
+                },
             },
             product = { item_id = 29517, qty = 1 },
             materials = {
@@ -5852,8 +6554,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Netherstrike Breastplate",
             icon = "inv_chest_plate07",
             source = {
-                type = "Trainer",
-                cost = 100000,
+                {
+                    type = "Trainer",
+                    cost = 100000,
+                },
             },
             product = { item_id = 29519, qty = 1 },
             materials = {
@@ -5870,8 +6574,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Netherstrike Belt",
             icon = "inv_belt_03",
             source = {
-                type = "Trainer",
-                cost = 100000,
+                {
+                    type = "Trainer",
+                    cost = 100000,
+                },
             },
             product = { item_id = 29520, qty = 1 },
             materials = {
@@ -5888,8 +6594,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Netherstrike Bracers",
             icon = "inv_bracer_12",
             source = {
-                type = "Trainer",
-                cost = 100000,
+                {
+                    type = "Trainer",
+                    cost = 100000,
+                },
             },
             product = { item_id = 29521, qty = 1 },
             materials = {
@@ -5905,8 +6613,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Windhawk Hauberk",
             icon = "inv_chest_leather_01",
             source = {
-                type = "Trainer",
-                cost = 100000,
+                {
+                    type = "Trainer",
+                    cost = 100000,
+                },
             },
             product = { item_id = 29522, qty = 1 },
             materials = {
@@ -5923,8 +6633,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Windhawk Belt",
             icon = "inv_belt_03",
             source = {
-                type = "Trainer",
-                cost = 100000,
+                {
+                    type = "Trainer",
+                    cost = 100000,
+                },
             },
             product = { item_id = 29524, qty = 1 },
             materials = {
@@ -5941,8 +6653,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Windhawk Bracers",
             icon = "inv_bracer_07",
             source = {
-                type = "Trainer",
-                cost = 100000,
+                {
+                    type = "Trainer",
+                    cost = 100000,
+                },
             },
             product = { item_id = 29523, qty = 1 },
             materials = {
@@ -5958,8 +6672,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Primalstrike Vest",
             icon = "inv_chest_cloth_45",
             source = {
-                type = "Trainer",
-                cost = 100000,
+                {
+                    type = "Trainer",
+                    cost = 100000,
+                },
             },
             product = { item_id = 29525, qty = 1 },
             materials = {
@@ -5974,8 +6690,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Primalstrike Belt",
             icon = "inv_belt_03",
             source = {
-                type = "Trainer",
-                cost = 100000,
+                {
+                    type = "Trainer",
+                    cost = 100000,
+                },
             },
             product = { item_id = 29526, qty = 1 },
             materials = {
@@ -5990,8 +6708,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Primalstrike Bracers",
             icon = "inv_bracer_07",
             source = {
-                type = "Trainer",
-                cost = 100000,
+                {
+                    type = "Trainer",
+                    cost = 100000,
+                },
             },
             product = { item_id = 29527, qty = 1 },
             materials = {
@@ -6005,8 +6725,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Belt of Natural Power",
             icon = "inv_belt_25",
             source = {
-                type = "Item",
-                recipe_item_ids = { 30301 },
+                {
+                    type = "Item",
+                    item_id = 30301,
+                },
             },
             product = { item_id = 30042, qty = 1 },
             materials = {
@@ -6023,8 +6745,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Belt of Deep Shadow",
             icon = "inv_belt_29",
             source = {
-                type = "Item",
-                recipe_item_ids = { 30302 },
+                {
+                    type = "Item",
+                    item_id = 30302,
+                },
             },
             product = { item_id = 30040, qty = 1 },
             materials = {
@@ -6041,8 +6765,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Belt of the Black Eagle",
             icon = "inv_belt_03",
             source = {
-                type = "Item",
-                recipe_item_ids = { 30303 },
+                {
+                    type = "Item",
+                    item_id = 30303,
+                },
             },
             product = { item_id = 30046, qty = 1 },
             materials = {
@@ -6059,8 +6785,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Monsoon Belt",
             icon = "inv_belt_15",
             source = {
-                type = "Item",
-                recipe_item_ids = { 30304 },
+                {
+                    type = "Item",
+                    item_id = 30304,
+                },
             },
             product = { item_id = 30044, qty = 1 },
             materials = {
@@ -6077,8 +6805,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Boots of Natural Grace",
             icon = "inv_boots_cloth_04",
             source = {
-                type = "Item",
-                recipe_item_ids = { 30305 },
+                {
+                    type = "Item",
+                    item_id = 30305,
+                },
             },
             product = { item_id = 30041, qty = 1 },
             materials = {
@@ -6094,8 +6824,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Boots of Utter Darkness",
             icon = "inv_boots_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 30306 },
+                {
+                    type = "Item",
+                    item_id = 30306,
+                },
             },
             product = { item_id = 30039, qty = 1 },
             materials = {
@@ -6111,8 +6843,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Boots of the Crimson Hawk",
             icon = "inv_boots_chain_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 30307 },
+                {
+                    type = "Item",
+                    item_id = 30307,
+                },
             },
             product = { item_id = 30045, qty = 1 },
             materials = {
@@ -6129,8 +6863,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Hurricane Boots",
             icon = "inv_boots_chain_06",
             source = {
-                type = "Item",
-                recipe_item_ids = { 30308 },
+                {
+                    type = "Item",
+                    item_id = 30308,
+                },
             },
             product = { item_id = 30043, qty = 1 },
             materials = {
@@ -6147,8 +6883,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Boots of Shackled Souls",
             icon = "inv_boots_chain_08",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32429 },
+                {
+                    type = "Item",
+                    item_id = 32429,
+                },
             },
             product = { item_id = 32398, qty = 1 },
             materials = {
@@ -6165,8 +6903,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Bracers of Shackled Souls",
             icon = "inv_bracer_17",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32430 },
+                {
+                    type = "Item",
+                    item_id = 32430,
+                },
             },
             product = { item_id = 32399, qty = 1 },
             materials = {
@@ -6183,8 +6923,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Greaves of Shackled Souls",
             icon = "inv_pants_plate_12",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32431 },
+                {
+                    type = "Item",
+                    item_id = 32431,
+                },
             },
             product = { item_id = 32400, qty = 1 },
             materials = {
@@ -6201,8 +6943,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Waistguard of Shackled Souls",
             icon = "inv_belt_26",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32432 },
+                {
+                    type = "Item",
+                    item_id = 32432,
+                },
             },
             product = { item_id = 32397, qty = 1 },
             materials = {
@@ -6219,8 +6963,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Redeemed Soul Moccasins",
             icon = "inv_boots_cloth_14",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32433 },
+                {
+                    type = "Item",
+                    item_id = 32433,
+                },
             },
             product = { item_id = 32394, qty = 1 },
             materials = {
@@ -6237,8 +6983,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Redeemed Soul Wristguards",
             icon = "inv_bracer_18",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32434 },
+                {
+                    type = "Item",
+                    item_id = 32434,
+                },
             },
             product = { item_id = 32395, qty = 1 },
             materials = {
@@ -6255,8 +7003,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Redeemed Soul Legguards",
             icon = "inv_pants_leather_05",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32435 },
+                {
+                    type = "Item",
+                    item_id = 32435,
+                },
             },
             product = { item_id = 32396, qty = 1 },
             materials = {
@@ -6273,8 +7023,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Redeemed Soul Cinch",
             icon = "inv_belt_26",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32436 },
+                {
+                    type = "Item",
+                    item_id = 32436,
+                },
             },
             product = { item_id = 32393, qty = 1 },
             materials = {
@@ -6291,8 +7043,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Bracers of Renewed Life",
             icon = "inv_bracer_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32744 },
+                {
+                    type = "Item",
+                    item_id = 32744,
+                },
             },
             product = { item_id = 32582, qty = 1 },
             materials = {
@@ -6308,8 +7062,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Shoulderpads of Renewed Life",
             icon = "inv_shoulder_07",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32745 },
+                {
+                    type = "Item",
+                    item_id = 32745,
+                },
             },
             product = { item_id = 32583, qty = 1 },
             materials = {
@@ -6325,8 +7081,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Swiftstrike Bracers",
             icon = "inv_bracer_15",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32746 },
+                {
+                    type = "Item",
+                    item_id = 32746,
+                },
             },
             product = { item_id = 32580, qty = 1 },
             materials = {
@@ -6341,8 +7099,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Swiftstrike Shoulders",
             icon = "inv_shoulder_23",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32747 },
+                {
+                    type = "Item",
+                    item_id = 32747,
+                },
             },
             product = { item_id = 32581, qty = 1 },
             materials = {
@@ -6357,8 +7117,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Bindings of Lightning Reflexes",
             icon = "inv_bracer_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32748 },
+                {
+                    type = "Item",
+                    item_id = 32748,
+                },
             },
             product = { item_id = 32574, qty = 1 },
             materials = {
@@ -6375,8 +7137,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Shoulders of Lightning Reflexes",
             icon = "inv_shoulder_66",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32749 },
+                {
+                    type = "Item",
+                    item_id = 32749,
+                },
             },
             product = { item_id = 32575, qty = 1 },
             materials = {
@@ -6393,8 +7157,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Living Earth Bindings",
             icon = "inv_bracer_02",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32750 },
+                {
+                    type = "Item",
+                    item_id = 32750,
+                },
             },
             product = { item_id = 32577, qty = 1 },
             materials = {
@@ -6411,8 +7177,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Living Earth Shoulders",
             icon = "inv_shoulder_66",
             source = {
-                type = "Item",
-                recipe_item_ids = { 32751 },
+                {
+                    type = "Item",
+                    item_id = 32751,
+                },
             },
             product = { item_id = 32579, qty = 1 },
             materials = {
@@ -6429,8 +7197,10 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             name = "Greater Drums of War",
             icon = "inv_misc_drum_03",
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
             product = { item_id = 185852, qty = 1 },
             materials = {
