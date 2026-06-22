@@ -791,6 +791,7 @@ local POPUP = {
     divider    = { 168 / 255, 136 / 255, 91 / 255, 0.30 },
     mineSquare = { 0.45, 0.80, 0.40, 1 },                   -- your-faction cue
     altSquare  = { 0.62, 0.47, 0.31, 1 },                   -- other-faction cue
+    phase      = { 0.45, 0.75, 1, 1 },                      -- phase tag (matches list tooltip)
 }
 
 local function ensureProfessionPopup()
@@ -921,6 +922,12 @@ local function ensureProfessionPopup()
         card.sub:SetJustifyH("LEFT")
         card.sub:SetTextColor(unpack(POPUP.muted))
         card.sub:SetWordWrap(false)
+
+        card.phaseTag = card:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+        card.phaseTag:SetJustifyH("RIGHT")
+        card.phaseTag:SetTextColor(unpack(POPUP.phase))
+        card.phaseTag:SetWordWrap(false)
+        card.phaseTag:Hide()
 
         self.sourceCards[index] = card
         return card
@@ -1304,9 +1311,21 @@ local function ensureProfessionPopup()
                 card.title:ClearAllPoints()
                 card.title:SetPoint("TOPLEFT", card, "TOPLEFT", textX, -7)
                 card.title:SetText(titleText)
-                contentRight = math.max(contentRight, xPad + textX + card.title:GetStringWidth() + 8)
+                local titleRight = xPad + textX + card.title:GetStringWidth() + 8
 
-                -- Sub line: location . cost . phase (+ quest title) and a faction square.
+                -- Phase tag: right-aligned on the title row when later than launch.
+                if s.phase and s.phase > 1 then
+                    card.phaseTag:ClearAllPoints()
+                    card.phaseTag:SetPoint("TOPRIGHT", card, "TOPRIGHT", -10, -7)
+                    card.phaseTag:SetText("Phase " .. tostring(s.phase))
+                    card.phaseTag:Show()
+                    titleRight = titleRight + 12 + card.phaseTag:GetStringWidth() + 2
+                else
+                    card.phaseTag:Hide()
+                end
+                contentRight = math.max(contentRight, titleRight)
+
+                -- Sub line: location . cost (+ quest title) and a faction square.
                 local subSegs = {}
                 if hasIcon and s.location and s.location ~= "" then
                     subSegs[#subSegs + 1] = tostring(s.location)
@@ -1314,9 +1333,6 @@ local function ensureProfessionPopup()
                 if s.cost and tonumber(s.cost) and tonumber(s.cost) > 0 then
                     local costText = TFG.FormatCost(s.cost)
                     if costText then subSegs[#subSegs + 1] = costText end
-                end
-                if s.phase and s.phase > 1 then
-                    subSegs[#subSegs + 1] = "|cff77bbffPhase " .. tostring(s.phase) .. "|r"
                 end
                 local subText = table.concat(subSegs, "  |cff808080" .. MIDDOT .. "|r  ")
                 if s.type == "Quest" then
@@ -1394,6 +1410,20 @@ local function ensureProfessionPopup()
         end
     end)
     popup.itemWatcher:RegisterEvent("GET_ITEM_INFO_RECEIVED")
+
+    -- Click anywhere outside the popup (and not on its anchor icon) closes it.
+    -- The anchor guard leaves the icon's own click-to-toggle behavior intact.
+    popup:SetScript("OnEvent", function(self, event)
+        if event ~= "GLOBAL_MOUSE_DOWN" then return end
+        if not self:IsShown() then return end
+        local overAnchor = self._anchor and self._anchor.IsMouseOver and self._anchor:IsMouseOver()
+        if self:IsMouseOver() or overAnchor then return end
+        self:Hide()
+        self._anchor = nil
+        self._spellData = nil
+    end)
+    -- GLOBAL_MOUSE_DOWN is unavailable on some clients; degrade quietly if so.
+    pcall(popup.RegisterEvent, popup, "GLOBAL_MOUSE_DOWN")
 
     TFG.professionPopup = popup
     return popup
