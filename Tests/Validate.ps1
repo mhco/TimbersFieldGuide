@@ -117,11 +117,35 @@ Assert-True (($phasedProfessionFiles -join ",") -eq "Enchanting,Jewelcrafting,Ta
 $tailoring = Get-Content -LiteralPath (Join-Path $Root "Database/TBC/Professions/Tailoring.lua") -Raw
 Assert-True ($tailoring -match 'spell_id\s*=\s*36315[\s\S]{0,120}?phase\s*=\s*2') "Belt of Blasting must be marked as Phase 2."
 Assert-True ($tailoring -match 'spell_id\s*=\s*40020[\s\S]{0,120}?phase\s*=\s*3') "Black Temple Tailoring recipes must be marked as Phase 3."
-Assert-True ($tailoring -match 'spell_id\s*=\s*50194[\s\S]{0,120}?phase\s*=\s*4') "Mycah's Botanical Bag must be marked as Phase 4."
+Assert-True ($tailoring -match 'spell_id\s*=\s*50194[\s\S]{0,120}?phase\s*=\s*2') "Mycah's Botanical Bag must be marked as Phase 2."
 Assert-True ($tailoring -match 'spell_id\s*=\s*46128[\s\S]{0,120}?phase\s*=\s*5') "Sunwell Tailoring recipes must be marked as Phase 5."
 
 $weaponSkills = Get-Content -LiteralPath (Join-Path $Root "Database/TBC/Skills/WeaponSkills.lua") -Raw
 Assert-True ($weaponSkills -notmatch 'name\s*=\s*"One-Handed Swords"[\s\S]{0,160}?source\s*=\s*\{[\s\S]{0,160}?icon\s*=[\s\S]{0,160}?source\s*=\s*\{') "TBC Weapon Skills still contains the duplicate source field."
+
+$testUI = Get-Content -LiteralPath (Join-Path $Root "Core/TestUI.lua") -Raw
+$slash = Get-Content -LiteralPath (Join-Path $Root "Core/Slash.lua") -Raw
+Assert-True ($testUI -match "function TFG\.ToggleTestUI") "Navigation mockup toggle is missing."
+Assert-True ($testUI -match '"Classes"[\s\S]*"Professions"[\s\S]*"Skills"') "Navigation mockup bottom tabs are missing."
+Assert-True ($testUI -match 'closeTab[\s\S]*expansionTab') "Navigation mockup expansion and close controls must be adjacent top tabs."
+Assert-True ($testUI -match 'selectPage\("about"\)') "The title tab must open the About page."
+Assert-True ($testUI -notmatch 'browserPanel|renderBrowser') "Bottom navigation must use dedicated pages, not an overlay browser."
+Assert-True ($testUI -match 'TAB_HEIGHT\s*=\s*42') "Navigation mockup tabs must share the reduced common height."
+Assert-True ($testUI -match 'TAB_GAP\s*=\s*7') "Navigation mockup tab groups must share a common gap."
+Assert-True ($testUI -match 'applyTabBackdrop') "Navigation mockup tabs must share borderless styling."
+Assert-True ($testUI -match 'hasSubpages\s*and\s*-\(TAB_HEIGHT\s*\+\s*12\)\s*or\s*-8') "Pages without subpages must expand into the secondary-tab space."
+Assert-True ($testUI -match 'tabSelected\s*=\s*\{\s*0\.14,\s*0\.14,\s*0\.13') "Active tabs must match the active chrome section."
+Assert-True ($testUI -match 'content\s*=\s*\{\s*0\.34,\s*0\.34,\s*0\.34') "The page and scrollable content must share the medium-gray surface."
+Assert-True ($testUI -match 'tab\.activeColor\s*=\s*COLORS\.content') "The active subpage tab must merge into the page surface."
+# The new shell re-hosts the live render engine and drives navigation from the
+# database registry rather than hardcoded mockup tables.
+Assert-True ($testUI -match 'MountEngineInto') "The new UI must mount the live render engine, not draw placeholder rows."
+Assert-True ($testUI -match 'getPlayerProfessions') "Top profession tabs must come from the player's skills, not a hardcoded list."
+Assert-True ($testUI -notmatch 'MOCK_QUICK_PROFESSIONS') "Hardcoded mock profession tabs must be removed."
+Assert-True ($testUI -notmatch 'CLASS_SPECIAL_CHILDREN') "Class child pages must come from the registry, not a hardcoded UI table."
+Assert-True ($testUI -notmatch 'RUNES_ICON') "The unconditional Runes child tab must be removed."
+Assert-True ($slash -match 'TFG\.ToggleMainUI') "/tfg must open the main navigation UI."
+Assert-True ($slash -notmatch 'ToggleTestUI2') "The retired /tfg test2 command must be removed."
 
 if ($failures.Count -gt 0) {
     Write-Host "Validation failed:" -ForegroundColor Red

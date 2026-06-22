@@ -150,8 +150,13 @@ close:SetPoint("RIGHT", -4, 0)
 close:SetScript("OnClick", function() frame:Hide() end)
 
 
--- Public toggle used by keybindings: mirrors the minimap left-click behavior.
+-- Public toggle used by keybindings: opens the main navigation UI.
 _G.TimbersFieldGuide_Toggle = function()
+    if TFG and TFG.ToggleMainUI then
+        TFG.ToggleMainUI()
+        return
+    end
+    -- Fallback to the legacy frame if the new UI is unavailable for any reason.
     if not TFG or not TFG.frame then return end
     if TFG.frame:IsShown() then
         TFG.frame:Hide()

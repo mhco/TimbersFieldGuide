@@ -27,7 +27,10 @@ end
 
 -- Sets the background to the given class. Class must be a capitalized string.
 function TFG.SetBackground(class)
-    local f = TFG and TFG.frame or nil
+    -- When the engine is mounted into the new navigation shell, draw the
+    -- background across that shell's full content pane (behind the filter row and
+    -- scroll content). Fall back to the legacy frame when not mounted.
+    local f = (TFG and (TFG._bgPane or TFG._hostPane or TFG.frame)) or nil
     if not f then return end
 
     -- Normalize input (caller often passes lowercase class key).
@@ -63,8 +66,8 @@ function TFG.SetBackground(class)
     -- Create the background texture if necessary (placed under the frame backdrop).
     if not f._classBg then
         local bg = f:CreateTexture(nil, "ARTWORK")
-        bg:SetPoint("TOPLEFT", f, "TOPLEFT", 12, -12)
-        bg:SetPoint("BOTTOMRIGHT", f, "BOTTOMRIGHT", -12, 12)
+        bg:SetPoint("TOPLEFT", f, "TOPLEFT", 2, -2)
+        bg:SetPoint("BOTTOMRIGHT", f, "BOTTOMRIGHT", -2, 2)
         bg:SetBlendMode("BLEND")
         f._classBg = bg
     end

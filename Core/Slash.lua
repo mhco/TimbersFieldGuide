@@ -30,11 +30,8 @@ SlashCmdList["TFG"] = function(msg)
     local cmd = input:lower()
     if cmd == "reset" or cmd == "resetpos" or cmd == "resetposition" then
         local ok, err = pcall(function()
-            if TFG.frame.ResetPosition then
-                TFG.frame:ResetPosition()
-            else
-                TFG.frame:ClearAllPoints()
-                TFG.frame:SetPoint("CENTER")
+            if TFG.ResetMainUIPosition then
+                TFG.ResetMainUIPosition()
             end
         end)
         if ok then
@@ -46,13 +43,8 @@ SlashCmdList["TFG"] = function(msg)
     end
 
     local ok, err = pcall(function()
-        if (TFG.frame:IsShown()) then
-            TFG.frame:Hide()
-        else
-            if TFG.frame.Relayout then
-                TFG.frame:Relayout()
-            end
-            TFG.frame:Show()
+        if TFG.ToggleMainUI then
+            TFG.ToggleMainUI()
         end
     end)
     if not ok then

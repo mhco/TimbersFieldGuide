@@ -72,6 +72,6 @@ Core/Util.lua
 Core/Database.lua
 Core/Frame.lua
 Core/Minimap.lua
-Core/Controls.lua
 Core/Layout.lua
+Core/TestUI.lua
 Core/Slash.lua

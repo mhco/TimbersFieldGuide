@@ -274,8 +274,8 @@ end
 local function inferProfessionCapFromRank(rank)
     rank = tonumber(rank) or 0
     if rank <= 0 then return 0 end
-    -- Vanilla-era cap
-    if TFG.selectedExpansion and TFG.selectedExpansion:upper() == "VANILLA" then
+    -- Classic Era cap
+    if TFG.selectedExpansion and TFG.selectedExpansion:upper() == "CLASSIC_ERA" then
         if rank <= 75 then return 75 end
         if rank <= 150 then return 150 end
         if rank <= 225 then return 225 end
@@ -348,6 +348,19 @@ scrollFrame:SetAllPoints()
 local content = CreateFrame("Frame", nil, scrollFrame)
 content:SetSize(1,1)
 scrollFrame:SetScrollChild(content)
+
+-- Render width is the wrapping width for ability/recipe icons. It must track
+-- whichever container the scroll view currently lives in: the legacy frame, or
+-- the new navigation shell's content pane once TFG.MountEngineInto() re-hosts it.
+local function getRenderWidth()
+    if TFG._engineMounted and scrollFrame then
+        local w = scrollFrame:GetWidth()
+        if w and w > 1 then
+            return w - UI.ICON_SPACING
+        end
+    end
+    return frame:GetWidth() - UI.FRAME_PADDING_X
+end
 
 local renderPool = {
     labels = {},
@@ -577,6 +590,16 @@ local function getMaxExplicitPhase(database)
         end
     end
     return maxPhase
+end
+
+-- Exposed so an external navigation shell can build its own Category/Phase
+-- controls instead of the legacy in-frame dropdowns.
+TFG.IsProfessionView = isProfessionView
+function TFG.GetCategoryOptions()
+    return extractCategoriesFromDatabase(TFG.activeDatabase)
+end
+function TFG.GetMaxPhase()
+    return getMaxExplicitPhase(TFG.activeDatabase)
 end
 
 local function populatePhaseDropdown()
@@ -830,7 +853,7 @@ local function ensureProfessionPopup()
         return TFG.professionPopup
     end
 
-    local popup = CreateFrame("Frame", "TFG_ProfessionPopup", frame.scrollBG or scrollBG, "BackdropTemplate")
+    local popup = CreateFrame("Frame", "TFG_ProfessionPopup", TFG._hostPane or frame.scrollBG or scrollBG, "BackdropTemplate")
     popup:SetFrameStrata("FULLSCREEN_DIALOG")
     -- Ensure the popup appears above the scroll content (icons/labels).
     popup:SetFrameLevel((frame:GetFrameLevel() or 1) + 200)
@@ -1554,6 +1577,7 @@ populateFileDropdown(true)
 TFG.showEnemySpells = false
 TFG.showTalents     = false
 TFG.showKnown       = false
+TFG.searchText      = "" -- name-only filter; stored lowercased by the UI
 
 -- Known Spells
 knownCheck = CreateFrame("CheckButton", nil, scrollBG, "UICheckButtonTemplate")
@@ -1698,7 +1722,7 @@ function frame:Relayout()
     -- current view is a profession AND the player actually has that skill.
 
     local yOffset = -4
-    local contentWidth = frame:GetWidth() - UI.FRAME_PADDING_X
+    local contentWidth = getRenderWidth()
 
     local enemySpellsCount = 0
     local talentCount = 0
@@ -2313,6 +2337,15 @@ function frame:Relayout()
     end
 
     local function shouldHideEntry(spell, row, levelRequired)
+        -- Name-only search filter (applies to every view). TFG.searchText is
+        -- stored lowercased; plain (non-pattern) substring match.
+        if TFG.searchText and TFG.searchText ~= "" then
+            local name = (spell and spell.name) and tostring(spell.name):lower() or ""
+            if not name:find(TFG.searchText, 1, true) then
+                return true, "search"
+            end
+        end
+
         if isProfession and not isEntryAvailableInPhase(spell) then
             return true, "phase"
         end
@@ -2930,6 +2963,20 @@ function frame:Relayout()
     if talentCheck then talentCheck:SetChecked(TFG.showTalents) end
     if enemySpellsCheck then enemySpellsCheck:SetChecked(TFG.showEnemySpells) end
 
+    -- Publish which filters are applicable to the current view so an external
+    -- navigation shell can show/hide its own filter controls, then notify it
+    -- that a relayout finished. (isKnownShown reflects the engine's own
+    -- show/hide rules even though the legacy checkbox is parented to a hidden
+    -- frame, because IsShown() tracks the object's flag, not effective view.)
+    TFG._filterAvailability = {
+        known = isKnownShown and true or false,
+        talent = isTalentShown,
+        enemy = isEnemySpellsShown,
+    }
+    if type(TFG.OnAfterRelayout) == "function" then
+        pcall(TFG.OnAfterRelayout)
+    end
+
     if not TFG.viewAvailable then
         message1:SetText("This view is not available for this expansion")
         message1:SetShown(true)
@@ -2993,14 +3040,24 @@ end
 
 local relayoutQueued = false
 
+-- "Is the guide currently on screen?" Once the engine is mounted into the new
+-- shell, visibility follows the host pane rather than the hidden legacy frame.
+local function isGuideVisible()
+    if TFG._engineMounted then
+        return TFG._hostPane and TFG._hostPane:IsVisible() or false
+    end
+    return frame:IsShown()
+end
+TFG.IsGuideVisible = isGuideVisible
+
 function TFG.RequestRelayout()
     TFG._stateDirty = true
-    if not frame or not frame:IsShown() or relayoutQueued then return end
+    if not frame or not isGuideVisible() or relayoutQueued then return end
 
     relayoutQueued = true
     local function run()
         relayoutQueued = false
-        if not frame:IsShown() then return end
+        if not isGuideVisible() then return end
         TFG._stateDirty = false
         frame:Relayout()
     end
@@ -3033,5 +3090,42 @@ frame:HookScript("OnShow", function()
         TFG.RequestRelayout()
     end
 end)
+
+-- ==========================================================================
+-- External host mount (new navigation shell)
+-- ==========================================================================
+-- Re-host the live render output -- the scroll view, the empty-state messages,
+-- and the profession popup -- inside a content pane owned by the new UI shell.
+-- The legacy frame stays hidden, so its dropdowns and checkboxes (children of
+-- that hidden frame) never render; the shell supplies its own navigation and
+-- filter controls and drives the same TFG.* state. Width tracking switches to
+-- the mounted pane automatically via getRenderWidth().
+function TFG.MountEngineInto(pane)
+    if not pane then return end
+    TFG._engineMounted = true
+    TFG._hostPane = pane
+
+    scrollFrame:SetParent(pane)
+    scrollFrame:ClearAllPoints()
+    -- Leave room on the right for the scrollbar that ships with the template.
+    scrollFrame:SetPoint("TOPLEFT", pane, "TOPLEFT", 0, 0)
+    scrollFrame:SetPoint("BOTTOMRIGHT", pane, "BOTTOMRIGHT", -22, 0)
+
+    message1:SetParent(pane)
+    message1:ClearAllPoints()
+    message1:SetPoint("CENTER", pane, "CENTER", 0, 20)
+    message2:SetParent(pane)
+    message2:ClearAllPoints()
+    message2:SetPoint("CENTER", pane, "CENTER", 0, -20)
+
+    if TFG.professionPopup then
+        TFG.professionPopup:SetParent(pane)
+    end
+
+    if frame:IsShown() then
+        frame:Hide()
+    end
+    TFG.RequestRelayout()
+end
 
 frame:Relayout()

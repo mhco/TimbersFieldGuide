@@ -1,6 +1,9 @@
 local _, TFG = ...
 
-TFG.selectedExpansion = "VANILLA" -- Default player class
+-- TFG.selectedExpansion holds the internal *version key* (CLASSIC_ERA /
+-- BURNING_CRUSADE / WRATH_CLASSIC), not a display label. The field name is kept
+-- for now to avoid churn across the codebase.
+TFG.selectedExpansion = "CLASSIC_ERA" -- Default version
 TFG.selectedFile = select(2, UnitClass("player")) -- Default player class
 TFG.activeDatabase = {}
 TFG.rows = {}
@@ -10,13 +13,13 @@ TFG.selectedPhase = nil
 
 TFG.DISCOVERY_BUCKET = 999
 
--- Detect client expansion
+-- Detect client version
 if WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC then
-    TFG.selectedExpansion = "WOTLK"
+    TFG.selectedExpansion = "WRATH_CLASSIC"
 elseif WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC then
-    TFG.selectedExpansion = "TBC"
+    TFG.selectedExpansion = "BURNING_CRUSADE"
 else
-    TFG.selectedExpansion = "VANILLA"
+    TFG.selectedExpansion = "CLASSIC_ERA"
 end
 
 -- ========================================================================== 
@@ -25,8 +28,9 @@ end
 
 -- Map expansions to class databases
 TFG.DATABASE_FILES = {
-    VANILLA = {
-        name = "Vanilla",
+    CLASSIC_ERA = {
+        key = "CLASSIC_ERA",
+        name = "Classic Era",
         color = "|cFFFFE669",
         files = {
             classes = {
@@ -133,8 +137,9 @@ TFG.DATABASE_FILES = {
             },
         }
     },
-    TBC = {
-        name = "TBC",
+    BURNING_CRUSADE = {
+        key = "BURNING_CRUSADE",
+        name = "The Burning Crusade",
         color = "|cFFCBD96B",
         currentPhase = 2,
         files = {
@@ -243,8 +248,9 @@ TFG.DATABASE_FILES = {
             },
         }
     },
-    WOTLK = {
-        name = "WotLK",
+    WRATH_CLASSIC = {
+        key = "WRATH_CLASSIC",
+        name = "Wrath of the Lich King",
         color = "|cFF9EC6E6",
         files = {
             classes = {},

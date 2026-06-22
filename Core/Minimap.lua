@@ -15,6 +15,11 @@ local function ensureDB()
 end
 
 local function toggleMainWindow()
+    if TFG.ToggleMainUI then
+        TFG.ToggleMainUI()
+        return
+    end
+
     if not TFG.frame then return end
 
     if TFG.frame:IsShown() then
