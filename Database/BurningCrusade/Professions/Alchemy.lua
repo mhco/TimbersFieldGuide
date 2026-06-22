@@ -2381,8 +2381,20 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             categories = { "Elixirs" },
             icon = "inv_potion_127",
             source = {
-                type = "Item",
-                recipe_item_ids = { 22905, 24001 },
+                {
+                    type = "Vendor",
+                    item_id = 22905,
+                    cost = 50000,
+                    location = "Honor Hold (Honored)",
+                    faction = "Alliance",
+                },
+                {
+                    type = "Vendor",
+                    item_id = 24001,
+                    cost = 50000,
+                    location = "Thrallmar (Honored)",
+                    faction = "Horde",
+                },
             },
             product = { item_id = 22831, qty = 1 },
             materials = {

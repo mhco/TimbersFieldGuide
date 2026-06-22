@@ -199,17 +199,116 @@ local function getMaterialQty(mat)
     return tonumber(mat.qty) or tonumber(mat.quantity) or 1
 end
 
--- Get recipe source item ID (supports both 'id' and 'recipe_item_ids')
+-- Normalize one raw source object onto the per-source schema. Returns a fresh
+-- table so callers can sort/annotate without mutating DB data. Legacy fields are
+-- mapped: recipe_item_ids[1] -> item_id, quest_ids[1] -> quest_id (the [1] is
+-- faithful to the current single-display behavior; multi-id enrichment is later).
+local function normalizeSource(s)
+    if type(s) ~= "table" then return nil end
+    local out = {
+        type = s.type,
+        cost = s.cost,
+        location = s.location,
+        faction = s.faction,
+        phase = tonumber(s.phase),
+        item_id = tonumber(s.item_id) or tonumber(s.id),
+        quest_id = tonumber(s.quest_id),
+        quest_name = s.quest_name,
+    }
+    if not out.item_id and type(s.recipe_item_ids) == "table" and s.recipe_item_ids[1] then
+        out.item_id = tonumber(s.recipe_item_ids[1])
+    end
+    if not out.quest_id and type(s.quest_ids) == "table" and s.quest_ids[1] then
+        local raw = s.quest_ids[1]
+        if type(raw) == "table" then
+            out.quest_id = tonumber(raw.id)
+            out.quest_name = out.quest_name or raw.name
+        else
+            out.quest_id = tonumber(raw)
+        end
+    end
+    return out
+end
+
+-- Read-normalize an entry's `source` into an array of source objects. Accepts a
+-- legacy single-object source, an already-array source, or nil (-> {}). This is
+-- the single seam every consumer reads through during the source-array migration.
+function TFG.GetSources(entry)
+    if not entry or not entry.source then return {} end
+    local src = entry.source
+    local out = {}
+    if type(src[1]) == "table" then
+        -- Already an array of source objects.
+        for i = 1, #src do
+            out[#out + 1] = normalizeSource(src[i])
+        end
+    else
+        -- Legacy single-object source.
+        out[1] = normalizeSource(src)
+    end
+    return out
+end
+
+-- Primary recipe item ID = earliest-phase source's item_id (launch when untagged).
 local function getRecipeSourceId(spell)
-    if not spell or not spell.source then return nil end
-    -- Check old format
-    if spell.source.id and tonumber(spell.source.id) then
-        return tonumber(spell.source.id)
+    local bestId, bestPhase
+    for _, s in ipairs(TFG.GetSources(spell)) do
+        if s.item_id and s.item_id > 0 then
+            local p = s.phase or 1
+            if not bestId or p < bestPhase then
+                bestId, bestPhase = s.item_id, p
+            end
+        end
     end
-    -- Check new format (array)
-    if spell.source.recipe_item_ids and type(spell.source.recipe_item_ids) == "table" and #spell.source.recipe_item_ids > 0 then
-        return tonumber(spell.source.recipe_item_ids[1])
+    return bestId
+end
+
+-- Concise display label for a source type (legacy "Item" splits on cost).
+local function sourceTypeLabel(s)
+    local t = s.type
+    if t == "Item" then
+        if s.cost and tonumber(s.cost) and tonumber(s.cost) > 0 then return "Vendor" end
+        return "Recipe"
     end
+    return t or "Recipe"
+end
+
+local MIDDOT = "\194\183"  -- UTF-8 U+00B7, kept out of source as raw bytes
+
+-- Build the compact one-line summary for a source, e.g. "Honor Hold (Honored) . 5g".
+-- Leads with the descriptive location (which already names the vendor/drop, so the
+-- faction is implied), falling back to the type word only when there is no
+-- location. Segments are joined by a muted middot.
+local function buildSourceLine(s)
+    local primary = (s.location and tostring(s.location) ~= "")
+        and tostring(s.location) or sourceTypeLabel(s)
+    local segs = { primary }
+    if s.cost and tonumber(s.cost) and tonumber(s.cost) > 0 then
+        local costText = TFG.FormatCost(s.cost)
+        if costText then segs[#segs + 1] = costText end
+    end
+    if s.phase and s.phase > 1 then
+        segs[#segs + 1] = "|cff77bbffPhase " .. tostring(s.phase) .. "|r"
+    end
+    return table.concat(segs, "  |cff808080" .. MIDDOT .. "|r  ")
+end
+
+-- Resolve a human-readable quest title for a quest source, with API fallbacks
+-- and a final fall-back to a name authored in the data.
+local function resolveQuestTitle(s)
+    local questId = s.quest_id
+    if not questId or questId <= 0 then return nil end
+    local title
+    if C_QuestLog and C_QuestLog.GetTitleForQuestID then
+        title = C_QuestLog.GetTitleForQuestID(questId)
+    end
+    if (not title or title == "") and QuestUtils_GetQuestName then
+        title = QuestUtils_GetQuestName(questId)
+    end
+    if (not title or title == "") and s.quest_name and s.quest_name ~= "" then
+        title = s.quest_name
+    end
+    if title and title ~= "" then return title end
     return nil
 end
 
@@ -679,6 +778,21 @@ local function createQuantityOverlay(parent)
     return fs
 end
 
+-- Warm popup theme, matched to the main navigation window (Core/TestUI.lua COLORS).
+local POPUP = {
+    bg         = { 23 / 255, 20 / 255, 17 / 255, 0.98 },   -- chromeDark
+    border     = { 168 / 255, 136 / 255, 91 / 255, 1 },    -- gold border
+    cardBg     = { 35 / 255, 30 / 255, 24 / 255, 1 },       -- lifted card
+    cardBorder = { 92 / 255, 74 / 255, 49 / 255, 1 },       -- muted gold
+    label      = { 168 / 255, 138 / 255, 91 / 255, 1 },     -- tan section headers
+    title      = { 1, 0.88, 0.45, 1 },                      -- gold name
+    body       = { 232 / 255, 225 / 255, 210 / 255, 1 },    -- cream
+    muted      = { 158 / 255, 140 / 255, 112 / 255, 1 },    -- muted tan sub-text
+    divider    = { 168 / 255, 136 / 255, 91 / 255, 0.30 },
+    mineSquare = { 0.45, 0.80, 0.40, 1 },                   -- your-faction cue
+    altSquare  = { 0.62, 0.47, 0.31, 1 },                   -- other-faction cue
+}
+
 local function ensureProfessionPopup()
     if TFG.professionPopup and TFG.professionPopup.SetAnchor then
         return TFG.professionPopup
@@ -689,14 +803,12 @@ local function ensureProfessionPopup()
     -- Ensure the popup appears above the scroll content (icons/labels).
     popup:SetFrameLevel((frame:GetFrameLevel() or 1) + 200)
     popup:SetBackdrop({
-        bgFile = "Interface/Tooltips/UI-Tooltip-Background",
-        edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
-        tile = true,
-        tileSize = 16,
-        edgeSize = 16,
-        insets = { left = 4, right = 4, top = 4, bottom = 4 },
+        bgFile = "Interface\\Buttons\\WHITE8X8",
+        edgeFile = "Interface\\Buttons\\WHITE8X8",
+        edgeSize = 1,
     })
-    popup:SetBackdropColor(0, 0, 0, 1)
+    popup:SetBackdropColor(unpack(POPUP.bg))
+    popup:SetBackdropBorderColor(unpack(POPUP.border))
     popup:SetClampedToScreen(true)
     popup:EnableMouse(true)
     popup:Hide()
@@ -704,61 +816,122 @@ local function ensureProfessionPopup()
     popup.icons = {}
     popup.activeIconCount = 0
 
-    -- Create text labels for item name, skill level, and level progression
+    -- Header: gold recipe name + a muted uppercase "eyebrow" subtitle.
     popup.nameText = popup:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
-    popup.nameText:SetPoint("TOPLEFT", popup, "TOPLEFT", 12, -10)
-    popup.nameText:SetPoint("TOPRIGHT", popup, "TOPRIGHT", -12, -10)
+    popup.nameText:SetPoint("TOPLEFT", popup, "TOPLEFT", 14, -12)
     popup.nameText:SetJustifyH("LEFT")
-    popup.nameText:SetTextColor(1, 1, 1)
+    popup.nameText:SetTextColor(unpack(POPUP.title))
     popup.nameText:SetWordWrap(false)
 
-    popup.skillText = popup:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    popup.skillText:SetPoint("TOPLEFT", popup.nameText, "BOTTOMLEFT", 0, -2)
-    popup.skillText:SetPoint("TOPRIGHT", popup.nameText, "BOTTOMRIGHT", 0, -2)
-    popup.skillText:SetJustifyH("LEFT")
-    popup.skillText:SetTextColor(0.8, 0.8, 0.8)
-    popup.skillText:SetWordWrap(false)
+    popup.eyebrowText = popup:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    popup.eyebrowText:SetJustifyH("LEFT")
+    popup.eyebrowText:SetTextColor(unpack(POPUP.label))
+    popup.eyebrowText:SetWordWrap(false)
+    popup.eyebrowText:Hide()
+
+    -- Uppercase tan section headers.
+    local function sectionHeader(text)
+        local fs = popup:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+        fs:SetJustifyH("LEFT")
+        fs:SetTextColor(unpack(POPUP.label))
+        fs:SetText(text)
+        fs:SetWordWrap(false)
+        fs:Hide()
+        return fs
+    end
+    popup.productLabel     = sectionHeader("PRODUCT")
+    popup.skillLevelsLabel = sectionHeader("SKILL LEVELS")
+    popup.materialsLabel   = sectionHeader("MATERIALS REQUIRED")
+    popup.sourcesLabel     = sectionHeader("RECIPE SOURCES")
+
+    popup.productNameText = popup:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    popup.productNameText:SetJustifyH("LEFT")
+    popup.productNameText:SetTextColor(unpack(POPUP.body))
+    popup.productNameText:SetWidth(92)
+    popup.productNameText:SetWordWrap(true)
+    popup.productNameText:Hide()
 
     popup.levelsText = popup:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    popup.levelsText:SetPoint("TOPLEFT", popup.skillText, "BOTTOMLEFT", 0, -2)
-    popup.levelsText:SetPoint("TOPRIGHT", popup.skillText, "BOTTOMRIGHT", 0, -2)
     popup.levelsText:SetJustifyH("LEFT")
     popup.levelsText:SetWordWrap(false)
+    popup.levelsText:Hide()
 
-    popup.sourceText = popup:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-    popup.sourceText:SetPoint("TOPLEFT", popup.levelsText, "BOTTOMLEFT", 0, -15)
-    popup.sourceText:SetPoint("TOPRIGHT", popup.levelsText, "BOTTOMRIGHT", 0, -15)
-    popup.sourceText:SetJustifyH("LEFT")
-    popup.sourceText:SetTextColor(0.8, 0.8, 0.8)
-    popup.sourceText:SetWordWrap(false)
-    popup.sourceText:Hide()
+    popup.sourcesCountText = popup:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    popup.sourcesCountText:SetJustifyH("RIGHT")
+    popup.sourcesCountText:SetTextColor(unpack(POPUP.muted))
+    popup.sourcesCountText:SetWordWrap(false)
+    popup.sourcesCountText:Hide()
 
-    popup.locationText = popup:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-    popup.locationText:SetPoint("TOPLEFT", popup.sourceText, "BOTTOMLEFT", 0, -2)
-    popup.locationText:SetPoint("TOPRIGHT", popup.sourceText, "BOTTOMRIGHT", 0, -2)
-    popup.locationText:SetJustifyH("LEFT")
-    popup.locationText:SetTextColor(0.8, 0.8, 0.8)
-    popup.locationText:SetWordWrap(false)
-    popup.locationText:Hide()
+    -- Vertical divider between the Product and Skill Levels columns.
+    popup.colDivider = popup:CreateTexture(nil, "ARTWORK")
+    popup.colDivider:SetColorTexture(unpack(POPUP.divider))
+    popup.colDivider:SetWidth(1)
+    popup.colDivider:Hide()
 
-    -- Quest line with yellow "!" icon
-    popup.questIcon = popup:CreateTexture(nil, "OVERLAY")
-    popup.questIcon:SetSize(14, 14)
-    popup.questIcon:SetTexture("Interface/GossipFrame/AvailableQuestIcon")
-    popup.questIcon:Hide()
+    -- Grow-on-demand pool of source cards (recipe-item name on top, vendor/location
+    -- below, with a small your-faction colour square). The card icon carries the
+    -- recipe item's tooltip and shift-click link.
+    popup.sourceCards = {}
+    function popup:AcquireSourceCard(index)
+        local card = self.sourceCards[index]
+        if card then return card end
 
-    popup.questText = popup:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-    popup.questText:SetJustifyH("LEFT")
-    popup.questText:SetTextColor(1, 0.82, 0)  -- Quest yellow color
-    popup.questText:SetWordWrap(false)
-    popup.questText:Hide()
+        card = CreateFrame("Button", nil, self, "BackdropTemplate")
+        card:SetBackdrop({
+            bgFile = "Interface\\Buttons\\WHITE8X8",
+            edgeFile = "Interface\\Buttons\\WHITE8X8",
+            edgeSize = 1,
+        })
+        card:SetBackdropColor(unpack(POPUP.cardBg))
+        card:SetBackdropBorderColor(unpack(POPUP.cardBorder))
 
-    popup.materialsLabel = popup:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    popup.materialsLabel:SetJustifyH("LEFT")
-    popup.materialsLabel:SetTextColor(1, 1, 1)
-    popup.materialsLabel:SetText("Materials required:")
-    popup.materialsLabel:SetWordWrap(false)
-    popup.materialsLabel:Hide()
+        local icon = CreateFrame("Button", nil, card)
+        icon:SetSize(32, 32)
+        icon.tex = icon:CreateTexture(nil, "ARTWORK")
+        icon.tex:SetAllPoints()
+        icon:RegisterForClicks("LeftButtonUp", "RightButtonUp")
+        icon:SetScript("OnEnter", function(self)
+            if not self.itemId then return end
+            GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+            GameTooltip:SetItemByID(self.itemId)
+            GameTooltip:Show()
+        end)
+        icon:SetScript("OnLeave", GameTooltip_Hide)
+        icon:SetScript("OnClick", function(self)
+            if not self.itemId then return end
+            local link = select(2, GetItemInfo(self.itemId))
+            if not link then return end
+            if HandleModifiedItemClick then
+                HandleModifiedItemClick(link)
+            elseif ChatEdit_InsertLink then
+                ChatEdit_InsertLink(link)
+            end
+        end)
+        card.icon = icon
+
+        card.square = card:CreateTexture(nil, "OVERLAY")
+        card.square:SetSize(7, 7)
+        card.square:Hide()
+
+        card.title = card:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+        card.title:SetJustifyH("LEFT")
+        card.title:SetWordWrap(false)
+
+        card.sub = card:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+        card.sub:SetJustifyH("LEFT")
+        card.sub:SetTextColor(unpack(POPUP.muted))
+        card.sub:SetWordWrap(false)
+
+        self.sourceCards[index] = card
+        return card
+    end
+    function popup:ClearSourceCards()
+        for _, card in ipairs(self.sourceCards) do
+            card:Hide()
+            card:ClearAllPoints()
+            card.icon.itemId = nil
+        end
+    end
 
     function popup:ClearIcons()
         for _, btn in ipairs(self.icons) do
@@ -868,10 +1041,9 @@ local function ensureProfessionPopup()
             and type(spellData.materials) == "table"
             and #spellData.materials > 0)
 
-        -- Also show popup for class abilities with source info (training cost)
-        local hasSourceInfo = (spellData
-            and spellData.source
-            and (spellData.source.cost or spellData.source.type))
+        -- Also show popup when there is any source row to display (training cost,
+        -- vendor, drop, quest, etc.).
+        local hasSourceInfo = (#TFG.GetSources(spellData) > 0)
 
         if not (hasRecipeItem or hasProduct or hasMaterials or hasSourceInfo) then
             self:Hide()
@@ -894,226 +1066,271 @@ local function ensureProfessionPopup()
             anchorFrame.tfgBlueBorder:Show()
         end
 
-        -- Set text labels
+        -- Header: gold name + uppercase eyebrow (profession . category . requires).
         local itemName = spellData.name or "Recipe"
-        -- Include rank for class abilities if present
         local spellRank = getSpellRank(spellData)
         if spellRank and spellRank > 0 then
             itemName = itemName .. " (Rank " .. tostring(spellRank) .. ")"
         end
         self.nameText:SetText(itemName)
 
-        -- Determine profession name from the active view.
         local profName = getProfessionNameForCurrentView() or "Profession"
+        local reqLevel = (spellData.levels and tonumber(spellData.levels[1])) or nil
+        local eyebrowParts = { profName:upper() }
+        if spellData.categories and spellData.categories[1] then
+            eyebrowParts[#eyebrowParts + 1] = tostring(spellData.categories[1]):upper()
+        end
+        local eyebrow = table.concat(eyebrowParts, "  |cff6a5c44" .. MIDDOT .. "|r  ")
+        if reqLevel and reqLevel > 0 then
+            eyebrow = eyebrow .. "  |cff6a5c44" .. MIDDOT .. "|r  REQUIRES "
+                .. profName:upper() .. " (" .. tostring(reqLevel) .. ")"
+        end
+        self.eyebrowText:SetText(eyebrow)
+        self.eyebrowText:ClearAllPoints()
+        self.eyebrowText:SetPoint("TOPLEFT", self.nameText, "BOTTOMLEFT", 0, -4)
+        self.eyebrowText:Show()
 
-        -- Hide the skill text line
-        self.skillText:SetText("")
-
-        -- Build colored skill level progression with profession name prefix
+        -- Colored crafting-difficulty numbers (the profession name lives in the eyebrow).
+        local diffColors = { "|cFFFF7F00", "|cFFFFFF00", "|cFF00FF00", "|cFF9D9D9D" }
+        local diffParts = {}
         if spellData.levels and type(spellData.levels) == "table" then
-            local colors = { "|cFFFF7F00", "|cFFFFFF00", "|cFF00FF00", "|cFF9D9D9D" }
-            local parts = {}
             for i = 1, 4 do
                 local v = tonumber(spellData.levels[i] or 0) or 0
-                if v > 0 then
-                    table.insert(parts, colors[i] .. tostring(v) .. "|r")
-                end
+                if v > 0 then diffParts[#diffParts + 1] = diffColors[i] .. tostring(v) .. "|r" end
             end
-            if #parts > 0 then
-                self.levelsText:SetText("|cFFFFFFFF" .. profName .. "|r  " .. table.concat(parts, "  "))
-            else
-                self.levelsText:SetText("")
-            end
-        else
-            self.levelsText:SetText("")
         end
+        local hasLevels = (#diffParts > 0)
 
-        -- Show source information if available
-        self.questIcon:Hide()
-        self.questText:Hide()
-
-        if spellData.source then
-            -- Determine source type
-            local sourceType = "Recipe"
-            if spellData.source.type == "Trainer" then
-                sourceType = "Trainer"
-            elseif spellData.source.type == "Item" then
-                if spellData.source.cost ~= nil and tonumber(spellData.source.cost) and tonumber(spellData.source.cost) > 0 then
-                    sourceType = "Vendor Recipe"
-                else
-                    sourceType = "Recipe"
-                end
-            elseif spellData.source.type == "Quest" then
-                sourceType = "Quest Reward"
-            elseif spellData.source.type == "Discovery" then
-                sourceType = "Profession Discovery"
-            end
-
-            -- Format source line with type and cost
-            local sourceLine = "Source: " .. sourceType
-            if spellData.source.cost and tonumber(spellData.source.cost) and tonumber(spellData.source.cost) > 0 then
-                local costText = TFG.FormatCost(spellData.source.cost)
-                if costText then
-                    sourceLine = sourceLine .. " " .. costText
-                end
-            end
-            self.sourceText:SetText(sourceLine)
-            self.sourceText:Show()
-
-            -- Show location line if available
-            if spellData.source.location and tostring(spellData.source.location) ~= "" then
-                self.locationText:SetText("Location: " .. tostring(spellData.source.location))
-                self.locationText:Show()
-            else
-                self.locationText:Hide()
-            end
-
-            -- Show quest title with yellow "!" icon for Quest sources
-            local questId = nil
-            local questEntry = nil
-            if spellData.source.type == "Quest" and spellData.source.quest_ids and spellData.source.quest_ids[1] then
-                local raw = spellData.source.quest_ids[1]
-                if type(raw) == "number" then
-                    questEntry = { id = raw }
-                else
-                    questEntry = raw
-                end
-                questId = tonumber(questEntry.id)
-            end
-            if questId and questId > 0 then
-                local questTitle = nil
-
-                -- Try to get quest title from API (available in some Classic clients)
-                -- Try C_QuestLog.GetTitleForQuestID (available in some versions)
-                if C_QuestLog and C_QuestLog.GetTitleForQuestID then
-                    questTitle = C_QuestLog.GetTitleForQuestID(questId)
-                end
-                -- Fallback: try QuestUtils_GetQuestName if available
-                if not questTitle and QuestUtils_GetQuestName then
-                    questTitle = QuestUtils_GetQuestName(questId)
-                end
-                -- Fallback: use quest name from database if provided
-                if not questTitle and questEntry.name and questEntry.name ~= "" then
-                    questTitle = questEntry.name
-                end
-
-                if questTitle and questTitle ~= "" then
-                    -- Position quest icon and text below location (or source if no location)
-                    local anchorTo = self.locationText:IsShown() and self.locationText or self.sourceText
-                    self.questIcon:ClearAllPoints()
-                    self.questIcon:SetPoint("TOPLEFT", anchorTo, "BOTTOMLEFT", 0, -4)
-                    self.questText:ClearAllPoints()
-                    self.questText:SetPoint("LEFT", self.questIcon, "RIGHT", 4, 0)
-                    self.questText:SetPoint("RIGHT", self, "RIGHT", -12, 0)
-                    self.questText:SetText(questTitle)
-                    self.questIcon:Show()
-                    self.questText:Show()
-                end
-            end
-        else
-            self.sourceText:Hide()
-            self.locationText:Hide()
-        end
-
-        local xPad = 12  -- Match text padding for consistency
-        -- Adjust textHeight based on whether source/location/quest text is shown
-        local sourceHeight = 0
-        if self.sourceText:IsShown() then sourceHeight = sourceHeight + 16 end
-        if self.locationText:IsShown() then sourceHeight = sourceHeight + 16 end
-        if self.questText:IsShown() then sourceHeight = sourceHeight + 18 end  -- Quest line with icon
-        local textHeight = 60 + sourceHeight  -- Base height plus source lines
-        local rowSpacing = 6  -- Spacing above rows
-        local yPad = -10 - textHeight  -- Start icons below the text
+        -- Layout flows top -> bottom from a running cursor; width grows to the
+        -- right-most laid-out element (contentRight is measured from the popup's
+        -- left edge). The header (name + eyebrow) is anchored to the top.
+        local xPad = 14
         local iconSize = 32
-        local spacing = 6
+        local sectionGap = 14
+        local colSplit = 156          -- x where the Skill Levels column begins
 
-        local x = xPad
-        local y = yPad
-        local row1Count = 0
+        local headerBottom = 12 + (self.nameText:GetStringHeight() or 18)
+            + 4 + (self.eyebrowText:GetStringHeight() or 12)
+        local cursorY = -headerBottom
+        local contentRight = math.max(
+            xPad + self.nameText:GetStringWidth(),
+            xPad + self.eyebrowText:GetStringWidth())
 
-        -- Row 1: product (if any), recipe scroll (if source is Item)
-        if hasProduct then
-            local itemId = getProductItemId(spellData)
-            local qty = getProductQty(spellData)
-            local tex = select(10, GetItemInfo(itemId))
-            if not tex then
-                tex = "Interface/ICONS/INV_Misc_QuestionMark"
+        -- PRODUCT (left) + SKILL LEVELS (right) band.
+        if hasProduct or hasLevels then
+            local bandTop = cursorY - sectionGap
+            local leftBottom, rightBottom = bandTop, bandTop
+
+            if hasProduct then
+                self.productLabel:Show()
+                self.productLabel:ClearAllPoints()
+                self.productLabel:SetPoint("TOPLEFT", self, "TOPLEFT", xPad, bandTop)
+                contentRight = math.max(contentRight, xPad + self.productLabel:GetStringWidth())
+
+                local rowY = bandTop - 16
+                local itemId = getProductItemId(spellData)
+                local qty = getProductQty(spellData)
+                local tex = select(10, GetItemInfo(itemId)) or "Interface/ICONS/INV_Misc_QuestionMark"
+                local btn = addIconButton(self, tex, itemId, qty, spellData, false)
+                btn:SetPoint("TOPLEFT", self, "TOPLEFT", xPad, rowY)
+
+                self.productNameText:Show()
+                self.productNameText:ClearAllPoints()
+                self.productNameText:SetPoint("TOPLEFT", self, "TOPLEFT", xPad + iconSize + 8, rowY)
+                self.productNameText:SetText(GetItemInfo(itemId) or spellData.name or "Item")
+
+                leftBottom = rowY - math.max(iconSize, self.productNameText:GetStringHeight() or iconSize)
+                contentRight = math.max(contentRight,
+                    xPad + iconSize + 8 + self.productNameText:GetStringWidth())
+            else
+                self.productLabel:Hide()
+                self.productNameText:Hide()
             end
-            local btn = addIconButton(self, tex, itemId, qty, spellData, false)
-            btn:SetPoint("TOPLEFT", self, "TOPLEFT", x, y)
-            x = x + iconSize + spacing
-            row1Count = row1Count + 1
+
+            if hasLevels then
+                local lx = colSplit + 14
+                self.skillLevelsLabel:Show()
+                self.skillLevelsLabel:ClearAllPoints()
+                self.skillLevelsLabel:SetPoint("TOPLEFT", self, "TOPLEFT", lx, bandTop)
+                self.levelsText:Show()
+                self.levelsText:ClearAllPoints()
+                self.levelsText:SetPoint("TOPLEFT", self, "TOPLEFT", lx, bandTop - 16)
+                self.levelsText:SetText(table.concat(diffParts, "  "))
+                rightBottom = bandTop - 16 - (self.levelsText:GetStringHeight() or 16)
+                contentRight = math.max(contentRight,
+                    lx + self.skillLevelsLabel:GetStringWidth(),
+                    lx + self.levelsText:GetStringWidth())
+            else
+                self.skillLevelsLabel:Hide()
+                self.levelsText:Hide()
+            end
+
+            if hasProduct and hasLevels then
+                self.colDivider:Show()
+                self.colDivider:ClearAllPoints()
+                self.colDivider:SetPoint("TOPLEFT", self, "TOPLEFT", colSplit, bandTop + 2)
+                self.colDivider:SetPoint("BOTTOMRIGHT", self, "TOPLEFT", colSplit + 1, math.min(leftBottom, rightBottom))
+            else
+                self.colDivider:Hide()
+            end
+
+            cursorY = math.min(leftBottom, rightBottom)
+        else
+            self.productLabel:Hide()
+            self.productNameText:Hide()
+            self.skillLevelsLabel:Hide()
+            self.levelsText:Hide()
+            self.colDivider:Hide()
         end
 
-        if hasRecipeItem then
-            local itemId = getRecipeSourceId(spellData)
-            local tex = select(10, GetItemInfo(itemId))
-            if not tex then
-                tex = "Interface/ICONS/INV_Scroll_03"
-            end
-            local btn = addIconButton(self, tex, itemId, nil, spellData, true)
-            btn:SetPoint("TOPLEFT", self, "TOPLEFT", x, y)
-            x = x + iconSize + spacing
-            row1Count = row1Count + 1
-        end
-
-        local row1Width = (row1Count > 0) and (x - spacing + xPad) or (xPad * 2)
-        local rowCount = (row1Count > 0) and 1 or 0
-
-        -- Row 2: materials
-        local row2Width = 0
+        -- MATERIALS REQUIRED (icon chips).
         if hasMaterials then
+            cursorY = cursorY - sectionGap
             self.materialsLabel:Show()
             self.materialsLabel:ClearAllPoints()
-            -- Position label above materials icons with spacing
-            local labelY = yPad - iconSize - rowSpacing - 6  -- Below row 1, with additional 6px spacing
-            self.materialsLabel:SetPoint("TOPLEFT", self, "TOPLEFT", xPad, labelY)
-            self.materialsLabel:SetPoint("TOPRIGHT", self, "TOPRIGHT", -xPad, labelY)
+            self.materialsLabel:SetPoint("TOPLEFT", self, "TOPLEFT", xPad, cursorY)
+            contentRight = math.max(contentRight, xPad + self.materialsLabel:GetStringWidth())
+            cursorY = cursorY - 16
 
-            rowCount = rowCount + 1
-            local x2 = xPad
-            -- Position materials icons below the "Materials required:" label
-            local y2 = yPad - iconSize - rowSpacing - 6 - 16 - 4  -- 6px spacing + 16px for label height + 4px spacing below
-
+            local mx = xPad
             for _, mat in ipairs(spellData.materials) do
                 local itemId = getMaterialItemId(mat)
                 local qty = getMaterialQty(mat)
                 if itemId and itemId > 0 then
-                    local tex = select(10, GetItemInfo(itemId))
-                    if not tex then
-                        tex = "Interface/ICONS/INV_Misc_QuestionMark"
-                    end
+                    local tex = select(10, GetItemInfo(itemId)) or "Interface/ICONS/INV_Misc_QuestionMark"
                     local btn = addIconButton(self, tex, itemId, qty, spellData, false)
-                    btn:SetPoint("TOPLEFT", self, "TOPLEFT", x2, y2)
-                    x2 = x2 + iconSize + spacing
+                    btn:SetPoint("TOPLEFT", self, "TOPLEFT", mx, cursorY)
+                    mx = mx + iconSize + 6
                 end
             end
-            row2Width = (x2 > xPad) and (x2 - spacing + xPad) or (xPad * 2)
+            contentRight = math.max(contentRight, mx - 6)
+            cursorY = cursorY - iconSize
         else
             self.materialsLabel:Hide()
         end
 
-        -- Calculate text widths to ensure proper padding
-        local nameWidth = self.nameText:GetStringWidth() + 24  -- 12px padding on each side
-        local skillWidth = self.skillText:GetStringWidth() + 24
-        local levelsWidth = self.levelsText:GetStringWidth() + 24
-        local sourceWidth = self.sourceText:IsShown() and (self.sourceText:GetStringWidth() + 24) or 0
-        local locationWidth = self.locationText:IsShown() and (self.locationText:GetStringWidth() + 24) or 0
-        local questWidth = self.questText:IsShown() and (self.questText:GetStringWidth() + 42) or 0  -- +42 for icon + padding
-        local textMaxWidth = math.max(nameWidth, skillWidth, levelsWidth, sourceWidth, locationWidth, questWidth)
+        -- RECIPE SOURCES (bordered cards, mine-or-neutral first).
+        self:ClearSourceCards()
+        local sources = TFG.GetSources(spellData)
+        local playerFaction = UnitFactionGroup("player")
+        for i = 1, #sources do sources[i]._idx = i end
+        table.sort(sources, function(a, b)
+            local ra = (not a.faction or a.faction == playerFaction) and 0 or 1
+            local rb = (not b.faction or b.faction == playerFaction) and 0 or 1
+            if ra ~= rb then return ra < rb end
+            return a._idx < b._idx
+        end)
 
-        local width = math.max(row1Width, row2Width, textMaxWidth)
-        local iconHeight
-        if rowCount == 0 then
-            iconHeight = 0  -- No icons, no extra height needed
-        elseif rowCount == 2 then
-            iconHeight = (iconSize * 2 + 24 + 18)  -- +18 for materials label
+        if #sources > 0 then
+            cursorY = cursorY - sectionGap
+            self.sourcesLabel:Show()
+            self.sourcesLabel:ClearAllPoints()
+            self.sourcesLabel:SetPoint("TOPLEFT", self, "TOPLEFT", xPad, cursorY)
+            self.sourcesCountText:Show()
+            self.sourcesCountText:ClearAllPoints()
+            self.sourcesCountText:SetPoint("TOPRIGHT", self, "TOPRIGHT", -xPad, cursorY)
+            self.sourcesCountText:SetText(tostring(#sources) .. (#sources == 1 and " SOURCE" or " SOURCES"))
+            contentRight = math.max(contentRight,
+                xPad + self.sourcesLabel:GetStringWidth() + 24 + self.sourcesCountText:GetStringWidth())
+            cursorY = cursorY - 18
+
+            local cardH = 44
+            for i, s in ipairs(sources) do
+                local card = self:AcquireSourceCard(i)
+                card:Show()
+                card:ClearAllPoints()
+                card:SetPoint("TOPLEFT", self, "TOPLEFT", xPad, cursorY)
+                card:SetPoint("TOPRIGHT", self, "TOPRIGHT", -xPad, cursorY)
+                card:SetHeight(cardH)
+
+                local hasIcon = (s.item_id and s.item_id > 0)
+                local textX
+                if hasIcon then
+                    local tex = select(10, GetItemInfo(s.item_id)) or "Interface/ICONS/INV_Scroll_03"
+                    card.icon.tex:SetTexture(tex)
+                    card.icon.itemId = s.item_id
+                    card.icon:ClearAllPoints()
+                    card.icon:SetPoint("LEFT", card, "LEFT", 7, 0)
+                    card.icon:Show()
+                    textX = 7 + 32 + 10
+                else
+                    card.icon.itemId = nil
+                    card.icon:Hide()
+                    textX = 10
+                end
+
+                -- Title: recipe item name (quality coloured), else the source type.
+                local titleText
+                if hasIcon then
+                    local nm, _, quality = GetItemInfo(s.item_id)
+                    titleText = nm or "Recipe"
+                    if quality then
+                        local qr, qg, qb = GetItemQualityColor(quality)
+                        card.title:SetTextColor(qr, qg, qb)
+                    else
+                        card.title:SetTextColor(unpack(POPUP.body))
+                    end
+                else
+                    titleText = (s.location and s.location ~= "") and tostring(s.location) or sourceTypeLabel(s)
+                    card.title:SetTextColor(unpack(POPUP.body))
+                end
+                card.title:ClearAllPoints()
+                card.title:SetPoint("TOPLEFT", card, "TOPLEFT", textX, -7)
+                card.title:SetText(titleText)
+                contentRight = math.max(contentRight, xPad + textX + card.title:GetStringWidth() + 8)
+
+                -- Sub line: location . cost . phase (+ quest title) and a faction square.
+                local subSegs = {}
+                if hasIcon and s.location and s.location ~= "" then
+                    subSegs[#subSegs + 1] = tostring(s.location)
+                end
+                if s.cost and tonumber(s.cost) and tonumber(s.cost) > 0 then
+                    local costText = TFG.FormatCost(s.cost)
+                    if costText then subSegs[#subSegs + 1] = costText end
+                end
+                if s.phase and s.phase > 1 then
+                    subSegs[#subSegs + 1] = "|cff77bbffPhase " .. tostring(s.phase) .. "|r"
+                end
+                local subText = table.concat(subSegs, "  |cff808080" .. MIDDOT .. "|r  ")
+                if s.type == "Quest" then
+                    local qt = resolveQuestTitle(s)
+                    if qt then
+                        subText = (subText ~= "" and (subText .. "  |cff808080" .. MIDDOT .. "|r  ") or "")
+                            .. "|cffffd200" .. qt .. "|r"
+                    end
+                end
+
+                local showSquare = (s.faction ~= nil)
+                local subX = textX + (showSquare and 12 or 0)
+                if showSquare then
+                    card.square:ClearAllPoints()
+                    card.square:SetPoint("LEFT", card, "TOPLEFT", textX, -27)
+                    if s.faction == playerFaction then
+                        card.square:SetColorTexture(unpack(POPUP.mineSquare))
+                    else
+                        card.square:SetColorTexture(unpack(POPUP.altSquare))
+                    end
+                    card.square:Show()
+                else
+                    card.square:Hide()
+                end
+
+                card.sub:ClearAllPoints()
+                card.sub:SetPoint("TOPLEFT", card, "TOPLEFT", subX, -23)
+                card.sub:SetText(subText)
+                if subText ~= "" then
+                    contentRight = math.max(contentRight, xPad + subX + card.sub:GetStringWidth() + 8)
+                end
+
+                cursorY = cursorY - cardH - 6
+            end
         else
-            iconHeight = (iconSize + 16)
+            self.sourcesLabel:Hide()
+            self.sourcesCountText:Hide()
         end
-        local bottomPadding = 10  -- Match top padding
-        local height = textHeight + iconHeight + bottomPadding
-        if width < 150 then width = 150 end  -- Ensure minimum width
+
+        local width = math.max(contentRight + xPad, 260)
+        local height = -cursorY + 12
 
         self:SetSize(width, height)
         self:Show()
@@ -2046,8 +2263,7 @@ function frame:Relayout()
                     local hasProduct = (productItemId and productItemId > 0)
                     local hasMaterials = (spell and spell.materials
                         and type(spell.materials) == "table" and #spell.materials > 0)
-                    local hasSourceInfo = (spell and spell.source
-                        and (spell.source.cost or spell.source.type))
+                    local hasSourceInfo = (#TFG.GetSources(spell) > 0)
                     local wouldShowPopup = hasRecipeItem or hasProduct or hasMaterials or hasSourceInfo
 
                     -- Show the clickable indicator only if popup would appear
@@ -2329,38 +2545,10 @@ function frame:Relayout()
                                 GameTooltip:AddLine(" ")
                                 GameTooltip:AddLine(table.concat(parts, "  "))
 
-                                -- Show source information if available
-                                if data.source then
-                                    -- Determine source type
-                                    local sourceType = "Recipe"
-                                    if data.source.type == "Trainer" then
-                                        sourceType = "Trainer"
-                                    elseif data.source.type == "Item" then
-                                        if data.source.cost ~= nil and tonumber(data.source.cost) and tonumber(data.source.cost) > 0 then
-                                            sourceType = "Vendor Recipe"
-                                        else
-                                            sourceType = "Recipe"
-                                        end
-                                    elseif data.source.type == "Quest" then
-                                        sourceType = "Quest Reward"
-                                    elseif data.source.type == "Discovery" then
-                                        sourceType = "Profession Discovery"
-                                    end
-
-                                    -- Format source line with type and cost
-                                    local sourceLine = "Source: " .. sourceType
-                                    if data.source.cost and tonumber(data.source.cost) and tonumber(data.source.cost) > 0 then
-                                        local costText = TFG.FormatCost(data.source.cost)
-                                        if costText then
-                                            sourceLine = sourceLine .. " " .. costText
-                                        end
-                                    end
-                                    GameTooltip:AddLine(sourceLine, 0.8, 0.8, 0.8)
-
-                                    -- Show location line if available
-                                    if data.source.location and tostring(data.source.location) ~= "" then
-                                        GameTooltip:AddLine("Location: " .. tostring(data.source.location), 0.8, 0.8, 0.8)
-                                    end
+                                -- Show one line per source (type, location, cost,
+                                -- phase, faction).
+                                for _, s in ipairs(TFG.GetSources(data)) do
+                                    GameTooltip:AddLine("Source: " .. buildSourceLine(s), 0.8, 0.8, 0.8)
                                 end
 
                                 if wouldShowPopup then
