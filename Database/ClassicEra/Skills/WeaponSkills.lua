@@ -7,8 +7,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Two-Handed Maces",
             icon = "inv_mace_04",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -16,8 +18,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "One-Handed Maces",
             icon = "inv_mace_01",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -25,8 +29,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Fist Weapons",
             icon = "inv_gauntlets_04",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -34,8 +40,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Staves",
             icon = "inv_staff_08",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -43,8 +51,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Daggers",
             icon = "ability_steelmelee",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         }
     },
@@ -54,8 +64,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Dual Wield",
             icon = "ability_dualwield",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -63,8 +75,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Polearms",
             icon = "inv_spear_06",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -72,8 +86,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Two-Handed Axes",
             icon = "inv_axe_04",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -81,8 +97,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Fist Weapons",
             icon = "inv_gauntlets_04",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -90,8 +108,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Two-Handed Swords",
             icon = "ability_meleedamage",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -99,8 +119,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "One-Handed Axes",
             icon = "inv_axe_01",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -108,8 +130,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Bows",
             icon = "inv_weapon_bow_05",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -117,8 +141,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Thrown",
             icon = "inv_throwingknife_02",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -126,8 +152,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Staves",
             icon = "inv_staff_08",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -135,8 +163,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "One-Handed Swords",
             icon = "ability_meleedamage",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -144,8 +174,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Guns",
             icon = "inv_weapon_rifle_01",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -153,8 +185,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Crossbows",
             icon = "inv_weapon_crossbow_01",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -162,8 +196,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Parry",
             icon = "ability_parry",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -171,8 +207,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Daggers",
             icon = "ability_steelmelee",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -180,8 +218,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Throw",
             icon = "ability_throw",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
     },
@@ -191,8 +231,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Staves",
             icon = "inv_staff_08",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -200,8 +242,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "One-Handed Swords",
             icon = "ability_meleedamage",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -209,8 +253,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Daggers",
             icon = "ability_steelmelee",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -218,8 +264,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Wands",
             icon = "ability_shootwand",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
     },
@@ -229,8 +277,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Polearms",
             icon = "inv_spear_06",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -238,8 +288,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Two-Handed Maces",
             icon = "inv_mace_04",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -247,8 +299,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Two-Handed Axes",
             icon = "inv_axe_04",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -256,8 +310,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "One-Handed Maces",
             icon = "inv_mace_01",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -265,8 +321,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Two-Handed Swords",
             icon = "ability_meleedamage",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -274,8 +332,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "One-Handed Axes",
             icon = "inv_axe_01",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -283,8 +343,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "One-Handed Swords",
             icon = "ability_meleedamage",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -292,8 +354,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Block",
             icon = "ability_defend",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -301,8 +365,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Parry",
             icon = "ability_parry",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
     },
@@ -312,8 +378,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "One-Handed Maces",
             icon = "inv_mace_01",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -321,8 +389,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Staves",
             icon = "inv_staff_08",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -330,8 +400,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Daggers",
             icon = "ability_steelmelee",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -339,8 +411,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Wands",
             icon = "ability_shootwand",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
     },
@@ -350,8 +424,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Dual Wield",
             icon = "ability_dualwield",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -359,8 +435,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "One-Handed Maces",
             icon = "inv_mace_01",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -368,8 +446,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Fist Weapons",
             icon = "inv_gauntlets_04",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -377,8 +457,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Bows",
             icon = "inv_weapon_bow_05",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -386,8 +468,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Thrown",
             icon = "inv_throwingknife_02",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -395,8 +479,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "One-Handed Swords",
             icon = "ability_meleedamage",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -404,8 +490,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Guns",
             icon = "inv_weapon_rifle_01",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -413,8 +501,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Crossbows",
             icon = "inv_weapon_crossbow_01",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -422,8 +512,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Parry",
             icon = "ability_parry",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -431,8 +523,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Daggers",
             icon = "ability_steelmelee",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -440,8 +534,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Throw",
             icon = "ability_throw",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
     },
@@ -451,8 +547,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Dual Wield",
             icon = "ability_dualwield",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -460,8 +558,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Two-Handed Maces",
             icon = "inv_mace_04",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -469,8 +569,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Two-Handed Axes",
             icon = "inv_axe_04",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -478,8 +580,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "One-Handed Maces",
             icon = "inv_mace_01",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -487,8 +591,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Fist Weapons",
             icon = "inv_gauntlets_04",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -496,8 +602,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "One-Handed Axes",
             icon = "inv_axe_01",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -505,8 +613,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Staves",
             icon = "inv_staff_08",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -514,8 +624,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Block",
             icon = "ability_defend",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -523,8 +635,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Daggers",
             icon = "ability_steelmelee",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
     },
@@ -534,8 +648,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Staves",
             icon = "inv_staff_08",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -543,8 +659,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "One-Handed Swords",
             icon = "ability_meleedamage",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -552,8 +670,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Daggers",
             icon = "ability_steelmelee",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -561,8 +681,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Wands",
             icon = "ability_shootwand",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
     },
@@ -572,8 +694,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Dual Wield",
             icon = "ability_dualwield",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -581,8 +705,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Polearms",
             icon = "inv_spear_06",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -590,8 +716,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Two-Handed Maces",
             icon = "inv_mace_04",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -599,8 +727,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Two-Handed Axes",
             icon = "inv_axe_04",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -608,8 +738,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "One-Handed Maces",
             icon = "inv_mace_01",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -617,8 +749,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Fist Weapons",
             icon = "inv_gauntlets_04",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -626,8 +760,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Two-Handed Swords",
             icon = "ability_meleedamage",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -635,8 +771,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "One-Handed Axes",
             icon = "inv_axe_01",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -644,8 +782,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Bows",
             icon = "inv_weapon_bow_05",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -653,8 +793,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Thrown",
             icon = "inv_throwingknife_02",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -662,8 +804,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Staves",
             icon = "inv_staff_08",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -671,8 +815,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "One-Handed Swords",
             icon = "ability_meleedamage",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -680,8 +826,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Block",
             icon = "ability_defend",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -689,8 +837,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Guns",
             icon = "inv_weapon_rifle_01",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -698,8 +848,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Crossbows",
             icon = "inv_weapon_crossbow_01",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -707,8 +859,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Parry",
             icon = "ability_parry",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -716,8 +870,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Daggers",
             icon = "ability_steelmelee",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         },
         {
@@ -725,8 +881,10 @@ TFG.WEAPON_SKILLS_CLASSIC_ERA = {
             name = "Throw",
             icon = "ability_throw",
             source = {
-                type = "Trainer",
-                cost = 1000,
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
             },
         }
     }

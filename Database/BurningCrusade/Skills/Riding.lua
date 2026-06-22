@@ -8,8 +8,10 @@ TFG.RIDING_BURNING_CRUSADE = {
             rank = 1,
             icon = "spell_nature_swiftness",
             source = {
-                type = "trainer",
-                cost = 350000,
+                {
+                    type = "Trainer",
+                    cost = 350000,
+                },
             },
         }
     },
@@ -20,8 +22,10 @@ TFG.RIDING_BURNING_CRUSADE = {
             rank = 2,
             icon = "spell_nature_swiftness",
             source = {
-                type = "trainer",
-                cost = 6000000,
+                {
+                    type = "Trainer",
+                    cost = 6000000,
+                },
             },
         }
     },
@@ -32,8 +36,10 @@ TFG.RIDING_BURNING_CRUSADE = {
             rank = 3,
             icon = "spell_nature_swiftness",
             source = {
-                type = "trainer",
-                cost = 8000000,
+                {
+                    type = "Trainer",
+                    cost = 8000000,
+                },
             },
         },
         {
@@ -42,8 +48,10 @@ TFG.RIDING_BURNING_CRUSADE = {
             rank = 4,
             icon = "spell_nature_swiftness",
             source = {
-                type = "trainer",
-                cost = 50000000,
+                {
+                    type = "Trainer",
+                    cost = 50000000,
+                },
             },
         }
     }
