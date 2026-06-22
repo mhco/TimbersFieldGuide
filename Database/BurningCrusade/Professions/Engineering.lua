@@ -3432,8 +3432,9 @@ TFG.ENGINEERING_BURNING_CRUSADE = {
             icon = "inv_potion_167",
             source = {
                 {
-                    type = "Item",
+                    type = "Drop",
                     item_id = 23883,
+                    location = "Trash Drop, Multiple Dungeons and Raids",
                 },
                 {
                     type = "Drop",

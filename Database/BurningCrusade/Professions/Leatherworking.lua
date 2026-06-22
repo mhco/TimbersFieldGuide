@@ -6163,8 +6163,9 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             icon = "inv_gauntlets_15",
             source = {
                 {
-                    type = "Item",
+                    type = "Drop",
                     item_id = 29724,
+                    location = "Trash Drop, Multiple Dungeons and Raids",
                 },
                 {
                     type = "Drop",
@@ -6228,8 +6229,9 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             icon = "inv_gauntlets_25",
             source = {
                 {
-                    type = "Item",
+                    type = "Drop",
                     item_id = 29727,
+                    location = "Trash Drop, Multiple Dungeons and Raids",
                 },
                 {
                     type = "Drop",
@@ -6313,8 +6315,9 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             icon = "inv_gauntlets_10",
             source = {
                 {
-                    type = "Item",
+                    type = "Drop",
                     item_id = 29731,
+                    location = "Trash Drop, Multiple Dungeons and Raids",
                 },
                 {
                     type = "Drop",
@@ -6359,8 +6362,9 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
             icon = "inv_gauntlets_05",
             source = {
                 {
-                    type = "Item",
+                    type = "Drop",
                     item_id = 29733,
+                    location = "Trash Drop, Multiple Dungeons and Raids",
                 },
                 {
                     type = "Drop",

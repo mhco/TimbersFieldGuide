@@ -2886,8 +2886,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             icon = "inv_potion_108",
             source = {
                 {
-                    type = "Item",
+                    type = "Drop",
                     item_id = 22913,
+                    location = "Trash Drop, Multiple Dungeons and Raids",
                 },
                 {
                     type = "Drop",
@@ -3222,8 +3223,9 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
             icon = "inv_potion_136",
             source = {
                 {
-                    type = "Item",
+                    type = "Drop",
                     item_id = 22926,
+                    location = "Trash Drop, Multiple Dungeons and Raids",
                 },
                 {
                     type = "Drop",

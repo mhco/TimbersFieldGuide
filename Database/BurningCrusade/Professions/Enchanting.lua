@@ -2853,8 +2853,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             icon = "spell_holy_greaterheal",
             source = {
                 {
-                    type = "Item",
+                    type = "Drop",
                     item_id = 22542,
+                    location = "Trash Drop, Multiple Dungeons and Raids",
                 },
                 {
                     type = "Drop",
@@ -3805,9 +3806,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             icon = "spell_holy_greaterheal",
             source = {
                 {
-                    type = "Item",
+                    type = "Drop",
                     item_id = 28279,
-                    location = "Trash Drop, Multiple Dungeons and Raids, or Kael'thas Sunstrider in Magisters' Terrace",
+                    location = "Trash Drop, Multiple Dungeons and Raids",
                 },
                 {
                     type = "Drop",
@@ -3829,9 +3830,9 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
             icon = "spell_holy_greaterheal",
             source = {
                 {
-                    type = "Item",
+                    type = "Drop",
                     item_id = 28280,
-                    location = "Trash Drop, Multiple Dungeons and Raids, or Kael'thas Sunstrider in Magisters' Terrace",
+                    location = "Trash Drop, Multiple Dungeons and Raids",
                 },
                 {
                     type = "Drop",

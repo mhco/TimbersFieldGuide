@@ -5171,7 +5171,7 @@ TFG.TAILORING_BURNING_CRUSADE = {
             icon = "inv_bracer_11",
             source = {
                 {
-                    type = "Item",
+                    type = "Drop",
                     item_id = 24296,
                     location = "Tempest Keep",
                 },
@@ -5723,9 +5723,9 @@ TFG.TAILORING_BURNING_CRUSADE = {
             icon = "inv_belt_03",
             source = {
                 {
-                    type = "Item",
+                    type = "Drop",
                     item_id = 24302,
-                    location = "World Drop or Kael'thas Sunstrider, Magisters' Terrace",
+                    location = "World Drop",
                 },
                 {
                     type = "Drop",

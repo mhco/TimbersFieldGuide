@@ -5283,8 +5283,9 @@ TFG.BLACKSMITHING_BURNING_CRUSADE = {
             icon = "spell_frost_chainsofice",
             source = {
                 {
-                    type = "Item",
+                    type = "Drop",
                     item_id = 33186,
+                    location = "Trash Drop, Multiple Dungeons and Raids",
                 },
                 {
                     type = "Drop",

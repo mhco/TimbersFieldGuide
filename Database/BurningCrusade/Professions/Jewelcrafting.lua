@@ -2377,8 +2377,9 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_livingruby_03",
             source = {
                 {
-                    type = "Item",
+                    type = "Drop",
                     item_id = 24196,
+                    location = "Trash Drop, Multiple Dungeons and Raids",
                 },
                 {
                     type = "Drop",
@@ -2400,8 +2401,9 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_livingruby_03",
             source = {
                 {
-                    type = "Item",
+                    type = "Drop",
                     item_id = 24192,
+                    location = "Trash Drop, Multiple Dungeons and Raids",
                 },
                 {
                     type = "Drop",
@@ -2550,8 +2552,9 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
             icon = "inv_jewelcrafting_dawnstone_03",
             source = {
                 {
-                    type = "Item",
+                    type = "Drop",
                     item_id = 24205,
+                    location = "Trash Drop, Multiple Dungeons and Raids",
                 },
                 {
                     type = "Drop",
