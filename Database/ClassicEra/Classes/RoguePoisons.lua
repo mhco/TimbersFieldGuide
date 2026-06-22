@@ -5,24 +5,26 @@ TFG.ROGUE_POISONS_CLASSIC_ERA = {
         {
             spell_id = 2842,
             name = "Poisons",
-            rank = "1",
+            rank = 1,
             icon = "trade_brewpoison",
         },
         {
             spell_id = 3420,
             name = "Crippling Poison",
-            rank = "1",
+            rank = 1,
             icon = "ability_poisonsting",
             categories = { "Poisons", "Crippling Poison" },
             source = {
-                type = "Trainer",
-                cost = 3000,
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
             },
         },
         {
             spell_id = 8681,
             name = "Instant Poison",
-            rank = "1",
+            rank = 1,
             icon = "ability_poisons",
             categories = { "Poisons", "Instant Poison" },
         },
@@ -31,12 +33,14 @@ TFG.ROGUE_POISONS_CLASSIC_ERA = {
         {
             spell_id = 5763,
             name = "Mind-numbing Poison",
-            rank = "1",
+            rank = 1,
             icon = "spell_nature_nullifydisease",
             categories = { "Poisons", "Mind-numbing Poison" },
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
         },
     },
@@ -44,12 +48,14 @@ TFG.ROGUE_POISONS_CLASSIC_ERA = {
         {
             spell_id = 8687,
             name = "Instant Poison II",
-            rank = "2",
+            rank = 2,
             icon = "ability_poisons",
             categories = { "Poisons", "Instant Poison" },
             source = {
-                type = "Trainer",
-                cost = 8000,
+                {
+                    type = "Trainer",
+                    cost = 8000,
+                },
             },
         },
     },
@@ -57,12 +63,14 @@ TFG.ROGUE_POISONS_CLASSIC_ERA = {
         {
             spell_id = 2835,
             name = "Deadly Poison",
-            rank = "1",
+            rank = 1,
             icon = "ability_rogue_dualweild",
             categories = { "Poisons", "Deadly Poison" },
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
         },
     },
@@ -70,12 +78,14 @@ TFG.ROGUE_POISONS_CLASSIC_ERA = {
         {
             spell_id = 13220,
             name = "Wound Poison",
-            rank = "1",
+            rank = 1,
             icon = "ability_poisonsting",
             categories = { "Poisons", "Wound Poison" },
             source = {
-                type = "Trainer",
-                cost = 12000,
+                {
+                    type = "Trainer",
+                    cost = 12000,
+                },
             },
         },
     },
@@ -83,12 +93,14 @@ TFG.ROGUE_POISONS_CLASSIC_ERA = {
         {
             spell_id = 6510,
             name = "Blinding Powder",
-            rank = "1",
+            rank = 1,
             icon = "inv_misc_ammo_gunpowder_01",
             categories = { "Poisons", "Other" },
             source = {
-                type = "Trainer",
-                cost = 14000,
+                {
+                    type = "Trainer",
+                    cost = 14000,
+                },
             },
         },
     },
@@ -96,12 +108,14 @@ TFG.ROGUE_POISONS_CLASSIC_ERA = {
         {
             spell_id = 8691,
             name = "Instant Poison III",
-            rank = "3",
+            rank = 3,
             icon = "ability_poisons",
             categories = { "Poisons", "Instant Poison" },
             source = {
-                type = "Trainer",
-                cost = 16000,
+                {
+                    type = "Trainer",
+                    cost = 16000,
+                },
             },
         },
     },
@@ -109,23 +123,27 @@ TFG.ROGUE_POISONS_CLASSIC_ERA = {
         {
             spell_id = 8694,
             name = "Mind-numbing Poison II",
-            rank = "2",
+            rank = 2,
             icon = "spell_nature_nullifydisease",
             categories = { "Poisons", "Mind-numbing Poison" },
             source = {
-                type = "Trainer",
-                cost = 18000,
+                {
+                    type = "Trainer",
+                    cost = 18000,
+                },
             },
         },
         {
             spell_id = 2837,
             name = "Deadly Poison II",
-            rank = "2",
+            rank = 2,
             icon = "ability_rogue_dualweild",
             categories = { "Poisons", "Deadly Poison" },
             source = {
-                type = "Trainer",
-                cost = 18000,
+                {
+                    type = "Trainer",
+                    cost = 18000,
+                },
             },
         },
     },
@@ -133,12 +151,14 @@ TFG.ROGUE_POISONS_CLASSIC_ERA = {
         {
             spell_id = 13228,
             name = "Wound Poison II",
-            rank = "2",
+            rank = 2,
             icon = "ability_poisonsting",
             categories = { "Poisons", "Wound Poison" },
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
         },
     },
@@ -146,12 +166,14 @@ TFG.ROGUE_POISONS_CLASSIC_ERA = {
         {
             spell_id = 11341,
             name = "Instant Poison IV",
-            rank = "4",
+            rank = 4,
             icon = "ability_poisons",
             categories = { "Poisons", "Instant Poison" },
             source = {
-                type = "Trainer",
-                cost = 29000,
+                {
+                    type = "Trainer",
+                    cost = 29000,
+                },
             },
         },
     },
@@ -159,12 +181,14 @@ TFG.ROGUE_POISONS_CLASSIC_ERA = {
         {
             spell_id = 11357,
             name = "Deadly Poison III",
-            rank = "3",
+            rank = 3,
             icon = "ability_rogue_dualweild",
             categories = { "Poisons", "Deadly Poison" },
             source = {
-                type = "Trainer",
-                cost = 31000,
+                {
+                    type = "Trainer",
+                    cost = 31000,
+                },
             },
         },
     },
@@ -172,12 +196,14 @@ TFG.ROGUE_POISONS_CLASSIC_ERA = {
         {
             spell_id = 13229,
             name = "Wound Poison III",
-            rank = "3",
+            rank = 3,
             icon = "ability_poisonsting",
             categories = { "Poisons", "Wound Poison" },
             source = {
-                type = "Trainer",
-                cost = 33000,
+                {
+                    type = "Trainer",
+                    cost = 33000,
+                },
             },
         },
     },
@@ -185,12 +211,14 @@ TFG.ROGUE_POISONS_CLASSIC_ERA = {
         {
             spell_id = 3421,
             name = "Crippling Poison II",
-            rank = "2",
+            rank = 2,
             icon = "inv_potion_19",
             categories = { "Poisons", "Crippling Poison" },
             source = {
-                type = "Trainer",
-                cost = 35000,
+                {
+                    type = "Trainer",
+                    cost = 35000,
+                },
             },
         },
     },
@@ -198,23 +226,27 @@ TFG.ROGUE_POISONS_CLASSIC_ERA = {
         {
             spell_id = 11400,
             name = "Mind-numbing Poison III",
-            rank = "3",
+            rank = 3,
             icon = "spell_nature_nullifydisease",
             categories = { "Poisons", "Mind-numbing Poison" },
             source = {
-                type = "Trainer",
-                cost = 46000,
+                {
+                    type = "Trainer",
+                    cost = 46000,
+                },
             },
         },
         {
             spell_id = 11342,
             name = "Instant Poison V",
-            rank = "5",
+            rank = 5,
             icon = "ability_poisons",
             categories = { "Poisons", "Instant Poison" },
             source = {
-                type = "Trainer",
-                cost = 46000,
+                {
+                    type = "Trainer",
+                    cost = 46000,
+                },
             },
         },
     },
@@ -222,12 +254,14 @@ TFG.ROGUE_POISONS_CLASSIC_ERA = {
         {
             spell_id = 11358,
             name = "Deadly Poison IV",
-            rank = "4",
+            rank = 4,
             icon = "ability_rogue_dualweild",
             categories = { "Poisons", "Deadly Poison" },
             source = {
-                type = "Trainer",
-                cost = 48000,
+                {
+                    type = "Trainer",
+                    cost = 48000,
+                },
             },
         },
     },
@@ -235,12 +269,14 @@ TFG.ROGUE_POISONS_CLASSIC_ERA = {
         {
             spell_id = 13230,
             name = "Wound Poison IV",
-            rank = "4",
+            rank = 4,
             icon = "ability_poisonsting",
             categories = { "Poisons", "Wound Poison" },
             source = {
-                type = "Trainer",
-                cost = 50000,
+                {
+                    type = "Trainer",
+                    cost = 50000,
+                },
             },
         },
     },
@@ -248,12 +284,14 @@ TFG.ROGUE_POISONS_CLASSIC_ERA = {
         {
             spell_id = 11343,
             name = "Instant Poison VI",
-            rank = "6",
+            rank = 6,
             icon = "ability_poisons",
             categories = { "Poisons", "Instant Poison" },
             source = {
-                type = "Trainer",
-                cost = 54000,
+                {
+                    type = "Trainer",
+                    cost = 54000,
+                },
             },
         },
         {
@@ -263,9 +301,11 @@ TFG.ROGUE_POISONS_CLASSIC_ERA = {
             icon = "ability_rogue_dualweild",
             categories = { "Poisons", "Deadly Poison" },
             source = {
-                type = "Item",
-                recipe_item_ids = { 21302 },
-                location = "Boss Drop, AQ20",
+                {
+                    type = "Item",
+                    item_id = 21302,
+                    location = "Boss Drop, AQ20",
+                },
             },
             phase = 4,
         },

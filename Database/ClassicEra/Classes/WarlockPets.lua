@@ -18,8 +18,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_bloodboil",
             categories = { "Pets", "Imp" },
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
         },
     },
@@ -31,8 +33,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_fire_firebolt",
             categories = { "Pets", "Imp" },
             source = {
-                type = "Trainer",
-                cost = 100,
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
             },
         },
     },
@@ -53,8 +57,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_impphaseshift",
             categories = { "Pets", "Imp" },
             source = {
-                type = "Trainer",
-                cost = 600,
+                {
+                    type = "Trainer",
+                    cost = 600,
+                },
             },
         },
     },
@@ -66,8 +72,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_bloodboil",
             categories = { "Pets", "Imp" },
             source = {
-                type = "Trainer",
-                cost = 900,
+                {
+                    type = "Trainer",
+                    cost = 900,
+                },
             },
         },
         {
@@ -77,8 +85,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_fire_firearmor",
             categories = { "Pets", "Imp" },
             source = {
-                type = "Trainer",
-                cost = 900,
+                {
+                    type = "Trainer",
+                    cost = 900,
+                },
             },
         },
     },
@@ -90,8 +100,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_sacrificialshield",
             categories = { "Pets", "Voidwalker" },
             source = {
-                type = "Trainer",
-                cost = 1200,
+                {
+                    type = "Trainer",
+                    cost = 1200,
+                },
             },
         },
     },
@@ -103,8 +115,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_antishadow",
             categories = { "Pets", "Voidwalker" },
             source = {
-                type = "Trainer",
-                cost = 1500,
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
             },
         },
         {
@@ -114,8 +128,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_fire_firebolt",
             categories = { "Pets", "Imp" },
             source = {
-                type = "Trainer",
-                cost = 1500,
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
             },
         },
     },
@@ -127,8 +143,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_gathershadows",
             categories = { "Pets", "Voidwalker" },
             source = {
-                type = "Trainer",
-                cost = 2000,
+                {
+                    type = "Trainer",
+                    cost = 2000,
+                },
             },
         },
         {
@@ -147,8 +165,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_soothingkiss",
             categories = { "Pets", "Succubus & Incubus" },
             source = {
-                type = "Trainer",
-                cost = 2500,
+                {
+                    type = "Trainer",
+                    cost = 2500,
+                },
             },
         },
     },
@@ -160,8 +180,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_fire_firearmor",
             categories = { "Pets", "Imp" },
             source = {
-                type = "Trainer",
-                cost = 3000,
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
             },
         },
         {
@@ -171,8 +193,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_sacrificialshield",
             categories = { "Pets", "Voidwalker" },
             source = {
-                type = "Trainer",
-                cost = 3000,
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
             },
         },
         {
@@ -182,8 +206,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_blackplague",
             categories = { "Pets", "Voidwalker" },
             source = {
-                type = "Trainer",
-                cost = 3000,
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
             },
         },
     },
@@ -195,8 +221,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_bloodboil",
             categories = { "Pets", "Imp" },
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
         },
         {
@@ -206,8 +234,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_antishadow",
             categories = { "Pets", "Voidwalker" },
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
         },
         {
@@ -217,8 +247,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_mindsteal",
             categories = { "Pets", "Succubus & Incubus" },
             source = {
-                type = "Trainer",
-                cost = 4000,
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
             },
         },
     },
@@ -230,8 +262,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_fire_firebolt",
             categories = { "Pets", "Imp" },
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
         },
         {
@@ -241,8 +275,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_curse",
             categories = { "Pets", "Succubus & Incubus" },
             source = {
-                type = "Trainer",
-                cost = 5000,
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
             },
         },
     },
@@ -261,8 +297,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_gathershadows",
             categories = { "Pets", "Voidwalker" },
             source = {
-                type = "Trainer",
-                cost = 6000,
+                {
+                    type = "Trainer",
+                    cost = 6000,
+                },
             },
         },
     },
@@ -274,8 +312,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_magic_lesserinvisibilty",
             categories = { "Pets", "Succubus & Incubus" },
             source = {
-                type = "Trainer",
-                cost = 7000,
+                {
+                    type = "Trainer",
+                    cost = 7000,
+                },
             },
         },
         {
@@ -285,8 +325,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_sacrificialshield",
             categories = { "Pets", "Voidwalker" },
             source = {
-                type = "Trainer",
-                cost = 7000,
+                {
+                    type = "Trainer",
+                    cost = 7000,
+                },
             },
         },
         {
@@ -296,8 +338,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_lifedrain",
             categories = { "Pets", "Felhunter" },
             source = {
-                type = "Trainer",
-                cost = 7000,
+                {
+                    type = "Trainer",
+                    cost = 7000,
+                },
             },
         },
     },
@@ -309,8 +353,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_antishadow",
             categories = { "Pets", "Voidwalker" },
             source = {
-                type = "Trainer",
-                cost = 8000,
+                {
+                    type = "Trainer",
+                    cost = 8000,
+                },
             },
         },
         {
@@ -320,8 +366,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_fire_firearmor",
             categories = { "Pets", "Imp" },
             source = {
-                type = "Trainer",
-                cost = 8000,
+                {
+                    type = "Trainer",
+                    cost = 8000,
+                },
             },
         },
         {
@@ -331,8 +379,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_soothingkiss",
             categories = { "Pets", "Succubus & Incubus" },
             source = {
-                type = "Trainer",
-                cost = 8000,
+                {
+                    type = "Trainer",
+                    cost = 8000,
+                },
             },
         },
     },
@@ -344,8 +394,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_curse",
             categories = { "Pets", "Succubus & Incubus" },
             source = {
-                type = "Trainer",
-                cost = 9000,
+                {
+                    type = "Trainer",
+                    cost = 9000,
+                },
             },
         },
         {
@@ -355,8 +407,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_mindrot",
             categories = { "Pets", "Felhunter" },
             source = {
-                type = "Trainer",
-                cost = 9000,
+                {
+                    type = "Trainer",
+                    cost = 9000,
+                },
             },
         },
         {
@@ -366,8 +420,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_blackplague",
             categories = { "Pets", "Voidwalker" },
             source = {
-                type = "Trainer",
-                cost = 9000,
+                {
+                    type = "Trainer",
+                    cost = 9000,
+                },
             },
         },
     },
@@ -379,8 +435,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_bloodboil",
             categories = { "Pets", "Imp" },
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
         },
         {
@@ -390,8 +448,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_nature_purge",
             categories = { "Pets", "Felhunter" },
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
         },
         {
@@ -401,8 +461,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_fire_firebolt",
             categories = { "Pets", "Imp" },
             source = {
-                type = "Trainer",
-                cost = 10000,
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
             },
         },
     },
@@ -414,8 +476,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_sacrificialshield",
             categories = { "Pets", "Voidwalker" },
             source = {
-                type = "Trainer",
-                cost = 11000,
+                {
+                    type = "Trainer",
+                    cost = 11000,
+                },
             },
         },
         {
@@ -425,8 +489,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_lifedrain",
             categories = { "Pets", "Felhunter" },
             source = {
-                type = "Trainer",
-                cost = 11000,
+                {
+                    type = "Trainer",
+                    cost = 11000,
+                },
             },
         },
         {
@@ -436,8 +502,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_gathershadows",
             categories = { "Pets", "Voidwalker" },
             source = {
-                type = "Trainer",
-                cost = 11000,
+                {
+                    type = "Trainer",
+                    cost = 11000,
+                },
             },
         },
     },
@@ -449,8 +517,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_antishadow",
             categories = { "Pets", "Voidwalker" },
             source = {
-                type = "Trainer",
-                cost = 11000,
+                {
+                    type = "Trainer",
+                    cost = 11000,
+                },
             },
         },
         {
@@ -460,8 +530,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_auraofdarkness",
             categories = { "Pets", "Felhunter" },
             source = {
-                type = "Trainer",
-                cost = 11000,
+                {
+                    type = "Trainer",
+                    cost = 11000,
+                },
             },
         },
     },
@@ -473,8 +545,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_fire_firearmor",
             categories = { "Pets", "Imp" },
             source = {
-                type = "Trainer",
-                cost = 12000,
+                {
+                    type = "Trainer",
+                    cost = 12000,
+                },
             },
         },
         {
@@ -484,8 +558,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_curse",
             categories = { "Pets", "Succubus & Incubus" },
             source = {
-                type = "Trainer",
-                cost = 12000,
+                {
+                    type = "Trainer",
+                    cost = 12000,
+                },
             },
         },
     },
@@ -497,8 +573,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_nature_purge",
             categories = { "Pets", "Felhunter" },
             source = {
-                type = "Trainer",
-                cost = 13000,
+                {
+                    type = "Trainer",
+                    cost = 13000,
+                },
             },
         },
         {
@@ -508,8 +586,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_soothingkiss",
             categories = { "Pets", "Succubus & Incubus" },
             source = {
-                type = "Trainer",
-                cost = 13000,
+                {
+                    type = "Trainer",
+                    cost = 13000,
+                },
             },
         },
     },
@@ -521,8 +601,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_fire_firebolt",
             categories = { "Pets", "Imp" },
             source = {
-                type = "Trainer",
-                cost = 14000,
+                {
+                    type = "Trainer",
+                    cost = 14000,
+                },
             },
         },
         {
@@ -532,8 +614,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_sacrificialshield",
             categories = { "Pets", "Voidwalker" },
             source = {
-                type = "Trainer",
-                cost = 14000,
+                {
+                    type = "Trainer",
+                    cost = 14000,
+                },
             },
         },
         {
@@ -543,8 +627,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_blackplague",
             categories = { "Pets", "Voidwalker" },
             source = {
-                type = "Trainer",
-                cost = 14000,
+                {
+                    type = "Trainer",
+                    cost = 14000,
+                },
             },
         },
         {
@@ -554,8 +640,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_lifedrain",
             categories = { "Pets", "Felhunter" },
             source = {
-                type = "Trainer",
-                cost = 14000,
+                {
+                    type = "Trainer",
+                    cost = 14000,
+                },
             },
         },
     },
@@ -567,8 +655,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_bloodboil",
             categories = { "Pets", "Imp" },
             source = {
-                type = "Trainer",
-                cost = 15000,
+                {
+                    type = "Trainer",
+                    cost = 15000,
+                },
             },
         },
         {
@@ -578,8 +668,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_antishadow",
             categories = { "Pets", "Voidwalker" },
             source = {
-                type = "Trainer",
-                cost = 15000,
+                {
+                    type = "Trainer",
+                    cost = 15000,
+                },
             },
         },
         {
@@ -589,8 +681,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_gathershadows",
             categories = { "Pets", "Voidwalker" },
             source = {
-                type = "Trainer",
-                cost = 15000,
+                {
+                    type = "Trainer",
+                    cost = 15000,
+                },
             },
         },
     },
@@ -602,8 +696,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_curse",
             categories = { "Pets", "Succubus & Incubus" },
             source = {
-                type = "Trainer",
-                cost = 18000,
+                {
+                    type = "Trainer",
+                    cost = 18000,
+                },
             },
         },
         {
@@ -613,8 +709,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_mindrot",
             categories = { "Pets", "Felhunter" },
             source = {
-                type = "Trainer",
-                cost = 18000,
+                {
+                    type = "Trainer",
+                    cost = 18000,
+                },
             },
         },
     },
@@ -626,8 +724,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_nature_purge",
             categories = { "Pets", "Felhunter" },
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
         },
         {
@@ -637,8 +737,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_fire_firearmor",
             categories = { "Pets", "Imp" },
             source = {
-                type = "Trainer",
-                cost = 20000,
+                {
+                    type = "Trainer",
+                    cost = 20000,
+                },
             },
         },
     },
@@ -650,8 +752,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_sacrificialshield",
             categories = { "Pets", "Voidwalker" },
             source = {
-                type = "Trainer",
-                cost = 22000,
+                {
+                    type = "Trainer",
+                    cost = 22000,
+                },
             },
         },
         {
@@ -661,8 +765,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_lifedrain",
             categories = { "Pets", "Felhunter" },
             source = {
-                type = "Trainer",
-                cost = 22000,
+                {
+                    type = "Trainer",
+                    cost = 22000,
+                },
             },
         },
     },
@@ -674,8 +780,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_antishadow",
             categories = { "Pets", "Voidwalker" },
             source = {
-                type = "Trainer",
-                cost = 24000,
+                {
+                    type = "Trainer",
+                    cost = 24000,
+                },
             },
         },
         {
@@ -685,8 +793,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_fire_firebolt",
             categories = { "Pets", "Imp" },
             source = {
-                type = "Trainer",
-                cost = 24000,
+                {
+                    type = "Trainer",
+                    cost = 24000,
+                },
             },
         },
         {
@@ -696,8 +806,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_soothingkiss",
             categories = { "Pets", "Succubus & Incubus" },
             source = {
-                type = "Trainer",
-                cost = 24000,
+                {
+                    type = "Trainer",
+                    cost = 24000,
+                },
             },
         },
     },
@@ -709,8 +821,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_curse",
             categories = { "Pets", "Succubus & Incubus" },
             source = {
-                type = "Trainer",
-                cost = 26000,
+                {
+                    type = "Trainer",
+                    cost = 26000,
+                },
             },
         },
         {
@@ -720,8 +834,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_blackplague",
             categories = { "Pets", "Voidwalker" },
             source = {
-                type = "Trainer",
-                cost = 26000,
+                {
+                    type = "Trainer",
+                    cost = 26000,
+                },
             },
         },
         {
@@ -731,8 +847,10 @@ TFG.WARLOCK_PETS_CLASSIC_ERA = {
             icon = "spell_shadow_gathershadows",
             categories = { "Pets", "Voidwalker" },
             source = {
-                type = "Trainer",
-                cost = 26000,
+                {
+                    type = "Trainer",
+                    cost = 26000,
+                },
             },
         },
     },
