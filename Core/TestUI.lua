@@ -1113,11 +1113,24 @@ local function ensureTestFrame()
             cursorLeft = targetRight - width
         end
 
+        -- A "[checkbox][label]" filter unit (Known / Talent / Other). The check is
+        -- statically anchored to its own label, so only the label is repositioned.
+        -- Hidden units are skipped so the visible controls stay contiguous -- e.g.
+        -- when Show Known is hidden on another class, Talent/Other fill the space
+        -- instead of leaving a gap.
+        local function placeCheckUnit(label, check)
+            if not label:IsShown() then return end
+            local targetRight = cursorLeft - FILTER_GAP
+            label:ClearAllPoints()
+            label:SetPoint("RIGHT", searchInput, "LEFT", targetRight - searchLeft, 0)
+            cursorLeft = targetRight - label:GetWidth() - 4 - check:GetWidth()
+        end
+
         if phaseShown then placeDropdown(phaseDropdown) end
         if catShown then placeDropdown(categoryDropdown) end
-
-        knownLabel:ClearAllPoints()
-        knownLabel:SetPoint("RIGHT", searchInput, "LEFT", (cursorLeft - FILTER_GAP) - searchLeft, 0)
+        placeCheckUnit(knownLabel, knownCheck)
+        placeCheckUnit(talentLabel, talentCheck)
+        placeCheckUnit(raceLabel, raceCheck)
     end
 
     -- Update which filter controls are visible + their state to match the engine.
