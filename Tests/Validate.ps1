@@ -74,9 +74,8 @@ Assert-True ($layout -match "renderPool\s*=\s*\{") "Main-list row/icon pooling i
 Assert-True ($layout -match "activeIconCount") "Profession popup icon pooling is missing."
 Assert-True ($layout -match "isIconInsideScrollViewport") "Offscreen icons must not retain mouse interaction."
 Assert-True ($layout -match "tfgPhaseIndicator") "Phased profession icons must display a phase-number indicator."
-Assert-True ($layout -match "fileDropdownExpansion") "The file dropdown must not be reinitialized on every relayout."
-Assert-True ($layout -match "phaseDropdownSignature") "The phase dropdown must not be reinitialized while unchanged."
-Assert-True ($layout -match "categoryDropdownSignature") "The category dropdown must not be reinitialized while unchanged."
+# (Category/Phase dropdown signature guards now live in the navigation shell;
+# they are asserted against TestUI.lua further below.)
 foreach ($eventName in "PLAYER_LEVEL_UP", "SKILL_LINES_CHANGED", "SPELLS_CHANGED", "LEARNED_SPELL_IN_TAB") {
     Assert-True ($layout -match [regex]::Escape($eventName)) "Live refresh event is missing: $eventName"
 }
@@ -141,6 +140,8 @@ Assert-True ($testUI -match 'tab\.activeColor\s*=\s*COLORS\.content') "The activ
 # database registry rather than hardcoded mockup tables.
 Assert-True ($testUI -match 'MountEngineInto') "The new UI must mount the live render engine, not draw placeholder rows."
 Assert-True ($testUI -match 'getPlayerProfessions') "Top profession tabs must come from the player's skills, not a hardcoded list."
+Assert-True ($testUI -match 'categoryDropdown\._sig') "The category dropdown must not be reinitialized while its option set is unchanged."
+Assert-True ($testUI -match 'phaseDropdown\._sig') "The phase dropdown must not be reinitialized while its option set is unchanged."
 Assert-True ($testUI -notmatch 'MOCK_QUICK_PROFESSIONS') "Hardcoded mock profession tabs must be removed."
 Assert-True ($testUI -notmatch 'CLASS_SPECIAL_CHILDREN') "Class child pages must come from the registry, not a hardcoded UI table."
 Assert-True ($testUI -notmatch 'RUNES_ICON') "The unconditional Runes child tab must be removed."

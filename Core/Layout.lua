@@ -480,31 +480,6 @@ message2:SetPoint("CENTER", scrollBG, "CENTER", 0, -20)
 --message2:SetText("Please select a different view")
 message2:SetShown(false)
 
--- ========================================================================== 
--- Class selection dropdown
--- ==========================================================================
-local classDropdown = CreateFrame("Frame", "TFG_ClassDropdown", scrollBG, "UIDropDownMenuTemplate")
-UIDropDownMenu_SetWidth(classDropdown, 120)
-classDropdown:SetPoint("TOPRIGHT", scrollBG, "TOPRIGHT", 35, 35)
-
--- ========================================================================== 
--- Profession category dropdown (only shown for professions)
--- ==========================================================================
-local categoryDropdown = CreateFrame("Frame", "TFG_CategoryDropdown", scrollBG, "UIDropDownMenuTemplate")
-UIDropDownMenu_SetWidth(categoryDropdown, 140)
--- Keep category dropdown immediately to the left of the class dropdown.
-categoryDropdown:SetPoint("TOPRIGHT", classDropdown, "TOPLEFT", 0, 0)
-
-local phaseDropdown = CreateFrame("Frame", "TFG_PhaseDropdown", scrollBG, "UIDropDownMenuTemplate")
-UIDropDownMenu_SetWidth(phaseDropdown, 90)
-phaseDropdown:SetPoint("TOPRIGHT", categoryDropdown, "TOPLEFT", 0, 0)
-phaseDropdown:Hide()
-
-local function getLeftmostDropdown()
-    if phaseDropdown:IsShown() then return phaseDropdown end
-    if categoryDropdown:IsShown() then return categoryDropdown end
-    return classDropdown
-end
 
 TFG.selectedCategory = TFG.selectedCategory or "ALL"
 
@@ -571,11 +546,6 @@ local function extractCategoriesFromDatabase(database)
     return list
 end
 
--- Forward-declare category click handler so the dropdown can reference it when initialized.
-local OnClickCategory
-local OnClickPhase
-local phaseDropdownSignature
-local categoryDropdownSignature
 
 local function getMaxExplicitPhase(database)
     local maxPhase = 1
@@ -602,145 +572,6 @@ function TFG.GetMaxPhase()
     return getMaxExplicitPhase(TFG.activeDatabase)
 end
 
-local function populatePhaseDropdown()
-    local maxPhase = isProfessionView() and getMaxExplicitPhase(TFG.activeDatabase) or 1
-    if maxPhase <= 1 then
-        phaseDropdown:Hide()
-        return
-    end
-
-    local expansion = TFG.DATABASE_FILES[TFG.selectedExpansion]
-    if TFG.selectedPhase == nil then
-        TFG.selectedPhase = tonumber(expansion and expansion.currentPhase) or 1
-    end
-
-    phaseDropdown:Show()
-    local signature = tostring(maxPhase)
-    if phaseDropdownSignature ~= signature then
-        CloseDropDownMenus()
-        phaseDropdownSignature = signature
-        UIDropDownMenu_Initialize(phaseDropdown, function()
-            for phase = 1, maxPhase do
-                local info = UIDropDownMenu_CreateInfo()
-                info.text = "Phase " .. tostring(phase)
-                info.value = phase
-                info.func = OnClickPhase
-                UIDropDownMenu_AddButton(info)
-            end
-
-            local info = UIDropDownMenu_CreateInfo()
-            info.text = "All Phases"
-            info.value = "ALL"
-            info.func = OnClickPhase
-            UIDropDownMenu_AddButton(info)
-        end)
-    end
-
-    UIDropDownMenu_SetSelectedValue(phaseDropdown, TFG.selectedPhase)
-    UIDropDownMenu_SetText(
-        phaseDropdown,
-        TFG.selectedPhase == "ALL" and "All Phases" or ("Phase " .. tostring(TFG.selectedPhase))
-    )
-end
-
-local function populateCategoryDropdown()
-    if not isProfessionView() then
-        TFG.selectedCategory = nil
-        categoryDropdown:SetShown(false)
-        return
-    end
-
-    local categories = extractCategoriesFromDatabase(TFG.activeDatabase)
-    if not categories then
-        TFG.selectedCategory = "ALL"
-        categoryDropdown:SetShown(false)
-        return
-    end
-
-    -- Count real categories (exclude the default ALL entry). Only show the
-    -- dropdown when there is more than one real category (user-visible).
-    local realCount = 0
-    for _, c in ipairs(categories) do
-        if tostring(c) ~= "ALL" then realCount = realCount + 1 end
-    end
-    if realCount <= 1 then
-        TFG.selectedCategory = "ALL"
-        categoryDropdown:SetShown(false)
-        return
-    end
-
-    categoryDropdown:SetShown(true)
-    local signature = table.concat(categories, "\031")
-    if categoryDropdownSignature ~= signature then
-        CloseDropDownMenus()
-        categoryDropdownSignature = signature
-        UIDropDownMenu_Initialize(categoryDropdown, function()
-            for _, c in ipairs(categories) do
-                local info = UIDropDownMenu_CreateInfo()
-                if c == "ALL" then
-                    info.text = "All Categories"
-                elseif c == "DISCOVERIES" then
-                    info.text = "Discoveries"
-                else
-                    info.text = c
-                end
-                info.value = c
-                info.func = OnClickCategory
-                UIDropDownMenu_AddButton(info)
-            end
-        end)
-    end
-
-    if TFG.selectedCategory == nil then TFG.selectedCategory = "ALL" end
-    local found = false
-    for _, c in ipairs(categories) do
-        if c == TFG.selectedCategory then found = true end
-    end
-    if not found then TFG.selectedCategory = "ALL" end
-
-    UIDropDownMenu_SetSelectedValue(categoryDropdown, TFG.selectedCategory)
-    if TFG.selectedCategory == "ALL" then
-        UIDropDownMenu_SetText(categoryDropdown, "All Categories")
-    elseif TFG.selectedCategory == "DISCOVERIES" then
-        UIDropDownMenu_SetText(categoryDropdown, "Discoveries")
-    else
-        UIDropDownMenu_SetText(categoryDropdown, TFG.selectedCategory)
-    end
-end
-
-local function updateClassDropdownTextFromSelection()
-    local expansionObject = TFG.DATABASE_FILES[TFG.selectedExpansion]
-    if not expansionObject or not expansionObject.files then return end
-
-    local classesMap = expansionObject.files.classes or {}
-    local skillsMap = expansionObject.files.skills or {}
-
-    local selected = (TFG.selectedFile or ""):lower()
-    local selectionInfo = TFG.GetSelectionInfo(expansionObject, selected)
-    if selectionInfo and selectionInfo.child then
-        UIDropDownMenu_SetText(classDropdown, selectionInfo.child.name or "")
-        return
-    elseif selectionInfo and selectionInfo.childKey then
-        local display = tostring(selectionInfo.childKey):gsub("%-", " "):gsub("(%a)([%w']*)", function(first, rest)
-            return first:upper() .. rest
-        end)
-        UIDropDownMenu_SetText(classDropdown, display .. " (Unavailable)")
-        return
-    end
-
-    local parent = classesMap[selected] or skillsMap[selected]
-    if parent and parent.name then
-        if classesMap[selected] and parent.color then
-            UIDropDownMenu_SetText(classDropdown, parent.color .. parent.name .. "|r")
-        else
-            UIDropDownMenu_SetText(classDropdown, parent.name)
-        end
-        return
-    end
-
-    -- Fallback
-    UIDropDownMenu_SetText(classDropdown, TFG.selectedFile or "")
-end
 
 local function getProfessionLevelForCurrentView()
     -- Special-case Riding dataset: treat it as a profession-like view.
@@ -1319,346 +1150,15 @@ end
 -- Store the close function globally so it can be called from Frame.lua OnHide
 TFG.closeProfessionPopup = closeProfessionPopup
 
-local knownCheck
-local talentCheck
-local enemySpellsCheck
-local fileDropdownExpansion
 
-local function populateFileDropdown(initialRun)
-    local expansionObject = TFG.DATABASE_FILES[TFG.selectedExpansion]
-    local classesMap = expansionObject["files"]["classes"] or {}
-    local skillsMap  = expansionObject["files"]["skills"] or {}
-
-    -- Flatten parents (classes first, then skills) but preserve keys.
-    local parents = {}
-    for key, obj in pairs(classesMap) do
-        table.insert(parents, {key = key, obj = obj, type = "classes"})
-    end
-    table.sort(parents, function(a, b)
-        return (a.obj.name or a.key) < (b.obj.name or b.key)
-    end)
-
-    local skillsParents = {}
-    for key, obj in pairs(skillsMap) do
-        table.insert(skillsParents, {key = key, obj = obj, type = "skills"})
-    end
-    table.sort(skillsParents, function(a, b)
-        return (a.obj.name or a.key) < (b.obj.name or b.key)
-    end)
-    for _, v in ipairs(skillsParents) do
-        table.insert(parents, v)
-    end
-
-    local function selectionExists()
-        local selected = (TFG.selectedFile or ""):lower()
-        if selected == "" then return false end
-        local selectionInfo = TFG.GetSelectionInfo(expansionObject, selected)
-        if selectionInfo then
-            return selectionInfo.child and type(selectionInfo.child.file) == "table" or false
-        end
-        local parent = classesMap[selected] or skillsMap[selected]
-        return parent and type(parent.file) == "table" or false
-    end
-
-    local function resetFilters()
-        TFG.showKnown = false
-        TFG.showTalents = false
-        TFG.showEnemySpells = false
-        if knownCheck then knownCheck:SetChecked(false) end
-        if talentCheck then talentCheck:SetChecked(false) end
-        if enemySpellsCheck then enemySpellsCheck:SetChecked(false) end
-    end
-
-    local function OnClickLeaf(self)
-        TFG.selectedCategory = nil
-        TFG.selectedFile = self.value
-        -- Don't rely on self.text/self.displayText as Blizzard sometimes clears these across levels.
-        updateClassDropdownTextFromSelection()
-        CloseDropDownMenus()
-        safeCloseProfessionPopup()
-        resetFilters()
-        TFG.LoadDatabase(TFG.selectedFile, TFG.selectedExpansion)
-    end
-
-    OnClickCategory = function(self)
-        if not self then return end
-        local val = tostring(self.value or "ALL")
-        TFG.selectedCategory = val
-        if val == "ALL" then
-            UIDropDownMenu_SetText(categoryDropdown, "All Categories")
-        elseif val == "DISCOVERIES" then
-            UIDropDownMenu_SetText(categoryDropdown, "Discoveries")
-        else
-            UIDropDownMenu_SetText(categoryDropdown, val)
-        end
-        UIDropDownMenu_SetSelectedValue(categoryDropdown, TFG.selectedCategory)
-        CloseDropDownMenus()
-        safeCloseProfessionPopup()
-        frame:Relayout()
-    end
-
-    OnClickPhase = function(self)
-        if not self then return end
-        TFG.selectedPhase = self.value == "ALL" and "ALL" or tonumber(self.value)
-        UIDropDownMenu_SetSelectedValue(phaseDropdown, TFG.selectedPhase)
-        UIDropDownMenu_SetText(
-            phaseDropdown,
-            TFG.selectedPhase == "ALL" and "All Phases" or ("Phase " .. tostring(TFG.selectedPhase))
-        )
-        CloseDropDownMenus()
-        safeCloseProfessionPopup()
-        frame:Relayout()
-    end
-
-    if fileDropdownExpansion ~= TFG.selectedExpansion then
-        CloseDropDownMenus()
-        fileDropdownExpansion = TFG.selectedExpansion
-        UIDropDownMenu_Initialize(classDropdown, function(self, level, menuList)
-            level = level or 1
-
-            if level == 1 then
-                for _, entry in ipairs(parents) do
-                    local info = UIDropDownMenu_CreateInfo()
-
-                    local name = entry.obj.name or entry.key
-                    if entry.type == "classes" then
-                        info.text = (entry.obj.color or (TFG.CLASS_COLORS[string.gsub(name:upper(), " ", "_")] or "")) .. name .. "|r"
-                    else
-                        info.text = name
-                    end
-
-                    local hasChildren = entry.obj.children and #entry.obj.children > 0
-
-                    -- Special rule: top-level skills groups (e.g. "professions" and "skills")
-                    -- should not be selectable from the dropdown.
-                    local isSkillsParent = (entry.type == "skills") and (entry.key == "professions" or entry.key == "skills")
-
-                    if hasChildren then
-                        info.hasArrow = true
-                        info.notCheckable = true
-                        info.value = entry.key
-                        info.menuList = { parentKey = entry.key, parentType = entry.type }
-
-                        -- Classes like Hunter/Warlock should still be selectable even if they have children.
-                        -- We'll allow click to choose the parent for any class, and for any skill other than professions.
-                        if entry.type == "classes" and not isSkillsParent then
-                            info.func = function()
-                                TFG.selectedFile = entry.key
-                                updateClassDropdownTextFromSelection()
-                                CloseDropDownMenus()
-                                safeCloseProfessionPopup()
-                                resetFilters()
-                                TFG.LoadDatabase(TFG.selectedFile, TFG.selectedExpansion)
-                            end
-                        elseif entry.type == "skills" and not isSkillsParent then
-                            info.func = function()
-                                TFG.selectedFile = entry.key
-                                updateClassDropdownTextFromSelection()
-                                CloseDropDownMenus()
-                                safeCloseProfessionPopup()
-                                resetFilters()
-                                TFG.LoadDatabase(TFG.selectedFile, TFG.selectedExpansion)
-                            end
-                        end
-                    else
-                        info.notCheckable = true
-                        info.value = entry.key
-                        info.func = function()
-                            TFG.selectedFile = entry.key
-                            updateClassDropdownTextFromSelection()
-                            CloseDropDownMenus()
-                            safeCloseProfessionPopup()
-                            resetFilters()
-                            TFG.LoadDatabase(TFG.selectedFile, TFG.selectedExpansion)
-                        end
-                    end
-
-                    UIDropDownMenu_AddButton(info, level)
-                end
-            elseif level == 2 and menuList and menuList.parentKey then
-                local parent = classesMap[menuList.parentKey] or skillsMap[menuList.parentKey]
-                if parent and parent.children then
-                    local parentIsClass = (classesMap[menuList.parentKey] ~= nil)
-                    local parentName = parent.name or menuList.parentKey
-                    local parentColor = ""
-                    if parentIsClass then
-                        parentColor = parent.color or (TFG.CLASS_COLORS[string.gsub(parentName:upper(), " ", "_")] or "")
-                    end
-
-                    local children = {}
-                    for idx, child in ipairs(parent.children) do
-                        table.insert(children, { idx = idx, child = child })
-                    end
-                    -- Do not sort the flattened children list here; preserve the
-                    -- original ordering so header markers remain in their intended
-                    -- positions. Each partitioned group will be sorted individually
-                    -- below.
-
-                    -- Build submenu entries with support for header/divider entries and
-                    -- alphabetical sorting within each section. Parent.children may
-                    -- contain objects with `isHeader = true` to separate sections.
-                    local function appendSortedGroup(group)
-                        if not group or #group == 0 then return end
-                        table.sort(group, function(a, b)
-                            return (a.child.name or "") < (b.child.name or "")
-                        end)
-                        for _, wrapper in ipairs(group) do
-                            local idx = wrapper.idx
-                            local child = wrapper.child
-                            local info = UIDropDownMenu_CreateInfo()
-                            if parentColor ~= "" then
-                                info.text = parentColor .. child.name .. "|r"
-                            else
-                                info.text = child.name
-                            end
-                            info.notCheckable = true
-                            info.value = TFG.MakeChildSelection(menuList.parentKey, child, idx)
-                            info.func = OnClickLeaf
-                            UIDropDownMenu_AddButton(info, level)
-                        end
-                    end
-
-                    local currentGroup = {}
-                    for _, wrapper in ipairs(children) do
-                        local child = wrapper.child
-                        if child and child.isHeader then
-                            -- Flush previous group
-                            appendSortedGroup(currentGroup)
-                            currentGroup = {}
-                            -- Render a visual divider instead of text
-                            local info = UIDropDownMenu_CreateInfo()
-                            -- Inline the divider texture into the text to avoid using the
-                            -- dropdown icon APIs (which can nil-check `info` unexpectedly).
-                            -- Width 200, height 8 should render as a short horizontal line.
-                            info.text = "|TInterface\\Tooltips\\UI-TooltipDivider:200:8:0:0|t"
-                            info.disabled = true
-                            info.notCheckable = true
-                            UIDropDownMenu_AddButton(info, level)
-                        else
-                            table.insert(currentGroup, wrapper)
-                        end
-                    end
-                    -- Flush remaining group
-                    appendSortedGroup(currentGroup)
-                end
-            end
-        end)
-    end
-
-    if (not selectionExists()) then
-        message1:SetText("We don't have this view for this expansion")
-        message1:SetShown(true)
-        message2:SetText("Please select a different view")
-        message2:SetShown(true)
-    else
-        message1:SetShown(false)
-        message2:SetShown(false)
-    end
-
-    if (initialRun == true) then
-        -- Default selection to player class (top-level).
-        local classObj = classesMap[playerClass:lower()]
-        if classObj and classObj.name then
-            UIDropDownMenu_SetText(classDropdown, (classObj.color or "") .. classObj.name .. "|r")
-        else
-            UIDropDownMenu_SetText(classDropdown, playerClass)
-        end
-    end
-
-    -- Keep the dropdown text in sync with selectedFile.
-    updateClassDropdownTextFromSelection()
-end
-
-populateFileDropdown(true)
-
--- ========================================================================== 
--- Checkboxes
+-- ==========================================================================
+-- Filter state (the navigation shell owns the controls; these are the defaults)
 -- ==========================================================================
 TFG.showEnemySpells = false
 TFG.showTalents     = false
 TFG.showKnown       = false
 TFG.searchText      = "" -- name-only filter; stored lowercased by the UI
 
--- Known Spells
-knownCheck = CreateFrame("CheckButton", nil, scrollBG, "UICheckButtonTemplate")
--- Known checkbox sits to the left of the class/category dropdowns.
-knownCheck:SetPoint("RIGHT", classDropdown, "LEFT", -100, 2)
-knownCheck:SetChecked(TFG.showKnown)
--- Ensure the checkbox sits above the scroll child and receives clicks.
-knownCheck:EnableMouse(true)
--- Parent to scrollBG but raise level/strata so it appears above the scroll child.
-knownCheck:SetParent(scrollBG)
-if scrollBG and scrollBG.GetFrameLevel then
-    knownCheck:SetFrameLevel((scrollBG:GetFrameLevel() or 0) + 100)
-else
-    knownCheck:SetFrameLevel((frame and frame.GetFrameLevel and (frame:GetFrameLevel() or 0) + 20) or 20)
-end
-knownCheck:SetFrameStrata("FULLSCREEN_DIALOG")
- 
-
-local knownLabel = knownCheck:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-knownLabel:SetPoint("LEFT", knownCheck, "RIGHT", 4, 0)
-knownLabel:SetText("Known")
-
-knownCheck:SetScript("OnClick", function(self)
-    TFG.showKnown = self:GetChecked()
-    closeProfessionPopup()
-    frame:Relayout()
-end)
-
--- Debug info: log parent/point/visibility/frame level when created (visible when TFG.debugChat=true)
- 
-
-knownLabel:EnableMouse(true)
-knownLabel:SetScript("OnMouseDown", function()
-    knownCheck:SetChecked(not knownCheck:GetChecked())
-    TFG.showKnown = knownCheck:GetChecked()
-    frame:Relayout()
-end)
-
--- Talents
-talentCheck = CreateFrame("CheckButton", nil, scrollBG, "UICheckButtonTemplate")
-talentCheck:SetPoint("RIGHT", knownCheck, "LEFT", 0, 0)
-talentCheck:SetChecked(TFG.showTalents)
-
-local talentLabel = talentCheck:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-talentLabel:SetPoint("LEFT", talentCheck, "RIGHT", 4, 0)
-talentLabel:SetText("All Talents")
-
-talentCheck:SetScript("OnClick", function(self)
-    TFG.showTalents = self:GetChecked()
-    closeProfessionPopup()
-    frame:Relayout()
-end)
-
-talentLabel:EnableMouse(true)
-talentLabel:SetScript("OnMouseDown", function()
-    talentCheck:SetChecked(not talentCheck:GetChecked())
-    TFG.showTalents = talentCheck:GetChecked()
-    frame:Relayout()
-end)
-
--- Faction / Race
-enemySpellsCheck = CreateFrame("CheckButton", nil, scrollBG, "UICheckButtonTemplate")
-local enemySpellsLabel = enemySpellsCheck:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-
-enemySpellsLabel:SetText((TFG.selectedFile ~= "PRIEST" and (TFG.isAlliance() and "Horde" or "Alliance") or ("Non-" .. playerRaceName)) .. " Spells")
-enemySpellsLabel:SetPoint("LEFT", talentCheck, "LEFT", -enemySpellsLabel:GetWidth() - 16, 0)
-enemySpellsCheck:SetPoint("LEFT", enemySpellsLabel, "LEFT", -36, 0)
-enemySpellsCheck:SetChecked(TFG.showEnemySpells)
-
-enemySpellsCheck:SetScript("OnClick", function(self)
-    TFG.showEnemySpells = self:GetChecked()
-    closeProfessionPopup()
-    frame:Relayout()
-end)
-
-enemySpellsLabel:EnableMouse(true)
-enemySpellsLabel:SetScript("OnMouseDown", function()
-    enemySpellsCheck:SetChecked(not enemySpellsCheck:GetChecked())
-    TFG.showEnemySpells = enemySpellsCheck:GetChecked()
-    frame:Relayout()
-end)
 
 -- ========================================================================== 
 -- Resize handle
@@ -1700,26 +1200,6 @@ function frame:Relayout()
     resetRenderPool()
     content:SetSize(1,1)
     content:Show()
-
-    enemySpellsLabel:SetText((TFG.selectedFile:upper() ~= "PRIEST" and (TFG.isAlliance() and "Horde" or "Alliance") or ("Non-" .. playerRaceName)) .. " Spells")
-    enemySpellsLabel:SetPoint("LEFT", talentCheck, "LEFT", -enemySpellsLabel:GetWidth() - 16, 0)
-
-    populateFileDropdown()
-    populatePhaseDropdown()
-    populateCategoryDropdown()
-    phaseDropdown:ClearAllPoints()
-    phaseDropdown:SetPoint(
-        "TOPRIGHT",
-        categoryDropdown:IsShown() and categoryDropdown or classDropdown,
-        "TOPLEFT",
-        0,
-        0
-    )
-    knownCheck:ClearAllPoints()
-    knownCheck:SetPoint("RIGHT", getLeftmostDropdown(), "LEFT", -100, 2)
-
-    -- Known label and checkbox positioning will depend on whether the
-    -- current view is a profession AND the player actually has that skill.
 
     local yOffset = -4
     local contentWidth = getRenderWidth()
@@ -1842,48 +1322,23 @@ function frame:Relayout()
         end
         return false
     end
-    -- Show the Known checkbox for non-profession views, or for profession views
-    -- only when the player actually has that profession. For class views,
-    -- hide the Known checkbox unless the selected class matches the player's
-    -- class. Riding is not a class and should remain visible.
+    -- Whether the Known filter applies to the current view, published to the nav
+    -- shell via TFG._filterAvailability: non-profession views always; profession
+    -- views only when the player has that profession; class views only for the
+    -- player's own class (Riding is treated as eligible).
+    local knownApplicable
     if isProfession then
-        if hasProfession then
-            knownCheck:Show()
-            knownLabel:Show()
-        else
-            knownCheck:Hide()
-            knownLabel:Hide()
-            TFG.showKnown = false
-            knownCheck:SetChecked(false)
-        end
+        knownApplicable = hasProfession
     elseif isClassView then
-        if (selectedUpper ~= (playerClass or ""):upper()) and (selectedParentUpper ~= (playerClass or ""):upper()) and selectedUpper ~= "RIDING" then
-            knownCheck:Hide()
-            knownLabel:Hide()
-            TFG.showKnown = false
-            knownCheck:SetChecked(false)
-        else
-            knownCheck:Show()
-            knownLabel:Show()
-        end
+        knownApplicable = (selectedUpper == (playerClass or ""):upper())
+            or (selectedParentUpper == (playerClass or ""):upper())
+            or selectedUpper == "RIDING"
     else
-        knownCheck:Show()
-        knownLabel:Show()
+        knownApplicable = true
     end
-
-    -- Update Known label text depending on view type and whether it's applicable.
-    if isProfession and hasProfession then
-        knownLabel:SetText("Known Skills")
-    else
-        knownLabel:SetText("Known Abilities")
+    if not knownApplicable then
+        TFG.showKnown = false
     end
-
-    -- Position knownCheck differently when showing a profession category dropdown.
-    -- Use the categoryDropdown's visible width rather than relying on whether
-    -- the player has the profession so Riding (and other skill-mode views)
-    -- position the Known checkbox consistently next to the class dropdown.
-    knownCheck:ClearAllPoints()
-    knownCheck:SetPoint("RIGHT", getLeftmostDropdown(), "LEFT", -100, 2)
 
     
 
@@ -2186,7 +1641,10 @@ function frame:Relayout()
                     trainingSpellId = u.trainingSpellId,
                 })
 
-                syntheticUnlockByBracket[displayBracket] = true
+                -- Record the cap this bracket's training unlocks (not just a flag)
+                -- so the raw "Profession Training" spell at this bracket can be
+                -- marked known by cap in entryIsKnown.
+                syntheticUnlockByBracket[displayBracket] = newCap
                 dbgUnlockInserted = dbgUnlockInserted + 1
             end
         end
@@ -2318,6 +1776,19 @@ function frame:Relayout()
                     return true
                 end
             end
+
+            -- Raw "Profession Training" rank spells (Apprentice/Journeyman/...)
+            -- are known once the player's skill cap reaches the tier they unlock.
+            -- IsPlayerSpell is unreliable for these, so use the per-bracket cap
+            -- recorded by the rank-unlock builder (same signal the synthetic
+            -- unlock entries use).
+            if hasSpellCategory(spell, "Profession Training") then
+                local unlockCap = syntheticUnlockByBracket and syntheticUnlockByBracket[levelRequired]
+                if type(unlockCap) == "number" and professionMaxCap > 0 and professionMaxCap >= unlockCap then
+                    return true
+                end
+            end
+
             return isSpellKnownDBAware(spellId, spell)
         end
 
@@ -2340,8 +1811,18 @@ function frame:Relayout()
         -- Name-only search filter (applies to every view). TFG.searchText is
         -- stored lowercased; plain (non-pattern) substring match.
         if TFG.searchText and TFG.searchText ~= "" then
-            local name = (spell and spell.name) and tostring(spell.name):lower() or ""
-            if not name:find(TFG.searchText, 1, true) then
+            local haystack = (spell and spell.name) and tostring(spell.name):lower() or ""
+            -- Profession rank-unlock rows have an internal name like "Train Master"
+            -- but display a synthetic tooltip title ("<Profession> Skill Unlock:
+            -- <Rank>"). Make that wording searchable too, so e.g. "fishing skill"
+            -- finds them -- matching what the tooltip shows.
+            if spell and spell._tfgType == "PROFESSION_RANK_UNLOCK" then
+                haystack = haystack .. " "
+                    .. (profName and tostring(profName):lower() or "")
+                    .. " skill unlock "
+                    .. tostring(spell.rankName or ""):lower()
+            end
+            if not haystack:find(TFG.searchText, 1, true) then
                 return true, "search"
             end
         end
@@ -2769,7 +2250,11 @@ function frame:Relayout()
                                 end
                             end
 
-                            local titleText = profName .. " Skill Unlock: " .. rankName .. " (1-" .. tostring(req) .. ")"
+                            -- Show the skill range this rank covers: from the
+                            -- previous tier's cap (tiers are 75 apart) up to this
+                            -- rank's cap, e.g. Master = "300-375".
+                            local rangeLow = (req > 75) and (req - 75) or 1
+                            local titleText = profName .. " Skill Unlock: " .. rankName .. " (" .. tostring(rangeLow) .. "-" .. tostring(req) .. ")"
                             if trainingSpellId then
                                 -- Build a simple tooltip ourselves to guarantee the custom title
                                 -- is shown. We include the spell name (if resolvable) as a line.
@@ -2936,32 +2421,9 @@ function frame:Relayout()
         end
     end
 
-    local isKnownShown = knownCheck and knownCheck:IsShown()
-
-    local isEnemySpellsShown = false
-    if enemySpellsCount == 0 then
-        enemySpellsCheck:SetShown(false)
-        enemySpellsLabel:SetShown(false)
-    else
-        enemySpellsCheck:SetShown(true)
-        enemySpellsLabel:SetShown(true)
-        isEnemySpellsShown = true
-    end
-
-    local isTalentShown = false
-    if talentCount == 0 then
-        talentCheck:SetShown(false)
-        talentLabel:SetShown(false)
-    else
-        talentCheck:SetShown(true)
-        talentLabel:SetShown(true)
-        isTalentShown = true
-    end
-
-    -- Sync checkbox checked state with model values
-    if knownCheck then knownCheck:SetChecked(TFG.showKnown) end
-    if talentCheck then talentCheck:SetChecked(TFG.showTalents) end
-    if enemySpellsCheck then enemySpellsCheck:SetChecked(TFG.showEnemySpells) end
+    local isKnownShown = knownApplicable
+    local isEnemySpellsShown = enemySpellsCount > 0
+    local isTalentShown = talentCount > 0
 
     -- Publish which filters are applicable to the current view so an external
     -- navigation shell can show/hide its own filter controls, then notify it
@@ -2995,42 +2457,6 @@ function frame:Relayout()
     else
         message1:SetShown(false)
         message2:SetShown(false)
-    end
-
-    if (isKnownShown) then
-        if (isTalentShown) then
-            -- move talentCheck next to the knownCheck
-            talentCheck:ClearAllPoints()
-            talentCheck:SetPoint("RIGHT", knownCheck, "LEFT", -(knownLabel:GetWidth()), 0)
-
-            if (isEnemySpellsShown) then
-                -- move enemySpellsLabel next to knownCheck
-                enemySpellsLabel:ClearAllPoints()
-                enemySpellsLabel:SetPoint("LEFT", talentCheck, "RIGHT", -enemySpellsLabel:GetWidth() - 50, 0)
-            end
-        else
-            -- move enemySpellsLabel next to knownCheck
-            enemySpellsLabel:ClearAllPoints()
-            enemySpellsLabel:SetPoint("LEFT", knownCheck, "RIGHT", -enemySpellsLabel:GetWidth() - (knownLabel:GetWidth() + 20), 0)
-        end
-    else
-        if (isTalentShown) then
-            -- move talentCheck next to classDropdown (categoryDropdown may be hidden)
-            talentCheck:ClearAllPoints()
-            talentCheck:SetPoint("RIGHT", getLeftmostDropdown(), "LEFT", -64, 2)
-
-            if (isEnemySpellsShown) then
-                -- move enemySpellsLabel next to talentCheck
-                enemySpellsLabel:ClearAllPoints()
-                enemySpellsLabel:SetPoint("LEFT", talentCheck, "RIGHT", -enemySpellsLabel:GetWidth() - 46, 0)
-            end
-        else
-            if (isEnemySpellsShown) then
-                -- move enemySpellsLabel next to classDropdown
-                enemySpellsLabel:ClearAllPoints()
-                enemySpellsLabel:SetPoint("RIGHT", getLeftmostDropdown(), "LEFT", -36, 2)
-            end
-        end
     end
 
     content:SetHeight(-yOffset)
