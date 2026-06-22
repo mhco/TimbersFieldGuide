@@ -1019,8 +1019,6 @@ local function ensureProfessionPopup()
     end
 
     function popup:ShowForSpell(anchorFrame, spellData)
-        self:ClearIcons()
-
         -- Toggle behavior: clicking the same icon twice closes it.
         if self:IsShown() and self._anchor == anchorFrame and self._spellData == spellData then
             self:Hide()
@@ -1028,6 +1026,35 @@ local function ensureProfessionPopup()
             self._spellData = nil
             return
         end
+        self:_RenderSpell(anchorFrame, spellData)
+    end
+
+    -- Re-entrant layout pass. Kept separate from ShowForSpell so the item-data
+    -- watcher can refresh in place; calling ShowForSpell again would hit the toggle
+    -- and close the popup instead.
+    function popup:_RenderSpell(anchorFrame, spellData)
+        self:ClearIcons()
+
+        -- The client returns nil from GetItemInfo until an item is cached, then
+        -- fetches it asynchronously. Request every item this popup needs up front and
+        -- remember what we are waiting on; GET_ITEM_INFO_RECEIVED re-renders so icons
+        -- and names fill in within a frame or two instead of on a second click.
+        local pending = {}
+        local function need(id)
+            id = tonumber(id)
+            if id and id > 0 and not GetItemInfo(id) then
+                pending[id] = true
+                if C_Item and C_Item.RequestLoadItemDataByID then
+                    C_Item.RequestLoadItemDataByID(id)
+                end
+            end
+        end
+        need(getProductItemId(spellData))
+        if spellData and spellData.materials then
+            for _, mat in ipairs(spellData.materials) do need(getMaterialItemId(mat)) end
+        end
+        for _, s in ipairs(TFG.GetSources(spellData)) do need(s.item_id) end
+        self._pendingItems = pending
 
         local popupRecipeId = getRecipeSourceId(spellData)
         -- Show recipe item if recipe_item_ids exists, regardless of source type
@@ -1351,6 +1378,22 @@ local function ensureProfessionPopup()
             self._anchor.tfgBlueBorder:Hide()
         end
     end)
+
+    -- Re-render the open popup when an item it was waiting on finishes loading, so
+    -- icons and names appear without the user having to close and reopen it.
+    popup.itemWatcher = CreateFrame("Frame")
+    popup.itemWatcher:SetScript("OnEvent", function(_, _, itemID, success)
+        if not (popup:IsShown() and popup._spellData and popup._pendingItems) then return end
+        if not itemID then return end
+        if success == false then
+            popup._pendingItems[itemID] = nil
+            return
+        end
+        if popup._pendingItems[itemID] then
+            popup:_RenderSpell(popup._anchor, popup._spellData)
+        end
+    end)
+    popup.itemWatcher:RegisterEvent("GET_ITEM_INFO_RECEIVED")
 
     TFG.professionPopup = popup
     return popup
