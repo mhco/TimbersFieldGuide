@@ -37,71 +37,71 @@ TFG.DATABASE_FILES = {
                 druid = {
                     name = "Druid",
                     color = TFG.CLASS_COLORS["DRUID"],
-                    file = TFG.DRUID_VANILLA,
+                    file = TFG.DRUID_CLASSIC_ERA,
                 },
                 hunter = {
                     name = "Hunter",
                     color = TFG.CLASS_COLORS["HUNTER"],
-                    file = TFG.HUNTER_VANILLA,
+                    file = TFG.HUNTER_CLASSIC_ERA,
                     children = {
                         {
                             key = "pet-skills",
                             name = "Pet Skills",
                             sortOrder = 1,
-                            file = TFG.HUNTER_PETS_VANILLA,
+                            file = TFG.HUNTER_PETS_CLASSIC_ERA,
                         },
                     },
                 },
                 mage = {
                     name = "Mage",
                     color = TFG.CLASS_COLORS["MAGE"],
-                    file = TFG.MAGE_VANILLA,
+                    file = TFG.MAGE_CLASSIC_ERA,
                 },
                 paladin = {
                     name = "Paladin",
                     color = TFG.CLASS_COLORS["PALADIN"],
-                    file = TFG.PALADIN_VANILLA,
+                    file = TFG.PALADIN_CLASSIC_ERA,
                 },
                 priest = {
                     name = "Priest",
                     color = TFG.CLASS_COLORS["PRIEST"],
-                    file = TFG.PRIEST_VANILLA,
+                    file = TFG.PRIEST_CLASSIC_ERA,
                 },
                 rogue = {
                     name = "Rogue",
                     color = TFG.CLASS_COLORS["ROGUE"],
-                    file = TFG.ROGUE_VANILLA,
+                    file = TFG.ROGUE_CLASSIC_ERA,
                     children = {
                         {
                             key = "poisons",
                             name = "Poisons",
                             sortOrder = 1,
-                            file = TFG.ROGUE_POISONS_VANILLA,
+                            file = TFG.ROGUE_POISONS_CLASSIC_ERA,
                         },
                     },
                 },
                 shaman = {
                     name = "Shaman",
                     color = TFG.CLASS_COLORS["PALADIN"],
-                    file = TFG.SHAMAN_VANILLA,
+                    file = TFG.SHAMAN_CLASSIC_ERA,
                 },
                 warlock = {
                     name = "Warlock",
                     color = TFG.CLASS_COLORS["WARLOCK"],
-                    file = TFG.WARLOCK_VANILLA,
+                    file = TFG.WARLOCK_CLASSIC_ERA,
                     children = {
                         {
                             key = "demon-spells",
                             name = "Demon Spells",
                             sortOrder = 1,
-                            file = TFG.WARLOCK_PETS_VANILLA,
+                            file = TFG.WARLOCK_PETS_CLASSIC_ERA,
                         },
                     },
                 },
                 warrior = {
                     name = "Warrior",
                     color = TFG.CLASS_COLORS["WARRIOR"],
-                    file = TFG.WARRIOR_VANILLA,
+                    file = TFG.WARRIOR_CLASSIC_ERA,
                 },
             },
             skills = {
@@ -109,28 +109,28 @@ TFG.DATABASE_FILES = {
                     name = "Professions",
                     children = {
                         -- Primary professions (will be sorted alphabetically in the submenu)
-                        {key = "alchemy", name = "Alchemy", file = TFG.ALCHEMY_VANILLA},
-                        {key = "blacksmithing", name = "Blacksmithing", file = TFG.BLACKSMITHING_VANILLA},
-                        {key = "enchanting", name = "Enchanting", file = TFG.ENCHANTING_VANILLA},
-                        {key = "engineering", name = "Engineering", file = TFG.ENGINEERING_VANILLA},
-                        {key = "leatherworking", name = "Leatherworking", file = TFG.LEATHERWORKING_VANILLA},
-                        {key = "tailoring", name = "Tailoring", file = TFG.TAILORING_VANILLA},
-                        {key = "mining", name = "Mining", file = TFG.MINING_VANILLA},
-                        {key = "herbalism", name = "Herbalism", file = TFG.HERBALISM_VANILLA},
-                        {key = "skinning", name = "Skinning", file = TFG.SKINNING_VANILLA},
+                        {key = "alchemy", name = "Alchemy", file = TFG.ALCHEMY_CLASSIC_ERA},
+                        {key = "blacksmithing", name = "Blacksmithing", file = TFG.BLACKSMITHING_CLASSIC_ERA},
+                        {key = "enchanting", name = "Enchanting", file = TFG.ENCHANTING_CLASSIC_ERA},
+                        {key = "engineering", name = "Engineering", file = TFG.ENGINEERING_CLASSIC_ERA},
+                        {key = "leatherworking", name = "Leatherworking", file = TFG.LEATHERWORKING_CLASSIC_ERA},
+                        {key = "tailoring", name = "Tailoring", file = TFG.TAILORING_CLASSIC_ERA},
+                        {key = "mining", name = "Mining", file = TFG.MINING_CLASSIC_ERA},
+                        {key = "herbalism", name = "Herbalism", file = TFG.HERBALISM_CLASSIC_ERA},
+                        {key = "skinning", name = "Skinning", file = TFG.SKINNING_CLASSIC_ERA},
                         -- Divider: secondary professions follow
                         {name = "SecondaryProfessionsDivider", isHeader = true},
                         -- Secondary professions (will be sorted alphabetically in the submenu)
-                        {key = "cooking", name = "Cooking", file = TFG.COOKING_VANILLA},
-                        {key = "first-aid", name = "First Aid", file = TFG.FIRST_AID_VANILLA},
-                        {key = "fishing", name = "Fishing", file = TFG.FISHING_VANILLA},
+                        {key = "cooking", name = "Cooking", file = TFG.COOKING_CLASSIC_ERA},
+                        {key = "first-aid", name = "First Aid", file = TFG.FIRST_AID_CLASSIC_ERA},
+                        {key = "fishing", name = "Fishing", file = TFG.FISHING_CLASSIC_ERA},
                     },
                 },
                 skills = {
                     name = "Skills",
                     children = {
-                        -- {name = "Riding", file = TFG.RIDING_VANILLA},
-                        {key = "weapon-skills", name = "Weapon Skills", file = TFG.WEAPON_SKILLS_VANILLA},
+                        -- {name = "Riding", file = TFG.RIDING_CLASSIC_ERA},
+                        {key = "weapon-skills", name = "Weapon Skills", file = TFG.WEAPON_SKILLS_CLASSIC_ERA},
                         -- additional non-profession skills can be added here
                     },
                 },
@@ -147,71 +147,71 @@ TFG.DATABASE_FILES = {
                 druid = {
                     name = "Druid",
                     color = TFG.CLASS_COLORS["DRUID"],
-                    file = TFG.DRUID_TBC,
+                    file = TFG.DRUID_BURNING_CRUSADE,
                 },
                 hunter = {
                     name = "Hunter",
                     color = TFG.CLASS_COLORS["HUNTER"],
-                    file = TFG.HUNTER_TBC,
+                    file = TFG.HUNTER_BURNING_CRUSADE,
                     children = {
                         {
                             key = "pet-skills",
                             name = "Pet Skills",
                             sortOrder = 1,
-                            file = TFG.HUNTER_PETS_TBC,
+                            file = TFG.HUNTER_PETS_BURNING_CRUSADE,
                         },
                     },
                 },
                 mage = {
                     name = "Mage",
                     color = TFG.CLASS_COLORS["MAGE"],
-                    file = TFG.MAGE_TBC,
+                    file = TFG.MAGE_BURNING_CRUSADE,
                 },
                 paladin = {
                     name = "Paladin",
                     color = TFG.CLASS_COLORS["PALADIN"],
-                    file = TFG.PALADIN_TBC,
+                    file = TFG.PALADIN_BURNING_CRUSADE,
                 },
                 priest = {
                     name = "Priest",
                     color = TFG.CLASS_COLORS["PRIEST"],
-                    file = TFG.PRIEST_TBC,
+                    file = TFG.PRIEST_BURNING_CRUSADE,
                 },
                 rogue = {
                     name = "Rogue",
                     color = TFG.CLASS_COLORS["ROGUE"],
-                    file = TFG.ROGUE_TBC,
+                    file = TFG.ROGUE_BURNING_CRUSADE,
                     children = {
                         {
                             key = "poisons",
                             name = "Poisons",
                             sortOrder = 1,
-                            file = TFG.ROGUE_POISONS_TBC,
+                            file = TFG.ROGUE_POISONS_BURNING_CRUSADE,
                         },
                     },
                 },
                 shaman = {
                     name = "Shaman",
                     color = TFG.CLASS_COLORS["SHAMAN"],
-                    file = TFG.SHAMAN_TBC,
+                    file = TFG.SHAMAN_BURNING_CRUSADE,
                 },
                 warlock = {
                     name = "Warlock",
                     color = TFG.CLASS_COLORS["WARLOCK"],
-                    file = TFG.WARLOCK_TBC,
+                    file = TFG.WARLOCK_BURNING_CRUSADE,
                     children = {
                         {
                             key = "demon-spells",
                             name = "Demon Spells",
                             sortOrder = 1,
-                            file = TFG.WARLOCK_PETS_TBC,
+                            file = TFG.WARLOCK_PETS_BURNING_CRUSADE,
                         },
                     },
                 },
                 warrior = {
                     name = "Warrior",
                     color = TFG.CLASS_COLORS["WARRIOR"],
-                    file = TFG.WARRIOR_TBC,
+                    file = TFG.WARRIOR_BURNING_CRUSADE,
                 },
             },
             skills = {
@@ -219,29 +219,29 @@ TFG.DATABASE_FILES = {
                     name = "Professions",
                     children = {
                         -- Primary professions (will be sorted alphabetically in the submenu)
-                        {key = "alchemy", name = "Alchemy", file = TFG.ALCHEMY_TBC},
-                        {key = "blacksmithing", name = "Blacksmithing", file = TFG.BLACKSMITHING_TBC},
-                        {key = "enchanting", name = "Enchanting", file = TFG.ENCHANTING_TBC},
-                        {key = "engineering", name = "Engineering", file = TFG.ENGINEERING_TBC},
-                        {key = "jewelcrafting", name = "Jewelcrafting", file = TFG.JEWELCRAFTING_TBC},
-                        {key = "leatherworking", name = "Leatherworking", file = TFG.LEATHERWORKING_TBC},
-                        {key = "tailoring", name = "Tailoring", file = TFG.TAILORING_TBC},
-                        {key = "mining", name = "Mining", file = TFG.MINING_TBC},
-                        {key = "herbalism", name = "Herbalism", file = TFG.HERBALISM_TBC},
-                        {key = "skinning", name = "Skinning", file = TFG.SKINNING_TBC},
+                        {key = "alchemy", name = "Alchemy", file = TFG.ALCHEMY_BURNING_CRUSADE},
+                        {key = "blacksmithing", name = "Blacksmithing", file = TFG.BLACKSMITHING_BURNING_CRUSADE},
+                        {key = "enchanting", name = "Enchanting", file = TFG.ENCHANTING_BURNING_CRUSADE},
+                        {key = "engineering", name = "Engineering", file = TFG.ENGINEERING_BURNING_CRUSADE},
+                        {key = "jewelcrafting", name = "Jewelcrafting", file = TFG.JEWELCRAFTING_BURNING_CRUSADE},
+                        {key = "leatherworking", name = "Leatherworking", file = TFG.LEATHERWORKING_BURNING_CRUSADE},
+                        {key = "tailoring", name = "Tailoring", file = TFG.TAILORING_BURNING_CRUSADE},
+                        {key = "mining", name = "Mining", file = TFG.MINING_BURNING_CRUSADE},
+                        {key = "herbalism", name = "Herbalism", file = TFG.HERBALISM_BURNING_CRUSADE},
+                        {key = "skinning", name = "Skinning", file = TFG.SKINNING_BURNING_CRUSADE},
                         -- Divider: secondary professions follow
                         {name = "SecondaryProfessionsDivider", isHeader = true},
                         -- Secondary professions (will be sorted alphabetically in the submenu)
-                        {key = "cooking", name = "Cooking", file = TFG.COOKING_TBC},
-                        {key = "first-aid", name = "First Aid", file = TFG.FIRST_AID_TBC},
-                        {key = "fishing", name = "Fishing", file = TFG.FISHING_TBC},
+                        {key = "cooking", name = "Cooking", file = TFG.COOKING_BURNING_CRUSADE},
+                        {key = "first-aid", name = "First Aid", file = TFG.FIRST_AID_BURNING_CRUSADE},
+                        {key = "fishing", name = "Fishing", file = TFG.FISHING_BURNING_CRUSADE},
                     },
                 },
                 skills = {
                     name = "Skills",
                     children = {
-                        {key = "riding", name = "Riding", file = TFG.RIDING_TBC},
-                        {key = "weapon-skills", name = "Weapon Skills", file = TFG.WEAPON_SKILLS_TBC},
+                        {key = "riding", name = "Riding", file = TFG.RIDING_BURNING_CRUSADE},
+                        {key = "weapon-skills", name = "Weapon Skills", file = TFG.WEAPON_SKILLS_BURNING_CRUSADE},
                         -- additional non-profession skills can be added here
                     },
                 },
@@ -299,7 +299,7 @@ local function enrichDatabaseBySpellId(targetDatabase, detailsDatabase)
     end
 end
 
-enrichDatabaseBySpellId(TFG.ROGUE_POISONS_TBC, TFG.ROGUE_POISONS_DETAILS_TBC)
+enrichDatabaseBySpellId(TFG.ROGUE_POISONS_BURNING_CRUSADE, TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE)
 
 local function normalizeChildKey(name)
     return tostring(name or ""):lower():gsub("[^%w]+", "-"):gsub("^%-+", ""):gsub("%-+$", "")

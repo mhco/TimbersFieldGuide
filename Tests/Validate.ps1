@@ -58,10 +58,10 @@ Assert-True ($databaseCore -match "DISCOVERY_BUCKET\s*=\s*999") "Discovery bucke
 Assert-True ($databaseCore -match 'shaman\s*=\s*\{[\s\S]*?color\s*=\s*TFG\.CLASS_COLORS\["PALADIN"\]') "Vanilla Shaman must retain the intentional Paladin color."
 Assert-True ($databaseCoreWithoutComments -notmatch '\{\s*name\s*=\s*"[^"]+"\s*,\s*file\s*=\s*TFG\.') "Selectable child views must define a stable key before name/file."
 
-$vanillaFirstAid = Get-Content -LiteralPath (Join-Path $Root "Database/Vanilla/Professions/FirstAid.lua") -Raw
-$tbcFirstAid = Get-Content -LiteralPath (Join-Path $Root "Database/TBC/Professions/FirstAid.lua") -Raw
-Assert-True ($vanillaFirstAid -match "TFG\.FIRST_AID_VANILLA\s*=") "Vanilla First Aid symbol is incorrect."
-Assert-True ($tbcFirstAid -match "TFG\.FIRST_AID_TBC\s*=") "TBC First Aid symbol is incorrect."
+$vanillaFirstAid = Get-Content -LiteralPath (Join-Path $Root "Database/ClassicEra/Professions/FirstAid.lua") -Raw
+$tbcFirstAid = Get-Content -LiteralPath (Join-Path $Root "Database/BurningCrusade/Professions/FirstAid.lua") -Raw
+Assert-True ($vanillaFirstAid -match "TFG\.FIRST_AID_CLASSIC_ERA\s*=") "Vanilla First Aid symbol is incorrect."
+Assert-True ($tbcFirstAid -match "TFG\.FIRST_AID_BURNING_CRUSADE\s*=") "TBC First Aid symbol is incorrect."
 
 $layout = Get-Content -LiteralPath (Join-Path $Root "Core/Layout.lua") -Raw
 Assert-True ($layout -notmatch '::\(%d\+\)') "Runtime selection parsing still depends on numeric child indexes."
@@ -89,9 +89,9 @@ Assert-True ($frame -notmatch "DebugWindow|tryRegisterDebugTab") "External debug
 $minimap = Get-Content -LiteralPath (Join-Path $Root "Core/Minimap.lua") -Raw
 Assert-True ($minimap -notmatch 'HookScript\("OnClick"') "Minimap right-click must not be hooked twice."
 
-$poisonDetails = Get-Content -LiteralPath (Join-Path $Root "Database/TBC/Professions/Poisons.lua") -Raw
-$activePoisons = Get-Content -LiteralPath (Join-Path $Root "Database/TBC/Classes/RoguePoisons.lua") -Raw
-Assert-True ($poisonDetails -match "TFG\.ROGUE_POISONS_DETAILS_TBC\s*=") "TBC Rogue Poison details are not integrated."
+$poisonDetails = Get-Content -LiteralPath (Join-Path $Root "Database/BurningCrusade/Professions/Poisons.lua") -Raw
+$activePoisons = Get-Content -LiteralPath (Join-Path $Root "Database/BurningCrusade/Classes/RoguePoisons.lua") -Raw
+Assert-True ($poisonDetails -match "TFG\.ROGUE_POISONS_DETAILS_BURNING_CRUSADE\s*=") "TBC Rogue Poison details are not integrated."
 
 $spellIdPattern = '(?<![A-Za-z0-9_])(?:spell_id|id)\s*=\s*(\d+)'
 $activePoisonIds = [regex]::Matches($activePoisons, $spellIdPattern) |
@@ -104,7 +104,7 @@ foreach ($spellId in $activePoisonIds) {
     Assert-True ($detailPoisonIds -contains $spellId) "TBC Rogue Poison details are missing spell ID $spellId."
 }
 
-$phasedProfessionFiles = Get-ChildItem -LiteralPath (Join-Path $Root "Database/TBC/Professions") -Filter "*.lua" |
+$phasedProfessionFiles = Get-ChildItem -LiteralPath (Join-Path $Root "Database/BurningCrusade/Professions") -Filter "*.lua" |
     Where-Object {
         $content = Get-Content -LiteralPath $_.FullName -Raw
         $content = $content -replace '(?s)--\[\[.*?\]\]', '' -replace '(?m)--.*$', ''
@@ -114,13 +114,13 @@ $phasedProfessionFiles = Get-ChildItem -LiteralPath (Join-Path $Root "Database/T
     Sort-Object
 Assert-True (($phasedProfessionFiles -join ",") -eq "Enchanting,Jewelcrafting,Tailoring") "Enchanting, Jewelcrafting, and Tailoring should expose future profession phases."
 
-$tailoring = Get-Content -LiteralPath (Join-Path $Root "Database/TBC/Professions/Tailoring.lua") -Raw
+$tailoring = Get-Content -LiteralPath (Join-Path $Root "Database/BurningCrusade/Professions/Tailoring.lua") -Raw
 Assert-True ($tailoring -match 'spell_id\s*=\s*36315[\s\S]{0,120}?phase\s*=\s*2') "Belt of Blasting must be marked as Phase 2."
 Assert-True ($tailoring -match 'spell_id\s*=\s*40020[\s\S]{0,120}?phase\s*=\s*3') "Black Temple Tailoring recipes must be marked as Phase 3."
 Assert-True ($tailoring -match 'spell_id\s*=\s*50194[\s\S]{0,120}?phase\s*=\s*2') "Mycah's Botanical Bag must be marked as Phase 2."
 Assert-True ($tailoring -match 'spell_id\s*=\s*46128[\s\S]{0,120}?phase\s*=\s*5') "Sunwell Tailoring recipes must be marked as Phase 5."
 
-$weaponSkills = Get-Content -LiteralPath (Join-Path $Root "Database/TBC/Skills/WeaponSkills.lua") -Raw
+$weaponSkills = Get-Content -LiteralPath (Join-Path $Root "Database/BurningCrusade/Skills/WeaponSkills.lua") -Raw
 Assert-True ($weaponSkills -notmatch 'name\s*=\s*"One-Handed Swords"[\s\S]{0,160}?source\s*=\s*\{[\s\S]{0,160}?icon\s*=[\s\S]{0,160}?source\s*=\s*\{') "TBC Weapon Skills still contains the duplicate source field."
 
 $testUI = Get-Content -LiteralPath (Join-Path $Root "Core/TestUI.lua") -Raw

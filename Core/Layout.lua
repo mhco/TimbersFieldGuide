@@ -523,7 +523,7 @@ local function isProfessionView()
 
     -- Special-case: Riding is modelled as a non-profession 'skill' dataset
     -- but should behave like a profession view for filtering/labeling.
-    if TFG and TFG.RIDING_TBC and TFG.activeDatabase == TFG.RIDING_TBC then
+    if TFG and TFG.RIDING_BURNING_CRUSADE and TFG.activeDatabase == TFG.RIDING_BURNING_CRUSADE then
         return true
     end
 
@@ -745,7 +745,7 @@ end
 local function getProfessionLevelForCurrentView()
     -- Special-case Riding dataset: treat it as a profession-like view.
     -- (debug prints removed)
-    if TFG and TFG.RIDING_TBC and TFG.activeDatabase == TFG.RIDING_TBC then
+    if TFG and TFG.RIDING_BURNING_CRUSADE and TFG.activeDatabase == TFG.RIDING_BURNING_CRUSADE then
         return getRidingLevel and getRidingLevel() or 0
     end
     -- Determine the profession name from the selected dropdown text.
@@ -770,7 +770,7 @@ end
 -- Support treating Riding (a skills dataset) as a profession-like view.
 local function getProfessionMaxCapForCurrentView()
     -- Special-case Riding dataset: treat it as a profession-like view.
-    if TFG and TFG.RIDING_TBC and TFG.activeDatabase == TFG.RIDING_TBC then
+    if TFG and TFG.RIDING_BURNING_CRUSADE and TFG.activeDatabase == TFG.RIDING_BURNING_CRUSADE then
         return getRidingMaxCap and getRidingMaxCap() or 0
     end
     local expansionObject = TFG.DATABASE_FILES[TFG.selectedExpansion]
@@ -805,7 +805,7 @@ end
 
 local function getProfessionNameForCurrentView()
     -- Special-case Riding dataset: treat it as a profession-like view.
-    if TFG and TFG.RIDING_TBC and TFG.activeDatabase == TFG.RIDING_TBC then
+    if TFG and TFG.RIDING_BURNING_CRUSADE and TFG.activeDatabase == TFG.RIDING_BURNING_CRUSADE then
         return getRidingName and getRidingName() or "Riding"
     end
     local expansionObject = TFG.DATABASE_FILES[TFG.selectedExpansion]
@@ -1988,7 +1988,7 @@ function frame:Relayout()
         -- the Riding dataset (it's a skills DB modelled as a profession but
         -- should not get synthetic unlock entries which would hide the raw spells).
         if not isProfession then return baseRows end
-        if TFG and TFG.RIDING_TBC and TFG.activeDatabase == TFG.RIDING_TBC then return baseRows end
+        if TFG and TFG.RIDING_BURNING_CRUSADE and TFG.activeDatabase == TFG.RIDING_BURNING_CRUSADE then return baseRows end
 
         local profName = getProfessionNameForCurrentView()
 
@@ -2309,8 +2309,8 @@ function frame:Relayout()
         local spellId = getSpellId(spell)
         if isProfession then
             if not spellId or spellId <= 0 then return false end
-            if TFG.RIDING_TBC
-                and TFG.activeDatabase == TFG.RIDING_TBC
+            if TFG.RIDING_BURNING_CRUSADE
+                and TFG.activeDatabase == TFG.RIDING_BURNING_CRUSADE
                 and spell.name
                 and getSpellRank(spell) then
                 local knownRank = getHighestKnownRankForSpellName(spell.name, spell)
