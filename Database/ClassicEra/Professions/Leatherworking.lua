@@ -4045,7 +4045,11 @@ TFG.LEATHERWORKING_CLASSIC_ERA = {
             source = {
                 {
                     type = "Quest",
-                    quest_ids = { 7493, 7497 },
+                    quest_id = 7493,
+                },
+                {
+                    type = "Quest",
+                    quest_id = 7497,
                 },
             },
             product = { item_id = 15138, qty = 1 },

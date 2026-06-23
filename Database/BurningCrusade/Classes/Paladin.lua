@@ -1862,8 +1862,8 @@ TFG.PALADIN_BURNING_CRUSADE = {
             source = {
                 {
                     type = "Quest",
-                    quest_ids = { 7647, 9737 },
-                    location = "Knight-Lord Bloodvalor in Silvermoon City (Horde) or Duthorian Rall in Stormwind (Alliance)",
+                    quest_id = 7647,
+                    location = "Duthorian Rall in Stormwind",
                 },
             }
         },
@@ -1873,6 +1873,13 @@ TFG.PALADIN_BURNING_CRUSADE = {
             rank = 1,
             icon = "ability_mount_charger",
             faction = "Horde",
+            source = {
+                {
+                    type = "Quest",
+                    quest_id = 9737,
+                    location = "Knight-Lord Bloodvalor in Silvermoon City",
+                },
+            },
         },
     },
     [61] = {

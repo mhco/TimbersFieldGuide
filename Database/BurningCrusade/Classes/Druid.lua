@@ -3007,9 +3007,7 @@ TFG.DRUID_BURNING_CRUSADE = {
             source = {
                 {
                     type = "Quest",
-                    quest_ids = {
-                    { id = 11001, name = "Vanquish the Raven God", },
-                    },
+                    quest_id = 11001,
                     location = "Morthis Whisperwing quest chain in Zangarmarsh",
                 },
             },

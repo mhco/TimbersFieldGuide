@@ -999,7 +999,11 @@ TFG.ALCHEMY_CLASSIC_ERA = {
             source = {
                 {
                     type = "Quest",
-                    quest_ids = { 2203, 2501 },
+                    quest_id = 2203,
+                },
+                {
+                    type = "Quest",
+                    quest_id = 2501,
                 },
             },
             product = { item_id = 9030, qty = 1 },
