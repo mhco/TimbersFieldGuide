@@ -259,47 +259,6 @@ TFG.DATABASE_FILES = {
     },
 }
 
-local function enrichDatabaseBySpellId(targetDatabase, detailsDatabase)
-    if type(targetDatabase) ~= "table" or type(detailsDatabase) ~= "table" then return end
-
-    local detailsBySpellId = {}
-    for _, spells in pairs(detailsDatabase) do
-        if type(spells) == "table" then
-            for _, detail in ipairs(spells) do
-                local spellId = detail and tonumber(detail.spell_id or detail.id)
-                if spellId and not detailsBySpellId[spellId] then
-                    detailsBySpellId[spellId] = detail
-                end
-            end
-        end
-    end
-
-    for _, spells in pairs(targetDatabase) do
-        if type(spells) == "table" then
-            for _, spell in ipairs(spells) do
-                local spellId = spell and tonumber(spell.spell_id or spell.id)
-                local detail = spellId and detailsBySpellId[spellId]
-                if detail then
-                    spell.product = spell.product or detail.product
-                    spell.materials = spell.materials or detail.materials
-                    spell.levels = spell.levels or detail.levels
-                    spell.phase = spell.phase or detail.phase
-
-                    if detail.source then
-                        spell.source = spell.source or {}
-                        for key, value in pairs(detail.source) do
-                            if spell.source[key] == nil then
-                                spell.source[key] = value
-                            end
-                        end
-                    end
-                end
-            end
-        end
-    end
-end
-
-enrichDatabaseBySpellId(TFG.ROGUE_POISONS_BURNING_CRUSADE, TFG.ROGUE_POISONS_DETAILS_BURNING_CRUSADE)
 
 local function normalizeChildKey(name)
     return tostring(name or ""):lower():gsub("[^%w]+", "-"):gsub("^%-+", ""):gsub("%-+$", "")

@@ -88,20 +88,11 @@ Assert-True ($frame -notmatch "DebugWindow|tryRegisterDebugTab") "External debug
 $minimap = Get-Content -LiteralPath (Join-Path $Root "Core/Minimap.lua") -Raw
 Assert-True ($minimap -notmatch 'HookScript\("OnClick"') "Minimap right-click must not be hooked twice."
 
-$poisonDetails = Get-Content -LiteralPath (Join-Path $Root "Database/BurningCrusade/Professions/Poisons.lua") -Raw
+# The split Poisons.lua details file was consolidated into RoguePoisons.lua.
 $activePoisons = Get-Content -LiteralPath (Join-Path $Root "Database/BurningCrusade/Classes/RoguePoisons.lua") -Raw
-Assert-True ($poisonDetails -match "TFG\.ROGUE_POISONS_DETAILS_BURNING_CRUSADE\s*=") "TBC Rogue Poison details are not integrated."
-
-$spellIdPattern = '(?<![A-Za-z0-9_])(?:spell_id|id)\s*=\s*(\d+)'
-$activePoisonIds = [regex]::Matches($activePoisons, $spellIdPattern) |
-    ForEach-Object { [int]$_.Groups[1].Value } |
-    Sort-Object -Unique
-$detailPoisonIds = [regex]::Matches($poisonDetails, $spellIdPattern) |
-    ForEach-Object { [int]$_.Groups[1].Value } |
-    Sort-Object -Unique
-foreach ($spellId in $activePoisonIds) {
-    Assert-True ($detailPoisonIds -contains $spellId) "TBC Rogue Poison details are missing spell ID $spellId."
-}
+Assert-True (-not (Test-Path -LiteralPath (Join-Path $Root "Database/BurningCrusade/Professions/Poisons.lua"))) "The split Poisons.lua details file must be removed after consolidation."
+Assert-True ($activePoisons -match "TFG\.ROGUE_POISONS_BURNING_CRUSADE\s*=") "TBC Rogue Poison symbol is incorrect."
+Assert-True (($activePoisons -match "product\s*=\s*\{\s*item_id") -and ($activePoisons -match "materials\s*=\s*\{")) "Consolidated Rogue Poisons must carry the crafting details (product/materials)."
 
 $phasedProfessionFiles = Get-ChildItem -LiteralPath (Join-Path $Root "Database/BurningCrusade/Professions") -Filter "*.lua" |
     Where-Object {

@@ -7,6 +7,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
             name = "Poisons",
             rank = 1,
             icon = "trade_brewpoison",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 10,
+                },
+            },
         },
         {
             spell_id = 3420,
@@ -20,6 +26,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 3000,
                 },
             },
+            product = { item_id = 3775, qty = 1 },
+            materials = {
+                { item_id = 2930, qty = 1 },
+                { item_id = 3371, qty = 1 },
+            },
+            levels = { 1, 125, 150, 175 },
         },
         {
             spell_id = 8681,
@@ -27,6 +39,17 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
             rank = 1,
             icon = "ability_poisons",
             group = "instant_poison",
+            source = {
+                {
+                    type = "Trainer",
+                },
+            },
+            product = { item_id = 6947, qty = 1 },
+            materials = {
+                { item_id = 2928, qty = 1 },
+                { item_id = 3371, qty = 1 },
+            },
+            levels = { 1, 125, 150, 175 },
         },
     },
     [24] = {
@@ -42,6 +65,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 5000,
                 },
             },
+            product = { item_id = 5237, qty = 1 },
+            materials = {
+                { item_id = 2928, qty = 1 },
+                { item_id = 3371, qty = 1 },
+            },
+            levels = { 100, 150, 175, 200 },
         },
     },
     [28] = {
@@ -57,6 +86,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 8000,
                 },
             },
+            product = { item_id = 6949, qty = 1 },
+            materials = {
+                { item_id = 2928, qty = 1 },
+                { item_id = 3372, qty = 1 },
+            },
+            levels = { 120, 165, 190, 215 },
         },
     },
     [30] = {
@@ -72,6 +107,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 10000,
                 },
             },
+            product = { item_id = 2892, qty = 1 },
+            materials = {
+                { item_id = 5173, qty = 1 },
+                { item_id = 3372, qty = 1 },
+            },
+            levels = { 130, 175, 200, 225 },
         },
     },
     [32] = {
@@ -87,6 +128,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 12000,
                 },
             },
+            product = { item_id = 10918, qty = 1 },
+            materials = {
+                { item_id = 2930, qty = 1 },
+                { item_id = 3372, qty = 1 },
+            },
+            levels = { 140, 185, 210, 235 },
         },
     },
     [36] = {
@@ -102,6 +149,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 16000,
                 },
             },
+            product = { item_id = 6950, qty = 1 },
+            materials = {
+                { item_id = 8924, qty = 2 },
+                { item_id = 3372, qty = 1 },
+            },
+            levels = { 160, 205, 230, 255 },
         },
     },
     [38] = {
@@ -117,6 +170,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 18000,
                 },
             },
+            product = { item_id = 2893, qty = 1 },
+            materials = {
+                { item_id = 5173, qty = 2 },
+                { item_id = 3372, qty = 1 },
+            },
+            levels = { 170, 215, 240, 265 },
         },
         {
             spell_id = 8694,
@@ -130,6 +189,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 18000,
                 },
             },
+            product = { item_id = 6951, qty = 1 },
+            materials = {
+                { item_id = 8923, qty = 1 },
+                { item_id = 3372, qty = 1 },
+            },
+            levels = { 170, 215, 240, 265 },
         },
     },
     [40] = {
@@ -145,6 +210,13 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 20000,
                 },
             },
+            product = { item_id = 10920, qty = 1 },
+            materials = {
+                { item_id = 2930, qty = 1 },
+                { item_id = 5173, qty = 1 },
+                { item_id = 3372, qty = 1 },
+            },
+            levels = { 180, 225, 250, 275 },
         },
     },
     [44] = {
@@ -160,6 +232,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 29000,
                 },
             },
+            product = { item_id = 8926, qty = 1 },
+            materials = {
+                { item_id = 8924, qty = 1 },
+                { item_id = 8925, qty = 1 },
+            },
+            levels = { 200, 245, 270, 295 },
         },
     },
     [46] = {
@@ -175,6 +253,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 31000,
                 },
             },
+            product = { item_id = 8984, qty = 1 },
+            materials = {
+                { item_id = 5173, qty = 1 },
+                { item_id = 8925, qty = 1 },
+            },
+            levels = { 210, 255, 280, 305 },
         },
     },
     [48] = {
@@ -190,6 +274,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 33000,
                 },
             },
+            product = { item_id = 10921, qty = 1 },
+            materials = {
+                { item_id = 8923, qty = 1 },
+                { item_id = 8925, qty = 1 },
+            },
+            levels = { 220, 265, 290, 315 },
         },
     },
     [50] = {
@@ -205,6 +295,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 35000,
                 },
             },
+            product = { item_id = 3776, qty = 1 },
+            materials = {
+                { item_id = 8923, qty = 1 },
+                { item_id = 8925, qty = 1 },
+            },
+            levels = { 230, 275, 300, 325 },
         },
     },
     [52] = {
@@ -220,6 +316,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 46000,
                 },
             },
+            product = { item_id = 8927, qty = 1 },
+            materials = {
+                { item_id = 8924, qty = 2 },
+                { item_id = 8925, qty = 1 },
+            },
+            levels = { 240, 285, 310, 335 },
         },
         {
             spell_id = 11400,
@@ -233,6 +335,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 46000,
                 },
             },
+            product = { item_id = 9186, qty = 1 },
+            materials = {
+                { item_id = 8923, qty = 1 },
+                { item_id = 8925, qty = 1 },
+            },
+            levels = { 240, 285, 310, 335 },
         },
     },
     [54] = {
@@ -248,6 +356,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 48000,
                 },
             },
+            product = { item_id = 8985, qty = 1 },
+            materials = {
+                { item_id = 5173, qty = 2 },
+                { item_id = 8925, qty = 1 },
+            },
+            levels = { 250, 295, 320, 345 },
         },
     },
     [56] = {
@@ -263,6 +377,13 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 50000,
                 },
             },
+            product = { item_id = 10922, qty = 1 },
+            materials = {
+                { item_id = 8923, qty = 1 },
+                { item_id = 5173, qty = 1 },
+                { item_id = 8925, qty = 1 },
+            },
+            levels = { 260, 305, 330, 355 },
         },
     },
     [60] = {
@@ -278,6 +399,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 54000,
                 },
             },
+            product = { item_id = 20844, qty = 1 },
+            materials = {
+                { item_id = 5173, qty = 2 },
+                { item_id = 8925, qty = 1 },
+            },
+            levels = { 280, 300, 325, 350 },
         },
         {
             spell_id = 11343,
@@ -291,6 +418,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 54000,
                 },
             },
+            product = { item_id = 8928, qty = 1 },
+            materials = {
+                { item_id = 8924, qty = 2 },
+                { item_id = 8925, qty = 1 },
+            },
+            levels = { 280, 325, 350, 375 },
         },
     },
     [62] = {
@@ -306,6 +439,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 65000,
                 },
             },
+            product = { item_id = 22053, qty = 1 },
+            materials = {
+                { item_id = 2931, qty = 1 },
+                { item_id = 8925, qty = 1 },
+            },
+            levels = { 290, 345, 365, 385 },
         },
     },
     [64] = {
@@ -321,6 +460,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 80000,
                 },
             },
+            product = { item_id = 22055, qty = 1 },
+            materials = {
+                { item_id = 8923, qty = 2 },
+                { item_id = 8925, qty = 1 },
+            },
+            levels = { 300, 345, 370, 395 },
         },
     },
     [68] = {
@@ -336,6 +481,13 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 110000,
                 },
             },
+            product = { item_id = 21835, qty = 1 },
+            materials = {
+                { item_id = 2931, qty = 1 },
+                { item_id = 5173, qty = 1 },
+                { item_id = 8925, qty = 1 },
+            },
+            levels = { 340, 340, 355, 370 },
         },
         {
             spell_id = 26892,
@@ -349,6 +501,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 110000,
                 },
             },
+            product = { item_id = 21927, qty = 1 },
+            materials = {
+                { item_id = 2931, qty = 1 },
+                { item_id = 8925, qty = 1 },
+            },
+            levels = { 320, 365, 390, 415 },
         },
     },
     [70] = {
@@ -364,6 +522,12 @@ TFG.ROGUE_POISONS_BURNING_CRUSADE = {
                     cost = 140000,
                 },
             },
+            product = { item_id = 22054, qty = 1 },
+            materials = {
+                { item_id = 2931, qty = 1 },
+                { item_id = 8925, qty = 1 },
+            },
+            levels = { 330, 385, 405, 425 },
         },
     },
 }
