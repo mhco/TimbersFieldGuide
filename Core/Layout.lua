@@ -215,52 +215,29 @@ local function getMaterialQty(mat)
     return tonumber(mat.qty) or tonumber(mat.quantity) or 1
 end
 
--- Normalize one raw source object onto the per-source schema. Returns a fresh
--- table so callers can sort/annotate without mutating DB data. Legacy fields are
--- mapped: recipe_item_ids[1] -> item_id, quest_ids[1] -> quest_id (the [1] is
--- faithful to the current single-display behavior; multi-id enrichment is later).
+-- Normalize one raw source object: numeric-coerce the id/cost/phase fields and
+-- return a fresh table so callers can sort/annotate without mutating DB data.
 local function normalizeSource(s)
     if type(s) ~= "table" then return nil end
-    local out = {
+    return {
         type = s.type,
         cost = s.cost,
         location = s.location,
         faction = s.faction,
         phase = tonumber(s.phase),
-        item_id = tonumber(s.item_id) or tonumber(s.id),
+        item_id = tonumber(s.item_id),
         quest_id = tonumber(s.quest_id),
         quest_name = s.quest_name,
     }
-    if not out.item_id and type(s.recipe_item_ids) == "table" and s.recipe_item_ids[1] then
-        out.item_id = tonumber(s.recipe_item_ids[1])
-    end
-    if not out.quest_id and type(s.quest_ids) == "table" and s.quest_ids[1] then
-        local raw = s.quest_ids[1]
-        if type(raw) == "table" then
-            out.quest_id = tonumber(raw.id)
-            out.quest_name = out.quest_name or raw.name
-        else
-            out.quest_id = tonumber(raw)
-        end
-    end
-    return out
 end
 
--- Read-normalize an entry's `source` into an array of source objects. Accepts a
--- legacy single-object source, an already-array source, or nil (-> {}). This is
--- the single seam every consumer reads through during the source-array migration.
+-- Read an entry's `source` as an array of normalized source objects (or {} when
+-- absent). Every consumer reads sources through this seam.
 function TFG.GetSources(entry)
     if not entry or not entry.source then return {} end
-    local src = entry.source
     local out = {}
-    if type(src[1]) == "table" then
-        -- Already an array of source objects.
-        for i = 1, #src do
-            out[#out + 1] = normalizeSource(src[i])
-        end
-    else
-        -- Legacy single-object source.
-        out[1] = normalizeSource(src)
+    for i = 1, #entry.source do
+        out[#out + 1] = normalizeSource(entry.source[i])
     end
     return out
 end
