@@ -69,6 +69,7 @@ Libs/LibDBIcon-1.0/LibDBIcon-1.0.lua
 Core/Constants.lua
 Core/Util.lua
 Core/Database.lua
+Core/Model.lua
 UI/Window.lua
 Launchers/Minimap.lua
 Core/Layout.lua

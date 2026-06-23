@@ -64,10 +64,11 @@ Assert-True ($vanillaFirstAid -match "TFG\.FIRST_AID_CLASSIC_ERA\s*=") "Vanilla 
 Assert-True ($tbcFirstAid -match "TFG\.FIRST_AID_BURNING_CRUSADE\s*=") "TBC First Aid symbol is incorrect."
 
 $layout = Get-Content -LiteralPath (Join-Path $Root "Core/Layout.lua") -Raw
+$model = Get-Content -LiteralPath (Join-Path $Root "Core/Model.lua") -Raw
 Assert-True ($layout -notmatch '::\(%d\+\)') "Runtime selection parsing still depends on numeric child indexes."
-Assert-True ($layout -match "function getEffectivePhase") "Phase availability must use the effective (min-over-sources) phase."
-Assert-True ($layout -match "entryPhase\s*==\s*nil\s*then\s*return\s*true") "Missing phase values must remain unrestricted."
-Assert-True ($layout -match "phase\s*<=\s*selectedPhase|entryPhase\s*<=\s*selectedPhase") "Phase filtering must be cumulative."
+Assert-True ($model -match "function getEffectivePhase") "Phase availability must use the effective (min-over-sources) phase."
+Assert-True ($model -match "entryPhase\s*==\s*nil\s*then\s*return\s*true") "Missing phase values must remain unrestricted."
+Assert-True ($model -match "phase\s*<=\s*selectedPhase|entryPhase\s*<=\s*selectedPhase") "Phase filtering must be cumulative."
 Assert-True ($layout -notmatch 'extractCategoriesFromDatabase[\s\S]{0,900}?isEntryAvailableInPhase') "Category options must be extracted from the full database, not the selected phase."
 Assert-True ($layout -match "No entries match the current filters") "Filtered empty-state message is missing."
 Assert-True ($layout -match "This view is not available for this expansion") "Unavailable-view message is missing."
