@@ -82,11 +82,11 @@ foreach ($eventName in "PLAYER_LEVEL_UP", "SKILL_LINES_CHANGED", "SPELLS_CHANGED
 }
 Assert-True ($layout -notmatch 'TimbersFieldGuideDB[\s\S]{0,40}phase') "Phase selection must not be persisted."
 
-$frame = Get-Content -LiteralPath (Join-Path $Root "Core/Frame.lua") -Raw
+$frame = Get-Content -LiteralPath (Join-Path $Root "UI/Window.lua") -Raw
 Assert-True ($frame -match "frame:Hide\(\)") "Main frame must explicitly start hidden."
 Assert-True ($frame -notmatch "DebugWindow|tryRegisterDebugTab") "External debug-window integration must remain removed."
 
-$minimap = Get-Content -LiteralPath (Join-Path $Root "Core/Minimap.lua") -Raw
+$minimap = Get-Content -LiteralPath (Join-Path $Root "Launchers/Minimap.lua") -Raw
 Assert-True ($minimap -notmatch 'HookScript\("OnClick"') "Minimap right-click must not be hooked twice."
 
 # The split Poisons.lua details file was consolidated into RoguePoisons.lua.
@@ -120,8 +120,8 @@ Assert-True ($tailoring -match 'spell_id\s*=\s*46128[\s\S]{0,400}?phase\s*=\s*5'
 $weaponSkills = Get-Content -LiteralPath (Join-Path $Root "Database/BurningCrusade/Skills/WeaponSkills.lua") -Raw
 Assert-True ($weaponSkills -notmatch 'name\s*=\s*"One-Handed Swords"[\s\S]{0,160}?source\s*=\s*\{[\s\S]{0,160}?icon\s*=[\s\S]{0,160}?source\s*=\s*\{') "TBC Weapon Skills still contains the duplicate source field."
 
-$testUI = Get-Content -LiteralPath (Join-Path $Root "Core/TestUI.lua") -Raw
-$slash = Get-Content -LiteralPath (Join-Path $Root "Core/Slash.lua") -Raw
+$testUI = Get-Content -LiteralPath (Join-Path $Root "UI/Navigation.lua") -Raw
+$slash = Get-Content -LiteralPath (Join-Path $Root "Launchers/Slash.lua") -Raw
 Assert-True ($testUI -match "function TFG\.ToggleTestUI") "Navigation mockup toggle is missing."
 Assert-True ($testUI -match '"Classes"[\s\S]*"Professions"[\s\S]*"Skills"') "Navigation mockup bottom tabs are missing."
 Assert-True ($testUI -match 'closeTab[\s\S]*expansionTab') "Navigation mockup expansion and close controls must be adjacent top tabs."

@@ -2,7 +2,7 @@
 ## Title: Timber's Field Guide
 ## Notes: A scrollable list of spells for each and every class. See what abilities and talents you can learn at any given level.
 ## Author: Timbervale-DreamscytheUS
-## Version: v2026.06.19
+## Version: v2026.06.23a
 ## SavedVariables: TimbersFieldGuideDB
 ## X-License: gpl-3.0-only
 ## X-Curse-Project-ID: 1413887
@@ -69,8 +69,8 @@ Libs/LibDBIcon-1.0/LibDBIcon-1.0.lua
 Core/Constants.lua
 Core/Util.lua
 Core/Database.lua
-Core/Frame.lua
-Core/Minimap.lua
+UI/Window.lua
+Launchers/Minimap.lua
 Core/Layout.lua
-Core/TestUI.lua
-Core/Slash.lua
+UI/Navigation.lua
+Launchers/Slash.lua
