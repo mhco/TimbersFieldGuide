@@ -72,7 +72,7 @@ Core/Database.lua
 Core/Model.lua
 UI/Window.lua
 Launchers/Minimap.lua
-Core/Layout.lua
+UI/ListView.lua
 UI/RecipePopup.lua
 UI/Navigation.lua
 Launchers/Slash.lua

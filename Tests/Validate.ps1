@@ -63,7 +63,7 @@ $tbcFirstAid = Get-Content -LiteralPath (Join-Path $Root "Database/BurningCrusad
 Assert-True ($vanillaFirstAid -match "TFG\.FIRST_AID_CLASSIC_ERA\s*=") "Vanilla First Aid symbol is incorrect."
 Assert-True ($tbcFirstAid -match "TFG\.FIRST_AID_BURNING_CRUSADE\s*=") "TBC First Aid symbol is incorrect."
 
-$layout = Get-Content -LiteralPath (Join-Path $Root "Core/Layout.lua") -Raw
+$layout = Get-Content -LiteralPath (Join-Path $Root "UI/ListView.lua") -Raw
 $model = Get-Content -LiteralPath (Join-Path $Root "Core/Model.lua") -Raw
 $recipePopup = Get-Content -LiteralPath (Join-Path $Root "UI/RecipePopup.lua") -Raw
 Assert-True ($layout -notmatch '::\(%d\+\)') "Runtime selection parsing still depends on numeric child indexes."
