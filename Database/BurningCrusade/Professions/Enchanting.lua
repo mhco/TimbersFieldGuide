@@ -3253,6 +3253,7 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 22565,
+                    phase = 5,
                 },
             },
             product = { item_id = 22449, qty = 1 },
@@ -3857,6 +3858,7 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
                     type = "Item",
                     item_id = 35500,
                     location = "Eldara Dawnrunner, Shattered Sun Offensive - Honored",
+                    phase = 5,
                 },
             },
             materials = {
@@ -3865,7 +3867,6 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
                 { item_id = 23427, qty = 4 },
             },
             levels = { 360, 370, 385, 400 },
-            phase = 5,
         },
     },
     [370] = {
@@ -3919,6 +3920,7 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
                     type = "Item",
                     item_id = 22538,
                     location = "Lower City - Honored",
+                    phase = 3,
                 },
             },
             materials = {
@@ -3998,7 +4000,8 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 33307,
-                    location = "Multiple Bosses in Zul'Aman"
+                    location = "Multiple Bosses in Zul'Aman",
+                    phase = 4,
                 },
             },
             materials = {
@@ -4009,7 +4012,6 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
                 { item_id = 22824, qty = 3 },
             },
             levels = { 375, 380, 385, 390 },
-            phase = 4,
         },
         {
             spell_id = 47051,
@@ -4021,6 +4023,7 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
                     type = "Item",
                     item_id = 35756,
                     location = "Priestess Delrissa, Magisters' Terrace",
+                    phase = 5,
                 },
             },
             materials = {
@@ -4028,7 +4031,6 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
                 { item_id = 22452, qty = 8 },
             },
             levels = { 375, 380, 385, 390 },
-            phase = 5,
         },
         {
             spell_id = 32667,
@@ -4064,6 +4066,7 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
                     item_id = 34872,
                     cost = 120000,
                     location = "Eldara Dawnrunner, Shattered Sun Offensive - Honored",
+                    phase = 5,
                 },
             },
             product = { item_id = 22449, qty = 2 },
@@ -4071,7 +4074,6 @@ TFG.ENCHANTING_BURNING_CRUSADE = {
                 { item_id = 22450, qty = 1 },
             },
             levels = { 375, 375, 375, 365 },
-            phase = 5,
         },
     },
 }

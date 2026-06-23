@@ -5785,6 +5785,7 @@ TFG.BLACKSMITHING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35208,
+                    phase = 5,
                 },
             },
             product = { item_id = 34380, qty = 1 },
@@ -5804,6 +5805,7 @@ TFG.BLACKSMITHING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35209,
+                    phase = 5,
                 },
             },
             product = { item_id = 34378, qty = 1 },
@@ -5824,6 +5826,7 @@ TFG.BLACKSMITHING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35210,
+                    phase = 5,
                 },
             },
             product = { item_id = 34379, qty = 1 },
@@ -5844,6 +5847,7 @@ TFG.BLACKSMITHING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35211,
+                    phase = 5,
                 },
             },
             product = { item_id = 34377, qty = 1 },
@@ -6690,6 +6694,7 @@ TFG.BLACKSMITHING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 30321,
+                    phase = 2,
                 },
             },
             product = { item_id = 30034, qty = 1 },
@@ -6709,6 +6714,7 @@ TFG.BLACKSMITHING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 30322,
+                    phase = 2,
                 },
             },
             product = { item_id = 30032, qty = 1 },
@@ -6727,6 +6733,7 @@ TFG.BLACKSMITHING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 30323,
+                    phase = 2,
                 },
             },
             product = { item_id = 30033, qty = 1 },
@@ -6745,6 +6752,7 @@ TFG.BLACKSMITHING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 30324,
+                    phase = 2,
                 },
             },
             product = { item_id = 30031, qty = 1 },
@@ -6877,6 +6885,7 @@ TFG.BLACKSMITHING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32441,
+                    phase = 3,
                 },
             },
             product = { item_id = 32402, qty = 1 },
@@ -6897,6 +6906,7 @@ TFG.BLACKSMITHING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32442,
+                    phase = 3,
                 },
             },
             product = { item_id = 32403, qty = 1 },
@@ -6917,6 +6927,7 @@ TFG.BLACKSMITHING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32443,
+                    phase = 3,
                 },
             },
             product = { item_id = 32404, qty = 1 },
@@ -6937,6 +6948,7 @@ TFG.BLACKSMITHING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32444,
+                    phase = 3,
                 },
             },
             product = { item_id = 32401, qty = 1 },
@@ -6957,6 +6969,7 @@ TFG.BLACKSMITHING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32736,
+                    phase = 3,
                 },
             },
             product = { item_id = 32568, qty = 1 },
@@ -6976,6 +6989,7 @@ TFG.BLACKSMITHING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32737,
+                    phase = 3,
                 },
             },
             product = { item_id = 32570, qty = 1 },
@@ -6995,6 +7009,7 @@ TFG.BLACKSMITHING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32738,
+                    phase = 3,
                 },
             },
             product = { item_id = 32571, qty = 1 },
@@ -7014,6 +7029,7 @@ TFG.BLACKSMITHING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32739,
+                    phase = 3,
                 },
             },
             product = { item_id = 32573, qty = 1 },

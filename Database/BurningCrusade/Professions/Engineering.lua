@@ -3759,6 +3759,7 @@ TFG.ENGINEERING_BURNING_CRUSADE = {
                 {
                     type = "Trainer",
                     cost = 12000,
+                    phase = 2,
                 },
             },
             product = { item_id = 34060, qty = 1 },
@@ -4272,6 +4273,7 @@ TFG.ENGINEERING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35192,
+                    phase = 5,
                 },
             },
             product = { item_id = 35184, qty = 1 },
@@ -4292,6 +4294,7 @@ TFG.ENGINEERING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35193,
+                    phase = 5,
                 },
             },
             product = { item_id = 34355, qty = 1 },
@@ -4311,6 +4314,7 @@ TFG.ENGINEERING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35194,
+                    phase = 5,
                 },
             },
             product = { item_id = 34356, qty = 1 },
@@ -4329,6 +4333,7 @@ TFG.ENGINEERING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35195,
+                    phase = 5,
                 },
             },
             product = { item_id = 34354, qty = 1 },
@@ -4347,6 +4352,7 @@ TFG.ENGINEERING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35196,
+                    phase = 5,
                 },
             },
             product = { item_id = 34357, qty = 1 },
@@ -4366,6 +4372,7 @@ TFG.ENGINEERING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35197,
+                    phase = 5,
                 },
             },
             product = { item_id = 34353, qty = 1 },
@@ -4421,6 +4428,7 @@ TFG.ENGINEERING_BURNING_CRUSADE = {
                 {
                     type = "Trainer",
                     cost = 18000,
+                    phase = 2,
                 },
             },
             product = { item_id = 34061, qty = 1 },
@@ -4538,6 +4546,7 @@ TFG.ENGINEERING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35189,
+                    phase = 5,
                 },
             },
             product = { item_id = 35181, qty = 1 },
@@ -4557,6 +4566,7 @@ TFG.ENGINEERING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35187,
+                    phase = 5,
                 },
             },
             product = { item_id = 35185, qty = 1 },
@@ -4577,6 +4587,7 @@ TFG.ENGINEERING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35191,
+                    phase = 5,
                 },
             },
             product = { item_id = 35183, qty = 1 },
@@ -4596,6 +4607,7 @@ TFG.ENGINEERING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35190,
+                    phase = 5,
                 },
             },
             product = { item_id = 35182, qty = 1 },
@@ -4615,6 +4627,7 @@ TFG.ENGINEERING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35186,
+                    phase = 5,
                 },
             },
             product = { item_id = 34847, qty = 1 },

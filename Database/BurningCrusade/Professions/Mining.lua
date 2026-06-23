@@ -595,6 +595,7 @@ TFG.MINING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35273,
+                    phase = 5,
                 },
             },
             product = { item_id = 35128, qty = 1 },

@@ -2970,6 +2970,7 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35322,
+                    phase = 5,
                 },
             },
             product = { item_id = 35315, qty = 1 },
@@ -2987,6 +2988,7 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35323,
+                    phase = 5,
                 },
             },
             product = { item_id = 35316, qty = 1 },
@@ -3004,6 +3006,7 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35325,
+                    phase = 5,
                 },
             },
             product = { item_id = 35318, qty = 1 },
@@ -3021,6 +3024,7 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35708,
+                    phase = 5,
                 },
             },
             product = { item_id = 35707, qty = 1 },
@@ -3451,6 +3455,7 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35198,
+                    phase = 5,
                 },
             },
             product = { item_id = 34362, qty = 1 },
@@ -3471,6 +3476,7 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35199,
+                    phase = 5,
                 },
             },
             product = { item_id = 34363, qty = 1 },
@@ -3491,6 +3497,7 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35200,
+                    phase = 5,
                 },
             },
             product = { item_id = 34361, qty = 1 },
@@ -3511,6 +3518,7 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35201,
+                    phase = 5,
                 },
             },
             product = { item_id = 34359, qty = 1 },
@@ -3530,6 +3538,7 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35202,
+                    phase = 5,
                 },
             },
             product = { item_id = 34360, qty = 1 },
@@ -3548,6 +3557,7 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35203,
+                    phase = 5,
                 },
             },
             product = { item_id = 34358, qty = 1 },
@@ -4006,6 +4016,7 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35502,
+                    phase = 5,
                 },
             },
             product = { item_id = 35501, qty = 1 },
@@ -4023,6 +4034,7 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35505,
+                    phase = 5,
                 },
             },
             product = { item_id = 35503, qty = 1 },
@@ -4280,7 +4292,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32228, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39716,
@@ -4307,7 +4318,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32228, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39717,
@@ -4334,7 +4344,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32228, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39718,
@@ -4361,7 +4370,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32228, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39719,
@@ -4388,7 +4396,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32229, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39720,
@@ -4415,7 +4422,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32229, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39721,
@@ -4442,7 +4448,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32229, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39722,
@@ -4469,7 +4474,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32229, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39723,
@@ -4496,7 +4500,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32229, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39724,
@@ -4523,7 +4526,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32229, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39725,
@@ -4550,7 +4552,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32229, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39727,
@@ -4577,7 +4578,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32230, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39728,
@@ -4604,7 +4604,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32230, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39729,
@@ -4631,7 +4630,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32230, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39730,
@@ -4658,7 +4656,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32230, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39731,
@@ -4685,7 +4682,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32230, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39732,
@@ -4712,7 +4708,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32230, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39733,
@@ -4739,7 +4734,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32231, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39734,
@@ -4766,7 +4760,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32231, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39735,
@@ -4793,7 +4786,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32231, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39736,
@@ -4820,7 +4812,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32231, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39737,
@@ -4847,7 +4838,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32231, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39738,
@@ -4874,7 +4864,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32231, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39739,
@@ -4901,7 +4890,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32249, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39740,
@@ -4928,7 +4916,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32249, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39741,
@@ -4955,7 +4942,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32249, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 39742,
@@ -4982,7 +4968,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32249, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 46775,
@@ -4993,6 +4978,7 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35695,
+                    phase = 5,
                 },
             },
             product = { item_id = 35693, qty = 1 },
@@ -5002,7 +4988,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 23440, qty = 6 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 46776,
@@ -5013,6 +4998,7 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35696,
+                    phase = 5,
                 },
             },
             product = { item_id = 35694, qty = 1 },
@@ -5022,7 +5008,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 22452, qty = 8 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 5,
         },
         {
             spell_id = 46777,
@@ -5033,6 +5018,7 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35697,
+                    phase = 5,
                 },
             },
             product = { item_id = 35700, qty = 1 },
@@ -5042,7 +5028,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 21884, qty = 8 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 5,
         },
         {
             spell_id = 46778,
@@ -5053,6 +5038,7 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35698,
+                    phase = 5,
                 },
             },
             product = { item_id = 35702, qty = 1 },
@@ -5062,7 +5048,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 22456, qty = 8 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 5,
         },
         {
             spell_id = 46779,
@@ -5073,6 +5058,7 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35699,
+                    phase = 5,
                 },
             },
             product = { item_id = 35703, qty = 1 },
@@ -5082,7 +5068,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 22457, qty = 8 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 5,
         },
         {
             spell_id = 47053,
@@ -5109,7 +5094,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32249, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 47054,
@@ -5136,7 +5120,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32249, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 47055,
@@ -5163,7 +5146,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32231, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 47056,
@@ -5190,7 +5172,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32229, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
         {
             spell_id = 48789,
@@ -5201,6 +5182,7 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 37504,
+                    phase = 3,
                 },
             },
             product = { item_id = 37503, qty = 1 },
@@ -5208,7 +5190,6 @@ TFG.JEWELCRAFTING_BURNING_CRUSADE = {
                 { item_id = 32230, qty = 1 },
             },
             levels = { 375, 375, 380, 385 },
-            phase = 3,
         },
     },
 }

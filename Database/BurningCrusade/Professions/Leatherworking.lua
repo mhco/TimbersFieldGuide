@@ -5989,6 +5989,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35212,
+                    phase = 5,
                 },
             },
             product = { item_id = 34372, qty = 1 },
@@ -6009,6 +6010,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35213,
+                    phase = 5,
                 },
             },
             product = { item_id = 34374, qty = 1 },
@@ -6029,6 +6031,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35214,
+                    phase = 5,
                 },
             },
             product = { item_id = 34370, qty = 1 },
@@ -6049,6 +6052,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35215,
+                    phase = 5,
                 },
             },
             product = { item_id = 34376, qty = 1 },
@@ -6069,6 +6073,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35216,
+                    phase = 5,
                 },
             },
             product = { item_id = 34371, qty = 1 },
@@ -6088,6 +6093,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35217,
+                    phase = 5,
                 },
             },
             product = { item_id = 34373, qty = 1 },
@@ -6107,6 +6113,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35218,
+                    phase = 5,
                 },
             },
             product = { item_id = 34369, qty = 1 },
@@ -6126,6 +6133,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35219,
+                    phase = 5,
                 },
             },
             product = { item_id = 34375, qty = 1 },
@@ -6774,6 +6782,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 30301,
+                    phase = 2,
                 },
             },
             product = { item_id = 30042, qty = 1 },
@@ -6794,6 +6803,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 30302,
+                    phase = 2,
                 },
             },
             product = { item_id = 30040, qty = 1 },
@@ -6814,6 +6824,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 30303,
+                    phase = 2,
                 },
             },
             product = { item_id = 30046, qty = 1 },
@@ -6834,6 +6845,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 30304,
+                    phase = 2,
                 },
             },
             product = { item_id = 30044, qty = 1 },
@@ -6854,6 +6866,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 30305,
+                    phase = 2,
                 },
             },
             product = { item_id = 30041, qty = 1 },
@@ -6873,6 +6886,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 30306,
+                    phase = 2,
                 },
             },
             product = { item_id = 30039, qty = 1 },
@@ -6892,6 +6906,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 30307,
+                    phase = 2,
                 },
             },
             product = { item_id = 30045, qty = 1 },
@@ -6912,6 +6927,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 30308,
+                    phase = 2,
                 },
             },
             product = { item_id = 30043, qty = 1 },
@@ -6932,6 +6948,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32429,
+                    phase = 3,
                 },
             },
             product = { item_id = 32398, qty = 1 },
@@ -6952,6 +6969,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32430,
+                    phase = 3,
                 },
             },
             product = { item_id = 32399, qty = 1 },
@@ -6972,6 +6990,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32431,
+                    phase = 3,
                 },
             },
             product = { item_id = 32400, qty = 1 },
@@ -6992,6 +7011,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32432,
+                    phase = 3,
                 },
             },
             product = { item_id = 32397, qty = 1 },
@@ -7012,6 +7032,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32433,
+                    phase = 3,
                 },
             },
             product = { item_id = 32394, qty = 1 },
@@ -7032,6 +7053,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32434,
+                    phase = 3,
                 },
             },
             product = { item_id = 32395, qty = 1 },
@@ -7052,6 +7074,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32435,
+                    phase = 3,
                 },
             },
             product = { item_id = 32396, qty = 1 },
@@ -7072,6 +7095,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32436,
+                    phase = 3,
                 },
             },
             product = { item_id = 32393, qty = 1 },
@@ -7092,6 +7116,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32744,
+                    phase = 3,
                 },
             },
             product = { item_id = 32582, qty = 1 },
@@ -7111,6 +7136,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32745,
+                    phase = 3,
                 },
             },
             product = { item_id = 32583, qty = 1 },
@@ -7130,6 +7156,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32746,
+                    phase = 3,
                 },
             },
             product = { item_id = 32580, qty = 1 },
@@ -7148,6 +7175,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32747,
+                    phase = 3,
                 },
             },
             product = { item_id = 32581, qty = 1 },
@@ -7166,6 +7194,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32748,
+                    phase = 3,
                 },
             },
             product = { item_id = 32574, qty = 1 },
@@ -7186,6 +7215,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32749,
+                    phase = 3,
                 },
             },
             product = { item_id = 32575, qty = 1 },
@@ -7206,6 +7236,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32750,
+                    phase = 3,
                 },
             },
             product = { item_id = 32577, qty = 1 },
@@ -7226,6 +7257,7 @@ TFG.LEATHERWORKING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 32751,
+                    phase = 3,
                 },
             },
             product = { item_id = 32579, qty = 1 },

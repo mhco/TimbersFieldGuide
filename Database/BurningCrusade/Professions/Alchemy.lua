@@ -3293,6 +3293,7 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35752,
+                    phase = 5,
                 },
             },
             product = { item_id = 35748, qty = 1 },
@@ -3312,6 +3313,7 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35753,
+                    phase = 5,
                 },
             },
             product = { item_id = 35749, qty = 1 },
@@ -3331,6 +3333,7 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35754,
+                    phase = 5,
                 },
             },
             product = { item_id = 35750, qty = 1 },
@@ -3350,6 +3353,7 @@ TFG.ALCHEMY_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 35755,
+                    phase = 5,
                 },
             },
             product = { item_id = 35751, qty = 1 },
