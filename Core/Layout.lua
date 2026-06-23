@@ -75,14 +75,30 @@ local function getRaceRestrictionSignature(spell)
     return table.concat(normalized, ",")
 end
 
+-- Effective phase = the earliest phase the entry can be obtained. A top-level
+-- entry.phase is an explicit override; otherwise it is the minimum across the
+-- entry's sources, where a source with no phase counts as launch. Returns nil
+-- when nothing constrains the phase (always available).
+local function getEffectivePhase(spell)
+    if not spell then return nil end
+    if spell.phase ~= nil then return tonumber(spell.phase) end
+    local best
+    for _, s in ipairs(TFG.GetSources(spell)) do
+        local p = tonumber(s.phase) or 1
+        if not best or p < best then best = p end
+    end
+    return best
+end
+TFG.GetEffectivePhase = getEffectivePhase
+
 local function isEntryAvailableInPhase(spell)
-    if not spell or spell.phase == nil then return true end
+    local entryPhase = getEffectivePhase(spell)
+    if entryPhase == nil then return true end
     if TFG.selectedPhase == "ALL" then return true end
     local expansion = TFG.DATABASE_FILES[TFG.selectedExpansion]
     local selectedPhase = tonumber(TFG.selectedPhase)
         or tonumber(expansion and expansion.currentPhase)
-    local entryPhase = tonumber(spell.phase)
-    if not selectedPhase or not entryPhase then
+    if not selectedPhase then
         -- Incomplete phase data must favor showing the entry.
         return true
     end
@@ -651,7 +667,7 @@ local function getMaxExplicitPhase(database)
     for _, spells in pairs(database or {}) do
         if type(spells) == "table" then
             for _, spell in ipairs(spells) do
-                local phase = tonumber(spell and spell.phase)
+                local phase = getEffectivePhase(spell)
                 if phase and phase > maxPhase then
                     maxPhase = phase
                 end
@@ -789,8 +805,8 @@ local POPUP = {
     body       = { 232 / 255, 225 / 255, 210 / 255, 1 },    -- cream
     muted      = { 158 / 255, 140 / 255, 112 / 255, 1 },    -- muted tan sub-text
     divider    = { 168 / 255, 136 / 255, 91 / 255, 0.30 },
-    mineSquare = { 0.45, 0.80, 0.40, 1 },                   -- your-faction cue
-    altSquare  = { 0.62, 0.47, 0.31, 1 },                   -- other-faction cue
+    alliance   = { 0.20, 0.45, 0.95, 1 },                   -- Alliance faction square
+    horde      = { 0.80, 0.20, 0.20, 1 },                   -- Horde faction square
     phase      = { 0.45, 0.75, 1, 1 },                      -- phase tag (matches list tooltip)
 }
 
@@ -1348,10 +1364,10 @@ local function ensureProfessionPopup()
                 if showSquare then
                     card.square:ClearAllPoints()
                     card.square:SetPoint("LEFT", card, "TOPLEFT", textX, -27)
-                    if s.faction == playerFaction then
-                        card.square:SetColorTexture(unpack(POPUP.mineSquare))
+                    if s.faction == "Horde" then
+                        card.square:SetColorTexture(unpack(POPUP.horde))
                     else
-                        card.square:SetColorTexture(unpack(POPUP.altSquare))
+                        card.square:SetColorTexture(unpack(POPUP.alliance))
                     end
                     card.square:Show()
                 else
@@ -2359,7 +2375,7 @@ function frame:Relayout()
                         icon.tfgPhaseIndicator = phaseInd
                     end
 
-                    local iconPhase = tonumber(spell and spell.phase)
+                    local iconPhase = getEffectivePhase(spell)
                     if isProfession and iconPhase and iconPhase > 1 then
                         icon.tfgPhaseIndicator:SetText("P" .. tostring(iconPhase))
                         icon.tfgPhaseIndicator:Show()
@@ -2638,7 +2654,7 @@ function frame:Relayout()
                             TFG.DATABASE_FILES[TFG.selectedExpansion]
                                 and TFG.DATABASE_FILES[TFG.selectedExpansion].currentPhase
                         )
-                        local entryPhase = tonumber(data.phase)
+                        local entryPhase = getEffectivePhase(data)
                         if isProfession and currentPhase and entryPhase and entryPhase > currentPhase then
                             GameTooltip:AddLine(" ")
                             GameTooltip:AddLine("Introduced in Phase " .. tostring(entryPhase), 0.45, 0.75, 1)

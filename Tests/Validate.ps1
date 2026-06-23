@@ -65,7 +65,8 @@ Assert-True ($tbcFirstAid -match "TFG\.FIRST_AID_BURNING_CRUSADE\s*=") "TBC Firs
 
 $layout = Get-Content -LiteralPath (Join-Path $Root "Core/Layout.lua") -Raw
 Assert-True ($layout -notmatch '::\(%d\+\)') "Runtime selection parsing still depends on numeric child indexes."
-Assert-True ($layout -match "spell\.phase\s*==\s*nil\s*then\s*return\s*true") "Missing phase values must remain unrestricted."
+Assert-True ($layout -match "function getEffectivePhase") "Phase availability must use the effective (min-over-sources) phase."
+Assert-True ($layout -match "entryPhase\s*==\s*nil\s*then\s*return\s*true") "Missing phase values must remain unrestricted."
 Assert-True ($layout -match "phase\s*<=\s*selectedPhase|entryPhase\s*<=\s*selectedPhase") "Phase filtering must be cumulative."
 Assert-True ($layout -notmatch 'extractCategoriesFromDatabase[\s\S]{0,900}?isEntryAvailableInPhase') "Category options must be extracted from the full database, not the selected phase."
 Assert-True ($layout -match "No entries match the current filters") "Filtered empty-state message is missing."
@@ -111,10 +112,10 @@ foreach ($corePhasedProfession in @("Enchanting", "Jewelcrafting", "Tailoring"))
 }
 
 $tailoring = Get-Content -LiteralPath (Join-Path $Root "Database/BurningCrusade/Professions/Tailoring.lua") -Raw
-Assert-True ($tailoring -match 'spell_id\s*=\s*36315[\s\S]{0,120}?phase\s*=\s*2') "Belt of Blasting must be marked as Phase 2."
-Assert-True ($tailoring -match 'spell_id\s*=\s*40020[\s\S]{0,120}?phase\s*=\s*3') "Black Temple Tailoring recipes must be marked as Phase 3."
-Assert-True ($tailoring -match 'spell_id\s*=\s*50194[\s\S]{0,120}?phase\s*=\s*2') "Mycah's Botanical Bag must be marked as Phase 2."
-Assert-True ($tailoring -match 'spell_id\s*=\s*46128[\s\S]{0,120}?phase\s*=\s*5') "Sunwell Tailoring recipes must be marked as Phase 5."
+Assert-True ($tailoring -match 'spell_id\s*=\s*36315[\s\S]{0,400}?phase\s*=\s*2') "Belt of Blasting must be marked as Phase 2."
+Assert-True ($tailoring -match 'spell_id\s*=\s*40020[\s\S]{0,400}?phase\s*=\s*3') "Black Temple Tailoring recipes must be marked as Phase 3."
+Assert-True ($tailoring -match 'spell_id\s*=\s*50194[\s\S]{0,400}?phase\s*=\s*2') "Mycah's Botanical Bag must be marked as Phase 2."
+Assert-True ($tailoring -match 'spell_id\s*=\s*46128[\s\S]{0,400}?phase\s*=\s*5') "Sunwell Tailoring recipes must be marked as Phase 5."
 
 $weaponSkills = Get-Content -LiteralPath (Join-Path $Root "Database/BurningCrusade/Skills/WeaponSkills.lua") -Raw
 Assert-True ($weaponSkills -notmatch 'name\s*=\s*"One-Handed Swords"[\s\S]{0,160}?source\s*=\s*\{[\s\S]{0,160}?icon\s*=[\s\S]{0,160}?source\s*=\s*\{') "TBC Weapon Skills still contains the duplicate source field."
