@@ -65,6 +65,7 @@ Assert-True ($tbcFirstAid -match "TFG\.FIRST_AID_BURNING_CRUSADE\s*=") "TBC Firs
 
 $layout = Get-Content -LiteralPath (Join-Path $Root "Core/Layout.lua") -Raw
 $model = Get-Content -LiteralPath (Join-Path $Root "Core/Model.lua") -Raw
+$recipePopup = Get-Content -LiteralPath (Join-Path $Root "UI/RecipePopup.lua") -Raw
 Assert-True ($layout -notmatch '::\(%d\+\)') "Runtime selection parsing still depends on numeric child indexes."
 Assert-True ($model -match "function getEffectivePhase") "Phase availability must use the effective (min-over-sources) phase."
 Assert-True ($model -match "entryPhase\s*==\s*nil\s*then\s*return\s*true") "Missing phase values must remain unrestricted."
@@ -73,7 +74,7 @@ Assert-True ($layout -notmatch 'extractCategoriesFromDatabase[\s\S]{0,900}?isEnt
 Assert-True ($layout -match "No entries match the current filters") "Filtered empty-state message is missing."
 Assert-True ($layout -match "This view is not available for this expansion") "Unavailable-view message is missing."
 Assert-True ($layout -match "renderPool\s*=\s*\{") "Main-list row/icon pooling is missing."
-Assert-True ($layout -match "activeIconCount") "Profession popup icon pooling is missing."
+Assert-True ($recipePopup -match "activeIconCount") "Profession popup icon pooling is missing."
 Assert-True ($layout -match "isIconInsideScrollViewport") "Offscreen icons must not retain mouse interaction."
 Assert-True ($layout -match "tfgPhaseIndicator") "Phased profession icons must display a phase-number indicator."
 # (Category/Phase dropdown signature guards now live in the navigation shell;
