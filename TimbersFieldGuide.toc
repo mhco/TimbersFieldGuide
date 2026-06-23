@@ -70,9 +70,11 @@ Core/Constants.lua
 Core/Util.lua
 Core/Database.lua
 Core/Model.lua
+UI/Theme.lua
 UI/Window.lua
 Launchers/Minimap.lua
 UI/ListView.lua
 UI/RecipePopup.lua
 UI/Navigation.lua
 Launchers/Slash.lua
+Launchers/Keybind.lua

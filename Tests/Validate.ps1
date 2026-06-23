@@ -66,6 +66,7 @@ Assert-True ($tbcFirstAid -match "TFG\.FIRST_AID_BURNING_CRUSADE\s*=") "TBC Firs
 $layout = Get-Content -LiteralPath (Join-Path $Root "UI/ListView.lua") -Raw
 $model = Get-Content -LiteralPath (Join-Path $Root "Core/Model.lua") -Raw
 $recipePopup = Get-Content -LiteralPath (Join-Path $Root "UI/RecipePopup.lua") -Raw
+$theme = Get-Content -LiteralPath (Join-Path $Root "UI/Theme.lua") -Raw
 Assert-True ($layout -notmatch '::\(%d\+\)') "Runtime selection parsing still depends on numeric child indexes."
 Assert-True ($model -match "function getEffectivePhase") "Phase availability must use the effective (min-over-sources) phase."
 Assert-True ($model -match "entryPhase\s*==\s*nil\s*then\s*return\s*true") "Missing phase values must remain unrestricted."
@@ -133,8 +134,8 @@ Assert-True ($testUI -match 'TAB_HEIGHT\s*=\s*42') "Navigation mockup tabs must 
 Assert-True ($testUI -match 'TAB_GAP\s*=\s*7') "Navigation mockup tab groups must share a common gap."
 Assert-True ($testUI -match 'applyTabBackdrop') "Navigation mockup tabs must share borderless styling."
 Assert-True ($testUI -match 'hasSubpages\s*and\s*-\(TAB_HEIGHT\s*\+\s*12\)\s*or\s*-8') "Pages without subpages must expand into the secondary-tab space."
-Assert-True ($testUI -match 'tabSelected\s*=\s*\{\s*0\.14,\s*0\.14,\s*0\.13') "Active tabs must match the active chrome section."
-Assert-True ($testUI -match 'content\s*=\s*\{\s*0\.34,\s*0\.34,\s*0\.34') "The page and scrollable content must share the medium-gray surface."
+Assert-True ($theme -match 'tabSelected\s*=\s*\{\s*0\.14,\s*0\.14,\s*0\.13') "Active tabs must match the active chrome section."
+Assert-True ($theme -match 'content\s*=\s*\{\s*0\.34,\s*0\.34,\s*0\.34') "The page and scrollable content must share the medium-gray surface."
 Assert-True ($testUI -match 'tab\.activeColor\s*=\s*COLORS\.content') "The active subpage tab must merge into the page surface."
 # The new shell re-hosts the live render engine and drives navigation from the
 # database registry rather than hardcoded mockup tables.

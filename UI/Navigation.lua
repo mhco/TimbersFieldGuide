@@ -244,34 +244,7 @@ local function selectionToken(state)
     return nil
 end
 
-local COLORS = {
-    -- Validation sentinel: tabSelected = { 0.14, 0.14, 0.13 }
-    -- Validation sentinel: content = { 0.34, 0.34, 0.34 }
-    chrome = { 56 / 255, 44 / 255, 34 / 255, 1 },
-    chromeDark = { 23 / 255, 20 / 255, 17 / 255, 1 },
-    tab = { 74 / 255, 68 / 255, 57 / 255, 1 },
-    tabHover = { 90 / 255, 82 / 255, 69 / 255, 1 },
-    tabSelected = { 56 / 255, 44 / 255, 34 / 255, 1 },
-    border = { 168 / 255, 136 / 255, 91 / 255, 1 },
-    borderBright = { 184 / 255, 150 / 255, 74 / 255, 1 },
-    content = { 1, 1, 1, 1 },
-    contentTab = { 168 / 255, 138 / 255, 91 / 255, 1 },
-    contentTabHover = { 168 / 255, 138 / 255, 91 / 255, 1 },
-    paneShell = { 56 / 255, 44 / 255, 34 / 255, 1 },
-    card = { 27 / 255, 23 / 255, 19 / 255, 0.96 },
-    cardHover = { 45 / 255, 38 / 255, 30 / 255, 1 },
-    cardSelected = { 56 / 255, 44 / 255, 34 / 255, 0.98 },
-    expansionCard = { 27 / 255, 23 / 255, 19 / 255, 0.96 },
-    expansionCardSelected = { 56 / 255, 44 / 255, 34 / 255, 0.98 },
-    textDark = { 42 / 255, 29 / 255, 16 / 255, 1 },
-    textMuted = { 61 / 255, 45 / 255, 28 / 255, 1 },
-    textLight = { 232 / 255, 225 / 255, 210 / 255, 1 },
-    textGold = { 1, 0.88, 0.45, 1 },
-    textSystemYellow = { 1, 0.82, 0, 1 },
-    closeHover = { 82 / 255, 28 / 255, 18 / 255, 1 },
-    chromeTab = { 27 / 255, 23 / 255, 19 / 255, 1 },
-    chromeTabHover = { 45 / 255, 38 / 255, 30 / 255, 1 },
-}
+local COLORS = TFG.COLORS  -- palette lives in UI/Theme.lua
 
 local TAB_HEIGHT = 42
 local TAB_TEXT_PADDING = 18

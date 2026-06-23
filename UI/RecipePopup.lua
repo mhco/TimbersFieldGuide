@@ -28,21 +28,7 @@ local function createQuantityOverlay(parent)
     return fs
 end
 
--- Warm popup theme, matched to the main navigation window (Core/TestUI.lua COLORS).
-local POPUP = {
-    bg         = { 23 / 255, 20 / 255, 17 / 255, 0.98 },   -- chromeDark
-    border     = { 168 / 255, 136 / 255, 91 / 255, 1 },    -- gold border
-    cardBg     = { 35 / 255, 30 / 255, 24 / 255, 1 },       -- lifted card
-    cardBorder = { 92 / 255, 74 / 255, 49 / 255, 1 },       -- muted gold
-    label      = { 168 / 255, 138 / 255, 91 / 255, 1 },     -- tan section headers
-    title      = { 1, 0.88, 0.45, 1 },                      -- gold name
-    body       = { 232 / 255, 225 / 255, 210 / 255, 1 },    -- cream
-    muted      = { 158 / 255, 140 / 255, 112 / 255, 1 },    -- muted tan sub-text
-    divider    = { 168 / 255, 136 / 255, 91 / 255, 0.30 },
-    alliance   = { 0.20, 0.45, 0.95, 1 },                   -- Alliance faction square
-    horde      = { 0.80, 0.20, 0.20, 1 },                   -- Horde faction square
-    phase      = { 0.45, 0.75, 1, 1 },                      -- phase tag (matches list tooltip)
-}
+local POPUP = TFG.POPUP  -- palette lives in UI/Theme.lua
 
 local function ensureProfessionPopup()
     if TFG.professionPopup and TFG.professionPopup.SetAnchor then
