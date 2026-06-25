@@ -1658,7 +1658,7 @@ TFG.TAILORING_BURNING_CRUSADE = {
             materials = {
                 { item_id = 4305, qty = 4 },
                 { item_id = 4291, qty = 1 },
-                { item_id = 4291, qty = 2 },
+                { item_id = 4337, qty = 2 },
             },
             levels = { 175, 195, 210, 225 },
         },
@@ -3548,7 +3548,6 @@ TFG.TAILORING_BURNING_CRUSADE = {
                 { item_id = 14227, qty = 2 },
                 { item_id = 8170, qty = 4 },
                 { item_id = 14341, qty = 1 },
-                { item_id = 14048, qty = 4 },
             },
             levels = { 280, 295, 310, 325 },
         },

@@ -46,7 +46,6 @@ TFG.MINING_CLASSIC_ERA = {
             product = { item_id = 2840, qty = 1 },
             materials = {
                 { item_id = 2770, qty = 1 },
-                { item_id = 2770, qty = 1 },
             },
             levels = { 1, 25, 47, 70 },
         },
@@ -77,7 +76,6 @@ TFG.MINING_CLASSIC_ERA = {
             product = { item_id = 3576, qty = 1 },
             materials = {
                 { item_id = 2771, qty = 1 },
-                { item_id = 2771, qty = 1 },
             },
             levels = { 65, 65, 62, 75 },
         },
@@ -93,8 +91,6 @@ TFG.MINING_CLASSIC_ERA = {
             },
             product = { item_id = 2841, qty = 2 },
             materials = {
-                { item_id = 2840, qty = 1 },
-                { item_id = 3576, qty = 1 },
                 { item_id = 2840, qty = 1 },
                 { item_id = 3576, qty = 1 },
             },
@@ -114,7 +110,6 @@ TFG.MINING_CLASSIC_ERA = {
             },
             product = { item_id = 2842, qty = 1 },
             materials = {
-                { item_id = 2775, qty = 1 },
                 { item_id = 2775, qty = 1 },
             },
             levels = { 75, 100, 112, 125 },
@@ -144,7 +139,6 @@ TFG.MINING_CLASSIC_ERA = {
             product = { item_id = 3575, qty = 1 },
             materials = {
                 { item_id = 2772, qty = 1 },
-                { item_id = 2772, qty = 1 },
             },
             levels = { 125, 130, 135, 140 },
         },
@@ -162,7 +156,6 @@ TFG.MINING_CLASSIC_ERA = {
             },
             product = { item_id = 3577, qty = 1 },
             materials = {
-                { item_id = 2776, qty = 1 },
                 { item_id = 2776, qty = 1 },
             },
             levels = { 155, 170, 177, 185 },
@@ -183,8 +176,6 @@ TFG.MINING_CLASSIC_ERA = {
             materials = {
                 { item_id = 3575, qty = 1 },
                 { item_id = 3857, qty = 1 },
-                { item_id = 3575, qty = 1 },
-                { item_id = 3857, qty = 1 },
             },
             levels = { 165, 165, 165, 165 },
         },
@@ -202,7 +193,6 @@ TFG.MINING_CLASSIC_ERA = {
             },
             product = { item_id = 3860, qty = 1 },
             materials = {
-                { item_id = 3858, qty = 1 },
                 { item_id = 3858, qty = 1 },
             },
             levels = { 175, 175, 175, 175 },
@@ -234,7 +224,6 @@ TFG.MINING_CLASSIC_ERA = {
             product = { item_id = 6037, qty = 1 },
             materials = {
                 { item_id = 7911, qty = 1 },
-                { item_id = 7911, qty = 1 },
             },
             levels = { 230, 230, 230, 230 },
         },
@@ -250,7 +239,6 @@ TFG.MINING_CLASSIC_ERA = {
             },
             product = { item_id = 11371, qty = 1 },
             materials = {
-                { item_id = 11370, qty = 8 },
                 { item_id = 11370, qty = 8 },
             },
             levels = { 230, 230, 230, 230 },
@@ -270,7 +258,6 @@ TFG.MINING_CLASSIC_ERA = {
             product = { item_id = 12359, qty = 1 },
             materials = {
                 { item_id = 10620, qty = 1 },
-                { item_id = 10620, qty = 1 },
             },
             levels = { 250, 250, 250, 250 },
         },
@@ -287,10 +274,6 @@ TFG.MINING_CLASSIC_ERA = {
             },
             product = { item_id = 17771, qty = 1 },
             materials = {
-                { item_id = 18562, qty = 1 },
-                { item_id = 12360, qty = 10 },
-                { item_id = 17010, qty = 1 },
-                { item_id = 18567, qty = 3 },
                 { item_id = 18562, qty = 1 },
                 { item_id = 12360, qty = 10 },
                 { item_id = 17010, qty = 1 },
