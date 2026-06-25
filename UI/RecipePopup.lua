@@ -418,7 +418,9 @@ local function ensureProfessionPopup()
             end
 
             if hasLevels then
-                local lx = colSplit + 14
+                -- Skill Levels share the right column with Product; when there is no
+                -- product (e.g. enchants), left-align them with the rest of the popup.
+                local lx = hasProduct and (colSplit + 14) or xPad
                 self.skillLevelsLabel:Show()
                 self.skillLevelsLabel:ClearAllPoints()
                 self.skillLevelsLabel:SetPoint("TOPLEFT", self, "TOPLEFT", lx, bandTop)
