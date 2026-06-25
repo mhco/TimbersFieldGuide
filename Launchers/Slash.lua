@@ -57,8 +57,8 @@ if TIMBER_BROADCAST and TIMBER_BROADCAST.Register then
     TIMBER_BROADCAST.Register("TimbersFieldGuide", function(msg)
         msg = (msg or ""):match("^%s*(.-)%s*$") -- trim
         if msg == "" or msg == "help" then
-            print("TimbersFieldGuide: Usage: /tfg  — show/hide window")
-            print("TimbersFieldGuide:        /tfg reset  — reset window position")
+            print("TimbersFieldGuide: Usage: /tfg  - show/hide window")
+            print("TimbersFieldGuide:        /tfg reset  - reset window position")
             return
         end
     end)
