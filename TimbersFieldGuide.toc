@@ -2,7 +2,7 @@
 ## Title: Timber's Field Guide
 ## Notes: A scrollable list of spells for each and every class. See what abilities and talents you can learn at any given level.
 ## Author: Timbervale-DreamscytheUS
-## Version: v2026.06.23a
+## Version: v2026.07.01
 ## SavedVariables: TimbersFieldGuideDB
 ## X-License: gpl-3.0-only
 ## X-Curse-Project-ID: 1413887
