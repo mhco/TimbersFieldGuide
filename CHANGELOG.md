@@ -1,5 +1,11 @@
 # Changelog
 
+## v2026.07.07 (2026-07-08)
+
+- Updated TOC file with latest version
+- Added compressed files to gitignore for protection
+
+
 ## v2026.07.01a (2026-07-02)
 
 - Bump version to v2026.07.01a
