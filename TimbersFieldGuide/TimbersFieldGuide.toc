@@ -1,4 +1,4 @@
-## Interface: 11508, 20506
+## Interface: 11509, 20506
 ## Title: Timber's Field Guide
 ## Notes: A scrollable list of spells for each and every class. See what abilities and talents you can learn at any given level.
 ## Author: Timbervale-DreamscytheUS
