@@ -1,37 +1,5 @@
 local _, TFG = ...
 
--- ==========================================================================
--- ABILITY TEMPLATE
--- ==========================================================================
---[[
-{
-    [1] = [
-        {
-            spell_id = 3561,
-            name = "Teleport: Stormwind",
-            rank = 1,
-            icon = "spell_arcane_teleportstormwind",
-            type = "Ability", -- Ability, Talent
-            categories = { "Teleport", },
-            group = nil,
-            faction = "Alliance", -- Horde, Alliance, empty for both
-            races = {},
-            source = {
-                type = "Trainer", -- Trainer, Item, Quest
-                cost = 2000,
-                recipe_item_ids = {},
-                quest_ids = {},
-                location = "Portal Trainers in major cities",
-            },
-            phase = 1,
-        }
-    ]
-}
---]]
-
--- ==========================================================================
--- ABILITIES
--- ==========================================================================
 TFG.DRUID_CLASSIC_ERA = {
     [2] = {
         {

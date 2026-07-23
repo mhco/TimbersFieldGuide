@@ -1,46 +1,5 @@
 local _, TFG = ...
 
--- ==========================================================================
--- RECIPE TEMPLATE (source-array schema)
--- ==========================================================================
--- Professions have NO top-level `type`; the kind is implicit in the id
--- (spell_id = a thing you learn/do, item_id = a world item). `product` present
--- => craftable Recipe. Omit empty fields. Omit `source` when learned by leveling.
---[[
-{
-    [<skillLevel>] = {
-        {
-            spell_id = 3230,
-            name = "Elixir of Minor Agility",
-            categories = { "Elixirs" },     -- e.g. Elixirs, Potions, Gear, Profession Training
-            icon = "inv_potion_91",
-            source = {                       -- ARRAY of source objects; omit if learned by leveling
-                {
-                    type = "Drop",           -- Trainer, Vendor, Drop, Quest, Discovery, Reputation
-                    item_id = 2553,          -- recipe/design/pattern item; omit if none
-                    cost = 0,                -- copper; omit if free
-                    location = "",           -- omit if none
-                    faction = "",            -- LABEL only, on neutral-parent entries; omit otherwise
-                    quest_id = 0,            -- Quest sources; omit otherwise
-                    phase = 1,               -- per-source; omit at launch
-                },
-            },
-            product = { item_id = 2457, qty = 1 },
-            materials = {
-                { item_id = 2452, qty = 1 },
-                { item_id = 765, qty = 1 },
-                { item_id = 3371, qty = 1 },
-            },
-            levels = { 50, 80, 100, 120 },   -- orange / yellow / green / gray skill-up points
-            phase = 1,                       -- entry override; usually omit (effective = min of source phases)
-        },
-    },
-}
---]]
-
--- ==========================================================================
--- ABILITIES
--- ==========================================================================
 TFG.ALCHEMY_BURNING_CRUSADE = {
     [1] = {
         {

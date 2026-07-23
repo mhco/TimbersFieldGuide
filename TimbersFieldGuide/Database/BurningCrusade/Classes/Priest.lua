@@ -1,38 +1,5 @@
 local _, TFG = ...
 
---[[
-CLASS entry template (source-array schema). Classes keep a top-level `type`
-("Ability" | "Talent") because ids cannot discriminate the two. Omit empty
-fields. Omit `source` entirely when the ability is learned on level-up.
-
-{
-    [1] = {
-        {
-            spell_id = 0,
-            name = "",
-            rank = 1,             -- NUMBER (not "1")
-            icon = "",
-            type = "Ability",     -- Ability, Talent
-            categories = {},
-            group = "",
-            faction = "",         -- Horde / Alliance; omit or "" = both (this is the FILTER)
-            races = {},
-            source = {            -- ARRAY of source objects; omit if learned by leveling
-                {
-                    type = "Trainer", -- Trainer, Vendor, Drop, Quest, Discovery, Reputation
-                    item_id = 0,      -- tome/recipe item consumed; omit if none
-                    cost = 0,         -- copper; omit if free
-                    location = "",    -- omit if none
-                    faction = "",     -- LABEL only, on neutral-parent entries; omit otherwise
-                    quest_id = 0,     -- Quest sources; omit otherwise
-                    phase = 1,        -- per-source; omit at launch
-                },
-            },
-            phase = 1,            -- entry override; usually omit (effective = min of source phases)
-        }
-    }
-}
---]]
 TFG.PRIEST_BURNING_CRUSADE = {
     [1] = {
         {
