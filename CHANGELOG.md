@@ -2,6 +2,11 @@
 
 ## v2026.07.23 (2026-07-23)
 
+
+
+
+## v2026.07.23 (2026-07-23)
+
 This release is a full redesign of the addon. The old dropdown-driven window is replaced with browsable pages for classes, professions, and skills, and recipes now carry much richer data: every place you can get them, what they cost, and which content phase unlocks them.
 
 ### New
