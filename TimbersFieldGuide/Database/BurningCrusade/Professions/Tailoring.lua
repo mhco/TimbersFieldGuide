@@ -4174,7 +4174,8 @@ TFG.TAILORING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 17017,
-                    location = "Molten Core Trash",
+                    location = "Thorium Brotherhood - Honored",
+                    cost = 153000,
                 },
             },
             product = { item_id = 16980, qty = 1 },
@@ -4196,7 +4197,8 @@ TFG.TAILORING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 17018,
-                    location = "Molten Core Trash",
+                    location = "Thorium Brotherhood - Friendly",
+                    cost = 68000,
                 },
             },
             product = { item_id = 16979, qty = 1 },
@@ -4389,7 +4391,8 @@ TFG.TAILORING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 19219,
-                    location = "Molten Core Trash",
+                    location = "Thorium Brotherhood - Honored",
+                    cost = 51000,
                 },
             },
             product = { item_id = 19156, qty = 1 },
@@ -4411,7 +4414,8 @@ TFG.TAILORING_BURNING_CRUSADE = {
                 {
                     type = "Item",
                     item_id = 19220,
-                    location = "Molten Core Trash",
+                    location = "Thorium Brotherhood - Revered",
+                    cost = 76500,
                 },
             },
             product = { item_id = 19165, qty = 1 },

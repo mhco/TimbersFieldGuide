@@ -3497,6 +3497,8 @@ TFG.TAILORING_CLASSIC_ERA = {
                 {
                     type = "Item",
                     item_id = 17018,
+                    location = "Thorium Brotherhood - Friendly",
+                    cost = 84705,
                 },
             },
             product = { item_id = 16979, qty = 1 },
@@ -3517,6 +3519,8 @@ TFG.TAILORING_CLASSIC_ERA = {
                 {
                     type = "Item",
                     item_id = 19220,
+                    location = "Thorium Brotherhood - Revered",
+                    cost = 95294,
                 },
             },
             product = { item_id = 19165, qty = 1 },
@@ -3537,6 +3541,8 @@ TFG.TAILORING_CLASSIC_ERA = {
                 {
                     type = "Item",
                     item_id = 17017,
+                    location = "Thorium Brotherhood - Honored",
+                    cost = 190588,
                 },
             },
             product = { item_id = 16980, qty = 1 },
@@ -3557,6 +3563,8 @@ TFG.TAILORING_CLASSIC_ERA = {
                 {
                     type = "Item",
                     item_id = 19219,
+                    location = "Thorium Brotherhood - Honored",
+                    cost = 63529,
                 },
             },
             product = { item_id = 19156, qty = 1 },
@@ -4292,6 +4300,7 @@ TFG.TAILORING_CLASSIC_ERA = {
                 {
                     type = "Item",
                     item_id = 18265,
+                    location = "Molten Core Trash",
                 },
             },
             product = { item_id = 18263, qty = 1 },
