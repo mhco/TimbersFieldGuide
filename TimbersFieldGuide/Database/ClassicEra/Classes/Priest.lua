@@ -1,0 +1,2422 @@
+local _, TFG = ...
+
+TFG.PRIEST_CLASSIC_ERA = {
+    [2] = {
+        {
+            spell_id = 1243,
+            name = "Power Word: Fortitude",
+            rank = 1,
+            icon = "spell_holy_wordfortitude",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 10,
+                },
+            },
+        },
+    },
+    [4] = {
+        {
+            spell_id = 2052,
+            name = "Lesser Heal",
+            rank = 2,
+            icon = "spell_holy_lesserheal",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
+            },
+        },
+        {
+            spell_id = 589,
+            name = "Shadow Word: Pain",
+            rank = 1,
+            icon = "spell_shadow_shadowwordpain",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
+            },
+        },
+    },
+    [6] = {
+        {
+            spell_id = 17,
+            name = "Power Word: Shield",
+            rank = 1,
+            icon = "spell_holy_powerwordshield",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
+            },
+        },
+        {
+            spell_id = 591,
+            name = "Smite",
+            rank = 2,
+            icon = "spell_holy_holysmite",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
+            },
+        },
+    },
+    [8] = {
+        {
+            spell_id = 139,
+            name = "Renew",
+            rank = 1,
+            icon = "spell_holy_renew",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
+            },
+        },
+        {
+            spell_id = 586,
+            name = "Fade",
+            rank = 1,
+            icon = "spell_magic_lesserinvisibilty",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
+            },
+        },
+    },
+    [10] = {
+        {
+            spell_id = 10797,
+            name = "Starshards",
+            rank = 1,
+            icon = "spell_arcane_starfire",
+            faction = "1",
+            races = { "Night Elf" },
+        },
+        {
+            spell_id = 13908,
+            name = "Desperate Prayer",
+            rank = 1,
+            icon = "spell_holy_restoration",
+            faction = "1",
+            races = { "Dwarf", "Human" },
+        },
+        {
+            spell_id = 2053,
+            name = "Lesser Heal",
+            rank = 3,
+            icon = "spell_holy_lesserheal",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
+            },
+        },
+        {
+            spell_id = 2006,
+            name = "Resurrection",
+            rank = 1,
+            icon = "spell_holy_resurrection",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
+            },
+        },
+        {
+            spell_id = 9035,
+            name = "Hex of Weakness",
+            rank = 1,
+            icon = "spell_shadow_fingerofdeath",
+            faction = "2",
+            races = { "Troll" },
+        },
+        {
+            spell_id = 8092,
+            name = "Mind Blast",
+            rank = 1,
+            icon = "spell_shadow_unholyfrenzy",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
+            },
+        },
+        {
+            spell_id = 594,
+            name = "Shadow Word: Pain",
+            rank = 2,
+            icon = "spell_shadow_shadowwordpain",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
+            },
+        },
+        {
+            spell_id = 2652,
+            name = "Touch of Weakness",
+            rank = 1,
+            icon = "spell_shadow_deadofnight",
+            faction = "2",
+            races = { "Undead" },
+        },
+    },
+    [12] = {
+        {
+            spell_id = 588,
+            name = "Inner Fire",
+            rank = 1,
+            icon = "spell_holy_innerfire",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 800,
+                },
+            },
+        },
+        {
+            spell_id = 1244,
+            name = "Power Word: Fortitude",
+            rank = 2,
+            icon = "spell_holy_wordfortitude",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 800,
+                },
+            },
+        },
+        {
+            spell_id = 592,
+            name = "Power Word: Shield",
+            rank = 2,
+            icon = "spell_holy_powerwordshield",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 800,
+                },
+            },
+        },
+    },
+    [14] = {
+        {
+            spell_id = 528,
+            name = "Cure Disease",
+            rank = 1,
+            icon = "spell_holy_nullifydisease",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1200,
+                },
+            },
+        },
+        {
+            spell_id = 6074,
+            name = "Renew",
+            rank = 2,
+            icon = "spell_holy_renew",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1200,
+                },
+            },
+        },
+        {
+            spell_id = 598,
+            name = "Smite",
+            rank = 3,
+            icon = "spell_holy_holysmite",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1200,
+                },
+            },
+        },
+        {
+            spell_id = 8122,
+            name = "Psychic Scream",
+            rank = 1,
+            icon = "spell_shadow_psychicscream",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1200,
+                },
+            },
+        },
+    },
+    [16] = {
+        {
+            spell_id = 2054,
+            name = "Heal",
+            rank = 1,
+            icon = "spell_holy_heal",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1600,
+                },
+            },
+        },
+        {
+            spell_id = 8102,
+            name = "Mind Blast",
+            rank = 2,
+            icon = "spell_shadow_unholyfrenzy",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1600,
+                },
+            },
+        },
+    },
+    [18] = {
+        {
+            spell_id = 527,
+            name = "Dispel Magic",
+            rank = 1,
+            icon = "spell_holy_dispelmagic",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 2000,
+                },
+            },
+        },
+        {
+            spell_id = 600,
+            name = "Power Word: Shield",
+            rank = 3,
+            icon = "spell_holy_powerwordshield",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 2000,
+                },
+            },
+        },
+        {
+            spell_id = 19296,
+            name = "Starshards",
+            rank = 2,
+            icon = "spell_arcane_starfire",
+            faction = "1",
+            races = { "Night Elf" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
+            },
+        },
+        {
+            spell_id = 19236,
+            name = "Desperate Prayer",
+            rank = 2,
+            icon = "spell_holy_restoration",
+            faction = "1",
+            races = { "Dwarf", "Human" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 100,
+                },
+            },
+        },
+        {
+            spell_id = 970,
+            name = "Shadow Word: Pain",
+            rank = 3,
+            icon = "spell_shadow_shadowwordpain",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 2000,
+                },
+            },
+        },
+    },
+    [20] = {
+        {
+            spell_id = 2651,
+            name = "Elune's Grace",
+            rank = 1,
+            icon = "spell_holy_elunesgrace",
+            faction = "1",
+            races = { "Night Elf" },
+        },
+        {
+            spell_id = 13896,
+            name = "Feedback",
+            rank = 1,
+            icon = "spell_shadow_ritualofsacrifice",
+            faction = "1",
+            races = { "Human" },
+        },
+        {
+            spell_id = 7128,
+            name = "Inner Fire",
+            rank = 2,
+            icon = "spell_holy_innerfire",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
+            },
+        },
+        {
+            spell_id = 9484,
+            name = "Shackle Undead",
+            rank = 1,
+            icon = "spell_nature_slow",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
+            },
+        },
+        {
+            spell_id = 6346,
+            name = "Fear Ward",
+            rank = 1,
+            icon = "spell_holy_excorcism",
+            faction = "1",
+            races = { "Dwarf" },
+        },
+        {
+            spell_id = 2061,
+            name = "Flash Heal",
+            rank = 1,
+            icon = "spell_holy_flashheal",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
+            },
+        },
+        {
+            spell_id = 14914,
+            name = "Holy Fire",
+            rank = 1,
+            icon = "spell_holy_searinglight",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
+            },
+        },
+        {
+            spell_id = 6075,
+            name = "Renew",
+            rank = 3,
+            icon = "spell_holy_renew",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
+            },
+        },
+        {
+            spell_id = 2944,
+            name = "Devouring Plague",
+            rank = 1,
+            icon = "spell_shadow_blackplague",
+            faction = "2",
+            races = { "Undead" },
+        },
+        {
+            spell_id = 9578,
+            name = "Fade",
+            rank = 2,
+            icon = "spell_magic_lesserinvisibilty",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
+            },
+        },
+        {
+            spell_id = 19281,
+            name = "Hex of Weakness",
+            rank = 2,
+            icon = "spell_shadow_fingerofdeath",
+            faction = "2",
+            races = { "Troll" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 150,
+                },
+            },
+        },
+        {
+            spell_id = 453,
+            name = "Mind Soothe",
+            rank = 1,
+            icon = "spell_holy_mindsooth",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 3000,
+                },
+            },
+        },
+        {
+            spell_id = 18137,
+            name = "Shadowguard",
+            rank = 1,
+            icon = "spell_nature_lightningshield",
+            faction = "2",
+            races = { "Troll" },
+        },
+        {
+            spell_id = 19261,
+            name = "Touch of Weakness",
+            rank = 2,
+            icon = "spell_shadow_deadofnight",
+            faction = "2",
+            races = { "Undead" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 200,
+                },
+            },
+        },
+    },
+    [22] = {
+        {
+            spell_id = 2055,
+            name = "Heal",
+            rank = 2,
+            icon = "spell_holy_heal",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
+            },
+        },
+        {
+            spell_id = 2010,
+            name = "Resurrection",
+            rank = 2,
+            icon = "spell_holy_resurrection",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
+            },
+        },
+        {
+            spell_id = 984,
+            name = "Smite",
+            rank = 4,
+            icon = "spell_holy_holysmite",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
+            },
+        },
+        {
+            spell_id = 8103,
+            name = "Mind Blast",
+            rank = 3,
+            icon = "spell_shadow_unholyfrenzy",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
+            },
+        },
+        {
+            spell_id = 2096,
+            name = "Mind Vision",
+            rank = 1,
+            icon = "spell_holy_mindvision",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 4000,
+                },
+            },
+        },
+    },
+    [24] = {
+        {
+            spell_id = 8129,
+            name = "Mana Burn",
+            rank = 1,
+            icon = "spell_shadow_manaburn",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
+            },
+        },
+        {
+            spell_id = 1245,
+            name = "Power Word: Fortitude",
+            rank = 3,
+            icon = "spell_holy_wordfortitude",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
+            },
+        },
+        {
+            spell_id = 3747,
+            name = "Power Word: Shield",
+            rank = 4,
+            icon = "spell_holy_powerwordshield",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
+            },
+        },
+        {
+            spell_id = 15262,
+            name = "Holy Fire",
+            rank = 2,
+            icon = "spell_holy_searinglight",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 5000,
+                },
+            },
+        },
+    },
+    [26] = {
+        {
+            spell_id = 19299,
+            name = "Starshards",
+            rank = 3,
+            icon = "spell_arcane_starfire",
+            faction = "1",
+            races = { "Night Elf" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
+            },
+        },
+        {
+            spell_id = 19238,
+            name = "Desperate Prayer",
+            rank = 3,
+            icon = "spell_holy_restoration",
+            faction = "1",
+            races = { "Dwarf", "Human" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 300,
+                },
+            },
+        },
+        {
+            spell_id = 9472,
+            name = "Flash Heal",
+            rank = 2,
+            icon = "spell_holy_flashheal",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 6000,
+                },
+            },
+        },
+        {
+            spell_id = 6076,
+            name = "Renew",
+            rank = 4,
+            icon = "spell_holy_renew",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 6000,
+                },
+            },
+        },
+        {
+            spell_id = 992,
+            name = "Shadow Word: Pain",
+            rank = 4,
+            icon = "spell_shadow_shadowwordpain",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 6000,
+                },
+            },
+        },
+    },
+    [28] = {
+        {
+            spell_id = 6063,
+            name = "Heal",
+            rank = 3,
+            icon = "spell_holy_heal02",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 8000,
+                },
+            },
+        },
+        {
+            spell_id = 15430,
+            name = "Holy Nova",
+            rank = 2,
+            icon = "spell_holy_holynova",
+            type = "Talent",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 400,
+                },
+            },
+        },
+        {
+            spell_id = 19276,
+            name = "Devouring Plague",
+            rank = 2,
+            icon = "spell_shadow_blackplague",
+            faction = "2",
+            races = { "Undead" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 400,
+                },
+            },
+        },
+        {
+            spell_id = 8104,
+            name = "Mind Blast",
+            rank = 4,
+            icon = "spell_shadow_unholyfrenzy",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 8000,
+                },
+            },
+        },
+        {
+            spell_id = 17311,
+            name = "Mind Flay",
+            rank = 2,
+            icon = "spell_shadow_siphonmana",
+            type = "Talent",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 400,
+                },
+            },
+        },
+        {
+            spell_id = 8124,
+            name = "Psychic Scream",
+            rank = 2,
+            icon = "spell_shadow_psychicscream",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 8000,
+                },
+            },
+        },
+        {
+            spell_id = 19308,
+            name = "Shadowguard",
+            rank = 2,
+            icon = "spell_nature_lightningshield",
+            faction = "2",
+            races = { "Troll" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 400,
+                },
+            },
+        },
+    },
+    [30] = {
+        {
+            spell_id = 19289,
+            name = "Elune's Grace",
+            rank = 2,
+            icon = "spell_holy_elunesgrace",
+            faction = "1",
+            races = { "Night Elf" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
+            },
+        },
+        {
+            spell_id = 19271,
+            name = "Feedback",
+            rank = 2,
+            icon = "spell_shadow_ritualofsacrifice",
+            faction = "1",
+            races = { "Human" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 450,
+                },
+            },
+        },
+        {
+            spell_id = 602,
+            name = "Inner Fire",
+            rank = 3,
+            icon = "spell_holy_innerfire",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
+            },
+        },
+        {
+            spell_id = 6065,
+            name = "Power Word: Shield",
+            rank = 5,
+            icon = "spell_holy_powerwordshield",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
+            },
+        },
+        {
+            spell_id = 15263,
+            name = "Holy Fire",
+            rank = 3,
+            icon = "spell_holy_searinglight",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
+            },
+        },
+        {
+            spell_id = 596,
+            name = "Prayer of Healing",
+            rank = 1,
+            icon = "spell_holy_prayerofhealing02",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
+            },
+        },
+        {
+            spell_id = 1004,
+            name = "Smite",
+            rank = 5,
+            icon = "spell_holy_holysmite",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
+            },
+        },
+        {
+            spell_id = 9579,
+            name = "Fade",
+            rank = 3,
+            icon = "spell_magic_lesserinvisibilty",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
+            },
+        },
+        {
+            spell_id = 19282,
+            name = "Hex of Weakness",
+            rank = 3,
+            icon = "spell_shadow_fingerofdeath",
+            faction = "2",
+            races = { "Troll" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
+            },
+        },
+        {
+            spell_id = 605,
+            name = "Mind Control",
+            rank = 1,
+            icon = "spell_shadow_shadowworddominate",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
+            },
+        },
+        {
+            spell_id = 976,
+            name = "Shadow Protection",
+            rank = 1,
+            icon = "spell_shadow_antishadow",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 10000,
+                },
+            },
+        },
+        {
+            spell_id = 19262,
+            name = "Touch of Weakness",
+            rank = 3,
+            icon = "spell_shadow_deadofnight",
+            faction = "2",
+            races = { "Undead" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 500,
+                },
+            },
+        },
+    },
+    [32] = {
+        {
+            spell_id = 8131,
+            name = "Mana Burn",
+            rank = 2,
+            icon = "spell_shadow_manaburn",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 11000,
+                },
+            },
+        },
+        {
+            spell_id = 552,
+            name = "Abolish Disease",
+            rank = 1,
+            icon = "spell_nature_nullifydisease",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 11000,
+                },
+            },
+        },
+        {
+            spell_id = 9473,
+            name = "Flash Heal",
+            rank = 3,
+            icon = "spell_holy_flashheal",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 11000,
+                },
+            },
+        },
+        {
+            spell_id = 6077,
+            name = "Renew",
+            rank = 5,
+            icon = "spell_holy_renew",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 11000,
+                },
+            },
+        },
+    },
+    [34] = {
+        {
+            spell_id = 1706,
+            name = "Levitate",
+            rank = 1,
+            icon = "spell_holy_layonhands",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 12000,
+                },
+            },
+        },
+        {
+            spell_id = 19302,
+            name = "Starshards",
+            rank = 4,
+            icon = "spell_arcane_starfire",
+            faction = "1",
+            races = { "Night Elf" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 600,
+                },
+            },
+        },
+        {
+            spell_id = 19240,
+            name = "Desperate Prayer",
+            rank = 4,
+            icon = "spell_holy_restoration",
+            faction = "1",
+            races = { "Dwarf", "Human" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 600,
+                },
+            },
+        },
+        {
+            spell_id = 6064,
+            name = "Heal",
+            rank = 4,
+            icon = "spell_holy_heal02",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 12000,
+                },
+            },
+        },
+        {
+            spell_id = 10880,
+            name = "Resurrection",
+            rank = 3,
+            icon = "spell_holy_resurrection",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 12000,
+                },
+            },
+        },
+        {
+            spell_id = 8105,
+            name = "Mind Blast",
+            rank = 5,
+            icon = "spell_shadow_unholyfrenzy",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 12000,
+                },
+            },
+        },
+        {
+            spell_id = 2767,
+            name = "Shadow Word: Pain",
+            rank = 5,
+            icon = "spell_shadow_shadowwordpain",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 12000,
+                },
+            },
+        },
+    },
+    [36] = {
+        {
+            spell_id = 988,
+            name = "Dispel Magic",
+            rank = 2,
+            icon = "spell_holy_dispelmagic",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 14000,
+                },
+            },
+        },
+        {
+            spell_id = 2791,
+            name = "Power Word: Fortitude",
+            rank = 4,
+            icon = "spell_holy_wordfortitude",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 14000,
+                },
+            },
+        },
+        {
+            spell_id = 6066,
+            name = "Power Word: Shield",
+            rank = 6,
+            icon = "spell_holy_powerwordshield",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 14000,
+                },
+            },
+        },
+        {
+            spell_id = 15264,
+            name = "Holy Fire",
+            rank = 4,
+            icon = "spell_holy_searinglight",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 14000,
+                },
+            },
+        },
+        {
+            spell_id = 15431,
+            name = "Holy Nova",
+            rank = 3,
+            icon = "spell_holy_holynova",
+            type = "Talent",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 700,
+                },
+            },
+        },
+        {
+            spell_id = 17312,
+            name = "Mind Flay",
+            rank = 3,
+            icon = "spell_shadow_siphonmana",
+            type = "Talent",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 700,
+                },
+            },
+        },
+        {
+            spell_id = 8192,
+            name = "Mind Soothe",
+            rank = 2,
+            icon = "spell_holy_mindsooth",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 14000,
+                },
+            },
+        },
+        {
+            spell_id = 19277,
+            name = "Devouring Plague",
+            rank = 3,
+            icon = "spell_shadow_blackplague",
+            faction = "2",
+            races = { "Undead" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 700,
+                },
+            },
+        },
+        {
+            spell_id = 19309,
+            name = "Shadowguard",
+            rank = 3,
+            icon = "spell_nature_lightningshield",
+            faction = "2",
+            races = { "Troll" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 700,
+                },
+            },
+        },
+    },
+    [38] = {
+        {
+            spell_id = 9474,
+            name = "Flash Heal",
+            rank = 4,
+            icon = "spell_holy_flashheal",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 16000,
+                },
+            },
+        },
+        {
+            spell_id = 6078,
+            name = "Renew",
+            rank = 6,
+            icon = "spell_holy_renew",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 16000,
+                },
+            },
+        },
+        {
+            spell_id = 6060,
+            name = "Smite",
+            rank = 6,
+            icon = "spell_holy_holysmite",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 16000,
+                },
+            },
+        },
+    },
+    [40] = {
+        {
+            spell_id = 14818,
+            name = "Divine Spirit",
+            rank = 2,
+            icon = "spell_holy_divinespirit",
+            type = "Talent",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 900,
+                },
+            },
+        },
+        {
+            spell_id = 19291,
+            name = "Elune's Grace",
+            rank = 3,
+            icon = "spell_holy_elunesgrace",
+            faction = "1",
+            races = { "Night Elf" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 900,
+                },
+            },
+        },
+        {
+            spell_id = 19273,
+            name = "Feedback",
+            rank = 3,
+            icon = "spell_shadow_ritualofsacrifice",
+            faction = "1",
+            races = { "Human" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 810,
+                },
+            },
+        },
+        {
+            spell_id = 1006,
+            name = "Inner Fire",
+            rank = 4,
+            icon = "spell_holy_innerfire",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 18000,
+                },
+            },
+        },
+        {
+            spell_id = 10874,
+            name = "Mana Burn",
+            rank = 3,
+            icon = "spell_shadow_manaburn",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 18000,
+                },
+            },
+        },
+        {
+            spell_id = 9485,
+            name = "Shackle Undead",
+            rank = 2,
+            icon = "spell_nature_slow",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 18000,
+                },
+            },
+        },
+        {
+            spell_id = 2060,
+            name = "Greater Heal",
+            rank = 1,
+            icon = "spell_holy_greaterheal",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 18000,
+                },
+            },
+        },
+        {
+            spell_id = 996,
+            name = "Prayer of Healing",
+            rank = 2,
+            icon = "spell_holy_prayerofhealing02",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 18000,
+                },
+            },
+        },
+        {
+            spell_id = 9592,
+            name = "Fade",
+            rank = 4,
+            icon = "spell_magic_lesserinvisibilty",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 18000,
+                },
+            },
+        },
+        {
+            spell_id = 19283,
+            name = "Hex of Weakness",
+            rank = 4,
+            icon = "spell_shadow_fingerofdeath",
+            faction = "2",
+            races = { "Troll" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 900,
+                },
+            },
+        },
+        {
+            spell_id = 8106,
+            name = "Mind Blast",
+            rank = 6,
+            icon = "spell_shadow_unholyfrenzy",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 18000,
+                },
+            },
+        },
+        {
+            spell_id = 19264,
+            name = "Touch of Weakness",
+            rank = 4,
+            icon = "spell_shadow_deadofnight",
+            faction = "2",
+            races = { "Undead" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 900,
+                },
+            },
+        },
+    },
+    [42] = {
+        {
+            spell_id = 10898,
+            name = "Power Word: Shield",
+            rank = 7,
+            icon = "spell_holy_powerwordshield",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 22000,
+                },
+            },
+        },
+        {
+            spell_id = 19303,
+            name = "Starshards",
+            rank = 5,
+            icon = "spell_arcane_starfire",
+            faction = "1",
+            races = { "Night Elf" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1100,
+                },
+            },
+        },
+        {
+            spell_id = 19241,
+            name = "Desperate Prayer",
+            rank = 5,
+            icon = "spell_holy_restoration",
+            faction = "1",
+            races = { "Dwarf", "Human" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1100,
+                },
+            },
+        },
+        {
+            spell_id = 15265,
+            name = "Holy Fire",
+            rank = 5,
+            icon = "spell_holy_searinglight",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 22000,
+                },
+            },
+        },
+        {
+            spell_id = 10888,
+            name = "Psychic Scream",
+            rank = 3,
+            icon = "spell_shadow_psychicscream",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 22000,
+                },
+            },
+        },
+        {
+            spell_id = 10957,
+            name = "Shadow Protection",
+            rank = 2,
+            icon = "spell_shadow_antishadow",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 22000,
+                },
+            },
+        },
+        {
+            spell_id = 10892,
+            name = "Shadow Word: Pain",
+            rank = 6,
+            icon = "spell_shadow_shadowwordpain",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 22000,
+                },
+            },
+        },
+    },
+    [44] = {
+        {
+            spell_id = 10915,
+            name = "Flash Heal",
+            rank = 5,
+            icon = "spell_holy_flashheal",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 24000,
+                },
+            },
+        },
+        {
+            spell_id = 27799,
+            name = "Holy Nova",
+            rank = 4,
+            icon = "spell_holy_holynova",
+            type = "Talent",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1200,
+                },
+            },
+        },
+        {
+            spell_id = 10927,
+            name = "Renew",
+            rank = 7,
+            icon = "spell_holy_renew",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 24000,
+                },
+            },
+        },
+        {
+            spell_id = 19278,
+            name = "Devouring Plague",
+            rank = 4,
+            icon = "spell_shadow_blackplague",
+            faction = "2",
+            races = { "Undead" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1200,
+                },
+            },
+        },
+        {
+            spell_id = 10911,
+            name = "Mind Control",
+            rank = 2,
+            icon = "spell_shadow_shadowworddominate",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 24000,
+                },
+            },
+        },
+        {
+            spell_id = 17313,
+            name = "Mind Flay",
+            rank = 4,
+            icon = "spell_shadow_siphonmana",
+            type = "Talent",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1200,
+                },
+            },
+        },
+        {
+            spell_id = 10909,
+            name = "Mind Vision",
+            rank = 2,
+            icon = "spell_holy_mindvision",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 24000,
+                },
+            },
+        },
+        {
+            spell_id = 19310,
+            name = "Shadowguard",
+            rank = 4,
+            icon = "spell_nature_lightningshield",
+            faction = "2",
+            races = { "Troll" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1000,
+                },
+            },
+        },
+    },
+    [46] = {
+        {
+            spell_id = 10963,
+            name = "Greater Heal",
+            rank = 2,
+            icon = "spell_holy_greaterheal",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 26000,
+                },
+            },
+        },
+        {
+            spell_id = 10881,
+            name = "Resurrection",
+            rank = 4,
+            icon = "spell_holy_resurrection",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 26000,
+                },
+            },
+        },
+        {
+            spell_id = 10933,
+            name = "Smite",
+            rank = 7,
+            icon = "spell_holy_holysmite",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 26000,
+                },
+            },
+        },
+        {
+            spell_id = 10945,
+            name = "Mind Blast",
+            rank = 7,
+            icon = "spell_shadow_unholyfrenzy",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 26000,
+                },
+            },
+        },
+    },
+    [48] = {
+        {
+            spell_id = 10875,
+            name = "Mana Burn",
+            rank = 4,
+            icon = "spell_shadow_manaburn",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 28000,
+                },
+            },
+        },
+        {
+            spell_id = 10937,
+            name = "Power Word: Fortitude",
+            rank = 5,
+            icon = "spell_holy_wordfortitude",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 28000,
+                },
+            },
+        },
+        {
+            spell_id = 10899,
+            name = "Power Word: Shield",
+            rank = 8,
+            icon = "spell_holy_powerwordshield",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 28000,
+                },
+            },
+        },
+        {
+            spell_id = 15266,
+            name = "Holy Fire",
+            rank = 6,
+            icon = "spell_holy_searinglight",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 28000,
+                },
+            },
+        },
+    },
+    [50] = {
+        {
+            spell_id = 14819,
+            name = "Divine Spirit",
+            rank = 3,
+            icon = "spell_holy_divinespirit",
+            type = "Talent",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
+            },
+        },
+        {
+            spell_id = 19292,
+            name = "Elune's Grace",
+            rank = 4,
+            icon = "spell_holy_elunesgrace",
+            faction = "1",
+            races = { "Night Elf" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
+            },
+        },
+        {
+            spell_id = 19274,
+            name = "Feedback",
+            rank = 4,
+            icon = "spell_shadow_ritualofsacrifice",
+            faction = "1",
+            races = { "Human" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
+            },
+        },
+        {
+            spell_id = 10951,
+            name = "Inner Fire",
+            rank = 5,
+            icon = "spell_holy_innerfire",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 30000,
+                },
+            },
+        },
+        {
+            spell_id = 19304,
+            name = "Starshards",
+            rank = 6,
+            icon = "spell_arcane_starfire",
+            faction = "1",
+            races = { "Night Elf" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
+            },
+        },
+        {
+            spell_id = 19242,
+            name = "Desperate Prayer",
+            rank = 6,
+            icon = "spell_holy_restoration",
+            faction = "1",
+            races = { "Dwarf", "Human" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
+            },
+        },
+        {
+            spell_id = 10916,
+            name = "Flash Heal",
+            rank = 6,
+            icon = "spell_holy_flashheal",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 30000,
+                },
+            },
+        },
+        {
+            spell_id = 27870,
+            name = "Lightwell",
+            rank = 2,
+            icon = "spell_holy_summonlightwell",
+            type = "Talent",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1200,
+                },
+            },
+        },
+        {
+            spell_id = 10960,
+            name = "Prayer of Healing",
+            rank = 3,
+            icon = "spell_holy_prayerofhealing02",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 30000,
+                },
+            },
+        },
+        {
+            spell_id = 10928,
+            name = "Renew",
+            rank = 8,
+            icon = "spell_holy_renew",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 30000,
+                },
+            },
+        },
+        {
+            spell_id = 10941,
+            name = "Fade",
+            rank = 5,
+            icon = "spell_magic_lesserinvisibilty",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 30000,
+                },
+            },
+        },
+        {
+            spell_id = 19284,
+            name = "Hex of Weakness",
+            rank = 5,
+            icon = "spell_shadow_fingerofdeath",
+            faction = "2",
+            races = { "Troll" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
+            },
+        },
+        {
+            spell_id = 10893,
+            name = "Shadow Word: Pain",
+            rank = 7,
+            icon = "spell_shadow_shadowwordpain",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 30000,
+                },
+            },
+        },
+        {
+            spell_id = 19265,
+            name = "Touch of Weakness",
+            rank = 5,
+            icon = "spell_shadow_deadofnight",
+            faction = "2",
+            races = { "Undead" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
+            },
+        },
+    },
+    [52] = {
+        {
+            spell_id = 10964,
+            name = "Greater Heal",
+            rank = 3,
+            icon = "spell_holy_greaterheal",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 38000,
+                },
+            },
+        },
+        {
+            spell_id = 27800,
+            name = "Holy Nova",
+            rank = 5,
+            icon = "spell_holy_holynova",
+            type = "Talent",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1900,
+                },
+            },
+        },
+        {
+            spell_id = 19279,
+            name = "Devouring Plague",
+            rank = 5,
+            icon = "spell_shadow_blackplague",
+            faction = "2",
+            races = { "Undead" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1900,
+                },
+            },
+        },
+        {
+            spell_id = 10946,
+            name = "Mind Blast",
+            rank = 8,
+            icon = "spell_shadow_unholyfrenzy",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 38000,
+                },
+            },
+        },
+        {
+            spell_id = 17314,
+            name = "Mind Flay",
+            rank = 5,
+            icon = "spell_shadow_siphonmana",
+            type = "Talent",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1900,
+                },
+            },
+        },
+        {
+            spell_id = 10953,
+            name = "Mind Soothe",
+            rank = 3,
+            icon = "spell_holy_mindsooth",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 38000,
+                },
+            },
+        },
+        {
+            spell_id = 19311,
+            name = "Shadowguard",
+            rank = 5,
+            icon = "spell_nature_lightningshield",
+            faction = "2",
+            races = { "Troll" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1200,
+                },
+            },
+        },
+    },
+    [54] = {
+        {
+            spell_id = 10900,
+            name = "Power Word: Shield",
+            rank = 9,
+            icon = "spell_holy_powerwordshield",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 40000,
+                },
+            },
+        },
+        {
+            spell_id = 15267,
+            name = "Holy Fire",
+            rank = 7,
+            icon = "spell_holy_searinglight",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 40000,
+                },
+            },
+        },
+        {
+            spell_id = 10934,
+            name = "Smite",
+            rank = 8,
+            icon = "spell_holy_holysmite",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 40000,
+                },
+            },
+        },
+    },
+    [56] = {
+        {
+            spell_id = 10876,
+            name = "Mana Burn",
+            rank = 5,
+            icon = "spell_shadow_manaburn",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 42000,
+                },
+            },
+        },
+        {
+            spell_id = 10917,
+            name = "Flash Heal",
+            rank = 7,
+            icon = "spell_holy_flashheal",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 42000,
+                },
+            },
+        },
+        {
+            spell_id = 10929,
+            name = "Renew",
+            rank = 9,
+            icon = "spell_holy_renew",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 42000,
+                },
+            },
+        },
+        {
+            spell_id = 10890,
+            name = "Psychic Scream",
+            rank = 4,
+            icon = "spell_shadow_psychicscream",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 42000,
+                },
+            },
+        },
+        {
+            spell_id = 10958,
+            name = "Shadow Protection",
+            rank = 3,
+            icon = "spell_shadow_antishadow",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 42000,
+                },
+            },
+        },
+    },
+    [58] = {
+        {
+            spell_id = 19305,
+            name = "Starshards",
+            rank = 7,
+            icon = "spell_arcane_starfire",
+            faction = "1",
+            races = { "Night Elf" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 2200,
+                },
+            },
+        },
+        {
+            spell_id = 19243,
+            name = "Desperate Prayer",
+            rank = 7,
+            icon = "spell_holy_restoration",
+            faction = "1",
+            races = { "Dwarf", "Human" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 2200,
+                },
+            },
+        },
+        {
+            spell_id = 10965,
+            name = "Greater Heal",
+            rank = 4,
+            icon = "spell_holy_greaterheal",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 44000,
+                },
+            },
+        },
+        {
+            spell_id = 20770,
+            name = "Resurrection",
+            rank = 5,
+            icon = "spell_holy_resurrection",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 44000,
+                },
+            },
+        },
+        {
+            spell_id = 10947,
+            name = "Mind Blast",
+            rank = 9,
+            icon = "spell_shadow_unholyfrenzy",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 44000,
+                },
+            },
+        },
+        {
+            spell_id = 10912,
+            name = "Mind Control",
+            rank = 3,
+            icon = "spell_shadow_shadowworddominate",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 44000,
+                },
+            },
+        },
+        {
+            spell_id = 10894,
+            name = "Shadow Word: Pain",
+            rank = 8,
+            icon = "spell_shadow_shadowwordpain",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 44000,
+                },
+            },
+        },
+    },
+    [60] = {
+        {
+            spell_id = 27841,
+            name = "Divine Spirit",
+            rank = 4,
+            icon = "spell_holy_divinespirit",
+            type = "Talent",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 2300,
+                },
+            },
+        },
+        {
+            spell_id = 19293,
+            name = "Elune's Grace",
+            rank = 5,
+            icon = "spell_holy_elunesgrace",
+            faction = "1",
+            races = { "Night Elf" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 2070,
+                },
+            },
+        },
+        {
+            spell_id = 19275,
+            name = "Feedback",
+            rank = 5,
+            icon = "spell_shadow_ritualofsacrifice",
+            faction = "1",
+            races = { "Human" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 2300,
+                },
+            },
+        },
+        {
+            spell_id = 10952,
+            name = "Inner Fire",
+            rank = 6,
+            icon = "spell_holy_innerfire",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 46000,
+                },
+            },
+        },
+        {
+            spell_id = 10938,
+            name = "Power Word: Fortitude",
+            rank = 6,
+            icon = "spell_holy_wordfortitude",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 46000,
+                },
+            },
+        },
+        {
+            spell_id = 10901,
+            name = "Power Word: Shield",
+            rank = 10,
+            icon = "spell_holy_powerwordshield",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 46000,
+                },
+            },
+        },
+        {
+            spell_id = 27681,
+            name = "Prayer of Spirit",
+            rank = 1,
+            icon = "spell_holy_prayerofspirit",
+            type = "Talent",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 2300,
+                },
+            },
+        },
+        {
+            spell_id = 15261,
+            name = "Holy Fire",
+            rank = 8,
+            icon = "spell_holy_searinglight",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 46000,
+                },
+            },
+        },
+        {
+            spell_id = 27801,
+            name = "Holy Nova",
+            rank = 6,
+            icon = "spell_holy_holynova",
+            type = "Talent",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 2300,
+                },
+            },
+        },
+        {
+            spell_id = 27871,
+            name = "Lightwell",
+            rank = 3,
+            icon = "spell_holy_summonlightwell",
+            type = "Talent",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 1500,
+                },
+            },
+        },
+        {
+            spell_id = 10961,
+            name = "Prayer of Healing",
+            rank = 4,
+            icon = "spell_holy_prayerofhealing02",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 46000,
+                },
+            },
+        },
+        {
+            spell_id = 19280,
+            name = "Devouring Plague",
+            rank = 6,
+            icon = "spell_shadow_blackplague",
+            faction = "2",
+            races = { "Undead" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 2300,
+                },
+            },
+        },
+        {
+            spell_id = 10942,
+            name = "Fade",
+            rank = 6,
+            icon = "spell_magic_lesserinvisibilty",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 46000,
+                },
+            },
+        },
+        {
+            spell_id = 19285,
+            name = "Hex of Weakness",
+            rank = 6,
+            icon = "spell_shadow_fingerofdeath",
+            faction = "2",
+            races = { "Troll" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 2300,
+                },
+            },
+        },
+        {
+            spell_id = 18807,
+            name = "Mind Flay",
+            rank = 6,
+            icon = "spell_shadow_siphonmana",
+            type = "Talent",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 2300,
+                },
+            },
+        },
+        {
+            spell_id = 10955,
+            name = "Shackle Undead",
+            rank = 3,
+            icon = "spell_nature_slow",
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 46000,
+                },
+            },
+        },
+        {
+            spell_id = 19312,
+            name = "Shadowguard",
+            rank = 6,
+            icon = "spell_nature_lightningshield",
+            faction = "2",
+            races = { "Troll" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 2300,
+                },
+            },
+        },
+        {
+            spell_id = 19266,
+            name = "Touch of Weakness",
+            rank = 6,
+            icon = "spell_shadow_deadofnight",
+            faction = "2",
+            races = { "Undead" },
+            source = {
+                {
+                    type = "Trainer",
+                    cost = 2070,
+                },
+            },
+        },
+        {
+            spell_id = 25314,
+            name = "Greater Heal",
+            rank = 5,
+            icon = "spell_holy_greaterheal",
+            source = {
+                {
+                    type = "Item",
+                    item_id = 21284,
+                    location = "Boss Drop, AQ20",
+                },
+            },
+            phase = 4,
+        },
+        {
+            spell_id = 25315,
+            name = "Renew",
+            rank = 10,
+            icon = "spell_holy_renew",
+            source = {
+                {
+                    type = "Item",
+                    item_id = 21285,
+                    location = "Boss Drop, AQ20",
+                },
+            },
+            phase = 4,
+        },
+        {
+            spell_id = 25985,
+            name = "Prayer of Healing",
+            rank = 5,
+            icon = "spell_holy_prayerofhealing02",
+            source = {
+                {
+                    type = "Item",
+                    item_id = 21287,
+                    location = "Boss Drop, AQ20",
+                },
+            },
+            phase = 4,
+        },
+    },
+}

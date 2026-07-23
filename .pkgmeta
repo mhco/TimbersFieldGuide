@@ -1,0 +1,12 @@
+package-as: TimbersFieldGuide
+
+ignore:
+    - Docs
+    - Tests
+
+move-folders:
+    TimbersFieldGuide/TimbersFieldGuide: TimbersFieldGuide
+
+manual-changelog:
+    filename: CHANGELOG.md
+    markup-type: markdown

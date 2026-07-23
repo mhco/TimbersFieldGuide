@@ -1,0 +1,80 @@
+## Interface: 11509, 20506
+## Title: Timber's Field Guide
+## Notes: A scrollable list of spells for each and every class. See what abilities and talents you can learn at any given level.
+## Author: Timbervale-DreamscytheUS
+## Version: v2026.07.23
+## SavedVariables: TimbersFieldGuideDB
+## X-License: gpl-3.0-only
+## X-Curse-Project-ID: 1413887
+## Category: Timber's AddOns
+## IconTexture: Interface\Icons\Inv_scroll_07
+
+Database/ClassicEra/Classes/Druid.lua
+Database/ClassicEra/Classes/Hunter.lua
+Database/ClassicEra/Classes/HunterPets.lua
+Database/ClassicEra/Classes/Mage.lua
+Database/ClassicEra/Classes/Paladin.lua
+Database/ClassicEra/Classes/Priest.lua
+Database/ClassicEra/Classes/Rogue.lua
+Database/ClassicEra/Classes/RoguePoisons.lua
+Database/ClassicEra/Classes/Shaman.lua
+Database/ClassicEra/Classes/Warlock.lua
+Database/ClassicEra/Classes/WarlockPets.lua
+Database/ClassicEra/Classes/Warrior.lua
+Database/ClassicEra/Professions/Alchemy.lua
+Database/ClassicEra/Professions/Blacksmithing.lua
+Database/ClassicEra/Professions/Cooking.lua
+Database/ClassicEra/Professions/Enchanting.lua
+Database/ClassicEra/Professions/Engineering.lua
+Database/ClassicEra/Professions/FirstAid.lua
+Database/ClassicEra/Professions/Fishing.lua
+Database/ClassicEra/Professions/Herbalism.lua
+Database/ClassicEra/Professions/Leatherworking.lua
+Database/ClassicEra/Professions/Mining.lua
+Database/ClassicEra/Professions/Skinning.lua
+Database/ClassicEra/Professions/Tailoring.lua
+Database/ClassicEra/Skills/WeaponSkills.lua
+Database/BurningCrusade/Classes/Druid.lua
+Database/BurningCrusade/Classes/Hunter.lua
+Database/BurningCrusade/Classes/HunterPets.lua
+Database/BurningCrusade/Classes/Mage.lua
+Database/BurningCrusade/Classes/Paladin.lua
+Database/BurningCrusade/Classes/Priest.lua
+Database/BurningCrusade/Classes/Rogue.lua
+Database/BurningCrusade/Classes/RoguePoisons.lua
+Database/BurningCrusade/Classes/Shaman.lua
+Database/BurningCrusade/Classes/Warlock.lua
+Database/BurningCrusade/Classes/WarlockPets.lua
+Database/BurningCrusade/Classes/Warrior.lua
+Database/BurningCrusade/Professions/Alchemy.lua
+Database/BurningCrusade/Professions/Blacksmithing.lua
+Database/BurningCrusade/Professions/Cooking.lua
+Database/BurningCrusade/Professions/Enchanting.lua
+Database/BurningCrusade/Professions/Engineering.lua
+Database/BurningCrusade/Professions/FirstAid.lua
+Database/BurningCrusade/Professions/Fishing.lua
+Database/BurningCrusade/Professions/Herbalism.lua
+Database/BurningCrusade/Professions/Jewelcrafting.lua
+Database/BurningCrusade/Professions/Leatherworking.lua
+Database/BurningCrusade/Professions/Mining.lua
+Database/BurningCrusade/Professions/Skinning.lua
+Database/BurningCrusade/Professions/Tailoring.lua
+Database/BurningCrusade/Skills/Riding.lua
+Database/BurningCrusade/Skills/WeaponSkills.lua
+TimbersFieldGuide.lua
+Libs/LibStub/LibStub.lua
+Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua
+Libs/LibDataBroker-1.1/LibDataBroker-1.1.lua
+Libs/LibDBIcon-1.0/LibDBIcon-1.0.lua
+Core/Constants.lua
+Core/Util.lua
+Core/Database.lua
+Core/Model.lua
+UI/Theme.lua
+UI/Window.lua
+UI/ListView.lua
+UI/RecipePopup.lua
+UI/Navigation.lua
+Launchers/Keybind.lua
+Launchers/Minimap.lua
+Launchers/Slash.lua
